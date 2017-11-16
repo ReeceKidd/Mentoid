@@ -10,7 +10,7 @@ app.use(cors()) //This allows any client to access this. This is a security risk
 
 app.get('/register', (req, res) => {
     res.send({
-        message: 'Hello our user was registered'
+        message: 'Hello ${req.body.email} your user was registered'
     })
 })
 
