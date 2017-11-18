@@ -3,9 +3,7 @@
     <v-app>
        <mentoid-header></mentoid-header>
       <main>
-        <v-container fluid> 
           <router-view></router-view>
-        </v-container>
       </main>
     </v-app> 
   </div>
@@ -20,3 +18,9 @@ export default {
   }
 }
 </script>
+
+<style>
+#app {
+  text-align: center;
+}
+</style>

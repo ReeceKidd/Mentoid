@@ -1,33 +1,23 @@
 <template>
-<v-toolbar fixed class="blue" dark>
-    <v-toolbar-title class="mr-4">
-        <span
-        class="logo"
-        @click="navigateTo({name: 'root'})">
-        Mentoid
-        </span>
-    </v-toolbar-title>
-    <v-toolbar-items>
-        <v-btn flat dark>
-            Browse
-        </v-btn>
-    </v-toolbar-items>
-    <v-spacer></v-spacer>
-    <v-toolbar-items>
-            <v-btn flat dark
-            @click="navigateTo({name: 'login'})">
-             <v-icon left dark>supervisor_account</v-icon>
-                Login
-            </v-btn>
-    </v-toolbar-items>
-    <v-toolbar-items>
-            <v-btn flat dark
-            @click="navigateTo({name: 'register'})">
-                Sign Up
-            </v-btn>
-    </v-toolbar-items>
-</v-toolbar>
-
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
 </template>
 
 <script>
