@@ -28,30 +28,29 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         item: {}
       }
     },
     created: function () {
-      this.getItem();
+      this.getItem()
     },
     methods: {
-      getItem() {
-        let uri = 'http://localhost:4000/items/edit/' + this.$route.params.id;
+      getItem () {
+        let uri = 'http://localhost:4000/items/edit/' + this.$route.params.id
         this.axios.get(uri).then((response) => {
-          this.item = response.data;
-        });
+          this.item = response.data
+        })
       },
-      updateItem() {
-        let uri = 'http://localhost:4000/items/update/' + this.$route.params.id;
+      updateItem () {
+        let uri = 'http://localhost:4000/items/update/' + this.$route.params.id
         this.axios.post(uri, this.item).then((response) => {
           this.$router.push({
             name: 'DisplayItem'
-          });
-        });
+          })
+        })
       }
     }
   }
-
 </script>

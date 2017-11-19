@@ -5,17 +5,12 @@
   "author": "Reece Kidd <reecekidd95@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "unit": "jest test/unit/specs --coverage",
-    "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "build": "node build/build.js"
+    "start": "webpack-dev-server"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "vue": "^2.5.2",
+    "vue-axios": "^2.0.2",
     "vue-html-loader": "^1.2.4",
     "vue-router": "^3.0.1"
   },

@@ -39,27 +39,26 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         items: []
       }
     },
     created: function () {
-      this.fetchItems();
+      this.fetchItems()
     },
     methods: {
-      fetchItems() {
-        let uri = 'http://localhost:4000/items';
+      fetchItems () {
+        let uri = 'http://localhost:4000/items'
         this.axios.get(uri).then((response) => {
-          this.items = response.data;
-        });
+          this.items = response.data
+        })
       },
-      deleteItem(id) {
-        let uri = 'http://localhost:4000/items/delete/' + id;
-        this.items.splice(id, 1);
-        this.axios.get(uri);
+      deleteItem (id) {
+        let uri = 'http://localhost:4000/items/delete/' + id
+        this.items.splice(id, 1)
+        this.axios.get(uri)
       }
     }
   }
-
 </script>
