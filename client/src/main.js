@@ -1,15 +1,56 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import router from './router'
+import Vue from 'vue';
 
-Vue.config.productionTip = false
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
-})
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+Vue.use(VueAxios, axios);
+
+import App from './App.vue';
+import CreateItem from './components/CreateItem.vue'
+import DisplayItem from './components/DisplayItem.vue'
+import EditItem from './components/EditItem.vue'
+import Register from './components/Register'
+import HomePage from './components/HomePage'
+import Login from './components/Login'
+
+const routes = [{
+    name: 'CreateItem',
+    path: '/create/item',
+    component: CreateItem
+  },
+  {
+    name: 'DisplayItem',
+    path: '/',
+    component: DisplayItem
+  },
+  {
+    name: 'EditItem',
+    path: '/edit/:id',
+    component: EditItem
+  },
+  {
+    path: '/home',
+    name: 'root',
+    component: HomePage
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: Register
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  }
+];
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: routes
+});
+new Vue(Vue.util.extend({
+  router
+}, App)).$mount('#app');
