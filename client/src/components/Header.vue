@@ -11,8 +11,8 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Login</a></li>
+           <button type="button" class="btn btn-primary btn-lg" @click="navigateTo({ name : 'login'})"> Login </button>
+           <button type="button" class="btn btn-primary btn-lg" @click="navigateTo({ name : 'register'})"> Register </button>
         </ul>
       </div>
     </div>
