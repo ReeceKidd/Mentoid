@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 
 import VueAxios from 'vue-axios'
 import axios from 'axios'
+import Vuelidate from 'vuelidate'
 
 import App from './App.vue'
 import CreateItem from './components/CreateItem.vue'
@@ -15,6 +16,7 @@ import Login from './components/Login.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
+Vue.use(Vuelidate)
 
 const routes = [{
   name: 'CreateItem',

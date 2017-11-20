@@ -17,7 +17,7 @@
                   v-model="password">
         </div>
         <div class="submit">
-          <button type="submit">Submit</button>
+          <button  type="submit">Submit</button>
         </div>
       </form>
     </div>
