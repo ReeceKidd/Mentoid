@@ -1,6 +1,6 @@
 # mentoid
 
-> A Vue.js project
+> Complete mentoring solution
 
 ## Build Setup
 
