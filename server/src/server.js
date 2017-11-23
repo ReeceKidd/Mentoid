@@ -5,6 +5,7 @@ cors = require('cors'),
 mongoose = require('mongoose'),
 config = require('../config/DB'),
 itemRoutes = require('../expressRoutes/itemRoutes');
+userRoutes = require('../expressRoutes/userRoutes');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB).then(
@@ -17,6 +18,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/items', itemRoutes);
+app.use('/users', userRoutes);
 const port = process.env.PORT || 4000;
 
 const server = app.listen(port, function(){

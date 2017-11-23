@@ -36,11 +36,11 @@
                   v-model="password">
         </div>
         <div class="input">
-          <label for="confirm-password">Confirm Password</label>
+          <label for="confirmationPassword">Confirm Password</label>
           <input
                   type="password"
-                  id="confirm-password"
-                  v-model="confirmPassword">
+                  id="confirmationPassword"
+                  v-model="confirmationPassword">
         </div>
         <div class="input">
           <label for="country">Country</label>
@@ -51,23 +51,6 @@
             <option value="germany">Germany</option>
           </select>
         </div>
-        <div class="hobbies">
-          <h3>Add some Hobbies</h3>
-          <button @click="onAddHobby" type="button">Add Hobby</button>
-          <div class="hobby-list">
-            <div
-                    class="input"
-                    v-for="(hobbyInput, index) in hobbyInputs"
-                    :key="hobbyInput.id">
-              <label :for="hobbyInput.id">Hobby #{{ index }}</label>
-              <input
-                      type="text"
-                      :id="hobbyInput.id"
-                      v-model="hobbyInput.value">
-              <button @click="onDeleteHobby(hobbyInput.id)" type="button">X</button>
-            </div>
-          </div>
-        </div>
         <div class="input inline" :class="{invalid: $v.terms.$invalid}">
           <input 
               type="checkbox" 
@@ -77,7 +60,7 @@
           <label for="terms">Accept Terms of Use</label>
         </div>
         <div class="submit">
-          <button type="submit">Submit</button>
+          <button type="submit" :disabled="$v.$invalid">Submit</button>
         </div>
       </form>
     </div>
@@ -89,13 +72,13 @@
   export default {
     data () {
       return {
+        userName: '',
         email: '',
         confirmationEmail: '',
         age: null,
         password: '',
-        confirmPassword: '',
+        confirmationPassword: '',
         country: 'usa',
-        hobbyInputs: [],
         terms: false
       }
     },
@@ -114,28 +97,21 @@
       }
     },
     methods: {
-      onAddHobby () {
-        const newHobby = {
-          id: Math.random() * Math.random() * 1000,
-          value: ''
-        }
-        this.hobbyInputs.push(newHobby)
-      },
-      onDeleteHobby (id) {
-        this.hobbyInputs = this.hobbyInputs.filter(hobby => hobby.id !== id)
-      },
       onSubmit () {
-        const formData = {
+        const userData = {
           email: this.email,
+          confirmationEmail: this.confirmationEmail,
           age: this.age,
           password: this.password,
-          confirmPassword: this.confirmPassword,
+          confirmationPassword: this.confirmationPassword,
           country: this.country,
-          hobbies: this.hobbyInputs.map(hobby => hobby.value),
           terms: this.terms
         }
-        console.log(formData)
-        this.$store.dispatch('signup', formData)
+        console.log(userData)
+        let uri = 'http://localhost:4000/users/add'
+        this.axios.post(uri, userData).then((response) => {
+          console.log(userData + ' Posted to server')
+        })
       }
     }
   }

@@ -1,68 +1,55 @@
 <template>
-<div class="container-fluid">
-<div class="row">
-    <div class="col-xs-12">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
         <h2 class="text-center">
-            Please add your hobbies, skills or interests below. 
+          Please add your hobbies, skills or interests below.
         </h2>
+      </div>
     </div>
-</div>
-  <div id="signup">
-    <div class="signup-form">
-      <form @submit.prevent="onSubmit">
-        <div class="areasOfInterest">
-          <button @click="onAddHobby" type="button">Add Hobby</button>
-          <div class="hobby-list">
-            <div
-                    class="input"
-                    v-for="(hobbyInput, index) in hobbyInputs"
-                    :key="hobbyInput.id">
-              <label :for="hobbyInput.id">Hobby #{{ index }}</label>
-              <input
-                      type="text"
-                      :id="hobbyInput.id"
-                      v-model="hobbyInput.value">
-              <button @click="onDeleteHobby(hobbyInput.id)" type="button">X</button>
+    <div id="signup">
+      <div class="signup-form">
+        <form @submit.prevent="onSubmit">
+          <div class="areasOfInterest">
+            <button @click="onAddHobby" type="button">Add Hobby</button>
+            <div class="hobby-list">
+              <div class="input" v-for="(hobbyInput, index) in hobbyInputs" :key="hobbyInput.id">
+                <label :for="hobbyInput.id">Hobby #{{ index }}</label>
+                <input type="text" :id="hobbyInput.id" v-model="hobbyInput.value">
+                <button @click="onDeleteHobby(hobbyInput.id)" type="button">X</button>
+              </div>
             </div>
           </div>
-        </div>
-        <br>
-        <div class="submit">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+          <br>
+          <div class="submit">
+            <button type="submit" :disabled="$v.$invalid">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
-  import { required, email, sameAs } from 'vuelidate/lib/validators'
+  import {
+    required,
+    minLength
+  } from 'vuelidate/lib/validators'
   export default {
     data () {
       return {
-        email: '',
-        confirmationEmail: '',
-        age: null,
-        password: '',
-        confirmPassword: '',
-        country: 'usa',
         hobbyInputs: [],
         terms: false
       }
     },
     validations: {
-      email: {
-        required,
-        email
-      },
-      confirmationEmail: {
-        required,
-        email,
-        sameAs: sameAs('email')
-      },
-      terms: {
-        required
+      hobbyInputs: {
+        minLength: minLength(1),
+        $each: {
+          value: {
+            required
+          }
+        }
       }
     },
     methods: {
@@ -78,13 +65,7 @@
       },
       onSubmit () {
         const formData = {
-          email: this.email,
-          age: this.age,
-          password: this.password,
-          confirmPassword: this.confirmPassword,
-          country: this.country,
-          hobbies: this.hobbyInputs.map(hobby => hobby.value),
-          terms: this.terms
+          hobbies: this.hobbyInputs.map(hobby => hobby.value)
         }
         console.log(formData)
         this.$store.dispatch('signup', formData)
