@@ -1,58 +1,16 @@
 <template>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12">
+        <h2 class="text-center">
+            Please add your hobbies, skills or interests below. 
+        </h2>
+    </div>
+</div>
   <div id="signup">
     <div class="signup-form">
       <form @submit.prevent="onSubmit">
-        <div class="input" :class="{invalid: $v.email.$error}">
-          <label for="email">Email</label>
-          <input
-                  type="email"
-                  id="email"
-                  @blur="$v.email.$touch()"
-                  v-model="email">
-          <p v-if="!$v.email.email">Please provide a valid email address.</p>
-        </div>
-        <div class="input" :class="{invalid: $v.confirmationEmail.$error}">
-          <label for="confirmationEmail"> Confirm Email</label>
-          <input
-                  type="email"
-                  id="confirmEmail"
-                  @blur="$v.confirmationEmail.$touch()"
-                  v-model="confirmationEmail">
-        <p v-if="!$v.confirmationEmail.email">Please provide a valid email address.</p>
-        <p v-if="!$v.confirmationEmail.sameAs">Emails must match</p>
-        </div>
-        <div class="input">
-          <label for="age">Your Age</label>
-          <input
-                  type="number"
-                  id="age"
-                  v-model.number="age">
-        </div>
-        <div class="input">
-          <label for="password">Password</label>
-          <input
-                  type="password"
-                  id="password"
-                  v-model="password">
-        </div>
-        <div class="input">
-          <label for="confirm-password">Confirm Password</label>
-          <input
-                  type="password"
-                  id="confirm-password"
-                  v-model="confirmPassword">
-        </div>
-        <div class="input">
-          <label for="country">Country</label>
-          <select id="country" v-model="country">
-            <option value="usa">USA</option>
-            <option value="india">India</option>
-            <option value="uk">UK</option>
-            <option value="germany">Germany</option>
-          </select>
-        </div>
-        <div class="hobbies">
-          <h3>Add some Hobbies</h3>
+        <div class="areasOfInterest">
           <button @click="onAddHobby" type="button">Add Hobby</button>
           <div class="hobby-list">
             <div
@@ -68,20 +26,14 @@
             </div>
           </div>
         </div>
-        <div class="input inline" :class="{invalid: $v.terms.$invalid}">
-          <input 
-              type="checkbox" 
-              id="terms" 
-              @change="$v.terms.$touch()"
-              v-model="terms">
-          <label for="terms">Accept Terms of Use</label>
-        </div>
+        <br>
         <div class="submit">
           <button type="submit">Submit</button>
         </div>
       </form>
     </div>
   </div>
+</div>
 </template>
 
 <script>

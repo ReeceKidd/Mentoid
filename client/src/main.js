@@ -13,6 +13,7 @@ import EditItem from './components/EditItem.vue'
 import Register from './components/Register.vue'
 import HomePage from './components/HomePage.vue'
 import Login from './components/Login.vue'
+import AreasOfInterest from './components/AreasOfInterest.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
@@ -47,6 +48,11 @@ const routes = [{
   path: '/login',
   name: 'login',
   component: Login
+},
+{
+  path: '/areas-of-interest',
+  name: 'areas-of-interest',
+  component: AreasOfInterest
 }
 ]
 
