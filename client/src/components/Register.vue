@@ -2,45 +2,26 @@
   <div id="signup">
     <div class="signup-form">
       <form @submit.prevent="onSubmit">
+        <div class="input">
+          <label for="userName">Your Username</label>
+          <input id="userName" v-model="userName">
+        </div>
         <div class="input" :class="{invalid: $v.email.$error}">
           <label for="email">Email</label>
-          <input
-                  type="email"
-                  id="email"
-                  @blur="$v.email.$touch()"
-                  v-model="email">
+          <input type="email" id="email" @blur="$v.email.$touch()" v-model="email">
           <p v-if="!$v.email.email">Please provide a valid email address.</p>
-        </div>
-        <div class="input" :class="{invalid: $v.confirmationEmail.$error}">
-          <label for="confirmationEmail"> Confirm Email</label>
-          <input
-                  type="email"
-                  id="confirmEmail"
-                  @blur="$v.confirmationEmail.$touch()"
-                  v-model="confirmationEmail">
-        <p v-if="!$v.confirmationEmail.email">Please provide a valid email address.</p>
-        <p v-if="!$v.confirmationEmail.sameAs">Emails must match</p>
         </div>
         <div class="input">
           <label for="age">Your Age</label>
-          <input
-                  type="number"
-                  id="age"
-                  v-model.number="age">
+          <input type="number" id="age" v-model.number="age">
         </div>
         <div class="input">
           <label for="password">Password</label>
-          <input
-                  type="password"
-                  id="password"
-                  v-model="password">
+          <input type="password" id="password" v-model="password">
         </div>
         <div class="input">
           <label for="confirmationPassword">Confirm Password</label>
-          <input
-                  type="password"
-                  id="confirmationPassword"
-                  v-model="confirmationPassword">
+          <input type="password" id="confirmationPassword" v-model="confirmationPassword">
         </div>
         <div class="input">
           <label for="country">Country</label>
@@ -52,11 +33,7 @@
           </select>
         </div>
         <div class="input inline" :class="{invalid: $v.terms.$invalid}">
-          <input 
-              type="checkbox" 
-              id="terms" 
-              @change="$v.terms.$touch()"
-              v-model="terms">
+          <input type="checkbox" id="terms" @change="$v.terms.$touch()" v-model="terms">
           <label for="terms">Accept Terms of Use</label>
         </div>
         <div class="submit">
@@ -68,13 +45,12 @@
 </template>
 
 <script>
-  import { required, email, sameAs } from 'vuelidate/lib/validators'
+  import { required, email } from 'vuelidate/lib/validators'
   export default {
     data () {
       return {
         userName: '',
         email: '',
-        confirmationEmail: '',
         age: null,
         password: '',
         confirmationPassword: '',
@@ -87,20 +63,22 @@
         required,
         email
       },
-      confirmationEmail: {
-        required,
-        email,
-        sameAs: sameAs('email')
-      },
       terms: {
         required
+      },
+      userName: {
+        unique: val => {
+          if (val === '') return true
+          let uri = 'http://localhost:4000/users/isUsernameAvailable'
+          this.axios.get(uri + val)
+        }
       }
     },
     methods: {
       onSubmit () {
         const userData = {
+          userName: this.userName,
           email: this.email,
-          confirmationEmail: this.confirmationEmail,
           age: this.age,
           password: this.password,
           confirmationPassword: this.confirmationPassword,
@@ -212,4 +190,5 @@
     color: #ccc;
     cursor: not-allowed;
   }
+
 </style>
