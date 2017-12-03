@@ -321,6 +321,17 @@ section.goal {
     border-color: #333333;
 }
 
+.menu-btn {
+    color: #fff;
+    background-color: #104E8B;
+    border-color: #333333;
+}
+
+.menu-btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
 .btn-primary:hover {
     color: #fff;
     background-color: #333333;

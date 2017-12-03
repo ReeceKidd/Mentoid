@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-       <mentoid-header></mentoid-header>
+       <authenticated-header v-if="$store.state.user.authUser"></authenticated-header>
+       <mentoid-header v-else></mentoid-header>
        <br>
-      <main>
+      <main class="main">
           <router-view></router-view>
       </main>
       <mentoid-footer></mentoid-footer>
@@ -11,10 +12,12 @@
 
 <script>
 import MentoidHeader from './components/structure/UnknownUserHeader.vue'
+import AuthenticatedHeader from './components/structure/LoggedInUser.vue'
 import MentoidFooter from './components/structure/Footer.vue'
 export default {
   name: 'app',
   components: {
+    AuthenticatedHeader,
     MentoidHeader,
     MentoidFooter
   }
@@ -22,4 +25,7 @@ export default {
 </script>
 
 <style>
+.main {
+  padding-top: 50px;
+}
 </style>
