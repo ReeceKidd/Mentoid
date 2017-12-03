@@ -3,14 +3,21 @@
   <div id="signup">
     <div class="signup-form">
       <form @submit.prevent="onSubmit">
-        <div class="input">
-          <label for="userName">Your Username</label>
-          <input id="userName" v-model="userName">
+        <div class="input" :class="{invalid: $v.fullName.$error}">
+          <label for="fullName">Your Full Name*</label>
+          <input id="fullName" @blur="$v.fullName.$touch()" v-model="fullName">
+          <p v-if="!$v.fullName.required">This field must not be empty.</p>
+        </div>
+        <div class="input" :class="{invalid: $v.userName.$error}">
+          <label for="userName">Your Username*</label>
+          <input id="userName" @blur="$v.userName.$touch()" v-model="userName">
+          <p v-if="!$v.userName.unique">Username is taken</p>
         </div>
         <div class="input" :class="{invalid: $v.email.$error}">
-          <label for="email">Email</label>
+          <label for="email">Email*</label>
           <input type="email" id="email" @blur="$v.email.$touch()" v-model="email">
           <p v-if="!$v.email.email">Please provide a valid email address.</p>
+          <p v-if="!$v.email.unique">Email is already registered please login instead</p>
         </div>
         <div class="input">
           <label for="age">Your Age</label>
@@ -53,16 +60,20 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      fullName: '',
       userName: '',
       email: '',
       age: null,
       password: '',
       confirmationPassword: '',
-      country: 'usa',
+      country: 'uk',
       terms: false
     }
   },
   validations: {
+    fullName: {
+      required
+    },
     email: {
       required,
       email,
@@ -87,6 +98,7 @@ export default {
   methods: {
     onSubmit() {
       const userData = {
+        fullName: this.fullName,
         userName: this.userName,
         email: this.email,
         age: this.age,
