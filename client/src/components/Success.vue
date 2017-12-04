@@ -1,6 +1,6 @@
 <template>
     <div class="container text-center">
-      <h1> {{ $store.state.user.authUser.userName }} You have logged in successfully </h1>
+      <h1> Hello {{ $store.state.user.authUser.userName }} welcome to Mentoid </h1>
     </div>
 </template>
 

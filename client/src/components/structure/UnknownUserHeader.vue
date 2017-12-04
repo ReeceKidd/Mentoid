@@ -11,23 +11,32 @@
         </button>
         <a href="/" class="navbar-left">
           <img src="..\..\assets\logo.png" class="main-logo"
-            height=42 width=250 />
+            height=50 width=250 />
         </a>
         <a href="/" class="navbar-left">
-          <img src="..\..\assets\logo.png" class="mobile-logo"
+          <img src="..\..\assets\mobile-logo.png" class="mobile-logo"
             height=45 />
         </a>
       </div>
+    
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <button class="btn menu-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
-          <button class="btn menu-btn"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</button>
-        </ul>
-      </div>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a @click="navigateTo({ name : 'login'})"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                        </li>
+                        <li>
+                            <a @click="navigateTo({ name : 'register'})"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+                        </li>
+                        <!-- /.navbar-collapse -->
+                </ul>
+            </div>
     </div>
-  </nav>
+            <!-- /.container-fluid -->
+    </nav>
 </template>
 
 <script>

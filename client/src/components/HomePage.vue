@@ -3,8 +3,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-6 col-xs-offset-3 text-center">
-        <h1> Mentoid a complete mentoring solution </h1>
+      <div class="col-xs-12 text-center">
+        <br>
+        <img src="..\assets\home-logo.png" class="img-responsive center-block" 
+            />
+        <h1> A complete mentoring solution </h1>
         <br>
         <button class="btn btn-primary btn-lg" @click="navigateTo({ name : 'login'})"> Login </button>
         <button class="btn btn-primary btn-lg" @click="navigateTo({ name : 'register'})"> Register </button>
@@ -12,8 +15,6 @@
       </div>
     </div>
   </div>
-
-
 </template>
 
 <script>
@@ -24,7 +25,6 @@
       }
     }
   }
-
 </script>
 <style scoped>
 

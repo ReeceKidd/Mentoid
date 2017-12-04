@@ -3,15 +3,10 @@
   <div id="signup">
     <div class="signup-form">
       <form @submit.prevent="onSubmit">
-        <div class="input" :class="{invalid: $v.fullName.$error}">
-          <label for="fullName">Your Full Name*</label>
-          <input id="fullName" @blur="$v.fullName.$touch()" v-model="fullName">
-          <p v-if="!$v.fullName.required">This field must not be empty.</p>
-        </div>
         <div class="input" :class="{invalid: $v.userName.$error}">
           <label for="userName">Your Username*</label>
           <input id="userName" @blur="$v.userName.$touch()" v-model="userName">
-          <p v-if="!$v.userName.unique">Username is taken</p>
+          <p v-if="!$v.userName.unique">Username is already taken</p>
         </div>
         <div class="input" :class="{invalid: $v.email.$error}">
           <label for="email">Email*</label>
@@ -60,7 +55,6 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      fullName: '',
       userName: '',
       email: '',
       age: null,
@@ -71,9 +65,6 @@ export default {
     }
   },
   validations: {
-    fullName: {
-      required
-    },
     email: {
       required,
       email,
@@ -98,7 +89,6 @@ export default {
   methods: {
     onSubmit() {
       const userData = {
-        fullName: this.fullName,
         userName: this.userName,
         email: this.email,
         age: this.age,
