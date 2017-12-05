@@ -30,9 +30,7 @@ const asyncVerify = token => {
   })
 }
 
-/////////////////////////////////////
-////////// OLD ROUTE /////////////////
-/////////////////////////////////////
+
 // Defined get data(index or listing) route
 userRoutes.route('/').get(function(req, res) {
   User.find(function(err, users) {
@@ -44,12 +42,8 @@ userRoutes.route('/').get(function(req, res) {
   })
 })
 
-///////////////////////////////////
-////////////// NEW ROUTES ////////////
-///////////////////////////////////
-
 userRoutes.get('/check/username/:username', function(req, res) {
-  console.log('hot')
+  console.log('Username ' + req + 'is being checked for')
   const username = req.params.username
   User.findOne({ userName: username }, function(err, existingUser) {
     if (existingUser) {

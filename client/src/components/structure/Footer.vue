@@ -3,7 +3,7 @@
 
         <div class="footer-left">
 
-            <a href="index.html">
+            <a a @click="navigateTo({ name : 'root'})">
                 <div class="footer-logo">
                     <img src="..\..\assets\logo.png" height=50 width=250 />
 
