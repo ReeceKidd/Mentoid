@@ -11,11 +11,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href='/' class="navbar-left">
+          <a @click="navigateTo({ name : 'success'})" class="navbar-left">
             <img src="..\..\assets\logo.png" class="main-logo" height=50 width=250 />
           </a>
-          <a href='/' class="navbar-left">
-            <img src="..\..\assets\mobile-logo.png" class="mobile-logo" height=45 />
+          <a @click="navigateTo({ name : 'success'})" class="navbar-left">
+            <img src="..\..\assets\mobile-logo.png" class="mobile-logo" />
           </a>
         </div>
 
@@ -28,16 +28,16 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a>Matching</a>
+                  <a @click="navigateTo({ name : 'matching'})">Matching</a> 
                 </li>
                 <li>
-                  <a>Manage relationships</a>
+                  <a @click="navigateTo({ name : 'manage-relationships'})">Manage relationships</a>
                 </li>
                 <li>
-                  <a>Search</a>
+                  <a @click="navigateTo({ name : 'search'})">Search</a>
                 </li>
                 <li>
-                  <a>Reporting</a>
+                  <a @click="navigateTo({ name : 'reporting'})">Reporting</a>
                 </li>
               </ul>
             </li>
@@ -47,13 +47,13 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a>Paths</a>
+                  <a @click="navigateTo({ name : 'paths'})">Paths</a>
                 </li>
                 <li>
-                  <a>Content</a>
+                  <a @click="navigateTo({ name : 'content'})">Content</a>
                 </li>
                 <li>
-                  <a>Create</a>
+                  <a @click="navigateTo({ name : 'create'})">Create</a>
                 </li>
               </ul>
             </li>
@@ -63,10 +63,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a>Feed</a>
+                  <a @click="navigateTo({ name : 'feed'})">Feed</a>
                 </li>
                 <li>
-                  <a>Post</a>
+                  <a @click="navigateTo({ name : 'post'})">Post</a>
                 </li>
               </ul>
             </li>
@@ -76,16 +76,16 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a>Edit profile</a>
+                  <a @click="navigateTo({ name : 'edit-profile'})">Edit profile</a>
                 </li>
                 <li>
-                  <a>View profile</a>
+                  <a @click="navigateTo({ name : 'view-profile'})">View profile</a>
                 </li>
                 <li>
-                  <a>Metrics</a>
+                  <a @click="navigateTo({ name : 'metrics'})">Metrics</a>
                 </li>
                 <li>
-                  <a>Leaderboards</a>
+                  <a @click="navigateTo({ name : 'leaderboards'})">Leaderboards</a>
                 </li>
               </ul>
             </li>
@@ -113,7 +113,6 @@
       }
     }
   }
-
 </script>
 
 

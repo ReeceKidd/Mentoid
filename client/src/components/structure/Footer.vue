@@ -5,15 +5,15 @@
 
             <a href="index.html">
                 <div class="footer-logo">
-                    <img src="..\..\assets\logo.png" height=42 width=250 />
+                    <img src="..\..\assets\logo.png" height=50 width=250 />
 
                 </div>
             </a>
 
             <p class="footer-links">
-                <a href="index.html">Home</a> ·
-                <a href="about.html">About</a> ·
-                <a href="contact.html">Contact</a>
+                <a @click="navigateTo({ name : 'success'})">Home</a> ·
+                <a @click="navigateTo({ name : 'about'})">About</a> ·
+                <a @click="navigateTo({ name : 'contact'})">Contact</a>
             </p>
 
         </div>
@@ -29,7 +29,7 @@
 
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@mmt.com">admin@mentoid.com</a></p>
+                <p><a href="mailto:support@mentoid.com">admin@mentoid.com</a></p>
             </div>
 
         </div>
@@ -42,9 +42,9 @@
 
             <div class="footer-icons">
 
-                <a href="socialmedia.html" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="socialmedia.html" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="socialmedia.html" class="google"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
             </div>
 
         </div>
@@ -54,7 +54,11 @@
 
 <script>
 export default {
-
+methods: {
+    navigateTo(route) {
+      this.$router.push(route)
+    }
+  }
 }
 </script>
 
