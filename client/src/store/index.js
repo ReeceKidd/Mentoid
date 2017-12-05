@@ -6,6 +6,7 @@ import user from './modules/user'
 Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production'
+Vue.config.productionTip = false
 
 export default new Vuex.Store({
   modules: {
