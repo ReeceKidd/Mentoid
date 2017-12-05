@@ -1,5 +1,5 @@
 <template>
-   <footer class="footer-distributed">
+   <footer class="footer-distributed footer">
 
         <div class="footer-left">
 
