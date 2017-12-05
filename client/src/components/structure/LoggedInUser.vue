@@ -89,6 +89,8 @@
                 </li>
               </ul>
             </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
             <li>
               <a @click="logout">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
