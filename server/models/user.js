@@ -11,11 +11,10 @@ const User = new mongoose.Schema(
       type: String,
       unique: true
     },
-    confirmationEmail: {
-      type: String
-    },
     age: Number,
-    password: String
+    password: String,
+    country: String,
+    hobbyInputs: Array
   },
   {
     timestamps: true

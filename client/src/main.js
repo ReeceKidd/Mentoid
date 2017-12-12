@@ -16,14 +16,15 @@ import EditItem from './components/EditItem.vue'
 import Register from './components/Register.vue'
 import UnknownHome from './components/UnknownHome.vue'
 import Login from './components/Login.vue'
-import AreasOfInterest from './components/AreasOfInterest.vue'
 import Success from './components/Success.vue'
 import SECRET from './components/SECRET.vue'
 import Content from './components/Learn/Content.vue'
 import Create from './components/Learn/Create.vue'
 import Paths from './components/Learn/Paths.vue'
 import ManageRelationships from './components/Mentoring/ManageRelationships.vue'
-import Matching from './components/Mentoring/Matching.vue'
+import MatchingHome from './components/Mentoring/Matching/MatchingHome.vue'
+import MatchingMentorList from './components/Mentoring/Matching/MentorList.vue'
+import MatchingMenteeList from './components/Mentoring/Matching/MenteeList.vue'
 import Reporting from './components/Mentoring/Reporting.vue'
 import Search from './components/Mentoring/Search.vue'
 import EditProfile from './components/Profile/EditProfile.vue'
@@ -35,6 +36,7 @@ import Post from './components/Social/Post.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import NotFound from './components/NotFound.vue'
+
 
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
@@ -72,11 +74,6 @@ const routes = [
     component: Login
   },
   {
-    path: '/areas-of-interest',
-    name: 'areas-of-interest',
-    component: AreasOfInterest
-  },
-  {
     path: '/success',
     name: 'success',
     component: Success
@@ -107,9 +104,19 @@ const routes = [
     component: ManageRelationships
   },
   {
-    path: '/mentoring/matching',
-    name: 'matching',
-    component: Matching
+    path: '/mentoring/matching/home',
+    name: 'matching-home',
+    component: MatchingHome
+  },
+  {
+    path: '/mentoring/matching/mentor-list',
+    name: 'matching-mentor-list',
+    component: MatchingMentorList
+  },
+  {
+    path: '/mentoring/matching/mentee-list',
+    name: 'matching-mentee-list',
+    component: MatchingMenteeList
   },
   {
     path: '/mentoring/reporting',

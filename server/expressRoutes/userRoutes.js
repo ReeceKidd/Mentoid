@@ -6,10 +6,6 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 var User = require('../models/User')
 
-////////////////////////////
-/////// JWT ISSU AMD VERIFY ///
-//////////////////////////////
-// issue token
 const asyncIssue = payload => {
   return new Promise((resolve, reject) => {
     const token = jwt.sign(payload, 'supersecret', { expiresIn: '1d' })
@@ -30,7 +26,9 @@ const asyncVerify = token => {
   })
 }
 
-
+/////////////////////////////////////
+////////// OLD ROUTE /////////////////
+/////////////////////////////////////
 // Defined get data(index or listing) route
 userRoutes.route('/').get(function(req, res) {
   User.find(function(err, users) {
@@ -42,8 +40,11 @@ userRoutes.route('/').get(function(req, res) {
   })
 })
 
+///////////////////////////////////
+////////////// NEW ROUTES ////////////
+///////////////////////////////////
+
 userRoutes.get('/check/username/:username', function(req, res) {
-  console.log('Username ' + req + 'is being checked for')
   const username = req.params.username
   User.findOne({ userName: username }, function(err, existingUser) {
     if (existingUser) {
@@ -99,14 +100,14 @@ userRoutes.post('/login', function(req, res) {
                   })
               } else {
                 res
-                  .status(400)
+                  .status(401)
                   .send({ message: 'Invalid Username or Password' })
               }
             }
           })
         } else {
           // user does not exist
-          res.status(400).send({ message: 'Not a registered User' })
+          res.status(404).send({ message: 'Not a registered User' })
         }
       })
       .catch(err => {
@@ -153,9 +154,6 @@ userRoutes.post('/register', (req, res) => {
   }
 })
 
-// test secret route
-// authenticated routes need to be validated with passport.authenticate
-// the request from the client must containe Bearer token Authorization
 userRoutes.get(
   '/secret',
   passport.authenticate('jwt', { session: false }),

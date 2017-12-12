@@ -1,6 +1,7 @@
 <template>
   <div id="signin">
     <div class="signin-form">
+      <img src="..\assets\login-logo.png" class="img-responsive center-block">
       <form @submit.prevent="onSubmit">
         <div class="input">
           <label for="email">Email</label>
@@ -16,8 +17,9 @@
                   id="password"
                   v-model="password">
         </div>
+        <p class="error" v-if="errorMessage">{{errorMessage}}</p>
         <div class="submit">
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
@@ -29,11 +31,13 @@ export default {
   data() {
     return {
       email: '',
-      password: ''
+      password: '',
+      errorMessage: null
     }
   },
   methods: {
     onSubmit() {
+      this.errorMessage = null
       this.$store
         .dispatch('login', {
           email: this.email,
@@ -45,9 +49,7 @@ export default {
           this.$router.push('/success')
         })
         .catch(e => {
-          this.message = e.response.data.message
-            ? e.response.data.message
-            : 'There was an error'
+          this.errorMessage = e.message
         })
     }
   }
@@ -62,26 +64,24 @@ export default {
   padding: 20px;
   box-shadow: 0 2px 3px #ccc;
 }
-
+.error {
+  color: red;
+}
 .input.invalid label {
   color: red;
 }
-
 .input.invalid input {
   border: 1px solid red;
   background-color: #ffc9aa;
 }
-
 .input {
   margin: 10px auto;
 }
-
 .input label {
   display: block;
   color: #4e4e4e;
   margin-bottom: 6px;
 }
-
 .input input {
   font: inherit;
   width: 100%;
@@ -89,13 +89,11 @@ export default {
   box-sizing: border-box;
   border: 1px solid #ccc;
 }
-
 .input input:focus {
   outline: none;
   border: 1px solid #104E8B;
   background-color: #eee;
 }
-
 .submit button[disabled],
 .submit button[disabled]:hover,
 .submit button[disabled]:active {

@@ -28,7 +28,7 @@ export const actions = {
       })
       .catch(error => {
         console.log(error)
-        throw new Error('Bad credentials')
+        throw new Error('Invalid username or password')
       })
   },
   register({ commit }, { userData }) {
