@@ -1,3 +1,4 @@
-module.exports = {
-    DB: 'mongodb://localhost:27017/vueexpress'
-  };
+const bluebird = require('bluebird');
+const mongoose = require('mongoose');
+mongoose.Promise = bluebird;
+module.exports = { mongoose }

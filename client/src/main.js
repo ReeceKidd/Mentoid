@@ -24,7 +24,7 @@ import Paths from './components/Learn/Paths.vue'
 import ManageRelationships from './components/Mentoring/ManageRelationships.vue'
 import MatchingHome from './components/Mentoring/Matching/MatchingHome.vue'
 import MatchingMentorList from './components/Mentoring/Matching/MentorList.vue'
-import MatchingMenteeList from './components/Mentoring/Matching/MenteeList.vue'
+import MatchingMenteeList from './components/Mentoring/Matching/MenteesList.vue'
 import Reporting from './components/Mentoring/Reporting.vue'
 import Search from './components/Mentoring/Search.vue'
 import EditProfile from './components/Profile/EditProfile.vue'
@@ -36,7 +36,6 @@ import Post from './components/Social/Post.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import NotFound from './components/NotFound.vue'
-
 
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)

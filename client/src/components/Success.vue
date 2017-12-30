@@ -1,24 +1,49 @@
 <template>
-  <div class="container text-center">
-
-    <!-- This short section is my current method of getting the current user name -->
-    <input v-model="currentUserName" :hidden="true"> {{ $store.state.user.authUser.userName}}
-    </input>
-
-    <div class="row">
-      Current user: {{ currentUserName }}
+  <div class="container">
+    <div class="row text-center">
+      <h1> Hello {{ currentUser.userName }} welcome to Mentoid </h1>
     </div>
 
-    <div class="row">
-      <h1> Hello {{ currentUserName }} welcome to Mentoid </h1>
+    <div class="row text-center">
+      <h3 id="interestsHeader"> Your interests </h3>
     </div>
-    <div class="row">
-      <h1> Your interests: </h1>
-      <ul v-for="hobby in currentUser.hobbyInputs" :key="hobby._id">
-        <li>
-          {{ hobby }}</a>
-        </li>
-      </ul>
+
+    <br>
+
+    <div class="row text-center">
+      <div class="col-xs-4">
+        <br>
+      </div>
+      <div class="col-xs-4">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td><h4><strong>Area of Interest</strong></h4></td>
+              <td><h4><strong>Years of Experience</strong></h4></td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr v-for="hobby in currentUser.hobbyInputs" :key="hobby._id">
+              <td>{{ hobby.value }}</td>
+              <td>{{ hobby.years }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xs-4">
+        <br>
+      </div>
+    </div>
+
+      <br>
+
+      <div class="row text-center">
+        <h3> Find your Mentoring Partner </h3>
+        <br>
+        <button class="btn btn-primary btn-lg" @click="navigateTo({ name : 'matching-home'})"> Begin </button>
+      </div>
+
     </div>
   </div>
 </template>
@@ -27,32 +52,10 @@
   export default {
     data() {
       return {
-        users: [],
-        currentUserName: '',
-        currentUser: ''
+        currentUser: this.$store.state.user.authUser
       }
     },
-    mounted: function () {
-      this.fetchUsers(),
-      this.getUser()
-    },
     methods: {
-      fetchUsers() {
-        let uri = 'http://localhost:4000/users'
-        this.axios.get(uri).then(response => {
-          this.users = response.data
-        })
-      },
-      getUser() {
-        this.currentUser = this.users.filter(function (user) {
-          console.log(user)
-          if (user.userName == this.currentUserName) {
-            return user
-          } else {
-            console.log("Could not find a user with that username")
-          }
-        })
-      },
       navigateTo(route) {
         this.$router.push(route)
       }
@@ -62,6 +65,13 @@
 
 
 <style scoped>
+#interestsHeader {
+  text-decoration: underline;
+  text-decoration: bold;
+}
 
+table, th, td {
+   border: 1px solid black;
+}
 
 </style>

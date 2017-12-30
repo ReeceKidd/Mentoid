@@ -1,19 +1,17 @@
-const express = require('express'),
+var express = require('express'),
   passport = require('passport'),
   path = require('path'),
   bodyParser = require('body-parser'),
   cors = require('cors'),
-  mongoose = require('mongoose'),
-  config = require('../config/DB'),
-  itemRoutes = require('../expressRoutes/itemRoutes'),
-  userRoutes = require('../expressRoutes/userRoutes')
+  userRoutes = require('../routes/userRoutes')
 
 // import and use passport Strategy
 passportStrategy = require('../lib/passport')
 passport.use(passportStrategy)
 
-mongoose.Promise = global.Promise
-mongoose.connect(config.DB).then(
+const { mongoose } = require('../config/DB.js')
+
+mongoose.connect('mongodb://localhost:27017/mentoid').then(
   () => {
     console.log('Database is connected')
   },
@@ -27,8 +25,8 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
-app.use('/items', itemRoutes)
 app.use('/users', userRoutes)
+
 const port = process.env.PORT || 4000
 
 const server = app.listen(port, function() {

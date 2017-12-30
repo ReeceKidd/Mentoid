@@ -28,7 +28,7 @@
 </template>
 
 <script>
-   export default {
+  export default {
     methods: {
       navigateTo(route) {
         this.$router.push(route)
@@ -38,8 +38,8 @@
 </script>
 
 <style>
-.fullPage {
-  min-height: 300px;
-}
+  .fullPage {
+    min-height: 300px;
+  }
 
 </style>
