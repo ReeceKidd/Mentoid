@@ -1,14 +1,18 @@
-import express from 'express';
+var express = require('express')
 
 const routes = express();
 
 //Controller imports
-import userController from './controllers/userController.js';
+const registerController = require('../controllers/registerController.js')
+const loginController = require('../controllers/loginController.js')
+const userController = require('../controllers/userController.js')
 
-//Basic Routes
-routes.get('/', basicController.get);
+//Register Routes
+routes.post('/users/register', registerController.register)
+routes.get('/users/check/username/:username', registerController.checkUsername)
+routes.get('/users/check/email/:email', registerController.checkEmail)
 
-//User Routes
-routes.post('/signup', userController.post);
+//Login Routes
+routes.post('/users/login', loginController.login)
 
-export default routes;
+module.exports = routes

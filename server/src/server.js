@@ -2,8 +2,8 @@ var express = require('express'),
   passport = require('passport'),
   path = require('path'),
   bodyParser = require('body-parser'),
-  cors = require('cors'),
-  userRoutes = require('../routes/userRoutes')
+  cors = require('cors')
+  routes = require('./routes')
 
 // import and use passport Strategy
 passportStrategy = require('../lib/passport')
@@ -25,7 +25,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
-app.use('/users', userRoutes)
+app.use('/', routes);
 
 const port = process.env.PORT || 4000
 
