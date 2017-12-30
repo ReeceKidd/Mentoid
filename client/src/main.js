@@ -5,15 +5,14 @@ import VueRouter from 'vue-router'
 import VueAxios from 'vue-axios'
 import axios from 'axios'
 import Vuelidate from 'vuelidate'
-
-// import vuex store
 import store from './store'
 
 import App from './App.vue'
-import CreateItem from './components/CreateItem.vue'
-import DisplayItem from './components/DisplayItem.vue'
-import EditItem from './components/EditItem.vue'
-import Register from './components/Register.vue'
+
+//  Registration Components
+import BasicRegistration from './components/Register/BasicRegistration.vue'
+import RegisterAreasOfInterest from './components/Register/RegisterAreasOfInterest.vue'
+
 import UnknownHome from './components/UnknownHome.vue'
 import Login from './components/Login.vue'
 import Success from './components/Success.vue'
@@ -43,21 +42,6 @@ Vue.use(Vuelidate)
 
 const routes = [
   {
-    name: 'CreateItem',
-    path: '/create/item',
-    component: CreateItem
-  },
-  {
-    name: 'DisplayItem',
-    path: '/display',
-    component: DisplayItem
-  },
-  {
-    name: 'EditItem',
-    path: '/edit/:id',
-    component: EditItem
-  },
-  {
     path: '/',
     name: 'root',
     component: UnknownHome
@@ -65,7 +49,12 @@ const routes = [
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: BasicRegistration
+  },
+  {
+    path: '/register-areas-of-interest',
+    name: 'register-areas-of-interest',
+    component: RegisterAreasOfInterest
   },
   {
     path: '/login',
