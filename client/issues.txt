@@ -1,0 +1,2 @@
+#1 Login form has a variety of issues with the call to the server for the email and username. 
+will have to leave for now as it is taking up to much time. 
