@@ -1,9 +1,36 @@
-var express = require('express')
-var app = express()
-var loginController = express.Router()
-const bcrypt = require('bcryptjs')
 
-loginController.login = (req, res) =>  {
+
+const passport = require('passport')
+const jwt = require('jsonwebtoken')
+const bcrypt = require('bcryptjs')
+var User = require('../models/User')
+
+const userController = {}
+
+//JWT ISSUE TOKEN AND VERIFY
+const asyncIssue = payload => {
+    return new Promise((resolve, reject) => {
+      const token = jwt.sign(payload, 'supersecret', { expiresIn: '1d' })
+      if (token) {
+        resolve(token)
+      }
+      reject({ error: 'There was an error signing payload' })
+    })
+  }
+  // verify token
+  const asyncVerify = token => {
+    return new Promise((resolve, reject) => {
+      const decoded = jwt.verify(token, 'supersecret')
+      if (decoded) {
+        resolve(decoded)
+      }
+      reject({ error: 'There was an error verifying token' })
+    })
+  }
+
+  
+
+  userController.login = (req, res) => {
     try {
       var formData = req.body
       User.findOne({ email: formData.email })
@@ -34,14 +61,14 @@ loginController.login = (req, res) =>  {
                     })
                 } else {
                   res
-                    .status(401)
+                    .status(400)
                     .send({ message: 'Invalid Username or Password' })
                 }
               }
             })
           } else {
             // user does not exist
-            res.status(404).send({ message: 'Not a registered User' })
+            res.status(400).send({ message: 'Not a registered User' })
           }
         })
         .catch(err => {
@@ -56,5 +83,5 @@ loginController.login = (req, res) =>  {
       })
     }
   }
-
-  module.exports = loginController
+    
+module.exports = userController

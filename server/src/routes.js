@@ -5,14 +5,17 @@ const routes = express();
 //Controller imports
 const registerController = require('../controllers/registerController.js')
 const loginController = require('../controllers/loginController.js')
-const userController = require('../controllers/userController.js')
 
 //Register Routes
-routes.post('/users/register', registerController.register)
-routes.get('/users/check/username/:username', registerController.checkUsername)
-routes.get('/users/check/email/:email', registerController.checkEmail)
+routes.post('/register', registerController.register)
+routes.get('/check/username/:username', registerController.checkUserName)
+routes.get('/check/email/:email', registerController.checkEmail)
 
 //Login Routes
-routes.post('/users/login', loginController.login)
+routes.post('/login', loginController.login)
+
+//Areas of Interest Routes
+//Get every area of interest
+//Get total number of users for area of interest. 
 
 module.exports = routes

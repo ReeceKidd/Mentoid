@@ -14,7 +14,7 @@ export const mutations = {
 export const actions = {
   login({ commit }, { email, password }) {
     return axios({
-      url: `/users/login`,
+      url: `/login`,
       baseURL: apiURI,
       method: 'post',
       data: {
@@ -33,7 +33,7 @@ export const actions = {
   },
   register({ commit }, { userData }) {
     return axios({
-      url: `/users/register`,
+      url: `/register`,
       baseURL: apiURI,
       method: 'post',
       data: userData

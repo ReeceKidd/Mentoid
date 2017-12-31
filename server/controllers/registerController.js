@@ -1,11 +1,10 @@
-var express = require('express')
-var app = express()
-var registerController = express.Router()
-const passport = require('passport')
 const jwt = require('jsonwebtoken')
-const bcrypt = require('bcryptjs')
+
 var User = require('../models/User')
 
+const registerController = {}
+
+//JWT ISSUE TOKEN AND VERIFY
 const asyncIssue = payload => {
     return new Promise((resolve, reject) => {
         const token = jwt.sign(payload, 'supersecret', {
@@ -32,34 +31,21 @@ const asyncVerify = token => {
     })
 }
 
-// Defined get data(index or listing) route
-registerController.get = (req, res) => {
-    User.find(function (err, users) {
-        if (err) {
-            console.log(err)
-        } else {
-            res.json(users)
-        }
-    })
-}
 
-//Check username
 
-registerController.checkUsername = (req, res) => {
+registerController.checkUserName = (req, res) => {
+    console.log('Username ' + req + 'is being checked for')
     const username = req.params.username
     User.findOne({
         userName: username
     }, function (err, existingUser) {
         if (existingUser) {
             res.sendStatus(400)
-            console.log(req.body + ' already exists in database')
         } else {
             res.sendStatus(200)
         }
     })
 }
-
-//Check Email
 
 registerController.checkEmail = (req, res) => {
     const email = req.params.email
@@ -74,8 +60,7 @@ registerController.checkEmail = (req, res) => {
     })
 }
 
-//Register User 
-
+// Register User
 registerController.register = (req, res) => {
     try {
         const newUser = new User(req.body)
@@ -102,17 +87,6 @@ registerController.register = (req, res) => {
             message: message
         })
     }
-}
-
-//Get secret. 
-
-registerController.secret = (req, res) => {
-    passport.authenticate('jwt', {
-            session: false
-        }),
-        res.status(200).send({
-            message: 'SUPER SECRET'
-        })
 }
 
 module.exports = registerController

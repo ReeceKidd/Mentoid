@@ -100,7 +100,7 @@
         email,
         unique: val => {
           if (val === '') return true
-          let uri = 'http://localhost:4000/users/check/email/'
+          let uri = 'http://localhost:4000/check/email/'
           return axios.get(uri + val)
         }
       },
@@ -111,7 +111,7 @@
         required,
         unique: val => {
           if (val === '') return true
-          let uri = 'http://localhost:4000/users/check/username/'
+          let uri = 'http://localhost:4000/check/username/'
           return axios.get(uri + val)
         }
       },
