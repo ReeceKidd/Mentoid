@@ -34,15 +34,15 @@ const asyncVerify = token => {
 
 
 registerController.checkUserName = (req, res) => {
-    console.log('Username ' + req + 'is being checked for')
+    console.log('Username ' + req.params.username + ' is being checked for')
     const username = req.params.username
     User.findOne({
         userName: username
     }, function (err, existingUser) {
         if (existingUser) {
-            res.sendStatus(400)
+            res.send('Username already exists')
         } else {
-            res.sendStatus(200)
+            res.send('Username is available')
         }
     })
 }

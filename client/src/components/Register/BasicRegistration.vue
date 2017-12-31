@@ -1,62 +1,64 @@
 <template>
-    <div class="container">
-      <div id="signup">
-        <div class="signup-form">
-          <form @submit.prevent="onSubmit()">
-            <p class="error" v-if="errorMessage">{{errorMessage}}</p>
-             <div class="input" :class="{invalid: $v.firstName.$error}">
-              <label for="firstName">Your First Name*</label>
-              <input id="firstName" v-model.trim="firstName" @input="delayTouch($v.firstName)">
-              <p class="errorMessage" v-if="!$v.firstName.minLength">Your first name must be two or more characters</p>
-            </div>
-            <div class="input" :class="{invalid: $v.lastName.$error}">
-              <label for="lastName">Your Last Name*</label>
-              <input id="lastName" v-model.trim="lastName" @input="delayTouch($v.lastName)">
-              <p class="errorMessage" v-if="!$v.lastName.minLength">Your last name must be two or more characters</p>
-            </div>
-            <div class="input">
-              <label for="userName">Your Username*</label>
-              <input id="userName" v-model.trim="userName" @input="delayTouch($v.userName)">
-              <p class="errorMessage" v-if="!$v.userName.unique">Username is taken</p>
-            </div>
-            <div class="input" :class="{invalid: $v.email.$error}">
-              <label for="email">Email*</label>
-              <input type="email" id="email" @blur="$v.email.$touch()" v-model.trim="email" @input="delayTouch($v.email)">
-              <p class="errorMessage" v-if="!$v.email.email">Please provide a valid email address.</p>
-              <p class="errorMessage" v-if="!$v.email.unique">Email already exists in database</p>
-            </div>
-            <div class="input">
-              <label for="age">Your Age*</label>
-              <input type="number" id="age" v-model.number="age">
-            </div>
-            <div class="input" :class="{invalid: $v.password.$error}">
-              <label for="password">Password*</label>
-              <input type="password" id="password" @blur="$v.password.$touch()" v-model="password">
-            </div>
-            <div class="input" :class="{invalid: $v.confirmPassword.$error}">
-              <label for="confirm-password">Confirmation Password*</label>
-              <input type="password" id="confirm-password" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword">
-            </div>
-            <div class="input">
-              <label for="country">Country*</label>
-              <select id="country" v-model="country">
-                <option value="usa">USA</option>
-                <option value="india">India</option>
-                <option value="uk">UK</option>
-                <option value="germany">Germany</option>
-              </select>
-            </div>
-            <div class="input inline" :class="{invalid: $v.terms.$invalid}">
-              <input type="checkbox" id="terms" @change="$v.terms.$touch()" v-model="terms">
-              <label for="terms">Accept Terms of Use*</label>
-            </div>
-            <div class="submit text-center">
-              <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Next</button>
-            </div>
-          </form>
-        </div>
+  <div class="container">
+    <div id="signup">
+      <div class="signup-form">
+        <form @submit.prevent="onSubmit()">
+          <p class="error" v-if="errorMessage">{{errorMessage}}</p>
+          <div class="input" :class="{invalid: $v.firstName.$error}">
+            <label for="firstName">Your First Name*</label>
+            <input id="firstName" v-model.trim="firstName">
+            <p class="errorMessage" v-if="!$v.firstName.minLength">Your first name must be two or more characters</p>
+          </div>
+          <div class="input" :class="{invalid: $v.lastName.$error}">
+            <label for="lastName">Your Last Name*</label>
+            <input id="lastName" v-model.trim="lastName">
+            <p class="errorMessage" v-if="!$v.lastName.minLength">Your last name must be two or more characters</p>
+          </div>
+          <div class="input" :class="{invalid: $v.userName.$error}">
+            <label for="userName">Your Username*</label>
+            <input id="userName" @input="debounceInput()"  @blur="$v.userName.$touch()" v-model.trim="userName">
+            <p class="errorMessage" v-if="!$v.userName.required && $v.userName.$dirty">Username is required.</p>
+            <p class="errorMessage" v-if="!$v.userName.unique && $v.userName.$dirty">Username already exists in database</p>
+          </div>
+          <div class="input" :class="{invalid: $v.email.$error}">
+            <label for="email">Email*</label>
+            <input type="email" id="email" @input="debounceInput()"  @blur="$v.email.$touch()" v-model.trim="email">
+            <p class="errorMessage" v-if="!$v.email.email && $v.email.$dirty">Please provide a valid email address.</p>
+            <p class="errorMessage" v-if="!$v.email.unique && $v.email.$dirty">Email already exists in database</p>
+            <p class="errorMessage" v-if="!$v.email.required && $v.email.$dirty">Email is required.</p>
+          </div>
+          <div class="input">
+            <label for="age">Your Age*</label>
+            <input type="number" id="age" v-model.number="age">
+          </div>
+          <div class="input" :class="{invalid: $v.password.$error}">
+            <label for="password">Password*</label>
+            <input type="password" id="password" @blur="$v.password.$touch()" v-model="password">
+          </div>
+          <div class="input" :class="{invalid: $v.confirmPassword.$error}">
+            <label for="confirm-password">Confirmation Password*</label>
+            <input type="password" id="confirm-password" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword">
+          </div>
+          <div class="input">
+            <label for="country">Country*</label>
+            <select id="country" v-model="country">
+              <option value="usa">USA</option>
+              <option value="india">India</option>
+              <option value="uk">UK</option>
+              <option value="germany">Germany</option>
+            </select>
+          </div>
+          <div class="input inline" :class="{invalid: $v.terms.$invalid}">
+            <input type="checkbox" id="terms" @change="$v.terms.$touch()" v-model="terms">
+            <label for="terms">Accept Terms of Use*</label>
+          </div>
+          <div class="submit text-center">
+            <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Next</button>
+          </div>
+        </form>
       </div>
-      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -66,9 +68,9 @@
     minLength,
     sameAs
   } from 'vuelidate/lib/validators'
-  import axios from 'axios'
 
-  const touchMap = new WeakMap()
+  import axios from 'axios'
+  import lodash from 'lodash'
 
   export default {
     data() {
@@ -101,7 +103,9 @@
         unique: val => {
           if (val === '') return true
           let uri = 'http://localhost:4000/check/email/'
-          return axios.get(uri + val)
+          return axios.get(uri + val).then(res => {
+            return res.data === 'Email is available'
+          })
         }
       },
       terms: {
@@ -112,7 +116,9 @@
         unique: val => {
           if (val === '') return true
           let uri = 'http://localhost:4000/check/username/'
-          return axios.get(uri + val)
+          return axios.get(uri + val).then(res => {
+            return res.data === 'Username is available'
+          })
         }
       },
       password: {
@@ -124,6 +130,7 @@
       }
     },
     methods: {
+
       onSubmit() {
         this.errorMessage = null
 
@@ -153,13 +160,9 @@
             this.errorMessage = e.message
           })
       },
-      delayTouch($v) {
-        $v.$reset()
-        if (touchMap.has($v)) {
-          clearTimeout(touchMap.get($v))
-        }
-        touchMap.set($v, setTimeout($v.$touch, 2000))
-      }
+      debounceInput: lodash.debounce(function (e) {
+        this.filterKey = e.target.value
+      }, 500)
     }
   }
 </script>
@@ -227,4 +230,5 @@
     color: #ccc;
     cursor: not-allowed;
   }
+
 </style>
