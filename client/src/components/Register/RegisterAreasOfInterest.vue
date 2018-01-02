@@ -1,47 +1,50 @@
 <template>
-      <div id="areasOfInterest">
-        <div class="row">
-          <div class="col-xs-12">
-            <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
-          </div>
-          <div class="col-xs-8 col-xs-offset-2">
-            <h2 class="text-center">
-              Please add your hobbies, skills or interests that you are interested in learning more or helping others with.
-            </h2>
-          </div>
-        </div>
+  <div id="areasOfInterest">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2">
+        <h2 class="text-center">
+          Please add your hobbies, skills or interests that you are interested in learning more or helping others with.
+        </h2>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center">
+      <button @click="onAddHobby" class="btn btn-primary btn-xl">Add Interest</button>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-2">
         <br>
-        <div class="row text-center">
-          <button @click="onAddHobby" class="btn btn-primary btn-xl">Add Interest</button>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-xs-2">
-            <br>
-          </div>
-          <div class="col-xs-4">
-            <div class="hobby-list">
-              <div id="areaOfInterestInput" v-for="(hobbyInput, index) in hobbyInputs" :key="hobbyInput.id">
-                <label :for="hobbyInput.id">
-                  <h4>Area of Interest #{{ index }}</h4>
-                </label>
-                <input type="text" :id="hobbyInput.id" v-model="hobbyInput.value">
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <div class="hobby-list">
-              <div id="yearsOfExperience" v-for="(hobbyInput, index) in hobbyInputs" :key="hobbyInput.id">
-                <label>
-                  <h4>Years of experience</h4>
-                </label>
-                <input type="number" :id="hobbyInput.id" v-model="hobbyInput.years">
-                <button @click="onDeleteHobby(hobbyInput.id)" class="btn-danger btn btn-sm">X</button>
-              </div>
-            </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="hobby-list">
+          <div id="areaOfInterestInput" v-for="(hobbyInput, index) in hobbyInputs" :key="hobbyInput.id">
+            <label :for="hobbyInput.id">
+              <h4>Area of Interest #{{ index }}</h4>
+            </label>
+            <input type="text" :id="hobbyInput.id" v-model="hobbyInput.value">
           </div>
         </div>
       </div>
+      <div class="col-xs-6">
+        <div class="hobby-list">
+          <div id="yearsOfExperience" v-for="(hobbyInput, index) in hobbyInputs" :key="hobbyInput.id">
+            <label>
+              <h4>Years of experience</h4>
+            </label>
+            <input type="number" :id="hobbyInput.id" v-model="hobbyInput.years">
+            <button @click="onDeleteHobby(hobbyInput.id)" class="btn-danger btn btn-sm">X</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button @click="onSubmit"> Submit </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,8 +52,9 @@
     required,
     minLength
   } from 'vuelidate/lib/validators'
+  import axios from 'axios'
 
-export default {
+  export default {
     data() {
       return {
         hobbyInputs: [],
@@ -70,21 +74,22 @@ export default {
     },
     methods: {
       onSubmit() {
-        this.errorMessage = null
-
         const hobbyInputs = this.hobbyInputs
+        const infoForUpdate = {
+          areasOfInterest: hobbyInputs,
+          id: this.currentUser.id
+        }
         console.log(hobbyInputs)
-
-        this.$store
-          .dispatch('register', {
-            hobbyInputs
-          })
-          .then(() => {
-            this.$router.push('/success')
-          })
-          .catch(e => {
-            this.errorMessage = e.message
-          })
+        console.log('Information for update ' + infoForUpdate.areasOfInterest)
+        let url = 'http://localhost:4000/update/areas-of-interest/'
+        return axios.get(url + infoForUpdate).then(res => {
+          console.log(res)
+        }).then(() => {
+          console.log('Redirect to different page')
+          // this.$router.push('/success')
+        }).catch(e => {
+          this.errorMessage = e.message
+        })
       },
       onAddHobby() {
         const newHobby = {
@@ -103,7 +108,6 @@ export default {
 </script>
 
 <style scoped>
-  
   .input {
     margin: 10px auto;
   }
@@ -166,5 +170,5 @@ export default {
     color: #ccc;
     cursor: not-allowed;
   }
-</style>
 
+</style>

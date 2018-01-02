@@ -90,4 +90,9 @@ registerController.register = (req, res) => {
     }
 }
 
+registerController.updateAreasOfInterest = (req, res) => {
+        
+    res.json(req.params.areasOfInterest);
+}
+
 module.exports = registerController

@@ -1,0 +1,1 @@
+1) Work out how to update the hobbyInputs/Areas of interest for a user. 
