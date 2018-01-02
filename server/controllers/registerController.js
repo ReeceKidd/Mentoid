@@ -51,11 +51,11 @@ registerController.checkEmail = (req, res) => {
     const email = req.params.email
     User.findOne({
         email: email
-    }, function (err, existingUser) {
-        if (existingUser) {
-            res.sendStatus(400)
+    }, function (err, existingEmail) {
+        if (existingEmail) {
+            res.send('Email already exists')
         } else {
-            res.sendStatus(200)
+            res.send('Email is available')
         }
     })
 }

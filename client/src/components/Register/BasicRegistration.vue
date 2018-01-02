@@ -6,23 +6,27 @@
           <p class="error" v-if="errorMessage">{{errorMessage}}</p>
           <div class="input" :class="{invalid: $v.firstName.$error}">
             <label for="firstName">Your First Name*</label>
-            <input id="firstName" v-model.trim="firstName">
-            <p class="errorMessage" v-if="!$v.firstName.minLength">Your first name must be two or more characters</p>
+            <input id="firstName" @blur="$v.firstName.$touch()" v-model.trim="firstName">
+            <p class="errorMessage" v-if="!$v.firstName.minLength && $v.firstName.$dirty">Your first name must be two or more characters</p>
+            <p class="errorMessage" v-if="!$v.firstName.required && $v.firstName.$dirty">First name field is required</p>
+            <p class="errorMessage" v-if="!$v.firstName.alpha && $v.firstName.$dirty">First name can only contain alphabetical characters</p>
           </div>
           <div class="input" :class="{invalid: $v.lastName.$error}">
             <label for="lastName">Your Last Name*</label>
-            <input id="lastName" v-model.trim="lastName">
-            <p class="errorMessage" v-if="!$v.lastName.minLength">Your last name must be two or more characters</p>
+            <input id="lastName" @blur="$v.lastName.$touch()" v-model.trim="lastName">
+            <p class="errorMessage" v-if="!$v.lastName.minLength && $v.lastName.$dirty">Your last name must be two or more characters</p>
+            <p class="errorMessage" v-if="!$v.lastName.required && $v.lastName.$dirty">Last name field is required</p>
+            <p class="errorMessage" v-if="!$v.lastName.alpha && $v.lastName.$dirty">Last name can only contain alphabetical characters</p>
           </div>
           <div class="input" :class="{invalid: $v.userName.$error}">
             <label for="userName">Your Username*</label>
-            <input id="userName" @input="debounceInput()"  @blur="$v.userName.$touch()" v-model.trim="userName">
+            <input id="userName" @blur="$v.userName.$touch()" v-model.trim="userName">
             <p class="errorMessage" v-if="!$v.userName.required && $v.userName.$dirty">Username is required.</p>
             <p class="errorMessage" v-if="!$v.userName.unique && $v.userName.$dirty">Username already exists in database</p>
           </div>
           <div class="input" :class="{invalid: $v.email.$error}">
             <label for="email">Email*</label>
-            <input type="email" id="email" @input="debounceInput()"  @blur="$v.email.$touch()" v-model.trim="email">
+            <input type="email" id="email" @blur="$v.email.$touch()" v-model.trim="email">
             <p class="errorMessage" v-if="!$v.email.email && $v.email.$dirty">Please provide a valid email address.</p>
             <p class="errorMessage" v-if="!$v.email.unique && $v.email.$dirty">Email already exists in database</p>
             <p class="errorMessage" v-if="!$v.email.required && $v.email.$dirty">Email is required.</p>
@@ -66,11 +70,11 @@
     required,
     email,
     minLength,
-    sameAs
+    sameAs,
+    alpha
   } from 'vuelidate/lib/validators'
 
   import axios from 'axios'
-  import lodash from 'lodash'
 
   export default {
     data() {
@@ -91,11 +95,13 @@
     validations: {
       firstName: {
         required,
-        minLength: minLength(2)
+        minLength: minLength(2),
+        alpha
       },
       lastName: {
         required,
-        minLength: minLength(2)
+        minLength: minLength(2),
+        alpha
       },
       email: {
         required,
@@ -159,10 +165,7 @@
             console.log('Could not complete basic registration')
             this.errorMessage = e.message
           })
-      },
-      debounceInput: lodash.debounce(function (e) {
-        this.filterKey = e.target.value
-      }, 500)
+      }
     }
   }
 </script>
