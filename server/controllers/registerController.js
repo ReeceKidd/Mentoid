@@ -52,6 +52,7 @@ registerController.checkEmail = (req, res) => {
     User.findOne({
         email: email
     }, function (err, existingEmail) {
+        console.log('Checking if ' + req.body + ' exists in database')
         if (existingEmail) {
             res.send('Email already exists')
         } else {

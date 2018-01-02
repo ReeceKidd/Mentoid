@@ -18,15 +18,20 @@
             <p class="errorMessage" v-if="!$v.lastName.required && $v.lastName.$dirty">Last name field is required</p>
             <p class="errorMessage" v-if="!$v.lastName.alpha && $v.lastName.$dirty">Last name can only contain alphabetical characters</p>
           </div>
+
+          <!-- The below username and email validation have an additional '@focus' added to them this is essential
+          as it resets the dirty value which prevents error messages as the user retypes their choosen email or
+          username after entering a username or email that was already taken.  -->
+
           <div class="input" :class="{invalid: $v.userName.$error}">
             <label for="userName">Your Username*</label>
-            <input id="userName" @blur="$v.userName.$touch()" v-model.trim="userName">
+            <input id="userName" @focus="$v.userName.$reset" @blur="$v.userName.$touch()" v-model.trim="userName">
             <p class="errorMessage" v-if="!$v.userName.required && $v.userName.$dirty">Username is required.</p>
             <p class="errorMessage" v-if="!$v.userName.unique && $v.userName.$dirty">Username already exists in database</p>
           </div>
           <div class="input" :class="{invalid: $v.email.$error}">
             <label for="email">Email*</label>
-            <input type="email" id="email" @blur="$v.email.$touch()" v-model.trim="email">
+            <input type="email" id="email"  @focus="$v.email.$reset" @blur="$v.email.$touch()" v-model.trim="email">
             <p class="errorMessage" v-if="!$v.email.email && $v.email.$dirty">Please provide a valid email address.</p>
             <p class="errorMessage" v-if="!$v.email.unique && $v.email.$dirty">Email already exists in database</p>
             <p class="errorMessage" v-if="!$v.email.required && $v.email.$dirty">Email is required.</p>
