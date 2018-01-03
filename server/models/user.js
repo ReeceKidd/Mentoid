@@ -20,7 +20,7 @@ const User = new mongoose.Schema(
     age: Number,
     password: String,
     country: String,
-    hobbyInputs: Array,
+    areasOfInterest: Array,
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,
     userRegistrationComplete: Boolean

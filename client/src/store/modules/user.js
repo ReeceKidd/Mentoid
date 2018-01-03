@@ -47,6 +47,22 @@ export const actions = {
         throw new Error('Bad credentials')
       })
   },
+  updateAreasOfInterest({ commit }, { updateInfo }) {
+    return axios({
+      url: `/update/areas-of-interest`,
+      baseURL: apiURI,
+      method: 'post',
+      data: updateInfo
+    })
+      .then(res => {
+        window.localStorage.setItem('mentoid', res.data.token)
+        commit('SET_USER', res.data.user)
+      })
+      .catch(error => {
+        console.log(error)
+        throw new Error('Could not update areas of interest.')
+      })
+  },
   logout({ commit }) {
     window.localStorage.removeItem('mentoid')
     commit('SET_USER', null)

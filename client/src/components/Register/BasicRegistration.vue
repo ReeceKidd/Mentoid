@@ -141,10 +141,8 @@
       }
     },
     methods: {
-
       onSubmit() {
         this.errorMessage = null
-
         const userData = {
           firstName: this.firstName,
           lastName: this.lastName,

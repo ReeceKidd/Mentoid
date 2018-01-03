@@ -91,8 +91,25 @@ registerController.register = (req, res) => {
 }
 
 registerController.updateAreasOfInterest = (req, res) => {
-        
-    res.json(req.params.areasOfInterest);
+    const infoForUpdate = User(req.body)
+    var query = {
+        '_id': infoForUpdate._id
+    }
+
+    User.findOneAndUpdate(
+        query, {
+            $push: {
+                areasOfInterest: infoForUpdate.areasOfInterest
+            },
+            areasOfInterestRegistrationComplete: true
+        },
+        function (err, doc) {
+            if (err) {
+                res.status(400).send({
+                    message: err.message ? err.message : 'Unable to update areas of interest'
+                })
+            }
+        })
 }
 
 module.exports = registerController
