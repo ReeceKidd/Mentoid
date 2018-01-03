@@ -11,9 +11,11 @@
 </template>
 
 <script>
+
 import MentoidHeader from './components/structure/UnknownUserHeader.vue'
 import AuthenticatedHeader from './components/structure/LoggedInUser.vue'
 import MentoidFooter from './components/structure/Footer.vue'
+
 export default {
   name: 'app',
   components: {

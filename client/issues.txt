@@ -1,1 +1,3 @@
 #1 An axios request is sent every single time an letter is typed in the basic registration form. 
+#2 In the areas of Interest update section the API call will not return the appropriate errors, 
+this has something to do with the token verification. 
