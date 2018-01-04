@@ -31,8 +31,6 @@ const asyncVerify = token => {
     })
 }
 
-
-
 registerController.checkUserName = (req, res) => {
     console.log('Username ' + req.params.username + ' is being checked for')
     const username = req.params.username
@@ -90,26 +88,43 @@ registerController.register = (req, res) => {
     }
 }
 
-registerController.updateAreasOfInterest = (req, res) => {
-    const infoForUpdate = User(req.body)
+registerController.getAreasOfInterest = (req, res) => {
+    const userID = req.params.userID
+    console.log('User ID: ' + userID)
+    User.findById(userID, function(err, user){
+        if(err){
+            console.log(err)
+        }
+    }).then(user => {
+        res.status(200).send({
+            message: 'Success',
+            areasOfInterest: user.areasOfInterest.areasOfInterest
+        })
+    })
+
+}
+
+registerController.updateAreasOfInterest = (req,res) => {
+    
+    const updatedUserInfo = User(req.body)
+
     var query = {
-        '_id': infoForUpdate._id
+        '_id': updatedUserInfo._id
     }
 
-    User.findOneAndUpdate(
-        query, {
-            $push: {
-                areasOfInterest: infoForUpdate.areasOfInterest
-            },
-            areasOfInterestRegistrationComplete: true
-        },
-        function (err, doc) {
-            if (err) {
-                res.status(400).send({
-                    message: err.message ? err.message : 'Unable to update areas of interest'
-                })
-            }
-        })
+    User.findOneAndUpdate(query, 
+    { $push: { areasOfInterest: updatedUserInfo.areasOfInterest},
+      areasOfInterestRegistrationComplete: true},
+      function(err, updated) {
+          if(err){
+              send.status(400).send({
+                  message: 'Unable to update areas of interest. '
+              })
+          }
+
+      }
+    )
+
 }
 
 module.exports = registerController

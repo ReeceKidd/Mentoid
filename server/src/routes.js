@@ -10,6 +10,7 @@ const loginController = require('../controllers/loginController.js')
 routes.post('/register', registerController.register)
 routes.get('/check/username/:username', registerController.checkUserName)
 routes.get('/check/email/:email', registerController.checkEmail)
+routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfInterest)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 
 //Login Routes

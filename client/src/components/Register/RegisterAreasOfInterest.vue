@@ -9,6 +9,8 @@
         <h2 class="text-center">
           Please add your hobbies, skills or interests that you are interested in learning more or helping others with.
         </h2>
+        <h2> Areas on Interest {{ areasOfInterest }} </h2>
+        <h2> Count {{ areasOfInterestCount }} </h2>
       </div>
     </div>
     <br>
@@ -53,6 +55,9 @@
     required,
     minLength
   } from 'vuelidate/lib/validators'
+
+  import axios from 'axios'
+
   export default {
     data() {
       return {
@@ -79,9 +84,9 @@
         }
         console.log(updateInfo)
         this.$store
-        .dispatch('updateAreasOfInterest', {
-          updateInfo
-        })
+          .dispatch('updateAreasOfInterest', {
+            updateInfo
+          })
           .then(() => {
             this.$router.push('/success')
           })
@@ -102,6 +107,14 @@
       onDeleteAreaOfInterest(id) {
         this.areasOfInterest = this.areasOfInterest.filter(hobby => hobby.id !== id)
       }
+    },
+    beforeMount() {
+      const userID = this.$store.state.user.authUser._id
+      const uri = 'http://localhost:4000/get/areas-of-interest/'
+      axios.get(uri + userID).then(res => {
+        this.areasOfInterest = res
+        this.areasOfInterestCount = this.areasOfInterest.size
+      })
     }
   }
 </script>

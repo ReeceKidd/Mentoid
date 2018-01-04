@@ -55,8 +55,7 @@ export const actions = {
       data: updateInfo
     })
       .then(res => {
-        window.localStorage.setItem('mentoid', res.data.token)
-        commit('SET_USER', res.data.user)
+        console.log(res)
       })
       .catch(error => {
         console.log(error)

@@ -40,7 +40,7 @@ Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
 Vue.use(Vuelidate)
 
-// The Vue.config options below disable unwanted messages in the console. 
+// The Vue.config options below disable unwanted messages in the console.
 Vue.config.devtools = false
 Vue.config.productionTip = false
 
