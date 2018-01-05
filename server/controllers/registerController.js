@@ -90,15 +90,14 @@ registerController.register = (req, res) => {
 
 registerController.getAreasOfInterest = (req, res) => {
     const userID = req.params.userID
-    console.log('User ID: ' + userID)
     User.findById(userID, function(err, user){
         if(err){
             console.log(err)
         }
-    }).then(user => {
+    }).select('areasOfInterest -_id').then(user => {
+        
         res.status(200).send({
-            message: 'Success',
-            areasOfInterest: user.areasOfInterest.areasOfInterest
+            areasOfInterest: user.areasOfInterest
         })
     })
 
@@ -106,14 +105,14 @@ registerController.getAreasOfInterest = (req, res) => {
 
 registerController.updateAreasOfInterest = (req,res) => {
     
-    const updatedUserInfo = User(req.body)
+    updatedAreasOfInterest = req.body.areasOfInterest
 
     var query = {
-        '_id': updatedUserInfo._id
+        '_id': req.body._id
     }
 
     User.findOneAndUpdate(query, 
-    { $push: { areasOfInterest: updatedUserInfo.areasOfInterest},
+    { $set: { areasOfInterest: updatedAreasOfInterest},
       areasOfInterestRegistrationComplete: true},
       function(err, updated) {
           if(err){

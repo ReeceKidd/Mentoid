@@ -23,7 +23,7 @@ const User = new mongoose.Schema(
     areasOfInterest: [{
       years: Number,
       value: String,
-      id: String,
+      areaOfInterestID: Number,
     }],
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,

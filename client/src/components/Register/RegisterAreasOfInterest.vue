@@ -9,8 +9,6 @@
         <h2 class="text-center">
           Please add your hobbies, skills or interests that you are interested in learning more or helping others with.
         </h2>
-        <h2> Areas on Interest {{ areasOfInterest }} </h2>
-        <h2> Count {{ areasOfInterestCount }} </h2>
       </div>
     </div>
     <br>
@@ -24,22 +22,21 @@
       </div>
       <div class="col-xs-4">
         <div class="hobby-list">
-          <div id="areaOfInterestInput" v-for="(areasOfInterestInput, index) in areasOfInterest" :key="areasOfInterestInput.id">
-            <label :for="areasOfInterestInput.id">
-              <h4>Area of Interest #{{ index }}</h4>
+          <div id="areaOfInterestInput" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+            <label :for="areaOfInterest.areaOfInterestID">
             </label>
-            <input type="text" :id="areasOfInterestInput.id" v-model="areasOfInterestInput.value">
+            <input type="text" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value">
           </div>
         </div>
       </div>
       <div class="col-xs-6">
         <div class="hobby-list">
-          <div id="yearsOfExperience" v-for="(areasOfInterestInput, index) in areasOfInterest" :key="areasOfInterestInput.id">
+          <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
             <label>
               <h4>Years of experience</h4>
             </label>
-            <input type="number" :id="areasOfInterestInput.id" v-model="areasOfInterestInput.years">
-            <button @click="onDeleteAreaOfInterest(areasOfInterestInput.id)" class="btn-danger btn btn-sm">X</button>
+            <input type="number" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years">
+            <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
           </div>
         </div>
       </div>
@@ -61,9 +58,13 @@
   export default {
     data() {
       return {
-        areasOfInterest: [],
-        currentUser: this.$store.state.user.authUser,
-        areasOfInterestCount: 0
+        areasOfInterestCount: 0,
+        areasOfInterest: [{
+          value: 'Yoga',
+          years: 1,
+          areaOfInterestID: 0
+        }],
+        currentUser: this.$store.state.user.authUser
       }
     },
     validations: {
@@ -82,7 +83,7 @@
           areasOfInterest: this.areasOfInterest,
           _id: this.currentUser._id
         }
-        console.log(updateInfo)
+        console.log(updateInfo.areasOfInterest)
         this.$store
           .dispatch('updateAreasOfInterest', {
             updateInfo
@@ -97,23 +98,24 @@
       },
       onAddAreaOfInterest() {
         const newHobby = {
-          id: this.areasOfInterestCount,
           value: '',
-          years: ''
+          years: '',
+          areaOfInterestID: ''
         }
         this.areasOfInterestCount++
         this.areasOfInterest.push(newHobby)
+        this.areasOfInterest[this.areasOfInterest.length - 1].areaOfInterestID = this.areasOfInterestCount
       },
       onDeleteAreaOfInterest(id) {
         this.areasOfInterest = this.areasOfInterest.filter(hobby => hobby.id !== id)
       }
     },
-    beforeMount() {
+    created() {
       const userID = this.$store.state.user.authUser._id
-      const uri = 'http://localhost:4000/get/areas-of-interest/'
-      axios.get(uri + userID).then(res => {
-        this.areasOfInterest = res
-        this.areasOfInterestCount = this.areasOfInterest.size
+      const apiUrl = 'http://localhost:4000/get/areas-of-interest/'
+      var self = this
+      axios.get(apiUrl + userID).then(function (response) {
+        self.areasOfInterest = response.data.areasOfInterest
       })
     }
   }
@@ -150,7 +152,7 @@
     width: 10%;
   }
 
-  #areaOfInterestInput input {
+  #areasOfInterest input {
     width: 50%;
   }
 
