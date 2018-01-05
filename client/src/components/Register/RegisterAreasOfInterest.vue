@@ -27,7 +27,10 @@
             <label :for="areaOfInterest.areaOfInterestID">
               <h4>Area of Interest <b> {{index}}: </b></h4>
             </label>
-            <input type="text" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value">
+            <input 
+            type="text" 
+            :id="areaOfInterest.areaOfInterestID" 
+            v-model="areaOfInterest.value">
           </div>
         </div>
       </div>
@@ -37,8 +40,13 @@
             <label>
               <h4>Years of experience</h4>
             </label>
-            <input type="number" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years">
-            <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
+            <input 
+            type="number" 
+            :id="areaOfInterest.areaOfInterestID" 
+            v-model="areaOfInterest.years">
+            <button 
+            @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" 
+            class="btn-danger btn btn-sm">X</button>
           </div>
         </div>
       </div>
@@ -113,7 +121,7 @@
         this.areasOfInterest[this.areasOfInterest.length - 1].areaOfInterestID = this.areasOfInterestCount
       },
       onDeleteAreaOfInterest(id) {
-        this.areasOfInterest = this.areasOfInterest.filter(hobby => hobby.id !== id)
+        this.areasOfInterest = this.areasOfInterest.filter(areaOfInterest => areaOfInterest.areaOfInterestID !== id)
       }
     },
     created() {
