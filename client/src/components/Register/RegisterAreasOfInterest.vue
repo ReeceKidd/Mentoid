@@ -11,19 +11,21 @@
         </h2>
       </div>
     </div>
+
     <br>
+
     <div class="row text-center">
-      <button @click="onAddAreaOfInterest" class="btn btn-primary btn-xl">Add Interest</button>
+      <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
     </div>
+
     <br>
+
     <div class="row">
-      <div class="col-xs-2">
-        <br>
-      </div>
-      <div class="col-xs-4">
+      <div class="col-xs-6 text-right">
         <div class="hobby-list">
-          <div id="areaOfInterestInput" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+          <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
             <label :for="areaOfInterest.areaOfInterestID">
+              <h4>Area of Interest <b> {{index}}: </b></h4>
             </label>
             <input type="text" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value">
           </div>
@@ -40,10 +42,14 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <button @click="onSubmit"> Submit </button>
-      </div>
     </div>
+    
+    <br>
+
+    <div class="row text-center">
+        <button class="btn btn-lg btn-primary" @click="onSubmit"> Submit </button>
+      </div>
+
   </div>
 </template>
 
@@ -152,8 +158,8 @@
     width: 10%;
   }
 
-  #areasOfInterest input {
-    width: 50%;
+  #areasOfInterestValue input {
+    width: 10%;
   }
 
   .input.inline input {

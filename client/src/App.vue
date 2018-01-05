@@ -30,6 +30,8 @@ export default {
 .main {
   padding-top: 5%;
   padding-bottom: 5%;
- 
+}
+.btn-success {
+  background-color:#228B22
 }
 </style>
