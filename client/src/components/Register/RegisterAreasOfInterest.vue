@@ -64,7 +64,7 @@
 <script>
   import {
     required,
-    minLength
+    alpha
   } from 'vuelidate/lib/validators'
 
   import axios from 'axios'
@@ -83,9 +83,12 @@
     },
     validations: {
       areasOfInterest: {
-        minLength: minLength(1),
         $each: {
           value: {
+            required,
+            alpha
+          },
+          years: {
             required
           }
         }

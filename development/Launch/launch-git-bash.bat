@@ -1,0 +1,3 @@
+cd ..
+start "" "c:\Program Files\Git\git-bash.exe" 
+exit
