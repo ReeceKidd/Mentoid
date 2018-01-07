@@ -22,71 +22,86 @@
 
     <div class="row">
       <div class="col-xs-6 text-right">
-        <div class="hobby-list">
-          <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+        <div class="areasOfInterestList">
+          <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
             <label :for="areaOfInterest.areaOfInterestID">
-              <h4>Area of Interest <b> {{index}}: </b></h4>
+              <h4>Area of Interest
+                <b> {{index}}: </b>
+              </h4>
             </label>
-            <input 
-            type="text" 
-            :id="areaOfInterest.areaOfInterestID" 
-            v-model="areaOfInterest.value">
+            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value">
+            <br>
+            <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage"> You must enter an area of interest. </p>
+            <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage"> Areas of interest can only alphabet characters. </p>
           </div>
         </div>
       </div>
       <div class="col-xs-6">
-        <div class="hobby-list">
-          <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+        <div class="areasOfInterestList">
+          <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
             <label>
               <h4>Years of experience</h4>
             </label>
-            <input 
-            type="number" 
-            :id="areaOfInterest.areaOfInterestID" 
-            v-model="areaOfInterest.years">
-            <button 
-            @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" 
-            class="btn-danger btn btn-sm">X</button>
+            <input type="number" min="0" oninput="validity.valid||(value='')" @blur="$v.areasOfInterest.$each[index].years.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years">
+            <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
+            <br>
+            <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage"> Please enter years of experience in this area. </p>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <div class="row text-center">
+      <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
+    </div>
+
     <br>
 
     <div class="row text-center">
-        <button class="btn btn-lg btn-primary" @click="onSubmit"> Submit </button>
-      </div>
+      <button class="btn btn-lg btn-primary" :disabled="$v.areasOfInterest.$invalid" @click="onSubmit"> Submit </button>
+    </div>
 
   </div>
 </template>
 
 <script>
   import {
-    required,
-    alpha
+    required
   } from 'vuelidate/lib/validators'
 
   import axios from 'axios'
+
+  // TODO Write test code for the regexForAlphabeticAndWhiteSpace validator.
+
+  var regexForAlphabeticAndWhiteSpace = /^[a-zA-Z ]+$/
+
+  function alphaAndWhitespace(input) {
+    if (input.length === 0) {
+      return true
+    }
+    var result = input.match(regexForAlphabeticAndWhiteSpace) ? 'passed' : 'failed'
+    if (result === 'passed') {
+      return true
+    } else {
+      return false
+    }
+  }
 
   export default {
     data() {
       return {
         areasOfInterestCount: 0,
-        areasOfInterest: [{
-          value: 'Yoga',
-          years: 1,
-          areaOfInterestID: 0
-        }],
+        areasOfInterest: [],
         currentUser: this.$store.state.user.authUser
       }
     },
     validations: {
       areasOfInterest: {
+        required,
         $each: {
           value: {
             required,
-            alpha
+            alphaAndWhitespace
           },
           years: {
             required
@@ -183,7 +198,7 @@
     background-color: #eee;
   }
 
-  .input.invalid input {
+  .invalid input {
     border: 1px solid red;
     background-color: #ffc9aa;
   }
