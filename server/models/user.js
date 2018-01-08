@@ -19,12 +19,14 @@ const User = new mongoose.Schema(
     },
     age: Number,
     password: String,
+    confirmPassword: String,
     country: String,
     areasOfInterest: [{
       years: Number,
       value: String,
       areaOfInterestID: Number,
     }],
+    terms: Boolean,
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,
     userRegistrationComplete: Boolean

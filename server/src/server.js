@@ -4,6 +4,8 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   cors = require('cors')
   routes = require('./routes')
+  expressValidator = require('express-validator')
+  expressSession = require('express-session')
 
 // import and use passport Strategy
 passportStrategy = require('../lib/passport')
@@ -24,6 +26,12 @@ const app = express()
 app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(expressValidator())
+app.use(expressSession({
+  secret: 'keyboard cat',
+  resave: 'false',
+  saveUnitialized: true
+}))
 app.use(cors())
 app.use('/', routes);
 

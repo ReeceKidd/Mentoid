@@ -6,14 +6,14 @@
           <p class="error" v-if="errorMessage">{{errorMessage}}</p>
           <div class="input" :class="{invalid: $v.firstName.$error}">
             <label for="firstName">Your First Name*</label>
-            <input id="firstName" @blur="$v.firstName.$touch()" v-model.trim="firstName">
+            <input id="firstName" @blur="$v.firstName.$touch()" v-model.trim="firstName" name="firstName">
             <p class="errorMessage" v-if="!$v.firstName.minLength && $v.firstName.$dirty">Your first name must be two or more characters</p>
             <p class="errorMessage" v-if="!$v.firstName.required && $v.firstName.$dirty">First name field is required</p>
             <p class="errorMessage" v-if="!$v.firstName.alpha && $v.firstName.$dirty">First name can only contain alphabetical characters</p>
           </div>
           <div class="input" :class="{invalid: $v.lastName.$error}">
             <label for="lastName">Your Last Name*</label>
-            <input id="lastName" @blur="$v.lastName.$touch()" v-model.trim="lastName">
+            <input id="lastName" @blur="$v.lastName.$touch()" v-model.trim="lastName" name="lastName">
             <p class="errorMessage" v-if="!$v.lastName.minLength && $v.lastName.$dirty">Your last name must be two or more characters</p>
             <p class="errorMessage" v-if="!$v.lastName.required && $v.lastName.$dirty">Last name field is required</p>
             <p class="errorMessage" v-if="!$v.lastName.alpha && $v.lastName.$dirty">Last name can only contain alphabetical characters</p>
@@ -25,30 +25,30 @@
 
           <div class="input" :class="{invalid: $v.userName.$error}">
             <label for="userName">Your Username*</label>
-            <input id="userName" @focus="$v.userName.$reset" @blur="$v.userName.$touch()" v-model.trim="userName">
+            <input id="userName" @focus="$v.userName.$reset" @blur="$v.userName.$touch()" v-model.trim="userName" name="userName">
             <p class="errorMessage" v-if="!$v.userName.required && $v.userName.$dirty">Username is required.</p>
             <p class="errorMessage" v-if="!$v.userName.unique && $v.userName.$dirty">Username already exists in database</p>
           </div>
           <div class="input" :class="{invalid: $v.email.$error}">
             <label for="email">Email*</label>
-            <input type="email" id="email"  @focus="$v.email.$reset" @blur="$v.email.$touch()" v-model.trim="email">
+            <input type="email" id="email"  @focus="$v.email.$reset" @blur="$v.email.$touch()" v-model.trim="email" name="email">
             <p class="errorMessage" v-if="!$v.email.email && $v.email.$dirty">Please provide a valid email address.</p>
             <p class="errorMessage" v-if="!$v.email.unique && $v.email.$dirty">Email already exists in database</p>
             <p class="errorMessage" v-if="!$v.email.required && $v.email.$dirty">Email is required.</p>
           </div>
           <div class="input">
             <label for="age">Your Age*</label>
-            <input type="number" id="age" v-model.number="age">
+            <input type="number" id="age" v-model.number="age" name="age">
           </div>
           <div class="input" :class="{invalid: $v.password.$error}">
             <label for="password">Password*</label>
-            <input type="password" id="password" @blur="$v.password.$touch()" v-model="password">
+            <input type="password" id="password" @blur="$v.password.$touch()" v-model="password" name="password">
           </div>
           <div class="input" :class="{invalid: $v.confirmPassword.$error}">
             <label for="confirm-password">Confirmation Password*</label>
-            <input type="password" id="confirm-password" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword">
+            <input type="password" id="confirm-password" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword" name="confirmPassword">
           </div>
-          <div class="input">
+          <div class="input" name="country">
             <label for="country">Country*</label>
             <select id="country" v-model="country">
               <option value="usa">USA</option>
@@ -58,7 +58,7 @@
             </select>
           </div>
           <div class="input inline" :class="{invalid: $v.terms.$invalid}">
-            <input type="checkbox" id="terms" @change="$v.terms.$touch()" v-model="terms">
+            <input type="checkbox" id="terms" @change="$v.terms.$touch()" v-model="terms" name="terms">
             <label for="terms">Accept Terms of Use*</label>
           </div>
           <div class="submit text-center">
@@ -150,6 +150,7 @@
           email: this.email,
           age: this.age,
           password: this.password,
+          confirmPassword: this.confirmPassword,
           country: this.country,
           terms: this.terms,
           basicRegistrationComplete: true,
