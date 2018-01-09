@@ -2,5 +2,5 @@
 2) If user is logged in they should not be able to see the login/register page. 
 3) Write test code for the custom validator I created in areas of interest registration.
 4) Add informative messages on disabled buttons to help users. 
-5) https://www.youtube.com/watch?v=hE5zeEiVqpw use this tutorial to validate the input the API is receiving. 
+5) Need to fix the server side validation for the basic registration component. 
 6) Once API validation is complete comment both components where necessary and move on!

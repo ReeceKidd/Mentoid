@@ -29,9 +29,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(expressValidator())
 app.use(expressSession({
   secret: 'keyboard cat',
-  resave: 'false',
+  resave: true,
   saveUnitialized: true
 }))
+
 app.use(cors())
 app.use('/', routes);
 
