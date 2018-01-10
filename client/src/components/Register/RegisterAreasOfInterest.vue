@@ -29,7 +29,7 @@
                 <b> {{index}}: </b>
               </h4>
             </label>
-            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value">
+            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value" name="areaOfInterestValue">
             <br>
             <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage"> You must enter an area of interest. </p>
             <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage"> Areas of interest can only alphabet characters. </p>
@@ -42,7 +42,7 @@
             <label>
               <h4>Years of experience</h4>
             </label>
-            <input type="number" min="0" oninput="validity.valid||(value='')" @blur="$v.areasOfInterest.$each[index].years.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years">
+            <input type="number" min="0" oninput="validity.valid||(value='')" @blur="$v.areasOfInterest.$each[index].years.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
             <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
             <br>
             <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage"> Please enter years of experience in this area. </p>

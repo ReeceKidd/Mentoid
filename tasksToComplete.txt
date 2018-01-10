@@ -3,4 +3,6 @@
 3) Write test code for the custom validator I created in areas of interest registration.
 4) Add informative messages on disabled buttons to help users. 
 5) Need to fix the server side validation for the basic registration component. 
+6) Form components needs to be made mobile responsive. 
 6) Once API validation is complete comment both components where necessary and move on!
+7) Need to complete a test database according to: https://scotch.io/tutorials/test-a-node-restful-api-with-mocha-and-chai, video here if I get stuck: https://www.youtube.com/watch?v=taHNdgnKCg0

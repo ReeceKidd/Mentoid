@@ -1,7 +1,9 @@
 const jwt = require('jsonwebtoken')
 var User = require('../models/User')
 
-const basicRegistrationValidation = require('./validators/basicRegistration.js')
+// Validatiors
+const basicRegistrationValidation = require('./validators/basicRegistrationValidation.js')
+const updateAreasOfInterestValidation = require('./validators/updateAreasOfInterestValidation.js')
 
 const registerController = {}
 
@@ -66,10 +68,11 @@ function notEmpty(array) {
 
 // Register User
 registerController.register = (req, res) => {
-    
+
+    //Validation for basic registration. 
     var errors = basicRegistrationValidation(req)
 
-    if(errors){
+    if (errors) {
         res.status(500).json({
             message: 'User registration unsuccessful',
             errors
@@ -106,12 +109,12 @@ registerController.register = (req, res) => {
 
 registerController.getAreasOfInterest = (req, res) => {
     const userID = req.params.userID
-    User.findById(userID, function(err, user){
-        if(err){
+    User.findById(userID, function (err, user) {
+        if (err) {
             console.log(err)
         }
     }).select('areasOfInterest -_id').then(user => {
-        
+
         res.status(200).send({
             areasOfInterest: user.areasOfInterest
         })
@@ -119,31 +122,48 @@ registerController.getAreasOfInterest = (req, res) => {
 
 }
 
-registerController.updateAreasOfInterest = (req,res) => {
-    
-    updatedAreasOfInterest = req.body.areasOfInterest
+registerController.updateAreasOfInterest = (req, res) => {
 
-    var query = {
-        '_id': req.body._id
+    //Validation 
+    var errors = updateAreasOfInterestValidation(req)
+
+    if (errors) {
+        res.status(500).json({
+            message: 'Unable to update users area of interest',
+            errors
+        })
+    } else {
+
+       var updatedAreasOfInterest = req.body.areasOfInterest
+
+        var query = {
+            '_id': req.body._id
+        }
+
+        User.findOneAndUpdate(query, {
+                $set: {
+                    areasOfInterest: updatedAreasOfInterest
+                },
+                areasOfInterestRegistrationComplete: true
+            },
+            function (err, updated) {
+                if (err) {
+                    res.status(400).send({
+                        message: 'Unable to update areas of interest. Could not find user. '
+                    })
+                } else {
+                    res.status(200).send({
+                        message: 'Updated areas of interest successfully.'
+                    })
+
+                }
+
+            }
+        )
+
     }
 
-    User.findOneAndUpdate(query, 
-    { $set: { areasOfInterest: updatedAreasOfInterest},
-      areasOfInterestRegistrationComplete: true},
-      function(err, updated) {
-          if(err){
-              res.status(400).send({
-                  message: 'Unable to update areas of interest. '
-              })
-          } else {
-              res.status(200).send({
-                message: 'Updated areas of interest.'
-              }, {success: false, erros: req.session.erros})
-              req.session.erros = null
-          }
 
-      }
-    )
 
 }
 

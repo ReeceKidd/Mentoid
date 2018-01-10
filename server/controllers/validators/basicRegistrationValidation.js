@@ -1,4 +1,4 @@
-module.exports = function basicRegistrationFormValidation(req){
+module.exports = function basicRegistrationValidation(req){
     req.check('firstName', 'First name is required for basic registration').exists()
     req.check('firstName', 'First name can only contain Alphabetical characters').isAlpha()
     req.check('firstName', 'First name must be at least two characters long').isLength({min: 2})
@@ -41,7 +41,7 @@ module.exports = function basicRegistrationFormValidation(req){
     req.check('userRegistrationComplete', 'User registration cannot be complete at this stage').equals('false')
     req.check('userRegistrationComplete', 'User registration complete must be a boolean value').isBoolean()
 
-    var errors = req.validationErrors()
+    var errors = req.validationErrors(true)
     
     if(errors){
         return errors

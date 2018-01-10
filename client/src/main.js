@@ -7,6 +7,9 @@ import axios from 'axios'
 import Vuelidate from 'vuelidate'
 import store from './store'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
 import App from './App.vue'
 
 //  Registration Components
@@ -36,6 +39,9 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import NotFound from './components/NotFound.vue'
 
+import locale from 'element-ui/lib/locale/lang/en'
+
+Vue.use(ElementUI, { locale })
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
 Vue.use(Vuelidate)
