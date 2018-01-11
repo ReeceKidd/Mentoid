@@ -1,6 +1,9 @@
 const jwt = require('jsonwebtoken')
 var User = require('../models/User')
 
+//Checks that requests don't receive unwanted properties. 
+const checkFields = require('./validators/checkFields.js')
+
 // Validatiors
 const basicRegistrationValidation = require('./validators/basicRegistrationValidation.js')
 const updateAreasOfInterestValidation = require('./validators/updateAreasOfInterestValidation.js')
@@ -69,6 +72,16 @@ function notEmpty(array) {
 // Register User
 registerController.register = (req, res) => {
 
+    //Checks that only _id and areas of interest are passed in request. 
+    var unwantedField = checkFields.basicRegistration(req)
+
+    if(unwantedField) {
+        res.status(500).json({
+            message: unwantedField
+        })
+        return
+    }
+
     //Validation for basic registration. 
     var errors = basicRegistrationValidation(req)
 
@@ -124,7 +137,17 @@ registerController.getAreasOfInterest = (req, res) => {
 
 registerController.updateAreasOfInterest = (req, res) => {
 
-    //Validation 
+    //Checks that only _id and areas of interest are passed in request. 
+    var unwantedField = checkFields.updateAreasOfInterest(req)
+
+    if(unwantedField) {
+        res.status(500).json({
+            message: unwantedField
+        })
+        return
+    }
+    
+    //Validation for updating areas of interest. 
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
@@ -155,12 +178,9 @@ registerController.updateAreasOfInterest = (req, res) => {
                     res.status(200).send({
                         message: 'Updated areas of interest successfully.'
                     })
-
                 }
-
             }
         )
-
     }
 
 

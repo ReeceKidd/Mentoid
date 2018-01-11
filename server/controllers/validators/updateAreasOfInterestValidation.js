@@ -1,79 +1,124 @@
 module.exports = function updateAreasOfInterestValidation(req) {
 
-    console.log(typeof 1.2)
+    // User ID validation
+
+    /*
+    1) Checks that the user ID exists in the request. 
+    2) Checks that the user ID is equal to a string. 
+    3) Checks that the userID is not an empty string. 
+    */
 
     req.check('_id', 'User ID must be sent with request').exists()
+    req.check('_id', 'UserID must be a string').custom(_id => {
+        if (typeof _id !== 'string') {
+            return false
+        }
+        return true
+    })
+    req.check('_id', 'UserID can not be an empty string').custom(_id => {
+        if (_id == '""') {
+            return false
+        }
+        return true
+    })
 
-    //Areas of interest array validation.
+    // Areas of interest array validation.
+
+    /*
+    1) Checks for the existience of an areasOfInterest array. 
+    2) Checks that the array contains at least one area of interest.
+    3) Checks that each area of interest contains only the fields, value, years, and ID.
+    4) Checks that each area of interest has defined value, years and ID. 
+    */
     req.check('areasOfInterest', 'Areas of interest request is required').exists()
     req.check('areasOfInterest', 'You must have at least one area of interest').custom(areasOfInterest => {
         return areasOfInterest.length > 0
     })
     req.check('areasOfInterest', 'Each element in array must be an area of interest object').custom(areasOfInterest => {
-        for(var x = 0; x < areasOfInterest.length; x++){
-            if(typeof areasOfInterest !== 'object'){
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (typeof areasOfInterest !== 'object') {
                 return false
             }
         }
         return true
     })
+    req.check('areasOfInterest', 'Each area of interest must only contain the fields years, value and id').custom(areasOfInterest => {
+        for (interest in areasOfInterest) {
+            console.log(areasOfInterest)
+            for (property in areasOfInterest[interest]) {
+                console.log(property)
+                if (property !== 'years' && property !== 'value' &&
+                    property !== 'id') {
+                    return false
+                }
+            }
+        }
+        return true
+    })
     req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
-        for(var x = 0; x < areasOfInterest.length; x++){
-            console.log(areasOfInterest[x].value)
-            if(areasOfInterest[x].value === 'undefined'){
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (areasOfInterest[x].value === 'undefined') {
                 return false
             }
-            if(areasOfInterest[x].years === 'undefined'){
+            if (areasOfInterest[x].years === 'undefined') {
                 return false
             }
-            if(areasOfInterest[x].id === 'undefined'){
+            if (areasOfInterest[x].id === 'undefined') {
                 return false
             }
         }
         return true
     })
 
-    //Area of interest object value checks. 
-    req.check('areasOfInterest', 'Each areas of interest value must be defined').custom(areasOfInterest => {
-        for(var x = 0; x < areasOfInterest.length; x++){
-            if(areasOfInterest[x].value === 'undefined'){
+    //Area of interest value field checks.
+
+    /*
+    1) Checks that a value is defined for every area of interest. 
+    2) Checks that the value is a string value. 
+    3) Checks that the value only contains letters and whitespace. 
+    4) Checks that an empty string is not passed. 
+    */
+
+    req.check('areasOfInterest', 'Each area of interest value must be defined').custom(areasOfInterest => {
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (areasOfInterest[x].value === 'undefined') {
                 return false
             }
         }
         return true
     })
     req.check('areasOfInterest', 'Each area of interests value must be a string').custom(areasOfInterest => {
-        if(areasOfInterest.length === 0){
+        if (areasOfInterest.length === 0) {
             return false
         }
-        for(var x = 0; x < areasOfInterest.length; x++){
-            if(typeof areasOfInterest[x].value !== 'string') {
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (typeof areasOfInterest[x].value !== 'string') {
                 return false
             }
         }
         return true
     })
     req.check('areasOfInterest', 'Area of interest values can only contain letters and white space').custom(areasOfInterest => {
-        if(areasOfInterest.length === 0){
+        if (areasOfInterest.length === 0) {
             return false
         }
-        for(var x = 0; x < areasOfInterest.length; x++){
-            if(typeof areasOfInterest[x].value !== 'string'){
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (typeof areasOfInterest[x].value !== 'string') {
                 continue
             }
             var match = areasOfInterest[x].value.match(/^[A-Za-z\s]+$/)
-            if(match === undefined){
+            if (match === undefined) {
                 return false
             }
         }
         return true
     })
     req.check('areasOfInterest', 'Area of interest values can not be empty').custom(areasOfInterest => {
-        if(areasOfInterest.length === 0){
+        if (areasOfInterest.length === 0) {
             return false
         }
-        for(var x = 0; x < areasOfInterest.length; x++){
-            if(areasOfInterest[x].value === ""){
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (areasOfInterest[x].value === "") {
                 return false
             }
         }
@@ -81,27 +126,72 @@ module.exports = function updateAreasOfInterestValidation(req) {
     })
 
     //Area of interest years value. 
-    req.check('areasOfInterest', 'Each areas of interest years value must be defined').custom(areasOfInterest => {
-        for(var x = 0; x < areasOfInterest.length; x++){
-            if(areasOfInterest[x].years === 'undefined'){
+
+    /*
+    1) Checks that the "years" field is defined. 
+    2) Checks that the years field is an integer. 
+
+    Potential furutre checks: 
+    Check that the years of experience is not greater than the user age. 
+    */
+    req.check('areasOfInterest', 'Each areas of interest years field must be defined').custom(areasOfInterest => {
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (areasOfInterest[x].years === 'undefined') {
                 return false
             }
         }
         return true
     })
-    //This one does not work yet work on tommorow. 
+
     req.check('areasOfInterest', 'Each area of interests years field must be an integer').custom(areasOfInterest => {
-        if(areasOfInterest.length === 0){
+        if (areasOfInterest.length === 0) {
             return false
         }
-        for(var x = 0; x < areasOfInterest.length; x++){
+
+        for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
-            if(typeof !areasOfInterest[x].years === 'number' && !(areasOfInterest%1)=== 0) {
+            if (areasOfInterest[x].years !== parseInt(areasOfInterest[x].years)) {
                 return false
             }
         }
         return true
     })
+
+    //Area of Interest ID field
+
+    /*
+    1) Checks the area of interest ID field is defined. 
+    2) Checks the area of interest ID field is an integer. 
+    */
+
+    req.check('areasOfInterest', 'Each areas of interest ID field must be defined').custom(areasOfInterest => {
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            if (areasOfInterest[x].id === 'undefined') {
+                return false
+            }
+        }
+        return true
+    })
+
+    req.check('areasOfInterest', 'Each area of interests ID field must be an integer').custom(areasOfInterest => {
+        if (areasOfInterest.length === 0) {
+            return false
+        }
+
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            // https://jsperf.com/numbers-and-integers
+            if (areasOfInterest[x].id !== parseInt(areasOfInterest[x].id)) {
+                return false
+            }
+        }
+        return true
+    })
+
+    //Duplication checks
+
+    /*
+    1) Checks that the areas of interest "value" fields aren't the same. 
+    */
 
     var errors = req.validationErrors(true)
 
