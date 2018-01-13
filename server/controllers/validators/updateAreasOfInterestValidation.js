@@ -187,12 +187,6 @@ module.exports = function updateAreasOfInterestValidation(req) {
         return true
     })
 
-    //Duplication checks
-
-    /*
-    1) Checks that the areas of interest "value" fields aren't the same. 
-    */
-
     var errors = req.validationErrors(true)
 
     if (errors) {

@@ -1,26 +1,46 @@
-var express = require('express'),
-  passport = require('passport'),
-  path = require('path'),
-  bodyParser = require('body-parser'),
-  cors = require('cors')
-  routes = require('./routes')
-  expressValidator = require('express-validator')
-  expressSession = require('express-session')
+let express = require('express')
+let passport = require('passport')
+let path = require('path')
+let bodyParser = require('body-parser')
+let cors = require('cors')
+let routes = require('./routes')
+let expressValidator = require('express-validator')
+let expressSession = require('express-session')
+// Need to mpn install the config module and use it to determine the enivornment. 
 
 // import and use passport Strategy
-passportStrategy = require('../lib/passport')
+let passportStrategy = require('../lib/passport')
 passport.use(passportStrategy)
 
-const { mongoose } = require('../config/DB.js')
+const defaultConfiguration = "mongodb://localhost:27017/mentoid"
+const testConfiguration = "mongodb://localhost:27017/test-mentoid"
 
-mongoose.connect('mongodb://localhost:27017/mentoid').then(
+const mongoose = require('mongoose')
+const bluebird = require('bluebird');
+mongoose.Promise = bluebird;
+
+const mode = process.env.NODE_ENV
+console.log(mode)
+
+if(process.env.NODE_ENV === 'test'){
+  mongoose.connect(testConfiguration).then(
   () => {
-    console.log('Database is connected')
+    console.log('Connected to test database.')
   },
   err => {
     console.log('Can not connect to the database' + err)
   }
 )
+} else {
+  mongoose.connect(defaultConfiguration).then(
+    () => {
+      console.log('Connected to development database.')
+    },
+    err => {
+      console.log('Can not connect to the database' + err)
+    }
+  )
+}
 
 const app = express()
 app.use(express.static('public'))

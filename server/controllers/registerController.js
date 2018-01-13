@@ -4,6 +4,9 @@ var User = require('../models/User')
 //Checks that requests don't receive unwanted properties. 
 const checkFields = require('./validators/checkFields.js')
 
+//Checks for duplication of values in array.
+const duplicationChecker = require('./validators/duplicationChecks.js')
+
 // Validatiors
 const basicRegistrationValidation = require('./validators/basicRegistrationValidation.js')
 const updateAreasOfInterestValidation = require('./validators/updateAreasOfInterestValidation.js')
@@ -143,6 +146,17 @@ registerController.updateAreasOfInterest = (req, res) => {
     if(unwantedField) {
         res.status(500).json({
             message: unwantedField
+        })
+        return
+    }
+
+    //Checks that there are no duplicate values for the areas of interest
+
+    var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
+
+    if(duplicatedAreaOfInterestValues){
+        res.status(500).json({
+            message: 'Please do not enter the same area of interest more than once. '
         })
         return
     }

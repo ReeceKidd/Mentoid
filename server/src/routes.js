@@ -2,9 +2,15 @@ var express = require('express')
 
 const routes = express();
 
+//Admin Routes
+
 //Controller imports
+const adminController = require('../controllers/adminController.js')
 const registerController = require('../controllers/registerController.js')
 const loginController = require('../controllers/loginController.js')
+
+//Admin routes
+routes.get('/admin/get-users', adminController.getUsers)
 
 //Register Routes
 routes.post('/register', registerController.register)

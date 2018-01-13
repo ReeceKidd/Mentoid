@@ -22,7 +22,8 @@ import Success from './components/Success.vue'
 import SECRET from './components/SECRET.vue'
 import Content from './components/Learn/Content.vue'
 import Create from './components/Learn/Create.vue'
-import Paths from './components/Learn/Paths.vue'
+import PathsHome from './components/Learn/Paths/PathsHome.vue'
+import PathsSubSection from './components/Learn/Paths/PathsSubSection.vue'
 import ManageRelationships from './components/Mentoring/ManageRelationships.vue'
 import MatchingHome from './components/Mentoring/Matching/MatchingHome.vue'
 import MatchingMentorList from './components/Mentoring/Matching/MentorList.vue'
@@ -33,15 +34,14 @@ import EditProfile from './components/Profile/EditProfile.vue'
 import Leaderboards from './components/Profile/Leaderboards.vue'
 import Metrics from './components/Profile/Metrics.vue'
 import ViewProfile from './components/Profile/ViewProfile.vue'
+import SocialHome from './components/Social/SocialHome.vue'
 import Feed from './components/Social/Feed.vue'
 import Post from './components/Social/Post.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import NotFound from './components/NotFound.vue'
 
-import locale from 'element-ui/lib/locale/lang/en'
-
-Vue.use(ElementUI, { locale })
+Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
 Vue.use(Vuelidate)
@@ -94,7 +94,12 @@ const routes = [
   {
     path: '/learn/paths',
     name: 'paths',
-    component: Paths
+    component: PathsHome
+  },
+  {
+    path: '/learn/paths/paths-sub-section',
+    name: 'paths-sub-section',
+    component: PathsSubSection
   },
   {
     path: '/mentoring/manage-relationships',
@@ -145,6 +150,11 @@ const routes = [
     path: '/profile/view-profile',
     name: 'view-profile',
     component: ViewProfile
+  },
+  {
+    path: '/social/home',
+    name: 'social',
+    component: SocialHome
   },
   {
     path: '/social/feed',

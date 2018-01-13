@@ -27,4 +27,6 @@ checkFields.updateAreasOfInterest = function (req) {
     }
 }
 
+
+
 module.exports = checkFields

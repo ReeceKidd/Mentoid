@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/nodemon/bin/nodemon.js src/server.js --exec",
+    "start": "SET NODE_ENV=dev && node node_modules/nodemon/bin/nodemon.js src/server.js --exec",
     "dev": "nodemon src/server.js",
     "lint": "node node_modules/.bin/eslint --fix **.*.js",
-    "test": "mocha --timeout 10000"
+    "test": "SET NODE_ENV=test && mocha --timeout 10000"
   },
   "keywords": [],
   "author": "",
