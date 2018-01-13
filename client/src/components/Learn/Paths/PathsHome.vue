@@ -1,25 +1,10 @@
 <template>
   <div>
     <el-row>
-      <el-col :span="7">
-        <el-button> My Interests </el-button>
-      </el-col>
-      <el-col :span="10">
-        <p> Search for path </p>
-        <el-button> Search </el-button>
-      </el-col>
-      <el-col :span="7">
-        <el-button> Create Path </el-button>
-      </el-col>
-    </el-row>
-
-    <el-row>
       <el-col :span="24">
-        <h1> Paths </h1>
+        <h1 class="text-center"> PATHS </h1>
       </el-col>
     </el-row>
-
-    <br>
 
     <el-row>
       <el-col :span="18" :offset="3">
@@ -30,19 +15,34 @@
 
     <br>
 
-    <el-row>
-      <el-col :span="24">
-        <p> ----- </p>
+    <el-row class="text-center">
+      <el-col :span="7">
+        <br>
+      </el-col>
+      <el-col :span="10">
+        <div class="input-group">
+      <input type="text" class="form-control" placeholder="Find a path perfect for you...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+      </el-col>
+      <el-col :span="7">
+        <el-button> Create Path </el-button>
       </el-col>
     </el-row>
 
-    <el-row>
+    <br>
+
+    <el-row class="text-center">
       <el-col :span="18" :offset="3">
         <h2> Your Interests </h2>
       </el-col>
     </el-row>
 
-    <el-row>
+    <br>
+
+    <el-row class="text-center">
       <el-col :span="6" v-for="(areaOfInterest, index) in topAreasOfInterest" :key="areaOfInterest">
         {{ areaOfInterest }}
       </el-col>

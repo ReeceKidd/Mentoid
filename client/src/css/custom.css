@@ -74,6 +74,7 @@ h1,
 @media only screen and (max-width: 766px) {
     .collapsing,
     .in {
+        width: 100%;
         background-color: #ffffff;
     }
 }
@@ -350,26 +351,9 @@ a {
     border-bottom-left-radius: 0;
 }
 
-input.form-control.input-lg {
-    line-height: 30px;
-    font-size: 14px;
-    margin: 5px 2px;
-    height: 38px;
-}
-
 button.btn.btn-info.btn-lg {
     height: 38px;
     line-height: 20px;
-}
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-    width: 77%;
-    float: left;
-}
-
-.footer-logo img {
-    width: 250px;
 }
 
 .footer-icons a {
@@ -380,10 +364,6 @@ button.btn.btn-info.btn-lg {
 
 .footer-links a:hover {
     color: #C8E8FC;
-}
-
-.search-input {
-    margin-left: -2px;
 }
 
 a.facebook:hover {
@@ -403,46 +383,7 @@ img.main-logo {
     margin-top: 2px;
 }
 
-@media screen and (max-width: 1200px) {
-    .searchbar {
-        max-width: 360px;
-        line-height: 30px;
-        padding-left: 10px;
-    }
-    .navbar-default .navbar-collapse,
-    .navbar-default .navbar-form {
-        width: 72%;
-        float: left;
-    }
-    .nav>li>a {
-        font-size: 1.3rem;
-        padding: 14px 9px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    h1.latest-articles {
-        display: block;
-        margin-top: 60px;
-    }
-    .nav>li>a {
-        padding: 15px 7px;
-    }
-    .navbar-default .navbar-collapse,
-    .navbar-default .navbar-form {
-        float: left;
-        width: auto;
-    }
-}
-
 @media screen and (max-width: 767px) {
-    .searchbar {
-        max-width: 100%;
-        float: left;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-left: 0;
-    }
     .main-logo {
         display: none;
     }
