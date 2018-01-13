@@ -27,10 +27,25 @@ export default {
 </script>
 
 <style>
+
 .main {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
+@media (max-width: 978px) {
+    .main {
+      padding-top: 10%;
+    }
+}
+
+@media (max-width:767px) {
+   .main {
+      padding-top: 15%
+   }
+}
+
+
 .btn-success {
   background-color:#228B22
 }

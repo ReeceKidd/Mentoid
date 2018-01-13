@@ -1,8 +1,8 @@
 <template>
 
   <body>
+    <div class="container-fluid">
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -98,9 +98,8 @@
           </ul>
           <!-- /.navbar-collapse -->
         </div>
-      </div>
-      <!-- /.container-fluid -->
     </nav>
+    </div>
   </body>
 </template>
 
@@ -119,7 +118,4 @@
 
 
 <style scoped>
-#collapse navbar-collapse {
-  color: red;
-}
 </style>
