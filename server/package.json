@@ -2,12 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "SET NODE_ENV=dev && node node_modules/nodemon/bin/nodemon.js src/server.js --exec",
-    "dev": "nodemon src/server.js",
-    "lint": "node node_modules/.bin/eslint --fix **.*.js",
-    "test": "SET NODE_ENV=test && mocha --timeout 10000"
+    "start": "node node_modules/nodemon/bin/nodemon.js src/app.js --exec",
+    "dev": "nodemon src/app.js",
+    "lint": "node node_modules/.bin/eslint --fix **.*.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +15,7 @@
     "bluebird": "*",
     "body-parser": "*",
     "connect-flash": "*",
+    "config": "*",
     "cookie-parser": "^1.4.1",
     "cors": "^2.8.4",
     "eslint": "^4.11.0",
@@ -28,6 +27,7 @@
     "jsonwebtoken": "^8.1.0",
     "mongodb": "*",
     "mongoose": "^4.10.8",
+    "morgan": "^1.9.0",
     "nodemon": "^1.12.1",
     "passport": "*",
     "passport-http": "*",
@@ -35,8 +35,8 @@
     "passport-local": "*"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-http": "^2.0.1",
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
     "mocha": "^2.4.5"
   }
 }

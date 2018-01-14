@@ -9,3 +9,4 @@
 8) Make sure the front end vue is also displays any error messages returned by the server. 
 9) Need to test the checkFields method and API in general for the registration. 
 10) Complete the duplication.js Validation method changing the names and getting the method to work correctly. 
+11) Need to figure out why it won't ever connect to test database. 

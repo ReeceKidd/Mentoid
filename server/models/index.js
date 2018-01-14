@@ -1,5 +1,5 @@
-import User from './user';
+var user = require('./user.js')
 
-export default {
-    User
-};
+module.exports = {
+    User: user
+}

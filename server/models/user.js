@@ -1,7 +1,13 @@
 var mongoose = require('mongoose')
+var Schema = mongoose.Schema;
+
+//This solves an issue about not being able to overwrite the schema for tests. 
+mongoose.models = {}
+mongoose.modelSchemas = {}
+
 var bcrypt = require('bcryptjs')
 
-const User = new mongoose.Schema(
+const User = new Schema(
   {
     firstName: {
       type: String

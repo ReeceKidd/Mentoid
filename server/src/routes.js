@@ -2,8 +2,6 @@ var express = require('express')
 
 const routes = express();
 
-//Admin Routes
-
 //Controller imports
 const adminController = require('../controllers/adminController.js')
 const registerController = require('../controllers/registerController.js')
