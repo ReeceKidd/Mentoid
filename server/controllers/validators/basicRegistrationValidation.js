@@ -33,7 +33,8 @@ module.exports = function basicRegistrationValidation(req){
     req.check('terms', 'The terms must be accepted to register').equals('true').isBoolean()
 
     // This ensures users cannot overwrite areas of interest at this time. 
-    req.check('areasOfInterest', 'Areas of interest must be an empty array during basic registration').not().exists()
+    req.check('areasOfInterest', 'Areas of interest array is required for basic registration').exists()
+    req.check('areasOfInterest', 'Areas of interest array must not contain any values during registration').isLength({max: 0})
     
     req.check('areasOfInterestRegistrationComplete', 'Areas of interest registration can not be complete at this stage').equals('false')
     req.check('areasOfInterestRegistrationComplete', 'areasOfInterestRegistrationComplete must be a boolean value').isBoolean()

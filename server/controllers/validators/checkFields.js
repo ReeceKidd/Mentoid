@@ -12,7 +12,10 @@ checkFields.basicRegistration = function (req) {
     for (property in req.body) {
         if (property !== 'firstName' && property !== 'lastName' &&
             property !== 'userName' && property !== 'email' && property !== 'password' &&
-            property !== 'areasOfInterestRegistrationComplete' && property !== 'userRegistrationComplete') {
+            property !== 'age' && property !== 'confirmPassword' && property !== 'country' && 
+            property !== 'terms' && property !== 'areasOfInterestRegistrationComplete' && 
+            property !== 'userRegistrationComplete' && property !== 'basicRegistrationComplete' &&
+            property !== '_id' && property !== 'areasOfInterest') {
             return 'Request contained unsupported field: ' + property
         }
     }

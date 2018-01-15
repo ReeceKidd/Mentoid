@@ -68,19 +68,16 @@ registerController.checkEmail = (req, res) => {
     })
 }
 
-function notEmpty(array) {
-    return array.length > 0
-}
-
 // Register User
 registerController.register = (req, res) => {
 
-    //Checks that only _id and areas of interest are passed in request. 
+    //Checks that fields only defined in the schema are passed. 
     var unwantedField = checkFields.basicRegistration(req)
 
     if(unwantedField) {
         res.status(500).json({
-            message: unwantedField
+            message: unwantedField,
+            error: 'Additional fields found'
         })
         return
     }
@@ -91,7 +88,7 @@ registerController.register = (req, res) => {
     if (errors) {
         res.status(500).json({
             message: 'User registration unsuccessful',
-            errors
+            error: 'Validation failure'
         })
     } else {
         try {

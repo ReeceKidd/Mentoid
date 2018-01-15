@@ -28,9 +28,6 @@ mongoose.connect(config.mongoURI[app.settings.env], function(err, res) {
   }
 })
 
-console.log(mongoose.connection.collection.name)
-
-
 app.use(express.static('public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -44,4 +41,6 @@ const port = process.env.PORT || 4000
 const server = app.listen(port, function() {
   console.log('Listening on port ' + port)
 })
+
+module.exports = app // This is for testing.
 
