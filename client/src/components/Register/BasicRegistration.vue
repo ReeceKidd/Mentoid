@@ -1,8 +1,9 @@
 <template>
-  <div class="container">
-    <div id="signup">
+  <div class="container-fluid">
       <div class="signup-form">
-        <form @submit.prevent="onSubmit()">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+            <form @submit.prevent="onSubmit()">
           <p class="error" v-if="errorMessage">{{errorMessage}}</p>
           <div class="input" :class="{invalid: $v.firstName.$error}">
             <label for="firstName">Your First Name*</label>
@@ -51,10 +52,10 @@
           <div class="input" name="country">
             <label for="country">Country*</label>
             <select id="country" v-model="country">
-              <option value="usa">USA</option>
-              <option value="india">India</option>
-              <option value="uk">UK</option>
-              <option value="germany">Germany</option>
+              <option value="USA">USA</option>
+              <option value="India">India</option>
+              <option value="UK">UK</option>
+              <option value="Germany">Germany</option>
             </select>
           </div>
           <div class="input inline" :class="{invalid: $v.terms.$invalid}">
@@ -65,9 +66,10 @@
             <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Next</button>
           </div>
         </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -91,7 +93,8 @@
         age: null,
         password: '',
         confirmPassword: '',
-        country: 'usa',
+        areasOfInterest: [],
+        country: '',
         terms: false,
         errorMessage: null,
         currentUser: ''
@@ -153,6 +156,7 @@
           confirmPassword: this.confirmPassword,
           country: this.country,
           terms: this.terms,
+          areasOfInterest: this.areasOfInterest,
           basicRegistrationComplete: true,
           areasOfInterestRegistrationComplete: false,
           userRegistrationComplete: false
@@ -175,15 +179,7 @@
 </script>
 
 <style scoped>
-  .signup-form {
-    width: 400px;
-    margin: 30px auto;
-    border: 1px solid #eee;
-    padding: 20px;
-    box-shadow: 0 2px 3px #ccc;
-  }
-
-  .input {
+.input {
     margin: 10px auto;
   }
 

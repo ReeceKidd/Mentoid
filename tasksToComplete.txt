@@ -1,3 +1,5 @@
+// Backlog of tasks
+
 1) Work out how to update the hobbyInputs/Areas of interest for a user. 
 2) If user is logged in they should not be able to see the login/register page. 
 3) Write test code for the custom validator I created in areas of interest registration.
@@ -10,3 +12,14 @@
 9) Need to test the checkFields method and API in general for the registration. 
 10) Complete the duplication.js Validation method changing the names and getting the method to work correctly. 
 11) Need to figure out why it won't ever connect to test database. 
+
+// Tasks for the 18th/01/2018
+
+Before moving on make sure that the registration process is complete. 
+This means that I need to reduce the amount of for loop iterations used by setting a custom message. 
+Making sure all the checks actually make sense. 
+The front end console should log the relevant messages. 
+Complete test code for the basic registation and for the add areas of interest. 
+Make sure both sections are mobile responsive. 
+Also need to make sure the input is title case for the areas of interest, this should be done on the server side. 
+If this is completed begin work on the paths section. 

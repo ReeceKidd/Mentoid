@@ -3,6 +3,7 @@ var User = require('../models/User')
 
 const adminController = {}
 
+// Returns a list of all users
 adminController.getUsers = (req, res) => {
     User.find({}, function(err, users){
         if(err){

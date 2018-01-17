@@ -74,7 +74,7 @@ registerController.register = (req, res) => {
     //Checks that fields only defined in the schema are passed. 
     var unwantedField = checkFields.basicRegistration(req)
 
-    if(unwantedField) {
+    if (unwantedField) {
         res.status(500).json({
             message: unwantedField,
             error: 'Additional fields found'
@@ -91,12 +91,12 @@ registerController.register = (req, res) => {
             error: 'Validation failure'
         })
     } else {
+
         try {
             const newUser = new User(req.body)
             newUser
                 .save()
                 .then(user => {
-                    // Fields not to be returned. 
                     user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
                     const token = asyncIssue(user.toObject()).then(token => {
                         res.status(200).send({
@@ -138,9 +138,9 @@ registerController.getAreasOfInterest = (req, res) => {
 registerController.updateAreasOfInterest = (req, res) => {
 
     //Checks that only _id and areas of interest are passed in request. 
-    var unwantedField = checkFields.updateAreasOfInterest(req)
+    var unwantedField = checkFields.updateAreasOfInterest(req.body)
 
-    if(unwantedField) {
+    if (unwantedField) {
         res.status(500).json({
             message: unwantedField
         })
@@ -151,13 +151,13 @@ registerController.updateAreasOfInterest = (req, res) => {
 
     var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
 
-    if(duplicatedAreaOfInterestValues){
+    if (duplicatedAreaOfInterestValues) {
         res.status(500).json({
             message: 'Please do not enter the same area of interest more than once. '
         })
         return
     }
-    
+
     //Validation for updating areas of interest. 
     var errors = updateAreasOfInterestValidation(req)
 
@@ -166,9 +166,17 @@ registerController.updateAreasOfInterest = (req, res) => {
             message: 'Unable to update users area of interest',
             errors
         })
+        return
     } else {
-
-       var updatedAreasOfInterest = req.body.areasOfInterest
+        
+        var updatedAreasOfInterest = req.body.areasOfInterest
+        // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
+        for (var x = 0; x < updatedAreasOfInterest.length; x++) {
+            updatedAreasOfInterest[x].numberOfLikes = 0
+            updatedAreasOfInterest[x].numberOfLinksClicked = 0
+            updatedAreasOfInterest[x].articlesRead = 0
+            updatedAreasOfInterest[x].videosWatched = 0
+        }
 
         var query = {
             '_id': req.body._id

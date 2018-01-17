@@ -131,7 +131,7 @@
       onAddAreaOfInterest() {
         const newHobby = {
           value: '',
-          years: '',
+          years: 0,
           areaOfInterestID: ''
         }
         this.areasOfInterestCount++

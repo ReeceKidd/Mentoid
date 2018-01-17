@@ -23,7 +23,7 @@ checkFields.basicRegistration = function (req) {
 
 //Checks that the update areas of interest request has only to properties an '_id' and 'areas of interest. 
 checkFields.updateAreasOfInterest = function (req) {
-    for (property in req.body) {
+    for (property in req) {
         if (property !== '_id' && property !== 'areasOfInterest') {
             return 'Request contained unsupported field: ' + property
         }

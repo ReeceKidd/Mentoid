@@ -1,5 +1,4 @@
 module.exports = function updateAreasOfInterestValidation(req) {
-
     // User ID validation
 
     /*
@@ -35,26 +34,15 @@ module.exports = function updateAreasOfInterestValidation(req) {
         return areasOfInterest.length > 0
     })
     req.check('areasOfInterest', 'Each element in array must be an area of interest object').custom(areasOfInterest => {
+        
         for (var x = 0; x < areasOfInterest.length; x++) {
-            if (typeof areasOfInterest !== 'object') {
+            if (typeof areasOfInterest[x] !== 'object') {
                 return false
             }
         }
         return true
     })
-    req.check('areasOfInterest', 'Each area of interest must only contain the fields years, value and id').custom(areasOfInterest => {
-        for (interest in areasOfInterest) {
-            console.log(areasOfInterest)
-            for (property in areasOfInterest[interest]) {
-                console.log(property)
-                if (property !== 'years' && property !== 'value' &&
-                    property !== 'id') {
-                    return false
-                }
-            }
-        }
-        return true
-    })
+    
     req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
             if (areasOfInterest[x].value === 'undefined') {
@@ -63,7 +51,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
             if (areasOfInterest[x].years === 'undefined') {
                 return false
             }
-            if (areasOfInterest[x].id === 'undefined') {
+            if (areasOfInterest[x].areaOfInterestID === 'undefined') {
                 return false
             }
         }
@@ -150,7 +138,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
 
         for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
-            if (areasOfInterest[x].years !== parseInt(areasOfInterest[x].years)) {
+            if (areasOfInterest[x].years === parseInt(areasOfInterest[x].years)) {
                 return false
             }
         }
@@ -166,7 +154,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
 
     req.check('areasOfInterest', 'Each areas of interest ID field must be defined').custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
-            if (areasOfInterest[x].id === 'undefined') {
+            if (areasOfInterest[x].areaOfInterestID === 'undefined') {
                 return false
             }
         }
@@ -180,7 +168,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
 
         for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
-            if (areasOfInterest[x].id !== parseInt(areasOfInterest[x].id)) {
+            if (areasOfInterest[x].areaOfInterestID !== parseInt(areasOfInterest[x].areaOfInterestID)) {
                 return false
             }
         }

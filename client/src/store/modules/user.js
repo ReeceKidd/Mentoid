@@ -56,6 +56,7 @@ export const actions = {
     })
       .then(res => {
         console.log(res)
+        console.log('Success')
       })
       .catch(error => {
         console.log(error)
