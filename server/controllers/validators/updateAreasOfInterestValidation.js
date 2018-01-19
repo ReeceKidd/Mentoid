@@ -135,10 +135,10 @@ module.exports = function updateAreasOfInterestValidation(req) {
         if (areasOfInterest.length === 0) {
             return false
         }
-
         for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
-            if (areasOfInterest[x].years === parseInt(areasOfInterest[x].years)) {
+            if (typeof areasOfInterest[x].years!=='number' || (areasOfInterest[x].years%1)!==0) {
+                console.log(typeof areasOfInterest[x].years)
                 return false
             }
         }

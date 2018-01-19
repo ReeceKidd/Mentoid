@@ -75,7 +75,7 @@ registerController.register = (req, res) => {
     var unwantedField = checkFields.basicRegistration(req)
 
     if (unwantedField) {
-        res.status(500).json({
+        res.status(700).json({
             message: unwantedField,
             error: 'Additional fields found'
         })
@@ -84,17 +84,23 @@ registerController.register = (req, res) => {
 
     //Validation for basic registration. 
     var errors = basicRegistrationValidation(req)
-
     if (errors) {
-        res.status(500).json({
-            message: 'User registration unsuccessful',
+        res.status(600).json({
+            message: errors,
             error: 'Validation failure'
         })
-    } else {
 
+    } else {
         try {
-            const newUser = new User(req.body)
-            newUser
+            const newUser = req.body
+            newUser.areasOfInterest = []
+            newUser.mentors = []
+            newUser.mentees = []
+            newUser.basicRegistrationComplete = true
+            newUser.areasOfInterestRegistrationComplete = false
+            newUser.userRegistrationComplete = false
+            const saveUser = new User(newUser)
+            saveUser
                 .save()
                 .then(user => {
                     user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
@@ -107,8 +113,10 @@ registerController.register = (req, res) => {
                     })
                 })
                 .catch(err => {
+                    console.log(err)
                     res.status(400).send({
-                        message: err.message ? err.message : 'Unable to save user to database'
+                        message: err.message ? err.message : 'Unable to save user to database',
+                        error: 'Unable to save user.'
                     })
                 })
         } catch (err) {
@@ -137,6 +145,8 @@ registerController.getAreasOfInterest = (req, res) => {
 
 registerController.updateAreasOfInterest = (req, res) => {
 
+    console.log(req.body)
+
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkFields.updateAreasOfInterest(req.body)
 
@@ -157,18 +167,19 @@ registerController.updateAreasOfInterest = (req, res) => {
         })
         return
     }
-
+    
+      
     //Validation for updating areas of interest. 
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
+        console.log(errors)
         res.status(500).json({
             message: 'Unable to update users area of interest',
             errors
         })
         return
     } else {
-        
         var updatedAreasOfInterest = req.body.areasOfInterest
         // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
         for (var x = 0; x < updatedAreasOfInterest.length; x++) {

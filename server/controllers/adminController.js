@@ -14,4 +14,17 @@ adminController.getUsers = (req, res) => {
     })
 }
 
+/*
+The getAnyUserID route is needed for testing purposes. 
+*/
+adminController.getAnyUserID = (req, res) => {
+    var query = User.findOne({}).select('_id')
+    query.exec(function (err, userID){
+        if(err) return err
+        else {
+            res.send(userID)
+        }
+    })
+}
+
 module.exports = adminController

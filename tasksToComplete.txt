@@ -23,3 +23,5 @@ Complete test code for the basic registation and for the add areas of interest.
 Make sure both sections are mobile responsive. 
 Also need to make sure the input is title case for the areas of interest, this should be done on the server side. 
 If this is completed begin work on the paths section. 
+The problem is that the years is being converted to a string for some reason before it is sent, need to figure out 
+why. 

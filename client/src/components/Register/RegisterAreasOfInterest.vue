@@ -66,7 +66,8 @@
 
 <script>
   import {
-    required
+    required,
+    numeric
   } from 'vuelidate/lib/validators'
 
   import axios from 'axios'
@@ -104,7 +105,8 @@
             alphaAndWhitespace
           },
           years: {
-            required
+            required,
+            numeric
           }
         }
       }
@@ -115,7 +117,6 @@
           areasOfInterest: this.areasOfInterest,
           _id: this.currentUser._id
         }
-        console.log(updateInfo.areasOfInterest)
         this.$store
           .dispatch('updateAreasOfInterest', {
             updateInfo

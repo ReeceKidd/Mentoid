@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
             <form @submit.prevent="onSubmit()">
-          <p class="error" v-if="errorMessage">{{errorMessage}}</p>
+          <p class="error" v-if="errorMessage !== ''">{{errorMessage}}</p>
           <div class="input" :class="{invalid: $v.firstName.$error}">
             <label for="firstName">Your First Name*</label>
             <input id="firstName" @blur="$v.firstName.$touch()" v-model.trim="firstName" name="firstName">
@@ -155,13 +155,8 @@
           password: this.password,
           confirmPassword: this.confirmPassword,
           country: this.country,
-          terms: this.terms,
-          areasOfInterest: this.areasOfInterest,
-          basicRegistrationComplete: true,
-          areasOfInterestRegistrationComplete: false,
-          userRegistrationComplete: false
+          terms: this.terms
         }
-        console.log(userData)
         this.$store
           .dispatch('register', {
             userData
