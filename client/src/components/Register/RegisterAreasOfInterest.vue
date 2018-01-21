@@ -121,7 +121,8 @@
       onSubmit() {
         var updateInfo = {
           areasOfInterest: this.areasOfInterest,
-          _id: this.currentUser._id
+          _id: this.currentUser._id,
+          age: this.age
         }
         // Parses the years input as the html validates it and converts it to a string.
         for (var x = 0; x < updateInfo.areasOfInterest.length; x++) {

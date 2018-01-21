@@ -37,9 +37,12 @@
             <p class="errorMessage" v-if="!$v.email.unique && $v.email.$dirty">Email already exists in database</p>
             <p class="errorMessage" v-if="!$v.email.required && $v.email.$dirty">Email is required.</p>
           </div>
-          <div class="input">
+          <div class="input" :class="{invalid: $v.age.$error}">
             <label for="age">Your Age*</label>
-            <input type="number" id="age" v-model.number="age" name="age">
+            <input type="number" id="age" v-model.number="age" name="age" @focus="$v.age.$reset" @blur="$v.age.$touch()" v-model.trim="age">
+            <p class="errorMessage" v-if="!$v.age.required && $v.age.$dirty">Age is required.</p>
+            <p class="errorMessage" v-if="!$v.age.minValue && $v.age.$dirty">You must be 16 years and older to use Mentoid.</p>
+            <p class="errorMessage" v-if="!$v.age.maxValue && $v.age.$dirty">You must be younge than 120 to use Mentoid.</p>
           </div>
           <div class="input" :class="{invalid: $v.password.$error}">
             <label for="password">Password*</label>
@@ -78,7 +81,9 @@
     email,
     minLength,
     sameAs,
-    alpha
+    alpha,
+    minValue,
+    maxValue
   } from 'vuelidate/lib/validators'
 
   import axios from 'axios'
@@ -90,7 +95,7 @@
         lastName: '',
         userName: '',
         email: '',
-        age: null,
+        age: '',
         password: '',
         confirmPassword: '',
         areasOfInterest: [],
@@ -124,6 +129,11 @@
       },
       terms: {
         required
+      },
+      age: {
+        required,
+        minValue: minValue(16),
+        maxValue: maxValue(120)
       },
       userName: {
         required,

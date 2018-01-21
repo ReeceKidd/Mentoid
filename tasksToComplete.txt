@@ -1,10 +1,8 @@
 // Backlog of tasks
 
-1) Work out how to update the hobbyInputs/Areas of interest for a user. 
 2) If user is logged in they should not be able to see the login/register page. 
 3) Write test code for the custom validator I created in areas of interest registration.
 4) Add informative messages on disabled buttons to help users. 
-5) Need to fix the server side validation for the basic registration component. 
 6) Form components needs to be made mobile responsive. 
 6) Once API validation is complete comment both components where necessary and move on!
 7) Fix the express validation depreciated method. 
@@ -16,9 +14,9 @@
 
 Before moving on make sure that the registration process is complete. 
 This means that I need to reduce the amount of for loop iterations used by setting a custom message. 
-Making sure all the checks actually make sense. 
 The front end console should log the relevant messages. 
 Complete test code for the basic registation and for the add areas of interest. 
 Make sure both sections are mobile responsive. 
 Also need to make sure the input is title case for the areas of interest, this should be done on the server side. 
 If this is completed begin work on the paths section. 
+Complete tests now with age check as well front end and back end. 

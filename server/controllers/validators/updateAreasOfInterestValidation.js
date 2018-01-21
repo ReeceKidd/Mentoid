@@ -8,7 +8,6 @@ module.exports = function updateAreasOfInterestValidation(req) {
     3) Checks that the userID is not an empty string. 
     */
     
-
     req.check('_id', 'User ID must be sent with request').exists()
     req.check('_id', 'UserID must be a string').custom(_id => {
         if (typeof _id !== 'string') {
@@ -22,6 +21,20 @@ module.exports = function updateAreasOfInterestValidation(req) {
         }
         return true
     })
+
+    //User Age validation
+    /*
+    1) Checks that age is a number. 
+    2) Checks that age exists
+    3) Checks that age is in valid number range.
+    */
+    req.check('age', 'User age must be sent with request').exists()
+    req.check('age', 'User age must be a number').custom(age => {
+        if (typeof age !=='number' || (age % 1) !== 0) {
+            return false
+        }
+    })
+    req.check('age', 'Age must be a valid number between 16 and 120').isInt(this, {min: 16, max: 120})
 
     // Areas of interest array validation.
 
