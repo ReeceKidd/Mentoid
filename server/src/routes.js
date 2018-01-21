@@ -9,7 +9,7 @@ const loginController = require('../controllers/loginController.js')
 
 //Admin routes
 routes.get('/admin/get-users', adminController.getUsers)
-routes.get('/admin/get-any-user-ID', adminController.getAnyUserID)
+routes.get('/admin/get-users-age', adminController.getUsersAge)
 
 //Register Routes
 routes.post('/register', registerController.register)

@@ -42,13 +42,17 @@ const asyncIssue = payload => {
                 throw Error('Invalid Username or Password')
               } else {
                 if (result) {
-                  user.password = undefined
+                  // This can only return the username and userID. 
+                  var userInfo = {
+                    _id: user._id,
+                    userName: user.userName 
+                  }
                   asyncIssue(user.toObject())
                     .then(token => {
                       res.status(200).send({
                         message: 'Success',
                         token: token,
-                        user: user
+                        user: userInfo
                       })
                     })
                     .catch(error => {

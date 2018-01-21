@@ -14,16 +14,18 @@ adminController.getUsers = (req, res) => {
     })
 }
 
-/*
-The getAnyUserID route is needed for testing purposes. 
-*/
-adminController.getAnyUserID = (req, res) => {
-    var query = User.findOne({}).select('_id')
-    query.exec(function (err, userID){
-        if(err) return err
-        else {
-            res.send(userID)
+//Return the age of a particular user based on their ID. 
+adminController.getUsersAge = (req, res) => {
+    const userID = req.params.userID
+    User.findById(userID, function (err, user) {
+        if (err) {
+            console.log(err)
         }
+    }).select('age -_id').then(user => {
+
+        res.status(200).send({
+            age: user.age
+        })
     })
 }
 

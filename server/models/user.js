@@ -35,6 +35,7 @@ const User = new Schema(
       numberOfLinksClicked: Number,
       articlesRead: Number,
       videosWatched: Number,
+      pathsStudied: Number
     }],
     mentors: [],
     mentees: [],

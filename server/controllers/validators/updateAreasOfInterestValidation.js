@@ -1,4 +1,5 @@
 module.exports = function updateAreasOfInterestValidation(req) {
+    
     // User ID validation
 
     /*
@@ -6,6 +7,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
     2) Checks that the user ID is equal to a string. 
     3) Checks that the userID is not an empty string. 
     */
+    
 
     req.check('_id', 'User ID must be sent with request').exists()
     req.check('_id', 'UserID must be a string').custom(_id => {
@@ -138,7 +140,6 @@ module.exports = function updateAreasOfInterestValidation(req) {
         for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
             if (typeof areasOfInterest[x].years!=='number' || (areasOfInterest[x].years%1)!==0) {
-                console.log(typeof areasOfInterest[x].years)
                 return false
             }
         }

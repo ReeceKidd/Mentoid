@@ -145,8 +145,6 @@ registerController.getAreasOfInterest = (req, res) => {
 
 registerController.updateAreasOfInterest = (req, res) => {
 
-    console.log(req.body)
-
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkFields.updateAreasOfInterest(req.body)
 
@@ -158,7 +156,6 @@ registerController.updateAreasOfInterest = (req, res) => {
     }
 
     //Checks that there are no duplicate values for the areas of interest
-
     var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
 
     if (duplicatedAreaOfInterestValues) {
@@ -168,7 +165,6 @@ registerController.updateAreasOfInterest = (req, res) => {
         return
     }
     
-      
     //Validation for updating areas of interest. 
     var errors = updateAreasOfInterestValidation(req)
 
@@ -187,6 +183,7 @@ registerController.updateAreasOfInterest = (req, res) => {
             updatedAreasOfInterest[x].numberOfLinksClicked = 0
             updatedAreasOfInterest[x].articlesRead = 0
             updatedAreasOfInterest[x].videosWatched = 0
+            updatedAreasOfInterest[x].pathsStudied = 0
         }
 
         var query = {

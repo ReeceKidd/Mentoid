@@ -12,11 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
     "bcryptjs": "^2.4.3",
     "bluebird": "*",
     "body-parser": "*",
-    "connect-flash": "*",
     "config": "*",
+    "connect-flash": "*",
     "cookie-parser": "^1.4.1",
     "cors": "^2.8.4",
     "eslint": "^4.11.0",

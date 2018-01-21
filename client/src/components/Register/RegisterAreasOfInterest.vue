@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xs-12">
         <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
-
+        <h1> {{ age }} </h1>
       </div>
       <div class="col-xs-8 col-xs-offset-2">
         <h2 class="text-center">
@@ -29,10 +29,13 @@
                 <b> {{index}}: </b>
               </h4>
             </label>
-            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value" name="areaOfInterestValue">
+            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
+              name="areaOfInterestValue">
             <br>
-            <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage"> You must enter an area of interest. </p>
-            <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage"> Areas of interest can only alphabet characters. </p>
+            <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+            You must enter an area of interest. </p>
+            <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+            Areas of interest can only alphabet characters. </p>
           </div>
         </div>
       </div>
@@ -42,10 +45,12 @@
             <label>
               <h4>Years of experience</h4>
             </label>
-            <input type="number" min="0" oninput="validity.valid||(value='')" @blur="$v.areasOfInterest.$each[index].years.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
+            <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" :id="areaOfInterest.areaOfInterestID"
+              v-model="areaOfInterest.years" name="yearsOfExperience">
             <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
             <br>
-            <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage"> Please enter years of experience in this area. </p>
+            <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
+            Please enter years of experience in this area. </p>
           </div>
         </div>
       </div>
@@ -93,7 +98,8 @@
       return {
         areasOfInterestCount: 0,
         areasOfInterest: [],
-        currentUser: this.$store.state.user.authUser
+        currentUser: this.$store.state.user.authUser,
+        age: this.$store.state.user.authUser
       }
     },
     validations: {
@@ -113,9 +119,13 @@
     },
     methods: {
       onSubmit() {
-        const updateInfo = {
+        var updateInfo = {
           areasOfInterest: this.areasOfInterest,
           _id: this.currentUser._id
+        }
+        // Parses the years input as the html validates it and converts it to a string.
+        for (var x = 0; x < updateInfo.areasOfInterest.length; x++) {
+          updateInfo.areasOfInterest[x].years = parseInt(updateInfo.areasOfInterest[x].years)
         }
         this.$store
           .dispatch('updateAreasOfInterest', {
@@ -133,7 +143,7 @@
         const newHobby = {
           value: '',
           years: 0,
-          areaOfInterestID: ''
+          areaOfInterestID: 0
         }
         this.areasOfInterestCount++
         this.areasOfInterest.push(newHobby)
