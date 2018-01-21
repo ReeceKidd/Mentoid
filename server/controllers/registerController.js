@@ -155,6 +155,12 @@ registerController.getUsersAge = (req, res) => {
     })
 }
 
+// Title case function is needed for when users add an area of interest. 
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
 registerController.updateAreasOfInterest = (req, res) => {
 
     //Checks that only _id and areas of interest are passed in request. 
@@ -191,6 +197,7 @@ registerController.updateAreasOfInterest = (req, res) => {
             updatedAreasOfInterest[x].articlesRead = 0
             updatedAreasOfInterest[x].videosWatched = 0
             updatedAreasOfInterest[x].pathsStudied = 0
+            updatedAreasOfInterest[x].value = toTitleCase(updatedAreasOfInterest[x].value)
         }
 
         var query = {
