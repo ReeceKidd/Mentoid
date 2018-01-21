@@ -140,7 +140,19 @@ registerController.getAreasOfInterest = (req, res) => {
             areasOfInterest: user.areasOfInterest
         })
     })
+}
 
+registerController.getUsersAge = (req, res) => {
+    const userID = req.params.userID
+    User.findById(userID, function (err, user) {
+        if (err) {
+            console.log(err)
+        }
+    }).select('age -_id').then(user => {
+        res.status(200).send({
+            age: user.age
+        })
+    })
 }
 
 registerController.updateAreasOfInterest = (req, res) => {

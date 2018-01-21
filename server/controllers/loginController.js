@@ -28,8 +28,6 @@ const asyncIssue = payload => {
     })
   }
 
-  
-
   userController.login = (req, res) => {
     try {
       var formData = req.body

@@ -99,7 +99,7 @@
         areasOfInterestCount: 0,
         areasOfInterest: [],
         currentUser: this.$store.state.user.authUser,
-        age: this.$store.state.user.authUser
+        age: 0
       }
     },
     validations: {
@@ -154,11 +154,17 @@
       }
     },
     created() {
-      const userID = this.$store.state.user.authUser._id
-      const apiUrl = 'http://localhost:4000/get/areas-of-interest/'
       var self = this
-      axios.get(apiUrl + userID).then(function (response) {
+      const userID = this.$store.state.user.authUser._id
+      // Get the users areas of interest
+      const getAreasOfInterestUrl = 'http://localhost:4000/get/areas-of-interest/'
+      axios.get(getAreasOfInterestUrl + userID).then(function (response) {
         self.areasOfInterest = response.data.areasOfInterest
+      })
+      // Get the users age
+      const getAgeUrl = 'http://localhost:4000/get/age/'
+      axios.get(getAgeUrl + userID).then(function (response) {
+        self.age = response.data.age
       })
     }
   }

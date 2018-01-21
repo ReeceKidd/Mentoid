@@ -9,13 +9,13 @@ const loginController = require('../controllers/loginController.js')
 
 //Admin routes
 routes.get('/admin/get-users', adminController.getUsers)
-routes.get('/admin/get-users-age', adminController.getUsersAge)
 
 //Register Routes
 routes.post('/register', registerController.register)
 routes.get('/check/username/:username', registerController.checkUserName)
 routes.get('/check/email/:email', registerController.checkEmail)
 routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfInterest)
+routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 
 //Login Routes
