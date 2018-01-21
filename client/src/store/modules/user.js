@@ -56,11 +56,15 @@ export const actions = {
     })
       .then(res => {
         console.log(res)
-        console.log('Success')
+        if (res.status === 800) {
+          console.log(res.message)
+        } else {
+          console.log('Success')
+        }
       })
       .catch(error => {
         console.log(error)
-        throw new Error('Could not update areas of interest.')
+        throw new Error(error.message)
       })
   },
   logout({ commit }) {

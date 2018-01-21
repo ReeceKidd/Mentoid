@@ -3,7 +3,6 @@
     <div class="row">
       <div class="col-xs-12">
         <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
-        <h1> {{ age }} </h1>
       </div>
       <div class="col-xs-8 col-xs-offset-2">
         <h2 class="text-center">
@@ -45,7 +44,7 @@
             <label>
               <h4>Years of experience</h4>
             </label>
-            <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" :id="areaOfInterest.areaOfInterestID"
+            <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset" :id="areaOfInterest.areaOfInterestID"
               v-model="areaOfInterest.years" name="yearsOfExperience">
             <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
             <br>
@@ -60,6 +59,9 @@
       <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
     </div>
 
+    <div class="row text-center">
+    <p class="error" v-if="errorMessage">{{errorMessage}}</p>
+    </div>
     <br>
 
     <div class="row text-center">
@@ -99,22 +101,8 @@
         areasOfInterestCount: 0,
         areasOfInterest: [],
         currentUser: this.$store.state.user.authUser,
-        age: 0
-      }
-    },
-    validations: {
-      areasOfInterest: {
-        required,
-        $each: {
-          value: {
-            required,
-            alphaAndWhitespace
-          },
-          years: {
-            required,
-            numeric
-          }
-        }
+        errorMessage: '',
+        age: null
       }
     },
     methods: {
@@ -136,7 +124,6 @@
             this.$router.push('/success')
           })
           .catch(e => {
-            console.log('Could not update areas of interest.')
             this.errorMessage = e.message
           })
       },
@@ -152,6 +139,9 @@
       },
       onDeleteAreaOfInterest(id) {
         this.areasOfInterest = this.areasOfInterest.filter(areaOfInterest => areaOfInterest.areaOfInterestID !== id)
+      },
+      getCurrentAge () {
+        return this.age
       }
     },
     created() {
@@ -167,6 +157,21 @@
       axios.get(getAgeUrl + userID).then(function (response) {
         self.age = response.data.age
       })
+    },
+    validations: {
+      areasOfInterest: {
+        required,
+        $each: {
+          value: {
+            required,
+            alphaAndWhitespace
+          },
+          years: {
+            required,
+            numeric
+          }
+        }
+      }
     }
   }
 </script>

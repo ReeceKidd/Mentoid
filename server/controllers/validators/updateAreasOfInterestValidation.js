@@ -1,4 +1,6 @@
 module.exports = function updateAreasOfInterestValidation(req) {
+
+    const usersAge = req.body.age
     
     // User ID validation
 
@@ -33,6 +35,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
         if (typeof age !=='number' || (age % 1) !== 0) {
             return false
         }
+        return true
     })
     req.check('age', 'Age must be a valid number between 16 and 120').isInt(this, {min: 16, max: 120})
 
@@ -133,9 +136,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
     /*
     1) Checks that the "years" field is defined. 
     2) Checks that the years field is an integer. 
-
-    Potential furutre checks: 
-    Check that the years of experience is not greater than the user age. 
+    3) Checks that years of experience is not greater than the users age. 
     */
     req.check('areasOfInterest', 'Each areas of interest years field must be defined').custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
@@ -153,6 +154,16 @@ module.exports = function updateAreasOfInterestValidation(req) {
         for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
             if (typeof areasOfInterest[x].years!=='number' || (areasOfInterest[x].years%1)!==0) {
+                return false
+            }
+        }
+        return true
+    })
+
+    req.check('areasOfInterest', 'Years of experience cannot be greater than the users age').custom(areasOfInterest => {
+        for (var x = 0; x < areasOfInterest.length; x++) {
+           
+            if (areasOfInterest[x].years >= usersAge) {
                 return false
             }
         }

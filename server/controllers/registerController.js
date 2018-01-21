@@ -161,32 +161,27 @@ registerController.updateAreasOfInterest = (req, res) => {
     var unwantedField = checkFields.updateAreasOfInterest(req.body)
 
     if (unwantedField) {
-        res.status(500).json({
+        res.status(700).send({
             message: unwantedField
         })
-        return
     }
 
     //Checks that there are no duplicate values for the areas of interest
     var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
 
     if (duplicatedAreaOfInterestValues) {
-        res.status(500).json({
+        res.status(700).send({
             message: 'Please do not enter the same area of interest more than once. '
         })
-        return
     }
     
     //Validation for updating areas of interest. 
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
-        console.log(errors)
-        res.status(500).json({
+        res.status(800).send({
             message: 'Unable to update users area of interest',
-            errors
         })
-        return
     } else {
         var updatedAreasOfInterest = req.body.areasOfInterest
         // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
