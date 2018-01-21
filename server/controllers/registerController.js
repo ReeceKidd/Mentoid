@@ -171,12 +171,17 @@ registerController.updateAreasOfInterest = (req, res) => {
             message: unwantedField
          })
     }
-
+   
+    
+    for(var x = 0; x < req.body.areasOfInterest.length; x++){
+        req.body.areasOfInterest[x].value = toTitleCase(req.body.areasOfInterest[x].value)
+    }
+    
     //Checks that there are no duplicate values for the areas of interest
     var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
 
     if (duplicatedAreaOfInterestValues) {
-        return res.status(400).send({
+        return res.status(800).send({
             message: duplicatedAreaOfInterestValues
          })
     }
@@ -197,7 +202,6 @@ registerController.updateAreasOfInterest = (req, res) => {
             updatedAreasOfInterest[x].articlesRead = 0
             updatedAreasOfInterest[x].videosWatched = 0
             updatedAreasOfInterest[x].pathsStudied = 0
-            updatedAreasOfInterest[x].value = toTitleCase(updatedAreasOfInterest[x].value)
         }
 
         var query = {

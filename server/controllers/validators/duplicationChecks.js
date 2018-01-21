@@ -9,7 +9,9 @@ duplicateChecker.checkForDuplicates = function checkForDuplicates(areasOfInteres
         return valuesArray.indexOf(areaOfInterest) != idx 
     });
     
-    return isDuplicate
+    if(isDuplicate) {
+        return 'Duplicate area of interest found'
+    }
 }
     
 module.exports = duplicateChecker
