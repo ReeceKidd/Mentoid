@@ -160,7 +160,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
         return true
     })
 
-    req.check('areasOfInterest', 'Years of experience cannot be greater than the users age').custom(areasOfInterest => {
+    req.check('areasOfInterest', 'Your years of experience cannot be greater than your age. Your age is ' + usersAge).custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
            
             if (areasOfInterest[x].years >= usersAge) {

@@ -60,7 +60,7 @@
     </div>
 
     <div class="row text-center">
-    <p class="error" v-if="errorMessage">{{errorMessage}}</p>
+    <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
     </div>
     <br>
 
@@ -101,31 +101,34 @@
         areasOfInterestCount: 0,
         areasOfInterest: [],
         currentUser: this.$store.state.user.authUser,
-        errorMessage: '',
+        errorMessage: null,
         age: null
       }
     },
     methods: {
       onSubmit() {
-        var updateInfo = {
+        // Parses the years input as the html validates it and converts it to a string.
+        for (var x = 0; x < this.areasOfInterest.length; x++) {
+          this.areasOfInterest[x].years = parseInt(this.areasOfInterest[x].years)
+        }
+        const url = 'http://localhost:4000/update/areas-of-interest/'
+        var that = this
+        axios.post(url, {
           areasOfInterest: this.areasOfInterest,
           _id: this.currentUser._id,
           age: this.age
-        }
-        // Parses the years input as the html validates it and converts it to a string.
-        for (var x = 0; x < updateInfo.areasOfInterest.length; x++) {
-          updateInfo.areasOfInterest[x].years = parseInt(updateInfo.areasOfInterest[x].years)
-        }
-        this.$store
-          .dispatch('updateAreasOfInterest', {
-            updateInfo
-          })
-          .then(() => {
-            this.$router.push('/success')
-          })
-          .catch(e => {
-            this.errorMessage = e.message
-          })
+        }).then(function(response) {
+          console.log(response.data.message)
+          that.navigateTo('/success')
+        }).catch(error => {
+          this.errorMessage = error.response.data.message
+          setTimeout(() => {
+            this.errorMessage = null
+          }, 3000)
+        })
+      },
+      navigateTo(route) {
+        this.$router.push(route)
       },
       onAddAreaOfInterest() {
         const newHobby = {
