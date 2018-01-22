@@ -485,4 +485,3 @@ describe('Checks that user has accepted terms and condition', () => {
 //Empties test database.
 User.remove({}, function(err) { 
 })
-

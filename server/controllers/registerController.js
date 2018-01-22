@@ -41,15 +41,27 @@ const asyncVerify = token => {
 }
 
 registerController.checkUserName = (req, res) => {
-    console.log('Username ' + req.params.username + ' is being checked for')
     const username = req.params.username
     User.findOne({
         userName: username
     }, function (err, existingUser) {
         if (existingUser) {
-            res.send('Username already exists')
+            res.status(900)
+            res.send({
+                message: 'Username already exists',
+                error: 'Already exists in database.'
+            })
+        } else if (err) {
+            res.status(500)
+            res.send({
+                message: '',
+                error: 'Server error'
+            })
         } else {
-            res.send('Username is available')
+            res.status(200)
+            res.send({
+                message: 'Email available'
+            })
         }
     })
 }
@@ -59,11 +71,23 @@ registerController.checkEmail = (req, res) => {
     User.findOne({
         email: email
     }, function (err, existingEmail) {
-        console.log('Checking if ' + req.body + ' exists in database')
         if (existingEmail) {
-            res.send('Email already exists')
+            res.status(900)
+            res.send({
+                message: 'Email already exists',
+                error: 'Already exists in database.'
+            })
+        } else if (err) {
+            res.status(500)
+            res.send({
+                message: 'Email available',
+                error: 'Server error'
+            })
         } else {
-            res.send('Email is available')
+            res.status(200)
+            res.send({
+                message: 'Email available'
+            })
         }
     })
 }
@@ -156,9 +180,10 @@ registerController.getUsersAge = (req, res) => {
 }
 
 // Title case function is needed for when users add an area of interest. 
-function toTitleCase(str)
-{
-    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
 }
 
 registerController.updateAreasOfInterest = (req, res) => {
@@ -167,32 +192,32 @@ registerController.updateAreasOfInterest = (req, res) => {
     var unwantedField = checkFields.updateAreasOfInterest(req.body)
 
     if (unwantedField) {
-        return res.status(600).send({
+        return res.status(700).send({
             message: unwantedField
-         })
+        })
     }
-   
-    
-    for(var x = 0; x < req.body.areasOfInterest.length; x++){
+
+
+    for (var x = 0; x < req.body.areasOfInterest.length; x++) {
         req.body.areasOfInterest[x].value = toTitleCase(req.body.areasOfInterest[x].value)
     }
-    
+
     //Checks that there are no duplicate values for the areas of interest
     var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
 
     if (duplicatedAreaOfInterestValues) {
         return res.status(800).send({
             message: duplicatedAreaOfInterestValues
-         })
+        })
     }
-    
+
     //Validation for updating areas of interest. 
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
-        return res.status(800).send({
+        return res.status(600).send({
             message: errors[Object.keys(errors)[0]].msg
-         })
+        })
     } else {
         var updatedAreasOfInterest = req.body.areasOfInterest
         // This updates each of the areas of interest to include fields that will be used in recommendation engine. 

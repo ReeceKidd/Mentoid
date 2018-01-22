@@ -123,7 +123,7 @@
           if (val === '') return true
           let uri = 'http://localhost:4000/check/email/'
           return axios.get(uri + val).then(res => {
-            return res.data === 'Email is available'
+            return res.status === 200
           })
         }
       },
@@ -141,7 +141,7 @@
           if (val === '') return true
           let uri = 'http://localhost:4000/check/username/'
           return axios.get(uri + val).then(res => {
-            return res.data === 'Username is available'
+            return res.status === 200
           })
         }
       },
