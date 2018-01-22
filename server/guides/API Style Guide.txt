@@ -11,7 +11,6 @@ Server error
 Status: 500
 error: 'Server error'
 
-
 Already exists: (Email and username registration)
 Status: 900
 error: 'Already exists in database'

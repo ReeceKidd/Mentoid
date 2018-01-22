@@ -6,6 +6,7 @@ const routes = express();
 const adminController = require('../controllers/adminController.js')
 const registerController = require('../controllers/registerController.js')
 const loginController = require('../controllers/loginController.js')
+const testController = require('../controllers/testController.js')
 
 //Admin routes
 routes.get('/admin/get-users', adminController.getUsers)
@@ -20,6 +21,9 @@ routes.post('/update/areas-of-interest', registerController.updateAreasOfInteres
 
 //Login Routes
 routes.post('/login', loginController.login)
+
+//Testing Routes 
+routes.get('/get-single-user-ID', testController.getSingleUserID)
 
 //Areas of Interest Routes
 //Get every area of interest

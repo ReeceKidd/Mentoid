@@ -37,19 +37,18 @@ var User = require('../models/user.js');
 var should = chai.should();
 chai.use(chaiHttp);
 
-console.log('Begining basicRegistration.js tests')
+console.log('Begining beginning updateAreasOfInterest.js tests')
 
 //Empty the test database before starting
-User.remove({}, function(err) { 
- })
+User.remove({}, function (err) {})
 
-// 1) Tests for correct registration data. 
+// Registers user needed to test update areas of interest.js.  
 describe('Test for valid registration', () => {
     var newUser = {
         firstName: "Sarah",
-        lastName: "Robson",
-        userName: "SarahRobson",
-        email: "sarahrobson@gmail.com",
+        lastName: "Kilgore",
+        userName: "SarahKilgore",
+        email: "sarahkilgore@gmail.com",
         age: 20,
         password: "12345678",
         confirmPassword: "12345678",
@@ -67,24 +66,61 @@ describe('Test for valid registration', () => {
     })
 })
 
-// 2) Tests to check that a request with additional field fails
-describe('Checks for additional unwanted fields in request', () => {
-    it('It should have error because of additional field in user', (done) => {
-        var newUser = {
-            firstName: "Tom",
-            lastName: "Hope",
-            userName: "Tommy123",
-            email: "tom-hope@gmail.com",
-            age: 20,
-            password: "12345678",
-            confirmPassword: "12345678",
-            country: "USA",
-            terms: true
-        }
-        newUser.additionalField = 'additional information'
+// Stores user ID needed to perform tests
+var retrievedUserID = ''
+
+// Gets user ID needed to perform tests
+describe('Retrieves user ID from successfully registered user', () => {
+    it('It should retrieve userID', (done) => {
         chai.request(server)
-            .post('/register')
-            .send(newUser)
+            .get('/get-single-user-ID')
+            .end((err, res) => {
+                res.should.have.status(200)
+                retrievedUserID = res.body._id
+                done()
+            })
+    })
+})
+
+
+// 1) Checks for successful update of areas of interest
+describe('Update areas of interest successfully', () => {
+    it('It should have update areas of interest successfully', (done) => {
+        var areasOfInterest = {}
+        chai.request(server)
+            .post('/update/areas-of-interest')
+            .send({
+                areasOfInterest: [{
+                    value: 'Yoga',
+                    years: 10,
+                    areaOfInterestID: 0
+                }],
+                _id: retrievedUserID,
+                age: 16
+            })
+            .end((err, res) => {
+                res.should.have.status(200)
+                done()
+            })
+    })
+})
+
+// 2) Checks that areas of interest update fails because of unwanted additional fields in request.
+describe('Additional unwanted fields in request', () => {
+    it('It should fail because of additional field in request', (done) => {
+        var areasOfInterest = {}
+        chai.request(server)
+            .post('/update/areas-of-interest')
+            .send({
+                areasOfInterest: [{
+                    value: 'Yoga',
+                    years: 10,
+                    areaOfInterestID: 0
+                }],
+                _id: retrievedUserID,
+                age: 16,
+                additionalField: 'Additional information'
+            })
             .end((err, res) => {
                 res.should.have.status(700)
                 res.body.should.have.property('error').eql('Additional fields found')
@@ -93,395 +129,118 @@ describe('Checks for additional unwanted fields in request', () => {
     })
 })
 
-// 3) Tests to check that requests with a missing field fails.
-describe('Check to see if requests missing a required field fail', () => {
-    it('It should have error in response because of a lack of firstName field in request', (done) => {
-        var newUser = {
-            firstName: "Brad",
-            lastName: "Bradely",
-            userName: "BadBrad",
-            email: "brad@gmail.com",
-            age: 20,
-            password: "password123",
-            confirmPassword: "password123",
-            country: "USA",
-            terms: true
-        }
-        delete newUser.firstName
+// 3) Checks that areas of interest with the exact same value throw a duplication error. 
+describe('Exact same values thow a duplication error', () => {
+    it('It should fail because there are two areas of interest with the value "yoga"', (done) => {
+        var areasOfInterest = {}
         chai.request(server)
-            .post('/register')
-            .send(newUser)
+            .post('/update/areas-of-interest')
+            .send({
+                areasOfInterest: [{
+                    value: 'Yoga',
+                    years: 10,
+                    areaOfInterestID: 0
+                },
+                {
+                    value: 'Yoga',
+                    years: 10,
+                    areaOfInterestID: 0
+                }],
+                _id: retrievedUserID,
+                age: 16
+            })
             .end((err, res) => {
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
+                res.should.have.status(800)
+                res.body.should.have.property('error').eql('Duplicate values')
                 done()
             })
     })
 })
 
-// 4) Checks that request fails for all values that should be a string.
-describe('Check that that require a string contain a string', () => {
-    it('It should have error in response because of string values being numbers', (done) => {
-        var newUser = {
-            firstName: 1,
-            lastName: 1,
-            userName: 1,
-            email: 1,
-            age: 20,
-            password: 1,
-            confirmPassword: 1,
-            country: "USA",
-            terms: true
-        }
+// 4) Checks that areas of interest with different case same values throw a duplication error. 
+describe('Exact same values different case format thow a duplication error', () => {
+    it('It should fail because there are three areas of interest with the value "yoga" defning yoga in different case formats', (done) => {
+        var areasOfInterest = {}
         chai.request(server)
-            .post('/register')
-            .send(newUser)
+            .post('/update/areas-of-interest')
+            .send({
+                areasOfInterest: [{
+                    value: 'YoGa',
+                    years: 10,
+                    areaOfInterestID: 0
+                },
+                {
+                    value: 'yogA',
+                    years: 10,
+                    areaOfInterestID: 0
+                },
+                {
+                    value: 'yoga',
+                    years: 10,
+                    areaOfInterestID: 0
+                }],
+                _id: retrievedUserID,
+                age: 16
+            })
             .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
+                res.should.have.status(800)
+                res.body.should.have.property('error').eql('Duplicate values')
                 done()
             })
     })
 })
 
-// 5) Checks to see that user cannot set later registration fields during basic registration.
-describe('Checks that user has not tried to set later registration', () => {
-    it('It should have an error because user has tried to set later registration values to true.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true,
-            basicRegistrationComplete: true
-        }
+// 5) Checks that areas of interest with different case same values throw a duplication error. 
+describe('Exact same values different case format thow a duplication error', () => {
+    it('It should fail because there are three areas of interest with the value "yoga" defning yoga in different case formats', (done) => {
+        var areasOfInterest = {}
         chai.request(server)
-            .post('/register')
-            .send(newUser)
+            .post('/update/areas-of-interest')
+            .send({
+                areasOfInterest: [{
+                    value: 'YoGa',
+                    years: 10,
+                    areaOfInterestID: 0
+                },
+                {
+                    value: 'yogA',
+                    years: 10,
+                    areaOfInterestID: 0
+                },
+                {
+                    value: 'yoga',
+                    years: 10,
+                    areaOfInterestID: 0
+                }],
+                _id: retrievedUserID,
+                age: 16
+            })
             .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(700)
-                res.body.should.have.property('error').eql('Additional fields found')
+                res.should.have.status(800)
+                res.body.should.have.property('error').eql('Duplicate values')
                 done()
             })
     })
 })
 
-// 6) Checks that the first name only contains Alphabetical characters
-describe('Checks that first name fails when non aphabetical characters are included', () => {
-    it('It should have a validation error because first name contains a numeric character.', (done) => {
-        var newUser = {
-            firstName: "Michelle2",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-// 7) Checks that the first name is at least two characters long. 
-describe('Checks that first name fails when it is less than two characters', () => {
-    it('It should have a validation error because first name is only one character long.', (done) => {
-        var newUser = {
-            firstName: "M",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
+// 6) Checks that the user ID is equal to a string. 
+// 7) Checks that the userID is not an empty string. 
+// 8) Checks that age is a number. 
+// 9) Checks that age exists
+// 10) Checks that age is in valid number range.
+// 11) Checks that the array contains at least one area of interest.
+// 12) Checks that each area of interest contains only the fields, value, years, and ID.
+// 13) Checks that each area of interest has defined value, years and ID. 
+// 14) Checks that a value is defined for every area of interest. 
+// 15) Checks that the value is a string value. 
+// 16) Checks that the value only contains letters and whitespace. 
+// 17) Checks that an empty string is not passed. 
+// 18) Checks that the "years" field is defined. 
+// 19) Checks that the years field is an integer. 
+// 20) Checks that years of experience is not greater than the users age.
+// 21) Checks the area of interest ID field is defined. 
+// 22) Checks the area of interest ID field is an integer. 
 
-// 8) Checks that the last name only contains Alphabetical characters
-describe('Checks that last name fails when it contains non alphabetical characters', () => {
-    it('It should have a validation error because last name is equal to three numeric digits.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "222",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 9) Checks that the last name is at least two characters long. 
-describe('Checks that last name fails when it is less than two characters long', () => {
-    it('It should have a validation error because last name is a single character.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "R",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 10) Checks that the username is alphanumeric and does not contain spaces. 
-describe('Checks that username is alphanumeric and does not contain spaces', () => {
-    it('It should have a validation error because username has a question mark in it.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "?Michelle Rogan",
-            email: "michelleRogan@gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 11) Checks that invalid email addresses are rejected. 
-describe('Checks that invalid emails are rejected', () => {
-    it('It should have a validation error because the email address does not have the "@" symbol.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "Michelle Rogan",
-            email: "michelleRogan.gmail.com",
-            age: 20,
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 12) Checks that password is eight or more characters long. 
-describe('Checks that passwords less than eight characters are rejected', () => {
-    it('It should have a validation error because password is not equal to confirmation password.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan.gmail.com",
-            age: 20,
-            password: "12345678",
-            confirmPassword: "123456789",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 13) Checks that password matches confirmation password. 
-describe('Checks that password mathces confirmation password', () => {
-    it('It should have a validation error because password is less than eight characters long.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan.gmail.com",
-            age: 20,
-            password: "123",
-            confirmPassword: "123",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 14) Checks that a users age is between 16 and 120
-describe('Checks that age is between 16 and 120', () => {
-    it('It should have a validation error because users age is less than 16.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan.gmail.com",
-            age: 15,
-            password: "12345678",
-            confirmPassword: "12345678",
-            country: "USA",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 15) Checks that the users country is equal to USA, UK, INDIA or Germany
-describe('Checks that users country is equal to USA, UK, India or Germany', () => {
-    it('It should have a validation error because country is equal to france which is unsupported.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan.gmail.com",
-            age: 20,
-            password: "12345678",
-            confirmPassword: "12345678",
-            country: "France",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-// 16) Checks the user has accepted the terms and conditions. 
-describe('Checks that user has accepted terms and condition', () => {
-    it('It should have a validation error because country is equal to france which is unsupported.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan.gmail.com",
-            age: 20,
-            password: "12345678",
-            confirmPassword: "12345678",
-            country: "France",
-            terms: null
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
 
 //Empties test database.
-User.remove({}, function(err) { 
-})
+User.remove({}, function (err) {})

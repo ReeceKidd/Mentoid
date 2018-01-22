@@ -156,7 +156,11 @@ registerController.getAreasOfInterest = (req, res) => {
     const userID = req.params.userID
     User.findById(userID, function (err, user) {
         if (err) {
-            console.log(err)
+            res.status(500)
+            res.send({
+                message: 'Could not get areas of interest',
+                error: 'Server error'
+            })
         }
     }).select('areasOfInterest -_id').then(user => {
 
@@ -170,7 +174,11 @@ registerController.getUsersAge = (req, res) => {
     const userID = req.params.userID
     User.findById(userID, function (err, user) {
         if (err) {
-            console.log(err)
+            res.status(500)
+            res.send({
+                message: 'Could not get users age',
+                error: 'Server error'
+            })
         }
     }).select('age -_id').then(user => {
         res.status(200).send({
@@ -193,6 +201,7 @@ registerController.updateAreasOfInterest = (req, res) => {
 
     if (unwantedField) {
         return res.status(700).send({
+            error: 'Additional fields found',
             message: unwantedField
         })
     }
@@ -207,6 +216,7 @@ registerController.updateAreasOfInterest = (req, res) => {
 
     if (duplicatedAreaOfInterestValues) {
         return res.status(800).send({
+            error: 'Duplicate values',
             message: duplicatedAreaOfInterestValues
         })
     }
