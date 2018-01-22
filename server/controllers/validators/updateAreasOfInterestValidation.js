@@ -1,7 +1,7 @@
 module.exports = function updateAreasOfInterestValidation(req) {
 
     const usersAge = req.body.age
-    
+
     // User ID validation
 
     /*
@@ -9,7 +9,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
     2) Checks that the user ID is equal to a string. 
     3) Checks that the userID is not an empty string. 
     */
-    
+
     req.check('_id', 'User ID must be sent with request').exists()
     req.check('_id', 'UserID must be a string').custom(_id => {
         if (typeof _id !== 'string') {
@@ -32,27 +32,36 @@ module.exports = function updateAreasOfInterestValidation(req) {
     */
     req.check('age', 'User age must be sent with request').exists()
     req.check('age', 'User age must be a number').custom(age => {
-        if (typeof age !=='number' || (age % 1) !== 0) {
+        if (typeof age !== 'number' || (age % 1) !== 0) {
             return false
         }
         return true
     })
-    req.check('age', 'Age must be a valid number between 16 and 120').isInt(this, {min: 16, max: 120})
+    req.check('age', 'Age must be a valid number between 16 and 120').custom(age => {
+        if (age < 16) {
+            return false
+        } else if (age > 120) {
+            return false
+        } else {
+            return true
+        }
+    })
 
     // Areas of interest array validation.
 
     /*
     1) Checks for the existience of an areasOfInterest array. 
     2) Checks that the array contains at least one area of interest.
-    3) Checks that each area of interest contains only the fields, value, years, and ID.
+    3) Checks that each area of interest is an object.
     4) Checks that each area of interest has defined value, years and ID. 
+    5) Checks that each area of interest object does not contain additional fields. 
     */
     req.check('areasOfInterest', 'Areas of interest request is required').exists()
     req.check('areasOfInterest', 'You must have at least one area of interest').custom(areasOfInterest => {
         return areasOfInterest.length > 0
     })
     req.check('areasOfInterest', 'Each element in array must be an area of interest object').custom(areasOfInterest => {
-        
+
         for (var x = 0; x < areasOfInterest.length; x++) {
             if (typeof areasOfInterest[x] !== 'object') {
                 return false
@@ -60,7 +69,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
         }
         return true
     })
-    
+
     req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
             if (areasOfInterest[x].value === 'undefined') {
@@ -71,6 +80,18 @@ module.exports = function updateAreasOfInterestValidation(req) {
             }
             if (areasOfInterest[x].areaOfInterestID === 'undefined') {
                 return false
+            }
+        }
+        return true
+    })
+
+    req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
+        for (var x = 0; x < areasOfInterest.length; x++) {
+            for (property in areasOfInterest[x]) {
+                if (property !== 'value' && property !== 'years' &&
+                    property !== 'areaOfInterestID') {
+                    return false
+                }
             }
         }
         return true
@@ -153,7 +174,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
         }
         for (var x = 0; x < areasOfInterest.length; x++) {
             // https://jsperf.com/numbers-and-integers
-            if (typeof areasOfInterest[x].years!=='number' || (areasOfInterest[x].years%1)!==0) {
+            if (typeof areasOfInterest[x].years !== 'number' || (areasOfInterest[x].years % 1) !== 0) {
                 return false
             }
         }
@@ -162,7 +183,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
 
     req.check('areasOfInterest', 'Your years of experience cannot be greater than your age. Your age is ' + usersAge).custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
-           
+
             if (areasOfInterest[x].years >= usersAge) {
                 return false
             }

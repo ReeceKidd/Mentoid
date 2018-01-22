@@ -226,6 +226,7 @@ registerController.updateAreasOfInterest = (req, res) => {
 
     if (errors) {
         return res.status(600).send({
+            error: 'Validation failure',
             message: errors[Object.keys(errors)[0]].msg
         })
     } else {

@@ -22,3 +22,12 @@ If this is completed begin work on the paths section.
 Complete tests now with age check as well front end and back end. 
 
 //Need to fix the issue with the delete buttons in the areas of interest registration. 
+
+Plan for 22/01/2018
+
+1) Fix the delete issue. (completed)
+2) Create guide to the API with what values should be returned based on the check. (completed)
+2) Complete test for each and every check in the basic registration and areas of interest registration. 
+
+Completing the tests did reveal some code that wasn't working and a way to add an additional field which could 
+have caused a variety of errors. 
