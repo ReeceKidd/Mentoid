@@ -1,0 +1,16 @@
+API Style Guide. 
+
+This guide outlines the API response values for Mentoid. Every response will be comprised of a status code and a 
+message. 
+
+Successfull response 
+Status: 200
+
+Additional Fields found in request: 
+Status: 600
+
+Duplicate values found in request: 
+Status: 700
+
+Validation error: 
+Status: 800
