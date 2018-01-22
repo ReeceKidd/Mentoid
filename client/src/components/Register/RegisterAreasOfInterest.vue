@@ -98,7 +98,6 @@
   export default {
     data() {
       return {
-        areasOfInterestCount: 0,
         areasOfInterest: [],
         currentUser: this.$store.state.user.authUser,
         errorMessage: null,
@@ -134,11 +133,9 @@
         const newHobby = {
           value: '',
           years: 0,
-          areaOfInterestID: 0
+          areaOfInterestID: this.areasOfInterest.length
         }
-        this.areasOfInterestCount++
         this.areasOfInterest.push(newHobby)
-        this.areasOfInterest[this.areasOfInterest.length - 1].areaOfInterestID = this.areasOfInterestCount
       },
       onDeleteAreaOfInterest(id) {
         this.areasOfInterest = this.areasOfInterest.filter(areaOfInterest => areaOfInterest.areaOfInterestID !== id)

@@ -14,10 +14,11 @@
 
 Before moving on make sure that the registration process is complete. 
 This means that I need to reduce the amount of for loop iterations used by setting a custom message. 
-The front end console should log the relevant messages. 
+
 Complete test code for the basic registation and for the add areas of interest. 
 Make sure both sections are mobile responsive. 
-Also need to make sure the input is title case for the areas of interest, this should be done on the server side. 
+
 If this is completed begin work on the paths section. 
 Complete tests now with age check as well front end and back end. 
-Need to get an error message to appear if users input is greater than age. 
+
+//Need to fix the issue with the delete buttons in the areas of interest registration. 
