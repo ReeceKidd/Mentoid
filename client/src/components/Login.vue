@@ -1,35 +1,39 @@
 <template>
   <div class="containter-fluid">
-  <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
-          <img src="..\assets\login-logo.png" class="img-responsive center-block">
-          <form @submit.prevent="onSubmit">
-            <div class="input">
-              <label for="email">Email</label>
-              <input type="email" id="email" v-model="email">
-            </div>
-            <div class="input">
-              <label for="password">Password</label>
-              <input type="password" id="password" v-model="password">
-            </div>
-            <p class="error" v-if="errorMessage">{{errorMessage}}</p>
-            <div class="submit text-center">
-              <button class="btn btn-primary text-center" >Submit</button>
-            </div>
-          </form>
+    <!-- If user is logged in they should get redirected to their profile instead -->
+    <span v-if="isUserLoggedIn"> {{ navigateTo('/profile/edit-profile')}} </span>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+        <img src="..\assets\login-logo.png" class="img-responsive center-block">
+        <form @submit.prevent="onSubmit">
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" v-model="email">
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="password" v-model="password">
+          </div>
+          <p class="error" v-if="errorMessage">{{errorMessage}}</p>
+          <div class="submit text-center">
+            <button class="btn btn-primary text-center">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
 
 </template>
 
 <script>
+  import axios from 'axios'
   export default {
     data() {
       return {
         email: '',
         password: '',
-        errorMessage: null
+        errorMessage: null,
+        isUserLoggedIn: null
       }
     },
     methods: {
@@ -48,6 +52,25 @@
           .catch(e => {
             this.errorMessage = e.message
           })
+      },
+      navigateTo(route) {
+        this.$router.push(route)
+      }
+    },
+    beforeMount() {
+      var self = this
+      // If auth user ._id is equal to null it means it is their first time registering
+      try {
+        if (this.$store.state.user.authUser._id !== null) {
+          const userID = this.$store.state.user.authUser._id
+          // Checks if the areas of interest registration has already been complete
+          const isUserLoggedInURL = 'http://localhost:4000/get/is-user-logged-in/'
+          axios.get(isUserLoggedInURL + userID).then(function (response) {
+            self.isUserLoggedIn = response.data.isUserLoggedIn
+          })
+        }
+      } catch (exception) {
+        console.log('User is not logged in so can access login page')
       }
     }
   }

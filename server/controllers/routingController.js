@@ -38,4 +38,21 @@ routingController.getAreasOfInterestRegistrationCompleteValue = (req, res) => {
         })
     }
 
+    routingController.getIsUsersLoggedIn = (req, res) => {
+        const userID = req.params.userID
+        User.findById(userID, function (err, user) {
+            if (err) {
+                res.status(500)
+                res.send({
+                    message: 'Could not get isUserLoggedIn',
+                    error: 'Server error'
+                })
+            }
+        }).select('isUserLoggedIn -_id').then(user => {
+            res.status(200).send({
+                isUserLoggedIn: user.isUserLoggedIn
+            })
+        })
+    }
+
 module.exports = routingController

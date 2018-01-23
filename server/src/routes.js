@@ -30,7 +30,7 @@ routes.get('/get-single-user-ID', testController.getSingleUserID)
 //Routing Routes
 routes.get('/get/basic-registration-complete/:userID', routingController.getBasicRegistrationCompleteValue)
 routes.get('/get/areas-of-interest-registration-complete/:userID', routingController.getAreasOfInterestRegistrationCompleteValue)
-
+routes.get('/get/is-user-logged-in/:userID', routingController.getIsUsersLoggedIn)
 //Areas of Interest Routes
 //Get every area of interest
 //Get total number of users for area of interest. 
