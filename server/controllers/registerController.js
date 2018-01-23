@@ -225,6 +225,7 @@ registerController.updateAreasOfInterest = (req, res) => {
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
+        console.log(errors)
         return res.status(600).send({
             error: 'Validation failure',
             message: errors[Object.keys(errors)[0]].msg
@@ -246,9 +247,10 @@ registerController.updateAreasOfInterest = (req, res) => {
 
         User.findOneAndUpdate(query, {
                 $set: {
-                    areasOfInterest: updatedAreasOfInterest
+                    areasOfInterest: updatedAreasOfInterest,
+                    areasOfInterestRegistrationComplete: true
                 },
-                areasOfInterestRegistrationComplete: true
+                
             },
             function (err, updated) {
                 if (err) {

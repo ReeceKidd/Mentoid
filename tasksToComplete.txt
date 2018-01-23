@@ -31,3 +31,16 @@ Plan for 22/01/2018
 
 Completing the tests did reveal some code that wasn't working and a way to add an additional field which could 
 have caused a variety of errors. 
+
+Plan for 23/01/2018
+
+1) Fix test that is failing. (completed)
+2) Ensure current part of registration is mobile responsive
+3) Begin work on adding there work history as the next section of registation
+4) Then figure out how to add a profile picture to their profile. 
+
+Writing the test code revealled how three of my validators where not working as expected. 
+
+Need to add a try catch to the areas of interest registration to ensure that users are re routed if they have already completed it. 
+Same with the home page users should not be able to access the register or login page if they are already logged in. 
+Then need to do the three tasks outlined above so I can move on after checking if everything is working. 

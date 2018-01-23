@@ -1,12 +1,16 @@
 <template>
+<!-- This component is different on XS devices -->
   <div id="areasOfInterest">
+    <!-- If user has already completed areas of interest registration they will get redirected to their profile -->
+    <span v-if="areasOfInterestComplete"> {{ navigateTo('/profile/edit-profile')}} </span>
+    <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
       </div>
       <div class="col-xs-8 col-xs-offset-2">
         <h2 class="text-center">
-          Please add your hobbies, skills or interests that you are interested in learning more or helping others with.
+          Please add your hobbies, skills and areas of interest.
         </h2>
       </div>
     </div>
@@ -19,7 +23,45 @@
 
     <br>
 
-    <div class="row">
+    <!-- This is the desktop version of this registration section.  -->
+    <div class="row hidden-xs">
+      <div class="col-xs-6 text-right">
+        <div class="areasOfInterestList">
+          <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
+            <label :for="areaOfInterest.areaOfInterestID">
+              <h4>Area of Interest
+                <b> {{index}}: </b>
+              </h4>
+            </label>
+            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
+              name="areaOfInterestValue">
+            <br>
+            <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+            You must enter an area of interest. </p>
+            <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+            Areas of interest can only alphabet characters. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="areasOfInterestList">
+          <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
+            <label>
+              <h4>Years of experience</h4>
+            </label>
+            <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset" :id="areaOfInterest.areaOfInterestID"
+              v-model="areaOfInterest.years" name="yearsOfExperience">
+            <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
+            <br>
+            <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
+            Please enter years of experience in this area. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- This is the mobile version of this registration section.  -->
+    <div class="row visible-xs">
       <div class="col-xs-6 text-right">
         <div class="areasOfInterestList">
           <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
@@ -55,6 +97,9 @@
       </div>
     </div>
 
+    
+
+
     <div class="row text-center">
       <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
     </div>
@@ -68,6 +113,7 @@
       <button class="btn btn-lg btn-primary" :disabled="$v.areasOfInterest.$invalid" @click="onSubmit"> Submit </button>
     </div>
 
+  </div>
   </div>
 </template>
 
@@ -101,7 +147,8 @@
         areasOfInterest: [],
         currentUser: this.$store.state.user.authUser,
         errorMessage: null,
-        age: null
+        age: null,
+        areasOfInterestComplete: null
       }
     },
     methods: {
@@ -144,7 +191,7 @@
         return this.age
       }
     },
-    created() {
+    beforeMount() {
       var self = this
       const userID = this.$store.state.user.authUser._id
       // Get the users areas of interest
@@ -155,7 +202,12 @@
       // Get the users age
       const getAgeUrl = 'http://localhost:4000/get/age/'
       axios.get(getAgeUrl + userID).then(function (response) {
-        self.age = response.data.age
+        self.basicRegistrationComplete = response.data.basicRegistrationComplete
+      })
+      // Checks if the areas of interest registration has already been complete
+      const getAreasOfInterestCompleteValue = 'http://localhost:4000/get/areas-of-interest-registration-complete/'
+      axios.get(getAreasOfInterestCompleteValue + userID).then(function (response) {
+        self.areasOfInterestComplete = response.data.areasOfInterestComplete
       })
     },
     validations: {
@@ -203,12 +255,16 @@
     color: red;
   }
 
-  #yearsOfExperience input {
+  #yearsOfExperienceDesktop input {
     width: 10%;
   }
 
-  #areasOfInterestValue input {
-    width: 10%;
+  #yearsOfExperienceMobile input {
+    width: 40%;
+  }
+
+  #areaOfInterestMobile input {
+    width: 100%;
   }
 
   .input.inline input {

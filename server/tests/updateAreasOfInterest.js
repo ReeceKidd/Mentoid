@@ -3,22 +3,27 @@
 These tests are used to check the registration controllers register method. 
 
 Tests in this section.
-1) Tests for correct registration data. 
-2) Tests to check that a request with additional field fails
-3) Tests to check that requests with a missing field fails.
-4) Checks that request fails for all values that should be a string.
-5) Checks to see that user cannot set later registration fields during basic registration.
-6) Checks that the first name only contains Alphabetical characters
-7) Checks that the first name is at least two characters long. 
-8) Checks that the last name only contains Alphabetical characters
-9) Checks that the last name is at least two characters long. 
-10) Checks that the username is alphanumeric and does not contain spaces. 
-11) Checks that invalid email addresses are rejected. 
-12) Checks that password is eight or more characters long. 
-13) Checks that password matches confirmation password. 
-14) Checks that a users age is between 16 and 120
-15) Checks that the users country is equal to USA, UK, INDIA or Germany
-16) Checks the user has accepted the terms and conditions. 
+1) Checks for successful update of areas of interest
+2) Checks that areas of interest update fails because of unwanted additional fields in request.
+3) Checks that areas of interest with the exact same value throw a duplication error.
+4) Checks that areas of interest with different case same values throw a duplication error. 
+5) Checks that the user ID is equal to a string. 
+6) Checks that the userID is not an empty string. 
+7) Checks that age is a number. 
+8) Checks that age exists
+9) Checks that age is in valid number range.
+10) Checks that the areasOfInterest array contains at least one area of interest.
+11) Checks that each area of interest contains only the fields, value, years, and ID.
+12) Checks that each area of interest is an object.
+13) Checks that each area of interest has defined value, years and ID. 
+14) Checks that a value is defined for every area of interest. 
+15) Checks that the value is a string value. 
+16) Checks that the value only contains letters and whitespace. 
+17) Checks that the "years" field is defined.  
+18) Checks that the years field is an integer.
+19) Checks that years of experience is not greater than the users age.
+20) Checks the area of interest ID field is defined. 
+21) Checks the area of interest ID field is an integer. 
 */
 
 /*
@@ -192,41 +197,7 @@ describe('Exact same values different case format thow a duplication error', () 
     })
 })
 
-// 5) Checks that areas of interest with different case same values throw a duplication error. 
-describe('Exact same values different case format thow a duplication error', () => {
-    it('It should fail because there are three areas of interest with the value "yoga" defning yoga in different case formats', (done) => {
-        var areasOfInterest = {}
-        chai.request(server)
-            .post('/update/areas-of-interest')
-            .send({
-                areasOfInterest: [{
-                        value: 'YoGa',
-                        years: 10,
-                        areaOfInterestID: 0
-                    },
-                    {
-                        value: 'yogA',
-                        years: 10,
-                        areaOfInterestID: 0
-                    },
-                    {
-                        value: 'yoga',
-                        years: 10,
-                        areaOfInterestID: 0
-                    }
-                ],
-                _id: retrievedUserID,
-                age: 16
-            })
-            .end((err, res) => {
-                res.should.have.status(800)
-                res.body.should.have.property('error').eql('Duplicate values')
-                done()
-            })
-    })
-})
-
-// 6) Checks that the user ID is equal to a string. 
+// 5) Checks that the user ID is equal to a string. 
 describe('Checks that user ID is equal to a string', () => {
     it('It should fail because user ID is equal to a number', (done) => {
         var areasOfInterest = {}
@@ -249,7 +220,7 @@ describe('Checks that user ID is equal to a string', () => {
     })
 })
 
-// 7) Checks that the userID is not an empty string. 
+// 6) Checks that the userID is not an empty string. 
 describe('Checks that user ID is not an empty string', () => {
     it('It should fail because user ID is equal to an empty string', (done) => {
         var areasOfInterest = {}
@@ -271,7 +242,7 @@ describe('Checks that user ID is not an empty string', () => {
     })
 })
 
-// 8) Checks that age is a number. 
+// 7) Checks that age is a number. 
 describe('Checks that age is a number', () => {
     it('It should fail because age is a string value', (done) => {
         var areasOfInterest = {}
@@ -294,7 +265,7 @@ describe('Checks that age is a number', () => {
     })
 })
 
-// 9) Checks that age exists
+// 8) Checks that age exists
 describe('Checks that age exists', () => {
     it('It should fail because the request does not have an age field', (done) => {
         var areasOfInterest = {}
@@ -316,7 +287,7 @@ describe('Checks that age exists', () => {
     })
 })
 
-// 10) Checks that age is in valid number range.
+// 9) Checks that age is in valid number range.
 describe('Checks that age is a valid number', () => {
     it('It should fail because age is 15 which is outside the bounds of 16-120', (done) => {
         var areasOfInterest = {}
@@ -339,7 +310,7 @@ describe('Checks that age is a valid number', () => {
     })
 })
 
-// 11) Checks that the array contains at least one area of interest.
+// 10) Checks that the areasOfInterest array contains at least one area of interest.
 describe('Checks that the areasOfInterest array contains at least one area of interest', () => {
     it('It should fail because the arrays of interest array is empty', (done) => {
         var areasOfInterest = {}
@@ -358,7 +329,7 @@ describe('Checks that the areasOfInterest array contains at least one area of in
     })
 })
 
-// 12) Checks that each area of interest contains only the fields, value, years, and ID.
+// 11) Checks that each area of interest contains only the fields, value, years, and ID.
 describe('Checks that each area of interest contains only the fields, value, years and ID', () => {
     it('It should fail because the area of interest contains an additional field', (done) => {
         var areasOfInterest = {}
@@ -382,7 +353,7 @@ describe('Checks that each area of interest contains only the fields, value, yea
     })
 })
 
-// 13) Checks that each area of interest is an object.
+// 12) Checks that each area of interest is an object.
 describe('Checks that every value in areas of interest array is an object', () => {
     it('It should fail because the area of interest array contains a string value', (done) => {
         var areasOfInterest = {}
@@ -392,6 +363,7 @@ describe('Checks that every value in areas of interest array is an object', () =
                 areasOfInterest: [{
                         value: 'Yoga',
                         areaOfInterestID: 0,
+                        years: 10
                     },
                     "String value"
                 ],
@@ -405,7 +377,7 @@ describe('Checks that every value in areas of interest array is an object', () =
     })
 })
 
-// 14) Checks that each area of interest has defined value, years and ID. 
+// 13) Checks that each area of interest has defined value, years and ID. 
 describe('Checks that each area of interest contains the fields, value, years and ID', () => {
     it('It should fail because the area of interest is missing the years field', (done) => {
         var areasOfInterest = {}
@@ -427,7 +399,7 @@ describe('Checks that each area of interest contains the fields, value, years an
     })
 })
 
-// 15) Checks that a value is defined for every area of interest. 
+// 14) Checks that a value is defined for every area of interest. 
 describe('Checks that value is defined for every area of interest', () => {
     it('It should fail because area of interests value is equal to an empty string', (done) => {
         var areasOfInterest = {}
@@ -450,7 +422,7 @@ describe('Checks that value is defined for every area of interest', () => {
     })
 })
 
-// 16) Checks that the value is a string value. 
+// 15) Checks that the value is a string value. 
 describe('Checks that value is a string value', () => {
     it('It should fail because area of interests value is equal to 123', (done) => {
         var areasOfInterest = {}
@@ -478,7 +450,7 @@ describe('Checks that value is a string value', () => {
     })
 })
 
-// 17) Checks that the value only contains letters and whitespace. 
+// 16) Checks that the value only contains letters and whitespace. 
 describe('Checks that value only contains letters and whitespace', () => {
     it('It should fail because value contains a question mark', (done) => {
         var areasOfInterest = {}
@@ -502,7 +474,7 @@ describe('Checks that value only contains letters and whitespace', () => {
     })
 })
 
-// 18) Checks that the "years" field is defined.  
+// 17) Checks that the "years" field is defined.  
 describe('Checks that the years field is definied', () => {
     it('It should fail because years is a blank string', (done) => {
         var areasOfInterest = {}
@@ -526,7 +498,7 @@ describe('Checks that the years field is definied', () => {
     })
 })
 
-// 19) Checks that the years field is an integer. 
+// 18) Checks that the years field is an integer. 
 describe('Checks that the years field is an integer', () => {
     it('It should fail because years is a double', (done) => {
         var areasOfInterest = {}
@@ -550,7 +522,7 @@ describe('Checks that the years field is an integer', () => {
     })
 })
 
-// 20) Checks that years of experience is not greater than the users age.
+// 19) Checks that years of experience is not greater than the users age.
 describe('Checks that years of experience is not greater than the users age', () => {
     it('It should fail because years of experience is greater than the users age', (done) => {
         var areasOfInterest = {}
@@ -574,7 +546,7 @@ describe('Checks that years of experience is not greater than the users age', ()
     })
 })
 
-// 21) Checks the area of interest ID field is defined. 
+// 20) Checks the area of interest ID field is defined. 
 describe('Checks that area of interest ID is defined', () => {
     it('It should fail because area of interest id is undefined', (done) => {
         var areasOfInterest = {}
@@ -598,7 +570,7 @@ describe('Checks that area of interest ID is defined', () => {
     })
 })
 
-// 22) Checks the area of interest ID field is an integer. 
+// 21) Checks the area of interest ID field is an integer. 
 describe('Checks that the area of interest ID field is an integer', () => {
     it('It should fail because area of interest id is a string', (done) => {
         var areasOfInterest = {}
@@ -607,8 +579,8 @@ describe('Checks that the area of interest ID field is an integer', () => {
             .send({
                 areasOfInterest: [{
                         value: 'Yoga',
-                        areaOfInterestID: null,
-                        years: "Three"
+                        areaOfInterestID: 'three',
+                        years: 3
                     }
                 ],
                 _id: retrievedUserID,

@@ -70,7 +70,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
         return true
     })
 
-    req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
+    req.check('areasOfInterest', 'Each area of interest must define a value for years of experience and ID').custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
             if (areasOfInterest[x].value === 'undefined') {
                 return false
@@ -88,7 +88,8 @@ module.exports = function updateAreasOfInterestValidation(req) {
     req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
         for (var x = 0; x < areasOfInterest.length; x++) {
             for (property in areasOfInterest[x]) {
-                if (property !== 'value' && property !== 'years' &&
+                if (property !== 'value' && 
+                    property !== 'years' &&
                     property !== 'areaOfInterestID') {
                     return false
                 }
@@ -131,10 +132,13 @@ module.exports = function updateAreasOfInterestValidation(req) {
         }
         for (var x = 0; x < areasOfInterest.length; x++) {
             if (typeof areasOfInterest[x].value !== 'string') {
-                continue
+                return false
             }
             var match = areasOfInterest[x].value.match(/^[A-Za-z\s]+$/)
             if (match === undefined) {
+                return false
+            }
+            if(!match){
                 return false
             }
         }

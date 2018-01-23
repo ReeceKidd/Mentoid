@@ -7,6 +7,7 @@ const adminController = require('../controllers/adminController.js')
 const registerController = require('../controllers/registerController.js')
 const loginController = require('../controllers/loginController.js')
 const testController = require('../controllers/testController.js')
+const routingController = require('../controllers/routingController.js')
 
 //Admin routes
 routes.get('/admin/get-users', adminController.getUsers)
@@ -24,6 +25,10 @@ routes.post('/login', loginController.login)
 
 //Testing Routes 
 routes.get('/get-single-user-ID', testController.getSingleUserID)
+
+//Routing Routes
+routes.get('/get/basic-registration-complete/:userID', routingController.getBasicRegistrationCompleteValue)
+routes.get('/get/areas-of-interest-registration-complete/:userID', routingController.getAreasOfInterestRegistrationCompleteValue)
 
 //Areas of Interest Routes
 //Get every area of interest
