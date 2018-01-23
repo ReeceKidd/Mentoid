@@ -123,6 +123,7 @@ registerController.register = (req, res) => {
             newUser.basicRegistrationComplete = true
             newUser.areasOfInterestRegistrationComplete = false
             newUser.userRegistrationComplete = false
+            newUser.isUserLoggedIn = true
             const saveUser = new User(newUser)
             saveUser
                 .save()

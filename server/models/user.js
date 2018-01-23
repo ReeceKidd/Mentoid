@@ -42,7 +42,8 @@ const User = new Schema(
     terms: Boolean,
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,
-    userRegistrationComplete: Boolean
+    userRegistrationComplete: Boolean,
+    isUserLoggedIn: Boolean
   },
   {
     timestamps: true

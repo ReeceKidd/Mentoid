@@ -1,7 +1,7 @@
 <template>
 
   <body>
-    
+
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +29,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a @click="navigateTo({ name : 'matching-home'})">Matching</a> 
+                  <a @click="navigateTo({ name : 'matching-home'})">Matching</a>
                 </li>
                 <li>
                   <a @click="navigateTo({ name : 'manage-relationships'})">Manage relationships</a>
@@ -99,24 +99,40 @@
           </ul>
           <!-- /.navbar-collapse -->
         </div>
-    </div>
+      </div>
     </nav>
   </body>
 </template>
 
 <script>
   export default {
+    data() {
+      return {
+        _id: ''
+      }
+    },
     methods: {
       navigateTo(route) {
         this.$router.push(route)
       },
       logout() {
-        this.$store.dispatch('logout')
+        this.$store
+          .dispatch('logout', {
+            _id: this._id
+          })
+          .then(() => {
+            console.log('Successful')
+          })
+          .catch(e => {
+            this.errorMessage = e.message
+          })
       }
+    },
+    beforeMount() {
+      this._id = this.$store.state.user.authUser._id
     }
   }
 </script>
-
 
 <style scoped>
 </style>

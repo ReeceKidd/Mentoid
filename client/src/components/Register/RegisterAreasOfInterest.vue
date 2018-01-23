@@ -1,119 +1,119 @@
 <template>
-<!-- This component is different on XS devices -->
+  <!-- This component is different on XS devices -->
   <div id="areasOfInterest">
     <!-- If user has already completed areas of interest registration they will get redirected to their profile -->
     <span v-if="areasOfInterestComplete"> {{ navigateTo('/profile/edit-profile')}} </span>
     <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
+        </div>
+        <div class="col-xs-8 col-xs-offset-2">
+          <h2 class="text-center">
+            Please add your hobbies, skills and areas of interest.
+          </h2>
+        </div>
       </div>
-      <div class="col-xs-8 col-xs-offset-2">
-        <h2 class="text-center">
-          Please add your hobbies, skills and areas of interest.
-        </h2>
+
+      <br>
+
+      <div class="row text-center">
+        <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
       </div>
-    </div>
 
-    <br>
+      <br>
 
-    <div class="row text-center">
-      <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
-    </div>
-
-    <br>
-
-    <!-- This is the desktop version of this registration section.  -->
-    <div class="row hidden-xs">
-      <div class="col-xs-6 text-right">
-        <div class="areasOfInterestList">
-          <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
-            <label :for="areaOfInterest.areaOfInterestID">
-              <h4>Area of Interest
-                <b> {{index}}: </b>
-              </h4>
-            </label>
-            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
-              name="areaOfInterestValue">
-            <br>
-            <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
-            You must enter an area of interest. </p>
-            <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
-            Areas of interest can only alphabet characters. </p>
+      <!-- This is the desktop version of this registration section.  -->
+      <div class="row hidden-xs">
+        <div class="col-xs-6 text-right">
+          <div class="areasOfInterestList">
+            <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
+              <label :for="areaOfInterest.areaOfInterestID">
+                <h4>Area of Interest
+                  <b> {{index}}: </b>
+                </h4>
+              </label>
+              <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
+                name="areaOfInterestValue">
+              <br>
+              <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+                You must enter an area of interest. </p>
+              <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+                Areas of interest can only alphabet characters. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="areasOfInterestList">
+            <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
+              <label>
+                <h4>Years of experience</h4>
+              </label>
+              <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset"
+                :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
+              <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
+              <br>
+              <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
+                Please enter years of experience in this area. </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-6">
-        <div class="areasOfInterestList">
-          <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
-            <label>
-              <h4>Years of experience</h4>
-            </label>
-            <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset" :id="areaOfInterest.areaOfInterestID"
-              v-model="areaOfInterest.years" name="yearsOfExperience">
-            <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
-            <br>
-            <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
-            Please enter years of experience in this area. </p>
+
+      <!-- This is the mobile version of this registration section.  -->
+      <div class="row visible-xs">
+        <div class="col-xs-6 text-right">
+          <div class="areasOfInterestList">
+            <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
+              <label :for="areaOfInterest.areaOfInterestID">
+                <h4>Area of Interest
+                  <b> {{index}}: </b>
+                </h4>
+              </label>
+              <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
+                name="areaOfInterestValue">
+              <br>
+              <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+                You must enter an area of interest. </p>
+              <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
+                Areas of interest can only alphabet characters. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="areasOfInterestList">
+            <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
+              <label>
+                <h4>Years of experience</h4>
+              </label>
+              <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset"
+                :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
+              <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
+              <br>
+              <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
+                Please enter years of experience in this area. </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- This is the mobile version of this registration section.  -->
-    <div class="row visible-xs">
-      <div class="col-xs-6 text-right">
-        <div class="areasOfInterestList">
-          <div id="areaOfInterestValue" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
-            <label :for="areaOfInterest.areaOfInterestID">
-              <h4>Area of Interest
-                <b> {{index}}: </b>
-              </h4>
-            </label>
-            <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
-              name="areaOfInterestValue">
-            <br>
-            <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
-            You must enter an area of interest. </p>
-            <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
-            Areas of interest can only alphabet characters. </p>
-          </div>
-        </div>
+
+
+
+
+      <div class="row text-center">
+        <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
       </div>
-      <div class="col-xs-6">
-        <div class="areasOfInterestList">
-          <div id="yearsOfExperience" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
-            <label>
-              <h4>Years of experience</h4>
-            </label>
-            <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset" :id="areaOfInterest.areaOfInterestID"
-              v-model="areaOfInterest.years" name="yearsOfExperience">
-            <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
-            <br>
-            <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
-            Please enter years of experience in this area. </p>
-          </div>
-        </div>
+
+      <div class="row text-center">
+        <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
       </div>
+      <br>
+
+      <div class="row text-center">
+        <button class="btn btn-lg btn-primary" :disabled="$v.areasOfInterest.$invalid" @click="onSubmit"> Submit </button>
+      </div>
+
     </div>
-
-    
-
-
-    <div class="row text-center">
-      <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
-    </div>
-
-    <div class="row text-center">
-    <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
-    </div>
-    <br>
-
-    <div class="row text-center">
-      <button class="btn btn-lg btn-primary" :disabled="$v.areasOfInterest.$invalid" @click="onSubmit"> Submit </button>
-    </div>
-
-  </div>
   </div>
 </template>
 
@@ -163,7 +163,7 @@
           areasOfInterest: this.areasOfInterest,
           _id: this.currentUser._id,
           age: this.age
-        }).then(function(response) {
+        }).then(function (response) {
           console.log(response.data.message)
           that.navigateTo('/success')
         }).catch(error => {
@@ -187,7 +187,7 @@
       onDeleteAreaOfInterest(id) {
         this.areasOfInterest = this.areasOfInterest.filter(areaOfInterest => areaOfInterest.areaOfInterestID !== id)
       },
-      getCurrentAge () {
+      getCurrentAge() {
         return this.age
       }
     },
@@ -227,7 +227,6 @@
     }
   }
 </script>
-
 <style scoped>
   .input {
     margin: 10px auto;

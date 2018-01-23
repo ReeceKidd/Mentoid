@@ -5,7 +5,7 @@ const routes = express();
 //Controller imports
 const adminController = require('../controllers/adminController.js')
 const registerController = require('../controllers/registerController.js')
-const loginController = require('../controllers/loginController.js')
+const userController = require('../controllers/userController.js')
 const testController = require('../controllers/testController.js')
 const routingController = require('../controllers/routingController.js')
 
@@ -20,8 +20,9 @@ routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfIntere
 routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 
-//Login Routes
-routes.post('/login', loginController.login)
+//User Routes
+routes.post('/login', userController.login)
+routes.get('/logout/:userID', userController.logout)
 
 //Testing Routes 
 routes.get('/get-single-user-ID', testController.getSingleUserID)

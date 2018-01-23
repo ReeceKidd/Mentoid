@@ -31,7 +31,14 @@ const asyncIssue = payload => {
   userController.login = (req, res) => {
     try {
       var formData = req.body
-      User.findOne({ email: formData.email })
+      var query = {
+        email: formData.email
+      }
+      User.findOneAndUpdate(query, {
+        $set: {
+            isUserLoggedIn: true
+        },   
+    })
         .then(user => {
           if (user) {
             // compare password
@@ -85,5 +92,26 @@ const asyncIssue = payload => {
       })
     }
   }
+
+  userController.logout = (req, res) => {
+    const userID = req.params.userID
+    User.findByIdAndUpdate(userID, {
+      $set: {
+          isUserLoggedIn: false
+      },
+  }, function (err, user) {
+        if (err) {
+            res.status(500)
+            res.send({
+                message: 'Could not log out user',
+                error: 'Server error'
+            })
+        } else {
+            res.status(200).send({
+                message: 'Logged out user ' + user.userName
+            })
+        }
+    })
+}
     
 module.exports = userController

@@ -67,10 +67,16 @@ export const actions = {
         throw new Error(error.message)
       })
   },
-  logout({ commit }) {
+  logout({ commit }, {_id}) {
+    // Ensures user is set as logged out in the database.
+    console.log(_id)
+    const setUserAsLoggedOut = 'http://localhost:4000/logout/'
+    axios.get(setUserAsLoggedOut + _id).then(function (response) {
+      console.log(response)
+    })
     window.localStorage.removeItem('mentoid')
     commit('SET_USER', null)
-    window.location.replace('/')
+    // window.location.replace('/')
   }
 }
 
