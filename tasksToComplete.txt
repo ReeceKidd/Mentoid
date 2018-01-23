@@ -45,3 +45,4 @@ Same with the home page users should not be able to access the register or login
 Then need to do the three tasks outlined above so I can move on after checking if everything is working. 
 Need to make sure cross site scripting doesn't work for my forms. 
 India does not work for basic registration
+Need to make sure that logout method is working correctly

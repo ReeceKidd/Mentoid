@@ -120,9 +120,6 @@
           .dispatch('logout', {
             _id: this._id
           })
-          .then(() => {
-            console.log('Successful')
-          })
           .catch(e => {
             this.errorMessage = e.message
           })
