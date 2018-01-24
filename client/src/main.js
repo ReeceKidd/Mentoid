@@ -15,6 +15,7 @@ import App from './App.vue'
 //  Registration Components
 import BasicRegistration from './components/Register/BasicRegistration.vue'
 import RegisterAreasOfInterest from './components/Register/RegisterAreasOfInterest.vue'
+import RegisterJobHistory from './components/Register/RegisterJobHistory.vue'
 
 import UnknownHome from './components/UnknownHome.vue'
 import Login from './components/Login.vue'
@@ -65,6 +66,11 @@ const routes = [
     path: '/register-areas-of-interest',
     name: 'register-areas-of-interest',
     component: RegisterAreasOfInterest
+  },
+  {
+    path: '/register-job-history',
+    name: 'register-job-history',
+    component: RegisterJobHistory
   },
   {
     path: '/login',

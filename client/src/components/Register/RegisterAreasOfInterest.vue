@@ -96,9 +96,6 @@
         </div>
       </div>
 
-
-
-
       <div class="row text-center">
         <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
       </div>
@@ -164,7 +161,7 @@
           age: this.age
         }).then(function (response) {
           console.log(response.data.message)
-          that.navigateTo('/success')
+          that.navigateTo('/register-job-history')
         }).catch(error => {
           this.errorMessage = error.response.data.message
           setTimeout(() => {

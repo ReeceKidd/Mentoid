@@ -51,5 +51,7 @@ Need to fix the registration process for the users.
 Plan for 24/01/2018
 
 Make sure registation component is complete. (complete)
-Make areas of interest mobile responsive
+Make areas of interest mobile responsive (complete)
 Begin work on employment history
+
+Taking inspiration from LinkedIn for the employment history. 
