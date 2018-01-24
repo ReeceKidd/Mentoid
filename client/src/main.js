@@ -8,6 +8,7 @@ import Vuelidate from 'vuelidate'
 import store from './store'
 
 import ElementUI from 'element-ui'
+import locale from 'element-ui/lib/locale/lang/en'
 import 'element-ui/lib/theme-chalk/index.css'
 
 import App from './App.vue'
@@ -42,10 +43,10 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import NotFound from './components/NotFound.vue'
 
-Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
 Vue.use(Vuelidate)
+Vue.use(ElementUI, { locale })
 
 // The Vue.config options below disable unwanted messages in the console.
 Vue.config.devtools = false

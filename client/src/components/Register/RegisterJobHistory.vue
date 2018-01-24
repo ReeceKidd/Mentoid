@@ -1,94 +1,84 @@
 <template>
   <div class="container">
-  
-  <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
-          <h2 class="text-center">
-            Please add your employment experience.
-          </h2>
-        </div>
-  </div>
-
-  <br>
-
-  <div class="row text-center">
-        <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <h2 class="text-center">
+          Please add your employment experience.
+        </h2>
       </div>
-  
-  <div id="signup">
-    <div class="signup-form">
+    </div>
+
+    <br>
+
+    <div class="row text-center">
+      <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
+    </div>
+
+    <div class="row">
       <form @submit.prevent="onSubmit">
-       
-        <div class="hobbies">
-          
-          <div class="hobby-list">
-            <div
-                    class="input"
-                    v-for="(hobbyInput, index) in hobbyInputs"
-                    :class="{invalid: $v.hobbyInputs.$each[index].$error}"
-                    :key="hobbyInput.id">
-              <label :for="hobbyInput.id">Hobby #{{ index }}</label>
-              <input
-                      type="text"
-                      :id="hobbyInput.id"
-                      @blur="$v.hobbyInputs.$each[index].value.$touch()"
-                      v-model="hobbyInput.value">
-              <button @click="onDeleteHobby(hobbyInput.id)" type="button">X</button>
+
+        <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
+
+          <div class="col-xs-4 col-xs-offset-4">
+
+            <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
+              <label :for="experience.title">Title</label>
+              <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
+              <label :for="experience.company">Company</label>
+              <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
+              <div class="block">
+                <label>Start Date</label>
+                <el-date-picker type="year" placeholder="Pick a year">
+                </el-date-picker>
+              </div>
+              <div class="block">
+                <label>Currently work here?</label>
+                <div class="input" name="language">
+                  <label for="language">Language*</label>
+                  <select id="language" v-model="language">
+                    <option value="English">English</option>
+                    <option value="Spanish">Spainish</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                  </select>
+                </div>
+              </div>
+              <div class="block">
+                <label>End Date</label>
+                <el-date-picker type="year" placeholder="Pick a year">
+                </el-date-picker>
+              </div>
+              <br>
+              <button @click="onDeleteExperiences(experience.id)" type="button" class="btn-danger btn btn-sm">Delete experience</button>
             </div>
-            <p v-if="!$v.hobbyInputs.minLen">You have to specify at least {{ $v.hobbyInputs.$params.minLen.min }} hobbies.</p>
-            <p v-if="!$v.hobbyInputs.required">Please add hobbies.</p>
           </div>
-        </div>
-        
-        <div class="submit">
-          <button type="submit">Submit</button>
         </div>
       </form>
     </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <button>Submit</button>
+      </div>
+    </div>
   </div>
-  </div>
+
 </template>
 
 <script>
-  import { required, email, numeric, minValue, minLength, sameAs, requiredUnless } from 'vuelidate/lib/validators'
+  import {
+    required,
+    minLength
+  } from 'vuelidate/lib/validators'
   export default {
-    data () {
+    data() {
       return {
-        email: '',
-        age: null,
-        password: '',
-        confirmPassword: '',
-        country: 'usa',
-        hobbyInputs: [],
-        terms: false
+        experiences: [],
+        checked: true
       }
     },
     validations: {
-      email: {
-        required,
-        email
-      },
-      age: {
-        required,
-        numeric,
-        minVal: minValue(18)
-      },
-      password: {
-        required,
-        minLen: minLength(6)
-      },
-      confirmPassword: {
-//        sameAs: sameAs('password')
-        sameAs: sameAs(vm => {
-          return vm.password
-        })
-      },
-      terms: {
-        required: requiredUnless(vm => {
-          return vm.country === 'germany'
-        })
-      },
-      hobbyInputs: {
+      experiences: {
         required,
         minLen: minLength(2),
         $each: {
@@ -100,35 +90,38 @@
       }
     },
     methods: {
-      onAddExperience () {
-        const newHobby = {
-          id: Math.random() * Math.random() * 1000,
-          value: ''
+      onAddExperience() {
+        const newExperience = {
+          id: 0,
+          title: '',
+          company: '',
+          currentlyWorkHere: '',
+          startDate: '',
+          endDate: ''
         }
-        this.hobbyInputs.push(newHobby)
+        this.experiences.push(newExperience)
       },
-      onDeleteHobby (id) {
-        this.hobbyInputs = this.hobbyInputs.filter(hobby => hobby.id !== id)
+      onDeleteExperiences(id) {
+        this.experiences = this.experiences.filter(experience => experience.id !== id)
       },
-      onSubmit () {
+      onSubmit() {
         const formData = {
-          email: this.email,
-          age: this.age,
-          password: this.password,
-          confirmPassword: this.confirmPassword,
-          country: this.country,
-          hobbies: this.hobbyInputs.map(hobby => hobby.value),
-          terms: this.terms
+          experiences: this.experiences.map(experience => experience.title)
         }
         console.log(formData)
         this.$store.dispatch('signup', formData)
       }
     }
   }
+
 </script>
 
 <style scoped>
-.input {
+  .align-right {
+    text-align: right;
+  }
+
+  .input {
     margin: 10px auto;
   }
 
@@ -198,4 +191,5 @@
     color: #ccc;
     cursor: not-allowed;
   }
+
 </style>
