@@ -17,8 +17,12 @@ Tests in this section.
 12) Checks that password is eight or more characters long. 
 13) Checks that password matches confirmation password. 
 14) Checks that a users age is between 16 and 120
-15) Checks that the users country is equal to USA, UK, INDIA or Germany
-16) Checks the user has accepted the terms and conditions. 
+15) Checks that the users has entered a supported language
+16) Checks that if the users language is Spanish it passes 
+17) Checks if the users language is English it passes
+18) Checks if users language is French it passes.
+19) Checks that if the users language is German it passes.
+20) Checks the user has accepted the terms and conditions. 
 */
 
 /*
@@ -53,7 +57,7 @@ describe('Test for valid registration', () => {
         age: 20,
         password: "12345678",
         confirmPassword: "12345678",
-        country: "USA",
+        language: "English",
         terms: true
     }
     it('It should successfully save user', (done) => {
@@ -78,7 +82,7 @@ describe('Checks for additional unwanted fields in request', () => {
             age: 20,
             password: "12345678",
             confirmPassword: "12345678",
-            country: "USA",
+            language: "English",
             terms: true
         }
         newUser.additionalField = 'additional information'
@@ -104,7 +108,7 @@ describe('Check to see if requests missing a required field fail', () => {
             age: 20,
             password: "password123",
             confirmPassword: "password123",
-            country: "USA",
+            language: "English",
             terms: true
         }
         delete newUser.firstName
@@ -130,7 +134,7 @@ describe('Check that that require a string contain a string', () => {
             age: 20,
             password: 1,
             confirmPassword: 1,
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -158,7 +162,7 @@ describe('Checks that user has not tried to set later registration', () => {
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true,
             basicRegistrationComplete: true
         }
@@ -187,7 +191,7 @@ describe('Checks that first name fails when non aphabetical characters are inclu
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -214,7 +218,7 @@ describe('Checks that first name fails when it is less than two characters', () 
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -242,7 +246,7 @@ describe('Checks that last name fails when it contains non alphabetical characte
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -270,7 +274,7 @@ describe('Checks that last name fails when it is less than two characters long',
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -298,7 +302,7 @@ describe('Checks that username is alphanumeric and does not contain spaces', () 
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -326,7 +330,7 @@ describe('Checks that invalid emails are rejected', () => {
             age: 20,
             password: "whitehouse",
             confirmPassword: "whitehouse",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -354,7 +358,7 @@ describe('Checks that passwords less than eight characters are rejected', () => 
             age: 20,
             password: "12345678",
             confirmPassword: "123456789",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -382,7 +386,7 @@ describe('Checks that password mathces confirmation password', () => {
             age: 20,
             password: "123",
             confirmPassword: "123",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -410,7 +414,7 @@ describe('Checks that age is between 16 and 120', () => {
             age: 15,
             password: "12345678",
             confirmPassword: "12345678",
-            country: "USA",
+            language: "English",
             terms: true
         }
         chai.request(server)
@@ -427,9 +431,9 @@ describe('Checks that age is between 16 and 120', () => {
     })
 })
 
-// 15) Checks that the users country is equal to USA, UK, INDIA or Germany
-describe('Checks that users country is equal to USA, UK, India or Germany', () => {
-    it('It should have a validation error because country is equal to france which is unsupported.', (done) => {
+// 15) Checks that the users has entered a supported language
+describe('Checks that users language is supported', () => {
+    it('It should fail because user has entered "Chinese".', (done) => {
         var newUser = {
             firstName: "Michelle",
             lastName: "Rogan",
@@ -438,7 +442,7 @@ describe('Checks that users country is equal to USA, UK, India or Germany', () =
             age: 20,
             password: "12345678",
             confirmPassword: "12345678",
-            country: "France",
+            language: "Chinese",
             terms: true
         }
         chai.request(server)
@@ -454,9 +458,113 @@ describe('Checks that users country is equal to USA, UK, India or Germany', () =
             })
     })
 })
-// 16) Checks the user has accepted the terms and conditions. 
+// 16) Checks that if the users language is Spanish it passes
+describe('Checks that if the users language is equal to Spanish it passes', () => {
+    it('It should pass as "Spanish" was selected.', (done) => {
+        var newUser = {
+            firstName: "Michelle",
+            lastName: "Rogan",
+            userName: "SpanishUser",
+            email: "spaintest@gmail.com",
+            age: 20,
+            password: "12345678",
+            confirmPassword: "12345678",
+            language: "Spanish",
+            terms: true
+        }
+        chai.request(server)
+            .post('/register')
+            .send(newUser)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err)
+                }
+                res.should.have.status(200)
+                done()
+            })
+    })
+})
+// 17) Checks if the users language is English it passes
+describe('Checks if the users language is English it passes', () => {
+    it('It should pass as "English" was selected.', (done) => {
+        var newUser = {
+            firstName: "Michelle",
+            lastName: "Rogan",
+            userName: "UKUser",
+            email: "ukuser@gmail.com",
+            age: 20,
+            password: "12345678",
+            confirmPassword: "12345678",
+            language: "English",
+            terms: true
+        }
+        chai.request(server)
+            .post('/register')
+            .send(newUser)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err)
+                }
+                res.should.have.status(200)
+                done()
+            })
+    })
+})
+// 18) Checks if users language is French it passes.
+describe('Checks if users language is French it passes', () => {
+    it('It should pass as "Frencg" was selected.', (done) => {
+        var newUser = {
+            firstName: "Michelle",
+            lastName: "Rogan",
+            userName: "USAUser",
+            email: "usauser@gmail.com",
+            age: 20,
+            password: "12345678",
+            confirmPassword: "12345678",
+            language: "French",
+            terms: true
+        }
+        chai.request(server)
+            .post('/register')
+            .send(newUser)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err)
+                }
+                res.should.have.status(200)
+                done()
+            })
+    })
+})
+// 19) Checks that if the users language is German it passes.
+describe('Checks that if users language is German it passes', () => {
+    it('It should pass as "German" was selected.', (done) => {
+        var newUser = {
+            firstName: "Michelle",
+            lastName: "Rogan",
+            userName: "GermanUser",
+            email: "germanuser@gmail.com",
+            age: 20,
+            password: "12345678",
+            confirmPassword: "12345678",
+            language: "German",
+            terms: true
+        }
+        chai.request(server)
+            .post('/register')
+            .send(newUser)
+            .end((err, res) => {
+                if (err) {
+                    console.log(err)
+                }
+                res.should.have.status(200)
+                done()
+            })
+    })
+})
+// 20) Checks the user has accepted the terms and conditions. 
 describe('Checks that user has accepted terms and condition', () => {
-    it('It should have a validation error because country is equal to france which is unsupported.', (done) => {
+    it('It should fail because terms and conditions are equal to null.', (done) => {
         var newUser = {
             firstName: "Michelle",
             lastName: "Rogan",
@@ -465,7 +573,7 @@ describe('Checks that user has accepted terms and condition', () => {
             age: 20,
             password: "12345678",
             confirmPassword: "12345678",
-            country: "France",
+            language: "English",
             terms: null
         }
         chai.request(server)

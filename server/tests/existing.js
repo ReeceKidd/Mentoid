@@ -32,7 +32,7 @@ var newUser = {
     age: 20,
     password: "12345678",
     confirmPassword: "12345678",
-    country: "USA",
+    language: "English",
     terms: true
 }
 
@@ -51,7 +51,7 @@ describe('Successfully add user for "existing.js" tests', () => {
         age: 20,
         password: "12345678",
         confirmPassword: "12345678",
-        country: "USA",
+        language: "English",
         terms: true
     }
     it('It should successfully save user', (done) => {

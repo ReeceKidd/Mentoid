@@ -46,3 +46,10 @@ Then need to do the three tasks outlined above so I can move on after checking i
 Need to make sure cross site scripting doesn't work for my forms. 
 India does not work for basic registration
 Need to make sure that logout method is working correctly
+Need to fix the registration process for the users. 
+
+Plan for 24/01/2018
+
+Make sure registation component is complete. (complete)
+Make areas of interest mobile responsive
+Begin work on employment history

@@ -25,10 +25,10 @@ module.exports = function basicRegistrationValidation(req){
     req.check('age', 'Age must be a valid number between 5 and 120').isInt(this, {min: 5, max: 120})
 
     // Accepted countries must be updated if the list of accepted countries is updated. 
-    var acceptedCountries = ['USA', 'UK', 'INDIA', 'GERMANY']
+    var acceptedLanguages = ['English', 'French', 'German', 'Spanish']
 
-    req.check('country', 'Country is required for basic registration').exists()
-    req.check('country', 'Country must be equal to one of the allowed values').isIn(acceptedCountries)
+    req.check('language', 'Language is required for basic registration').exists()
+    req.check('language', 'Language must be equal to one of the allowed values').isIn(acceptedLanguages)
 
     req.check('terms', 'The terms must be accepted to register').equals('true').isBoolean()
 

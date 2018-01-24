@@ -6,7 +6,10 @@ const routingController = {}
 // Returns a list of all users
 routingController.getBasicRegistrationCompleteValue = (req, res) => {
         const userID = req.params.userID
-        User.findById(userID, function (err, user) {
+        var query = {
+            _id: userID
+        }
+        User.findOne(query, function (err, user) {
             if (err) {
                 res.status(500)
                 res.send({
@@ -23,7 +26,10 @@ routingController.getBasicRegistrationCompleteValue = (req, res) => {
 
 routingController.getAreasOfInterestRegistrationCompleteValue = (req, res) => {
         const userID = req.params.userID
-        User.findById(userID, function (err, user) {
+        var query = {
+            _id: userID
+        }
+        User.findOne(query, function (err, user) {
             if (err) {
                 res.status(500)
                 res.send({
@@ -40,7 +46,10 @@ routingController.getAreasOfInterestRegistrationCompleteValue = (req, res) => {
 
     routingController.getIsUsersLoggedIn = (req, res) => {
         const userID = req.params.userID
-        User.findById(userID, function (err, user) {
+        var query = {
+            _id: userID
+        }
+        User.findOne(query, function (err, user) {
             if (err) {
                 res.status(500)
                 res.send({

@@ -173,7 +173,10 @@ registerController.getAreasOfInterest = (req, res) => {
 
 registerController.getUsersAge = (req, res) => {
     const userID = req.params.userID
-    User.findById(userID, function (err, user) {
+    var query = {
+        _id: userID
+    }
+    User.findOne(query, function (err, user) {
         if (err) {
             res.status(500)
             res.send({
@@ -226,7 +229,6 @@ registerController.updateAreasOfInterest = (req, res) => {
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
-        console.log(errors)
         return res.status(600).send({
             error: 'Validation failure',
             message: errors[Object.keys(errors)[0]].msg

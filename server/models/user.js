@@ -26,7 +26,7 @@ const User = new Schema(
     age: Number,
     password: String,
     confirmPassword: String,
-    country: String,
+    language: String,
     areasOfInterest: [{
       years: Number,
       value: String,
