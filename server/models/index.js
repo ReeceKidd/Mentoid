@@ -1,5 +1,5 @@
-var user = require('./user.js')
+var User = require('./user.js')
 
 module.exports = {
-    User: user
+    User
 }

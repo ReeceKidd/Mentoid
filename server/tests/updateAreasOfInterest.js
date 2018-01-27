@@ -23,7 +23,8 @@ Tests in this section.
 18) Checks that the years field is an integer.
 19) Checks that years of experience is not greater than the users age.
 20) Checks the area of interest ID field is defined. 
-21) Checks the area of interest ID field is an integer. 
+21) Checks the area of interest ID field is an integer.
+//22) Checks the get method returns only the editable fields for the registerController.getAreasOfInterest method.  
 */
 
 /*

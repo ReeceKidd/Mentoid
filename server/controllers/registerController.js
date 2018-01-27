@@ -153,6 +153,9 @@ registerController.register = (req, res) => {
     }
 }
 
+/*
+This is used if a user wants to return to the areas of interest page. 
+*/
 registerController.getAreasOfInterest = (req, res) => {
     const userID = req.params.userID
     User.findById(userID, function (err, user) {
@@ -164,9 +167,21 @@ registerController.getAreasOfInterest = (req, res) => {
             })
         }
     }).select('areasOfInterest -_id').then(user => {
-
+        /*
+        Once a user submits areas of interest, additional fields are added that will be used
+        for matching, however a user should not be able to see or change these, the
+        code below makes sure they cant see the other fields. 
+        */
+        var areasOfInterestWithFieldsUserCanUpdate = []
+        for (var x = 0; x < user.areasOfInterest.length; x++) {
+            areasOfInterestWithFieldsUserCanUpdate.push({
+                value: user.areasOfInterest[x].value,
+                years: user.areasOfInterest[x].years,
+                areaOfInterestID: user.areasOfInterest[x].areaOfInterestID
+            })
+        }
         res.status(200).send({
-            areasOfInterest: user.areasOfInterest
+            areasOfInterest: areasOfInterestWithFieldsUserCanUpdate
         })
     })
 }
@@ -253,7 +268,7 @@ registerController.updateAreasOfInterest = (req, res) => {
                     areasOfInterest: updatedAreasOfInterest,
                     areasOfInterestRegistrationComplete: true
                 },
-                
+
             },
             function (err, updated) {
                 if (err) {
@@ -269,8 +284,74 @@ registerController.updateAreasOfInterest = (req, res) => {
         )
     }
 
+    registerController.updateJobHistory = (req, res) => {
 
-
+        //Checks that only _id and areas of interest are passed in request. 
+        var unwantedField = checkFields.updateJobHistory(req.body)
+    
+        if (unwantedField) {
+            return res.status(700).send({
+                error: 'Additional fields found',
+                message: unwantedField
+            })
+        }
+    
+    
+        for (var x = 0; x < req.body.experiences.length; x++) {
+            req.body.experiences[x].title = toTitleCase(req.body.experiences[x].title)
+            req.body.experiences[x].company = toTitleCase(req.body.experiences[x].company)
+        }
+    
+        //Checks that there are no duplicate experiences entered.
+        var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
+    
+        if (duplicatedAreaOfInterestValues) {
+            return res.status(800).send({
+                error: 'Duplicate values',
+                message: duplicatedAreaOfInterestValues
+            })
+        }
+    
+        //Validation for updating job history. 
+        var errors = updateJobHistoryValidation(req)
+    
+        if (errors) {
+            return res.status(600).send({
+                error: 'Validation failure',
+                message: errors[Object.keys(errors)[0]].msg
+            })
+        } else {
+            var updatedJobHistory = req.body.updatedJobHistory
+            // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
+            for (var x = 0; x < updatedJobHistory.length; x++) {
+                
+            }
+    
+            var query = {
+                '_id': req.body._id
+            }
+    
+            User.findOneAndUpdate(query, {
+                    $set: {
+                        areasOfInterest: updatedAreasOfInterest,
+                        areasOfInterestRegistrationComplete: true
+                    },
+    
+                },
+                function (err, updated) {
+                    if (err) {
+                        res.status(400).send({
+                            message: 'Unable to update areas of interest. Could not find user. '
+                        })
+                    } else {
+                        res.status(200).send({
+                            message: 'Updated areas of interest successfully.'
+                        })
+                    }
+                }
+            )
+        }
+    }
 }
 
 module.exports = registerController

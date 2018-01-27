@@ -55,3 +55,6 @@ Make areas of interest mobile responsive (complete)
 Begin work on employment history
 
 Taking inspiration from LinkedIn for the employment history. 
+
+2) Complete the job history front end so it takes up more space on bigger screens. 
+1) Go back to the areas of interest and organize it like the job history as it's much easier to maintain. 

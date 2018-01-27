@@ -1,8 +1,6 @@
 <template>
   <!-- This component is different on XS devices -->
   <div id="areasOfInterest">
-    <!-- If user has already completed areas of interest registration they will get redirected to their profile -->
-    <span v-if="areasOfInterestRegistrationComplete"> {{ navigateTo('/profile/edit-profile')}} </span>
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -112,7 +110,6 @@
     </div>
   </div>
 </template>
-
 <script>
   import {
     required,

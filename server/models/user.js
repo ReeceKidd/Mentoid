@@ -37,11 +37,20 @@ const User = new Schema(
       videosWatched: Number,
       pathsStudied: Number
     }],
+    jobHistory: [{
+      title: String,
+      company: String,
+      startDate: Date,
+      endDate: Date, 
+      isWorkingHere: Boolean,
+      numberOfYearsHere: this.endDate - this.startDate
+    }],
     mentors: [],
     mentees: [],
     terms: Boolean,
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,
+    jobHistoryRegistrationComplete: Boolean,
     userRegistrationComplete: Boolean,
     isUserLoggedIn: Boolean
   },

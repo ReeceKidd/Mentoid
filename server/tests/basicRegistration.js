@@ -1,7 +1,5 @@
 /*
-
 These tests are used to check the registration controllers register method. 
-
 Tests in this section.
 1) Tests for correct registration data. 
 2) Tests to check that a request with additional field fails
@@ -593,4 +591,6 @@ describe('Checks that user has accepted terms and condition', () => {
 //Empties test database.
 User.remove({}, function(err) { 
 })
+
+
 

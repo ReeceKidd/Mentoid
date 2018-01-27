@@ -58,7 +58,7 @@
               <label for="language">Language*</label>
               <select id="language" v-model="language">
                 <option value="English">English</option>
-                <option value="Spanish">Spainish</option>
+                <option value="Spanish">Spanish</option>
                 <option value="French">French</option>
                 <option value="German">German</option>
               </select>
