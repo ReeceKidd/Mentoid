@@ -111,8 +111,8 @@
 
   import axios from 'axios'
 
-  const now = new Date
-  var theYear = now.getYear() + 1900
+  const date = new Date()
+  var currentYear = date.getFullYear()
 
   var regexForAlphabeticAndWhiteSpace = /^[a-zA-Z ]+$/
 
@@ -135,7 +135,7 @@
   }
 
   function greaterThanCurrentYear(year) {
-    if (parseInt(year) > 2018) return false
+    if (parseInt(year) > currentYear) return false
     return true
   }
 
@@ -215,6 +215,7 @@
       }
     },
     beforeMount() {
+      console.log(currentYear)
       var self = this
       // Checks if job history registration has already been complete
       const getAreasOfInterestCompleteValue = 'http://localhost:4000/get/areas-of-interest-registration-complete/'

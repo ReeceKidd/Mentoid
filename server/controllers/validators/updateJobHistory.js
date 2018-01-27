@@ -1,8 +1,8 @@
 module.exports = function updateJobHistoryValidation(req) {
 
     //Current Year is needed for startDate and endDate methods. 
-    const now = new Date
-    const theYear=now.getYear() + 1900
+    const date = new Date()
+    var currentYear = date.getFullYear()
 
     // User ID validation
 
@@ -26,7 +26,7 @@ module.exports = function updateJobHistoryValidation(req) {
         return true
     })
 
-    
+
 
     // Experiences array validation.
 
@@ -72,7 +72,7 @@ module.exports = function updateJobHistoryValidation(req) {
     req.check('experiences', 'Each experience object must have a title, company, start date, end date and isWorking properties').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
             for (property in experiences[x]) {
-                if (property !== 'title' && 
+                if (property !== 'title' &&
                     property !== 'company' &&
                     property !== 'startDate' &&
                     property !== 'endDate' &&
@@ -125,7 +125,7 @@ module.exports = function updateJobHistoryValidation(req) {
             if (match === undefined) {
                 return false
             }
-            if(!match){
+            if (!match) {
                 return false
             }
         }
@@ -192,7 +192,7 @@ module.exports = function updateJobHistoryValidation(req) {
         }
         return true
     })
-    
+
     //Experience ID field
 
     /*
@@ -231,28 +231,28 @@ module.exports = function updateJobHistoryValidation(req) {
 }
 
 // ValidYear method and greater than current year are necessary for checks. 
-function validYear (year) {
+function validYear(year) {
     if (year.length !== 4) return false
     if (!year.match(/\d{4}/)) return false
     return true
-  }
+}
 
-  function greaterThanCurrentYear(year) {
+function greaterThanCurrentYear(year) {
     if (parseInt(year) > 2018) return false
     return true
-  }
+}
 
 //Start Date Field
 
-    /*
-    Check that the start date is not greater than the users age. 
-    Check that the start date is not greater than the end date. 
-    Do the basic checks on anything else. 
-    */
+/*
+Check that the start date is not greater than the users age. 
+Check that the start date is not greater than the end date. 
+Do the basic checks on anything else. 
+*/
 
 //End date field
 
-    /*
-    Checks the area of interest ID field is defined. 
-    Checks the area of interest ID field is an integer. 
-    */
+/*
+Checks the area of interest ID field is defined. 
+Checks the area of interest ID field is an integer. 
+*/
