@@ -1,8 +1,6 @@
 /*
 
-These tests are used to check the registration controllers register method. 
-
-Tests in this section.
+Tests completed for update areas of interest.
 1) Checks for successful update of areas of interest
 2) Checks that areas of interest update fails because of unwanted additional fields in request.
 3) Checks that areas of interest with the exact same value throw a duplication error.
@@ -37,8 +35,8 @@ var chaiHttp = require('chai-http');
 var mongoose = require("mongoose");
 mongoose.Promise = require('bluebird');
 
-var server = require('../src/app.js');
-var User = require('../models/user.js');
+var server = require('../../src/app.js');
+var User = require('../../models/user.js');
 
 var should = chai.should();
 chai.use(chaiHttp);

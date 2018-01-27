@@ -18,8 +18,8 @@ var chaiHttp = require('chai-http');
 var mongoose = require("mongoose");
 mongoose.Promise = require('bluebird');
 
-var server = require('../src/app.js');
-var User = require('../models/user.js');
+var server = require('../../src/app.js');
+var User = require('../../models/user.js');
 
 var should = chai.should();
 chai.use(chaiHttp);

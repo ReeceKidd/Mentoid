@@ -2,7 +2,7 @@
 
 const duplicateChecker = {}
 
-duplicateChecker.checkForDuplicates = function checkForDuplicates(areasOfInterest) {
+duplicateChecker.checkForAreasOfInterestDuplicates = function checkForDuplicates(areasOfInterest) {
 
     var valuesArray = areasOfInterest.map(function(areaOfInterest){ return areaOfInterest.value });
     var isDuplicate = valuesArray.some(function(areaOfInterest, idx){ 

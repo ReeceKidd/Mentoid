@@ -10,6 +10,7 @@ const duplicationChecker = require('./validators/duplicationChecks.js')
 // Validatiors
 const basicRegistrationValidation = require('./validators/basicRegistrationValidation.js')
 const updateAreasOfInterestValidation = require('./validators/updateAreasOfInterestValidation.js')
+const updateJobHistoryValidation = require('./validators/updateAreasOfInterestValidation.js')
 
 const registerController = {}
 
@@ -231,7 +232,7 @@ registerController.updateAreasOfInterest = (req, res) => {
     }
 
     //Checks that there are no duplicate values for the areas of interest
-    var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
+    var duplicatedAreaOfInterestValues = duplicationChecker.checkForAreasOfInterestDuplicates(req.body.areasOfInterest)
 
     if (duplicatedAreaOfInterestValues) {
         return res.status(800).send({
@@ -283,74 +284,66 @@ registerController.updateAreasOfInterest = (req, res) => {
             }
         )
     }
+}
 
-    registerController.updateJobHistory = (req, res) => {
+registerController.updateJobHistory = (req, res) => {
 
-        //Checks that only _id and areas of interest are passed in request. 
-        var unwantedField = checkFields.updateJobHistory(req.body)
-    
-        if (unwantedField) {
-            return res.status(700).send({
-                error: 'Additional fields found',
-                message: unwantedField
-            })
+    console.log(req.body)
+
+    //Checks that only _id and areas of interest are passed in request. 
+    var unwantedField = checkFields.updateJobHistory(req.body)
+
+    if (unwantedField) {
+        return res.status(700).send({
+            error: 'Additional fields found',
+            message: unwantedField
+        })
+    }
+
+    //Updates the title and company name to title case. 
+    for (var x = 0; x < req.body.experiences.length; x++) {
+        req.body.experiences[x].title = toTitleCase(req.body.experiences[x].title)
+        req.body.experiences[x].company = toTitleCase(req.body.experiences[x].company)
+    }
+
+    //Validation for updating job history. 
+    var errors = updateJobHistoryValidation(req)
+
+    if (errors) {
+        return res.status(600).send({
+            error: 'Validation failure',
+            message: errors[Object.keys(errors)[0]].msg
+        })
+    } else {
+        var updatedJobHistory = req.body.updatedJobHistory
+        // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
+        for (var x = 0; x < updatedJobHistory.length; x++) {
+
         }
-    
-    
-        for (var x = 0; x < req.body.experiences.length; x++) {
-            req.body.experiences[x].title = toTitleCase(req.body.experiences[x].title)
-            req.body.experiences[x].company = toTitleCase(req.body.experiences[x].company)
+
+        var query = {
+            '_id': req.body._id
         }
-    
-        //Checks that there are no duplicate experiences entered.
-        var duplicatedAreaOfInterestValues = duplicationChecker.checkForDuplicates(req.body.areasOfInterest)
-    
-        if (duplicatedAreaOfInterestValues) {
-            return res.status(800).send({
-                error: 'Duplicate values',
-                message: duplicatedAreaOfInterestValues
-            })
-        }
-    
-        //Validation for updating job history. 
-        var errors = updateJobHistoryValidation(req)
-    
-        if (errors) {
-            return res.status(600).send({
-                error: 'Validation failure',
-                message: errors[Object.keys(errors)[0]].msg
-            })
-        } else {
-            var updatedJobHistory = req.body.updatedJobHistory
-            // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
-            for (var x = 0; x < updatedJobHistory.length; x++) {
-                
-            }
-    
-            var query = {
-                '_id': req.body._id
-            }
-    
-            User.findOneAndUpdate(query, {
-                    $set: {
-                        areasOfInterest: updatedAreasOfInterest,
-                        areasOfInterestRegistrationComplete: true
-                    },
-    
+
+        User.findOneAndUpdate(query, {
+                $set: {
+                    areasOfInterest: updatedAreasOfInterest,
+                    areasOfInterestRegistrationComplete: true
                 },
-                function (err, updated) {
-                    if (err) {
-                        res.status(400).send({
-                            message: 'Unable to update areas of interest. Could not find user. '
-                        })
-                    } else {
-                        res.status(200).send({
-                            message: 'Updated areas of interest successfully.'
-                        })
-                    }
+
+            },
+            function (err, updated) {
+                if (err) {
+                    res.status(400).send({
+                        message: 'Unable to update areas of interest. Could not find user. '
+                    })
+                } else {
+                    res.status(200).send({
+                        message: 'Updated areas of interest successfully.'
+                    })
                 }
-            )
-        }
+            }
+        )
     }
 }
 

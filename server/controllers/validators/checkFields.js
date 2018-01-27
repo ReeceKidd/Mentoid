@@ -12,7 +12,7 @@ checkFields.basicRegistration = function (req) {
     for (property in req.body) {
         if (property !== 'firstName' && property !== 'lastName' &&
             property !== 'userName' && property !== 'email' && property !== 'password' &&
-            property !== 'age' && property !== 'confirmPassword' && property !== 'language' && 
+            property !== 'age' && property !== 'confirmPassword' && property !== 'language' &&
             property !== 'terms' && property) {
             return 'Request contained unsupported field: ' + property
         }
@@ -23,6 +23,15 @@ checkFields.basicRegistration = function (req) {
 checkFields.updateAreasOfInterest = function (req) {
     for (property in req) {
         if (property !== '_id' && property !== 'areasOfInterest' && property !== 'age') {
+            return 'Request contained unsupported field: ' + property
+        }
+    }
+}
+
+//Checks that the update job history request only has the properties of 'experiences' and '_id'
+checkFields.updateJobHistory = function (req) {
+    for (property in req) {
+        if (property !== '_id' && property !== 'experiences') {
             return 'Request contained unsupported field: ' + property
         }
     }

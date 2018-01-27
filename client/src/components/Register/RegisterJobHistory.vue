@@ -11,7 +11,7 @@
     <br>
 
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
       <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
       <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
       </div>
@@ -40,9 +40,6 @@
               <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
               <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
                 Company is required
-              </p>
-              <p v-if="!$v.experiences.$each[index].company.minLength && $v.experiences.$each[index].company.$dirty" class="errorMessage">
-                Company must be at least two characters
               </p>
               <label>Start Date</label>
               <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
@@ -83,7 +80,7 @@
             </div>
             <br>
             <button @click="onDeleteExperiences(experience.id)" class="btn-danger btn btn-sm">Delete experience</button>
-            <button @click="onAddExperience"  class="btn btn-success btn-sm">+ Experience</button>
+            <button @click="onAddExperience"  class="btn btn-success btn-sm">Add Another Experience</button>
           </div>
         </div>
     </form>
@@ -114,6 +111,9 @@
 
   import axios from 'axios'
 
+  const now = new Date
+  var theYear = now.getYear() + 1900
+
   var regexForAlphabeticAndWhiteSpace = /^[a-zA-Z ]+$/
 
   function alphaAndWhitespace(input) {
@@ -143,6 +143,7 @@
     data() {
       return {
         experiences: [],
+        currentUserID: this.$store.state.user.authUser._id,
         neverHadAJob: null,
         errorMessage: null,
         count: 1
@@ -159,7 +160,6 @@
           },
           company: {
             required,
-            minLength: minLength(2),
             alphaAndWhitespace
           },
           isWorkingHere: {
@@ -202,7 +202,7 @@
         var that = this
         axios.post(url, {
           experiences: this.experiences,
-          _id: this.currentUser._id
+          _id: this.currentUserID
         }).then(function (response) {
           console.log(response.data.message)
           that.navigateTo('/edit-profile')
@@ -213,6 +213,14 @@
           }, 3000)
         })
       }
+    },
+    beforeMount() {
+      var self = this
+      // Checks if job history registration has already been complete
+      const getAreasOfInterestCompleteValue = 'http://localhost:4000/get/areas-of-interest-registration-complete/'
+      axios.get(getAreasOfInterestCompleteValue + self.currentUserID).then(function (response) {
+        self.areasOfInterestRegistrationComplete = response.data.areasOfInterestRegistrationComplete
+      })
     }
   }
 </script>

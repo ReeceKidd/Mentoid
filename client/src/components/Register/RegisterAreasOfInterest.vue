@@ -118,8 +118,6 @@
 
   import axios from 'axios'
 
-  // TODO Write test code for the regexForAlphabeticAndWhiteSpace validator.
-
   var regexForAlphabeticAndWhiteSpace = /^[a-zA-Z ]+$/
 
   function alphaAndWhitespace(input) {
@@ -196,11 +194,6 @@
       const getAgeUrl = 'http://localhost:4000/get/age/'
       axios.get(getAgeUrl + userID).then(function (response) {
         self.age = response.data.age
-      })
-      // Checks if the areas of interest registration has already been complete
-      const getAreasOfInterestCompleteValue = 'http://localhost:4000/get/areas-of-interest-registration-complete/'
-      axios.get(getAreasOfInterestCompleteValue + userID).then(function (response) {
-        self.areasOfInterestRegistrationComplete = response.data.areasOfInterestRegistrationComplete
       })
     },
     validations: {

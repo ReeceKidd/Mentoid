@@ -43,6 +43,7 @@ const User = new Schema(
       startDate: Date,
       endDate: Date, 
       isWorkingHere: Boolean,
+      experienceID: Number,
       numberOfYearsHere: this.endDate - this.startDate
     }],
     mentors: [],
