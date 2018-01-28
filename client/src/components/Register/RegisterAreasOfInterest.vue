@@ -21,7 +21,6 @@
 
       <br class="hidden-xs">
 
-
       <div class="row hidden-xs" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
         <div class="col-sm-6 text-right">
             <div id="areaOfInterestDesktop" 
@@ -96,14 +95,14 @@
       </div>
 
       <br class="visible-xs">
-      <div class="row visible-xs">
-        <div class="col-xs-6">
-          <div class="areasOfInterestList">
-            <div id="areaOfInterestMobile" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+      <div class="row visible-xs" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+        <div class="col-xs-12">
+            <div
               :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
               <label :for="areaOfInterest.areaOfInterestID">
-                Area of Interest
+                Area of Interest {{ index + 1}}
               </label>
+              <br>
               <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
                 name="areaOfInterestValue">
               <br>
@@ -112,24 +111,31 @@
               <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
                 Areas of interest can only alphabet characters. </p>
             </div>
-          </div>
         </div>
-        <div class="col-xs-6">
-          <div class="areasOfInterestList">
-            <div id="yearsOfExperienceMobile" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+        <br>
+        <div class="col-xs-12">
+            <div
               :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
               <label>
-                Experience
+                Years of Experience
               </label>
+              <br>
               <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset"
                 :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
-              <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
               <br>
               <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
                 Please enter years of experience in this area. </p>
             </div>
-          </div>
+            <br>
         </div>
+        <div class="col-xs-12 text-center">
+          <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">Delete</button>
+          <br>
+        </div>
+        <div class="col-xs-12" v-if="(index + 1) === areasOfInterest.length">
+          <br>
+          <button @click="onAddAreaOfInterest" class="btn btn-success btn-sm">Add Another Interest</button>
+          </div>
       </div>
       
       <br v-if="errorMessage !== null" class="visible-xs">
@@ -261,10 +267,7 @@
   }
 </script>
 <style scoped>
-  .input {
-    margin: 10px auto;
-  }
-
+  
   .input label {
     display: block;
     color: #4e4e4e;
@@ -273,14 +276,6 @@
 
   .input.inline label {
     display: inline;
-  }
-
-  .input input {
-    font: inherit;
-    width: 100%;
-    padding: 6px 12px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
   }
 
   .errorMessage {
@@ -295,17 +290,6 @@
     width: 50%
   }
 
-  #yearsOfExperienceMobile input {
-    width: 50%;
-  }
-
-  #areaOfInterestMobile input {
-    width: 80%;
-  }
-
-  .input.inline input {
-    width: auto;
-  }
 
   .input input:focus {
     outline: none;

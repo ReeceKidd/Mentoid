@@ -49,7 +49,7 @@
         <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <h3> Experience {{ index + 1}} </h3>
+            <h3> <u>Experience {{ index + 1}} </u></h3>
             <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
               <label :for="experience.title">Title</label>
               <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
@@ -124,7 +124,7 @@
         <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <h3> Experience {{ index + 1}} </h3>
+            <h3> <u>Experience {{ index + 1}} </u></h3>
             <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
               <label :for="experience.title">Title</label>
               <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
