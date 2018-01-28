@@ -345,8 +345,8 @@ describe('Checks that each area of interest contains only the fields, value, yea
                 age: 16
             })
             .end((err, res) => {
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
+                res.should.have.status(700)
+                res.body.should.have.property('error').eql('Additional fields found')
                 done()
             })
     })
@@ -370,7 +370,8 @@ describe('Checks that every value in areas of interest array is an object', () =
                 age: 16
             })
             .end((err, res) => {
-                res.should.have.status(500)
+                res.should.have.status(700)
+                res.body.should.have.property('error').eql('Additional fields found')
                 done()
             })
     })

@@ -1,14 +1,10 @@
 // Backlog of tasks
 
 2) If user is logged in they should not be able to see the login/register page. 
-3) Write test code for the custom validator I created in areas of interest registration.
-4) Add informative messages on disabled buttons to help users. 
-6) Form components needs to be made mobile responsive. 
+3) Write test code for the custom validator I created in areas of interest registration. 
 6) Once API validation is complete comment both components where necessary and move on!
 7) Fix the express validation depreciated method. 
-8) Make sure the front end vue is also displays any error messages returned by the server. 
 9) Need to test the checkFields method and API in general for the registration. 
-10) Complete the duplication.js Validation method changing the names and getting the method to work correctly. 
 
 // Tasks for the 18th/01/2018
 
@@ -56,9 +52,17 @@ Begin work on employment history
 
 Taking inspiration from LinkedIn for the employment history. 
 
-2) Make the first three pages of registration completely mobile responsive
-5) Add a progress bar to show the steps to complete the registration process. 
-1) Go back to the areas of interest and organize it like the job history as it's much easier to maintain. 
+2) Make the first three pages of registration completely mobile responsive (complete)
+
+1) Go back to the areas of interest and organize it like the job history as it's much easier to maintain.(complete) 
 3) Continue work on job history validation doing appropriate tests for the job history, will need to pass
 the age again. 
 4) Look into using Selenium web driver and Python to automate the front end testing. 
+
+Plan for 28/01/2018
+
+2) Get the job registration page working. 
+1) Need to change all the input types in the form to text and do a string checker javascript for basicRegistration, 
+areas of Interest registration and job history registration. Then added the appropriate is int methods in the validations
+and tests. 
+3) Need to make a check fields method for areas of interest array insted of validation. 

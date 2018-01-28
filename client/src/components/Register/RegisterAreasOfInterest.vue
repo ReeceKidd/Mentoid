@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-8 col-sm-offset-2">
           <h2 class="text-center">
-            Please add your hobbies, skills, areas of interest and your years of experience in each.
+            Please add your hobbies, skills and areas of interest.
           </h2>
         </div>
       </div>
@@ -83,7 +83,7 @@
       <div class="row visible-xs">
         <div class="col-xs-12">
           <h3>
-            Please add your hobbies, skills, areas of interest and your years of experience in each.
+            Please add your hobbies, skills, and areas of interest.
           </h3>
         </div>
       </div>
@@ -95,7 +95,7 @@
       </div>
 
       <br class="visible-xs">
-      <div class="row visible-xs" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+      <div class="row visible-xs text-center" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
         <div class="col-xs-12">
             <div
               :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
@@ -128,7 +128,7 @@
             </div>
             <br>
         </div>
-        <div class="col-xs-12 text-center">
+        <div class="col-xs-12 text-right">
           <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">Delete</button>
           <br>
         </div>
@@ -267,7 +267,7 @@
   }
 </script>
 <style scoped>
-  
+
   .input label {
     display: block;
     color: #4e4e4e;
@@ -283,28 +283,17 @@
   }
 
   #yearsOfExperienceDesktop input {
-    width: 10%;
+    width: 15%;
   }
 
-  #areOfInterestDesktop input {
-    width: 50%
+  #areaOfInterestMobile input {
+    width: 100%;
   }
-
 
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
     background-color: #eee;
-  }
-
-  .invalid input {
-    border: 1px solid red;
-    background-color: #ffc9aa;
-  }
-
-  .input select {
-    border: 1px solid #ccc;
-    font: inherit;
   }
 
   .submit button[disabled],

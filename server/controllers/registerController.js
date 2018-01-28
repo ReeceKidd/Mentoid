@@ -7,10 +7,13 @@ const checkFields = require('./validators/checkFields.js')
 //Checks for duplication of values in array.
 const duplicationChecker = require('./validators/duplicationChecks.js')
 
+//Checks that requests are the correct type
+const typeChecker = require('./validators/typeChecker.js')
+
 // Validatiors
 const basicRegistrationValidation = require('./validators/basicRegistrationValidation.js')
 const updateAreasOfInterestValidation = require('./validators/updateAreasOfInterestValidation.js')
-const updateJobHistoryValidation = require('./validators/updateAreasOfInterestValidation.js')
+const updateJobHistoryValidation = require('./validators/updateJobHistoryValidation.js')
 
 const registerController = {}
 
@@ -226,6 +229,16 @@ registerController.updateAreasOfInterest = (req, res) => {
         })
     }
 
+    //Checks that the areasOfInterest array only contains value, years, and areaOfInterestID. 
+    var unwantedArrayField = checkFields.updateAreasOfInterestArray(req.body.areasOfInterest)
+
+    if (unwantedArrayField) {
+        return res.status(700).send({
+            error: 'Additional fields found',
+            message: unwantedArrayField
+        })
+    }
+
 
     for (var x = 0; x < req.body.areasOfInterest.length; x++) {
         req.body.areasOfInterest[x].value = toTitleCase(req.body.areasOfInterest[x].value)
@@ -288,8 +301,6 @@ registerController.updateAreasOfInterest = (req, res) => {
 
 registerController.updateJobHistory = (req, res) => {
 
-    console.log(req.body)
-
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkFields.updateJobHistory(req.body)
 
@@ -300,46 +311,64 @@ registerController.updateJobHistory = (req, res) => {
         })
     }
 
+    //Checks that experiences array only contains title, company, experienceID, startDate, endDate and isWorkingHere. 
+    var unwantedArrayField = checkFields.updateJobHistoryExperiencesArray(req.body.experiences)
+
+    if (unwantedArrayField) {
+        return res.status(700).send({
+            error: 'Additional fields found',
+            message: unwantedArrayField
+        })
+    }
+
+    //Checks that request contains an experiences array containing only strings and an _id which is a string.
+    var checkRequestTypes = typeChecker.checkJobHistory(req.body)
+
+    if(checkRequestTypes){
+        console.log(checkRequestTypes)
+        return res.status(850).send({
+            error: 'Invalid type',
+            message: checkRequestTypes
+        })
+    }
+
     //Updates the title and company name to title case. 
     for (var x = 0; x < req.body.experiences.length; x++) {
         req.body.experiences[x].title = toTitleCase(req.body.experiences[x].title)
         req.body.experiences[x].company = toTitleCase(req.body.experiences[x].company)
     }
 
+
     //Validation for updating job history. 
     var errors = updateJobHistoryValidation(req)
 
     if (errors) {
+        console.log(errors)
         return res.status(600).send({
             error: 'Validation failure',
             message: errors[Object.keys(errors)[0]].msg
         })
-    } else {
-        var updatedJobHistory = req.body.updatedJobHistory
-        // This updates each of the areas of interest to include fields that will be used in recommendation engine. 
-        for (var x = 0; x < updatedJobHistory.length; x++) {
-
-        }
-
+    }
+    else {
+        
         var query = {
             '_id': req.body._id
         }
 
         User.findOneAndUpdate(query, {
                 $set: {
-                    areasOfInterest: updatedAreasOfInterest,
-                    areasOfInterestRegistrationComplete: true
+                    jobHistoryRegistrationComplete: true
                 },
 
             },
             function (err, updated) {
                 if (err) {
                     res.status(400).send({
-                        message: 'Unable to update areas of interest. Could not find user. '
+                        message: 'Unable to update job history. Could not find user. '
                     })
                 } else {
                     res.status(200).send({
-                        message: 'Updated areas of interest successfully.'
+                        message: 'Updated job history successfully.'
                     })
                 }
             }

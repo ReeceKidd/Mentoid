@@ -27,63 +27,6 @@ module.exports = function updateJobHistoryValidation(req) {
     })
 
 
-
-    // Experiences array validation.
-
-    /*
-    1) Checks for the existience of an experiences array. 
-    2) Checks that the array contains at least one area of interest.
-    3) Checks that each area of interest is an object.
-    4) Checks that each area of interest has defined value, years and ID. 
-    5) Checks that each area of interest object does not contain additional fields. 
-    */
-    req.check('experiences', 'Experiences array is required').exists()
-    req.check('experiences', 'Each element in array must be a job experience object').custom(experiences => {
-
-        for (var x = 0; x < experiences.length; x++) {
-            if (typeof experiences[x] !== 'object') {
-                return false
-            }
-        }
-        return true
-    })
-
-    req.check('experiences', 'Each area of interest must define a value for title, company, start date and end date').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].title === 'undefined') {
-                return false
-            }
-            if (experiences[x].company === 'undefined') {
-                return false
-            }
-            if (experiences[x].startDate === 'undefined') {
-                return false
-            }
-            if (experiences[x].endDate === 'undefined') {
-                return false
-            }
-            if (experiences[x].isWorkingHere === 'undefined') {
-                return false
-            }
-        }
-        return true
-    })
-
-    req.check('experiences', 'Each experience object must have a title, company, start date, end date and isWorking properties').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            for (property in experiences[x]) {
-                if (property !== 'title' &&
-                    property !== 'company' &&
-                    property !== 'startDate' &&
-                    property !== 'endDate' &&
-                    property !== 'isWorkingHere') {
-                    return false
-                }
-            }
-        }
-        return true
-    })
-
     //Experiences title field checks.
 
     /*

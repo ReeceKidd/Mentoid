@@ -271,8 +271,7 @@
         experiences: [],
         currentUserID: this.$store.state.user.authUser._id,
         neverHadAJob: null,
-        errorMessage: null,
-        count: 1
+        errorMessage: null
       }
     },
     validations: {
@@ -307,14 +306,13 @@
     methods: {
       onAddExperience() {
         const newExperience = {
-          id: this.count,
+          experienceID: this.experiences.length.toString(),
           title: '',
           company: '',
           isWorkingHere: '',
           startDate: '',
           endDate: ''
         }
-        this.count++
         this.experiences.push(newExperience)
       },
       currentlyWorkingHere (endDate) {
@@ -341,7 +339,6 @@
       }
     },
     beforeMount() {
-      console.log(currentYear)
       var self = this
       // Checks if job history registration has already been complete
       const getAreasOfInterestCompleteValue = 'http://localhost:4000/get/areas-of-interest-registration-complete/'

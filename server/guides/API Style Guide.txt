@@ -15,6 +15,10 @@ Already exists: (Email and username registration)
 Status: 900
 error: 'Already exists in database'
 
+Invalid type
+Status: 850
+error: 'Invalid type of request'
+
 Validation error: 
 Status: 600
 error: 'Validation failure'

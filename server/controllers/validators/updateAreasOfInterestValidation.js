@@ -52,9 +52,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
     /*
     1) Checks for the existience of an areasOfInterest array. 
     2) Checks that the array contains at least one area of interest.
-    3) Checks that each area of interest is an object.
-    4) Checks that each area of interest has defined value, years and ID. 
-    5) Checks that each area of interest object does not contain additional fields. 
+    3) Checks that each element in the areas of interest is an object..
     */
     req.check('areasOfInterest', 'Areas of interest request is required').exists()
     req.check('areasOfInterest', 'You must have at least one area of interest').custom(areasOfInterest => {
@@ -65,34 +63,6 @@ module.exports = function updateAreasOfInterestValidation(req) {
         for (var x = 0; x < areasOfInterest.length; x++) {
             if (typeof areasOfInterest[x] !== 'object') {
                 return false
-            }
-        }
-        return true
-    })
-
-    req.check('areasOfInterest', 'Each area of interest must define a value for years of experience and ID').custom(areasOfInterest => {
-        for (var x = 0; x < areasOfInterest.length; x++) {
-            if (areasOfInterest[x].value === 'undefined') {
-                return false
-            }
-            if (areasOfInterest[x].years === 'undefined') {
-                return false
-            }
-            if (areasOfInterest[x].areaOfInterestID === 'undefined') {
-                return false
-            }
-        }
-        return true
-    })
-
-    req.check('areasOfInterest', 'Each area of interest must contain a value, years of experience and ID').custom(areasOfInterest => {
-        for (var x = 0; x < areasOfInterest.length; x++) {
-            for (property in areasOfInterest[x]) {
-                if (property !== 'value' && 
-                    property !== 'years' &&
-                    property !== 'areaOfInterestID') {
-                    return false
-                }
             }
         }
         return true
