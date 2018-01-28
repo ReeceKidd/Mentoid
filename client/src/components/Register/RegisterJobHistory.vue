@@ -23,7 +23,7 @@
         <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <h3 class="text-center"> Experience {{ index }} </h3>
+            <h3 class="text-center"> Experience {{ index + 1}} </h3>
             <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
               <label :for="experience.title">Title</label>
               <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
@@ -41,16 +41,16 @@
               <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
                 Company is required
               </p>
-              <label>Start Date</label>
+              <label>Start Year</label>
               <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
               <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
-                Start date is required
+                The year you started is required.
               </p>
               <p v-if="!$v.experiences.$each[index].startDate.validYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
-                Start date must be a valid year: YYYY
+                Your starting year must be in the following format: YYYY
               </p>
               <p v-if="!$v.experiences.$each[index].startDate.greaterThanCurrentYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
-                You cannot enter start dates in the future.
+                You cannot start in the future.
               </p>
               <label>Do you currently work here?</label>
                 <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
@@ -62,16 +62,16 @@
               </p>
               <br>
               <div v-if="experience.isWorkingHere === 'No'">
-              <label>End date</label>
+              <label>Enter the year you finished working here</label>
               <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
               <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                End date is required
+                End year is required
               </p>
               <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                End date must be a valid year: YYYY
+                Your ending year must be in the following format: YYYY
               </p>
               <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                You cannot enter end dates in the future.
+                You cannot enter end dates greater than the current year.
               </p>
               </div>
               <div v-else>

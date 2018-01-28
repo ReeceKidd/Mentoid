@@ -56,7 +56,8 @@ Begin work on employment history
 
 Taking inspiration from LinkedIn for the employment history. 
 
-2) Complete the job history front end so it takes up more space on bigger screens. 
+2) Make the first three pages of registration completely mobile responsive
+5) Add a progress bar to show the steps to complete the registration process. 
 1) Go back to the areas of interest and organize it like the job history as it's much easier to maintain. 
 3) Continue work on job history validation doing appropriate tests for the job history, will need to pass
 the age again. 

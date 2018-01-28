@@ -1,0 +1,3 @@
+1) Get the html location information from the geo locator and use the equation I used for the intercom test
+   in order to include the distance of the two users in KM/Miles. 
+2) Include globalisation so there is different versions of the website depending on locale information. 

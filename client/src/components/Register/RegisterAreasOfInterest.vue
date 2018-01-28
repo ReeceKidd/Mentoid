@@ -28,7 +28,7 @@
             <div id="areaOfInterestDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
               <label :for="areaOfInterest.areaOfInterestID">
                 <h4>Area of Interest
-                  <b> {{index}}: </b>
+                  <b> {{index + 1}}: </b>
                 </h4>
               </label>
               <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
