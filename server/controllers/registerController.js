@@ -239,6 +239,17 @@ registerController.updateAreasOfInterest = (req, res) => {
         })
     }
 
+    //Checks that request contains an areasOfInterest arrayy containing strings and a string array.
+    var checkRequestTypes = typeChecker.checkAreasOfInterest(req.body)
+
+    if(checkRequestTypes){
+        console.log(checkRequestTypes)
+        return res.status(850).send({
+            error: 'Invalid type',
+            message: checkRequestTypes
+        })
+    }
+
 
     for (var x = 0; x < req.body.areasOfInterest.length; x++) {
         req.body.areasOfInterest[x].value = toTitleCase(req.body.areasOfInterest[x].value)
