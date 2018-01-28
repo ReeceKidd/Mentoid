@@ -1,8 +1,16 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2">
+    <div class="row hidden-xs">
+      <div class="col-sm-8 col-sm-offset-2">
         <h2 class="text-center">
+          Please add your employment experience.
+        </h2>
+      </div>
+    </div>
+
+    <div class="row visible-xs">
+      <div class="col-xs-10 col-xs-offset-1">
+        <h2>
           Please add your employment experience.
         </h2>
       </div>
