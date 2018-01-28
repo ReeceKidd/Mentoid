@@ -22,11 +22,11 @@
       <br class="hidden-xs">
 
 
-      <div class="row hidden-xs">
+      <div class="row hidden-xs" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
         <div class="col-sm-6 text-right">
-          <div class="areasOfInterestList">
-            <div id="areaOfInterestDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+            <div id="areaOfInterestDesktop" 
               :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
+              <br>
               <label :for="areaOfInterest.areaOfInterestID">
                 <h4>Area of Interest
                   <b> {{index + 1}}: </b>
@@ -40,24 +40,27 @@
               <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
                 Areas of interest can only alphabet characters. </p>
             </div>
-          </div>
         </div>
         <div class="col-sm-6">
-          <div class="areasOfInterestList">
-            <div id="yearsOfExperienceDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+          <br>
+            <div id="yearsOfExperienceDesktop"
               :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
               <label>
                 <h4>Years of experience</h4>
               </label>
               <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset"
                 :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
-              <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
+                <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">X</button>
               <br>
               <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
                 Please enter years of experience in this area. </p>
             </div>
-          </div>
         </div>
+        <div class="col-xs-12 text-center" v-if="(index + 1) === areasOfInterest.length">
+          <br>
+          <button @click="onAddAreaOfInterest" class="btn btn-success">Add Another Interest</button>
+          <br>
+          </div>
       </div>
 
       <br v-if="errorMessage !== null" class="hidden-xs">
