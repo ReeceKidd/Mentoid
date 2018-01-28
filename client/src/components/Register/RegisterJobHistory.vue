@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <!-- This component is different depending on whether it is viewed in mobile or on desktop -->
+
+    <!-- Desktop version job history explainer and buttons -->
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2">
         <h2 class="text-center">
@@ -8,30 +11,45 @@
       </div>
     </div>
 
+    <br class="hidden-xs">
+
+    <div class="row hidden-xs">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
+        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
+      </div>
+    </div>
+    <!-- End of desktop version -->
+
+    <!-- Mobile Version job history and buttons -->
     <div class="row visible-xs">
-      <div class="col-xs-10 col-xs-offset-1">
-        <h2>
+      <div class="col-xs-12">
+        <h3>
           Please add your employment experience.
-        </h2>
+        </h3>
       </div>
     </div>
 
-    <br>
+    <br class="visible-xs">
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
-      <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
-      <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
+    <div class="row visible-xs">
+      <div class="col-xs-12 text-center">
+        <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
+        <br>
+        <br>
+        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
       </div>
     </div>
+    <!-- End of Mobile Version of job history and buttons -->
 
-    <div class="row">
+    <!-- Desktop version of form -->
+    <div class="row hidden-xs">
       <form @submit.prevent="onSubmit">
 
         <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <h3 class="text-center"> Experience {{ index + 1}} </h3>
+            <h3> Experience {{ index + 1}} </h3>
             <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
               <label :for="experience.title">Title</label>
               <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
@@ -49,8 +67,10 @@
               <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
                 Company is required
               </p>
+              <div class="yearInputDesktop">
               <label>Start Year</label>
               <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
+              </div>
               <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
                 The year you started is required.
               </p>
@@ -61,55 +81,153 @@
                 You cannot start in the future.
               </p>
               <label>Do you currently work here?</label>
-                <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
+              <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
               <p v-if="!$v.experiences.$each[index].isWorkingHere.required && $v.experiences.$each[index].isWorkingHere.$dirty" class="errorMessage">
                 You must specify if you are still working here.
               </p>
               <br>
-              <div v-if="experience.isWorkingHere === 'No'">
-              <label>Enter the year you finished working here</label>
-              <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
-              <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                End year is required
-              </p>
-              <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                Your ending year must be in the following format: YYYY
-              </p>
-              <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                You cannot enter end dates greater than the current year.
-              </p>
+              <div v-if="experience.isWorkingHere === 'No'" class="yearInputDesktop">
+                <label>End Year</label>
+                <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
+                <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                  End year is required
+                </p>
+                <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                  Your ending year must be in the following format: YYYY
+                </p>
+                <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                  You cannot enter end dates greater than the current year.
+                </p>
               </div>
               <div v-else>
                 <span>{{currentlyWorkingHere(experience.endDate)}}</span>
               </div>
             </div>
             <br>
+            <div class="hidden-xs">
             <button @click="onDeleteExperiences(experience.id)" class="btn-danger btn btn-sm">Delete experience</button>
-            <button @click="onAddExperience"  class="btn btn-success btn-sm">Add Another Experience</button>
+            <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+            </div>
           </div>
         </div>
-    </form>
-  </div>
-  <br>
+      </form>
+    </div>
+    <!-- End of desktop version of form -->
+    
+    <!-- Mobile version of form -->
+    <div class="row visible-xs">
+      <form @submit.prevent="onSubmit">
 
-  <div class="row text-center">
+        <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
+
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <h3> Experience {{ index + 1}} </h3>
+            <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
+              <label :for="experience.title">Title</label>
+              <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
+              <p v-if="!$v.experiences.$each[index].title.required && $v.experiences.$each[index].title.$dirty" class="errorMessage">
+                Job title is required
+              </p>
+              <p v-if="!$v.experiences.$each[index].title.minLength && $v.experiences.$each[index].title.$dirty" class="errorMessage">
+                Job title must be at least two characters.
+              </p>
+              <p v-if="!$v.experiences.$each[index].title.alphaAndWhitespace && $v.experiences.$each[index].title.$dirty" class="errorMessage">
+                Job title can only contain alphabetical and space characters.
+              </p>
+              <label :for="experience.company">Company</label>
+              <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
+              <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
+                Company is required
+              </p>
+              <div class="yearInputMobile">
+              <label>Start Year</label>
+              <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
+              </div>
+              <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+                The year you started is required.
+              </p>
+              <p v-if="!$v.experiences.$each[index].startDate.validYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+                Your starting year must be in the following format: YYYY
+              </p>
+              <p v-if="!$v.experiences.$each[index].startDate.greaterThanCurrentYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+                You cannot start in the future.
+              </p>
+              <label>Do you currently work here?</label>
+              <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+              <p v-if="!$v.experiences.$each[index].isWorkingHere.required && $v.experiences.$each[index].isWorkingHere.$dirty" class="errorMessage">
+                You must specify if you are still working here.
+              </p>
+              <br>
+              <div v-if="experience.isWorkingHere === 'No'" class="yearInputMobile">
+                <label>End Year</label>
+                <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
+                <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                  End year is required
+                </p>
+                <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                  Your ending year must be in the following format: YYYY
+                </p>
+                <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                  You cannot enter end dates greater than the current year.
+                </p>
+              </div>
+              <div v-else>
+                <span>{{currentlyWorkingHere(experience.endDate)}}</span>
+              </div>
+            </div>
+            <br>
+            <div class="visible-xs">
+            <button @click="onDeleteExperiences(experience.id)" class="btn-danger btn btn-sm">Delete experience</button>
+            <br>
+            <br>
+            <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- End of mobile job history form -->
+    <br>
+
+    <!-- Desktop error messages -->
+    <div class="row hidden-xs text-center">
+        <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click "Never had a job" </p>
+    </div>
+
+    <div class="row hidden-xs text-center">
+      <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+    </div>
+    <!-- End of desktop error messages -->
+
+    <!-- Mobile error messages -->
+    <div class="row visible-xs">
+      <div class="col-xs-12">
         <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click "Never had a job" </p>
       </div>
+    </div>
 
-      <div class="row text-center">
-        <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
-      </div>
-      <br>
+    <div class="row visible-xs">
+      <div class="col-xs-12">
+      <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+    </div>
+    </div>
+    <!-- End of mobile error messages -->
 
-      <div class="row text-center">
-        <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Submit </button>
-      </div>
+    <br>
+
+    <div class="row text-center">
+      <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Submit </button>
+    </div>
   </div>
 
 </template>
+
 
 <script>
   import {
@@ -235,8 +353,13 @@
 </script>
 
 <style scoped>
-  .align-right {
-    text-align: right;
+
+  .yearInputDesktop {
+     width: 25%;
+  }
+
+  .yearInputMobile {
+    width: 50%;
   }
 
   .input {
@@ -265,21 +388,9 @@
     color: red;
   }
 
-  #yearsOfExperienceDesktop input {
-    width: 10%;
-  }
-
-  #areOfInterestDesktop input {
-    width: 50%
-  }
-
-  #yearsOfExperienceMobile input {
-    width: 50%;
-  }
-
-  #areaOfInterestMobile input {
-    width: 80%;
-  }
+ .input.yearInputDesktop {
+   width: 50%;
+ }
 
   .input.inline input {
     width: auto;

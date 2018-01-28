@@ -1,31 +1,32 @@
 <template>
   <!-- This component is different on XS devices -->
-  <div id="areasOfInterest">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
+      <!-- This is the desktop version of this registration section.  -->
+      <div class="row hidden-xs">
+        <div class="col-sm-12">
           <h1 class="text-center"> Hello {{ currentUser.userName }} </h1>
         </div>
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-sm-8 col-sm-offset-2">
           <h2 class="text-center">
-            Please add your hobbies, skills and areas of interest.
+            Please add your hobbies, skills, areas of interest and your years of experience in each.
           </h2>
         </div>
       </div>
 
-      <br>
+      <br class="hidden-xs">
 
-      <div class="row text-center">
+      <div class="row hidden-xs text-center">
         <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
       </div>
 
-      <br>
+      <br class="hidden-xs">
 
-      <!-- This is the desktop version of this registration section.  -->
+
       <div class="row hidden-xs">
         <div class="col-sm-6 text-right">
           <div class="areasOfInterestList">
-            <div id="areaOfInterestDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
+            <div id="areaOfInterestDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+              :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
               <label :for="areaOfInterest.areaOfInterestID">
                 <h4>Area of Interest
                   <b> {{index + 1}}: </b>
@@ -43,7 +44,8 @@
         </div>
         <div class="col-sm-6">
           <div class="areasOfInterestList">
-            <div id="yearsOfExperienceDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
+            <div id="yearsOfExperienceDesktop" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+              :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
               <label>
                 <h4>Years of experience</h4>
               </label>
@@ -58,14 +60,46 @@
         </div>
       </div>
 
-      <!-- This is the mobile version of this registration section.  -->
+      <br v-if="errorMessage !== null" class="hidden-xs">
+
+      <div class="row hidden-xs">
+        <div class="text-center">
+          <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
+        </div>
+      </div>
+
+      <div class="row hidden-xs">
+        <div class="text-center">
+          <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+        </div>
+      </div>
+
+      <br class="hidden-xs">
+      <!-- End of desktop version -->
+
+      <!-- Mobile version  -->
+      <div class="row visible-xs">
+        <div class="col-xs-12">
+          <h3>
+            Please add your hobbies, skills, areas of interest and your years of experience in each.
+          </h3>
+        </div>
+      </div>
+
+      <br class="visible-xs">
+
+      <div class="row visible-xs text-center">
+        <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
+      </div>
+
+      <br class="visible-xs">
       <div class="row visible-xs">
         <div class="col-xs-6">
           <div class="areasOfInterestList">
-            <div id="areaOfInterestMobile" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
+            <div id="areaOfInterestMobile" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+              :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
               <label :for="areaOfInterest.areaOfInterestID">
-                <h4>Area of Interest
-                </h4>
+                Area of Interest
               </label>
               <input type="text" @blur="$v.areasOfInterest.$each[index].value.$touch" :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.value"
                 name="areaOfInterestValue">
@@ -79,9 +113,10 @@
         </div>
         <div class="col-xs-6">
           <div class="areasOfInterestList">
-            <div id="yearsOfExperienceMobile" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID" :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
+            <div id="yearsOfExperienceMobile" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID"
+              :class="{invalid: $v.areasOfInterest.$each[index].years.$error}">
               <label>
-                <h4>Years of experience</h4>
+                Experience
               </label>
               <input type="number" min="0" oninput="validity.valid||(years=0)" @blur="$v.areasOfInterest.$each[index].years.$touch" @focus="$v.areasOfInterest.$each[index].years.$reset"
                 :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
@@ -93,22 +128,31 @@
           </div>
         </div>
       </div>
+      
+      <br v-if="errorMessage !== null" class="visible-xs">
 
-      <div class="row text-center">
-        <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
+      <div class="row visible-xs">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
+        </div>
       </div>
 
-      <div class="row text-center">
-        <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+      <div class="row visible-xs">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+        </div>
       </div>
-      <br>
+
+      <br class="visible-xs">
+      <!-- End of mobile section -->
 
       <div class="row text-center">
         <button class="btn btn-lg btn-primary" :disabled="$v.areasOfInterest.$invalid" @click="onSubmit"> Submit </button>
       </div>
 
+
     </div>
-  </div>
+
 </template>
 <script>
   import {
