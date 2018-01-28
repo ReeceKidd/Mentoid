@@ -17,6 +17,9 @@ import App from './App.vue'
 import BasicRegistration from './components/Register/BasicRegistration.vue'
 import RegisterAreasOfInterest from './components/Register/RegisterAreasOfInterest.vue'
 import RegisterJobHistory from './components/Register/RegisterJobHistory.vue'
+import UploadProfilePicture from './components/Register/UploadProfilePicture.vue'
+import RegisterBio from './components/Register/RegisterBio.vue'
+import RegisterPreferences from './components/Register/RegisterPreferences.vue'
 
 import UnknownHome from './components/UnknownHome.vue'
 import Login from './components/Login.vue'
@@ -72,6 +75,21 @@ const routes = [
     path: '/register-job-history',
     name: 'register-job-history',
     component: RegisterJobHistory
+  },
+  {
+    path: '/upload-profile-picture',
+    name: 'upload-profile-picture',
+    component: UploadProfilePicture
+  },
+  {
+    path: '/register-bio',
+    name: 'register-bio',
+    component: RegisterBio
+  },
+  {
+    path: '/register-preferences',
+    name: 'register-preferences',
+    component: RegisterPreferences
   },
   {
     path: '/login',

@@ -40,7 +40,7 @@
     <div class="footer-right">
 
       <p class="footer-company-about">
-        <span>About Mentoid</span> Mentoids goal is to connect Mentors, with the most compatible Mentees.
+        <span>About Mentoid</span> Mentoid aims to be the match.com of Mentoring.
       </p>
 
       <div class="footer-icons">
