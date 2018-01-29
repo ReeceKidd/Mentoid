@@ -17,7 +17,7 @@ error: 'Already exists in database'
 
 Invalid type
 Status: 850
-error: 'Invalid type of request'
+error: 'Invalid type in request'
 
 Validation error: 
 Status: 600

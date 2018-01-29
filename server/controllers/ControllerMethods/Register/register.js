@@ -41,15 +41,23 @@ module.exports = register = (req, res) =>{
     var unwantedFields = checkBasicRegistrationFields(req)
 
     if (unwantedFields) {
-        console.log(unwantedFields)
         res.status(700).json({
-            message: unwantedField,
+            message: unwantedFields,
             error: 'Additional fields found'
         })
         return
     }
 
-    console.log('Got past unwanted fields')
+    //Checks that each of the fields are type string. 
+    var badType = checkBasicRegistrationTypes(req.body)
+
+    if(badType) {
+        res.status(850).json({
+            message: badType,
+            error: 'Invalid type in request'
+        })
+
+    }
 
     //Validation for basic registration. 
     var errors = basicRegistrationValidation(req)
