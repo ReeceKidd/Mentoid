@@ -1,0 +1,56 @@
+Field Checker Style Guide.
+
+This guide outlines how the field checker functions should be created and names. 
+
+The field checker methods are responsible for checking that a request contains only expected fields. 
+
+Each post and get request must contain it's own Field Checker method located in the relevant sub folder. 
+
+If a request contains an array, that array must have it's own subfolder. 
+
+A typical non array Field Check structure is as follows: 
+
+module.exports = function checkBasicRegistrationFields(req) {
+    for (property in req.body) {
+        if (property !== 'firstName' && property !== 'lastName' &&
+            property !== 'userName' && property !== 'email' && property !== 'password' &&
+            property !== 'age' && property !== 'confirmPassword' && property !== 'language' &&
+            property !== 'terms' && property) {
+            return 'Request contained unsupported field: ' + property
+        }
+    }
+}
+
+1) Each .js file must export a single method. 
+2) The name of this method is "check" + name of controller method + "Fields" 
+3) The parameter value should be 'req'
+3) Seperate each property and '&&' on its own line. 
+3) Each field checker must return unsupported fields using "Request contained unsupported fields: " + property
+
+A typical structure for an array field checker is: 
+
+module.exports = function checkUpdateJobHistoryExperiencesArrayFields(experiences) {
+    for (var currentExperience in experiences) {
+        for (var property in currentExperience) {
+            if (currentExperience.hasOwnProperty(property)) {
+                if (property !== 'title' &&
+                    property !== 'company' &&
+                    property !== 'experienceID' &&
+                    property !== 'startDate' &&
+                    property !== 'endDate' &&
+                    property !== 'isWorkingHere') {
+                    return 'Request contained unsupported field: ' + property
+                }
+            }
+        }
+    }
+}
+
+1) Contain the array checking method in it's own file for consistency. 
+2) The name of the method will be "check" + name of the controller method + "Array" + "Fields".
+3) The parameter being passed should be the name of the array from req.body
+4) The enchanced for loop should be used to retrieve each of the objects in the array and to check each of the objects. 
+5) The format for the for loop is "current" + name of individual array element. 
+6) Seperate each property and "&&" on to its own line. 
+6) The different fields are referred to as properties. 
+4) Each field checker must return unsupported fields using "Request contained unsupported fields: " + property

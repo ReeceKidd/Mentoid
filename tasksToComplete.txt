@@ -68,3 +68,4 @@ and tests.
 3) Need to make a check fields method for areas of interest array insted of validation. 
 4) Bio page is where users should be able to add their favourite books and movies. 
 5) Need to go through the tests and make sure they are catching out non string values. 
+6) Complete sanitizations of basic registration, areas of interest and job history. 

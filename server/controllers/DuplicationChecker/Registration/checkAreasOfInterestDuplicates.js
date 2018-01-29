@@ -1,8 +1,4 @@
-// Checks that there is no repeat "value" in any of the areas of interest objects. 
-
-const duplicateChecker = {}
-
-duplicateChecker.checkForAreasOfInterestDuplicates = function checkForDuplicates(areasOfInterest) {
+module.exports = function checkForAreasOfInterestDuplicates(areasOfInterest) {
 
     var valuesArray = areasOfInterest.map(function(areaOfInterest){ return areaOfInterest.value });
     var isDuplicate = valuesArray.some(function(areaOfInterest, idx){ 
@@ -13,5 +9,3 @@ duplicateChecker.checkForAreasOfInterestDuplicates = function checkForDuplicates
         return 'Duplicate area of interest found'
     }
 }
-    
-module.exports = duplicateChecker
