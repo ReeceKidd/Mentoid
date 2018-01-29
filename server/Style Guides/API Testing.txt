@@ -1,0 +1,67 @@
+API Style Guide. 
+
+This guide outlines the structure of API tests, and the different types of test that must be carried out on 
+each of the requests. 
+
+--Test files--
+
+Test files need to include the tests included in them at the top of the file. 
+Tests should be subdivided by field. 
+Each test should have a corresponding number to make it easier to find. 
+
+POST tests. 
+
+--Tests that must be included for every request --
+
+-General Tests
+
+1) Correct data passes. 
+2) Request with additional field fails
+3) Requests with a missing required field fails.
+4) User cannot set data that will be set by the backend
+
+-String Tests
+
+1) Max length check
+2) Min length check
+3) Not equal to null or undefined. 
+4) Not equal to blank space. 
+5) Special characters are escaped. 
+6) (Optional) Alphabetical and space values allowed.
+7) Not a number. 
+8) Not a boolean 
+9) Not an Array
+
+-Boolean Tests
+
+1) Type equals boolean. 
+2) (Optional) Not null
+
+-Intger Tests
+
+1) Type equals Int.
+2) Min value 
+3) Max value
+4) (Optional) < || > to another value. 
+
+-Float Tests
+
+1) Type equals Float
+2) Min value
+3) Max value
+4) (Optional) < || > to another value 
+
+-Array Tests
+
+1) Type equals Array
+2) Min length
+3) Max length
+
+-- Outside of this specific tests can be added for fields that need custom checks --
+
+GET tests. 
+
+-General Tests
+-String Tests
+-Boolean Tests
+-Array Tests

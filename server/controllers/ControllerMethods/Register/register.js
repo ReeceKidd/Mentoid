@@ -17,25 +17,31 @@ const jwt = require('jsonwebtoken')
 //JWT ISSUE TOKEN AND VERIFY
 const asyncIssue = payload => {
     return new Promise((resolve, reject) => {
-      const token = jwt.sign(payload, 'supersecret', { expiresIn: '1d' })
-      if (token) {
-        resolve(token)
-      }
-      reject({ error: 'There was an error signing payload' })
+        const token = jwt.sign(payload, 'supersecret', {
+            expiresIn: '1d'
+        })
+        if (token) {
+            resolve(token)
+        }
+        reject({
+            error: 'There was an error signing payload'
+        })
     })
-  }
-  // verify token
-  const asyncVerify = token => {
+}
+// verify token
+const asyncVerify = token => {
     return new Promise((resolve, reject) => {
-      const decoded = jwt.verify(token, 'supersecret')
-      if (decoded) {
-        resolve(decoded)
-      }
-      reject({ error: 'There was an error verifying token' })
+        const decoded = jwt.verify(token, 'supersecret')
+        if (decoded) {
+            resolve(decoded)
+        }
+        reject({
+            error: 'There was an error verifying token'
+        })
     })
-  }
+}
 
-module.exports = register = (req, res) =>{
+module.exports = register = (req, res) => {
 
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkBasicRegistrationFields(req)
@@ -51,7 +57,8 @@ module.exports = register = (req, res) =>{
     //Checks that each of the fields are type string. 
     var badType = checkBasicRegistrationTypes(req.body)
 
-    if(badType) {
+    if (badType) {
+        console.log(badType)
         res.status(850).json({
             message: badType,
             error: 'Invalid type in request'
@@ -68,6 +75,8 @@ module.exports = register = (req, res) =>{
         })
         return
     } else {
+        //Santize input before being passed to database
+        sanitizeBasicRegistration(req.body)
         try {
             const newUser = req.body
             newUser.areasOfInterest = []

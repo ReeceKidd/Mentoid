@@ -1,25 +1,40 @@
 /*
 These tests are used to check the registration controllers register method. 
 Tests in this section.
-1) Tests for correct registration data. 
-2) Tests to check that a request with additional field fails
-3) Tests to check that requests with a missing field fails.
-4) Checks that request fails for all values that should be a string.
-5) Checks to see that user cannot set later registration fields during basic registration.
+
+General Tests
+1) Correct data passes. 
+2) Request with additional field fails
+3) Requests with a missing required field fails.
+4) User cannot set data that will be set by the backend.
+
+firstName checks
 6) Checks that the first name only contains Alphabetical characters
 7) Checks that the first name is at least two characters long. 
+
+lastName checks
 8) Checks that the last name only contains Alphabetical characters
 9) Checks that the last name is at least two characters long. 
+
+userName checks
 10) Checks that the username is alphanumeric and does not contain spaces. 
 11) Checks that invalid email addresses are rejected. 
+
+passwordChecks
 12) Checks that password is eight or more characters long. 
 13) Checks that password matches confirmation password. 
+
+age Checks
 14) Checks that a users age is between 16 and 120
+
+languageChecks
 15) Checks that the users has entered a supported language
 16) Checks that if the users language is Spanish it passes 
 17) Checks if the users language is English it passes
 18) Checks if users language is French it passes.
 19) Checks that if the users language is German it passes.
+
+termsChecks
 20) Checks the user has accepted the terms and conditions. 
 */
 
@@ -45,18 +60,18 @@ console.log('Begining basicRegistration.js tests')
 User.remove({}, function(err) { 
  })
 
-// 1) Tests for correct registration data. 
+// 1) Correct data passes.  
 describe('Test for valid registration', () => {
     var newUser = {
         firstName: "Sarah",
         lastName: "Robson",
         userName: "SarahRobson",
         email: "sarahrobson@gmail.com",
-        age: 20,
+        age: "20",
         password: "12345678",
         confirmPassword: "12345678",
         language: "English",
-        terms: true
+        terms: "true"
     }
     it('It should successfully save user', (done) => {
         chai.request(server)
@@ -69,7 +84,7 @@ describe('Test for valid registration', () => {
     })
 })
 
-// 2) Tests to check that a request with additional field fails
+// 2) Request with additional field fails
 describe('Checks for additional unwanted fields in request', () => {
     it('It should have error because of additional field in user', (done) => {
         var newUser = {
@@ -77,11 +92,11 @@ describe('Checks for additional unwanted fields in request', () => {
             lastName: "Hope",
             userName: "Tommy123",
             email: "tom-hope@gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "English",
-            terms: true
+            terms: "true"
         }
         newUser.additionalField = 'additional information'
         chai.request(server)
@@ -95,7 +110,7 @@ describe('Checks for additional unwanted fields in request', () => {
     })
 })
 
-// 3) Tests to check that requests with a missing field fails.
+// 3) Requests with a missing required field fails.
 describe('Check to see if requests missing a required field fail', () => {
     it('It should have error in response because of a lack of firstName field in request', (done) => {
         var newUser = {
@@ -103,11 +118,11 @@ describe('Check to see if requests missing a required field fail', () => {
             lastName: "Bradely",
             userName: "BadBrad",
             email: "brad@gmail.com",
-            age: 20,
+            age: "20",
             password: "password123",
             confirmPassword: "password123",
             language: "English",
-            terms: true
+            terms: "true"
         }
         delete newUser.firstName
         chai.request(server)
@@ -121,35 +136,7 @@ describe('Check to see if requests missing a required field fail', () => {
     })
 })
 
-// 4) Checks that request fails for all values that should be a string.
-describe('Check that that require a string contain a string', () => {
-    it('It should have error in response because of string values being numbers', (done) => {
-        var newUser = {
-            firstName: 1,
-            lastName: 1,
-            userName: 1,
-            email: 1,
-            age: 20,
-            password: 1,
-            confirmPassword: 1,
-            language: "English",
-            terms: true
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 5) Checks to see that user cannot set later registration fields during basic registration.
+// 4) User cannot set data that will be set by the backend.
 describe('Checks that user has not tried to set later registration', () => {
     it('It should have an error because user has tried to set later registration values to true.', (done) => {
         var newUser = {
@@ -157,12 +144,12 @@ describe('Checks that user has not tried to set later registration', () => {
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan@gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true,
-            basicRegistrationComplete: true
+            terms: "true",
+            basicRegistrationComplete: "true"
         }
         chai.request(server)
             .post('/register')
@@ -186,11 +173,11 @@ describe('Checks that first name fails when non aphabetical characters are inclu
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan@gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -213,11 +200,11 @@ describe('Checks that first name fails when it is less than two characters', () 
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan@gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -241,11 +228,11 @@ describe('Checks that last name fails when it contains non alphabetical characte
             lastName: "222",
             userName: "MichelleRogan",
             email: "michelleRogan@gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -269,11 +256,11 @@ describe('Checks that last name fails when it is less than two characters long',
             lastName: "R",
             userName: "MichelleRogan",
             email: "michelleRogan@gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -297,11 +284,11 @@ describe('Checks that username is alphanumeric and does not contain spaces', () 
             lastName: "Rogan",
             userName: "?Michelle Rogan",
             email: "michelleRogan@gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -325,11 +312,11 @@ describe('Checks that invalid emails are rejected', () => {
             lastName: "Rogan",
             userName: "Michelle Rogan",
             email: "michelleRogan.gmail.com",
-            age: 20,
+            age: "20",
             password: "whitehouse",
             confirmPassword: "whitehouse",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -353,11 +340,11 @@ describe('Checks that passwords less than eight characters are rejected', () => 
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan.gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "123456789",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -381,11 +368,11 @@ describe('Checks that password mathces confirmation password', () => {
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan.gmail.com",
-            age: 20,
+            age: "20",
             password: "123",
             confirmPassword: "123",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -409,11 +396,11 @@ describe('Checks that age is between 16 and 120', () => {
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan.gmail.com",
-            age: 15,
+            age: "15",
             password: "12345678",
             confirmPassword: "12345678",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -437,11 +424,11 @@ describe('Checks that users language is supported', () => {
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan.gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "Chinese",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -464,11 +451,11 @@ describe('Checks that if the users language is equal to Spanish it passes', () =
             lastName: "Rogan",
             userName: "SpanishUser",
             email: "spaintest@gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "Spanish",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -490,11 +477,11 @@ describe('Checks if the users language is English it passes', () => {
             lastName: "Rogan",
             userName: "UKUser",
             email: "ukuser@gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "English",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -510,17 +497,17 @@ describe('Checks if the users language is English it passes', () => {
 })
 // 18) Checks if users language is French it passes.
 describe('Checks if users language is French it passes', () => {
-    it('It should pass as "Frencg" was selected.', (done) => {
+    it('It should pass as "French" was selected.', (done) => {
         var newUser = {
             firstName: "Michelle",
             lastName: "Rogan",
             userName: "USAUser",
             email: "usauser@gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "French",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -542,11 +529,11 @@ describe('Checks that if users language is German it passes', () => {
             lastName: "Rogan",
             userName: "GermanUser",
             email: "germanuser@gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "German",
-            terms: true
+            terms: "true"
         }
         chai.request(server)
             .post('/register')
@@ -568,11 +555,11 @@ describe('Checks that user has accepted terms and condition', () => {
             lastName: "Rogan",
             userName: "MichelleRogan",
             email: "michelleRogan.gmail.com",
-            age: 20,
+            age: "20",
             password: "12345678",
             confirmPassword: "12345678",
             language: "English",
-            terms: null
+            terms: "null"
         }
         chai.request(server)
             .post('/register')
