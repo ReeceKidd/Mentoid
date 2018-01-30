@@ -13,7 +13,6 @@ module.exports = function basicRegistrationSanitization(body){
     body.email = body.email.trim()
     body.email = escape(body.email)
 
-    body.age = body.age.trim()
     body.age = escape(body.age)
 
     /*

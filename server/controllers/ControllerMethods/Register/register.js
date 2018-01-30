@@ -63,7 +63,7 @@ module.exports = register = (req, res) => {
             message: badType,
             error: 'Invalid type in request'
         })
-
+        return
     }
 
     //Validation for basic registration. 

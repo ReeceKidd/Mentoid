@@ -164,11 +164,11 @@
           lastName: this.lastName,
           userName: this.userName,
           email: this.email,
-          age: this.age,
+          age: this.age.toString(),
           password: this.password,
           confirmPassword: this.confirmPassword,
           language: this.language,
-          terms: this.terms
+          terms: this.terms.toString()
         }
         this.$store
           .dispatch('register', {
