@@ -1,7 +1,7 @@
-module.exports = function basicRegistrationValidation(req){
+module.exports = function emailValidation(req){
     
-    req.check('email', 'Must be a valid email').isEmail()
-   
+    req.check('email', 'Invalid email').isEmail()
+
     var errors = req.validationErrors(true)
     
     if(errors){

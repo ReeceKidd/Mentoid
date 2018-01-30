@@ -127,6 +127,8 @@
           let uri = 'http://localhost:4000/check/email/'
           return axios.get(uri + val).then(res => {
             return res.status === 200
+          }).catch(error => {
+            console.log('error', Object.assign({}, error).response.data.message)
           })
         }
       },
@@ -145,6 +147,8 @@
           let uri = 'http://localhost:4000/check/username/'
           return axios.get(uri + val).then(res => {
             return res.status === 200
+          }).catch(error => {
+            console.log('error', Object.assign({}, error).response.data.message)
           })
         }
       },

@@ -47,7 +47,7 @@ module.exports = checkEmail = (req, res) =>{
         if (existingEmail) {
             res.status(900)
             res.send({
-                message: 'Email already exists',
+                message: email + ' is already registered',
                 error: 'Already exists in database.'
             })
         } else if (err) {
