@@ -1,6 +1,45 @@
 var User = require('../../../models/user')
 
+// Field checkers ensure only relevant fields are passed to request
+const checkGetAreasOfInterestFields = require('../../FieldCheckers/Registration/getAreasOfInterest')
+
+//Checks that requests are the correct type
+const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
+
+//Sanitizes different requests
+const sanitizeGetAreasOfInterest = require('../../Sanitizers/Registration/getAreasOfInterest')
+
+// Validatiors
+const getAreasOfInterestValidation = require('../../Validators/Registration/getAreasOfInterest')
+
 module.exports = getAreasOfInterest = (req, res) => {
+
+    //Checks that fields only defined in the schema are passed. 
+    var unwantedFields = checkGetAreasOfInterestFields(req)
+
+    if (unwantedFields) {
+        res.status(700).json({
+            message: unwantedFields,
+            error: 'Additional fields found'
+        })
+        return
+    }
+
+    //Checks that each of the fields are type string. 
+    var badType = basicTypeCheck(req.params)
+
+    if (badType) {
+        console.log(badType)
+        res.status(850).json({
+            message: badType,
+            error: 'Invalid type in request'
+        })
+
+    }
+
+    //Santize input before being passed to database
+    sanitizeGetAreasOfInterest(req.params)
+
     const userID = req.params.userID
     User.findById(userID, function (err, user) {
         if (err) {

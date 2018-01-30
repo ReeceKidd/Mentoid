@@ -4,7 +4,7 @@ var User = require('../../../models/user')
 const checkEmailField = require('../../FieldCheckers/Registration/checkEmail')
 
 //Checks that requests are the correct type
-const checkEmailTypes = require('../../TypeCheckers/Registration/checkEmail')
+const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
 
 //Sanitizes different requests
 const sanitizeCheckEmail = require('../../Sanitizers/Registration/checkEmail')
@@ -18,7 +18,7 @@ module.exports = checkEmail = (req, res) =>{
     var unwantedFields = checkEmailField(req)
 
     if (unwantedFields) {
-        res.status(700).json({
+        res.status(700).send({
             message: unwantedFields,
             error: 'Additional fields found'
         })
@@ -26,15 +26,24 @@ module.exports = checkEmail = (req, res) =>{
     }
 
     //Checks that each of the fields are type string. 
-    var badType = checkEmailTypes(req.params)
+    var badType = basicTypeCheck(req.params)
 
     if (badType) {
         console.log(badType)
-        res.status(850).json({
+        res.status(850).send({
             message: badType,
             error: 'Invalid type in request'
         })
+        return
+    }
 
+    //Validation. Cannot send status code as that spams the client console.
+    var errors = checkEmailValidation(req)
+    if (errors) {
+        res.send({
+            message: errors
+        })
+        return
     }
 
     //Santize input before being passed to database

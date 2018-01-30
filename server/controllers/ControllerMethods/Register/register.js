@@ -4,7 +4,7 @@ var User = require('../../../models/user')
 const checkBasicRegistrationFields = require('../../FieldCheckers/Registration/basicRegistration')
 
 //Checks that requests are the correct type
-const checkBasicRegistrationTypes = require('../../TypeCheckers/Registration/basicRegistration')
+const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
 
 //Sanitizes different requests
 const sanitizeBasicRegistration = require('../../Sanitizers/Registration/basicRegistration')
@@ -55,7 +55,7 @@ module.exports = register = (req, res) => {
     }
 
     //Checks that each of the fields are type string. 
-    var badType = checkBasicRegistrationTypes(req.body)
+    var badType = basicTypeCheck(req.body)
 
     if (badType) {
         console.log(badType)
@@ -74,7 +74,7 @@ module.exports = register = (req, res) => {
             error: 'Validation failure'
         })
         return
-    } else {
+    }
         //Santize input before being passed to database
         sanitizeBasicRegistration(req.body)
         try {
@@ -113,4 +113,3 @@ module.exports = register = (req, res) => {
             })
         }
     }
-}

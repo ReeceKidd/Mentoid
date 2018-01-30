@@ -4,7 +4,7 @@ var User = require('../../../models/user')
 const checkUserNameField = require('../../FieldCheckers/Registration/checkUserName')
 
 //Checks that requests are the correct type
-const checkUserNameTypes = require('../../TypeCheckers/Registration/checkUserName')
+const basicTypeCheck= require('../../TypeCheckers/Registration/basicTypeCheck')
 
 //Sanitizes different requests
 const sanitizeUserName = require('../../Sanitizers/Registration/checkUserName')
@@ -18,7 +18,7 @@ module.exports = checkUserName = (req, res) => {
     var unwantedFields = checkUserNameField(req)
 
     if (unwantedFields) {
-        res.status(700).json({
+        res.status(700).send({
             message: unwantedFields,
             error: 'Additional fields found'
         })
@@ -26,15 +26,24 @@ module.exports = checkUserName = (req, res) => {
     }
 
     //Checks that each of the fields are type string. 
-    var badType = checkUserNameTypes(req.params)
+    var badType = basicTypeCheck(req.params)
 
     if (badType) {
         console.log(badType)
-        res.status(850).json({
+        res.status(850).send({
             message: badType,
             error: 'Invalid type in request'
         })
+        return
+    }
 
+    //Validation. 
+    var errors = checkUserNameValidation(req)
+    if (errors) {
+        res.send({
+            message: errors
+        })
+        return
     }
 
     //Santize input before being passed to database
