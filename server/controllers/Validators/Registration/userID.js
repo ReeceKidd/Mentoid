@@ -2,9 +2,7 @@ const isValidMongoObjectID = require('../../CustomValidators/isValidMongoObjectI
 
 module.exports = function getAreasOfInterestValidation(req){
 
-    console.log(req)
-    
-    req.check('_id', 'ID object should be a valid ObjectID ').custom(val, isValidMongoObjectID)
+    req.checkParams('userID', 'ID object should be a valid ObjectID ').custom((value) => isValidMongoObjectID(value))
 
     var errors = req.validationErrors(true)
     

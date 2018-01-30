@@ -1,4 +1,3 @@
-// Sanitizes the basic registration information. 
 module.exports = function basicRegistrationSanitization(body){
     
     body.firstName = body.firstName.trim()

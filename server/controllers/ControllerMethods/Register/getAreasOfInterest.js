@@ -1,21 +1,21 @@
 var User = require('../../../models/user')
 
 // Field checkers ensure only relevant fields are passed to request
-const checkGetAreasOfInterestFields = require('../../FieldCheckers/Registration/getAreasOfInterest')
+const checkForID = require('../../FieldCheckers/Registration/checkForID')
 
 //Checks that requests are the correct type
 const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
 
 //Sanitizes different requests
-const sanitizeGetAreasOfInterest = require('../../Sanitizers/Registration/getAreasOfInterest')
+const sanitizeID = require('../../Sanitizers/Registration/userID')
 
 // Validatiors
-const getAreasOfInterestValidation = require('../../Validators/Registration/getAreasOfInterest')
+const userIDValidation = require('../../Validators/Registration/userID')
 
 module.exports = getAreasOfInterest = (req, res) => {
 
     //Checks that fields only defined in the schema are passed. 
-    var unwantedFields = checkGetAreasOfInterestFields(req)
+    var unwantedFields = checkForID(req)
 
     if (unwantedFields) {
         res.status(700).json({
@@ -29,7 +29,6 @@ module.exports = getAreasOfInterest = (req, res) => {
     var badType = basicTypeCheck(req.params)
 
     if (badType) {
-        console.log(badType)
         res.status(850).json({
             message: badType,
             error: 'Invalid type in request'
@@ -37,8 +36,18 @@ module.exports = getAreasOfInterest = (req, res) => {
 
     }
 
-    //Santize input before being passed to database
-    sanitizeGetAreasOfInterest(req.params)
+    //Validation. 
+    var errors = userIDValidation(req)
+    if (errors) {
+        res.status(600).json({
+            message: errors,
+            error: 'Validation failure'
+        })
+        return
+    }
+
+    //Santize User ID
+    sanitizeID(req.params)
 
     const userID = req.params.userID
     User.findById(userID, function (err, user) {

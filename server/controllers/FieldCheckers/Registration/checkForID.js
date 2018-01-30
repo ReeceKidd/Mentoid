@@ -1,6 +1,6 @@
-module.exports = function checkEmail(req) {
+module.exports = function checkAreasOfInterest(req) {
     for (property in req.params) {
-        if (property !== '_id') {
+        if (property !== 'userID') {
             return 'Request contained unsupported field: ' + property
         }
     }

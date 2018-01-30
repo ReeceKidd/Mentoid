@@ -29,22 +29,17 @@ module.exports = function checkBasicRegistrationFields(req) {
 
 A typical structure for an array field checker is: 
 
-module.exports = function checkUpdateJobHistoryExperiencesArrayFields(experiences) {
-    for (var currentExperience in experiences) {
-        for (var property in currentExperience) {
-            if (currentExperience.hasOwnProperty(property)) {
-                if (property !== 'title' &&
-                    property !== 'company' &&
-                    property !== 'experienceID' &&
-                    property !== 'startDate' &&
-                    property !== 'endDate' &&
-                    property !== 'isWorkingHere') {
+module.exports = function checkAreasOfInterestArray(areasOfInterest) {
+    for (var index in areasOfInterest) {
+        for (var property in areasOfInterest[index]) {
+                if (property !== 'value' &&
+                    property !== 'years' &&
+                    property !== 'areaOfInterestID') {
                     return 'Request contained unsupported field: ' + property
                 }
             }
         }
     }
-}
 
 1) Contain the array checking method in it's own file for consistency. 
 2) The name of the method will be "check" + name of the controller method + "Array" + "Fields".

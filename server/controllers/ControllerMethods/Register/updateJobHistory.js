@@ -42,7 +42,7 @@ module.exports = updateJobHistory = (req, res) => {
     //Checks that request contains an experiences array containing only strings and an _id which is a string.
     var checkRequestTypes = typeChecker.checkJobHistory(req.body)
 
-    if(checkRequestTypes){
+    if (checkRequestTypes) {
         console.log(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
@@ -67,29 +67,29 @@ module.exports = updateJobHistory = (req, res) => {
             message: errors[Object.keys(errors)[0]].msg
         })
     }
-    else {
-        
-        var query = {
-            '_id': req.body._id
-        }
 
-        User.findOneAndUpdate(query, {
-                $set: {
-                    jobHistoryRegistrationComplete: true
-                },
+    sanitizeUpdateJobHistory(req.body)
 
-            },
-            function (err, updated) {
-                if (err) {
-                    res.status(400).send({
-                        message: 'Unable to update job history. Could not find user. '
-                    })
-                } else {
-                    res.status(200).send({
-                        message: 'Updated job history successfully.'
-                    })
-                }
-            }
-        )
+    var query = {
+        '_id': req.body._id
     }
+
+    User.findOneAndUpdate(query, {
+            $set: {
+                jobHistoryRegistrationComplete: true
+            },
+
+        },
+        function (err, updated) {
+            if (err) {
+                res.status(400).send({
+                    message: 'Unable to update job history. Could not find user. '
+                })
+            } else {
+                res.status(200).send({
+                    message: 'Updated job history successfully.'
+                })
+            }
+        }
+    )
 }

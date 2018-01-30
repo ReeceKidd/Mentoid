@@ -1,7 +1,6 @@
-module.exports = function checkUpdateAreasOfInterestArrayFields(areasOfInterest) {
-    for (var currentAreaOfInterest in areasOfInterest) {
-        for (var property in currentAreaOfInterest) {
-            if (currentAreaOfInterest.hasOwnProperty(property)) {
+module.exports = function checkAreasOfInterestArray(areasOfInterest) {
+    for (var index in areasOfInterest) {
+        for (var property in areasOfInterest[index]) {
                 if (property !== 'value' &&
                     property !== 'years' &&
                     property !== 'areaOfInterestID') {
@@ -10,5 +9,3 @@ module.exports = function checkUpdateAreasOfInterestArrayFields(areasOfInterest)
             }
         }
     }
-
-} 
