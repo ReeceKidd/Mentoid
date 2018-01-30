@@ -31,6 +31,7 @@
               <input id="userName" @focus="$v.userName.$reset" @blur="$v.userName.$touch()" v-model.trim="userName" name="userName">
               <p class="errorMessage" v-if="!$v.userName.required && $v.userName.$dirty">Username is required.</p>
               <p class="errorMessage" v-if="!$v.userName.unique && $v.userName.$dirty">Username already exists in database</p>
+              <p class="errorMessage" v-if="!$v.userName.alphaNum && $v.userName.$dirty">Username must only contain alphabetical characters and numbers</p>
             </div>
             <div class="input" :class="{invalid: $v.email.$error}">
               <label for="email">Email*</label>
@@ -74,6 +75,11 @@
         </div>
       </div>
     </div>
+    <div class="row visible-xs">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -84,6 +90,7 @@
     minLength,
     sameAs,
     alpha,
+    alphaNum,
     minValue,
     maxValue
   } from 'vuelidate/lib/validators'
@@ -143,6 +150,7 @@
       },
       userName: {
         required,
+        alphaNum,
         unique: val => {
           if (val === '') return true
           let uri = 'http://localhost:4000/check/username/'
@@ -183,7 +191,7 @@
             this.$router.push('/register-areas-of-interest')
           })
           .catch(e => {
-            console.log('Could not complete basic registration')
+            console.log(e)
             this.errorMessage = e.message
           })
       },
