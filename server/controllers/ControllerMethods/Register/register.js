@@ -61,7 +61,7 @@ module.exports = register = (req, res) => {
         console.log(badType)
         res.status(850).json({
             message: badType,
-            error: 'Invalid type in request'
+            error: 'Invalid type'
         })
         return
     }

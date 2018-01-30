@@ -1,17 +1,31 @@
-module.exports = function updateJobHistoryValidation(req) {
+const isValidMongoObjectID = require('../../CustomValidators/isValidMongoObjectID')
+const isValidString = require('../TypeValidators/string')
+const date = new Date()
+const currentYear = date.getFullYear()
 
-    //Current Year is needed for startDate and endDate methods. 
-    const date = new Date()
-    var currentYear = date.getFullYear()
+function validYear(year) {
+    if (year.length !== 4) return false
+    if (!year.match(/\d{4}/)) return false
+    return true
+}
+
+function greaterThanCurrentYear(currentYear) {
+    if (parseInt(year) > currentYear) return false
+    return true
+}
+
+module.exports = function updateJobHistoryValidation(req) {
 
     // User ID validation
 
     /*
     1) Checks that the user ID exists in the request. 
     2) Checks that the user ID is equal to a string. 
-    3) Checks that the userID is not an empty string. 
+    3) Checks that the userID is not an empty string.
+    4) Checks that userID is equal to a valid MongoDB object.  
     */
 
+    req.check('_id', 'ID object should be a valid ObjectID ').custom((value) => isValidMongoObjectID(value))
     req.check('_id', 'User ID must be sent with request').exists()
     req.check('_id', 'UserID must be a string').custom(_id => {
         if (typeof _id !== 'string') {
@@ -27,163 +41,34 @@ module.exports = function updateJobHistoryValidation(req) {
     })
 
 
+
     //Experiences title field checks.
 
-    /*
-    1) Checks that a value is defined for every area of interest. 
-    2) Checks that the value is a string value. 
-    3) Checks that the value only contains letters and whitespace. 
-    4) Checks that an empty string is not passed. 
-    5) Checks if the title value is less than 2 false is returned. 
-    */
+    
 
-    req.check('experiences', 'Each experience title must be defined').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].title === 'undefined') {
-                return false
-            }
-        }
-        return true
-    })
-    req.check('experiences', 'Each experiences title must be a string').custom(experiences => {
-        if (experiences.length === 0) {
-            return false
-        }
-        for (var x = 0; x < experiences.length; x++) {
-            if (typeof experiences[x].title !== 'string') {
-                return false
-            }
-        }
-        return true
-    })
-    req.check('experiences', 'Each experience title can only contain letters and white space').custom(experiences => {
-        if (experiences.length === 0) {
-            return false
-        }
-        for (var x = 0; x < experiences.length; x++) {
-            if (typeof experiences[x].title !== 'string') {
-                return false
-            }
-            var match = experiences[x].title.match(/^[A-Za-z\s]+$/)
-            if (match === undefined) {
-                return false
-            }
-            if (!match) {
-                return false
-            }
-        }
-        return true
-    })
-    req.check('experiences', 'Experiences title can not be empty').custom(experiences => {
-        if (experiences.title === 0) {
-            return false
-        }
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].title === "") {
-                return false
-            }
-        }
-        return true
-    })
-    req.check('experiences', 'Check that experiences tiltle is at least two characters long').custom(experiences => {
-        if (experiences.title === 0) {
-            return false
-        }
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].title.length < 2) {
-                return false
-            }
-        }
-        return true
-    })
+    const maxTitleLength = 200
+    const minTitleLength = 1
 
-    //Experiences company field checks.
+    var titleErrors
+    for (var index in req.body.experiences) {
+        var currentExperience = req.body.experiences[index]
+        titleErrors = isValidString('experiences.title',currentExperience.title, minTitleLength, maxTitleLength, false, false, true)
+    }
 
-    /*
-    1) Checks that a compnay is defined for every area experience. 
-    2) Checks that company is a string value.  
-    4) Checks that an empty string is not passed. 
-    */
+    if (titleErrors) {
+        return titleErrors
+    }
 
-    req.check('experiences', 'Each experience title must be defined').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].company === 'undefined') {
-                return false
-            }
-        }
-        return true
-    })
-    req.check('experiences', 'Each experiences title must be a string').custom(experiences => {
-        if (experiences.company === 0) {
-            return false
-        }
-        for (var x = 0; x < experiences.length; x++) {
-            if (typeof experiences[x].company !== 'string') {
-                return false
-            }
-        }
-        return true
-    })
-    req.check('experiences', 'Experiences title can not be empty').custom(experiences => {
-        if (experiences.company === 0) {
-            return false
-        }
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].company === "") {
-                return false
-            }
-        }
-        return true
-    })
-
-    //Experience ID field
-
-    /*
-    1) Checks the area of interest ID field is defined. 
-    2) Checks the area of interest ID field is an integer. 
-    */
-
-    req.check('experiences', 'Each areas of interest ID field must be defined').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].experienceID === 'undefined') {
-                return false
-            }
-        }
-        return true
-    })
-
-    req.check('experiences', 'Each area of interests ID field must be an integer').custom(experiences => {
-        if (experiences.length === 0) {
-            return false
-        }
-
-        for (var x = 0; x < experiences.length; x++) {
-            // https://jsperf.com/numbers-and-integers
-            if (experiences[x].experienceID !== parseInt(experiences[x].experienceID)) {
-                return false
-            }
-        }
-        return true
-    })
-
+    
     var errors = req.validationErrors(true)
 
     if (errors) {
-        return errors
+        return errors[Object.keys(errors)[0]].msg
     }
 }
 
-// ValidYear method and greater than current year are necessary for checks. 
-function validYear(year) {
-    if (year.length !== 4) return false
-    if (!year.match(/\d{4}/)) return false
-    return true
-}
 
-function greaterThanCurrentYear(year) {
-    if (parseInt(year) > 2018) return false
-    return true
-}
+
 
 //Start Date Field
 

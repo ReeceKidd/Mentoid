@@ -18,4 +18,8 @@ module.exports = function checkJobHistory(req){
     if(!req._id instanceof String) {
         return 'ID must be a string.'
     }
+
+    if(!req.age instanceof String) {
+        return 'Age must be a string.'
+    }
 }

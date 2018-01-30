@@ -15,6 +15,10 @@ Already exists: (Email and username registration)
 Status: 900
 error: 'Already exists in database'
 
+Undefined field
+Status: 950
+error: 'Undefined field'
+
 Invalid type
 Status: 850
 error: 'Invalid type in request'

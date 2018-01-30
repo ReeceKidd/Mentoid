@@ -5,6 +5,5 @@ This method ensures all string inputs are validated so that $ are replaced.
 
 module.exports = function preventNoSQLInjection(search) {
     var target = this;
-    var replacement = 'Dollar'
-    return target.replace(new RegExp(search, '$'), replacement);
+    return search.split('$').join('Dollar');
 };

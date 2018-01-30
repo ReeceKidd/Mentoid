@@ -71,9 +71,20 @@ and tests.
 
 Plan for 29/01/2018
 
-1) Santiize req methods one sanitization for each request. 
-2) Complete string checker for basic registration. 
+1) Santiize req methods one sanitization for each request. (complete)
+2) Complete string checker for basic registration. (complete)
 3) Complete job history including validation and tests. 
 
 Paln for 30/01/2018
+
+1) Create method to check the size of the inputs as that might be an issue on the server. 
+2) Complete job history including validation and tests. 
+3) Create the same thing for education. 
+4) Create the bio page. 
+5) Allow users to upload profile piture. 
+
+//Complete the different types of validators and relevant guide. Replace old validation code with this. 
+//Add the undefined checks for each of the methods as well. 
+//Create a parameter checker that can be used for all my autogenerate stuff. 
+//Complete the auto generated tests and then change the tests over to get it to work. 
 

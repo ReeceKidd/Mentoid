@@ -97,6 +97,7 @@
       <br class="visible-xs">
       <div class="row visible-xs text-center" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
         <div class="col-xs-12">
+          <br>
             <div
               :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
               <label :for="areaOfInterest.areaOfInterestID">
@@ -128,9 +129,8 @@
             </div>
             <br>
         </div>
-        <div class="col-xs-12 text-right">
+        <div class="col-xs-12 text-center">
           <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">Delete</button>
-          <br>
         </div>
         <div class="col-xs-12" v-if="(index + 1) === areasOfInterest.length">
           <br>

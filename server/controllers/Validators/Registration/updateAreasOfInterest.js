@@ -1,3 +1,5 @@
+const isValidMongoObjectID = require('../../CustomValidators/isValidMongoObjectID')
+
 module.exports = function updateAreasOfInterestValidation(req) {
 
     const usersAge = req.body.age
@@ -5,9 +7,10 @@ module.exports = function updateAreasOfInterestValidation(req) {
     // User ID validation
 
     /*
-    1) Checks that the user ID exists in the request. 
-    2) Checks that the user ID is equal to a string. 
-    3) Checks that the userID is not an empty string. 
+    1) user ID exists in the request. 
+    2) user ID is equal to a string. 
+    3) userID is not an empty string. 
+    4) userID is a valid Mongo Object ID 
     */
 
     req.check('_id', 'User ID must be sent with request').exists()
@@ -23,6 +26,7 @@ module.exports = function updateAreasOfInterestValidation(req) {
         }
         return true
     })
+    req.check('_id', 'ID object should be a valid ObjectID ').custom((value) => isValidMongoObjectID(value))
 
     //User Age validation
     /*

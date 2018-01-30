@@ -1,0 +1,4 @@
+I should have used typescript as for example in 
+my validation code I have to check the type of everything passed. 
+
+Security and validation are taking a long long time. 

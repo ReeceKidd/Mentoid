@@ -10,6 +10,9 @@ const checkUpdateJobHistoryArrayFields = require('../../FieldCheckers/Registrati
 //Checks that requests are the correct type
 const checkJobHistoryTypes = require('../../TypeCheckers/Registration/jobHistory')
 
+//Checks all necessary fields are defined. 
+const checkUndefinedFields = require('../../UndefinedCheckers/updateJobHistory')
+
 //Sanitizes different requests
 const sanitizeUpdateJobHistory = require('../../Sanitizers/Registration/updateJobHistory')
 
@@ -19,8 +22,9 @@ const sanitizeUpdateJobHistory = require('../../Sanitizers/Registration/updateJo
 const updateJobHistoryValidation = require('../../Validators/Registration/updateJobHistory')
 
 module.exports = updateJobHistory = (req, res) => {
+
     //Checks that only _id and areas of interest are passed in request. 
-    var unwantedField = checkFields.updateJobHistory(req.body)
+    var unwantedField = checkUpdateJobHistoryFields(req.body)
 
     if (unwantedField) {
         return res.status(700).send({
@@ -30,7 +34,7 @@ module.exports = updateJobHistory = (req, res) => {
     }
 
     //Checks that experiences array only contains title, company, experienceID, startDate, endDate and isWorkingHere. 
-    var unwantedArrayField = checkFields.updateJobHistoryExperiencesArray(req.body.experiences)
+    var unwantedArrayField = checkUpdateJobHistoryArrayFields(req.body.experiences)
 
     if (unwantedArrayField) {
         return res.status(700).send({
@@ -40,7 +44,7 @@ module.exports = updateJobHistory = (req, res) => {
     }
 
     //Checks that request contains an experiences array containing only strings and an _id which is a string.
-    var checkRequestTypes = typeChecker.checkJobHistory(req.body)
+    var checkRequestTypes = checkJobHistoryTypes(req.body)
 
     if (checkRequestTypes) {
         console.log(checkRequestTypes)
@@ -50,25 +54,34 @@ module.exports = updateJobHistory = (req, res) => {
         })
     }
 
+    //Checks that id, age and experiences array are defined. 
+    var undefinedFields = checkUndefinedFields(req.body)
+
+    if (undefinedFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedFields
+        })
+    }
+
+    //Validation for updating job history. 
+    var validationError = updateJobHistoryValidation(req)
+
+    if (validationError) {
+        return res.status(600).send({
+            error: 'Validation failure',
+            message: validationError
+        })
+    }
+
+    sanitizeUpdateJobHistory(req.body)
+
     //Updates the title and company name to title case. 
     for (var x = 0; x < req.body.experiences.length; x++) {
         req.body.experiences[x].title = toTitleCase(req.body.experiences[x].title)
         req.body.experiences[x].company = toTitleCase(req.body.experiences[x].company)
     }
 
-
-    //Validation for updating job history. 
-    var errors = updateJobHistoryValidation(req)
-
-    if (errors) {
-        console.log(errors)
-        return res.status(600).send({
-            error: 'Validation failure',
-            message: errors[Object.keys(errors)[0]].msg
-        })
-    }
-
-    sanitizeUpdateJobHistory(req.body)
 
     var query = {
         '_id': req.body._id

@@ -22,15 +22,18 @@ POST tests.
 
 -String Tests
 
-1) Max length check
-2) Min length check
-3) Not equal to null or undefined. 
-4) Not equal to blank space. 
-5) Special characters are escaped. 
-6) (Optional) Alphabetical and space values allowed.
-7) Not a number. 
-8) Not a boolean 
-9) Not an Array
+1) Is a string
+2) Max length check
+3) Min length check
+4) Not equal to null
+5) Not equal to undefined 
+5) Not equal to blank space.
+6) String is not a number value. 
+6) Special characters are escaped. 
+7) Check for NoSQL injection. 
+8) (Optional) Alphabetical characters only
+9) (Optional) Alphabetical and numeric characters only
+10) (Optional) Alphabetical and space values allowed.
 
 -Boolean Tests
 
@@ -61,11 +64,9 @@ POST tests.
 
 GET tests. 
 
-- _id Tests
-
+-General Tests
 1) Check the length of the request
 
--General Tests
--String Tests
--Boolean Tests
--Array Tests
+- _id Tests
+
+1) Check that it is a valid MongoDB object ID. 

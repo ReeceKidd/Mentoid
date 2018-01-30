@@ -1,4 +1,5 @@
 const preventNoSQLInjection = require('../preventNoSQLInjection')
+
 module.exports = function basicRegistrationSanitization(body){
     
     body.firstName = body.firstName.trim()

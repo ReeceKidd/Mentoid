@@ -1,0 +1,15 @@
+API Validation Guide. 
+
+This guide outlines the necessary validations that need to be completed for the different data types. 
+
+-Strings 
+
+
+
+-Number
+
+-Boolean 
+
+-Array
+
+-Object ID

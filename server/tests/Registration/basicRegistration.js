@@ -57,8 +57,7 @@ chai.use(chaiHttp);
 console.log('Begining basicRegistration.js tests')
 
 //Empty the test database before starting
-User.remove({}, function(err) { 
- })
+User.remove({}, function (err) {})
 
 // 1) Correct data passes.  
 describe('Test for valid registration', () => {
@@ -83,6 +82,18 @@ describe('Test for valid registration', () => {
             })
     })
 })
+
+const requestObject = {
+    firstName: "Tom",
+    lastName: "Hope",
+    userName: "Tommy123",
+    email: "tom-hope@gmail.com",
+    age: "20",
+    password: "12345678",
+    confirmPassword: "12345678",
+    language: "English",
+    terms: "true"
+}
 
 // 2) Request with additional field fails
 describe('Checks for additional unwanted fields in request', () => {
@@ -166,35 +177,12 @@ describe('Checks that user has not tried to set later registration', () => {
 })
 
 /*
-*/
+ */
 
 // 6) Checks that the first name only contains Alphabetical characters
-describe('Checks that first name fails when non aphabetical characters are included', () => {
-    it('It should have a validation error because first name contains a numeric character.', (done) => {
-        var newUser = {
-            firstName: "Michelle2",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: "20",
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            language: "English",
-            terms: "true"
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
+const testAlphaString = require('../TestGenerator/String/alpha')
+testAlphaString('firstName', 2, 250, requestObject, '/register', server)
+
 // 7) Checks that the first name is at least two characters long. 
 describe('Checks that first name fails when it is less than two characters', () => {
     it('It should have a validation error because first name is only one character long.', (done) => {
@@ -579,8 +567,4 @@ describe('Checks that user has accepted terms and condition', () => {
 })
 
 //Empties test database.
-User.remove({}, function(err) { 
-})
-
-
-
+User.remove({}, function (err) {})

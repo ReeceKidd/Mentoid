@@ -1,11 +1,11 @@
 module.exports = function basicRegistrationValidation(req){
     req.check('firstName', 'First name is required for basic registration').exists()
     req.check('firstName', 'First name can only contain Alphabetical characters').isAlpha()
-    req.check('firstName', 'First name must be at least two characters long').isLength({min: 2})
+    req.check('firstName', 'First name must be at least two characters long').isLength({min: 2, max: 100})
     
     req.check('lastName', 'Last name is required for basic registration').exists()
     req.check('lastName', 'Last name can only contain Alphabetical characters').isAlpha()
-    req.check('lastName', 'Last name must be at least two characters long').isLength({min: 2})
+    req.check('lastName', 'Last name must be at least two characters long').isLength({min: 2, max: 100})
     
     req.check('userName', 'Username is required for basic registration').exists()
     req.check('userName', 'Username must be alphanumeric and cannot contain spaces').isAlphanumeric()
