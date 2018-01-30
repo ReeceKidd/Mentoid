@@ -65,7 +65,15 @@ Plan for 28/01/2018
 1) Need to change all the input types in the form to text and do a string checker javascript for basicRegistration, 
 areas of Interest registration and job history registration. Then added the appropriate is int methods in the validations
 and tests. 
-3) Need to make a check fields method for areas of interest array insted of validation. 
 4) Bio page is where users should be able to add their favourite books and movies. 
 5) Need to go through the tests and make sure they are catching out non string values. 
 6) Complete sanitizations of basic registration, areas of interest and job history. 
+
+Plan for 29/01/2018
+
+1) Santiize req methods one sanitization for each request. 
+2) Complete string checker for basic registration. 
+3) Complete job history including validation and tests. 
+
+Paln for 30/01/2018
+

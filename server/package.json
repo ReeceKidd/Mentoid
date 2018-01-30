@@ -27,6 +27,7 @@
     "express-session": "^1.15.6",
     "express-validator": "^4.3.0",
     "jsonwebtoken": "^8.1.0",
+    "mongo-sanitize": "^1.0.0",
     "mongodb": "*",
     "mongoose": "^4.10.8",
     "morgan": "^1.9.0",

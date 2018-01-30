@@ -165,6 +165,9 @@ describe('Checks that user has not tried to set later registration', () => {
     })
 })
 
+/*
+*/
+
 // 6) Checks that the first name only contains Alphabetical characters
 describe('Checks that first name fails when non aphabetical characters are included', () => {
     it('It should have a validation error because first name contains a numeric character.', (done) => {
