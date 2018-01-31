@@ -1,5 +1,3 @@
-const preventNoSQLInjection = require('../preventNoSQLInjection')
-
 module.exports = function updateJobHistorySanitization(body){
 
     body._id = escape(body._id)
@@ -22,23 +20,18 @@ module.exports = function updateJobHistorySanitization(body){
 
         title = escape(title)
         title = title.trim()
-        title = preventNoSQLInjection(title)
 
         company = escape(company)
         company = company.trim()
-        company = preventNoSQLInjection(company)
 
         startDate = escape(startDate)
         startDate = startDate.trim()
-        startDate = preventNoSQLInjection(startDate)
 
         endDate = escape(endDate)
         endDate = endDate.trim()
-        endDate = preventNoSQLInjection(endDate)
 
         experienceID = escape(experienceID)
         experienceID = experienceID.trim()
-        experienceID = preventNoSQLInjection(experienceID)
     }
     
 }

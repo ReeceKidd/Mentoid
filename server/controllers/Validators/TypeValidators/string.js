@@ -34,7 +34,7 @@ module.exports = function validateString(field, stringToCheck, minimumLength, ma
     checkParameters(field, minimumLength, maximumLength, isAlpha, isAlphaNumeric, isAlphaWithSpaces)
 
     console.log(stringToCheck.length)
-    
+
     if (stringToCheck.length === 0) {
         return field + ' cannot be 0 characters in length'
     }
@@ -55,8 +55,18 @@ module.exports = function validateString(field, stringToCheck, minimumLength, ma
         return field + ' cannot be a blank space'
     }
 
+
     if (!isNaN(stringToCheck)) {
-        return field + ' cannot be a number ( ' + stringToCheck +' )' 
+        return field + ' cannot be a number ( ' + stringToCheck + ' )'
+    }
+
+    /*
+    No SQL Injection can occur when a user is allowed to pass a $ to a string. 
+    This method ensures all string inputs are validated so that $ are replaced. 
+    */
+
+    if(stringToCheck.indexOf('$') >- 1) {
+        return field + ' cannot contain $ this is a prohibited character'
     }
 
     /*
@@ -84,7 +94,7 @@ module.exports = function validateString(field, stringToCheck, minimumLength, ma
 
 function checkParameters(field, minLength, maxLength, isAlpabetical, isAlphaNumeric, isAlphaWithSpaces) {
 
-    if(typeof field !== 'string') {
+    if (typeof field !== 'string') {
         throw TypeError
     }
 

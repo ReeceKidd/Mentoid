@@ -180,7 +180,7 @@ describe('Checks that user has not tried to set later registration', () => {
  */
 
 // 6) Checks that the first name only contains Alphabetical characters
-const testAlphaString = require('../TestGenerator/String/alpha')
+const testAlphaString = require('../TestGenerator/String/isAlpha')
 testAlphaString('firstName', 2, 250, requestObject, '/register', server)
 
 // 7) Checks that the first name is at least two characters long. 

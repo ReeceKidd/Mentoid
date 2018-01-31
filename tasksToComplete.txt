@@ -77,7 +77,7 @@ Plan for 29/01/2018
 
 Paln for 30/01/2018
 
-1) Create method to check the size of the inputs as that might be an issue on the server. 
+1) Create method to check the size of the inputs as that might be an issue on the server. (server already does this)
 2) Complete job history including validation and tests. 
 3) Create the same thing for education. 
 4) Create the bio page. 
@@ -87,4 +87,13 @@ Paln for 30/01/2018
 //Add the undefined checks for each of the methods as well. 
 //Create a parameter checker that can be used for all my autogenerate stuff. 
 //Complete the auto generated tests and then change the tests over to get it to work. 
+
+Plan for 31/01/2018 - Registration day. 
+
+Add the undefined checks for each of the methods. (complete)
+Complete the auto generated tests and then change the tests over to get it to work. 
+Make the instnt messaging format in the same style as intercoms customer support option
+https://www.intercom.com/customer-support-software
+//Build the chat app using this guide: https://www.youtube.com/watch?v=rL-dJcxC8X8&t=28s
+
 
