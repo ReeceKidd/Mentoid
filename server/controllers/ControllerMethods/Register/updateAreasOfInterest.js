@@ -1,5 +1,11 @@
 var User = require('../../../models/user')
 
+//Checks all necessary fields are defined. 
+const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
+
+//Checks all objects inside an array have the necessary fields. 
+const checkUndefinedFieldsArray = require('../../UndefinedCheckers/array')
+
 // Formats value of area of interest to title case. 
 const toTitleCase = require('../../Formatter/toTitleCase.js')
 
@@ -20,6 +26,24 @@ const checkAreasOfInterestDuplicates = require('../../DuplicationChecker/Registr
 const updateAreasOfInterestValidation = require('../../Validators/Registration/updateAreasOfInterest')
 
 module.exports = updateAreasOfInterest = (req, res) => {
+
+    var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','areasOfInterest'])
+
+    if (undefinedFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedFields
+        })
+    }
+
+    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['value', 'years','areaOfInterestID'])
+
+    if (undefinedArrayFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedArrayFields
+        })
+    }
     
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateAreasOfInterestFields(req.body)

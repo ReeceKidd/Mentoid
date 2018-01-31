@@ -1,5 +1,8 @@
 var User = require('../../../models/user')
 
+//Checks that required fields are defined.
+const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
+
 // Field checkers ensure only relevant fields are passed to request
 const checkBasicRegistrationFields = require('../../FieldCheckers/Registration/basicRegistration')
 
@@ -43,6 +46,25 @@ const asyncVerify = token => {
 
 module.exports = register = (req, res) => {
 
+    var undefinedFields = checkUndefinedFields(req.params, [
+        'firstName',
+        'lastName',
+        'userName',
+        'email',
+        'password',
+        'confirmPassword',
+        'age',
+        'language',
+        'terms'
+    ])
+
+    if (undefinedFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedFields
+        })
+    }
+
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkBasicRegistrationFields(req)
 
@@ -75,41 +97,41 @@ module.exports = register = (req, res) => {
         })
         return
     }
-        //Santize input before being passed to database
-        sanitizeBasicRegistration(req.body)
-        try {
-            const newUser = req.body
-            newUser.areasOfInterest = []
-            newUser.mentors = []
-            newUser.mentees = []
-            newUser.basicRegistrationComplete = true
-            newUser.areasOfInterestRegistrationComplete = false
-            newUser.userRegistrationComplete = false
-            newUser.isUserLoggedIn = true
-            const saveUser = new User(newUser)
-            saveUser
-                .save()
-                .then(user => {
-                    user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
-                    const token = asyncIssue(user.toObject()).then(token => {
-                        res.status(200).send({
-                            message: 'Success',
-                            token: token,
-                            user: user
-                        })
+    //Santize input before being passed to database
+    sanitizeBasicRegistration(req.body)
+    try {
+        const newUser = req.body
+        newUser.areasOfInterest = []
+        newUser.mentors = []
+        newUser.mentees = []
+        newUser.basicRegistrationComplete = true
+        newUser.areasOfInterestRegistrationComplete = false
+        newUser.userRegistrationComplete = false
+        newUser.isUserLoggedIn = true
+        const saveUser = new User(newUser)
+        saveUser
+            .save()
+            .then(user => {
+                user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
+                const token = asyncIssue(user.toObject()).then(token => {
+                    res.status(200).send({
+                        message: 'Success',
+                        token: token,
+                        user: user
                     })
                 })
-                .catch(err => {
-                    console.log(err)
-                    res.status(400).send({
-                        message: err.message ? err.message : 'Unable to save user to database',
-                        error: 'Unable to save user.'
-                    })
-                })
-        } catch (err) {
-            const message = err.message ? err.message : 'There was an error'
-            res.status(401).send({
-                message: message
             })
-        }
+            .catch(err => {
+                console.log(err)
+                res.status(400).send({
+                    message: err.message ? err.message : 'Unable to save user to database',
+                    error: 'Unable to save user.'
+                })
+            })
+    } catch (err) {
+        const message = err.message ? err.message : 'There was an error'
+        res.status(401).send({
+            message: message
+        })
     }
+}

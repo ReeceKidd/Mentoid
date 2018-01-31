@@ -1,5 +1,8 @@
 var User = require('../../../models/user')
 
+//Checks that required fields are defined.
+const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
+
 // Field checkers ensure only relevant fields are passed to request
 const checkUserNameField = require('../../FieldCheckers/Registration/checkUserName')
 
@@ -13,6 +16,15 @@ const sanitizeUserName = require('../../Sanitizers/Registration/checkUserName')
 const checkUserNameValidation = require('../../Validators/Registration/checkUserNameValidation')
 
 module.exports = checkUserName = (req, res) => {
+
+    var undefinedFields = checkUndefinedFields(req.params, ['userName'])
+
+    if (undefinedFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedFields
+        })
+    }
 
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkUserNameField(req)

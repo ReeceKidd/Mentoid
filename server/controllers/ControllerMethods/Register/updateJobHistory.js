@@ -26,6 +26,24 @@ const updateJobHistoryValidation = require('../../Validators/Registration/update
 
 module.exports = updateJobHistory = (req, res) => {
 
+    var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','experiences'])
+
+    if (undefinedFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedFields
+        })
+    }
+
+    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['title', 'company','startDate','endDate','isWorkingHere'])
+
+    if (undefinedArrayFields) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedArrayFields
+        })
+    }
+
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateJobHistoryFields(req.body)
 
@@ -57,23 +75,6 @@ module.exports = updateJobHistory = (req, res) => {
         })
     }
 
-    var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','experiences'])
-
-    if (undefinedFields) {
-        return res.status(950).send({
-            error: 'Undefined field',
-            message: undefinedFields
-        })
-    }
-
-    var checkExperiencesArray = checkUndefinedFieldsArray(req.body.experiences, ['title', 'company','startDate','endDate','isWorkingHere'])
-
-    if (checkExperiencesArray) {
-        return res.status(950).send({
-            error: 'Undefined field',
-            message: checkExperiencesArray
-        })
-    }
 
     //Validation for updating job history. 
     var validationError = updateJobHistoryValidation(req)
