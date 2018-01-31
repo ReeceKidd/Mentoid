@@ -95,5 +95,6 @@ Complete the auto generated tests and then change the tests over to get it to wo
 Make the instnt messaging format in the same style as intercoms customer support option
 https://www.intercom.com/customer-support-software
 //Build the chat app using this guide: https://www.youtube.com/watch?v=rL-dJcxC8X8&t=28s
-
+Complete the null checker and add it to each page. git 
+Go through the actual string validator and make sure I'm doing a test for each of those methods. 
 

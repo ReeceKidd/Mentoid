@@ -3,39 +3,30 @@ These tests are used to check the registration controllers register method.
 Tests in this section.
 
 General Tests
-1) Correct data passes. 
-2) Request with additional field fails
-3) Requests with a missing required field fails.
-4) User cannot set data that will be set by the backend.
+- Correct data passes. 
+- Request with additional field fails
+- User cannot set data that will be set by the backend.
 
-firstName checks
-6) Checks that the first name only contains Alphabetical characters
-7) Checks that the first name is at least two characters long. 
-
-lastName checks
-8) Checks that the last name only contains Alphabetical characters
-9) Checks that the last name is at least two characters long. 
-
-userName checks
-10) Checks that the username is alphanumeric and does not contain spaces. 
-11) Checks that invalid email addresses are rejected. 
+firstName: isAlpha String tests.
+lastName: isAlpha String tests
+userName: isAlphaNumeric String tests
 
 passwordChecks
-12) Checks that password is eight or more characters long. 
-13) Checks that password matches confirmation password. 
+- Checks that password is eight or more characters long. 
+- Checks that password matches confirmation password. 
 
 age Checks
-14) Checks that a users age is between 16 and 120
+- Checks that a users age is between 16 and 120
 
 languageChecks
-15) Checks that the users has entered a supported language
-16) Checks that if the users language is Spanish it passes 
-17) Checks if the users language is English it passes
-18) Checks if users language is French it passes.
-19) Checks that if the users language is German it passes.
+- Checks that the users has entered a supported language
+- Checks that if the users language is Spanish it passes 
+- Checks if the users language is English it passes
+- Checks if users language is French it passes.
+- Checks that if the users language is German it passes.
 
 termsChecks
-20) Checks the user has accepted the terms and conditions. 
+- Checks the user has accepted the terms and conditions. 
 */
 
 /*
@@ -95,7 +86,7 @@ const requestObject = {
     terms: "true"
 }
 
-// 2) Request with additional field fails
+// Request with additional field fails
 describe('Checks for additional unwanted fields in request', () => {
     it('It should have error because of additional field in user', (done) => {
         var newUser = {
@@ -121,33 +112,7 @@ describe('Checks for additional unwanted fields in request', () => {
     })
 })
 
-// 3) Requests with a missing required field fails.
-describe('Check to see if requests missing a required field fail', () => {
-    it('It should have error in response because of a lack of firstName field in request', (done) => {
-        var newUser = {
-            firstName: "Brad",
-            lastName: "Bradely",
-            userName: "BadBrad",
-            email: "brad@gmail.com",
-            age: "20",
-            password: "password123",
-            confirmPassword: "password123",
-            language: "English",
-            terms: "true"
-        }
-        delete newUser.firstName
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 4) User cannot set data that will be set by the backend.
+// User cannot set data that will be set by the backend.
 describe('Checks that user has not tried to set later registration', () => {
     it('It should have an error because user has tried to set later registration values to true.', (done) => {
         var newUser = {
@@ -177,125 +142,15 @@ describe('Checks that user has not tried to set later registration', () => {
 })
 
 /*
- */
-
-// 6) Checks that the first name only contains Alphabetical characters
+firstName, lastName and userName are tested with the generated code. 
+*/
 const testAlphaString = require('../TestGenerator/String/isAlpha')
-testAlphaString('firstName', 2, 250, requestObject, '/register', server)
+const testAlphaNumericString = require('../TestGenerator/String/isAlphaNumeric')
+testAlphaString('firstName', 2, 100, requestObject, '/register', server)
+testAlphaString('lastName', 2, 100, requestObject, '/register', server)
+testAlphaNumericString('userName', 2, 50, requestObject, '/register', server)
 
-// 7) Checks that the first name is at least two characters long. 
-describe('Checks that first name fails when it is less than two characters', () => {
-    it('It should have a validation error because first name is only one character long.', (done) => {
-        var newUser = {
-            firstName: "M",
-            lastName: "Rogan",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: "20",
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            language: "English",
-            terms: "true"
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 8) Checks that the last name only contains Alphabetical characters
-describe('Checks that last name fails when it contains non alphabetical characters', () => {
-    it('It should have a validation error because last name is equal to three numeric digits.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "222",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: "20",
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            language: "English",
-            terms: "true"
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 9) Checks that the last name is at least two characters long. 
-describe('Checks that last name fails when it is less than two characters long', () => {
-    it('It should have a validation error because last name is a single character.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "R",
-            userName: "MichelleRogan",
-            email: "michelleRogan@gmail.com",
-            age: "20",
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            language: "English",
-            terms: "true"
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 10) Checks that the username is alphanumeric and does not contain spaces. 
-describe('Checks that username is alphanumeric and does not contain spaces', () => {
-    it('It should have a validation error because username has a question mark in it.', (done) => {
-        var newUser = {
-            firstName: "Michelle",
-            lastName: "Rogan",
-            userName: "?Michelle Rogan",
-            email: "michelleRogan@gmail.com",
-            age: "20",
-            password: "whitehouse",
-            confirmPassword: "whitehouse",
-            language: "English",
-            terms: "true"
-        }
-        chai.request(server)
-            .post('/register')
-            .send(newUser)
-            .end((err, res) => {
-                if (err) {
-                    console.log(err)
-                }
-                res.should.have.status(600)
-                res.body.should.have.property('error').eql('Validation failure')
-                done()
-            })
-    })
-})
-
-// 11) Checks that invalid email addresses are rejected. 
+// Checks that invalid email addresses are rejected. 
 describe('Checks that invalid emails are rejected', () => {
     it('It should have a validation error because the email address does not have the "@" symbol.', (done) => {
         var newUser = {
@@ -323,7 +178,7 @@ describe('Checks that invalid emails are rejected', () => {
     })
 })
 
-// 12) Checks that password is eight or more characters long. 
+//  Checks that password is eight or more characters long. 
 describe('Checks that passwords less than eight characters are rejected', () => {
     it('It should have a validation error because password is not equal to confirmation password.', (done) => {
         var newUser = {
@@ -351,7 +206,7 @@ describe('Checks that passwords less than eight characters are rejected', () => 
     })
 })
 
-// 13) Checks that password matches confirmation password. 
+//  Checks that password matches confirmation password. 
 describe('Checks that password mathces confirmation password', () => {
     it('It should have a validation error because password is less than eight characters long.', (done) => {
         var newUser = {
@@ -379,7 +234,7 @@ describe('Checks that password mathces confirmation password', () => {
     })
 })
 
-// 14) Checks that a users age is between 16 and 120
+//  Checks that a users age is between 16 and 120
 describe('Checks that age is between 16 and 120', () => {
     it('It should have a validation error because users age is less than 16.', (done) => {
         var newUser = {
@@ -407,7 +262,7 @@ describe('Checks that age is between 16 and 120', () => {
     })
 })
 
-// 15) Checks that the users has entered a supported language
+//  Checks that the users has entered a supported language
 describe('Checks that users language is supported', () => {
     it('It should fail because user has entered "Chinese".', (done) => {
         var newUser = {
@@ -434,7 +289,7 @@ describe('Checks that users language is supported', () => {
             })
     })
 })
-// 16) Checks that if the users language is Spanish it passes
+//  Checks that if the users language is Spanish it passes
 describe('Checks that if the users language is equal to Spanish it passes', () => {
     it('It should pass as "Spanish" was selected.', (done) => {
         var newUser = {
@@ -460,7 +315,7 @@ describe('Checks that if the users language is equal to Spanish it passes', () =
             })
     })
 })
-// 17) Checks if the users language is English it passes
+//  Checks if the users language is English it passes
 describe('Checks if the users language is English it passes', () => {
     it('It should pass as "English" was selected.', (done) => {
         var newUser = {
@@ -486,7 +341,7 @@ describe('Checks if the users language is English it passes', () => {
             })
     })
 })
-// 18) Checks if users language is French it passes.
+//  Checks if users language is French it passes.
 describe('Checks if users language is French it passes', () => {
     it('It should pass as "French" was selected.', (done) => {
         var newUser = {
@@ -512,7 +367,7 @@ describe('Checks if users language is French it passes', () => {
             })
     })
 })
-// 19) Checks that if the users language is German it passes.
+//  Checks that if the users language is German it passes.
 describe('Checks that if users language is German it passes', () => {
     it('It should pass as "German" was selected.', (done) => {
         var newUser = {
@@ -538,7 +393,7 @@ describe('Checks that if users language is German it passes', () => {
             })
     })
 })
-// 20) Checks the user has accepted the terms and conditions. 
+//  Checks the user has accepted the terms and conditions. 
 describe('Checks that user has accepted terms and condition', () => {
     it('It should fail because terms and conditions are equal to null.', (done) => {
         var newUser = {

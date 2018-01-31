@@ -1,5 +1,4 @@
 const isValidMongoObjectID = require('../../CustomValidators/isValidMongoObjectID')
-const isValidString = require('../TypeValidators/string')
 const date = new Date()
 const currentYear = date.getFullYear()
 
@@ -49,16 +48,7 @@ module.exports = function updateJobHistoryValidation(req) {
     const maxTitleLength = 200
     const minTitleLength = 1
 
-    var titleErrors
-    for (var index in req.body.experiences) {
-        var currentExperience = req.body.experiences[index]
-        console.log(currentExperience)
-        titleErrors = isValidString('experiences.title',currentExperience.title, minTitleLength, maxTitleLength, false, false, true)
-    }
-
-    if (titleErrors) {
-        return titleErrors
-    }
+    
 
     
     var errors = req.validationErrors(true)

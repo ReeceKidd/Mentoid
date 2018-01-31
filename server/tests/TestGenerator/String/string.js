@@ -16,17 +16,21 @@ var chaiHttp = require('chai-http')
 var should = chai.should()
 chai.use(chaiHttp)
 
-const checkParameters = require('../../../ParameterChecker/checkParameterType')
+//Type checks. 
+const checkString = require('../../../ParameterChecker/checkString')
+const checkNumber = require('../../../ParameterChecker/checkNumber')
+const checkObject = require('../../../ParameterChecker/checkObject')
+const checkFunction = require('../../../ParameterChecker/checkFunction')
 
 module.exports = function stringTests(field, minLength, maxLength, requestObject, route, server) {
 
     //Checks to make sure valid parameters where passed to the test. 
-    checkParameters.checkForString(field)
-    checkParameters.checkForNumber(minLength)
-    checkParameters.checkForNumber(maxLength)
-    checkParameters.checkForObject(requestObject)
-    checkParameters.checkForString(route)
-    checkParameters.checkForFunction(server)
+    checkString(field)
+    checkNumber(minLength)
+    checkNumber(maxLength)
+    checkObject(requestObject)
+    checkString(route)
+    checkFunction(server)
 
     // 1) Is of type string
     describe('Checks that ' + field + ' fails because it is an integer', () => {
@@ -132,8 +136,8 @@ module.exports = function stringTests(field, minLength, maxLength, requestObject
                 .post(route)
                 .send(copyOfRequestObject)
                 .end((err, res) => {
-                    res.should.have.status(600)
-                    res.body.should.have.property('error').eql('Validation failure')
+                    res.should.have.status(975)
+                    res.body.should.have.property('error').eql('Null value present')
                     done()
                 })
         })
@@ -155,23 +159,7 @@ module.exports = function stringTests(field, minLength, maxLength, requestObject
         })
     })
 
-    // 9) String is not a number value
-    describe('Checks that ' + field + ' fails because it contains a number value', () => {
-        var copyOfRequestObject = Object.assign({}, requestObject);
-        copyOfRequestObject[field] = "999"
-        it('It should have a validation error because ' + field + ' is equal to 999.', (done) => {
-            chai.request(server)
-                .post(route)
-                .send(copyOfRequestObject)
-                .end((err, res) => {
-                    res.should.have.status(600)
-                    res.body.should.have.property('error').eql('Validation failure')
-                    done()
-                })
-        })
-    })
-
-    // 10) Checks than non alphabetical and numeric characters fail. 
+    // 9) Checks than non alphabetical and numeric characters fail. 
     describe('Checks that ' + field + ' fails because of special characters', () => {
         var copyOfRequestObject = Object.assign({}, requestObject);
         copyOfRequestObject[field] = "-?@#"
@@ -187,7 +175,7 @@ module.exports = function stringTests(field, minLength, maxLength, requestObject
         })
     })
 
-    // 11) Cross site scripting test. 
+    // 10) Cross site scripting test. 
     describe('Checks that ' + field + ' fails because of potential cross site scripting ', () => {
         var copyOfRequestObject = Object.assign({}, requestObject);
         copyOfRequestObject[field] = "<script>&&</script>"
@@ -205,7 +193,7 @@ module.exports = function stringTests(field, minLength, maxLength, requestObject
 
     
 
-    // 12) NoSQL injection is preveneted.
+    // 11) NoSQL injection is preveneted.
     describe('Checks that ' + field + ' fails because of attempted NoSQL injection', () => {
         var copyOfRequestObject = Object.assign({}, requestObject);
         copyOfRequestObject[field] = "$ne : 1"

@@ -19,6 +19,10 @@ Undefined field
 Status: 950
 error: 'Undefined field'
 
+Null value
+Status: 975
+error: 'Null value present'
+
 Invalid type
 Status: 850
 error: 'Invalid type in request'

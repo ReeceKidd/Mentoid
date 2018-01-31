@@ -1,4 +1,5 @@
-const parameterChecker = require('../../ParameterChecker/checkParameterType')
+// Make sure correct types have been passed.
+const checkArray = require('../../ParameterChecker/checkArray')
 
 /*
 This method checks that required fields are present inside of requests for non array values. 
@@ -11,8 +12,9 @@ fieldsThatShouldBeDefined: Pass the strings values of the properties that should
 
 module.exports = function undefinedFields(requestArray, expectedProperties) {
 
-    parameterChecker.checkForObject(requestArray)
-    parameterChecker.checkForArray(expectedProperties)
+    //Check types of method. 
+    checkArray(requestArrat)
+    checkArray(expectedProperties)
 
     for (index in requestArray) {
 

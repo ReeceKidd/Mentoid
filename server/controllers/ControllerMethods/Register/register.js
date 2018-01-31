@@ -9,6 +9,9 @@ const checkBasicRegistrationFields = require('../../FieldCheckers/Registration/b
 //Checks that requests are the correct type
 const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
 
+//Check for null values
+const checkForNull = require('../../NullChecker/checkForNull')
+
 //Sanitizes different requests
 const sanitizeBasicRegistration = require('../../Sanitizers/Registration/basicRegistration')
 
@@ -76,62 +79,72 @@ module.exports = register = (req, res) => {
         return
     }
 
-    //Checks that each of the fields are type string. 
-    var badType = basicTypeCheck(req.body)
+    var nullPresent = checkForNull(req.body)
 
-    if (badType) {
-        console.log(badType)
-        res.status(850).json({
-            message: badType,
-            error: 'Invalid type'
+    if (nullPresent) {
+        res.status(975).json({
+            message: nullPresent,
+            error: 'Null value present'
         })
         return
     }
 
-    //Validation for basic registration. 
-    var errors = basicRegistrationValidation(req)
-    if (errors) {
-        res.status(600).json({
-            message: errors,
-            error: 'Validation failure'
-        })
-        return
-    }
-    //Santize input before being passed to database
-    sanitizeBasicRegistration(req.body)
-    try {
-        const newUser = req.body
-        newUser.areasOfInterest = []
-        newUser.mentors = []
-        newUser.mentees = []
-        newUser.basicRegistrationComplete = true
-        newUser.areasOfInterestRegistrationComplete = false
-        newUser.userRegistrationComplete = false
-        newUser.isUserLoggedIn = true
-        const saveUser = new User(newUser)
-        saveUser
-            .save()
-            .then(user => {
-                user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
-                const token = asyncIssue(user.toObject()).then(token => {
-                    res.status(200).send({
-                        message: 'Success',
-                        token: token,
-                        user: user
-                    })
+//Checks that each of the fields are type string. 
+var badType = basicTypeCheck(req.body)
+
+if (badType) {
+    console.log(badType)
+    res.status(850).json({
+        message: badType,
+        error: 'Invalid type'
+    })
+    return
+}
+
+//Validation for basic registration. 
+var errors = basicRegistrationValidation(req)
+if (errors) {
+    res.status(600).json({
+        message: errors,
+        error: 'Validation failure'
+    })
+    return
+}
+//Santize input before being passed to database
+sanitizeBasicRegistration(req.body)
+try {
+    const newUser = req.body
+    newUser.areasOfInterest = []
+    newUser.mentors = []
+    newUser.mentees = []
+    newUser.basicRegistrationComplete = true
+    newUser.areasOfInterestRegistrationComplete = false
+    newUser.userRegistrationComplete = false
+    newUser.isUserLoggedIn = true
+    const saveUser = new User(newUser)
+    saveUser
+        .save()
+        .then(user => {
+            user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
+            const token = asyncIssue(user.toObject()).then(token => {
+                res.status(200).send({
+                    message: 'Success',
+                    token: token,
+                    user: user
                 })
             })
-            .catch(err => {
-                console.log(err)
-                res.status(400).send({
-                    message: err.message ? err.message : 'Unable to save user to database',
-                    error: 'Unable to save user.'
-                })
-            })
-    } catch (err) {
-        const message = err.message ? err.message : 'There was an error'
-        res.status(401).send({
-            message: message
         })
-    }
+        .catch(err => {
+            console.log(err)
+            res.status(400).send({
+                message: err.message ? err.message : 'Unable to save user to database',
+                error: 'Unable to save user.'
+            })
+        })
+} catch (err) {
+    const message = err.message ? err.message : 'There was an error'
+    res.status(401).send({
+        message: message
+    })
+}
 }
