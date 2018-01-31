@@ -52,6 +52,7 @@ module.exports = function updateJobHistoryValidation(req) {
     var titleErrors
     for (var index in req.body.experiences) {
         var currentExperience = req.body.experiences[index]
+        console.log(currentExperience)
         titleErrors = isValidString('experiences.title',currentExperience.title, minTitleLength, maxTitleLength, false, false, true)
     }
 

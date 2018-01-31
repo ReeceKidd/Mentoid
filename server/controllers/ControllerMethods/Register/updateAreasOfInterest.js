@@ -45,12 +45,12 @@ module.exports = updateAreasOfInterest = (req, res) => {
     var checkRequestTypes = checkAreasOfInterestTypes(req.body)
 
     if (checkRequestTypes) {
-        console.log(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
             message: checkRequestTypes
         })
     }
+
 
     for (var x = 0; x < req.body.areasOfInterest.length; x++) {
         req.body.areasOfInterest[x].value = toTitleCase(req.body.areasOfInterest[x].value)

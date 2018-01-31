@@ -33,6 +33,8 @@ module.exports = function validateString(field, stringToCheck, minimumLength, ma
 
     checkParameters(field, minimumLength, maximumLength, isAlpha, isAlphaNumeric, isAlphaWithSpaces)
 
+    console.log(stringToCheck.length)
+    
     if (stringToCheck.length === 0) {
         return field + ' cannot be 0 characters in length'
     }

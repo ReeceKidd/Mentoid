@@ -11,7 +11,10 @@ const checkUpdateJobHistoryArrayFields = require('../../FieldCheckers/Registrati
 const checkJobHistoryTypes = require('../../TypeCheckers/Registration/jobHistory')
 
 //Checks all necessary fields are defined. 
-const checkUndefinedFields = require('../../UndefinedCheckers/updateJobHistory')
+const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
+
+//Checks all objects inside an array have the necessary fields. 
+const checkUndefinedFieldsArray = require('../../UndefinedCheckers/array')
 
 //Sanitizes different requests
 const sanitizeUpdateJobHistory = require('../../Sanitizers/Registration/updateJobHistory')
@@ -54,13 +57,21 @@ module.exports = updateJobHistory = (req, res) => {
         })
     }
 
-    //Checks that id, age and experiences array are defined. 
-    var undefinedFields = checkUndefinedFields(req.body)
+    var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','experiences'])
 
     if (undefinedFields) {
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
+        })
+    }
+
+    var checkExperiencesArray = checkUndefinedFieldsArray(req.body.experiences, ['title', 'company','startDate','endDate','isWorkingHere'])
+
+    if (checkExperiencesArray) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: checkExperiencesArray
         })
     }
 
