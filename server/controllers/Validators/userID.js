@@ -1,4 +1,4 @@
-const isValidMongoObjectID = require('../../CustomValidators/isValidMongoObjectID')
+const isValidMongoObjectID = require('../CustomValidators/isValidMongoObjectID')
 
 module.exports = function getAreasOfInterestValidation(req){
 

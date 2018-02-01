@@ -36,7 +36,7 @@ module.exports = updateAreasOfInterest = (req, res) => {
         })
     }
 
-    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['value', 'years','areaOfInterestID'])
+    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.areasOfInterest, ['value', 'years','areaOfInterestID'])
 
     if (undefinedArrayFields) {
         return res.status(950).send({

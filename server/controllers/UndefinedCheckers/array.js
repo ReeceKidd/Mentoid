@@ -13,7 +13,7 @@ fieldsThatShouldBeDefined: Pass the strings values of the properties that should
 module.exports = function undefinedFields(requestArray, expectedProperties) {
 
     //Check types of method. 
-    checkArray(requestArrat)
+    checkArray(requestArray)
     checkArray(expectedProperties)
 
     for (index in requestArray) {

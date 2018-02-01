@@ -1,12 +1,7 @@
-const jwt = require('jsonwebtoken')
-var User = require('../models/User')
-
 const matchingController = {}
 
-//Return all other users. 
+//Matching Controller Methods. 
+matchingController.getPotentialMentors = require('./ControllerMethods/Matching/getPotentialMentors')
 
-//Return all potential mentors. 
-
-//Return al potential mentees. 
 
 module.exports = matchingController

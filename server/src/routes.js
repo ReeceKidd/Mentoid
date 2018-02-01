@@ -8,6 +8,7 @@ const registerController = require('../controllers/registerController.js')
 const userController = require('../controllers/userController.js')
 const testController = require('../controllers/testController.js')
 const routingController = require('../controllers/routingController.js')
+const matchingController = require('../controllers/matchingController.js')
 
 //Admin routes
 routes.get('/admin/get-users', adminController.getUsers)
@@ -20,6 +21,9 @@ routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfIntere
 routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 routes.post('/update/job-history', registerController.updateJobHistory)
+
+//Matching Routes
+routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)
 
 //User Routes
 routes.post('/login', userController.login)

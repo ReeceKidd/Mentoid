@@ -4,20 +4,20 @@ var User = require('../../../models/user')
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
 // Field checkers ensure only relevant fields are passed to request
-const checkForID = require('../../FieldCheckers/Registration/checkForID')
+const checkForID = require('../../FieldCheckers/checkForID')
 
 //Checks that requests are the correct type
 const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
 
 //Sanitizes different requests
-const sanitizeID = require('../../Sanitizers/Registration/userID')
+const sanitizeID = require('../../Sanitizers/userID')
 
 // Validatiors
-const userIDValidation = require('../../Validators/Registration/userID')
+const userIDValidation = require('../../Validators/userID')
 
 module.exports = getAreasOfInterest = (req, res) => {
 
-    var undefinedFields = checkUndefinedFields(req.params, ['_id'])
+    var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
         return res.status(950).send({

@@ -97,4 +97,6 @@ https://www.intercom.com/customer-support-software
 //Build the chat app using this guide: https://www.youtube.com/watch?v=rL-dJcxC8X8&t=28s
 Complete the null checker and add it to each page. git 
 Go through the actual string validator and make sure I'm doing a test for each of those methods. 
+//Tommorow create the document with the boxes outlining the process for validation and the generated 
+test to finally move on from this hell hole. 
 

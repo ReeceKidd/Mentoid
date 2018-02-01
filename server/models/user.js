@@ -27,6 +27,7 @@ const User = new Schema(
     password: String,
     confirmPassword: String,
     language: String,
+    terms: Boolean,
     areasOfInterest: [{
       years: Number,
       value: String,
@@ -48,7 +49,10 @@ const User = new Schema(
     }],
     mentors: [],
     mentees: [],
-    terms: Boolean,
+    location: {
+      latitude: Number,
+      longitude: Number
+    },
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,
     jobHistoryRegistrationComplete: Boolean,

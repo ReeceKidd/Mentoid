@@ -17,7 +17,7 @@ const checkUserNameValidation = require('../../Validators/Registration/checkUser
 
 module.exports = checkUserName = (req, res) => {
 
-    var undefinedFields = checkUndefinedFields(req.params, ['userName'])
+    var undefinedFields = checkUndefinedFields(req.params, ['username'])
 
     if (undefinedFields) {
         return res.status(950).send({
