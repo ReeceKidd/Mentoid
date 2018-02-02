@@ -224,7 +224,7 @@ module.exports = function updateJobHistoryValidation(req) {
     })
     req.check('experiences', 'isWorking here is a boolean value').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].isWorkingHere === 'true' || experiences[x].isWorkingHere === 'false') {
+            if (!experiences[x].isWorkingHere === 'true' || !experiences[x].isWorkingHere === 'false') {
                 return false
             }
         }

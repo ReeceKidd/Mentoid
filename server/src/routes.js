@@ -21,6 +21,7 @@ routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfIntere
 routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 routes.post('/update/job-history', registerController.updateJobHistory)
+routes.post('/update/education', registerController.updateEducation)
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)

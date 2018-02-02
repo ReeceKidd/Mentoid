@@ -6,7 +6,7 @@
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2">
         <h2 class="text-center">
-          Please add your employment experience.
+          Please add your education history.
         </h2>
       </div>
     </div>
@@ -15,8 +15,8 @@
 
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2 text-center">
-        <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
-        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
+        <button @click="onAddExperience" class="btn btn-success">Add Education</button>
+        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> No education</button>
       </div>
     </div>
     <!-- End of desktop version -->

@@ -77,7 +77,7 @@ module.exports = getPotentialMentors = (req, res) => {
             })
         }
 
-        console.log(currentUser)
+        //console.log(currentUser)
 
         var areasOfInterestValues = []
 
@@ -119,8 +119,8 @@ module.exports = getPotentialMentors = (req, res) => {
                         
                         if(currentUser.areasOfInterest[w].value === currentAreaOfInterest.value){
 
-                            console.log('Current user years: ' + currentUser.areasOfInterest[w].years)
-                            console.log('Matched user years: ' + currentAreaOfInterest.years)
+                            //console.log('Current user years: ' + currentUser.areasOfInterest[w].years)
+                            //console.log('Matched user years: ' + currentAreaOfInterest.years)
                             
                             if(currentUser.areasOfInterest[w].years < currentAreaOfInterest.years){
                                 potentialMentors.push(comparisonUser)
@@ -133,11 +133,42 @@ module.exports = getPotentialMentors = (req, res) => {
 
             }
 
-            console.log(potentialMentors.length)
+            //Do checks to calculate similarities. 
+
+            
+            
             for(var x = 0; x < potentialMentors.length; x++){
-                console.log(potentialMentors[x].firstName + ' ' + potentialMentors[x].lastName)
+                
+                var currentAreasOfInterest = potentialMentors[x].areasOfInterest
+                
+                var similarityScore = 0;
+
+                //Loop through all the areas of interest
+                for(var w = 0; w < currentAreaOfInterest; w++){
+                    var currentAreaOfInterest = currentAreaOfInterest[w]
+                    for(var y = 0; y < currentUser.areasOfInterest.length; y++){
+                       
+                        if(currentUser.areasOfInterest[y].value === currentAreaOfInterest.value){
+                            similarityScore++
+                        }
+                    }
+                   
+                    
+
+
+                }
+
+                //Add the similarity score. 
+                potentialMentors[x].similarityScore = 9000000
+                console.log(potentialMentors[x])
+
+               
             }
 
+            
+
+            res.status(200).send(potentialMentors)
+            
 
         })
 

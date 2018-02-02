@@ -1,14 +1,12 @@
-var User = require('../../../models/user')
-
 // Formats job title to titleCase
 const toTitleCase = require('../../Formatter/toTitleCase.js')
 
 // Field checkers ensure only relevant fields are passed to request
-const checkUpdateJobHistoryFields = require('../../FieldCheckers/Registration/updateJobHistory')
-const checkUpdateJobHistoryArrayFields = require('../../FieldCheckers/Registration/updateJobHistoryArray')
+const checkUpdateEducationFields = require('../../FieldCheckers/Registration/updateEducation')
+const checkUpdateEducationArrayFields = require('../../FieldCheckers/Registration/updateEducationArray')
 
 //Checks that requests are the correct type
-const checkJobHistoryTypes = require('../../TypeCheckers/Registration/jobHistory')
+const checkEducationTypes = require('../../TypeCheckers/Registration/Education')
 
 //Checks all necessary fields are defined. 
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -17,19 +15,17 @@ const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 const checkUndefinedFieldsArray = require('../../UndefinedCheckers/array')
 
 //Sanitizes different requests
-const sanitizeUpdateJobHistory = require('../../Sanitizers/Registration/updateJobHistory')
+const sanitizeUpdateEducation = require('../../Sanitizers/Registration/updateEducation')
 
 //Need to check job history for duplicate values. 
 
 // Validatiors
-const updateJobHistoryValidation = require('../../Validators/Registration/updateJobHistory')
+const updateEducationValidation = require('../../Validators/Registration/updateEducation')
 
-module.exports = updateJobHistory = (req, res) => {
-
-    console.log(req.body)
+module.exports = updateEducation = (req, res) => {
 
     //Checks that only _id and areas of interest are passed in request. 
-    var unwantedField = checkUpdateJobHistoryFields(req.body)
+    var unwantedField = checkUpdateEducationFields(req.body)
 
     if (unwantedField) {
         return res.status(700).send({
@@ -39,7 +35,7 @@ module.exports = updateJobHistory = (req, res) => {
     }
 
     //Checks that experiences array only contains title, company, experienceID, startDate, endDate and isWorkingHere. 
-    var unwantedArrayField = checkUpdateJobHistoryArrayFields(req.body.experiences)
+    var unwantedArrayField = checkUpdateEducationArrayFields(req.body.experiences)
 
     if (unwantedArrayField) {
         console.log(unwantedArrayField)
@@ -69,7 +65,7 @@ module.exports = updateJobHistory = (req, res) => {
 
 
     //Checks that request contains an experiences array containing only strings and an _id which is a string.
-    var checkRequestTypes = checkJobHistoryTypes(req.body)
+    var checkRequestTypes = checkEducationTypes(req.body)
 
     if (checkRequestTypes) {
         console.log(checkRequestTypes)
@@ -81,7 +77,7 @@ module.exports = updateJobHistory = (req, res) => {
 
 
     //Validation for updating job history. 
-    var validationError = updateJobHistoryValidation(req)
+    var validationError = updateEducationValidation(req)
 
     if (validationError) {
         return res.status(600).send({
@@ -90,7 +86,7 @@ module.exports = updateJobHistory = (req, res) => {
         })
     }
 
-    sanitizeUpdateJobHistory(req.body)
+    sanitizeUpdateEducation(req.body)
 
     //Updates the title and company name to title case. 
     for (var x = 0; x < req.body.experiences.length; x++) {
@@ -105,7 +101,7 @@ module.exports = updateJobHistory = (req, res) => {
 
     User.findOneAndUpdate(query, {
             $set: {
-                jobHistoryRegistrationComplete: true
+                EducationRegistrationComplete: true
             },
 
         },

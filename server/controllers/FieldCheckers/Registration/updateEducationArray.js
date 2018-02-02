@@ -1,6 +1,6 @@
-module.exports = function checkUpdateJobHistoryExperiencesArrayFields(experiences) {
-    for (var index in experiences) {
-        for (var property in experiences[index]) {
+module.exports = function checkEducationArrayFields(education) {
+    for (var index in education) {
+        for (var property in education[index]) {
                 if (property !== 'experienceID' &&
                     property !== 'title' &&
                     property !== 'company' &&

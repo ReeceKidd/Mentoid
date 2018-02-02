@@ -8,5 +8,6 @@ registerController.getAreasOfInterest = require('./ControllerMethods/Register/ge
 registerController.getUsersAge = require('./ControllerMethods/Register/getUsersAge')
 registerController.updateAreasOfInterest = require('./ControllerMethods/Register/updateAreasOfInterest')
 registerController.updateJobHistory = require('./ControllerMethods/Register/updateJobHistory')
+registerController.updateEducation = require('./ControllerMethods/Register/updateEducation')
 
 module.exports = registerController

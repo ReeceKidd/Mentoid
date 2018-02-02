@@ -100,3 +100,7 @@ Go through the actual string validator and make sure I'm doing a test for each o
 //Tommorow create the document with the boxes outlining the process for validation and the generated 
 test to finally move on from this hell hole. 
 
+Plan for 02/02/2018 
+Fix the field checker so it passes through an array of values as well depending on If
+it is an array or non array value. 
+
