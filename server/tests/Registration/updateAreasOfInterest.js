@@ -41,7 +41,7 @@ var User = require('../../models/user.js');
 var should = chai.should();
 chai.use(chaiHttp);
 
-console.log('Begining beginning updateAreasOfInterest.js tests')
+console.log('Begining updateAreasOfInterest.js tests')
 
 //Empty the test database before starting
 User.remove({}, function (err) {})

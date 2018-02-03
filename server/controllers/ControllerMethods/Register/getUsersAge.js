@@ -78,7 +78,6 @@ module.exports = getUsersAge = (req, res) => {
                 error: 'Server error'
             })
         } 
-        console.log(user)
     }).select('age -_id').then(user => {
         res.status(200).send({
             age: user.age

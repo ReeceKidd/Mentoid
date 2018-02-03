@@ -14,23 +14,23 @@ var User = require('../../models/user.js');
 var should = chai.should();
 chai.use(chaiHttp);
 
-console.log('Begining beginning updateAreasOfInterest.js tests')
+console.log('Begining beginning updateAJobHistory.js tests')
 
 //Empty the test database before starting
 User.remove({}, function (err) {})
 
-// Registers user needed to test update areas of interest.js.  
+// Registers user needed to test update job history.js.  
 describe('Test for valid registration', () => {
     var newUser = {
-        firstName: "Update",
-        lastName: "Job",
-        userName: "UpdateJobHistory",
-        email: "updateJobHistory@gmail.com",
-        age: 20,
+        firstName: "Job",
+        lastName: "History",
+        userName: "JobHistory",
+        email: "jobhistory@gmail.com",
+        age: "20",
         password: "12345678",
         confirmPassword: "12345678",
         language: "English",
-        terms: true
+        terms: "true"
     }
     it('It should successfully save user', (done) => {
         chai.request(server)
@@ -42,6 +42,7 @@ describe('Test for valid registration', () => {
             })
     })
 })
+
 
 // Stores user ID needed to perform tests
 var retrievedUserID = ''
@@ -66,7 +67,7 @@ var retrievedAge = ''
 describe('Retrieves user age from successfully registered user', () => {
     it('It should retrieve userID', (done) => {
         chai.request(server)
-            .get('/get/age/:userID')
+            .get('/get/age/' + retrievedUserID)
             .end((err, res) => {
                 res.should.have.status(200)
                 retrievedAge = res.body.age
@@ -86,8 +87,8 @@ describe('Update job history successfully', () => {
                     experienceID: '1',
                     title: 'Software Engineer',
                     company: 'Google',
-                    startDate: '2004',
-                    endDate: '2010',
+                    startYear: '2004',
+                    endYear: '2010',
                     isWorkingHere: 'false'
                 }],
                 _id: retrievedUserID,                

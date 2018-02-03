@@ -1,5 +1,5 @@
 module.exports = function checkJobHistory(req){
-    
+
     if(!req.experiences instanceof Array){
         return 'Experiences must be an array'
     }
