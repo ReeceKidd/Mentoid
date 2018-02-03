@@ -30,17 +30,10 @@ module.exports = function updateAreasOfInterestValidation(req) {
 
     //User Age validation
     /*
-    1) Checks that age is a number. 
-    2) Checks that age exists
-    3) Checks that age is in valid number range.
+    1) Checks that age exists
+    2) Checks that age is in valid number range.
     */
     req.check('age', 'User age must be sent with request').exists()
-    req.check('age', 'User age must be a number').custom(age => {
-        if (typeof age !== 'number' || (age % 1) !== 0) {
-            return false
-        }
-        return true
-    })
     req.check('age', 'Age must be a valid number between 16 and 120').custom(age => {
         if (age < 16) {
             return false

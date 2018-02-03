@@ -26,8 +26,6 @@ const updateJobHistoryValidation = require('../../Validators/Registration/update
 
 module.exports = updateJobHistory = (req, res) => {
 
-    console.log(req.body)
-
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateJobHistoryFields(req.body)
 
@@ -42,7 +40,6 @@ module.exports = updateJobHistory = (req, res) => {
     var unwantedArrayField = checkUpdateJobHistoryArrayFields(req.body.experiences)
 
     if (unwantedArrayField) {
-        console.log(unwantedArrayField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
@@ -58,7 +55,7 @@ module.exports = updateJobHistory = (req, res) => {
         })
     }
 
-    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['experienceID', 'title', 'company','startDate','endDate','isWorkingHere'])
+    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['experienceID', 'title', 'company','startYear','endYear','isWorkingHere'])
 
     if (undefinedArrayFields) {
         return res.status(950).send({
@@ -72,7 +69,6 @@ module.exports = updateJobHistory = (req, res) => {
     var checkRequestTypes = checkJobHistoryTypes(req.body)
 
     if (checkRequestTypes) {
-        console.log(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
             message: checkRequestTypes

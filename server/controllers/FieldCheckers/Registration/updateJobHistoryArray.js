@@ -4,8 +4,8 @@ module.exports = function checkUpdateJobHistoryExperiencesArrayFields(experience
                 if (property !== 'experienceID' &&
                     property !== 'title' &&
                     property !== 'company' &&
-                    property !== 'startDate' &&
-                    property !== 'endDate' &&
+                    property !== 'startYear' &&
+                    property !== 'endYear' &&
                     property !== 'isWorkingHere') {
                     return 'Request contained unsupported field: ' + property
                 }

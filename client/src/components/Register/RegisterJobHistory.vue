@@ -2,6 +2,7 @@
   <div class="container">
     <!-- This component is different depending on whether it is viewed in mobile or on desktop -->
 
+  <h1>Age {{age}}</h1>
     <!-- Desktop version job history explainer and buttons -->
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2">
@@ -71,15 +72,15 @@
               </p>
               <div class="yearInputDesktop">
                 <label>Start Year</label>
-                <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
+                <input type="text" :id="experience.startYear" @blur="$v.experiences.$each[index].startYear.$touch()" v-model="experience.startYear">
               </div>
-              <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.experiences.$each[index].startYear.required && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
                 The year you started is required.
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.validYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.experiences.$each[index].startYear.validYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
                 Your starting year must be in the following format: YYYY
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.greaterThanCurrentYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.experiences.$each[index].startYear.greaterThanCurrentYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
                 You cannot start in the future.
               </p>
               <label>Do you currently work here?</label>
@@ -93,19 +94,7 @@
               <br>
               <div v-if="experience.isWorkingHere === 'No'" class="yearInputDesktop">
                 <label>End Year</label>
-                <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
-                <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                  End year is required
-                </p>
-                <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                  Your ending year must be in the following format: YYYY
-                </p>
-                <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                  You cannot enter end dates greater than the current year.
-                </p>
-              </div>
-              <div v-else>
-                <span>{{currentlyWorkingHere(experience.endDate)}}</span>
+                <input type="text" :id="experience.endYear" @blur="$v.experiences.$each[index].endYear.$touch()" v-model="experience.endYear">
               </div>
             </div>
             <br>
@@ -148,15 +137,15 @@
               </p>
               <div class="yearInputMobile">
                 <label>Start Year</label>
-                <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
+                <input type="text" :id="experience.startYear" @blur="$v.experiences.$each[index].startYear.$touch()" v-model="experience.startYear">
               </div>
-              <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.experiences.$each[index].startYear.required && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
                 The year you started is required.
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.validYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.experiences.$each[index].startYear.validYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
                 Your starting year must be in the following format: YYYY
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.greaterThanCurrentYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.experiences.$each[index].startYear.greaterThanCurrentYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
                 You cannot start in the future.
               </p>
               <label>Do you currently work here?</label>
@@ -170,19 +159,7 @@
               <br>
               <div v-if="experience.isWorkingHere === 'No'" class="yearInputMobile">
                 <label>End Year</label>
-                <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
-                <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                  End year is required
-                </p>
-                <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                  Your ending year must be in the following format: YYYY
-                </p>
-                <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
-                  You cannot enter end dates greater than the current year.
-                </p>
-              </div>
-              <div v-else>
-                <span>{{currentlyWorkingHere(experience.endDate)}}</span>
+                <input type="text" :id="experience.endYear" v-model="experience.endYear">
               </div>
             </div>
             <br>
@@ -274,7 +251,7 @@
       return {
         experiences: [],
         currentUser: this.$store.state.user.authUser,
-        age: null,
+        age: '',
         neverHadAJob: null,
         errorMessage: null
       }
@@ -295,16 +272,12 @@
           isWorkingHere: {
             required
           },
-          startDate: {
+          startYear: {
             required,
             validYear,
             greaterThanCurrentYear
           },
-          endDate: {
-            required,
-            validYear,
-            greaterThanCurrentYear
-          }
+          endYear: {}
         }
       }
     },
@@ -315,13 +288,10 @@
           title: '',
           company: '',
           isWorkingHere: '',
-          startDate: '',
-          endDate: ''
+          startYear: '',
+          endYear: ''
         }
         this.experiences.push(newExperience)
-      },
-      currentlyWorkingHere(endDate) {
-        endDate = 9999
       },
       onDeleteExperiences(id) {
         this.experiences = this.experiences.filter(experience => experience.id !== id)

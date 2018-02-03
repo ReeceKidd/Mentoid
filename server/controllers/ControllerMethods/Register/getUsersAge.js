@@ -25,6 +25,8 @@ module.exports = getUsersAge = (req, res) => {
             message: undefinedFields
         })
     } 
+
+    
     
     //Checks that fields only defined in the schema are passed. 
      var unwantedFields = checkForID(req)
@@ -36,6 +38,8 @@ module.exports = getUsersAge = (req, res) => {
          })
          return
      }
+
+     
  
      //Checks that each of the fields are type string. 
      var badType = basicTypeCheck(req.params)
@@ -47,6 +51,8 @@ module.exports = getUsersAge = (req, res) => {
          })
  
      }
+
+     
  
      //Validation. 
      var errors = userIDValidation(req)
@@ -57,23 +63,22 @@ module.exports = getUsersAge = (req, res) => {
          })
          return
      }
+
+     
  
      //Santize User ID
      sanitizeID(req.params)
+
     
-    
-    const userID = req.params.userID
-    var query = {
-        _id: userID
-    }
-    User.findOne(query, function (err, user) {
+    User.findById(req.params.userID, function (err, user) {
         if (err) {
             res.status(500)
             res.send({
                 message: 'Could not get users age',
                 error: 'Server error'
             })
-        }
+        } 
+        console.log(user)
     }).select('age -_id').then(user => {
         res.status(200).send({
             age: user.age

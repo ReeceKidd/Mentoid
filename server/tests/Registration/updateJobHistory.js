@@ -1,31 +1,4 @@
 /*
-
-Tests completed for the update Job History..
-1) Checks for successful update of areas of interest
-2) Checks that areas of interest update fails because of unwanted additional fields in request.
-3) Checks that areas of interest with the exact same value throw a duplication error.
-4) Checks that areas of interest with different case same values throw a duplication error. 
-5) Checks that the user ID is equal to a string. 
-6) Checks that the userID is not an empty string. 
-7) Checks that age is a number. 
-8) Checks that age exists
-9) Checks that age is in valid number range.
-10) Checks that the areasOfInterest array contains at least one area of interest.
-11) Checks that each area of interest contains only the fields, value, years, and ID.
-12) Checks that each area of interest is an object.
-13) Checks that each area of interest has defined value, years and ID. 
-14) Checks that a value is defined for every area of interest. 
-15) Checks that the value is a string value. 
-16) Checks that the value only contains letters and whitespace. 
-17) Checks that the "years" field is defined.  
-18) Checks that the years field is an integer.
-19) Checks that years of experience is not greater than the users age.
-20) Checks the area of interest ID field is defined. 
-21) Checks the area of interest ID field is an integer.
-//22) Checks the get method returns only the editable fields for the registerController.getAreasOfInterest method.  
-*/
-
-/*
 The test data supplied in the following tests need to have different emails and usernames otherwise the tests fail.
 */
 process.env.NODE_ENV = 'test';
@@ -49,10 +22,10 @@ User.remove({}, function (err) {})
 // Registers user needed to test update areas of interest.js.  
 describe('Test for valid registration', () => {
     var newUser = {
-        firstName: "Mike",
-        lastName: "Burns",
-        userName: "MikeBurns",
-        email: "mikeBurns@gmail.com",
+        firstName: "Update",
+        lastName: "Job",
+        userName: "UpdateJobHistory",
+        email: "updateJobHistory@gmail.com",
         age: 20,
         password: "12345678",
         confirmPassword: "12345678",
@@ -86,6 +59,21 @@ describe('Retrieves user ID from successfully registered user', () => {
     })
 })
 
+// Stores age. 
+var retrievedAge = ''
+
+// Gets user Age needed to perform the tests. 
+describe('Retrieves user age from successfully registered user', () => {
+    it('It should retrieve userID', (done) => {
+        chai.request(server)
+            .get('/get/age/:userID')
+            .end((err, res) => {
+                res.should.have.status(200)
+                retrievedAge = res.body.age
+                done()
+            })
+    })
+})
 
 // 1) Checks for successful update of job history
 describe('Update job history successfully', () => {
@@ -102,7 +90,8 @@ describe('Update job history successfully', () => {
                     endDate: '2010',
                     isWorkingHere: 'false'
                 }],
-                _id: retrievedUserID
+                _id: retrievedUserID,                
+                age: retrievedAge 
             })
             .end((err, res) => {
                 res.should.have.status(200)
@@ -116,7 +105,7 @@ describe('Additional unwanted fields in request', () => {
     it('It should fail because of additional field in request', (done) => {
         var areasOfInterest = {}
         chai.request(server)
-            .post('/update/areas-of-interest')
+            .post('/update/job-history')
             .send({
                 experiences: [{
                     title: 'Software Engineer',
@@ -135,3 +124,24 @@ describe('Additional unwanted fields in request', () => {
             })
     })
 })
+
+const requestObject = {
+    experiences: [{
+        title: 'Software Engineer',
+        company: 'Google',
+        startDate: 2004,
+        endDate: 2010,
+        isStillWorkingHere: false
+    }],
+    _id: retrievedUserID,
+   
+}
+
+/*
+firstName, lastName and userName are tested with the generated code. 
+*/
+// const testAlphaString = require('../TestGenerator/String/isAlpha')
+// const testAlphaNumericString = require('../TestGenerator/String/isAlphaNumeric')
+// testAlphaString('firstName', 2, 100, requestObject, '/register', server)
+// testAlphaString('lastName', 2, 100, requestObject, '/register', server)
+// testAlphaNumericString('userName', 2, 50, requestObject, '/register', server)

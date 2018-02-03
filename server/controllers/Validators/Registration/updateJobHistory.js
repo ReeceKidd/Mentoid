@@ -3,8 +3,12 @@ const date = new Date()
 const currentYear = date.getFullYear()
 
 function validYear(year) {
-    if (year.length !== 4) return false
-    if (!year.match(/\d{4}/)) return false
+    if (year.length !== 4) {
+        return false
+    }
+    if (!year.match(/\d{4}/)) {
+        return false
+    }
     return true
 }
 
@@ -39,7 +43,24 @@ module.exports = function updateJobHistoryValidation(req) {
         return true
     })
 
+    //User Age validation
+    /*
+    1) Checks that age is a number. 
+    2) Checks that age exists
+    3) Checks that age is in valid number range.
+    */
+    req.check('age', 'User age must be sent with request').exists()
+    req.check('age', 'Age must be a valid number between 16 and 120').custom(age => {
+        if (age < 16) {
+            return false
+        } else if (age > 120) {
+            return false
+        } else {
+            return true
+        }
+    })
 
+    const userAge = req.body.age
 
     //Experiences title field checks.
     req.check('experiences', 'Each experience title must be defined').custom(experiences => {
@@ -135,14 +156,18 @@ module.exports = function updateJobHistoryValidation(req) {
     })
     req.check('experiences', 'Start year must be in the following format: YYYY').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
-            validYear(parseInt(experiences[x].startYear))
+            if (!validYear(experiences[x].startYear)) {
+                return false
+            }
         }
         return true
     })
     req.check('experiences', 'Start year cannot be greater than current year: ' + currentYear).custom(experiences => {
 
         for (var x = 0; x < experiences.length; x++) {
-            greaterThanCurrentYear(parseInt(experiences[x.startYear]))
+            if (!greaterThanCurrentYear(experiences[x].startYear)) {
+                return false
+            }
         }
         return true
     })
@@ -150,70 +175,15 @@ module.exports = function updateJobHistoryValidation(req) {
     req.check('experiences', 'Start year cannot be before your year of birth.').custom(experiences => {
         var usersYearOfBirth = currentYear - req.body.age
 
-        for(var x = 0; x < experiences.length; x++){
-            if(experiences.startYear < usersYearOfBirth){
+        for (var x = 0; x < experiences.length; x++) {
+            if (experiences.startYear < usersYearOfBirth) {
                 return false
             }
         }
         return true
     })
 
-    //End Year
-    //Only validate end year if the user is no longer working there. 
-    if (req.body.isWorkingHere === false) {
-
-        req.check('experiences', 'Each end year must be defined').custom(experiences => {
-            for (var x = 0; x < experiences.length; x++) {
-                if (experiences[x].endYear === 'undefined') {
-                    return false
-                }
-            }
-            return true
-        })
-        req.check('experiences', 'End year must be in the following format: YYYY').custom(experiences => {
-            for (var x = 0; x < experiences.length; x++) {
-                validYear(parseInt(experiences[x].endYear))
-            }
-            return true
-        })
-        req.check('experiences', 'End year cannot be greater than current year: ' + currentYear).custom(experiences => {
-
-            for (var x = 0; x < experiences.length; x++) {
-                greaterThanCurrentYear(parseInt(experiences[x.startYear]))
-            }
-            return true
-        })
-        req.check('experiences', 'End year must be the same or greater than the starting year').custom(experiences => {
-
-            for (var x = 0; x < experiences.length; x++) {
-                if (parseInt(experiences[x].startYear) > parseInt(experiences[x].endYear)) {
-                    return false
-                }
-            }
-            return true
-        })
-
-    }
-
-    //Checks that the total working time is possible given the users age. 
-    req.check('experiences', 'Number of years is viable given the users age').custom(experiences => {
-
-        for (var x = 0; x < experiences.length; x++) {
-            //If the user is NOT still working there. 
-            if (!req.body.isWorkingHere) {
-                var totalTime = experiences[x].endYear - experiences[x].startYear
-
-                if (totalTime > req.body.age) {
-                    return false
-                }
-
-            }
-        }
-        return true
-
-    })
-
-    //isWoringHere
+    //isWorkingHere
     req.check('experiences', 'isWorkingHere must be defined').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
             if (experiences[x].isWorkingHere === 'undefined') {
@@ -224,12 +194,72 @@ module.exports = function updateJobHistoryValidation(req) {
     })
     req.check('experiences', 'isWorking here is a boolean value').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].isWorkingHere === 'true' || experiences[x].isWorkingHere === 'false') {
+            if (!experiences[x].isWorkingHere === 'true' || !experiences[x].isWorkingHere === 'false') {
                 return false
             }
         }
-        return true   
+        return true
     })
+
+
+    //End Year
+    //Only validate end year if the user is no longer working there. 
+    for (var y = 0; y < req.body.experiences.length; y++) {
+
+        if (req.body.experiences[y].isWorkingHere === 'No') {
+
+            req.check('experiences', 'End year must be in the following format: YYYY').custom(experiences => {
+
+                for(var w = 0; w < experiences.length; w++){
+                    if (!validYear(experiences[w].endYear)) {
+                        return false
+                    }
+                }
+                
+                return true
+            })
+
+            req.check('experiences', 'End year cannot be greater than current year: ' + currentYear).custom(experiences => {
+
+                for(var w = 0; w < experiences.length; w++){
+                    if (!greaterThanCurrentYear(experiences[w].endYear)) {
+                        return false
+                    }
+                }
+                
+                return true
+            })
+            req.check('experiences', 'End year cannot be before the starting year').custom(experiences => {
+
+                for(var w = 0; w < experiences.length; w++){
+                    console.log(experiences[w])
+                    if (experiences[w].endYear < experiences[w].startYear) {
+                        return false
+                    }
+                }
+                
+                return true
+            })
+
+            //Checks that the total working time is possible given the users age. 
+            req.check('experiences', 'It is not possible that you worked here for this long as you are ' + userAge + ' years old').custom(experiences => {
+
+                
+                for(var w = 0; w < experiences.length; w++){
+                    var totalWorkingTime = experiences[w].endYear - experiences[w].startYear
+
+                if (totalWorkingTime > req.body.age) {
+                    return false
+                }
+                }
+                
+                return true
+
+            })
+
+        }
+
+    }
 
     var errors = req.validationErrors(true)
 
@@ -237,21 +267,3 @@ module.exports = function updateJobHistoryValidation(req) {
         return errors[Object.keys(errors)[0]].msg
     }
 }
-
-
-
-
-//Start Date Field
-
-/*
-Check that the start date is not greater than the users age. 
-Check that the start date is not greater than the end date. 
-Do the basic checks on anything else. 
-*/
-
-//End date field
-
-/*
-Checks the experience ID field is defined. 
-Checks the experience ID field is an integer. 
-*/
