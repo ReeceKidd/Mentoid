@@ -41,7 +41,7 @@
             'Content-Type': 'multipart/form-data'
           },
           params: {
-            userID: this.userID 
+            userID: this.userID
           }
         }).then(function (response) {
           reader.readAsDataURL(files[0])

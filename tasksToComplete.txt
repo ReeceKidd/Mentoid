@@ -111,6 +111,14 @@ Fix education section.
 Fix the field checker so it checks through all the values similar to the other methods. 
 // Download font awesome so nothing has to be downloaded for Mentoid to load. 
 // For update job history and update areas of interest need to implement a skip method. 
+// Complete the upload of user profile picture. 
+
+Plan for 04/02/2018
+
+//Implement if image doesn't exist feature where it returns a value and then change logged in user so it either displays their username or their image. 
+//Need to figure out how to size images upon upload so they are all the same size across the website. 
+//Complete the education and preferences sections. 
+//Need to make sure confirm password is hashed. 
 
 
 

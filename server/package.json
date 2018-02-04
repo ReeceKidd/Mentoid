@@ -26,6 +26,7 @@
     "express-messages": "*",
     "express-session": "^1.15.6",
     "express-validator": "^4.3.0",
+    "fs": "0.0.1-security",
     "jsonwebtoken": "^8.1.0",
     "mongo-sanitize": "^1.0.0",
     "mongodb": "*",

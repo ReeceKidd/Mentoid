@@ -1,5 +1,19 @@
-module.exports = getProfilePicture = ( req, res) => {
+var fs = require('fs');
+
+module.exports = getProfilePicture = (req, res) => {
     const profilePictureDirectory = 'C:/Users/User/Desktop/Mentoid/server/profile-pictures/'
-    res.sendFile(profilePictureDirectory + req.params.userID + '.jpg');
-    
+    var imagePathJPG = profilePictureDirectory + req.params.userID + '.jpg'
+    var imagePathPNG = profilePictureDirectory + req.params.userID + '.png'
+
+    if(fs.existsSync(imagePathJPG)) {
+        res.sendFile(profilePictureDirectory + req.params.userID + '.jpg');
+        return
+    }
+
+    if (fs.existsSync(imagePathPNG)) {
+        res.sendFile(profilePictureDirectory + req.params.userID + '.png');
+        return
+    }
+
+    res.status(500).send('Could not locate image for user: ' + req.params.userID)
 }
