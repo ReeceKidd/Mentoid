@@ -72,7 +72,12 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> {{ $store.state.user.authUser.userName }}
+              <a href="#" v-if="profileImageLoaded" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img :src="profilePictureURL" id="profilePictureURL" @error="imageLoadError">
+                <span class="caret"></span>
+              </a>
+              <a href="#" v-else class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                {{ $store.state.user.authUser.userName }}
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -105,10 +110,14 @@
 </template>
 
 <script>
+  const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
+
   export default {
     data() {
       return {
-        _id: ''
+        _id: '',
+        profilePictureURL: getProfilePictureURL + this.$store.state.user.authUser._id,
+        profileImageLoaded: true
       }
     },
     methods: {
@@ -123,13 +132,20 @@
           .catch(e => {
             this.errorMessage = e.message
           })
+      },
+      imageLoadError() {
+        this.profileImageLoaded = false
+        console.log('User does not have a profile picture')
       }
-    },
-    beforeMount() {
-      this._id = this.$store.state.user.authUser._id
     }
   }
 </script>
 
 <style scoped>
+  #profilePictureURL {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
 </style>
