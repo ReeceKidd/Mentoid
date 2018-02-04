@@ -10,5 +10,6 @@ registerController.updateAreasOfInterest = require('./ControllerMethods/Register
 registerController.updateJobHistory = require('./ControllerMethods/Register/updateJobHistory')
 registerController.updateEducation = require('./ControllerMethods/Register/updateEducation')
 registerController.uploadProfilePicture = require('./ControllerMethods/Register/uploadProfilePicture')
+registerController.getProfilePicture = require('./ControllerMethods/Register/getProfilePicture')
 
 module.exports = registerController

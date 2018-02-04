@@ -20,7 +20,8 @@
     name: 'app',
     data() {
       return {
-        imageSrc: userAvater
+        imageSrc: userAvater,
+        userID: this.$store.state.user.authUser._id
       }
     },
     methods: {
@@ -38,6 +39,9 @@
         axios.post(uploadProfilePictureURL, data, {
           headers: {
             'Content-Type': 'multipart/form-data'
+          },
+          params: {
+            userID: this.userID 
           }
         }).then(function (response) {
           reader.readAsDataURL(files[0])
