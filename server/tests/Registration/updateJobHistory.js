@@ -89,7 +89,7 @@ describe('Update job history successfully', () => {
                     company: 'Google',
                     startYear: '2004',
                     endYear: '2010',
-                    isWorkingHere: 'false'
+                    isWorkingHere: 'No'
                 }],
                 _id: retrievedUserID,                
                 age: retrievedAge 
@@ -130,19 +130,21 @@ const requestObject = {
     experiences: [{
         title: 'Software Engineer',
         company: 'Google',
-        startDate: 2004,
-        endDate: 2010,
-        isStillWorkingHere: false
+        startYear: '2004',
+        endYear: '2010',
+        isWorkingHere: 'No'
     }],
     _id: retrievedUserID,
+    age: retrievedAge
    
 }
 
-/*
-firstName, lastName and userName are tested with the generated code. 
-*/
-// const testAlphaString = require('../TestGenerator/String/isAlpha')
-// const testAlphaNumericString = require('../TestGenerator/String/isAlphaNumeric')
-// testAlphaString('firstName', 2, 100, requestObject, '/register', server)
-// testAlphaString('lastName', 2, 100, requestObject, '/register', server)
-// testAlphaNumericString('userName', 2, 50, requestObject, '/register', server)
+const testObjectID = require('../TestGenerator/objectID')
+const testAlphaString = require('../TestGenerator/String/isAlpha')
+const testAlphaNumericString = require('../TestGenerator/String/isAlphaNumeric')
+
+
+testObjectID('_id', requestObject, '/update/job-history/', server)
+testAlphaString('title', 2, 100, requestObject.experiences[0], '/update/job-history/', server)
+testAlphaString('company', 2, 100, requestObject.experiences[0], '/update/job-history/', server)
+

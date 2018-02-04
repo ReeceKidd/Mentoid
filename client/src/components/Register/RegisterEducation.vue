@@ -15,8 +15,8 @@
 
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2 text-center">
-        <button @click="onAddExperience" class="btn btn-success">Add Education</button>
-        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> No education</button>
+        <button @click="onAddEducation" class="btn btn-success">Add Education</button>
+        <button @click="onSubmit" class="btn btn-danger" v-if="education.length === 0"> Skip</button>
       </div>
     </div>
     <!-- End of desktop version -->
@@ -25,7 +25,7 @@
     <div class="row visible-xs">
       <div class="col-xs-12">
         <h3>
-          Please add your employment experience.
+          Please add your history of education.
         </h3>
       </div>
     </div>
@@ -34,10 +34,10 @@
 
     <div class="row visible-xs">
       <div class="col-xs-12 text-center">
-        <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
+        <button @click="onAddEducation" class="btn btn-success">Add Education</button>
         <br>
         <br>
-        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
+        <button @click="onSubmit" class="btn btn-danger" v-if="education.length === 0"> Skip </button>
       </div>
     </div>
     <!-- End of Mobile Version of job history and buttons -->
@@ -46,72 +46,58 @@
     <div class="row hidden-xs">
       <form @submit.prevent="onSubmit">
 
-        <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
+        <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
             <h3>
-              <u>Experience {{ index + 1}} </u>
+              <u>Education {{ index + 1}} </u>
             </h3>
-            <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
-              <label :for="experience.title">Title</label>
-              <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
-              <p v-if="!$v.experiences.$each[index].title.required && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title is required
+            <div class="input" :class="{invalid: $v.education.$each[index].$error}">
+              <label :for="currentEducation.school">School</label>
+              <input type="text" :id="currentEducation.school" @blur="$v.education.$each[index].school.$touch()" v-model="currentEducation.school">
+              <p v-if="!$v.education.$each[index].school.required && $v.education.$each[index].school.$dirty" class="errorMessage">
+                Job school is required
               </p>
-              <p v-if="!$v.experiences.$each[index].title.minLength && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title must be at least two characters.
+              <p v-if="!$v.education.$each[index].school.minLength && $v.education.$each[index].school.$dirty" class="errorMessage">
+                Job school must be at least two characters.
               </p>
-              <p v-if="!$v.experiences.$each[index].title.alphaAndWhitespace && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title can only contain alphabetical and space characters.
+              <p v-if="!$v.education.$each[index].school.alphaAndWhitespace && $v.education.$each[index].school.$dirty" class="errorMessage">
+                Job school can only contain alphabetical and space characters.
               </p>
-              <label :for="experience.company">Company</label>
-              <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
-              <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
-                Company is required
+              <label :for="currentEducation.degree">Degree</label>
+              <input type="text" :id="currentEducation.degree" @blur="$v.education.$each[index].degree.$touch()" v-model="currentEducation.degree">
+              <p v-if="!$v.education.$each[index].degree.required && $v.education.$each[index].degree.$dirty" class="errorMessage">
+                Degree is required
               </p>
               <div class="yearInputDesktop">
                 <label>Start Year</label>
-                <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
+                <input type="text" :id="currentEducation.startYear" @blur="$v.education.$each[index].startYear.$touch()" v-model="currentEducation.startYear">
               </div>
-              <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.education.$each[index].startYear.required && $v.education.$each[index].startYear.$dirty" class="errorMessage">
                 The year you started is required.
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.validYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.education.$each[index].startYear.validYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
                 Your starting year must be in the following format: YYYY
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.greaterThanCurrentYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.education.$each[index].startYear.greaterThanCurrentYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
                 You cannot start in the future.
               </p>
-              <label>Do you currently work here?</label>
-              <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-              <p v-if="!$v.experiences.$each[index].isWorkingHere.required && $v.experiences.$each[index].isWorkingHere.$dirty" class="errorMessage">
-                You must specify if you are still working here.
-              </p>
-              <br>
-              <div v-if="experience.isWorkingHere === 'No'" class="yearInputDesktop">
-                <label>End Year</label>
-                <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
-                <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                <label>Graduation Year</label>
+                <input type="text" :id="currentEducation.endYear" @blur="$v.education.$each[index].endYear.$touch()" v-model="currentEducation.endYear">
+                <p v-if="!$v.education.$each[index].endYear.required && $v.education.$each[index].endYear.$dirty" class="errorMessage">
                   End year is required
                 </p>
-                <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                <p v-if="!$v.education.$each[index].endYear.validYear && $v.education.$each[index].endYear.$dirty" class="errorMessage">
                   Your ending year must be in the following format: YYYY
                 </p>
-                <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                <p v-if="!$v.education.$each[index].endYear.greaterThanCurrentYear && $v.education.$each[index].endYear.$dirty" class="errorMessage">
                   You cannot enter end dates greater than the current year.
                 </p>
-              </div>
-              <div v-else>
-                <span>{{currentlyWorkingHere(experience.endDate)}}</span>
-              </div>
             </div>
             <br>
             <div class="hidden-xs">
-              <button @click="onDeleteExperiences(experience.id)" class="btn-danger btn btn-sm">Delete experience</button>
-              <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+              <button @click="onDeleteEducation(currentEducation.id)" class="btn-danger btn btn-sm">Delete Current Education</button>
+              <button @click="onAddEducation" class="btn btn-success btn-sm">Add Education</button>
             </div>
           </div>
         </div>
@@ -123,74 +109,60 @@
     <div class="row visible-xs">
       <form @submit.prevent="onSubmit">
 
-        <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
+        <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
             <h3>
-              <u>Experience {{ index + 1}} </u>
+              <u>Education {{ index + 1}} </u>
             </h3>
-            <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
-              <label :for="experience.title">Title</label>
-              <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
-              <p v-if="!$v.experiences.$each[index].title.required && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title is required
+            <div class="input" :class="{invalid: $v.education.$each[index].$error}">
+              <label :for="currentEducation.school">School</label>
+              <input type="text" :id="currentEducation.school" @blur="$v.education.$each[index].school.$touch()" v-model="currentEducation.school">
+              <p v-if="!$v.education.$each[index].school.required && $v.education.$each[index].school.$dirty" class="errorMessage">
+                School of study is required
               </p>
-              <p v-if="!$v.experiences.$each[index].title.minLength && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title must be at least two characters.
+              <p v-if="!$v.education.$each[index].school.minLength && $v.education.$each[index].school.$dirty" class="errorMessage">
+                School must be at least two characters.
               </p>
-              <p v-if="!$v.experiences.$each[index].title.alphaAndWhitespace && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title can only contain alphabetical and space characters.
+              <p v-if="!$v.education.$each[index].school.alphaAndWhitespace && $v.education.$each[index].school.$dirty" class="errorMessage">
+                School can only contain alphabetical and space characters.
               </p>
-              <label :for="experience.company">Company</label>
-              <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
-              <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
-                Company is required
+              <label :for="currentEducation.degree">Degree</label>
+              <input type="text" :id="currentEducation.degree" @blur="$v.education.$each[index].degree.$touch()" v-model="currentEducation.degree">
+              <p v-if="!$v.education.$each[index].degree.required && $v.education.$each[index].degree.$dirty" class="errorMessage">
+                Degree is required
               </p>
               <div class="yearInputMobile">
                 <label>Start Year</label>
-                <input type="text" :id="experience.startDate" @blur="$v.experiences.$each[index].startDate.$touch()" v-model="experience.startDate">
+                <input type="text" :id="currentEducation.startYear" @blur="$v.education.$each[index].startYear.$touch()" v-model="currentEducation.startYear">
               </div>
-              <p v-if="!$v.experiences.$each[index].startDate.required && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.education.$each[index].startYear.required && $v.education.$each[index].startYear.$dirty" class="errorMessage">
                 The year you started is required.
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.validYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.education.$each[index].startYear.validYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
                 Your starting year must be in the following format: YYYY
               </p>
-              <p v-if="!$v.experiences.$each[index].startDate.greaterThanCurrentYear && $v.experiences.$each[index].startDate.$dirty" class="errorMessage">
+              <p v-if="!$v.education.$each[index].startYear.greaterThanCurrentYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
                 You cannot start in the future.
               </p>
-              <label>Do you currently work here?</label>
-              <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-              <p v-if="!$v.experiences.$each[index].isWorkingHere.required && $v.experiences.$each[index].isWorkingHere.$dirty" class="errorMessage">
-                You must specify if you are still working here.
-              </p>
-              <br>
-              <div v-if="experience.isWorkingHere === 'No'" class="yearInputMobile">
                 <label>End Year</label>
-                <input type="text" :id="experience.endDate" @blur="$v.experiences.$each[index].endDate.$touch()" v-model="experience.endDate">
-                <p v-if="!$v.experiences.$each[index].endDate.required && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                <input type="text" :id="currentEducation.endYear" @blur="$v.education.$each[index].endYear.$touch()" v-model="currentEducation.endYear">
+                <p v-if="!$v.education.$each[index].endYear.required && $v.education.$each[index].endYear.$dirty" class="errorMessage">
                   End year is required
                 </p>
-                <p v-if="!$v.experiences.$each[index].endDate.validYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                <p v-if="!$v.education.$each[index].endYear.validYear && $v.education.$each[index].endYear.$dirty" class="errorMessage">
                   Your ending year must be in the following format: YYYY
                 </p>
-                <p v-if="!$v.experiences.$each[index].endDate.greaterThanCurrentYear && $v.experiences.$each[index].endDate.$dirty" class="errorMessage">
+                <p v-if="!$v.education.$each[index].endYear.greaterThanCurrentYear && $v.education.$each[index].endYear.$dirty" class="errorMessage">
                   You cannot enter end dates greater than the current year.
                 </p>
-              </div>
-              <div v-else>
-                <span>{{currentlyWorkingHere(experience.endDate)}}</span>
-              </div>
             </div>
             <br>
             <div class="visible-xs">
-              <button @click="onDeleteExperiences(experience.id)" class="btn-danger btn btn-sm">Delete experience</button>
+              <button @click="onDeleteEducation(currentEducation.id)" class="btn-danger btn btn-sm">Delete Current Education</button>
               <br>
               <br>
-              <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+              <button @click="onAddEducation" class="btn btn-success btn-sm">Add Education</button>
             </div>
           </div>
         </div>
@@ -201,7 +173,7 @@
 
     <!-- Desktop error messages -->
     <div class="row hidden-xs text-center">
-      <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click "Never had a job" </p>
+      <p v-if="!$v.education.required" class="errorMessage"> Please add at least one educational experience or click no education </p>
     </div>
 
     <div class="row hidden-xs text-center">
@@ -212,7 +184,7 @@
     <!-- Mobile error messages -->
     <div class="row visible-xs">
       <div class="col-xs-12">
-        <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click "Never had a job" </p>
+        <p v-if="!$v.education.required" class="errorMessage"> Please add at least one educational experience or click skip. </p>
       </div>
     </div>
 
@@ -226,7 +198,7 @@
     <br>
 
     <div class="row text-center">
-      <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Submit </button>
+      <button class="btn btn-lg btn-primary" :disabled="$v.education.$invalid" @click="onSubmit"> Submit </button>
     </div>
   </div>
 
@@ -272,59 +244,53 @@
   export default {
     data() {
       return {
-        experiences: [],
+        education: [],
         currentUser: this.$store.state.user.authUser,
         age: null,
-        neverHadAJob: null,
+        noEducation: null,
         errorMessage: null
       }
     },
     validations: {
-      experiences: {
+      education: {
         required,
         $each: {
-          title: {
+          school: {
             required,
             minLength: minLength(2),
             alphaAndWhitespace
           },
-          company: {
+          degree: {
             required,
             alphaAndWhitespace
           },
-          isWorkingHere: {
-            required
+          grade: {
           },
-          startDate: {
+          startYear: {
             required,
             validYear,
             greaterThanCurrentYear
           },
-          endDate: {
-            required,
-            validYear,
-            greaterThanCurrentYear
+          endYear: {
+            validYear
           }
         }
       }
     },
     methods: {
-      onAddExperience() {
+      onAddEducation() {
         const newExperience = {
-          experienceID: this.experiences.length.toString(),
-          title: '',
-          company: '',
-          isWorkingHere: '',
-          startDate: '',
-          endDate: ''
+          experienceID: this.education.length.toString(),
+          school: '',
+          degree: '',
+          grade: '',
+          startYear: '',
+          endYear: ''
         }
-        this.experiences.push(newExperience)
+        this.education.push(newExperience)
       },
-      currentlyWorkingHere(endDate) {
-        endDate = 9999
-      },
-      onDeleteExperiences(id) {
-        this.experiences = this.experiences.filter(experience => experience.id !== id)
+      onDeleteEducation(id) {
+        this.education = this.education.filter(currentEducation => currentEducation.id !== id)
       },
       navigateTo(route) {
         this.$router.push(route)
@@ -333,7 +299,7 @@
         const url = 'http://localhost:4000/update/job-history/'
         var that = this
         axios.post(url, {
-          experiences: this.experiences,
+          education: this.education,
           _id: this.currentUser._id,
           age: this.age
         }).then(function (response) {

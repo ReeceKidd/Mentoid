@@ -41,9 +41,9 @@ const User = new Schema(
     jobHistory: [{
       title: String,
       company: String,
-      startDate: Date,
-      endDate: Date, 
-      isWorkingHere: Boolean,
+      startDate: String,
+      endDate: String, 
+      isWorkingHere: String,
       experienceID: Number,
       numberOfYearsHere: this.endDate - this.startDate
     }],
@@ -52,6 +52,10 @@ const User = new Schema(
     location: {
       latitude: Number,
       longitude: Number
+    },
+    profilePicture: {
+      data: Buffer, 
+      contentType: String
     },
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,

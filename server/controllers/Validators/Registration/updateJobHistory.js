@@ -65,7 +65,7 @@ module.exports = function updateJobHistoryValidation(req) {
     //Experiences title field checks.
     req.check('experiences', 'Each experience title must be defined').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
-            if (experiences[x].value === 'undefined') {
+            if (experiences[x].title === 'undefined') {
                 return false
             }
         }
@@ -89,6 +89,7 @@ module.exports = function updateJobHistoryValidation(req) {
     req.check('experiences', 'Experience titles must be at least two characters long').custom(experiences => {
 
         for (var x = 0; x < experiences.length; x++) {
+            console.log(experiences[x].title.length)
             if (experiences[x].title.length < 2) {
                 return false
             }
@@ -135,7 +136,7 @@ module.exports = function updateJobHistoryValidation(req) {
         }
         return true
     })
-    req.check('experiences', 'Experience titles cannot be greater than 100 characters').custom(experiences => {
+    req.check('experiences', 'Experience company cannot be greater than 100 characters').custom(experiences => {
 
         for (var x = 0; x < experiences.length; x++) {
             if (experiences[x].company.length > 100) {

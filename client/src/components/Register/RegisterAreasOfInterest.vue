@@ -1,5 +1,6 @@
 <template>
   <!-- This component is different on XS devices -->
+ 
     <div class="container">
       <!-- This is the desktop version of this registration section.  -->
       <div class="row hidden-xs">

@@ -1,6 +1,21 @@
 var express = require('express')
+const routes = express()
 
-const routes = express();
+var multer  = require('multer')
+var path = require('path')
+
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './uploads')
+    },
+    filename: function (req, file, cb) {
+        console.log(req.body)
+      cb(null, Date.now() + path.extname(file.originalname))
+    }
+  })
+  
+  var upload = multer({ storage: storage })
+  
 
 //Controller imports
 const adminController = require('../controllers/adminController.js')
@@ -22,6 +37,10 @@ routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 routes.post('/update/job-history', registerController.updateJobHistory)
 routes.post('/update/education', registerController.updateEducation)
+routes.post('/upload-profile-picture', upload.single('image'), registerController.uploadProfilePicture)
+
+
+//https://medium.com/@antoinegrandiere/image-upload-and-moderation-with-vue-js-and-node-js-407fb5a1e0c0 Use this tutorial to add callback functions. 
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)

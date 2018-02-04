@@ -2,7 +2,6 @@
   <div class="container">
     <!-- This component is different depending on whether it is viewed in mobile or on desktop -->
 
-  <h1>Age {{age}}</h1>
     <!-- Desktop version job history explainer and buttons -->
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2">
@@ -17,7 +16,7 @@
     <div class="row hidden-xs">
       <div class="col-sm-8 col-sm-offset-2 text-center">
         <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
-        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
+        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Skip</button>
       </div>
     </div>
     <!-- End of desktop version -->
@@ -38,7 +37,7 @@
         <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
         <br>
         <br>
-        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Never had a job</button>
+        <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Skip</button>
       </div>
     </div>
     <!-- End of Mobile Version of job history and buttons -->
@@ -189,7 +188,7 @@
     <!-- Mobile error messages -->
     <div class="row visible-xs">
       <div class="col-xs-12">
-        <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click "Never had a job" </p>
+        <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click skip </p>
       </div>
     </div>
 

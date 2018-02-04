@@ -34,9 +34,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(expressValidator())
 
 app.use(cors())
-app.use('/', routes);
+app.use('/', routes)
 
 const port = process.env.PORT || 4000
+
 
 const server = app.listen(port, function() {
   console.log('Listening on port ' + port)

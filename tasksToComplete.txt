@@ -104,3 +104,13 @@ Plan for 02/02/2018
 Fix the field checker so it passes through an array of values as well depending on If
 it is an array or non array value. 
 
+Plan for 03/02/2018
+
+Fix job history
+Fix education section. 
+Fix the field checker so it checks through all the values similar to the other methods. 
+// Download font awesome so nothing has to be downloaded for Mentoid to load. 
+// For update job history and update areas of interest need to implement a skip method. 
+
+
+

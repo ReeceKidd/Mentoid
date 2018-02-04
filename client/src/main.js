@@ -20,7 +20,8 @@ import RegisterJobHistory from './components/Register/RegisterJobHistory.vue'
 import UploadProfilePicture from './components/Register/UploadProfilePicture.vue'
 import RegisterBio from './components/Register/RegisterBio.vue'
 import RegisterEducation from './components/Register/RegisterEducation.vue'
-import RegisterPreferences from './components/Register/RegisterPreferences.vue'
+import MentorPreferences from './components/Register/MentorPreferences.vue'
+import MenteePreferences from './components/Register/MenteePreferences.vue'
 
 import UnknownHome from './components/UnknownHome.vue'
 import Login from './components/Login.vue'
@@ -93,9 +94,14 @@ const routes = [
     component: UploadProfilePicture
   },
   {
-    path: '/register-preferences',
-    name: 'register-preferences',
-    component: RegisterPreferences
+    path: '/mentor-preferences',
+    name: 'mentor-preferences',
+    component: MentorPreferences
+  },
+  {
+    path: '/mentee-preferences',
+    name: 'mentee-preferences',
+    component: MenteePreferences
   },
   {
     path: '/login',
