@@ -2,10 +2,22 @@
   <div id="app">
     <div class="container">
       <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1> Please upload a profile picture </h1>
+        </div>
+      </div>
+      <br>
+      <div class="row">
         <div class="col-xs-6 col-xs-offset-3">
           <img :src="imageSrc" class="img-responsive">
           <br>
           <input @change="uploadImage" type="file" name="image" accept="image/*">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <button class="btn btn-lg btn-primary"  @click="onSubmit"> Submit </button>
         </div>
       </div>
     </div>
@@ -48,6 +60,12 @@
         }).catch(function (error) {
           console.log(error) // catch your error
         })
+      },
+      navigateTo(route) {
+        this.$router.push(route)
+      },
+      onSubmit() {
+        this.navigateTo('/mentee-preferences')
       }
     }
   }

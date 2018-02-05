@@ -44,8 +44,16 @@ const User = new Schema(
       startDate: String,
       endDate: String, 
       isWorkingHere: String,
-      experienceID: Number,
+      experienceID: String,
       numberOfYearsHere: this.endDate - this.startDate
+    }],
+    education: [{
+      degree: String,
+      school: String,
+      fieldOfStudy: String, 
+      startYear: String, 
+      endYear: String,
+      educationID: String
     }],
     mentors: [],
     mentees: [],
@@ -53,13 +61,11 @@ const User = new Schema(
       latitude: Number,
       longitude: Number
     },
-    profilePicture: {
-      data: Buffer, 
-      contentType: String
-    },
     basicRegistrationComplete: Boolean,
     areasOfInterestRegistrationComplete: Boolean,
     jobHistoryRegistrationComplete: Boolean,
+    educationRegistrationComplete: Boolean,
+    profilePictureUploaded: Boolean,
     userRegistrationComplete: Boolean,
     isUserLoggedIn: Boolean
   },

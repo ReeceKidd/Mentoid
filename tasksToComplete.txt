@@ -115,10 +115,16 @@ Fix the field checker so it checks through all the values similar to the other m
 
 Plan for 04/02/2018
 
-//Implement if image doesn't exist feature where it returns a value and then change logged in user so it either displays their username or their image. 
-//Need to figure out how to size images upon upload so they are all the same size across the website. 
+//Implement if image doesn't exist feature where it returns a value and then change logged in user so it either displays their username or their image. (Complete)
+//Need to figure out how to size images upon upload so they are all the same size across the website. (Don't need to simply style it with CSS)
 //Complete the education and preferences sections. 
 //Need to make sure confirm password is hashed. 
+//Need to complete current registration section. 
+//If user uploads a JPG then a PNG they can have two pictures stored which may be an issue. 
+//Make sure that the job history and education is getting added to the database. 
+/Need to begin the messaging application as well. 
+
+
 
 
 

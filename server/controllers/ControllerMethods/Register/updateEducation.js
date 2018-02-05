@@ -1,3 +1,5 @@
+var User = require('../../../models/user')
+
 // Formats job title to titleCase
 const toTitleCase = require('../../Formatter/toTitleCase.js')
 
@@ -35,17 +37,17 @@ module.exports = updateEducation = (req, res) => {
     }
 
     //Checks that experiences array only contains title, company, experienceID, startDate, endDate and isWorkingHere. 
-    var unwantedArrayField = checkUpdateEducationArrayFields(req.body.experiences)
+    var unwantedArrayField = checkUpdateEducationArrayFields(req.body.education)
 
     if (unwantedArrayField) {
-        console.log(unwantedArrayField)
+        
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
         })
     }
     
-    var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','experiences'])
+    var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','education'])
 
     if (undefinedFields) {
         return res.status(950).send({
@@ -54,7 +56,7 @@ module.exports = updateEducation = (req, res) => {
         })
     }
 
-    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['experienceID', 'title', 'company','startDate','endDate','isWorkingHere'])
+    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.education, ['educationID', 'school', 'degree', 'fieldOfStudy','startYear','endYear'])
 
     if (undefinedArrayFields) {
         return res.status(950).send({
@@ -64,7 +66,7 @@ module.exports = updateEducation = (req, res) => {
     }
 
 
-    //Checks that request contains an experiences array containing only strings and an _id which is a string.
+    //Checks that request contains an education array containing only strings and an _id which is a string.
     var checkRequestTypes = checkEducationTypes(req.body)
 
     if (checkRequestTypes) {
@@ -89,9 +91,10 @@ module.exports = updateEducation = (req, res) => {
     sanitizeUpdateEducation(req.body)
 
     //Updates the title and company name to title case. 
-    for (var x = 0; x < req.body.experiences.length; x++) {
-        req.body.experiences[x].title = toTitleCase(req.body.experiences[x].title)
-        req.body.experiences[x].company = toTitleCase(req.body.experiences[x].company)
+    for (var x = 0; x < req.body.education.length; x++) {
+        req.body.education[x].degree = toTitleCase(req.body.education[x].degree)
+        req.body.education[x].school = toTitleCase(req.body.education[x].school)
+        req.body.education[x].fieldOfStudy = toTitleCase(req.body.education[x].fieldOfStudy)
     }
 
 

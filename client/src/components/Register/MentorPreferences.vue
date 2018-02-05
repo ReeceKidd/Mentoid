@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <!-- Desktop Version -->
-    <div class="row hidden-xs">
+    <div>
       <div class="col-xs-12 text-center">
         <h1>Would you like to be a Mentor</h1>
         <br>
       </div>
     </div>
 
-    <div class="row hidden-xs">
+    <div>
       <div class="col-xs-12 text-center">
         <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeToMentor" >
           <option value="Yes">Yes</option>
@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="row hidden-xs">
+    <div>
         <div v-if="wouldLikeToMentor === 'Yes'">
 
         <p> What areas of interest would you like to Mentor in? </p>
@@ -71,8 +71,6 @@
 
 
     <!-- Mobile Version -->
-
-  </div>
 
 </template>
 
