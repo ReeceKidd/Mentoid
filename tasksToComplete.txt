@@ -118,11 +118,12 @@ Plan for 04/02/2018
 //Implement if image doesn't exist feature where it returns a value and then change logged in user so it either displays their username or their image. (Complete)
 //Need to figure out how to size images upon upload so they are all the same size across the website. (Don't need to simply style it with CSS)
 //Complete the education and preferences sections. 
-//Need to make sure confirm password is hashed. 
+//Need to make sure confirm password is hashed. (Need to check if this works correctly when loaded)
 //Need to complete current registration section. 
-//If user uploads a JPG then a PNG they can have two pictures stored which may be an issue. 
+//If user uploads a JPG then a PNG they can have two pictures stored which may be an issue. (Need to correctly delete files)
 //Make sure that the job history and education is getting added to the database. 
 /Need to begin the messaging application as well. 
+//Create home profile similar to LinkedIn. 
 
 
 

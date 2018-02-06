@@ -92,4 +92,19 @@ User.pre('save', function(next) {
   })
 })
 
+// hashes confirmPassword before saving using bcryptjs
+User.pre('save', function(next) {
+  const user = this
+  if (!user.isModified('confirmPassword')) {
+    return next()
+  }
+  bcrypt.hash(user.confirmPassword, 10, (err, hash) => {
+    if (err) {
+      return next(err)
+    }
+    user.confirmPassword = hash
+    next()
+  })
+})
+
 module.exports = mongoose.model('User', User)

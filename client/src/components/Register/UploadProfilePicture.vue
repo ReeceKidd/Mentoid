@@ -65,7 +65,7 @@
         this.$router.push(route)
       },
       onSubmit() {
-        this.navigateTo('/mentee-preferences')
+        this.navigateTo('/mentor-preferences')
       }
     }
   }

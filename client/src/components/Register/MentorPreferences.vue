@@ -23,18 +23,40 @@
         <div v-if="wouldLikeToMentor === 'Yes'">
 
         <p> What areas of interest would you like to Mentor in? </p>
-        <p> --Get a list of the areas of interest with a tickbox beside each. </p>
+        // List the areas of interest with checkboxes with all of them ticked by default with a select all option. 
         <p> What formats of mentoring are you interested in?</p>
+        //Online 
+        //In person
+        //Maybe groups or maybe a hangout. 
         <p> What languages can you mentor in?</p>
+        //English 
+        //Spanish 
+        //German
         <p> Are you willing to Mentor internationally?</p>
+        //Yes 
+        //No
         <p> What is the maximum distance for in person meetings?</p>
+        Input box that accepts Kilometer values. 
 
         <p> --Mentee preferences --</p>
         <p> What education level would you prefer to mentor?</p>
-        <p> What subject would you prefer </p>
-        <p> Any specific fields you are interested in?</p>   
+        //No preference
+        //High school
+        //Vocational degree. 
+        //Bachelors
+        //Masters
+        //PHD 
+        -- This only appears if they are above no preferences. 
+        <p> What field of study? </p>
+        //Computing 
+        //Business
+        //Accountancy
+        //Architecture. 
         <p> What age range are most interested in Mentoring? </p>
-        <p> What jobs would you like your Mentee to have had or want </p>
+        // Min age. 
+        // Max age. 
+        <p> What field of work would you like your mentor to work in.  </p>
+        // Enter a field of work that should use a regex prediction in order to show it. 
         </div>
         
         

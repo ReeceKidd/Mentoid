@@ -1,20 +1,41 @@
 var express = require('express')
 const routes = express()
 
-var multer  = require('multer')
+var multer = require('multer')
 var path = require('path')
+var fs = require('fs')
+const profilePictureDirectory = 'C:/Users/User/Desktop/Mentoid/server/profile-pictures/'
 
 var storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, './profile-pictures')
-    },
-    filename: function (req, file, cb) {
-      cb(null, req.query.userID + path.extname(file.originalname))
+  destination: function (req, file, cb) {
+    cb(null, './profile-pictures')
+  },
+  filename: function (req, file, cb) {
+
+    var imagePathJPG = profilePictureDirectory + req.query.userID + '.jpg'
+    var imagePathJPEG = profilePictureDirectory + req.query.userID + '.jpeg'
+    var imagePathPNG = profilePictureDirectory + req.query.userID + '.png'
+
+    if (fs.existsSync(imagePathJPG)) {
+      fs.unlink(imagePathJPG)
     }
-  })
-  
-  var upload = multer({ storage: storage })
-  
+
+    if (fs.existsSync(imagePathJPEG)) {
+      fs.unlink(imagePathJPEG)
+    }
+
+    if (fs.existsSync(imagePathPNG)) {
+      fs.unlink(imagePathPNG)
+    }
+
+    cb(null, req.query.userID + path.extname(file.originalname))
+  }
+})
+
+var upload = multer({
+  storage: storage
+})
+
 
 //Controller imports
 const adminController = require('../controllers/adminController.js')

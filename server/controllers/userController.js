@@ -41,11 +41,15 @@ const asyncIssue = payload => {
     })
         .then(user => {
           if (user) {
-            // compare password
             bcrypt.compare(formData.password, user.password, (error, result) => {
               if (error) {
                 throw Error('Invalid Username or Password')
               } else {
+                bcrypt.compare(formData.comparePassword, user.comparePassword), (error, result) => {
+                  if(error) {
+                    throw Error('Invalid Username or Password')
+                  }
+                }
                 if (result) {
                   // This can only return the username and userID. 
                   var userInfo = {
