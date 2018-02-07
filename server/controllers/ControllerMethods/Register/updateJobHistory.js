@@ -101,6 +101,7 @@ module.exports = updateJobHistory = (req, res) => {
 
     User.findOneAndUpdate(query, {
             $set: {
+                jobHistory: req.body.experiences,
                 jobHistoryRegistrationComplete: true
             },
 

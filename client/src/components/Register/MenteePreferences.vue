@@ -27,12 +27,11 @@
         <p> What formats of mentoring are you interested in?</p>
         //Online 
         //In person
-        //Maybe groups or maybe a hangout. 
-        <p> What languages can you mentor in?</p>
+        <p> What languages can you be mentored in?</p>
         //English 
         //Spanish 
         //German
-        <p> Are you willing to Mentor internationally?</p>
+        <p> Are you willing to have an international Mentor?</p>
         //Yes 
         //No
         <p> What is the maximum distance for in person meetings?</p>

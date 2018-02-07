@@ -104,6 +104,7 @@ module.exports = updateEducation = (req, res) => {
 
     User.findOneAndUpdate(query, {
             $set: {
+                education: req.body.education,
                 EducationRegistrationComplete: true
             },
 

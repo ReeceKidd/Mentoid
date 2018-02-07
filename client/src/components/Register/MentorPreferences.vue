@@ -22,12 +22,16 @@
     <div>
         <div v-if="wouldLikeToMentor === 'Yes'">
 
-        <p> What areas of interest would you like to Mentor in? </p>
-        // List the areas of interest with checkboxes with all of them ticked by default with a select all option. 
+        <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange"> Check all </el-checkbox>
+        <el-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
+          <el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
+        </el-checkbox-group>
+        //Can set the size of the checkbox as an option with a string and make it have a border as well. 
+        //Need to get the users area of interest value names from this on create and load this check box up with ith. 
         <p> What formats of mentoring are you interested in?</p>
         //Online 
         //In person
-        //Maybe groups or maybe a hangout. 
+        //Future will be groups. 
         <p> What languages can you mentor in?</p>
         //English 
         //Spanish 
@@ -38,6 +42,7 @@
         <p> What is the maximum distance for in person meetings?</p>
         Input box that accepts Kilometer values. 
 
+        // Matching you with the correct Mentor is important for us, where possibe we will try to match you on the following criteria. 
         <p> --Mentee preferences --</p>
         <p> What education level would you prefer to mentor?</p>
         //No preference
@@ -114,99 +119,20 @@
     data() {
       return {
         wouldLikeToMentor: 'Yes',
-        lastName: '',
-        userName: '',
-        email: '',
-        age: '',
-        password: '',
-        confirmPassword: '',
-        areasOfInterest: [],
-        language: '',
-        terms: false,
-        errorMessage: null,
-        currentUser: '',
-        basicRegistrationComplete: null
-      }
-    },
-    validations: {
-      firstName: {
-        required,
-        minLength: minLength(2),
-        alpha
-      },
-      lastName: {
-        required,
-        minLength: minLength(2),
-        alpha
-      },
-      email: {
-        required,
-        email,
-        unique: val => {
-          if (val === '') return true
-          let uri = 'http://localhost:4000/check/email/'
-          return axios.get(uri + val)
-            .then(res => {
-              return res.status === 200
-            }).catch(error => {
-              console.log('error', Object.assign({}, error).response.data.message)
-            })
-        }
-      },
-      terms: {
-        required
-      },
-      age: {
-        required,
-        minValue: minValue(16),
-        maxValue: maxValue(120)
-      },
-      userName: {
-        required,
-        alphaNum,
-        unique: val => {
-          if (val === '') return true
-          let uri = 'http://localhost:4000/check/username/'
-          return axios.get(uri + val).then(res => {
-            return res.status === 200
-          }).catch(error => {
-            console.log('error', Object.assign({}, error).response.data.message)
-          })
-        }
-      },
-      password: {
-        required,
-        minLen: minLength(8)
-      },
-      confirmPassword: {
-        sameAs: sameAs('password')
+        checkAll: false, 
+        cities: cityOptions, 
+        isIndeterminate: true
       }
     },
     methods: {
-      onSubmit() {
-        this.errorMessage = null
-        const userData = {
-          firstName: this.firstName,
-          lastName: this.lastName,
-          userName: this.userName,
-          email: this.email,
-          age: this.age.toString(),
-          password: this.password,
-          confirmPassword: this.confirmPassword,
-          language: this.language,
-          terms: this.terms.toString()
-        }
-        this.$store
-          .dispatch('register', {
-            userData
-          })
-          .then(() => {
-            this.$router.push('/register-areas-of-interest')
-          })
-          .catch(e => {
-            console.log(e)
-            this.errorMessage = e.message
-          })
+      handleCheckAllChange(val) {
+        this.checkedCities = val ? cityOptions: [],
+        this.isIndeterminate = false
+      },
+      handleCheckedCitiesChange(value) {
+        let checkedCount = value.length;
+        this.checkAll = checkedCount === this.cities.length
+        this.isIndeterminate = checkedCount > 0 && checkedCount < this.cities.length
       },
       navigateTo(route) {
         this.$router.push(route)
