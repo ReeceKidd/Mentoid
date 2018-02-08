@@ -46,13 +46,13 @@
       <div class="footer-icons">
 
         <a href="" class="facebook">
-          <i class="fa fa-facebook"></i>
+          <i class="fab fa-facebook-f"></i>
         </a>
         <a href="" class="twitter">
-          <i class="fa fa-twitter"></i>
+          <i class="fab fa-twitter"></i>
         </a>
         <a href="" class="google">
-          <i class="fa fa-google-plus"></i>
+          <i class="fab fa-google-plus-g"></i>
         </a>
       </div>
 

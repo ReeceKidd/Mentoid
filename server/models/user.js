@@ -7,78 +7,85 @@ mongoose.modelSchemas = {}
 
 var bcrypt = require('bcryptjs')
 
-const User = new Schema(
-  {
-    firstName: {
-      type: String
-    },
-    lastName: {
-      type: String
-    },
-    userName: {
-      type: String,
-      unique: true
-    },
-    email: {
-      type: String,
-      unique: true
-    },
-    age: Number,
-    password: String,
-    confirmPassword: String,
-    language: String,
-    terms: Boolean,
-    areasOfInterest: [{
-      years: Number,
-      value: String,
-      areaOfInterestID: Number,
-      numberOfLikes: Number,
-      numberOfLinksClicked: Number,
-      articlesRead: Number,
-      videosWatched: Number,
-      pathsStudied: Number
-    }],
-    jobHistory: [{
-      title: String,
-      company: String,
-      startDate: String,
-      endDate: String, 
-      isWorkingHere: String,
-      experienceID: String,
-      numberOfYearsHere: this.endDate - this.startDate
-    }],
-    education: [{
-      degree: String,
-      school: String,
-      fieldOfStudy: String, 
-      startYear: String, 
-      endYear: String,
-      educationID: String
-    }],
-    mentors: [],
-    mentees: [],
-    location: {
-      latitude: Number,
-      longitude: Number
-    },
-    basicRegistrationComplete: Boolean,
-    areasOfInterestRegistrationComplete: Boolean,
-    jobHistoryRegistrationComplete: Boolean,
-    educationRegistrationComplete: Boolean,
-    profilePictureUploaded: Boolean,
-    userRegistrationComplete: Boolean,
-    isUserLoggedIn: Boolean
+const User = new Schema({
+  firstName: {
+    type: String
   },
-  {
-    timestamps: true
+  lastName: {
+    type: String
   },
-  {
-    collection: 'users'
-  }
-)
+  userName: {
+    type: String,
+    unique: true
+  },
+  email: {
+    type: String,
+    unique: true
+  },
+  age: Number,
+  password: String,
+  confirmPassword: String,
+  language: String,
+  terms: Boolean,
+  areasOfInterest: [{
+    years: Number,
+    value: String,
+    areaOfInterestID: Number,
+    numberOfLikes: Number,
+    numberOfLinksClicked: Number,
+    articlesRead: Number,
+    videosWatched: Number,
+    pathsStudied: Number
+  }],
+  jobHistory: [{
+    title: String,
+    company: String,
+    startDate: String,
+    endDate: String,
+    isWorkingHere: String,
+    experienceID: String,
+    numberOfYearsHere: this.endDate - this.startDate
+  }],
+  education: [{
+    degree: String,
+    school: String,
+    fieldOfStudy: String,
+    startYear: String,
+    endYear: String,
+    educationID: String
+  }],
+  mentorPreferences: {
+    areasOfInterest: [],
+    prefferedMentoringFormats: [],
+    maximumTravelDistance: String,
+    mentoringLanguages: [],
+    prefferedEducation: [],
+    prefferedFieldOfWork: [],
+    minimumAge: String,
+    maximumAge: String
+  },
+  mentors: [],
+  mentees: [],
+  location: {
+    latitude: Number,
+    longitude: Number
+  },
+  basicRegistrationComplete: Boolean,
+  areasOfInterestRegistrationComplete: Boolean,
+  jobHistoryRegistrationComplete: Boolean,
+  educationRegistrationComplete: Boolean,
+  profilePictureUploaded: Boolean,
+  mentorPreferencesComplete: Boolean,
+  menteePreferencesComplete: Boolean,
+  isUserLoggedIn: Boolean
+}, {
+  timestamps: true
+}, {
+  collection: 'users'
+})
 
 // hashes passwords before saving using bcryptjs
-User.pre('save', function(next) {
+User.pre('save', function (next) {
   const user = this
   if (!user.isModified('password')) {
     return next()
@@ -93,7 +100,7 @@ User.pre('save', function(next) {
 })
 
 // hashes confirmPassword before saving using bcryptjs
-User.pre('save', function(next) {
+User.pre('save', function (next) {
   const user = this
   if (!user.isModified('confirmPassword')) {
     return next()

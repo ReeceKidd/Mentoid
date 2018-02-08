@@ -128,11 +128,20 @@ Plan for 04/02/2018
 
 Plan for 06/02/2018
 
+//It breaks when it is in a subfolder, need to change anything from sub folders to main folders. 
+
 1) Get job history and education adding to MongoDB database correctly (Complete)
-4) Mentor preferences
+4) Mentor preferences (Come back get back end and validation working to see if it adds to database successfully)
 5) Mentee preferences
 3) Create home profile similar to LinkedIn. 
 2) Need to get validation and tests working correctly for job history and education. 
+6) //Need to create different versions of the different registration sections as components. And then import them into the different 
+registration sections without the instructions texts, so they are sepearated and can be reused. 
+
+Plan for 07/02/2018
+Copy over different components without style information and put it in drop downs. 
+Probably need an email reset link as well, or a one time passcode. 
+Need to put a limit on the profile picture image size as well. 
 
 
 

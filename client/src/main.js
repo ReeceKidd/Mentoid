@@ -119,87 +119,87 @@ const routes = [
     component: SECRET
   },
   {
-    path: '/learn/content',
+    path: '/content',
     name: 'content',
     component: Content
   },
   {
-    path: '/learn/create',
+    path: '/create',
     name: 'create',
     component: Create
   },
   {
-    path: '/learn/paths',
+    path: '/paths',
     name: 'paths',
     component: PathsHome
   },
   {
-    path: '/learn/paths/paths-sub-section',
+    path: '/paths-sub-section',
     name: 'paths-sub-section',
     component: PathsSubSection
   },
   {
-    path: '/mentoring/manage-relationships',
+    path: '/manage-relationships',
     name: 'manage-relationships',
     component: ManageRelationships
   },
   {
-    path: '/mentoring/matching/home',
-    name: 'matching-home',
+    path: '/matching',
+    name: 'matching',
     component: MatchingHome
   },
   {
-    path: '/mentoring/matching/mentor-list',
+    path: '/mentor-matching',
     name: 'matching-mentor-list',
     component: MatchingMentorList
   },
   {
-    path: '/mentoring/matching/mentee-list',
+    path: '/mentee-matching',
     name: 'matching-mentee-list',
     component: MatchingMenteeList
   },
   {
-    path: '/mentoring/reporting',
+    path: '/mentoring-reporting',
     name: 'reporting',
     component: Reporting
   },
   {
-    path: '/mentoring/search',
+    path: '/mentoring-search',
     name: 'search',
     component: Search
   },
   {
-    path: '/profile/edit-profile',
+    path: '/edit-profile',
     name: 'edit-profile',
     component: EditProfile
   },
   {
-    path: '/profile/leaderboards',
+    path: '/leaderboards',
     name: 'leaderboards',
     component: Leaderboards
   },
   {
-    path: '/profile/metrics',
+    path: '/metrics',
     name: 'metrics',
     component: Metrics
   },
   {
-    path: '/profile/view-profile',
+    path: '/view-profile',
     name: 'view-profile',
     component: ViewProfile
   },
   {
-    path: '/social/home',
+    path: '/social-home',
     name: 'social',
     component: SocialHome
   },
   {
-    path: '/social/feed',
+    path: '/social-feed',
     name: 'feed',
     component: Feed
   },
   {
-    path: '/social/post',
+    path: '/social-post',
     name: 'post',
     component: Post
   },

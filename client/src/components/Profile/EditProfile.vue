@@ -1,74 +1,116 @@
 <template>
   <div class="container">
-      <div class="col-xs-8 text-center">
+    <div class="col-xs-12">
+      <div class="row text-center">
+        <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
         <br>
-        // Redirects to seperate profile picture change page. 
-        <img :src="profilePictureURL" id="profilePictureURL" @error="imageLoadError">
-        <br>
-        <h2> {{ firstName }} {{ lastName }}</h2>
-        <h3>@{{ userName }}</h3>
+        <h3> {{currentUser.firstName }} {{ currentUser.lastName }}</h3>
+        <h4> @{{ currentUser.userName }}</h4>
+        //Edit button that changes this the API route needs to pass the username as a parameter as well. 
+        //Because they need to be able to pass that as well. 
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="row text-center">
+        <h2 class="text-center">
+          <u> Profile Completeness </u>
+          <br>
+          <br>
+          <profile-completeness></profile-completeness>
+        </h2>
+        
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="row">
+        <h2 class="text-center">
+          <u> Areas of interest </u>
+        </h2>
+        <edit-areas-of-interest></edit-areas-of-interest>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="row">
+        <h2 class="text-center">
+          <u> Job History </u>
+        </h2>
+        <edit-areas-of-interest></edit-areas-of-interest>
+      </div>
+
+      <div class="col-xs-12">
         <div class="row">
-          <div class="col-xs-12">
-            //Edit Basic Details drop down menu.
-          </div>
-          <div class="col-xs-12">
-            //Edit Areas of Interest.
-          </div>
-          <div class="col-xs-12">
-            //Edit Job History.
-          </div>
+          <h2 class="text-center">
+            <u> Mentoring preferences </u>
+          </h2>
+          <edit-areas-of-interest></edit-areas-of-interest>
         </div>
       </div>
-      <div class="col-xs-4">
-        <h3> Tasks to complete </h3>
-        -- complete basic registration. 
-        -- complete areas of interest. 
-        -- complete job history 
-        -- complete education. 
-        -- upload a profile picture. 
-        -- set your mentoring preferences. 
-        -- set your mentee preferences. 
-        -- follow someone on social . 
-        -- like your first piece of content. 
-        -- Get your first Mentor. 
-        -- Get your first Mentee. 
-        -- Participate in your first path.
-        <h4> Profile completeness and a percentage bar. </h4> 
+
+      <div class="col-xs-12">
+        <div class="row">
+          <h2 class="text-center">
+            <u> Mentee preferences </u>
+          </h2>
+          <edit-areas-of-interest></edit-areas-of-interest>
         </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
+  import EditAreasOfInterest from './EditProfile/AreasOfInterest.vue'
+  import ProfileCompleteness from './EditProfile/ProfileCompleteness.vue'
+  import axios from 'axios'
   const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
-
   export default {
     data() {
       return {
-        _id: '',
-        userName: this.$store.state.user.authUser.userName,
-        firstName: this.$store.state.user.authUser.firstName,
-        lastName: this.$store.state.user.authUser.lastName,
+        currentUser: this.$store.state.user.authUser,
         profilePictureURL: getProfilePictureURL + this.$store.state.user.authUser._id,
-        profileImageLoaded: true
+        profileImageLoaded: true,
+        profileCompleteness: {}
       }
     },
     methods: {
       navigateTo(route) {
         this.$router.push(route)
       },
+      logout() {
+        this.$store
+          .dispatch('logout', {
+            _id: this._id
+          })
+          .catch(e => {
+            this.errorMessage = e.message
+          })
+      },
       imageLoadError() {
         this.profileImageLoaded = false
         console.log('User does not have a profile picture')
       }
+    },
+    beforeMount() {
+      var self = this
+      var userID = this.$store.state.user.authUser._id
+      const getProfileCompletenessURL = 'http://localhost:4000/get/profile-completeness/'
+      axios.get(getProfileCompletenessURL + userID).then(function (response) {
+        self.profileCompleteness = response.data
+      })
+    },
+    components: {
+      EditAreasOfInterest,
+      ProfileCompleteness
     }
   }
-
 </script>
-
 <style scoped>
-  #profilePictureURL {
-    width: 50px;
-    height: 50px;
+  #profilePictureAvatar {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
   }
 

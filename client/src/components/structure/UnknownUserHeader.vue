@@ -25,11 +25,11 @@
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a @click="navigateTo({ name : 'login'})">
-              <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+              <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Login</a>
           </li>
           <li>
             <a @click="navigateTo({ name : 'register'})">
-              <i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+              <i class="fas fa-user-plus" aria-hidden="true"></i> Register</a>
           </li>
           <!-- /.navbar-collapse -->
         </ul>

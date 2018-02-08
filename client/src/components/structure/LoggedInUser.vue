@@ -99,7 +99,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a @click="logout">
-                <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+                <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
             </li>
           </ul>
           <!-- /.navbar-collapse -->
@@ -115,7 +115,6 @@
   export default {
     data() {
       return {
-        _id: '',
         profilePictureURL: getProfilePictureURL + this.$store.state.user.authUser._id,
         profileImageLoaded: true
       }

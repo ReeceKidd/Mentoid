@@ -53,12 +53,15 @@ routes.post('/register', registerController.register)
 routes.get('/check/username/:username', registerController.checkUserName)
 routes.get('/check/email/:email', registerController.checkEmail)
 routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfInterest)
+routes.get('/get/areas-of-interest-names/:userID', registerController.getAreasOfInterestNames)
 routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 routes.post('/update/job-history', registerController.updateJobHistory)
 routes.post('/update/education', registerController.updateEducation)
 routes.post('/upload-profile-picture', upload.single('image'), registerController.uploadProfilePicture)
 routes.get('/get/profile-picture/:userID', registerController.getProfilePicture)
+routes.post('/update/mentor-preferences/:userID', registerController.updateMentorPreferences)
+routes.get('/get/profile-completeness/:userID', registerController.getProfileCompleteness)
 
 
 //https://medium.com/@antoinegrandiere/image-upload-and-moderation-with-vue-js-and-node-js-407fb5a1e0c0 Use this tutorial to add callback functions. 
