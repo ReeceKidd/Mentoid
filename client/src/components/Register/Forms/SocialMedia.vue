@@ -125,6 +125,7 @@
         axios.post(url, {
           _id: this.currentUserID,
           facebook: this.facebook,
+          instagram: this.instagram,
           twitter: this.twitter,
           linkedIn: this.linkedIn,
           snapchat: this.snapchat,
@@ -144,6 +145,23 @@
       navigateTo(route) {
         this.$router.push(route)
       }
+    },
+    beforeMount() {
+      var self = this
+      var userID = this.currentUserID
+      // Get users social media details
+      const getSocialMedia = 'http://localhost:4000/get/social-media/'
+      axios.get(getSocialMedia + userID).then(function (response) {
+        console.log(response)
+        self.facebook = response.data.facebook
+        self.twitter = response.data.twitter
+        self.instagram = response.data.instagram
+        self.linkedIn = response.data.linkedIn
+        self.snapchat = response.data.snapchat
+        self.youtube = response.data.youtube
+        self.medium = response.data.medium
+        self.website = response.data.website
+      })
     }
   }
 </script>

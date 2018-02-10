@@ -21,6 +21,8 @@ const socialMediaValidation = require('../../Validators/Registration/socialMedia
 
 module.exports = updateSocialMedia = (req, res) => {
 
+    console.log(req.body)
+
     /*
     Update social media does not require a check for undefined fields as all the information is optional.
     */

@@ -28,6 +28,7 @@ const User = new Schema({
   language: String,
   terms: Boolean,
   facebook: String,
+  instagram: String, 
   twitter: String,
   snapchat: String,
   linkedIn: String,

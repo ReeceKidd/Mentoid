@@ -3,6 +3,9 @@ module.exports = function socialMediaSanitization(body){
     body.facebook = body.facebook.trim()
     body.facebook = escape(body.facebook)
 
+    body.instagram = body.instagram.trim()
+    body.instagram = escape(body.instagram)
+
     body.twitter = body.twitter.trim()
     body.twitter = escape(body.twitter)
 

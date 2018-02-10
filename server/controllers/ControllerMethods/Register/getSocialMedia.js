@@ -69,9 +69,16 @@ module.exports = getSocialMedia = (req, res) => {
                 error: 'Server error'
             })
         } 
-    }).select('age -_id').then(user => {
+    }).select('facebook twitter instagram snapchat linkedIn website youtube medium -_id').then(user => {
         res.status(200).send({
-            age: user.age
+            facebook: user.facebook,
+            instagram: user.instagram,
+            twitter: user.twitter,
+            snapchat: user.snapchat,
+            linkedIn: user.linkedIn,
+            website: user.website, 
+            medium: user.medium,
+            youtube: user.youtube
         })
     })
 }

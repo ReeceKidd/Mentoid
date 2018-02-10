@@ -2,65 +2,72 @@
   <div class="container-fluid">
     <div class="col-xs-12">
       <div class="row text-center">
-        <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
+        <span v-if="profileImageLoaded">
+          <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
+          <div class="overlay"></div>
+          <div class="button">
+            <a href="#"> BUTTON </a>
+          </div>
+        </span>
+        <img src='../../assets/userAvatar.png' v-else id="profilePictureAvatar">
         <br>
         <h3> {{firstName }} {{ lastName }}</h3>
         <h4> @{{ currentUser.userName }}</h4>
-    </div>
-
-    <div class="col-xs-12">
-      <div class="row text-center">
-        <edit-social-media></edit-social-media>
-      </div>
-    </div>
-
-    <div class="col-xs-12">
-      <div class="row text-center">
-        <h2 class="text-center">
-          <u> Profile Completeness </u>
-          <br>
-          <br>
-          <profile-completeness></profile-completeness>
-        </h2>
-      </div>
-    </div>
-
-    <div class="col-xs-12">
-      <div class="row">
-        <h2 class="text-center">
-          <u> Areas of interest </u>
-        </h2>
-        <edit-areas-of-interest></edit-areas-of-interest>
-      </div>
-    </div>
-
-    <div class="col-xs-12">
-      <div class="row">
-        <h2 class="text-center">
-          <u> Job History </u>
-        </h2>
-        <edit-job-history></edit-job-history>
       </div>
 
       <div class="col-xs-12">
-        <div class="row">
+        <div class="row text-center">
+          <edit-social-media></edit-social-media>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="row text-center">
           <h2 class="text-center">
-            <u> Mentoring preferences </u>
+            <u> Profile Completeness </u>
+            <br>
+            <br>
+            <profile-completeness></profile-completeness>
           </h2>
-          <edit-mentor-preferences></edit-mentor-preferences>
         </div>
       </div>
 
       <div class="col-xs-12">
         <div class="row">
           <h2 class="text-center">
-            <u> Mentee preferences </u>
+            <u> Areas of interest </u>
           </h2>
-          <edit-mentee-preferences></edit-mentee-preferences>
+          <edit-areas-of-interest></edit-areas-of-interest>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="row">
+          <h2 class="text-center">
+            <u> Job History </u>
+          </h2>
+          <edit-job-history></edit-job-history>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="row">
+            <h2 class="text-center">
+              <u> Mentoring preferences </u>
+            </h2>
+            <edit-mentor-preferences></edit-mentor-preferences>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <div class="row">
+            <h2 class="text-center">
+              <u> Mentee preferences </u>
+            </h2>
+            <edit-mentee-preferences></edit-mentee-preferences>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -123,5 +130,6 @@
     height: 150px;
     border-radius: 50%;
   }
+  
 
 </style>
