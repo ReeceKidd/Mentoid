@@ -27,6 +27,13 @@ const User = new Schema({
   confirmPassword: String,
   language: String,
   terms: Boolean,
+  facebook: String,
+  twitter: String,
+  snapchat: String,
+  linkedIn: String,
+  medium: String,
+  youtube: String,
+  website: String,
   areasOfInterest: [{
     years: Number,
     value: String,
@@ -43,8 +50,7 @@ const User = new Schema({
     startDate: String,
     endDate: String,
     isWorkingHere: String,
-    experienceID: String,
-    numberOfYearsHere: this.endDate - this.startDate
+    experienceID: String
   }],
   education: [{
     degree: String,
@@ -77,6 +83,7 @@ const User = new Schema({
   profilePictureUploaded: Boolean,
   mentorPreferencesComplete: Boolean,
   menteePreferencesComplete: Boolean,
+  socialMediaComplete: Boolean,
   isUserLoggedIn: Boolean
 }, {
   timestamps: true

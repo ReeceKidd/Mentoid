@@ -57,7 +57,6 @@
   </div>
 </template>
 <script>
-  import EditAreasOfInterest from './EditProfile/AreasOfInterest.vue'
   import axios from 'axios'
   const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
   export default {
@@ -94,9 +93,6 @@
       axios.get(getProfileCompletenessURL + userID).then(function (response) {
         self.profileCompleteness = response.data
       })
-    },
-    components: {
-      EditAreasOfInterest
     }
   }
 </script>

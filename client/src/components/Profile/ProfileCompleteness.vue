@@ -3,9 +3,9 @@
     <div class="col-xs-12">
       <div class="row text-center">
         <p v-if="areasOfInterestRegistrationComplete" class="complete"> Update Areas of Interest  <i class="fas fa-check"></i></p>
-        <p v-else> <a @click="navigateTo('/register-areas-of-interest')"> Update your Mentee preferences </a> </p>
+        <p v-else> <a @click="navigateTo('/register-areas-of-interest')"> Update Areas of Interest </a> </p>
         <p v-if="jobHistoryRegistrationComplete" class="complete"> Update Job history <i class="fas fa-check"></i>   </p>
-        <p v-else><a @click="navigateTo('/register-areas-of-interest')"> Update your Mentee preferences </a> </p>
+        <p v-else><a @click="navigateTo('/register-areas-of-interest')"> Update Job History </a> </p>
         <p v-if="educationRegistrationComplete"> Update your education <i class="fas fa-check"></i></p>
         <p v-else><a @click="navigateTo('/register-areas-of-interest')"> Update your Mentee preferences </a> </p>
         <p v-if="profilePictureUploaded"> Update your job history <i class="fas fa-check"></i></p>
@@ -18,8 +18,6 @@
     </div>
   </div>
 </template>
-
-<script src="https://use.fontawesome.com/9026826244.js"></script>
 <script>
   import axios from 'axios'
   export default {

@@ -22,6 +22,7 @@ import RegisterBio from './components/Register/RegisterBio.vue'
 import RegisterEducation from './components/Register/RegisterEducation.vue'
 import MentorPreferences from './components/Register/MentorPreferences.vue'
 import MenteePreferences from './components/Register/MenteePreferences.vue'
+import SocialMediaDetails from './components/Register/SocialMedia.vue'
 
 import UnknownHome from './components/UnknownHome.vue'
 import Login from './components/Login.vue'
@@ -102,6 +103,11 @@ const routes = [
     path: '/mentee-preferences',
     name: 'mentee-preferences',
     component: MenteePreferences
+  },
+  {
+    path: '/social-media-details',
+    name: 'social-mendia-details',
+    component: SocialMediaDetails
   },
   {
     path: '/login',

@@ -50,6 +50,7 @@ routes.get('/admin/get-users', adminController.getUsers)
 
 //Register Routes
 routes.post('/register', registerController.register)
+routes.get('/get/basic-registration/:userID', registerController.getBasicRegistration)
 routes.get('/check/username/:username', registerController.checkUserName)
 routes.get('/check/email/:email', registerController.checkEmail)
 routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfInterest)
@@ -60,11 +61,12 @@ routes.post('/update/job-history', registerController.updateJobHistory)
 routes.post('/update/education', registerController.updateEducation)
 routes.post('/upload-profile-picture', upload.single('image'), registerController.uploadProfilePicture)
 routes.get('/get/profile-picture/:userID', registerController.getProfilePicture)
-routes.post('/update/mentor-preferences/:userID', registerController.updateMentorPreferences)
+routes.post('/update/mentor-preferences/', registerController.updateMentorPreferences)
 routes.get('/get/profile-completeness/:userID', registerController.getProfileCompleteness)
+routes.post('/update/social-media', registerController.updateSocialMedia)
+routes.get('/get/social-media/:userID', registerController.getSocialMedia)
 
-
-//https://medium.com/@antoinegrandiere/image-upload-and-moderation-with-vue-js-and-node-js-407fb5a1e0c0 Use this tutorial to add callback functions. 
+ 
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)
