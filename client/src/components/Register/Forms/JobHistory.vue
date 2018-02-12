@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    
+
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center">
         <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
@@ -11,85 +11,88 @@
     </div>
     <!-- End of Mobile Version of job history and buttons -->
 
-    <!-- Desktop version of form -->
+    <!-- Form -->
     <div class="row">
-      <form @submit.prevent="onSubmit">
 
-        <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
+      <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
 
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <h3>
-              <u>Experience {{ index + 1}} </u>
-            </h3>
-            <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
-              <label :for="experience.title">Title</label>
-              <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
-              <p v-if="!$v.experiences.$each[index].title.required && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title is required
-              </p>
-              <p v-if="!$v.experiences.$each[index].title.minLength && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title must be at least two characters.
-              </p>
-              <p v-if="!$v.experiences.$each[index].title.alphaAndWhitespace && $v.experiences.$each[index].title.$dirty" class="errorMessage">
-                Job title can only contain alphabetical and space characters.
-              </p>
-              <label :for="experience.company">Company</label>
-              <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
-              <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
-                Company is required
-              </p>
-              <div class="yearInputDesktop">
-                <label>Start Year</label>
-                <input type="text" :id="experience.startYear" @blur="$v.experiences.$each[index].startYear.$touch()" v-model="experience.startYear">
-              </div>
-              <p v-if="!$v.experiences.$each[index].startYear.required && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
-                The year you started is required.
-              </p>
-              <p v-if="!$v.experiences.$each[index].startYear.validYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
-                Your starting year must be in the following format: YYYY
-              </p>
-              <p v-if="!$v.experiences.$each[index].startYear.greaterThanCurrentYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
-                You cannot start in the future.
-              </p>
-              <label>Do you currently work here?</label>
-              <select :id="experience.isWorkingHere" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-              <p v-if="!$v.experiences.$each[index].isWorkingHere.required && $v.experiences.$each[index].isWorkingHere.$dirty" class="errorMessage">
-                You must specify if you are still working here.
-              </p>
-              <br>
-              <div v-if="experience.isWorkingHere === 'No'" class="yearInputDesktop">
-                <label>End Year</label>
-                <input type="text" :id="experience.endYear" @blur="$v.experiences.$each[index].endYear.$touch()" v-model="experience.endYear">
-              </div>
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <h3>
+            <u>Experience {{ index + 1}} </u>
+          </h3>
+          <div class="input" :class="{invalid: $v.experiences.$each[index].$error}">
+            <label :for="experience.title">Title</label>
+            <input type="text" :id="experience.title" @blur="$v.experiences.$each[index].title.$touch()" v-model="experience.title">
+            <p v-if="!$v.experiences.$each[index].title.required && $v.experiences.$each[index].title.$dirty" class="errorMessage">
+              Job title is required
+            </p>
+            <p v-if="!$v.experiences.$each[index].title.minLength && $v.experiences.$each[index].title.$dirty" class="errorMessage">
+              Job title must be at least two characters.
+            </p>
+            <p v-if="!$v.experiences.$each[index].title.alphaAndWhitespace && $v.experiences.$each[index].title.$dirty" class="errorMessage">
+              Job title can only contain alphabetical and space characters.
+            </p>
+            <label :for="experience.company">Company</label>
+            <input type="text" :id="experience.company" @blur="$v.experiences.$each[index].company.$touch()" v-model="experience.company">
+            <p v-if="!$v.experiences.$each[index].company.required && $v.experiences.$each[index].company.$dirty" class="errorMessage">
+              Company is required
+            </p>
+            <div class="yearInputDesktop">
+              <label :for="experience.startYear">Start Year</label>
+              <input type="text" :id="experience.startYear" @blur="$v.experiences.$each[index].startYear.$touch()" v-model="experience.startYear">
             </div>
+            <p v-if="!$v.experiences.$each[index].startYear.required && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
+              The year you started is required.
+            </p>
+            <p v-if="!$v.experiences.$each[index].startYear.validYear && $v.experiences.$each[index].startYear.$dirty" class="errorMessage">
+              Your starting year must be in the following format: YYYY
+            </p>
+            <label>Do you currently work here?</label>
+            <select :id="experience.isWorkingHere" @change="experience.endYear = ''" @blur="$v.experiences.$each[index].isWorkingHere.$touch()" v-model="experience.isWorkingHere">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            <p v-if="!$v.experiences.$each[index].isWorkingHere.required && $v.experiences.$each[index].isWorkingHere.$dirty" class="errorMessage">
+              You must specify if you are still working here.
+            </p>
             <br>
-            <div class="hidden-xs">
-              <button @click="onDeleteExperiences(experience.id)" class="btn-danger btn btn-sm">Delete experience</button>
-              <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+            <div v-if="experience.isWorkingHere === 'No'" class="yearInputDesktop">
+              <label>End Year</label>
+              <input type="text" :id="experience.endYear" v-model="experience.endYear">
             </div>
           </div>
+          <br>
+          <div class="hidden-xs">
+            <button @click="onDeleteExperiences(experience.experienceID)" class="btn-danger btn btn-sm">Delete experience</button>
+            <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+          </div>
         </div>
-      </form>
+      </div>
     </div>
-    <!-- End of desktop version of form -->
+    <!-- End of Form -->
+    <br>
 
-    <!-- Desktop error messages -->
+    <!-- Error messages -->
     <div class="row text-center">
       <p v-if="!$v.experiences.required" class="errorMessage"> Please add at least one experience or click "Never had a job" </p>
     </div>
 
     <div class="row text-center">
-      <p class="errorMessage" v-if="successMessage !== null">{{successMessage}}</p>
-    </div>
-
-     <div class="row">
       <div class="col-xs-12">
         <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
       </div>
     </div>
+    <!-- End of error messages -->
+
+    <!-- Success Message -->
+    <div class="row">
+      <div class="text-center">
+        <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
+      </div>
+    </div>
+    <!-- End of success message -->
+
+    <br>
 
     <div class="row text-center">
       <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Submit </button>
@@ -134,7 +137,7 @@
     if (parseInt(year) > currentYear) return false
     return true
   }
-
+  
   export default {
     data() {
       return {
@@ -144,6 +147,44 @@
         neverHadAJob: null,
         errorMessage: null,
         successMessage: null
+      }
+    },
+    methods: {
+      onAddExperience() {
+        const newExperience = {
+          experienceID: this.experiences.length,
+          title: '',
+          company: '',
+          isWorkingHere: '',
+          startYear: '',
+          endYear: ''
+        }
+        this.experiences.push(newExperience)
+      },
+      onDeleteExperiences(id) {
+        this.experiences = this.experiences.filter(experience => experience.experienceID !== id)
+      },
+      navigateTo(route) {
+        this.$router.push(route)
+      },
+      onSubmit() {
+        const url = 'http://localhost:4000/update/job-history/'
+        var that = this
+        axios.post(url, {
+          experiences: this.experiences,
+          _id: this.currentUser._id,
+          age: this.age
+        }).then(function (response) {
+          that.successMessage = 'Updated job history successfully.'
+          setTimeout(() => {
+            that.successMessage = null
+          }, 3000)
+        }).catch(error => {
+          this.errorMessage = error.response.data.message
+          setTimeout(() => {
+            this.errorMessage = null
+          }, 3000)
+        })
       }
     },
     validations: {
@@ -166,49 +207,18 @@
             required,
             validYear,
             greaterThanCurrentYear
-          },
-          endYear: {}
+          }
         }
-      }
-    },
-    methods: {
-      onAddExperience() {
-        const newExperience = {
-          experienceID: this.experiences.length.toString(),
-          title: '',
-          company: '',
-          isWorkingHere: '',
-          startYear: '',
-          endYear: ''
-        }
-        this.experiences.push(newExperience)
-      },
-      onDeleteExperiences(id) {
-        this.experiences = this.experiences.filter(experience => experience.id !== id)
-        console.log('What happens here')
-      },
-      navigateTo(route) {
-        this.$router.push(route)
-      },
-      onSubmit() {
-        const url = 'http://localhost:4000/update/job-history/'
-        axios.post(url, {
-          experiences: this.experiences,
-          _id: this.currentUser._id,
-          age: this.age
-        }).then(function (response) {
-          this.successMessage = response
-        }).catch(error => {
-          this.errorMessage = error.response.data.message
-          setTimeout(() => {
-            this.errorMessage = null
-          }, 3000)
-        })
       }
     },
     beforeMount() {
       var self = this
       var userID = this.$store.state.user.authUser._id
+      // Get the users experience history
+      const getJobHistory = 'http://localhost:4000/get/job-history/'
+      axios.get(getJobHistory + userID).then(function (response) {
+        self.experiences = response.data.jobHistory
+      })
       // Get the users age
       const getAgeUrl = 'http://localhost:4000/get/age/'
       axios.get(getAgeUrl + userID).then(function (response) {
@@ -251,6 +261,10 @@
 
   .errorMessage {
     color: red;
+  }
+
+  .successMessage {
+    color: green;
   }
 
   .input.yearInputDesktop {

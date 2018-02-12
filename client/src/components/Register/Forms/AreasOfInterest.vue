@@ -179,7 +179,6 @@
             that.successMessage = null
           }, 3000)
         }).catch(error => {
-          console.log(error)
           this.errorMessage = error.response.data.message
           setTimeout(() => {
             this.errorMessage = null

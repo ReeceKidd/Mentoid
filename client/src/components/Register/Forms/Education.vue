@@ -317,7 +317,6 @@
       // Get the users education history
       const getEducationHistory = 'http://localhost:4000/get/education-history/'
       axios.get(getEducationHistory + userID).then(function (response) {
-        console.log(response)
         self.education = response.data.education
       })
       // Get the users age

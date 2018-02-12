@@ -58,6 +58,7 @@ routes.get('/get/areas-of-interest-names/:userID', registerController.getAreasOf
 routes.get('/get/age/:userID', registerController.getUsersAge)
 routes.post('/update/areas-of-interest', registerController.updateAreasOfInterest)
 routes.post('/update/job-history', registerController.updateJobHistory)
+routes.get('/get/job-history/:userID', registerController.getJobHistory)
 routes.post('/update/education', registerController.updateEducation)
 routes.get('/get/education-history/:userID', registerController.getEducationHistory)
 routes.post('/upload-profile-picture', upload.single('image'), registerController.uploadProfilePicture)

@@ -48,8 +48,8 @@ const User = new Schema({
   jobHistory: [{
     title: String,
     company: String,
-    startDate: String,
-    endDate: String,
+    startYear: String,
+    endYear: String,
     isWorkingHere: String,
     experienceID: String
   }],

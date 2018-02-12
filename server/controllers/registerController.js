@@ -10,6 +10,7 @@ registerController.getAreasOfInterestNames = require('./ControllerMethods/Regist
 registerController.getUsersAge = require('./ControllerMethods/Register/getUsersAge')
 registerController.updateAreasOfInterest = require('./ControllerMethods/Register/updateAreasOfInterest')
 registerController.updateJobHistory = require('./ControllerMethods/Register/updateJobHistory')
+registerController.getJobHistory = require('./ControllerMethods/Register/getJobHistory')
 registerController.updateEducation = require('./ControllerMethods/Register/updateEducation')
 registerController.getEducationHistory = require('./ControllerMethods/Register/getEducationHistory')
 registerController.uploadProfilePicture = require('./ControllerMethods/Register/uploadProfilePicture')

@@ -330,4 +330,22 @@
     cursor: not-allowed;
   }
 
+  .el-checkbox.is-bordered.el-checkbox--medium {
+    padding: 7px 20px 7px 10px;
+    border-radius: 4px;
+    height: 36px;
+    background-color: #104E8B;
+    color: white;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: black;
+    border-color: black;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: red;
+    border-color: #409EFF;
+}
+
 </style>

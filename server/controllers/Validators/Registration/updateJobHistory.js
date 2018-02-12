@@ -204,63 +204,45 @@ module.exports = function updateJobHistoryValidation(req) {
 
 
     //End Year
-    //Only validate end year if the user is no longer working there. 
-    for (var y = 0; y < req.body.experiences.length; y++) {
+    req.check('experiences', 'End year must be in the following format: YYYY').custom(experiences => {
 
-        if (req.body.experiences[y].isWorkingHere === 'No') {
-
-            req.check('experiences', 'End year must be in the following format: YYYY').custom(experiences => {
-
-                for(var w = 0; w < experiences.length; w++){
-                    if (!validYear(experiences[w].endYear)) {
-                        return false
-                    }
+        for (var x = 0; x < experiences.length; x++) {
+            if (experiences[x].isWorkingHere === 'No') {
+                if (!validYear(experiences[x].endYear)) {
+                    return false
                 }
-                
-                return true
-            })
+            }
+        }
+        return true
+    })
 
-            req.check('experiences', 'End year cannot be greater than current year: ' + currentYear).custom(experiences => {
 
-                for(var w = 0; w < experiences.length; w++){
-                    if (!greaterThanCurrentYear(experiences[w].endYear)) {
-                        return false
-                    }
+    req.check('experiences', 'End year cannot be before the starting year').custom(experiences => {
+        for (var x = 0; x < experiences.length; x++) {
+            if (experiences[x].isWorkingHere === 'No') {
+                if (experiences[x].endYear < experiences[x].startYear) {
+                    return false
                 }
-                
-                return true
-            })
-            req.check('experiences', 'End year cannot be before the starting year').custom(experiences => {
+            }
+        }
+        return true
+    })
+    //Checks that the total working time is possible given the users age. 
+    req.check('experiences', 'It is not possible that you worked here for this long as you are ' + userAge + ' years old').custom(experiences => {
 
-                for(var w = 0; w < experiences.length; w++){
-                    console.log(experiences[w])
-                    if (experiences[w].endYear < experiences[w].startYear) {
-                        return false
-                    }
-                }
-                
-                return true
-            })
-
-            //Checks that the total working time is possible given the users age. 
-            req.check('experiences', 'It is not possible that you worked here for this long as you are ' + userAge + ' years old').custom(experiences => {
-
-                
-                for(var w = 0; w < experiences.length; w++){
-                    var totalWorkingTime = experiences[w].endYear - experiences[w].startYear
+        for (var x = 0; x < experiences.length; x++) {
+            if (experiences[x].isWorkingHere === 'No') {
+                var totalWorkingTime = experiences[x].endYear - experiences[x].startYear
 
                 if (totalWorkingTime > req.body.age) {
                     return false
                 }
-                }
-                
-                return true
-
-            })
-
+            }
         }
 
-    }
+        return true
+
+    })
 
     var errors = req.validationErrors(true)
 

@@ -4,10 +4,10 @@
       <div class="row text-center">
         <p v-if="areasOfInterestRegistrationComplete" class="complete"> Update Areas of Interest  <i class="fas fa-check"></i></p>
         <p v-else> <a @click="navigateTo('/register-areas-of-interest')"> Update Areas of Interest </a> </p>
+        <p v-if="educationRegistrationComplete" class="complete"> Update your education <i class="fas fa-check"></i></p>
+        <p v-else><a @click="navigateTo('/register-education')"> Update Education </a> </p>
         <p v-if="jobHistoryRegistrationComplete" class="complete"> Update Job history <i class="fas fa-check"></i>   </p>
         <p v-else><a @click="navigateTo('/register-areas-of-interest')"> Update Job History </a> </p>
-        <p v-if="educationRegistrationComplete"> Update your education <i class="fas fa-check"></i></p>
-        <p v-else><a @click="navigateTo('/register-areas-of-interest')"> Update your Mentee preferences </a> </p>
         <p v-if="profilePictureUploaded"> Update your job history <i class="fas fa-check"></i></p>
         <p v-else> <a @click="navigateTo('/register-areas-of-interest')"> Update your Mentee preferences </a> </p>
         <p v-if="mentorPreferencesComplete"> Mentor Preferences <i class="fas fa-check"></i></p>

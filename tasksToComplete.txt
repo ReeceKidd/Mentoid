@@ -161,6 +161,16 @@ edit profile page. (This will be done via emits need to look up youtube tutorial
 2) Should try to refactor and combine the code so it is in the same format as the basic registration where there isnt a seperate code for the mobile
 and desktop versions. 
 
+Plan for 11/02/2018
+
+1) Figure out how to emit from child component in VueJS. 
+2) Add success messages for the current forms. 
+2) Fix the job history and education delete so that it works. 
+3) Complete the edit profile page. 
+
+Plan for 12/02/2018
+
+1) Figure out what the job history bug is that isn't allowing job history to pass. 
 
 
 
