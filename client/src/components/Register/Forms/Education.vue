@@ -310,14 +310,12 @@
       },
       onSubmit() {
         const url = 'http://localhost:4000/update/education/'
-        var that = this
         axios.post(url, {
           education: this.education,
           _id: this.currentUser._id,
           age: this.age
         }).then(function (response) {
-          console.log(response)
-          that.navigateTo('/upload-profile-picture')
+          this.successMessage = response
         }).catch(error => {
           this.errorMessage = error.response.data.message
           setTimeout(() => {

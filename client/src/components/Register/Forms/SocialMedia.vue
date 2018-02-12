@@ -121,7 +121,6 @@
     methods: {
       onSubmit() {
         const url = 'http://localhost:4000/update/social-media/'
-        var that = this
         axios.post(url, {
           _id: this.currentUserID,
           facebook: this.facebook,
@@ -133,8 +132,7 @@
           youtube: this.youtube,
           website: this.website
         }).then(function (response) {
-          console.log(response.data.message)
-          that.navigateTo('/success')
+          this.successMessage = response
         }).catch(error => {
           this.errorMessage = error.response.data.message
           setTimeout(() => {
@@ -152,7 +150,6 @@
       // Get users social media details
       const getSocialMedia = 'http://localhost:4000/get/social-media/'
       axios.get(getSocialMedia + userID).then(function (response) {
-        console.log(response)
         self.facebook = response.data.facebook
         self.twitter = response.data.twitter
         self.instagram = response.data.instagram

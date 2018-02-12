@@ -1,13 +1,9 @@
 <template>
   <div class="container-fluid">
-    <div class="col-xs-12">
+    <div class="col-xs-12" id="profileImageBorder">
       <div class="row text-center">
         <span v-if="profileImageLoaded">
           <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
-          <div class="overlay"></div>
-          <div class="button">
-            <a href="#"> BUTTON </a>
-          </div>
         </span>
         <img src='../../assets/userAvatar.png' v-else id="profilePictureAvatar">
         <br>
@@ -40,6 +36,17 @@
           <edit-areas-of-interest></edit-areas-of-interest>
         </div>
       </div>
+
+      <div class="col-xs-12">
+        <div class="row">
+          <h2 class="text-center">
+            <u> Education History </u>
+          </h2>
+          <edit-education-history></edit-education-history>
+        </div>
+      </div>
+
+
 
       <div class="col-xs-12">
         <div class="row">
@@ -130,6 +137,14 @@
     height: 150px;
     border-radius: 50%;
   }
-  
+
+  #profilePictureAvatar:hover {
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+  }
+
 
 </style>

@@ -18,7 +18,6 @@
 
 <script>
   import SocialMediaForm from './Forms/SocialMedia.vue'
-
   export default {
     methods: {
       navigateTo(route) {

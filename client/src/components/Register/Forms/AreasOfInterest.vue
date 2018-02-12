@@ -2,12 +2,12 @@
   <!-- This component is different on XS devices -->
  
     <div class="container-fluid">
-      <!-- This is the desktop version of this registration section.  -->
 
-      <div class="row hidden-xs text-center">
+      <div class="row text-center">
         <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
       </div>
 
+      <!-- Desktop version -->
       <br class="hidden-xs">
 
       <div class="row hidden-xs" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
@@ -50,32 +50,9 @@
           <br>
           </div>
       </div>
-
-      <br v-if="errorMessage !== null" class="hidden-xs">
-
-      <div class="row hidden-xs">
-        <div class="text-center">
-          <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
-        </div>
-      </div>
-
-      <div class="row hidden-xs">
-        <div class="text-center">
-          <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
-        </div>
-      </div>
-
-      <br class="hidden-xs">
       <!-- End of desktop version -->
 
       <!-- Mobile version  -->
-
-      <br class="visible-xs">
-
-      <div class="row visible-xs text-center">
-        <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
-      </div>
-
       <br class="visible-xs">
       <div class="row visible-xs text-center" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
         <div class="col-xs-12">
@@ -119,29 +96,35 @@
           <button @click="onAddAreaOfInterest" class="btn btn-success btn-sm">Add Another Interest</button>
           </div>
       </div>
+      <!-- End of mobile section -->
       
-      <br v-if="errorMessage !== null" class="visible-xs">
+      <br v-if="errorMessage !== null">
+      <br v-if="successMessage !== null">
 
-      <div class="row visible-xs">
-        <div class="col-xs-10 col-xs-offset-1">
+      <div class="row">
+        <div class="text-center">
           <p v-if="!$v.areasOfInterest.required" class="errorMessage"> Please add at least one area of interest. </p>
         </div>
       </div>
 
-      <div class="row visible-xs">
-        <div class="col-xs-10 col-xs-offset-1">
+      <div class="row">
+        <div class="text-center">
           <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
         </div>
       </div>
 
-      <br class="visible-xs">
+      <div class="row">
+        <div class="text-center">
+          <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
+        </div>
+      </div>
+
+      <br>
       <!-- End of mobile section -->
 
       <div class="row text-center">
         <button class="btn btn-lg btn-primary" :disabled="$v.areasOfInterest.$invalid" @click="onSubmit"> Update Areas Of Interest</button>
       </div>
-
-
     </div>
 
 </template>
@@ -173,6 +156,7 @@
         areasOfInterest: [],
         currentUser: this.$store.state.user.authUser,
         errorMessage: null,
+        successMessage: null,
         age: null,
         areasOfInterestRegistrationComplete: null
       }
@@ -183,16 +167,19 @@
         for (var x = 0; x < this.areasOfInterest.length; x++) {
           this.areasOfInterest[x].years = parseInt(this.areasOfInterest[x].years)
         }
-        const url = 'http://localhost:4000/update/areas-of-interest/'
         var that = this
+        const url = 'http://localhost:4000/update/areas-of-interest/'
         axios.post(url, {
           areasOfInterest: this.areasOfInterest,
           _id: this.currentUser._id,
           age: this.age
         }).then(function (response) {
-          console.log(response.data.message)
-          that.navigateTo('/register-job-history')
+          that.successMessage = 'Updated areas of interest successfully.'
+          setTimeout(() => {
+            that.successMessage = null
+          }, 3000)
         }).catch(error => {
+          console.log(error)
           this.errorMessage = error.response.data.message
           setTimeout(() => {
             this.errorMessage = null
@@ -262,6 +249,10 @@
 
   .errorMessage {
     color: red;
+  }
+
+  .successMessage {
+    color: green;
   }
 
   #yearsOfExperienceDesktop input {

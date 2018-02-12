@@ -149,16 +149,19 @@ Need to seperate the current registation into seperate components, the problem n
 
 Plan for 10/02/2018
 
-1) Social Media section need to post the various elements to the database and then retreive them as well on page load. 
-2) Need to get the local versions of the fonts used, and the bootstrap javascipt so that it works offline. 
-3) On the edit profile page need to add an if statement for when the user does not have a profile picture on their profile. 
+1) Social Media section need to post the various elements to the database and then retreive them as well on page load. (completed)
+2) On the edit profile page need to add an if statement for when the user does not have a profile picture on their profile. (completed)
 
 //Issue is that I will not be able to update as it is navigating to another page. Need a way to communicate with the component. 
 
 1) Need to sepeare the different sections of the forms into there own components so I can use them for the edit profile section 
-   as well. 
+   as well. (completed)
+2) Need to add success messages to the different components and figure out how to redirect the users without having them redirect in the 
+edit profile page. (This will be done via emits need to look up youtube tutorial how to do this.)
 2) Should try to refactor and combine the code so it is in the same format as the basic registration where there isnt a seperate code for the mobile
 and desktop versions. 
+
+
 
 
 
