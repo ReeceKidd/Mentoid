@@ -2,28 +2,15 @@
   <div class="container">
     <!-- This component is different depending on whether it is viewed in mobile or on desktop -->
 
-    <div class="row hidden-xs">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center col-xs-12">
         <button @click="onAddEducation" class="btn btn-success">Add Education</button>
         <button @click="onSubmit" class="btn btn-danger" v-if="education.length === 0"> Skip</button>
       </div>
     </div>
-    <!-- End of desktop version -->
-
-    <div class="row visible-xs">
-      <div class="col-xs-12 text-center">
-        <button @click="onAddEducation" class="btn btn-success">Add Education</button>
-        <br>
-        <br>
-        <button @click="onSubmit" class="btn btn-danger" v-if="education.length === 0"> Skip </button>
-      </div>
-    </div>
-    <!-- End of Mobile Version of job history and buttons -->
 
     <!-- Desktop version of form -->
     <div class="row hidden-xs">
-      <form @submit.prevent="onSubmit">
-
         <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -89,20 +76,18 @@
               </div>
               <br>
               <div class="hidden-xs">
-                <button @click="onDeleteEducation(currentEducation.id)" class="btn-danger btn btn-sm">Delete Current Education</button>
-                <button @click="onAddEducation" class="btn btn-success btn-sm">Add Education</button>
+                <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-sm">Delete Current Education</button>
+                <button @click="onAddEducation()" class="btn btn-success btn-sm">Add Education</button>
               </div>
             </div>
           </div>
         </div>
-      </form>
     </div>
     <!-- End of desktop version of form -->
 
     <!-- Mobile version of form -->
     <div class="row visible-xs">
-      <form @submit.prevent="onSubmit">
-
+    
         <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
 
           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -167,41 +152,38 @@
             </div>
             <br>
             <div class="visible-xs">
-              <button @click="onDeleteEducation(currentEducation.id)" class="btn-danger btn btn-sm">Delete Current Education</button>
+              <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-sm">Delete Current Education</button>
               <br>
               <br>
-              <button @click="onAddEducation" class="btn btn-success btn-sm">Add Education</button>
+              <button @click="onAddEducation()" class="btn btn-success btn-sm">Add Education</button>
             </div>
           </div>
         </div>
-      </form>
     </div>
     <!-- End of mobile job history form -->
     <br>
 
-    <!-- Desktop error messages -->
-    <div class="row hidden-xs text-center">
-      <p v-if="!$v.education.required" class="errorMessage"> Please add at least one educational experience or click no education </p>
-    </div>
-
-    <div class="row hidden-xs text-center">
-      <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
-    </div>
-    <!-- End of desktop error messages -->
-
-    <!-- Mobile error messages -->
-    <div class="row visible-xs">
-      <div class="col-xs-12">
+    <!-- Error messages -->
+    <div class="row">
+      <div class="text-center">
         <p v-if="!$v.education.required" class="errorMessage"> Please add at least one educational experience or click skip. </p>
       </div>
     </div>
 
-    <div class="row visible-xs">
-      <div class="col-xs-12">
+    <div class="row">
+      <div class="text-center">
         <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
       </div>
     </div>
-    <!-- End of mobile error messages -->
+    <!-- Error messages -->
+
+    <!-- Success message -->
+    <div class="row">
+      <div class="text-center">
+        <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
+      </div>
+    </div>
+    <!-- End of success message -->
 
     <br>
 
@@ -256,10 +238,49 @@
         currentUser: this.$store.state.user.authUser,
         age: null,
         noEducation: null,
-        errorMessage: null
+        errorMessage: null,
+        successMessage: null
       }
     },
-    validations: {
+    methods: {
+      onAddEducation() {
+        const newEducation = {
+          educationID: this.education.length,
+          school: '',
+          degree: '',
+          fieldOfStudy: '',
+          startYear: '',
+          endYear: ''
+        }
+        this.education.push(newEducation)
+      },
+      navigateTo(route) {
+        this.$router.push(route)
+      },
+      onSubmit() {
+        const url = 'http://localhost:4000/update/education/'
+        var that = this
+        axios.post(url, {
+          education: this.education,
+          _id: this.currentUser._id,
+          age: this.age
+        }).then(function (response) {
+          that.successMessage = 'Updated education history successfully.'
+          setTimeout(() => {
+            that.successMessage = null
+          }, 3000)
+        }).catch(error => {
+          this.errorMessage = error.response.data.message
+          setTimeout(() => {
+            this.errorMessage = null
+          }, 3000)
+        })
+      },
+      onDeleteEducation(id) {
+        this.education = this.education.filter(currentEducation => currentEducation.educationID !== id)
+      }
+    },
+     validations: {
       education: {
         required,
         $each: {
@@ -288,40 +309,6 @@
             validYear
           }
         }
-      }
-    },
-    methods: {
-      onAddEducation() {
-        const newEducation = {
-          educationID: this.education.length.toString(),
-          school: '',
-          degree: '',
-          fieldOfStudy: '',
-          startYear: '',
-          endYear: ''
-        }
-        this.education.push(newEducation)
-      },
-      onDeleteEducation(id) {
-        this.education = this.education.filter(currentEducation => currentEducation.id !== id)
-      },
-      navigateTo(route) {
-        this.$router.push(route)
-      },
-      onSubmit() {
-        const url = 'http://localhost:4000/update/education/'
-        axios.post(url, {
-          education: this.education,
-          _id: this.currentUser._id,
-          age: this.age
-        }).then(function (response) {
-          this.successMessage = response
-        }).catch(error => {
-          this.errorMessage = error.response.data.message
-          setTimeout(() => {
-            this.errorMessage = null
-          }, 3000)
-        })
       }
     },
     beforeMount() {
@@ -369,6 +356,10 @@
 
   .errorMessage {
     color: red;
+  }
+
+  .successMessage {
+    color: green;
   }
 
   .input.yearInputDesktop {
