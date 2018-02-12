@@ -26,6 +26,8 @@ const updateEducationValidation = require('../../Validators/Registration/updateE
 
 module.exports = updateEducation = (req, res) => {
 
+    console.log(req.body)
+
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateEducationFields(req.body)
 
@@ -36,11 +38,12 @@ module.exports = updateEducation = (req, res) => {
         })
     }
 
+    
     //Checks that experiences array only contains title, company, experienceID, startDate, endDate and isWorkingHere. 
     var unwantedArrayField = checkUpdateEducationArrayFields(req.body.education)
 
     if (unwantedArrayField) {
-        
+        console.log(unwantedArrayField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
