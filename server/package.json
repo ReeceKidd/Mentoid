@@ -16,6 +16,7 @@
     "bcryptjs": "^2.4.3",
     "bluebird": "*",
     "body-parser": "*",
+    "cheerio": "^1.0.0-rc.2",
     "config": "*",
     "connect-flash": "*",
     "cookie-parser": "^1.4.1",
@@ -27,6 +28,8 @@
     "express-session": "^1.15.6",
     "express-validator": "^4.3.0",
     "fs": "0.0.1-security",
+    "jquery": "^3.3.1",
+    "jsdom": "^11.6.2",
     "jsonwebtoken": "^8.1.0",
     "mongo-sanitize": "^1.0.0",
     "mongodb": "*",
@@ -37,7 +40,8 @@
     "passport": "*",
     "passport-http": "*",
     "passport-jwt": "^3.0.1",
-    "passport-local": "*"
+    "passport-local": "*",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",

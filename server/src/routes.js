@@ -78,7 +78,8 @@ routes.post('/login', userController.login)
 routes.get('/logout/:userID', userController.logout)
 
 //Testing Routes 
-routes.get('/get-single-user-ID', testController.getSingleUserID)
+routes.get('/get-single-user-ID', testController.getSingleUserID) //This reveals far too much information
+routes.get('/get/userID/:userName', testController.getUserIDFromUserName)
 
 //Routing Routes
 routes.get('/get/basic-registration-complete/:userID', routingController.getBasicRegistrationCompleteValue)

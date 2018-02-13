@@ -13,8 +13,29 @@ testController.getSingleUserID = (req, res) => {
         res.status(200)
         res.send(userID)
     });
-}
+};
 
+testController.getUserIDFromUserName = (req, res) => {
+    
+    
+    const userName = req.params.userName
 
+    var query = {
+        'userName': userName
+    }
+    User.findOne(query, function (err, user) {
+        if (err) {
+            res.status(500)
+            res.send({
+                message: 'Could not get userID',
+                error: 'Server error'
+            })
+        }
+    }).select('_id').then(user => {
+        res.status(200).send({
+            userID: user._id
+        })
+    })
+};
 
-module.exports = testController
+module.exports = testController;

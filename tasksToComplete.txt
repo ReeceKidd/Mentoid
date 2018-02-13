@@ -187,5 +187,5 @@ Fake Data (1 Hour)
 //Come up with a route that allows me to upload an entire user
 //Come up with the various arrays and json data that can be used to retrieve the data and put it in an object. 
 
-
+Install JQuery and then parse the html that has been received. 
 

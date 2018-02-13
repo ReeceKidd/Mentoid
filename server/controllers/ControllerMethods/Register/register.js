@@ -49,6 +49,8 @@ const asyncVerify = token => {
 
 module.exports = register = (req, res) => {
 
+    console.log(req.body)
+
     var undefinedFields = checkUndefinedFields(req.body, [
         'firstName',
         'lastName',
@@ -62,6 +64,7 @@ module.exports = register = (req, res) => {
     ])
 
     if (undefinedFields) {
+        console.log(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
