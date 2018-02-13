@@ -172,8 +172,20 @@ Plan for 12/02/2018
 
 1) Figure out what the job history bug is that isn't allowing job history to pass. 
 
+Plan for 13/02/2018
 
+10 mins (Complete the Mentee Preferences section) (Complete)
 
+//End of day tasks for when I'm abit stupider
+Add all the validation for Mentee and Mentor preferences. 
+Fix CSS issue with the colors used in the checkbox. 
+Add drop down menus for Edit profile page to make it smaller and more organized. 
+Fix registration section so there is a forward and back button on every page of registation. 
+
+Fake Data (1 Hour)
+
+//Come up with a route that allows me to upload an entire user
+//Come up with the various arrays and json data that can be used to retrieve the data and put it in an object. 
 
 
 
