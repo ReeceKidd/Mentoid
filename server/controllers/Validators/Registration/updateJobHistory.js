@@ -76,7 +76,7 @@ module.exports = function updateJobHistoryValidation(req) {
             if (typeof experiences[x].title !== 'string') {
                 return false
             }
-            var match = experiences[x].title.match(/^[A-Za-z\s]+$/)
+            var match = experiences[x].title.match(/^[A-Za-z\s\,]+$/)
             if (match === undefined) {
                 return false
             }
@@ -89,7 +89,6 @@ module.exports = function updateJobHistoryValidation(req) {
     req.check('experiences', 'Experience titles must be at least two characters long').custom(experiences => {
 
         for (var x = 0; x < experiences.length; x++) {
-            console.log(experiences[x].title.length)
             if (experiences[x].title.length < 2) {
                 return false
             }
@@ -117,7 +116,7 @@ module.exports = function updateJobHistoryValidation(req) {
     })
     req.check('experiences', 'Experience companies can only contain letters, numbers and white space').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
-            var match = experiences[x].company.match(/^[a-z\d\-_\s]+$/i)
+            var match = experiences[x].company.match(/^[a-z\d\,\.\-_\s]+$/i)
             if (match === undefined) {
                 return false
             }

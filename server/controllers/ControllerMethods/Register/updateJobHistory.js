@@ -80,6 +80,7 @@ module.exports = updateJobHistory = (req, res) => {
     var validationError = updateJobHistoryValidation(req)
 
     if (validationError) {
+        console.log(validationError)
         return res.status(600).send({
             error: 'Validation failure',
             message: validationError

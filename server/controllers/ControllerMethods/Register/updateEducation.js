@@ -26,8 +26,6 @@ const updateEducationValidation = require('../../Validators/Registration/updateE
 
 module.exports = updateEducation = (req, res) => {
 
-    console.log(req.body)
-
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateEducationFields(req.body)
 
@@ -84,7 +82,6 @@ module.exports = updateEducation = (req, res) => {
     var validationError = updateEducationValidation(req)
 
     if (validationError) {
-        console.log(validationError)
         return res.status(600).send({
             error: 'Validation failure',
             message: validationError

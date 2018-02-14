@@ -142,7 +142,7 @@
         checkAllLanguages: false,
         checkedLanguages: [],
         isIndeterminateLanguage: true,
-        educationLevel: ['Any', 'No education', 'High School', 'Vocational', 'Bachelors', 'Masters', 'PHD'],
+        educationLevel: ['No education', 'High School', 'Vocational', 'Bachelors', 'Masters', 'PHD'],
         checkAllEducation: false,
         checkedEducation: [],
         isIndeterminateEducation: true,
