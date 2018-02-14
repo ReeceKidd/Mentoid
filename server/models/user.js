@@ -61,17 +61,19 @@ const User = new Schema({
     endYear: String,
     educationID: String
   }],
-  areasOfInterestMentoring: [],
-  prefferedMentoringFormats: [],
-  maximumTravelDistance: String,
-  mentoringLanguages: [],
-  prefferedEducationMentoring: [],
-  minimumAgeMentoring: String,
-  maximumAgeMentoring: String,
+  mentorPreferences: {
+    mentoringAreasOfInterest: [],
+    prefferedMentoringFormats: [],
+    maximumTravelDistanceKM: String,
+    mentoringLanguages: [],
+    prefferedEducation: [],
+    minimumAge: String,
+    maximumAge: String
+  },
   menteePreferences: {
     areasOfInterest: [],
     prefferedMentoringFormats: [],
-    maximumTravelDistance: String,
+    maximumTravelDistanceKM: String,
     mentoringLanguages: [],
     prefferedEducation: [],
     minimumAge: String,

@@ -3,27 +3,16 @@ var User = require('../../../models/user')
 //Checks all necessary fields are defined. 
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
-//Checks all objects inside an array have the necessary fields. 
-const checkUndefinedFieldsArray = require('../../UndefinedCheckers/array')
-
 //Sanitizes different requests
 const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/updateMentorPreferences')
 
 module.exports = updateMentorPreferences = (req, res) => {
 
-    console.log(req.body)
+    console.log(req.body.mentorPreferences)
 
     //Need to put the field checkers in. 
 
-    var undefinedFields = checkUndefinedFields(req.body, ['userID',
-        'areasOfInterestMentoring',
-        'prefferedMentoringFormats',
-        'maximumTravelDistance',
-        'mentoringLanguages',
-        'prefferedEducationMentoring',
-        'maximumAgeMentoring',
-        'minimumAgeMentoring'
-    ])
+    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'mentorPreferences'])
 
     if (undefinedFields) {
         return res.status(950).send({
@@ -32,6 +21,21 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
+    var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.mentorPreferences, [
+    'mentoringAreasOfInterest',
+    'prefferedMentoringFormats',
+    'maximumTravelDistanceKM',
+    'mentoringLanguages',
+    'prefferedEducation',
+    'maximumAge',
+    'minimumAge'])
+
+    if (undefinedFieldsMentoringPreferences) {
+        return res.status(950).send({
+            error: 'Undefined field',
+            message: undefinedFields
+        })
+    }
 
     //Need to do validation for the mentor preferences section. 
 
@@ -44,13 +48,7 @@ module.exports = updateMentorPreferences = (req, res) => {
     User.findOneAndUpdate(query, {
             $set: {
                 mentorPreferencesComplete: true,
-                areasOfInterestMentoring: req.body.areasOfInterestMentoring,
-                prefferedMentoringFormats: req.body.prefferedMentoringFormats,
-                maximumTravelDistance: req.body.maximumTravelDistance,
-                mentoringLanguages: req.body.mentoringLanguages,
-                prefferedEducationMentoring: req.body.prefferedEducationMentoring,
-                minimumAgeMentoring: req.body.minimumAgeMentoring,
-                maximumAgeMentoring: req.body.maximumAgeMentoring
+                mentorPreferences: req.body.mentorPreferences
             },
         },
         function (err, updated) {

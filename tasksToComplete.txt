@@ -199,3 +199,7 @@ a masters to make this more realistic. Use probabilitys or percentage somehow to
 Need to fix the start year and end year of the education page as well. 
 Need to change field checkers and make sure all the edit profile section is working again. 
 Change the select boxes to the bootstrap version and get rid of the select all option or see if there is an equivalent in bootstrap. 
+
+//Complete the mentor preferences validation. 
+//Fix bug in job history that is causing validation failure. 
+//Complete mentee preferences validation. 
