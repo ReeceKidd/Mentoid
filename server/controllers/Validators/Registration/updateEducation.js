@@ -93,18 +93,10 @@ module.exports = function updateJobHistoryValidation(req) {
         }
         return true
     })
-    req.check('education', 'Education school can only contain letters, numbers and white space').custom(education => {
-        for (var x = 0; x < education.length; x++) {
-            var match = education[x].school.match(/^[a-z\d\-_\s]+$/i)
-            if (match === undefined) {
-                return false
-            }
-            if (!match) {
-                return false
-            }
-        }
-        return true
-    })
+    /*
+    Due to the fact that some schools contain special accents, hypens and language based characters there is no 
+    check for alpha and whitespace.
+    */
     req.check('education', 'Education schools must be at least two characters long').custom(education => {
 
         for (var x = 0; x < education.length; x++) {

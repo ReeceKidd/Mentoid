@@ -43,7 +43,6 @@ module.exports = updateEducation = (req, res) => {
     var unwantedArrayField = checkUpdateEducationArrayFields(req.body.education)
 
     if (unwantedArrayField) {
-        console.log(unwantedArrayField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
@@ -59,7 +58,8 @@ module.exports = updateEducation = (req, res) => {
         })
     }
 
-    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.education, ['educationID', 'school', 'degree', 'fieldOfStudy','startYear','endYear'])
+    
+    var undefinedArrayFields = checkUndefinedFieldsArray(req.body.education, ['educationID', 'school', 'degree', 'country','fieldOfStudy','startYear','endYear'])
 
     if (undefinedArrayFields) {
         return res.status(950).send({
@@ -73,7 +73,6 @@ module.exports = updateEducation = (req, res) => {
     var checkRequestTypes = checkEducationTypes(req.body)
 
     if (checkRequestTypes) {
-        console.log(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
             message: checkRequestTypes
@@ -85,6 +84,7 @@ module.exports = updateEducation = (req, res) => {
     var validationError = updateEducationValidation(req)
 
     if (validationError) {
+        console.log(validationError)
         return res.status(600).send({
             error: 'Validation failure',
             message: validationError

@@ -17,7 +17,6 @@ testController.getSingleUserID = (req, res) => {
 
 testController.getUserIDFromUserName = (req, res) => {
     
-    
     const userName = req.params.userName
 
     var query = {

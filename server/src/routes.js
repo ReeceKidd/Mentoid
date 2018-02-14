@@ -44,6 +44,7 @@ const userController = require('../controllers/userController.js')
 const testController = require('../controllers/testController.js')
 const routingController = require('../controllers/routingController.js')
 const matchingController = require('../controllers/matchingController.js')
+const generatorController = require('../controllers/generatorController.js')
 
 //Admin routes
 routes.get('/admin/get-users', adminController.getUsers)
@@ -68,7 +69,8 @@ routes.get('/get/profile-completeness/:userID', registerController.getProfileCom
 routes.post('/update/social-media', registerController.updateSocialMedia)
 routes.get('/get/social-media/:userID', registerController.getSocialMedia)
 
- 
+//Generator Routes
+routes.post('/generate/areas-of-interest', generatorController.generateAreasOfInterest)
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)
@@ -80,6 +82,7 @@ routes.get('/logout/:userID', userController.logout)
 //Testing Routes 
 routes.get('/get-single-user-ID', testController.getSingleUserID) //This reveals far too much information
 routes.get('/get/userID/:userName', testController.getUserIDFromUserName)
+
 
 //Routing Routes
 routes.get('/get/basic-registration-complete/:userID', routingController.getBasicRegistrationCompleteValue)

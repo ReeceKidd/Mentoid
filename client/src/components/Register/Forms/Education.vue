@@ -30,16 +30,14 @@
               School can only contain alphabetical and space characters.
             </p>
             <label :for="currentEducation.degree">Degree</label>
-            <input type="text" :id="currentEducation.degree" @blur="$v.education.$each[index].degree.$touch()" v-model="currentEducation.degree">
-            <p v-if="!$v.education.$each[index].degree.required && $v.education.$each[index].degree.$dirty" class="errorMessage">
-              Degree is required
-            </p>
-            <p v-if="!$v.education.$each[index].degree.minLength && $v.education.$each[index].degree.$dirty" class="errorMessage">
-              Degree must be at least two characters long.
-            </p>
-            <p v-if="!$v.education.$each[index].degree.alphaAndWhitespace && $v.education.$each[index].degree.$dirty" class="errorMessage">
-              Degree can only contain alphabetical and space characters.
-            </p>
+            <select v-model="currentEducation.degree">
+              <option>High School</option>
+              <option>Vocational</option>
+              <option>Certification</option>
+              <option>Bachelors</option>
+              <option>Masters</option>
+              <option>PHD</option>
+            </select>
             <label :for="currentEducation.fieldOfStudy">Field of study</label>
             <input type="text" :id="currentEducation.fieldOfStudy" @blur="$v.education.$each[index].fieldOfStudy.$touch()" v-model="currentEducation.fieldOfStudy">
             <p v-if="!$v.education.$each[index].fieldOfStudy.required && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
@@ -50,6 +48,17 @@
             </p>
             <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
               Field of study can only contain alphabetical and space characters.
+            </p>
+            <label :for="currentEducation.country">Country</label>
+            <input type="text" :id="currentEducation.country" @blur="$v.education.$each[index].country.$touch()" v-model="currentEducation.country">
+            <p v-if="!$v.education.$each[index].country.required && $v.education.$each[index].country.$dirty" class="errorMessage">
+              Country is required
+            </p>
+            <p v-if="!$v.education.$each[index].fieldOfStudy.minLength && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
+              Country must be at least two characters long.
+            </p>
+            <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
+              Country of study can only contain alphabetical and space characters.
             </p>
             <div class="yearInputDesktop">
               <label>Start Year</label>
@@ -107,16 +116,14 @@
               School can only contain alphabetical and space characters.
             </p>
             <label :for="currentEducation.degree">Degree</label>
-            <input type="text" :id="currentEducation.degree" @blur="$v.education.$each[index].degree.$touch()" v-model="currentEducation.degree">
-            <p v-if="!$v.education.$each[index].degree.required && $v.education.$each[index].degree.$dirty" class="errorMessage">
-              Degree is required
-            </p>
-            <p v-if="!$v.education.$each[index].degree.minLength && $v.education.$each[index].degree.$dirty" class="errorMessage">
-              Degree must be at least two characters long.
-            </p>
-            <p v-if="!$v.education.$each[index].degree.alphaAndWhitespace && $v.education.$each[index].degree.$dirty" class="errorMessage">
-              Degree can only contain alphabetical and space characters.
-            </p>
+            <select v-model="currentEducation.degree">
+              <option>High School</option>
+              <option>Vocational</option>
+              <option>Certification</option>
+              <option>Bachelors</option>
+              <option>Masters</option>
+              <option>PHD</option>
+            </select>
             <label :for="currentEducation.fieldOfStudy">Field of study</label>
             <input type="text" :id="currentEducation.fieldOfStudy" @blur="$v.education.$each[index].fieldOfStudy.$touch()" v-model="currentEducation.fieldOfStudy">
             <p v-if="!$v.education.$each[index].fieldOfStudy.required && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
@@ -127,6 +134,17 @@
             </p>
             <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
               Field of study can only contain alphabetical and space characters.
+            </p>
+            <label :for="currentEducation.country">Country</label>
+            <input type="text" :id="currentEducation.country" @blur="$v.education.$each[index].country.$touch()" v-model="currentEducation.country">
+            <p v-if="!$v.education.$each[index].country.required && $v.education.$each[index].country.$dirty" class="errorMessage">
+              Country is required
+            </p>
+            <p v-if="!$v.education.$each[index].fieldOfStudy.minLength && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
+              Country must be at least two characters long.
+            </p>
+            <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
+              Country of study can only contain alphabetical and space characters.
             </p>
             <div class="yearInputMobile">
               <label>Start Year</label>
@@ -250,7 +268,8 @@
           degree: '',
           fieldOfStudy: '',
           startYear: '',
-          endYear: ''
+          endYear: '',
+          country: '',
         }
         this.education.push(newEducation)
       },
@@ -295,6 +314,11 @@
             alphaAndWhitespace
           },
           fieldOfStudy: {
+            required,
+            minLength: minLength(2),
+            alphaAndWhitespace
+          },
+          country: {
             required,
             minLength: minLength(2),
             alphaAndWhitespace

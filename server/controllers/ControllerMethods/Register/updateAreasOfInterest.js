@@ -27,6 +27,8 @@ const updateAreasOfInterestValidation = require('../../Validators/Registration/u
 
 module.exports = updateAreasOfInterest = (req, res) => {
 
+    
+
     var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','areasOfInterest'])
 
     if (undefinedFields) {
@@ -36,6 +38,8 @@ module.exports = updateAreasOfInterest = (req, res) => {
         })
     }
 
+    
+
     var undefinedArrayFields = checkUndefinedFieldsArray(req.body.areasOfInterest, ['value', 'years','areaOfInterestID'])
 
     if (undefinedArrayFields) {
@@ -44,6 +48,8 @@ module.exports = updateAreasOfInterest = (req, res) => {
             message: undefinedArrayFields
         })
     }
+
+    
     
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateAreasOfInterestFields(req.body)
@@ -94,6 +100,8 @@ module.exports = updateAreasOfInterest = (req, res) => {
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
+        console.log(errors);
+        
         return res.status(600).send({
             error: 'Validation failure',
             message: errors[Object.keys(errors)[0]].msg

@@ -189,3 +189,13 @@ Fake Data (1 Hour)
 
 Install JQuery and then parse the html that has been received. 
 
+Continue work on generating area of interest data using the generator route. Take the areas of interest original route and update 
+field checker so that it works in the same way as the other. For readability and so it can be used again. 
+
+Didn't do a check for the different types of degree level. 
+
+Education section need to make it higher percentages for high school and vocational, and people that have a PHD must have a bachelors, And
+a masters to make this more realistic. Use probabilitys or percentage somehow to do this. 
+Need to fix the start year and end year of the education page as well. 
+Need to change field checkers and make sure all the edit profile section is working again. 
+Change the select boxes to the bootstrap version and get rid of the select all option or see if there is an equivalent in bootstrap. 

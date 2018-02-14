@@ -49,8 +49,6 @@ const asyncVerify = token => {
 
 module.exports = register = (req, res) => {
 
-    console.log(req.body)
-
     var undefinedFields = checkUndefinedFields(req.body, [
         'firstName',
         'lastName',
