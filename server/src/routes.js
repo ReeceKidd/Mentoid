@@ -65,6 +65,7 @@ routes.get('/get/education-history/:userID', registerController.getEducationHist
 routes.post('/upload-profile-picture', upload.single('image'), registerController.uploadProfilePicture)
 routes.get('/get/profile-picture/:userID', registerController.getProfilePicture)
 routes.post('/update/mentor-preferences/', registerController.updateMentorPreferences)
+routes.post('/update/mentee-preferences', registerController.updateMenteePreferences)
 routes.get('/get/profile-completeness/:userID', registerController.getProfileCompleteness)
 routes.post('/update/social-media', registerController.updateSocialMedia)
 routes.get('/get/social-media/:userID', registerController.getSocialMedia)

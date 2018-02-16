@@ -59,7 +59,9 @@ function getNumberOfJobs(age) {
 }
 
 function getTitle() {
-    return arrayOfJobs[Math.floor(Math.random() * arrayOfJobs.length)]
+    var job = arrayOfJobs[Math.floor(Math.random() * arrayOfJobs.length)]
+    job = job.replace("\\", "")
+    return job 
 }
 
 function getCompany() {
@@ -77,7 +79,7 @@ function getIsWorkingHere() {
 }
 
 function getStartYear(age) {
-    return (currentYear - (Math.floor(Math.random() * age) + 16)).toString()
+    return (currentYear - (Math.floor(Math.random() * (age - 16)) + 0)).toString()
 }
 
 function getEndYear(startYear) {

@@ -200,6 +200,19 @@ Need to fix the start year and end year of the education page as well.
 Need to change field checkers and make sure all the edit profile section is working again. 
 Change the select boxes to the bootstrap version and get rid of the select all option or see if there is an equivalent in bootstrap. 
 
-//Complete the mentor preferences validation. 
+
 //Fix bug in job history that is causing validation failure. 
 //Complete mentee preferences validation. 
+
+//Maybe if I don't return anything in the methods it will run concurrently without the use of command prompts and different windows. 
+
+Plan of action get Mentee Data Generated. 
+Fix field checker methods. 
+Validate Mentor and Mentee Preferences. 
+Come up with matching for complete profiles. 
+Quick search 
+Advanced Search 
+Match each user with a random number of mentor and mentees. 
+Use condor to match all users. 
+Need to add logging when users register, and when they sign and and log out. To a log file. 
+Fix issue with job history titles. 

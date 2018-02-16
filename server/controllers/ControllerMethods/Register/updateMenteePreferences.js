@@ -10,7 +10,7 @@ module.exports = updateMentorPreferences = (req, res) => {
 
     //Need to put the field checkers in. 
 
-    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'mentorPreferences'])
+    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'menteePreferences'])
 
     if (undefinedFields) {
         return res.status(950).send({
@@ -19,7 +19,7 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
-    var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.mentorPreferences, [
+    var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.menteePreferences, [
     'mentoringAreasOfInterest',
     'prefferedMentoringFormats',
     'maximumTravelDistanceKM',
@@ -36,6 +36,7 @@ module.exports = updateMentorPreferences = (req, res) => {
     }
 
     //Need to do validation for the mentor preferences section. 
+    //Also need to do the field check. 
 
     sanitizeUpdateMentorPreferences(req.body)
 
@@ -45,8 +46,8 @@ module.exports = updateMentorPreferences = (req, res) => {
 
     User.findOneAndUpdate(query, {
             $set: {
-                mentorPreferencesComplete: true,
-                mentorPreferences: req.body.mentorPreferences
+                menteePreferencesComplete: true,
+                menteePreferences: req.body.menteePreferences
             },
         },
         function (err, updated) {

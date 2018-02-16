@@ -71,12 +71,12 @@ module.exports = function updateJobHistoryValidation(req) {
         }
         return true
     })
-    req.check('experiences', 'experience titles can only contain letters and white space').custom(experiences => {
+    req.check('experiences', 'Experience titles can only contain letters, white space, commas, periods and ampersans').custom(experiences => {
         for (var x = 0; x < experiences.length; x++) {
             if (typeof experiences[x].title !== 'string') {
                 return false
             }
-            var match = experiences[x].title.match(/^[A-Za-z\s\,]+$/)
+            var match = experiences[x].title.match(/^[A-Za-z,-.\s]+$/)
             if (match === undefined) {
                 return false
             }
@@ -114,18 +114,9 @@ module.exports = function updateJobHistoryValidation(req) {
         }
         return true
     })
-    req.check('experiences', 'Experience companies can only contain letters, numbers and white space').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            var match = experiences[x].company.match(/^[a-z\d\,\.\-_\s]+$/i)
-            if (match === undefined) {
-                return false
-            }
-            if (!match) {
-                return false
-            }
-        }
-        return true
-    })
+    
+    //Experiences company check was proving to be a nighmare due to accented characters etc. 
+
     req.check('experiences', 'Experience companys must be at least two characters long').custom(experiences => {
 
         for (var x = 0; x < experiences.length; x++) {
@@ -228,12 +219,10 @@ module.exports = function updateJobHistoryValidation(req) {
     })
     //Checks that the total working time is possible given the users age. 
     req.check('experiences', 'It is not possible that you worked here for this long as you are ' + userAge + ' years old').custom(experiences => {
-
         for (var x = 0; x < experiences.length; x++) {
             if (experiences[x].isWorkingHere === 'No') {
                 var totalWorkingTime = experiences[x].endYear - experiences[x].startYear
-
-                if (totalWorkingTime > req.body.age) {
+                if (totalWorkingTime > userAge) {
                     return false
                 }
             }

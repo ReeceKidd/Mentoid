@@ -1,5 +1,5 @@
 const axios = require('axios')
-const updateMentorPreferencesURL = 'http://localhost:4000/update/mentor-preferences/'
+const updateMentorPreferencesURL = 'http://localhost:4000/update/mentee-preferences/'
 
 
 module.exports = async function updateAreasOfInterest(userID, age, areasOfInterest) {
@@ -17,7 +17,7 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
     var maximumAge = getMaximumAge(minimumAge)
 
     await axios.post(updateMentorPreferencesURL, {
-        mentorPreferences: {
+        menteePreferences: {
             mentoringAreasOfInterest: areasOfInterest,
             prefferedMentoringFormats: prefferedMentoringFormats,
             maximumTravelDistanceKM: maximumTravelDistance,
@@ -40,11 +40,11 @@ function getAreasOfInterest(areasOfInterest) {
 }
 
 /*
-This method sorts from most years of expereince to least. For Mentee preferences it will be the opposite. 
+This method is different to Mentor preferences as it ranks them in descending order. 
 */
 function sortByYearsOfExperience(areasOfInterest) {
     areasOfInterest.sort(function (a, b) {
-        return b.years - a.years;
+        return a.years - b.years;
     });
 }
 
@@ -108,7 +108,7 @@ function getPrefferedEducation() {
 }
 
 function getMinimumAge(age) {
-    return Math.floor(Math.random() * 16) + age
+    return Math.floor(Math.random() * age) + 120
 }
 
 function getMaximumAge(minimumAge) {

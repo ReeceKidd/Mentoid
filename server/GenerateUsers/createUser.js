@@ -8,6 +8,7 @@ const updateAreasOfInterest = require('./areasOfInterest.js')
 const updateEducation = require('./education.js')
 const updateJobHistory = require('./jobHistory.js')
 const updateMentorPreferences = require('./mentorPreferences.js')
+const updateMenteePreferences = require('./menteePreferences')
 
 function createUser() {
     /* Username must be returned in order to get Object ID */
@@ -23,19 +24,21 @@ function createUser() {
                 updateJobHistory(userID, age).then(function(experiences){
                     console.log('Job history updated for: ' + userName)
                 })
+                
                 getAreasOfInterest(userID).then(function(areasOfInterest){
                     updateMentorPreferences(userID, age, areasOfInterest).then(function(mentorPreferences){
                         console.log('Mentor preferences updated for ' + userName)
                     })
+                    updateMenteePreferences(userID, age, areasOfInterest).then(function(menteePreferences){
+                        console.log('Mentee preferences updated for ' + userName)
+                    })
                 })
             })
+           
         })
-    })
-   
-    
-   
-    
+    })  
     
 }
 
 createUser()
+    
