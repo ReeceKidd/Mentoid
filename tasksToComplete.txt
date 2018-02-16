@@ -216,3 +216,6 @@ Match each user with a random number of mentor and mentees.
 Use condor to match all users. 
 Need to add logging when users register, and when they sign and and log out. To a log file. 
 Fix issue with job history titles. 
+
+Need to seperate the update areas of interest generator I think it was so that it uses the actual method and 
+add an additional route to update the number of likes etc for the different videos. 

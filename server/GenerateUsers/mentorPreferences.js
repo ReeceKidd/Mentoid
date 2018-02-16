@@ -15,8 +15,6 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
     var prefferedEducation = getPrefferedEducation()
     var minimumAge = getMinimumAge()
     var maximumAge = getMaximumAge(minimumAge)
-    console.log('Minimum age is ' + minimumAge)
-    console.log('Maximum age is ' + maximumAge)
 
     await axios.post(updateMentorPreferencesURL, {
         mentorPreferences: {

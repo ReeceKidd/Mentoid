@@ -28,15 +28,8 @@ module.exports = updateSocialMedia = (req, res) => {
     */
 
     //Checks that fields only defined in the schema are passed. 
-    var unwantedFields = checkSocialMediaFields(req)
-
-    if (unwantedFields) {
-        res.status(700).json({
-            message: unwantedFields,
-            error: 'Additional fields found'
-        })
-        return
-    }
+    
+    //Need to add a field checker for this method. 
 
     var nullPresent = checkForNull(req.body)
 
@@ -74,7 +67,7 @@ module.exports = updateSocialMedia = (req, res) => {
     sanitizeSocialMedia(req.body)
 
     var query = {
-        '_id': req.body._id
+        '_id': req.body.userID
     }
 
     User.findOneAndUpdate(query, {

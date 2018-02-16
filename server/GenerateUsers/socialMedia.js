@@ -1,73 +1,91 @@
 const axios = require('axios')
-const basicRegistrationURL = 'http://localhost:4000/register/'
+const updateSocialMediaURL = 'http://localhost:4000/update/social-media'
 
-const firstNamesArray = require('./firstNames.js')
-const lastNamesArray = require('./lastNames.js')
-
-var firstName = getFirstName()
-var lastName = getLastName()
-var userName = getUserName()
-var email = getEmail()
-var age = getAge()
-var password = getPassword()
-var confirmPassword = password
-var language = getLanguage()
-var terms = getTerms()
+var facebook = getFaceBook()
+var instagram = getInstagram()
+var twitter = getTwitter()
+var snapchat = getSnapchat()
+var linkedIn = getLinkedIn()
+var medium = getMedium()
+var youtube = getYoutube()
+var website = getWebsite()
+const maximumNumberOfSocialMediaAccounts = 8
 
 /* Register Basic User */
-module.exports = async function registerBasicUser() {
-        await axios.post(basicRegistrationURL, {
-            firstName: firstName,
-            lastName: lastName,
-            userName: userName,
-            email: email,
-            age: age,
-            password: password,
-            confirmPassword: confirmPassword,
-            language: language,
-            terms: terms
-        }).then(function (response) {
-          console.log('Basic registration complete for: ' + firstName + ' ' + lastName)
-        }).catch(error => {
-          console.log('Could not complete basic registration: ' + error)
-        })
-        return userName
+module.exports = async function generateSocialMedia(userID, userName) {
+    var socialMediaAccounts = generateSocialMediaObject(userName)
+    await axios.post(updateSocialMediaURL, {
+        facebook: socialMediaAccounts.facebook,
+        instagram: socialMediaAccounts.instagram,
+        twitter: socialMediaAccounts.twitter,
+        snapchat: socialMediaAccounts.snapchat,
+        linkedIn: socialMediaAccounts.linkedIn,
+        medium: socialMediaAccounts.medium,
+        youtube: socialMediaAccounts.youtube,
+        website: socialMediaAccounts.website,
+        userID: userID
+    }).catch(error => {
+        console.log('Could not update Social media account: ' + error.message)
+    })
+    return userName
 }
 
-function getFirstName() {
-    return firstNamesArray[Math.floor(Math.random() * firstNamesArray.length)]
+//I will generate values for each shuffle the array and return a random number of result 
+function getRandomNumberOfSocialMediaAccounts() {
+    return Math.floor(Math.random() * (maximumNumberOfSocialMediaAccounts + 1) + 1);
 }
 
-function getLastName() {
-    return lastNamesArray[Math.floor(Math.random() * lastNamesArray.length)]
+function generateSocialMediaObject(userName) {
+    var numberOfAccountsToGenerate = getRandomNumberOfSocialMediaAccounts()
+    var socialMediaObject = {
+        "facebook": getFaceBook(userName),
+        "instagram": getInstagram(userName),
+        "twitter": getTwitter(userName),
+        "snapchat": getSnapchat(userName),
+        "linkedIn": getLinkedIn(userName),
+        "medium": getMedium(userName),
+        "youtube": getYoutube(userName),
+        "website": getWebsite(userName)
+    }
+    var randomSocialAccounts = {}
+    for (var propName in socialMediaObject) {
+        propValue = socialMediaObject[propName]
+        randomSocialAccounts[propName] = propValue
+        if (Object.keys(randomSocialAccounts).length === numberOfAccountsToGenerate) {
+            return randomSocialAccounts
+        }
+    }
+    return randomSocialAccounts
 }
 
-function getUserName() {
-    return firstName + lastName + Math.floor(Math.random() * 10) + 1
+function getFaceBook(userName) {
+    return 'www.facebook.com/' + userName
 }
 
-function getEmail() {
-    return userName + '@gmail.com'
+function getInstagram(userName) {
+    return userName
 }
 
-function getAge() {
-    return (Math.floor(Math.random() * 100) + 16).toString()
+function getTwitter(userName) {
+    return userName
 }
 
-function getPassword() {
-    return 'password'
+function getSnapchat(userName) {
+    return userName
 }
 
-//This simulates that the majority of users will be English speakers. 
-function getLanguage() {
-
-    var probability = Math.floor(Math.random() * 100) + 70
-    if (probability < 80) {
-        return 'Spanish'
-    } else return 'English'
-
+function getLinkedIn(userName) {
+    return 'www.linkedin.com/' + userName
 }
 
-function getTerms() {
-    return 'true'
+function getMedium(userName) {
+    return 'www.medium.com/' + userName
+}
+
+function getYoutube(userName) {
+    return 'www.youtube.com/' + userName
+}
+
+function getWebsite(userName) {
+    return 'www.' + userName + '.com'
 }
