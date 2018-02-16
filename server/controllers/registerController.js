@@ -20,5 +20,6 @@ registerController.updateMenteePreferences = require('./ControllerMethods/Regist
 registerController.getProfileCompleteness = require('./ControllerMethods/Register/getProfileCompleteness')
 registerController.updateSocialMedia = require('./ControllerMethods/Register/updateSocialMedia')
 registerController.getSocialMedia = require('./ControllerMethods/Register/getSocialMedia')
+registerController.updateLocation = require('./ControllerMethods/Register/updateLocation')
 
 module.exports = registerController

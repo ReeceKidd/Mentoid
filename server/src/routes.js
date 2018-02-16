@@ -69,6 +69,7 @@ routes.post('/update/mentee-preferences', registerController.updateMenteePrefere
 routes.get('/get/profile-completeness/:userID', registerController.getProfileCompleteness)
 routes.post('/update/social-media', registerController.updateSocialMedia)
 routes.get('/get/social-media/:userID', registerController.getSocialMedia)
+routes.post('/update/location', registerController.updateLocation)
 
 //Generator Routes
 routes.post('/generate/areas-of-interest', generatorController.generateAreasOfInterest)

@@ -10,6 +10,7 @@ const updateJobHistory = require('./jobHistory.js')
 const updateMentorPreferences = require('./mentorPreferences.js')
 const updateMenteePreferences = require('./menteePreferences')
 const updateSocialMedia = require('./socialMedia.js')
+const updateLocation = require('./location.js')
 
 function createUser() {
     /* Username must be returned in order to get Object ID */
@@ -27,6 +28,9 @@ function createUser() {
                 })
                 updateSocialMedia(userID, userName).then(function(socialMedia){
                     console.log('Updated social media for ' + userName)
+                })
+                updateLocation(userID).then(function (location){
+                    console.log('Updated location information for ' + userName)
                 })
                 getAreasOfInterest(userID).then(function(areasOfInterest){
                     updateMentorPreferences(userID, age, areasOfInterest).then(function(mentorPreferences){

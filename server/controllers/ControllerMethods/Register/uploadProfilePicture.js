@@ -16,7 +16,7 @@ module.exports = uploadProfilePicture = (req, res) => {
     // Validatiors
     const userIDValidation = require('../../Validators/userID')
 
-    module.exports = getUsersAge = (req, res) => {
+    module.exports = uploadProfilePicture = (req, res) => {
 
 
         var undefinedFields = checkUndefinedFields(req.params, ['userID'])
