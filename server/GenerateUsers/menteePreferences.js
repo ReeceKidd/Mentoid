@@ -107,10 +107,10 @@ function getPrefferedEducation() {
     return mentoringEducationPreferences
 }
 
-function getMinimumAge(age) {
-    return Math.floor(Math.random() * age) + 120
+function getMinimumAge() {
+    return Math.floor(Math.random()*(21-16+1)+16);
 }
 
 function getMaximumAge(minimumAge) {
-    return Math.floor(Math.random() * minimumAge) + 120
+    return Math.floor(Math.random()*(100-minimumAge+1)+minimumAge);
 }

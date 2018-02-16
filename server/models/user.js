@@ -67,8 +67,8 @@ const User = new Schema({
     maximumTravelDistanceKM: String,
     mentoringLanguages: [],
     prefferedEducation: [],
-    minimumAge: String,
-    maximumAge: String
+    minimumAge: Number,
+    maximumAge: Number,
   },
   menteePreferences: {
     areasOfInterest: [],
@@ -76,8 +76,8 @@ const User = new Schema({
     maximumTravelDistanceKM: String,
     mentoringLanguages: [],
     prefferedEducation: [],
-    minimumAge: String,
-    maximumAge: String
+    minimumAge: Number,
+    maximumAge: Number
   },
   mentors: [],
   mentees: [],

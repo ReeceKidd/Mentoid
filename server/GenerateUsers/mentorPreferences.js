@@ -13,8 +13,10 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
     var maximumTravelDistance = getMaximumTravelDistance()
     var mentoringLanguages = getMentoringLanguages()
     var prefferedEducation = getPrefferedEducation()
-    var minimumAge = getMinimumAge(age)
+    var minimumAge = getMinimumAge()
     var maximumAge = getMaximumAge(minimumAge)
+    console.log('Minimum age is ' + minimumAge)
+    console.log('Maximum age is ' + maximumAge)
 
     await axios.post(updateMentorPreferencesURL, {
         mentorPreferences: {
@@ -107,10 +109,10 @@ function getPrefferedEducation() {
     return mentoringEducationPreferences
 }
 
-function getMinimumAge(age) {
-    return Math.floor(Math.random() * 16) + age
+function getMinimumAge() {
+    return Math.floor(Math.random()*(21-16+1)+16);
 }
 
 function getMaximumAge(minimumAge) {
-    return Math.floor(Math.random() * minimumAge) + 120
+    return Math.floor(Math.random()*(100-minimumAge+1)+minimumAge);
 }
