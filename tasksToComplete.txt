@@ -221,3 +221,8 @@ Need to seperate the update areas of interest generator I think it was so that i
 add an additional route to update the number of likes etc for the different videos. 
 
 //Need to complete the update of the location information and then figure out how to add profile pictures. 
+
+Need to set the information at the beginning when a user registers. 
+
+Find out why education is not uploading successfully and being retreived to the education form successfully. 
+//Need to complete the edit profile form. 

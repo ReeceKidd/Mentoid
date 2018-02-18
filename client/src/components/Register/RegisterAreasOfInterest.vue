@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row hidden-xs">
+    <div class="row">
       <div class="col-sm-12">
         <h1 class="text-center"> Hello {{ firstName + ' ' + lastName }} </h1>
       </div>
@@ -11,6 +11,38 @@
       </div>
     </div>
     <areas-of-interest-form></areas-of-interest-form>
+    <br>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">  
+        <hr>
+
+        <!-- Desktop version of registration buttons -->
+        <span class="hidden-xs">
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/register')">
+            <i class="fas fa-arrow-left"></i> Previous: Basic Registration</button>
+        </span>
+        <span class="hidden-xs">
+          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/register-education')"> Next: Job History
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </span>
+        <!-- End of desktop version -->
+
+        <!-- Mobile version of registration buttons -->
+        <span class="visible-xs text-center">
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/register-areas-of-interest')">
+            <i class="fas fa-arrow-left"></i> Previous: Basic Registration</button>
+        </span>
+        <br class="visible-xs">
+        <span class="visible-xs text-center">
+          <button class="btn btn-md btn-primary" @click="navigateTo('/register-education')"> Next: Job History
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </span>
+        <!-- End of mobile version --> 
+      </div>
+    </div>
+
   </div>
 </template>
 <script>
@@ -21,6 +53,11 @@
       return {
         firstName: undefined,
         lastName: undefined
+      }
+    },
+    methods: {
+      navigateTo(route) {
+        this.$router.push(route)
       }
     },
     beforeMount() {

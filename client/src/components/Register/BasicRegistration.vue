@@ -1,7 +1,6 @@
 <template>
   <div class="container-fluid">
     <!-- If user has already completed areas of interest registration they will get redirected to their profile -->
-    <span v-if="basicRegistrationComplete"> {{ navigateTo('/profile/edit-profile')}} </span>
     <div class="signup-form">
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">

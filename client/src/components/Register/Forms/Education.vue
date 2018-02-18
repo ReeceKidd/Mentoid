@@ -269,7 +269,7 @@
           fieldOfStudy: '',
           startYear: '',
           endYear: '',
-          country: '',
+          country: ''
         }
         this.education.push(newEducation)
       },

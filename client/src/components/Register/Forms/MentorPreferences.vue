@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="col-xs-8 col-xs-offset-2">
       <div v-if="wouldLikeToMentor === 'Yes'">
         <label> Which Areas would you like to Mentor in? </label>
         <br>
@@ -275,77 +275,19 @@
 
   }
 
-  .input {
-    margin: 10px auto;
-  }
-
-  .input label {
-    display: block;
-    color: #4e4e4e;
-    margin-bottom: 6px;
-  }
-
-  .input.inline label {
-    display: inline;
-  }
-
-  .input input {
-    font: inherit;
-    width: 100%;
-    padding: 6px 12px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-  }
-
-  .errorMessage {
-    color: red;
-  }
-
-  .input.inline input {
-    width: auto;
-  }
-
-  .input input:focus {
-    outline: none;
-    border: 1px solid #104E8B;
-    background-color: #eee;
-  }
-
-  .input.invalid input {
-    border: 1px solid red;
-    background-color: #ffc9aa;
-  }
-
-  .input select {
-    border: 1px solid #ccc;
-    font: inherit;
-  }
-
-  .submit button[disabled],
-  .submit button[disabled]:hover,
-  .submit button[disabled]:active {
-    border: 1px solid #ccc;
-    background-color: transparent;
-    color: #ccc;
-    cursor: not-allowed;
-  }
-
   .el-checkbox.is-bordered.el-checkbox--medium {
-    padding: 7px 20px 7px 10px;
-    border-radius: 4px;
-    height: 36px;
+    border: 0px;
     background-color: #104E8B;
     color: white;
-}
+  }
 
-.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-    background-color: black;
-    border-color: black;
-}
+  .el-checkbox.is-bordered.el-checkbox.is-bordered {
+    margin-right: 2px !important;
+    margin-left: 0px !important;
+  }
 
-.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-    background-color: red;
-    border-color: #409EFF;
-}
+  .el-checkbox__label {
+    color: black !important;
+  }
 
 </style>
