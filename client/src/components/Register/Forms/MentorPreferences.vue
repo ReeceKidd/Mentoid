@@ -21,7 +21,9 @@
 
     <div class="col-xs-8 col-xs-offset-2">
       <div v-if="wouldLikeToMentor === 'Yes'">
-        <label> Which Areas would you like to Mentor in? </label>
+        <!-- User has updaed areas of interest -->
+        <span v-if="checkedAreasOfInterest.length !== 0">
+          <label> Which Areas would you like to Mentor in? </label>
         <br>
         <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">Select All</el-checkbox>
         <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
@@ -29,6 +31,14 @@
         </el-checkbox-group>
         <br>
         <br>
+        </span>
+        <!-- End -->
+        <!-- User has no areas of interest -->
+        <span v-else>
+          <p class="errorMessage"> You must update your <a @click="navigateTo('/edit-profile')">Areas Of Interest </a> </p>
+          <br>
+        </span>
+        <!-- End -->
         <label> What formats of mentoring are you interested in?</label>
         <br>
         <el-checkbox :indeterminate="isIndeterminateMentoringFormat" v-model="checkAllFormats" @change="handleCheckAllMentorFormats">Select All</el-checkbox>
@@ -288,6 +298,10 @@
 
   .el-checkbox__label {
     color: black !important;
+  }
+
+  .errorMessage {
+    color: red;
   }
 
 </style>

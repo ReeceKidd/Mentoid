@@ -30,7 +30,7 @@
 
         <!-- Mobile version of registration buttons -->
         <span class="visible-xs text-center">
-          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/register-areas-of-interest')">
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/register')">
             <i class="fas fa-arrow-left"></i> Previous: Basic Registration</button>
         </span>
         <br class="visible-xs">

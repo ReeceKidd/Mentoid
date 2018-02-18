@@ -25,7 +25,7 @@
         </span>
         <br class="visible-xs">
         <span class="visible-xs text-center">
-          <button class="btn btn-md btn-primary" @click="navigateTo('/register-education')"> Next: Mentee Preferences
+          <button class="btn btn-md btn-primary" @click="navigateTo('/mentee-preferences')"> Next: Mentee Preferences
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>

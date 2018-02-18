@@ -3,14 +3,14 @@
     <!-- Desktop Version -->
     <div>
       <div class="col-xs-12 text-center">
-        <h2>Would you like to have a Mentor?</h2>
+        <h2>Would you like to be Mentored?</h2>
         <br>
       </div>
     </div>
 
     <div>
       <div class="col-xs-12 text-center">
-        <select class="wouldYouLikeToHaveAMentor" v-model="wouldLikeToHaveAMentor">
+        <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeAMentor">
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
@@ -19,9 +19,11 @@
       </div>
     </div>
 
-    <div>
-      <div v-if="wouldLikeToHaveAMentor === 'Yes'">
-        <label> Which Areas would you like to have a Mentor in? </label>
+    <div class="col-xs-8 col-xs-offset-2">
+      <div v-if="wouldLikeAMentor === 'Yes'">
+        <!-- User has updaed areas of interest -->
+        <span v-if="checkedAreasOfInterest.length !== 0">
+          <label> Which Areas of Interest do you want Mentored in? </label>
         <br>
         <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">Select All</el-checkbox>
         <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
@@ -29,6 +31,14 @@
         </el-checkbox-group>
         <br>
         <br>
+        </span>
+        <!-- End -->
+        <!-- User has no areas of interest -->
+        <span v-else>
+          <p class="errorMessage"> You must update your <a @click="navigateTo('/edit-profile')">Areas Of Interest </a> </p>
+          <br>
+        </span>
+        <!-- End -->
         <label> What formats of mentoring are you interested in?</label>
         <br>
         <el-checkbox :indeterminate="isIndeterminateMentoringFormat" v-model="checkAllFormats" @change="handleCheckAllMentorFormats">Select All</el-checkbox>
@@ -47,7 +57,7 @@
         </span>
         <br>
         <br>
-        <label> What languages can you be Mentored in </label>
+        <label> What languages can you be mentored in? </label>
         <br>
         <el-checkbox :indeterminate="isIndeterminateLanguage" v-model="checkAllLanguages" @change="handleCheckAllLanguages">Select All</el-checkbox>
         <el-checkbox-group v-model="checkedLanguages" @change="handleCheckedLanguageChange">
@@ -55,20 +65,15 @@
         </el-checkbox-group>
         <br>
         <br>
-        <label> What levels of education would you like your Mentor to have? </label>
+        <label> What levels of education do you prefer your Mentor to have?</label>
         <br>
         <el-checkbox :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation">Select All</el-checkbox>
         <el-checkbox-group v-model="checkedEducation" @change="handleCheckedEducationChange">
           <el-checkbox v-for="education in educationLevel" :label="education" :key="education" border size="medium">{{education}}</el-checkbox>
         </el-checkbox-group>
-        <!-- Do similar to this for all the different inputs -->
-        <br v-if="!$v.checkedEducation.required && !$v.checkedEducation.$dirty">
-        <p v-if="!$v.checkedEducation.required && !$v.checkedEducation.$dirty" class="errorMessage">
-              You must specify the level of education you want your Mentor to have. 
-        </p>
         <br>
         <br>
-        <label>What is the youngest age you are willing to be Mentored by?</label>
+        <label>What is the youngest age you are willing to be Mentored by? </label>
         <br>
         <input type="number" min="16" oninput="validity.valid||(minimumAge=16)" v-model="minimumAge" name="minimumAge">
         <br>
@@ -78,22 +83,22 @@
         <input type="number" max="120" oninput="validity.valid||(maximumAge=120)" v-model="maximumAge" name="maximumAge">
         <br>
         <br>
-        <label> What is your maximum number of simultaneous Mentors? </label>
+        <label> How many mentors are you willing to have? </label>
         <br>
         <input type="number" min="1" oninput="validity.valid||(numberOfMentees=0)" v-model="numberOfMentees" name="numberOfMentees">
         <br>
         <br>
         <div class="row text-center">
-          <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor preferences </button>
+          <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentoring preferences </button>
         </div>
       </div>
 
-      <div v-if="wouldLikeToHaveAMentor === 'No'">
-        <p> Are you sure? These people might have a thing or two to teach you. 
+      <div v-if="wouldLikeAMentor === 'No'">
+        <p> There is always room for improvement, and more to learn. 
         </p>
         <h3 class="text-center">
           <u>
-            These people could take you to the next level. 
+            These people want to Mentor someone just like you. 
           </u>
         </h3>
         <br>
@@ -128,7 +133,7 @@
   export default {
     data() {
       return {
-        wouldLikeToHaveAMentor: 'Yes',
+        wouldLikeAMentor: 'Yes',
         areasOfInterest: [],
         checkAllAreasOfInterest: false,
         checkedAreasOfInterest: [],
@@ -142,7 +147,7 @@
         checkAllLanguages: false,
         checkedLanguages: [],
         isIndeterminateLanguage: true,
-        educationLevel: ['No education', 'High School', 'Vocational', 'Bachelors', 'Masters', 'PHD'],
+        educationLevel: ['No education', 'High School', 'Certification', 'Vocational', 'Bachelors', 'Masters', 'PHD'],
         checkAllEducation: false,
         checkedEducation: [],
         isIndeterminateEducation: true,
@@ -271,7 +276,7 @@
 </script>
 
 <style scoped>
-  select.wouldYouLikeToHaveAMentor {
+  select.wouldYouLikeToMentorSelector {
     width: 20%;
     height: 50px;
     text-align: center;
@@ -279,77 +284,23 @@
 
   }
 
-  .input {
-    margin: 10px auto;
+  .el-checkbox.is-bordered.el-checkbox--medium {
+    border: 0px;
+    background-color: #104E8B;
+    color: white;
   }
 
-  .input label {
-    display: block;
-    color: #4e4e4e;
-    margin-bottom: 6px;
+  .el-checkbox.is-bordered.el-checkbox.is-bordered {
+    margin-right: 2px !important;
+    margin-left: 0px !important;
   }
 
-  .input.inline label {
-    display: inline;
-  }
-
-  .input input {
-    font: inherit;
-    width: 100%;
-    padding: 6px 12px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
+  .el-checkbox__label {
+    color: black !important;
   }
 
   .errorMessage {
     color: red;
   }
-
-  .input.inline input {
-    width: auto;
-  }
-
-  .input input:focus {
-    outline: none;
-    border: 1px solid #104E8B;
-    background-color: #eee;
-  }
-
-  .input.invalid input {
-    border: 1px solid red;
-    background-color: #ffc9aa;
-  }
-
-  .input select {
-    border: 1px solid #ccc;
-    font: inherit;
-  }
-
-  .submit button[disabled],
-  .submit button[disabled]:hover,
-  .submit button[disabled]:active {
-    border: 1px solid #ccc;
-    background-color: transparent;
-    color: #ccc;
-    cursor: not-allowed;
-  }
-
-  .el-checkbox.is-bordered.el-checkbox--medium {
-    padding: 7px 20px 7px 10px;
-    border-radius: 4px;
-    height: 36px;
-    background-color: #104E8B;
-    color: white;
-}
-
-.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-    background-color: black;
-    border-color: black;
-}
-
-.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-    background-color: red;
-    border-color: #409EFF;
-}
 
 </style>

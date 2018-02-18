@@ -226,3 +226,7 @@ Need to set the information at the beginning when a user registers.
 
 Find out why education is not uploading successfully and being retreived to the education form successfully. 
 //Need to complete the edit profile form. 
+
+Complete the registration and edit profile section today. 
+
+//Need to make sure the mentor and mentee preferences section is actually updating and working. 
