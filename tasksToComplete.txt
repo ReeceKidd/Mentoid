@@ -242,3 +242,4 @@ Going to get the country to appear for the education section.(Complete)
 //Abstract the profile picture code and add it to the edit profile page as well. 
 //Go through registration page and see whats wrong with the social media section. 
 //Need to make first name and last name update title case. 
+//Stop emails being title case. 

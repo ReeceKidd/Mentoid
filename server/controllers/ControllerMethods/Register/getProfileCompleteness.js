@@ -75,7 +75,6 @@ module.exports = getUsersAge = (req, res) => {
             areasOfInterestRegistrationComplete: user.areasOfInterestRegistrationComplete,
             jobHistoryRegistrationComplete: user.jobHistoryRegistrationComplete,
             educationRegistrationComplete: user.educationRegistrationComplete,
-            profilePictureUploaded: user.profilePictureUploaded,
             mentorPreferencesComplete: user.mentorPreferencesComplete,
             menteePreferencesComplete: user.menteePreferencesComplete
         })

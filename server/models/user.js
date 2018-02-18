@@ -90,7 +90,6 @@ const User = new Schema({
   areasOfInterestRegistrationComplete: Boolean,
   jobHistoryRegistrationComplete: Boolean,
   educationRegistrationComplete: Boolean,
-  profilePictureUploaded: Boolean,
   mentorPreferencesComplete: Boolean,
   menteePreferencesComplete: Boolean,
   socialMediaComplete: Boolean,

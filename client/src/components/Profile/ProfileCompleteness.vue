@@ -2,7 +2,7 @@
   <div class="container">
     <div class="col-xs-12">
       <div class="row text-center">
-        <p v-if="profilePictureUploaded"> Upload Profile Picture <i class="fas fa-check"></i></p>
+        <p v-if="hasProfilePicture" class="complete"> Upload Profile Picture <i class="fas fa-check"></i></p>
         <p v-else> <a href="#profile-picture"> Upload Profile Picture </a> </p>
         <p v-if="socialMediaComplete" class="complete"> Update Social Media  <i class="fas fa-check"></i></p>
         <p v-else> <a href="#social-media"> Update Social Media </a> </p>
@@ -12,16 +12,17 @@
         <p v-else><a href="#education"> Update Education </a> </p>
         <p v-if="jobHistoryRegistrationComplete" class="complete"> Update Job history <i class="fas fa-check"></i>   </p>
         <p v-else><a href="#job-history"> Update Job History </a> </p>
-        <p v-if="mentorPreferencesComplete"> Update Mentor Preferences <i class="fas fa-check"></i></p>
+        <p v-if="mentorPreferencesComplete" class="complete"> Update Mentor Preferences <i class="fas fa-check"></i></p>
         <p v-else> <a href="#mentoring-preferences"> Update your Mentor preferences </a> </p>
-        <p v-if="menteePreferencesComplete"> Update Mentee preferences <i class="fas fa-check"></i> </p>
-        <p v-else> <a href="#mentee-preferences"> Update your Mentee preferences </a></p>
+        <p v-if="menteePreferencesComplete" class="complete"> Update Mentee preferences <i class="fas fa-check"></i> </p>
+        <p v-else> <a href="#mentee-preferences" > Update your Mentee preferences </a></p>
       </div>
     </div>
   </div>
 </template>
 <script>
   import axios from 'axios'
+  const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
   export default {
     data() {
       return {
@@ -29,9 +30,9 @@
         areasOfInterestRegistrationComplete: false,
         jobHistoryRegistrationComplete: false,
         educationRegistrationComplete: false,
-        profilePictureUploaded: false,
         mentorPreferencesComplete: false,
-        menteePreferencesComplete: false
+        menteePreferencesComplete: false,
+        hasProfilePicture: false
       }
     },
     methods: {
@@ -48,9 +49,14 @@
         self.areasOfInterestRegistrationComplete = response.data.areasOfInterestRegistrationComplete
         self.jobHistoryRegistrationComplete = response.data.jobHistoryRegistrationComplete
         self.educationRegistrationComplete = response.data.educationRegistrationComplete
-        self.profilePictureUploaded = response.data.profilePictureUploaded
         self.mentorPreferencesComplete = response.data.mentorPreferencesComplete
         self.menteePreferencesComplete = response.data.menteePreferencesComplete
+      })
+      // Checks if user has a profile picture
+      axios.get(getProfilePictureURL + userID).then(function (response) {
+        if (response) {
+          self.hasProfilePicture = true
+        }
       })
     }
   }

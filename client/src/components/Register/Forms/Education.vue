@@ -142,7 +142,6 @@
   var regexForAlphabeticAndWhiteSpace = /^[a-zA-Z ]+$/
 
   function alphaAndWhitespace(input) {
-    console.log(input)
     if (input.length === 0) {
       return true
     }
