@@ -40,7 +40,7 @@ import Reporting from './components/Mentoring/Reporting.vue'
 import Search from './components/Mentoring/Search.vue'
 import EditProfile from './components/Profile/EditProfile.vue'
 import Leaderboards from './components/Profile/Leaderboards.vue'
-import Metrics from './components/Profile/Metrics.vue'
+import Settings from './components/Profile/Settings.vue'
 import ViewProfile from './components/Profile/ViewProfile.vue'
 import SocialHome from './components/Social/SocialHome.vue'
 import Feed from './components/Social/Feed.vue'
@@ -185,9 +185,9 @@ const routes = [
     component: Leaderboards
   },
   {
-    path: '/metrics',
-    name: 'metrics',
-    component: Metrics
+    path: '/settings',
+    name: 'settings',
+    component: Settings
   },
   {
     path: '/view-profile',

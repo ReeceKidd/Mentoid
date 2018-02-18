@@ -115,4 +115,8 @@
       color: green;
   }
 
+  .smallFA {
+      font-size: 12px !important;
+  }
+
 </style>

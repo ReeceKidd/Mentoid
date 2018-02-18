@@ -88,15 +88,29 @@
                   <a @click="navigateTo({ name : 'view-profile'})">View profile</a>
                 </li>
                 <li>
-                  <a @click="navigateTo({ name : 'metrics'})">Metrics</a>
-                </li>
-                <li>
-                  <a @click="navigateTo({ name : 'leaderboards'})">Leaderboards</a>
+                  <a @click="navigateTo({ name : 'settings'})"> <i class="fas fa-cog"></i> Settings</a>
                 </li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe" id="globe"></i> 
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <a>English</a>
+                </li>
+                <li>
+                  <a>German</a>
+                </li>
+                <li>
+                  <a>Spanish</a>
+                </li>
+              </ul>
+            </li>
             <li>
               <a @click="logout">
                 <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
@@ -145,6 +159,14 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
+  }
+
+  #globe {
+    font-size: 21px;
+  }
+
+  .dropdown-menu-right {
+    text-align: right;
   }
 
 </style>

@@ -2,7 +2,7 @@
   <a v-if="editEmail === false">
     <h4 @click="editEmail = true, oldEmail = email, newEmail = email">
       <i class="fas fa-envelope"></i> {{ email }}
-      <i class="far fa-edit"></i>
+      <i class="far fa-edit smallFA"></i>
     </h4>
   </a>
   <span v-else>
@@ -100,6 +100,10 @@
 
   .successMessage {
     color: green;
+  }
+
+  .smallFA {
+      font-size: 12px;
   }
 
 </style>

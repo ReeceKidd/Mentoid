@@ -1,7 +1,7 @@
 <template>
   <a v-if="editUsername === false">
     <h4 @click="editUsername = true"> @{{ userName }}
-      <i class="far fa-edit"></i>
+      <i class="far fa-edit smallFA"></i>
     </h4>
   </a>
   <span v-else>
@@ -96,6 +96,10 @@
 
   .successMessage {
     color: green;
+  }
+
+  .smallFA {
+      font-size: 12px;
   }
 
 </style>
