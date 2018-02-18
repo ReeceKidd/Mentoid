@@ -231,4 +231,10 @@ Complete the registration and edit profile section today.
 
 //Need to make sure the mentor and mentee preferences section is actually updating and working. 
 
-Going to get the country to appear for the education section. 
+Going to get the country to appear for the education section.(Complete)
+
+//Adjust the profile picture so it retreives it if user already has one. 
+//Complete the mentor and mentee preferences section. 
+
+//Add globalisation option in header menu in a settings icon. 
+//Once I complete the field checker need to go through all the methods used and make sure they follow that format. 

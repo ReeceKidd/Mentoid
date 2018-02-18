@@ -52,6 +52,8 @@ routes.get('/admin/get-users', adminController.getUsers)
 //Register Routes
 routes.post('/register', registerController.register)
 routes.get('/get/basic-registration/:userID', registerController.getBasicRegistration)
+routes.post('/update/name', registerController.updateName)
+routes.post('/update/username', registerController.updateUserName)
 routes.get('/check/username/:username', registerController.checkUserName)
 routes.get('/check/email/:email', registerController.checkEmail)
 routes.get('/get/areas-of-interest/:userID', registerController.getAreasOfInterest)

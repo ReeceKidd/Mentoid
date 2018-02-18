@@ -71,6 +71,7 @@ module.exports = getUsersAge = (req, res) => {
         }
     }).select('-_id').then(user => {
         res.status(200).send({
+            socialMediaComplete: user.socialMediaComplete,
             areasOfInterestRegistrationComplete: user.areasOfInterestRegistrationComplete,
             jobHistoryRegistrationComplete: user.jobHistoryRegistrationComplete,
             educationRegistrationComplete: user.educationRegistrationComplete,

@@ -101,7 +101,7 @@
     }
   }
 </script>
-<style>
+<style scoped>
   .successMessage {
     color: green;
   }
@@ -114,6 +114,5 @@
   .uploadButton {
     margin: auto;
   }
-
 
 </style>

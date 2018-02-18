@@ -1,4 +1,5 @@
 <template>
+<!-- Span tags on this page are placed in the element above so redirection lands in the right place -->
   <div class="container-fluid">
     <div class="row text-center">
       <div class="col-xs-12" id="profileImageBorder">
@@ -7,17 +8,12 @@
         </span>
         <img src='../../assets/userAvatar.png' v-else id="profilePictureAvatar">
         <br>
-        <h3> {{firstName }} {{ lastName }}</h3>
-        <h4> @{{ currentUser.userName }}</h4>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row text-center">
-      <div class="col-xs-12">
-        <h2> SOCIAL MEDIA </h2>
-        <edit-social-media></edit-social-media>
+        <!--Edit name import -->
+        <edit-name></edit-name>
+        <!-- End of edit name -->
+        <!--Edit username import -->
+        <edit-user-name></edit-user-name>
+        <!-- End of username import -->
       </div>
     </div>
 
@@ -32,18 +28,32 @@
           <profile-completeness></profile-completeness>
         </h2>
       </div>
+      <span id="social-media"></span>
     </div>
+
+    <hr>
+
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 id="socialMedia"> SOCIAL MEDIA </h2>
+        <edit-social-media></edit-social-media>
+        <span id="areas-of-interest"></span>
+      </div>
+      
+    </div>
+    
 
     <hr>
 
     <div class="row">
       <div class="col-xs-12">
-        <h2 class="text-center">
+        <h2  class="text-center">
           AREAS OF INTEREST
         </h2>
         <br>
         <edit-areas-of-interest></edit-areas-of-interest>
       </div>
+      <span id="education"></span>
     </div>
 
     <hr>
@@ -56,6 +66,7 @@
         <br>
         <edit-education-history></edit-education-history>
       </div>
+      <span id="job-history"></span>
     </div>
 
     <hr>
@@ -68,6 +79,7 @@
         <br>
         <edit-job-history></edit-job-history>
       </div>
+      <span id="mentoring-preferences"></span>
     </div>
 
     <hr>
@@ -79,6 +91,7 @@
         </h2>
         <edit-mentor-preferences></edit-mentor-preferences>
       </div>
+      <span id="mentee-preferences"></span>
     </div>
 
     <hr>
@@ -95,6 +108,8 @@
 </template>
 
 <script>
+  import EditName from './EditProfile/EditName.vue'
+  import EditUserName from './EditProfile/EditUserName.vue'
   import ProfileCompleteness from './ProfileCompleteness.vue'
   import EditSocialMedia from '../Register/Forms/SocialMedia.vue'
   import EditAreasOfInterest from '../Register/Forms/AreasOfInterest.vue'
@@ -111,6 +126,7 @@
         currentUser: this.$store.state.user.authUser,
         firstName: 'Undefined',
         lastName: 'Undefined',
+        editName: false,
         email: 'Undefined',
         profilePictureURL: getProfilePictureURL + this.$store.state.user.authUser._id,
         profileImageLoaded: true,
@@ -137,6 +153,8 @@
       })
     },
     components: {
+      EditName,
+      EditUserName,
       ProfileCompleteness,
       EditSocialMedia,
       EditAreasOfInterest,
