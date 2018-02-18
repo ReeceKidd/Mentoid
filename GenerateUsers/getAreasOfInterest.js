@@ -6,7 +6,7 @@ module.exports = async function getAreasOfInterest(userID) {
     await axios.get(getAreasOfInterestURL + userID).then(function (response) {
       areasOfInterest = response.data.areasOfInterest
     }).catch(error => {
-      console.log('Could not get User ID: ' + error)
+      console.log('Could not get areas of interest: ' + error)
     })
 
     return areasOfInterest

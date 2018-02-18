@@ -26,8 +26,6 @@ module.exports = async function registerBasicUser() {
             confirmPassword: confirmPassword,
             language: language,
             terms: terms
-        }).then(function (response) {
-          console.log('Basic registration complete for: ' + firstName + ' ' + lastName)
         }).catch(error => {
           console.log('Could not complete basic registration: ' + error)
         })

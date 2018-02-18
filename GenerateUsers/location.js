@@ -14,7 +14,6 @@ module.exports = async function generateSocialMedia(userID) {
     }).catch(error => {
         console.log('Could not update location: ' + error.message)
     })
-    return 'Location updated'
 }
 
 /*

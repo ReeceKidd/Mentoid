@@ -2,8 +2,6 @@ var User = require('../../../models/user')
 
 module.exports = updateLocationInformation = (req, res) => {
 
-    console.log(req.body)
-
     var query = {
         '_id': req.body.userID
     }
