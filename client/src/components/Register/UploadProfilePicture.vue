@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 text-center">
         <h1> Please upload a profile picture </h1>
@@ -7,10 +7,10 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
-        <img :src="imageSrc" class="img-responsive">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+        <img :src="imageSrc" class="img-responsive uploadImage center-block">
         <br>
-        <input @change="uploadImage" type="file" name="image" accept="image/*">
+        <input @change="uploadImage" class="uploadButton" type="file" name="image" accept="image/*">
       </div>
     </div>
     <!-- Success message -->
@@ -105,5 +105,15 @@
   .successMessage {
     color: green;
   }
+
+  .uploadImage {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .uploadButton {
+    margin: auto;
+  }
+
 
 </style>
