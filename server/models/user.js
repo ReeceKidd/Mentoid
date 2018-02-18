@@ -56,6 +56,7 @@ const User = new Schema({
   education: [{
     degree: String,
     school: String,
+    country: String, 
     fieldOfStudy: String,
     startYear: String,
     endYear: String,

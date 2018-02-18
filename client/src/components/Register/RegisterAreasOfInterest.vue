@@ -22,7 +22,7 @@
             <i class="fas fa-arrow-left"></i> Previous: Basic Registration</button>
         </span>
         <span class="hidden-xs">
-          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/register-education')"> Next: Job History
+          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/register-job-history')"> Next: Job History
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>
@@ -35,7 +35,7 @@
         </span>
         <br class="visible-xs">
         <span class="visible-xs text-center">
-          <button class="btn btn-md btn-primary" @click="navigateTo('/register-education')"> Next: Job History
+          <button class="btn btn-md btn-primary" @click="navigateTo('/register-job-history')"> Next: Job History
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>

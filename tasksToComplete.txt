@@ -230,3 +230,5 @@ Find out why education is not uploading successfully and being retreived to the 
 Complete the registration and edit profile section today. 
 
 //Need to make sure the mentor and mentee preferences section is actually updating and working. 
+
+Going to get the country to appear for the education section. 

@@ -10,7 +10,7 @@
     </div>
 
     <!-- Desktop version of form -->
-    <div class="row hidden-xs">
+    <div class="row">
       <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
 
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -54,11 +54,11 @@
             <p v-if="!$v.education.$each[index].country.required && $v.education.$each[index].country.$dirty" class="errorMessage">
               Country is required
             </p>
-            <p v-if="!$v.education.$each[index].fieldOfStudy.minLength && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
+            <p v-if="!$v.education.$each[index].country.minLength && $v.education.$each[index].country.$dirty" class="errorMessage">
               Country must be at least two characters long.
             </p>
-            <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
-              Country of study can only contain alphabetical and space characters.
+            <p v-if="!$v.education.$each[index].country.alphaAndWhitespace && $v.education.$each[index].country.$dirty" class="errorMessage">
+              Country can only contain alphabetical and space characters.
             </p>
             <div class="yearInputDesktop">
               <label>Start Year</label>
@@ -94,91 +94,6 @@
     </div>
     <!-- End of desktop version of form -->
 
-    <!-- Mobile version of form -->
-    <div class="row visible-xs">
-
-      <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <h3>
-            <u>Education {{ index + 1}} </u>
-          </h3>
-          <div class="input" :class="{invalid: $v.education.$each[index].$error}">
-            <label :for="currentEducation.school">School</label>
-            <input type="text" :id="currentEducation.school" @blur="$v.education.$each[index].school.$touch()" v-model="currentEducation.school">
-            <p v-if="!$v.education.$each[index].school.required && $v.education.$each[index].school.$dirty" class="errorMessage">
-              School is required
-            </p>
-            <p v-if="!$v.education.$each[index].school.minLength && $v.education.$each[index].school.$dirty" class="errorMessage">
-              School must be at least two characters long.
-            </p>
-            <p v-if="!$v.education.$each[index].school.alphaAndWhitespace && $v.education.$each[index].school.$dirty" class="errorMessage">
-              School can only contain alphabetical and space characters.
-            </p>
-            <label :for="currentEducation.degree">Degree</label>
-            <select v-model="currentEducation.degree">
-              <option>High School</option>
-              <option>Vocational</option>
-              <option>Certification</option>
-              <option>Bachelors</option>
-              <option>Masters</option>
-              <option>PHD</option>
-            </select>
-            <label :for="currentEducation.fieldOfStudy">Field of study</label>
-            <input type="text" :id="currentEducation.fieldOfStudy" @blur="$v.education.$each[index].fieldOfStudy.$touch()" v-model="currentEducation.fieldOfStudy">
-            <p v-if="!$v.education.$each[index].fieldOfStudy.required && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
-              Field of study is required
-            </p>
-            <p v-if="!$v.education.$each[index].fieldOfStudy.minLength && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
-              Field of study must be at least two characters long.
-            </p>
-            <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
-              Field of study can only contain alphabetical and space characters.
-            </p>
-            <label :for="currentEducation.country">Country</label>
-            <input type="text" :id="currentEducation.country" @blur="$v.education.$each[index].country.$touch()" v-model="currentEducation.country">
-            <p v-if="!$v.education.$each[index].country.required && $v.education.$each[index].country.$dirty" class="errorMessage">
-              Country is required
-            </p>
-            <p v-if="!$v.education.$each[index].fieldOfStudy.minLength && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
-              Country must be at least two characters long.
-            </p>
-            <p v-if="!$v.education.$each[index].fieldOfStudy.alphaAndWhitespace && $v.education.$each[index].fieldOfStudy.$dirty" class="errorMessage">
-              Country of study can only contain alphabetical and space characters.
-            </p>
-            <div class="yearInputMobile">
-              <label>Start Year</label>
-              <input type="text" :id="currentEducation.startYear" @blur="$v.education.$each[index].startYear.$touch()" v-model="currentEducation.startYear">
-            </div>
-            <p v-if="!$v.education.$each[index].startYear.required && $v.education.$each[index].startYear.$dirty" class="errorMessage">
-              The year you started is required.
-            </p>
-            <p v-if="!$v.education.$each[index].startYear.validYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
-              Your starting year must be in the following format: YYYY
-            </p>
-            <p v-if="!$v.education.$each[index].startYear.greaterThanCurrentYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
-              You cannot start in the future.
-            </p>
-            <label>End Year</label>
-            <input type="text" :id="currentEducation.endYear" @blur="$v.education.$each[index].endYear.$touch()" v-model="currentEducation.endYear">
-            <p v-if="!$v.education.$each[index].endYear.required && $v.education.$each[index].endYear.$dirty" class="errorMessage">
-              End year is required
-            </p>
-            <p v-if="!$v.education.$each[index].endYear.validYear && $v.education.$each[index].endYear.$dirty" class="errorMessage">
-              Your ending year must be in the following format: YYYY
-            </p>
-          </div>
-          <br>
-          <div class="visible-xs">
-            <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-sm">Delete Current Education</button>
-            <br>
-            <br>
-            <button @click="onAddEducation()" class="btn btn-success btn-sm">Add Education</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of mobile job history form -->
     <br>
 
     <!-- Error messages -->
@@ -227,6 +142,7 @@
   var regexForAlphabeticAndWhiteSpace = /^[a-zA-Z ]+$/
 
   function alphaAndWhitespace(input) {
+    console.log(input)
     if (input.length === 0) {
       return true
     }
