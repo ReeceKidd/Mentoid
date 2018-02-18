@@ -6,6 +6,7 @@ registerController.checkEmail = require('./ControllerMethods/Register/checkEmail
 registerController.register = require('./ControllerMethods/Register/register')
 registerController.updateName = require('./ControllerMethods/Register/updateName.js')
 registerController.updateUserName = require('./ControllerMethods/Register/updateUserName.js')
+registerController.updateEmail = require('./ControllerMethods/Register/updateEmail.js')
 registerController.getBasicRegistration = require('./ControllerMethods/Register/getBasicRegistration')
 registerController.getAreasOfInterest = require('./ControllerMethods/Register/getAreasOfInterest')
 registerController.getAreasOfInterestNames = require('./ControllerMethods/Register/getAreasOfInterestNames')

@@ -8,12 +8,11 @@
         </span>
         <img src='../../assets/userAvatar.png' v-else id="profilePictureAvatar">
         <br>
-        <!--Edit name import -->
+        <!-- Imported edit components --> 
         <edit-name></edit-name>
-        <!-- End of edit name -->
-        <!--Edit username import -->
         <edit-user-name></edit-user-name>
-        <!-- End of username import -->
+        <edit-email></edit-email>
+        <!-- End of imported components -->
       </div>
     </div>
 
@@ -110,6 +109,7 @@
 <script>
   import EditName from './EditProfile/EditName.vue'
   import EditUserName from './EditProfile/EditUserName.vue'
+  import EditEmail from './EditProfile/EditEmail.vue'
   import ProfileCompleteness from './ProfileCompleteness.vue'
   import EditSocialMedia from '../Register/Forms/SocialMedia.vue'
   import EditAreasOfInterest from '../Register/Forms/AreasOfInterest.vue'
@@ -154,6 +154,7 @@
     },
     components: {
       EditName,
+      EditEmail,
       EditUserName,
       ProfileCompleteness,
       EditSocialMedia,

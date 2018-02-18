@@ -238,3 +238,6 @@ Going to get the country to appear for the education section.(Complete)
 
 //Add globalisation option in header menu in a settings icon. 
 //Once I complete the field checker need to go through all the methods used and make sure they follow that format. 
+//Complete the edit email section. 
+//Abstract the profile picture code and add it to the edit profile page as well. 
+//Go through registration page and see whats wrong with the social media section. 
