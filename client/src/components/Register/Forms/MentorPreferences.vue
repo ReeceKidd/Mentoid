@@ -3,7 +3,7 @@
     <!-- Desktop Version -->
     <div>
       <div class="col-xs-12 text-center">
-        <h2>Would you like to be a Mentor?</h2>
+        <h3>Would you like to be a Mentor?</h3>
         <br>
       </div>
     </div>
@@ -24,18 +24,20 @@
         <!-- User has updaed areas of interest -->
         <span v-if="checkedAreasOfInterest.length !== 0">
           <label> Which Areas would you like to Mentor in? </label>
-        <br>
-        <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">Select All</el-checkbox>
-        <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
-          <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
-        </el-checkbox-group>
-        <br>
-        <br>
+          <br>
+          <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">Select All</el-checkbox>
+          <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
+            <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
+          </el-checkbox-group>
+          <br>
+          <br>
         </span>
         <!-- End -->
         <!-- User has no areas of interest -->
         <span v-else>
-          <p class="errorMessage"> You must update your <a @click="navigateTo('/edit-profile')">Areas Of Interest </a> </p>
+          <p class="errorMessage"> You must update your
+            <a @click="navigateTo('/edit-profile')">Areas Of Interest </a>
+          </p>
           <br>
         </span>
         <!-- End -->
@@ -67,7 +69,7 @@
         <br>
         <label> What levels of education would you be willing to Mentor? </label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation">Select All</el-checkbox>
+        <el-checkbox-button :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation">Select All</el-checkbox-button>
         <el-checkbox-group v-model="checkedEducation" @change="handleCheckedEducationChange">
           <el-checkbox v-for="education in educationLevel" :label="education" :key="education" border size="medium">{{education}}</el-checkbox>
         </el-checkbox-group>
@@ -296,12 +298,28 @@
     margin-left: 0px !important;
   }
 
-  .el-checkbox__label {
-    color: black !important;
-  }
-
   .errorMessage {
     color: red;
   }
+
+  .el-checkbox.is-bordered.el-checkbox--medium.is-checked {
+    border: 0px;
+    background-color: black;
+    color: white;
+  }
+
+
+  .el-checkbox-button {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: rgb(220, 223, 230);
+  }
+
+  .el-checkbox-button.is-focus {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #409EFF;
+  }
+
 
 </style>

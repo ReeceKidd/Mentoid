@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
       <br>
     <div class="signup-form">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
           <form @submit.prevent="onSubmit()">
             <p class="error" v-if="errorMessage !== ''">{{errorMessage}}</p>
             <div class="input" :class="{invalid: $v.facebook.$error}">

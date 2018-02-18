@@ -3,7 +3,7 @@
     <!-- Desktop Version -->
     <div>
       <div class="col-xs-12 text-center">
-        <h2>Would you like to be Mentored?</h2>
+        <h3>Would you like to be Mentored?</h3>
         <br>
       </div>
     </div>

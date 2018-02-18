@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
-    <div class="col-xs-12" id="profileImageBorder">
-      <div class="row text-center">
+    <div class="row text-center">
+      <div class="col-xs-12" id="profileImageBorder">
         <span v-if="profileImageLoaded">
           <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
         </span>
@@ -10,69 +10,85 @@
         <h3> {{firstName }} {{ lastName }}</h3>
         <h4> @{{ currentUser.userName }}</h4>
       </div>
+    </div>
 
+    <hr>
+
+    <div class="row text-center">
       <div class="col-xs-12">
-        <div class="row text-center">
-          <edit-social-media></edit-social-media>
-        </div>
+        <h2> SOCIAL MEDIA </h2>
+        <edit-social-media></edit-social-media>
       </div>
+    </div>
 
+    <hr>
+
+    <div class="row text-center">
       <div class="col-xs-12">
-        <div class="row text-center">
-          <h2 class="text-center">
-            <u> Profile Completeness </u>
-            <br>
-            <br>
-            <profile-completeness></profile-completeness>
-          </h2>
-        </div>
+        <h2 class="text-center">
+           PROFILE COMPLETENESS
+          <br>
+          <br>
+          <profile-completeness></profile-completeness>
+        </h2>
       </div>
+    </div>
 
+    <hr>
+
+    <div class="row">
       <div class="col-xs-12">
-        <div class="row">
-          <h2 class="text-center">
-            <u> Areas of interest </u>
-          </h2>
-          <edit-areas-of-interest></edit-areas-of-interest>
-        </div>
+        <h2 class="text-center">
+          AREAS OF INTEREST
+        </h2>
+        <br>
+        <edit-areas-of-interest></edit-areas-of-interest>
       </div>
+    </div>
 
+    <hr>
+
+    <div class="row">
       <div class="col-xs-12">
-        <div class="row">
-          <h2 class="text-center">
-            <u> Education History </u>
-          </h2>
-          <edit-education-history></edit-education-history>
-        </div>
+        <h2 class="text-center">
+          EDUCATION
+        </h2>
+        <br>
+        <edit-education-history></edit-education-history>
       </div>
+    </div>
 
+    <hr>
 
-
+    <div class="row">
       <div class="col-xs-12">
-        <div class="row">
-          <h2 class="text-center">
-            <u> Job History </u>
-          </h2>
-          <edit-job-history></edit-job-history>
-        </div>
+        <h2 class="text-center">
+          JOB HISTORY
+        </h2>
+        <br>
+        <edit-job-history></edit-job-history>
+      </div>
+    </div>
 
-        <div class="col-xs-12">
-          <div class="row">
-            <h2 class="text-center">
-              <u> Mentoring preferences </u>
-            </h2>
-            <edit-mentor-preferences></edit-mentor-preferences>
-          </div>
-        </div>
+    <hr>
 
-        <div class="col-xs-12">
-          <div class="row">
-            <h2 class="text-center">
-              <u> Mentee preferences </u>
-            </h2>
-            <edit-mentee-preferences></edit-mentee-preferences>
-          </div>
-        </div>
+    <div class="row">
+    <div class="col-xs-12">
+        <h2 class="text-center">
+           MENTORING PREFERENCES 
+        </h2>
+        <edit-mentor-preferences></edit-mentor-preferences>
+      </div>
+    </div>
+
+    <hr>
+
+   <div class="row">
+    <div class="col-xs-12">
+        <h2 class="text-center">
+           MENTEE PREFERENCES 
+        </h2>
+        <edit-mentee-preferences></edit-mentee-preferences>
       </div>
     </div>
   </div>
@@ -145,6 +161,5 @@
     -webkit-transition: opacity 0.25s ease;
     -moz-transition: opacity 0.25s ease;
   }
-
 
 </style>
