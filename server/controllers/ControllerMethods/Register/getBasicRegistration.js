@@ -70,7 +70,7 @@ module.exports = getBasicRegistration = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('firstName lastName email languages -_id').then(user => {
+    }).select('firstName lastName email userName -_id').then(user => {
         res.status(200).send({
             userInfo: user
         })

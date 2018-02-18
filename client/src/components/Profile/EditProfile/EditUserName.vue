@@ -77,6 +77,14 @@
           }, 3000)
         })
       }
+    },
+    beforeMount() {
+      var self = this
+      var userID = this.$store.state.user.authUser._id
+      const getBasicRegistration = 'http://localhost:4000/get/basic-registration/'
+      axios.get(getBasicRegistration + userID).then(function (response) {
+        self.userName = response.data.userInfo.userName
+      })
     }
   }
 </script>

@@ -22,28 +22,13 @@ module.exports = updateUserName = (req, res) => {
         '_id': req.body.userID
     }
 
-    //User name is the same as before 
     if (req.body.oldUserName === req.body.newUserName) {
-        User.findOneAndUpdate(query, {
-                $set: {
-                    userName: req.body.newUserName
-                },
-            },
-            function (err, updated) {
-                if (err) {
-                    res.status(400).send({
-                        message: 'Unable to update users name. Could not find user. '
-                    })
-                } else {
-                    res.status(200).send({
-                        message: 'Updated user name.'
-                    })
-                }
-            }
-        )
+        //User name is the same as before so nothing needs to be changed. 
+        res.status(200).send({
+            message: 'Username is the same does not need to be updated'
+        })
     } else {
         //Checks if new username already exists in the database. 
-        
         User.findOne({
             userName: req.body.newUserName
         }, function (err, existingUser) {

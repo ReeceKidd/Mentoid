@@ -1,14 +1,10 @@
 <template>
-<!-- Span tags on this page are placed in the element above so redirection lands in the right place -->
+  <!-- Span tags on this page are placed in the element above so redirection lands in the right place -->
   <div class="container-fluid">
     <div class="row text-center">
-      <div class="col-xs-12" id="profileImageBorder">
-        <span v-if="profileImageLoaded">
-          <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
-        </span>
-        <img src='../../assets/userAvatar.png' v-else id="profilePictureAvatar">
-        <br>
-        <!-- Imported edit components --> 
+      <div class="col-xs-12">
+        <!-- Imported components -->
+        <upload-profile-picture></upload-profile-picture>
         <edit-name></edit-name>
         <edit-user-name></edit-user-name>
         <edit-email></edit-email>
@@ -21,7 +17,7 @@
     <div class="row text-center">
       <div class="col-xs-12">
         <h2 class="text-center">
-           PROFILE COMPLETENESS
+          PROFILE COMPLETENESS
           <br>
           <br>
           <profile-completeness></profile-completeness>
@@ -38,15 +34,15 @@
         <edit-social-media></edit-social-media>
         <span id="areas-of-interest"></span>
       </div>
-      
+
     </div>
-    
+
 
     <hr>
 
     <div class="row">
       <div class="col-xs-12">
-        <h2  class="text-center">
+        <h2 class="text-center">
           AREAS OF INTEREST
         </h2>
         <br>
@@ -84,9 +80,9 @@
     <hr>
 
     <div class="row">
-    <div class="col-xs-12">
+      <div class="col-xs-12">
         <h2 class="text-center">
-           MENTORING PREFERENCES 
+          MENTORING PREFERENCES
         </h2>
         <edit-mentor-preferences></edit-mentor-preferences>
       </div>
@@ -95,10 +91,10 @@
 
     <hr>
 
-   <div class="row">
-    <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-12">
         <h2 class="text-center">
-           MENTEE PREFERENCES 
+          MENTEE PREFERENCES
         </h2>
         <edit-mentee-preferences></edit-mentee-preferences>
       </div>
@@ -107,6 +103,7 @@
 </template>
 
 <script>
+  import UploadProfilePicture from '../Register/Forms/UploadProfilePicture.vue'
   import EditName from './EditProfile/EditName.vue'
   import EditUserName from './EditProfile/EditUserName.vue'
   import EditEmail from './EditProfile/EditEmail.vue'
@@ -117,42 +114,9 @@
   import EditJobHistory from '../Register/Forms/JobHistory.vue'
   import EditMenteePreferences from '../Register/Forms/MenteePreferences.vue'
   import EditMentorPreferences from '../Register/Forms/MentorPreferences.vue'
-
-  import axios from 'axios'
-  const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
   export default {
-    data() {
-      return {
-        currentUser: this.$store.state.user.authUser,
-        firstName: 'Undefined',
-        lastName: 'Undefined',
-        editName: false,
-        email: 'Undefined',
-        profilePictureURL: getProfilePictureURL + this.$store.state.user.authUser._id,
-        profileImageLoaded: true,
-        profileCompleteness: {}
-      }
-    },
-    methods: {
-      navigateTo(route) {
-        this.$router.push(route)
-      },
-      imageLoadError() {
-        this.profileImageLoaded = false
-        console.log('User does not have a profile picture')
-      }
-    },
-    beforeMount() {
-      var self = this
-      var userID = this.$store.state.user.authUser._id
-      const getBasicRegistration = 'http://localhost:4000/get/basic-registration/'
-      axios.get(getBasicRegistration + userID).then(function (response) {
-        self.firstName = response.data.userInfo.firstName
-        self.lastName = response.data.userInfo.lastName
-        self.email = response.data.userInfo.email
-      })
-    },
     components: {
+      UploadProfilePicture,
       EditName,
       EditEmail,
       EditUserName,
@@ -167,18 +131,4 @@
   }
 </script>
 <style scoped>
-  #profilePictureAvatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-
-  #profilePictureAvatar:hover {
-    background: rgba(0, 0, 0, 0.75);
-    text-align: center;
-    opacity: 0.5;
-    -webkit-transition: opacity 0.25s ease;
-    -moz-transition: opacity 0.25s ease;
-  }
-
 </style>
