@@ -25,7 +25,9 @@
         <span v-if="checkedAreasOfInterest.length !== 0">
           <label> Which Areas would you like to Mentor in? </label>
           <br>
-          <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">Select All</el-checkbox>
+          <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">
+            <span class="selectAll">Select All</span>
+          </el-checkbox>
           <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
             <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
           </el-checkbox-group>
@@ -43,7 +45,9 @@
         <!-- End -->
         <label> What formats of mentoring are you interested in?</label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateMentoringFormat" v-model="checkAllFormats" @change="handleCheckAllMentorFormats">Select All</el-checkbox>
+        <el-checkbox :indeterminate="isIndeterminateMentoringFormat" v-model="checkAllFormats" @change="handleCheckAllMentorFormats">
+          <span class="selectAll">Select All</span>
+        </el-checkbox>
         <el-checkbox-group v-model="checkedMentoringFormats" @change="handleCheckedMentorFormatsChange">
           <el-checkbox v-for="format in mentoringFormats" :label="format" :key="format" border size="medium">{{format}}</el-checkbox>
         </el-checkbox-group>
@@ -61,7 +65,9 @@
         <br>
         <label> What languages can you Mentor in? </label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateLanguage" v-model="checkAllLanguages" @change="handleCheckAllLanguages">Select All</el-checkbox>
+        <el-checkbox :indeterminate="isIndeterminateLanguage" v-model="checkAllLanguages" @change="handleCheckAllLanguages">
+          <span class="selectAll">Select All</span>
+        </el-checkbox>
         <el-checkbox-group v-model="checkedLanguages" @change="handleCheckedLanguageChange">
           <el-checkbox v-for="language in languages" :label="language" :key="language" border size="medium">{{language}}</el-checkbox>
         </el-checkbox-group>
@@ -69,7 +75,9 @@
         <br>
         <label> What levels of education would you be willing to Mentor? </label>
         <br>
-        <el-checkbox-button :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation">Select All</el-checkbox-button>
+        <el-checkbox :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation">
+          <span class="selectAll">Select All</span>
+        </el-checkbox>
         <el-checkbox-group v-model="checkedEducation" @change="handleCheckedEducationChange">
           <el-checkbox v-for="education in educationLevel" :label="education" :key="education" border size="medium">{{education}}</el-checkbox>
         </el-checkbox-group>
@@ -321,5 +329,9 @@
     border-left-color: #409EFF;
   }
 
+  .selectAll {
+    font-size: 14px;
+    color: black;
+  }
 
 </style>
