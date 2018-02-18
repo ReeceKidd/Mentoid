@@ -5,6 +5,8 @@ const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
 module.exports = updateUserName = (req, res) => {
 
+    console.log(req.body)
+
     //Need to put the field checkers in. 
 
     var undefinedFields = checkUndefinedFields(req.body, ['userID', 'oldUserName', 'newUserName'])
@@ -41,28 +43,41 @@ module.exports = updateUserName = (req, res) => {
         )
     } else {
         //Checks if new username already exists in the database. 
+        
         User.findOne({
             userName: req.body.newUserName
         }, function (err, existingUser) {
             if (existingUser) {
                 res.status(900)
                 res.send({
-                    message: username + ' is already registered',
+                    message: req.body.newUserName + ' is already registered',
                     error: 'Already exists in database.'
                 })
-                return
-            } if (err) {
+            } else if (err) {
                 res.status(500)
                 res.send({
                     message: 'Server error',
                     error: 'Server error'
                 })
-                return
             } else {
-                res.status(200)
-                res.send({
-                    message: 'Username ' + req.body.newUserName + ' is available' 
-                })
+                //If username does not exist in database it is now safe to update. 
+                User.findOneAndUpdate(query, {
+                        $set: {
+                            userName: req.body.newUserName
+                        },
+                    },
+                    function (err, updated) {
+                        if (err) {
+                            res.status(400).send({
+                                message: 'Unable to update users name. Could not find user. '
+                            })
+                        } else {
+                            res.status(200).send({
+                                message: 'Updated user name.'
+                            })
+                        }
+                    }
+                )
             }
         })
     }
