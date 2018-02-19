@@ -253,5 +253,8 @@ Plan for 19/02/2018
 will be good to write about as if an error appears in the log, it can help with the debugging process. (Complete)
 5) Need to add ignore for profile pictures. 
 6) Need to add success logging for registration, logging in, logging out and updating different sections. 
-7) Need to check if any results are returned in request if not need to send a timeout response. 
+7) Need to check if any results are returned in request if not need to send a timeout response. Need to catch if no users are found. 
 8) Fix the log error for job history so it actually tells you what was passed to the message so I can figure out whats going wrong. 
+9)First name can only contain Alphabetical characters","value":"Bette-Ann"
+
+Mentee preferences get (20 minutes. )

@@ -25,9 +25,9 @@
         <span v-if="checkedAreasOfInterest.length !== 0">
           <label> Which Areas of Interest do you want Mentored in? </label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">Select All</el-checkbox>
+        <el-checkbox :indeterminate="isIndeterminateAreasOfInterest" v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange"><span class="selectAll">Select All</span></el-checkbox>
         <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
-          <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
+          <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest.value" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
         </el-checkbox-group>
         <br>
         <br>
@@ -41,7 +41,7 @@
         <!-- End -->
         <label> What formats of mentoring are you interested in?</label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateMentoringFormat" v-model="checkAllFormats" @change="handleCheckAllMentorFormats">Select All</el-checkbox>
+        <el-checkbox :indeterminate="isIndeterminateMentoringFormat" v-model="checkAllFormats" @change="handleCheckAllMentorFormats"><span class="selectAll">Select All</span></el-checkbox>
         <el-checkbox-group v-model="checkedMentoringFormats" @change="handleCheckedMentorFormatsChange">
           <el-checkbox v-for="format in mentoringFormats" :label="format" :key="format" border size="medium">{{format}}</el-checkbox>
         </el-checkbox-group>
@@ -59,7 +59,7 @@
         <br>
         <label> What languages can you be mentored in? </label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateLanguage" v-model="checkAllLanguages" @change="handleCheckAllLanguages">Select All</el-checkbox>
+        <el-checkbox :indeterminate="isIndeterminateLanguage" v-model="checkAllLanguages" @change="handleCheckAllLanguages"><span class="selectAll">Select All</span></el-checkbox>
         <el-checkbox-group v-model="checkedLanguages" @change="handleCheckedLanguageChange">
           <el-checkbox v-for="language in languages" :label="language" :key="language" border size="medium">{{language}}</el-checkbox>
         </el-checkbox-group>
@@ -67,7 +67,7 @@
         <br>
         <label> What levels of education do you prefer your Mentor to have?</label>
         <br>
-        <el-checkbox :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation">Select All</el-checkbox>
+        <el-checkbox :indeterminate="isIndeterminateEducation" v-model="checkAllEducation" @change="handleCheckAllEducation"><span class="selectAll">Select All</span></el-checkbox>
         <el-checkbox-group v-model="checkedEducation" @change="handleCheckedEducationChange">
           <el-checkbox v-for="education in educationLevel" :label="education" :key="education" border size="medium">{{education}}</el-checkbox>
         </el-checkbox-group>
@@ -85,7 +85,7 @@
         <br>
         <label> How many mentors are you willing to have? </label>
         <br>
-        <input type="number" min="1" oninput="validity.valid||(numberOfMentees=0)" v-model="numberOfMentees" name="numberOfMentees">
+        <input type="number" min="1" oninput="validity.valid||(numberOfMentors=0)" v-model="numberOfMentors" name="numberOfMentors">
         <br>
         <br>
         <div class="row text-center">
@@ -153,7 +153,7 @@
         isIndeterminateEducation: true,
         minimumAge: 16,
         maximumAge: '',
-        numberOfMentees: 1,
+        numberOfMentors: 1,
         successMessage: null
       }
     },
@@ -209,7 +209,7 @@
         for (var x = 0; x < this.areasOfInterest.length; x++) {
           this.areasOfInterest[x].years = parseInt(this.areasOfInterest[x].years)
         }
-        const url = 'http://localhost:4000/update/mentor-preferences/'
+        const url = 'http://localhost:4000/update/mentee-preferences/'
         // Need a way to add a preffered distance if it's not equal to blank.
         axios.post(url, {
           _id: this.currentUser._id,
@@ -271,6 +271,18 @@
       axios.get(getAreasOfInterestUrl + userID).then(function (response) {
         self.areasOfInterest = response.data.areasOfInterest
       })
+      const getMenteePreferences = 'http://localhost:4000/get/mentee-preferences/'
+      axios.get(getMenteePreferences + userID).then(function (response) {
+        console.log(response)
+        self.checkedAreasOfInterest = response.data.menteePreferences.areasOfInterest
+        self.checkedMentoringFormats = response.data.menteePreferences.prefferedMentoringFormats
+        self.checkedLanguages = response.data.menteePreferences.mentoringLanguages
+        self.checkedEducation = response.data.menteePreferences.prefferedEducation
+        self.maximumTravelDistance = response.data.menteePreferences.maximumTravelDistanceKM
+        self.minimumAge = response.data.menteePreferences.minimumAge
+        self.maximumAge = response.data.menteePreferences.maximumAge
+        self.maxNumberOfMentees = response.data.menteePreferences.maxNumberOfMentees
+      })
     }
   }
 </script>
@@ -295,12 +307,32 @@
     margin-left: 0px !important;
   }
 
-  .el-checkbox__label {
-    color: black !important;
-  }
-
   .errorMessage {
     color: red;
+  }
+
+  .el-checkbox.is-bordered.el-checkbox--medium.is-checked {
+    border: 0px;
+    background-color: black;
+    color: white;
+  }
+
+
+  .el-checkbox-button {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: rgb(220, 223, 230);
+  }
+
+  .el-checkbox-button.is-focus {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #409EFF;
+  }
+
+  .selectAll {
+    font-size: 14px;
+    color: black;
   }
 
 </style>

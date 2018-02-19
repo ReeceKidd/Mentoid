@@ -77,7 +77,6 @@ module.exports = getEducationHistory = (req, res) => {
             })
         }
     }).select('education -_id').then(user => {
-        console.log(user.education)
         res.status(200).send({
             education: user.education
         })

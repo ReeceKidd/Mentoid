@@ -11,6 +11,6 @@ directory.
 module.exports = function assignPictureToUser(userID) {
     var files = fs.readdirSync(generatedPicturesDirectory)
     var randomIndex = Math.floor(Math.random() * files.length) + 1
-    var randomFile = generatedPicturesDirectory + randomIndex + '.jpg'
+    var randomFile = generatedPicturesDirectory + files[randomIndex]
     fs.writeFileSync(profilePicturesDirectory + userID + '.jpg', fs.readFileSync(randomFile));
 }

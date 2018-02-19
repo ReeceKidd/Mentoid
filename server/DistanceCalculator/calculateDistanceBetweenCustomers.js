@@ -15,18 +15,18 @@ function degrees_to_radians(degrees) {
     return degrees * Math.PI / 180
 }
 
-distanceCalculator.calculateDistanceFromDublinOffice = function(userLocationInformation, matchedUserLocationInformation){
+distanceCalculator.calculateDistanceFromDublinOffice = function (userLocationInformation, matchedUserLocationInformation) {
 
     var userLatRadian = degrees_to_radians(userLocationInformation.latitude)
-    var userLongRadian = degrees_to_radians(userLocationInformation.longitude) 
+    var userLongRadian = degrees_to_radians(userLocationInformation.longitude)
 
     var matchedUserLatRadian = degrees_to_radians(matchedUserLocationInformation.latitude)
     var matchedUserLongRadian = degrees_to_radians(matchedUserLocationInformation.longitude)
 
     const central_angle = Math.acos(
         Math.sin(userLatRadian) * Math.sin(matchedUserLatRadian) +
-        Math.cos(userLatRadian) * Math.cos(matchedUserLatRadian) 
-        * Math.cos(degrees_to_radians(userLongRadian) - degrees_to_radians(matchedUserLongRadian))
+        Math.cos(userLatRadian) * Math.cos(matchedUserLatRadian) *
+        Math.cos(degrees_to_radians(userLongRadian) - degrees_to_radians(matchedUserLongRadian))
     )
 
     const distance = earthsRadius * central_angle

@@ -2,3 +2,957 @@
 08:15:05 ControllerMethods/Register/getEducationHistory.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"abc"}}
 09:31:30 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
 09:32:15 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:28:33 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anne-Marie"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anne-MarieTeegardin91"}}
+10:29:11 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Diana"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-DianaMulkin11"}}
+10:29:38 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:29:38 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:29:38 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:29:41 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:33:43 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Dee Dee"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Dee DeeHuryn81"},"email":{"location":"body","param":"email","msg":"Invalid email","value":"Dee DeeHuryn81@gmail.com"}}
+10:35:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:35:33 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:35:33 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:35:33 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:35:33 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:35:33 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:35:34 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:35:34 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:35:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:35:34 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:35:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:35:34 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:35:34 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:35:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:35:34 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:35:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:36:49 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Bette-Ann"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Bette-AnnEarly61"}}
+10:39:09 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:39:09 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:39:52 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:41:07 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Helen-Elizabeth"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Helen-ElizabethMazella41"}}
+10:41:37 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:43:51 ControllerMethods/Register/updateEducation.js ERROR: Education schools cannot be greater than 100 characters
+10:43:58 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anne-Corinne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anne-CorinneMammen71"}}
+10:43:59 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Marie-Jeanne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Marie-JeanneCaulk01"}}
+10:44:35 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:44:37 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:44:37 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+10:45:54 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Diane"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-DianeOverholt31"}}
+10:46:02 ControllerMethods/Register/updateEducation.js ERROR: Education schools cannot be greater than 100 characters
+10:46:08 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Jo-Anne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Jo-AnnePatchett81"}}
+10:46:10 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:46:14 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:46:15 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:46:15 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:46:15 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:46:21 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:46:21 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:46:21 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:46:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:47:59 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:47:59 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:47:59 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:48:00 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:48:14 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:48:14 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:48:14 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:48:14 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:48:45 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Ann-Marie"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Ann-MarieMorren81"}}
+10:50:50 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:50:53 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:50:53 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:50:53 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:53:21 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Marie-Ann"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Marie-AnnSummersett01"}}
+10:54:02 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Marie-Jeanne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Marie-JeanneSchefers11"}}
+10:54:12 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Sheila-Kathryn"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Sheila-KathrynFrancek21"}}
+10:55:21 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:55:21 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:55:21 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:55:21 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:55:21 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:55:21 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:56:02 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:56:02 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:56:02 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:56:02 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:56:02 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:56:12 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:56:12 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+10:56:12 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+10:56:12 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+10:57:04 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Jo-Ann"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Jo-AnnRosenbauer61"}}
+12:55:08 ControllerMethods/Register/register.js ERROR:  {"name":"MongoError","message":"connection 6 to localhost:27017 timed out"}
+12:57:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:54 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:55 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:55 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:55 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:57:54 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:54 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:55 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:57:55 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:26 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:26 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:26 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:26 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:26 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:27 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:27 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+12:58:43 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Carol-Jean"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Carol-JeanCartel11"}}
+13:14:09 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Barbara-Anne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Barbara-AnneStyck71"}}
+13:15:06 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Sara-Ann"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Sara-AnnBisgard01"}}
+13:15:51 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:16:15 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Sara-Ann"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Sara-AnnPoore71"}}
+13:16:19 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Jo Ann"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Jo AnnDesai71"},"email":{"location":"body","param":"email","msg":"Invalid email","value":"Jo AnnDesai71@gmail.com"}}
+13:16:42 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Jo-Anne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Jo-AnneBurin11"}}
+13:16:48 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:16:48 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:17:12 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:12 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:12 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:13 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:13 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:14 ControllerMethods/Register/updateEducation.js ERROR: Education schools cannot be greater than 100 characters
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:17 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:18 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:19 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:22 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:23 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:23 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:25 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:25 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:25 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:25 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:25 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:25 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:27 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:27 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:27 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:17:27 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:17:27 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:27 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:27 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:27 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:27 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:17:27 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:28 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:28 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:17:28 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:17:30 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:18:13 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:18:13 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:18:13 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:18:16 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:16 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:18:16 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:16 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:16 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:16 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:52 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:52 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:53 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:53 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:53 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:18:53 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:53 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:52 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:53 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:18:53 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:18:53 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:18:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:19:51 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:19:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:19:51 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:19:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:19:51 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:19:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:19:51 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:18 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:22 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:26 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:30 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:34 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:34 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:34 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:34 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:34 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:35 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:35 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:35 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:35 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:35 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:26:39 ControllerMethods/Register/updateMenteePreferences.js ERROR: mentoringAreasOfInterest was not found in request
+13:30:36 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:36 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:40 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:46 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:46 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:47 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:47 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:47 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:47 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:30:47 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:30:47 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:47 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:47 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:48 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:51 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:52 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:51 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:51 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:52 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:52 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:52 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:52 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:52 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:30:52 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:52 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:52 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:52 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:52 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:30:52 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:53 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:53 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:53 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:53 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:53 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:53 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:54 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:54 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:54 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:56 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:56 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:56 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:56 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:30:57 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:57 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:58 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:58 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:58 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:58 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:30:59 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:59 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:30:59 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:31:00 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:00 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:00 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:00 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:02 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:02 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:02 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:02 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:31:02 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:31:17 ControllerMethods/Register/updateJobHistory.js ERROR:  {"name":"MongoError","message":"read ECONNRESET"}
+13:31:16 ControllerMethods/Register/updateMentorPreferences.js ERROR:  {"name":"MongoError","message":"write ECONNRESET"}
+13:31:16 ControllerMethods/Register/updateLocation.js ERROR:  {"name":"MongoError","message":"write ECONNRESET"}
+13:31:16 ControllerMethods/Register/updateSocialMedia.js ERROR:  {"name":"MongoError","message":"write ECONNRESET"}
+13:31:16 ControllerMethods/Register/updateMenteePreferences.js ERROR:  {"name":"MongoError","message":"write ECONNRESET"}
+13:39:27 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Zsa Zsa"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Zsa ZsaSarten91"},"email":{"location":"body","param":"email","msg":"Invalid email","value":"Zsa ZsaSarten91@gmail.com"}}
+13:40:01 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anne-Corinne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anne-CorinneMcgavern61"}}
+13:40:03 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:40:20 ControllerMethods/Register/updateEducation.js ERROR: Education schools cannot be greater than 100 characters
+13:41:20 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:41:21 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:41:21 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:41:21 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:41:21 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:41:42 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Diana"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-DianaTannahill81"}}
+13:41:55 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anne-Corinne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anne-CorinneMorisaki61"}}
+13:42:22 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:22 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:24 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:25 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:25 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:42:24 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:25 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:25 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:42:25 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:25 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:26 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:42:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:26 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:26 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:42:26 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:26 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:42:32 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:32 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:32 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:42:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:43:37 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:43:45 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Marie-Jeanne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Marie-JeanneSteinmeier01"}}
+13:43:50 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:43:54 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Ann-Marie"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Ann-MarieAntosz81"}}
+13:43:56 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:43:56 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:43:56 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:43:59 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:44:08 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:44:13 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:44:13 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:44:15 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:44:16 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:44:19 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:44:32 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Jo-Anne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Jo-AnneHansler51"}}
+13:45:49 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:45:50 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:45:50 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:45:50 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:45:50 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:45:50 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:45:57 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:45:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:45:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:45:57 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:45:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:46:36 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:46:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:46:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:46:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:49:01 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:49:01 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:49:40 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:50:08 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Maria"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-MariaBatchelder21"}}
+13:51:40 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Barbara-Anne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Barbara-AnneLipschultz61"}}
+13:52:32 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:32 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:32 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:33 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:34 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:35 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:35 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:52:35 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:36 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:37 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:37 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:37 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:37 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:37 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:37 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:37 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:37 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:52:37 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:38 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:38 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:38 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:38 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:38 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:52:38 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:52:38 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:38 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:38 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:52:39 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:39 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:40 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:40 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:52:41 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:52:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:52:57 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:52:58 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:52:58 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:53:50 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:53:51 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:53:51 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:53:51 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:53:52 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:32 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:32 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:32 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:32 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:32 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:32 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:33 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:33 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:33 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:33 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:34 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:34 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:34 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:34 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:35 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:35 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:35 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:35 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:35 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:35 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:35 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:35 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:35 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:35 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:38 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Maria"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-MariaSpaits11"}}
+13:54:44 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:44 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:57 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:54:57 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:54:58 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:54:58 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:42 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:42 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:42 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:42 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:45 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:45 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:45 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:45 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:45 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:45 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:45 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:45 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:45 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:45 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:46 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:46 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:47 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:47 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:47 ControllerMethods/Register/updateJobHistory.js ERROR: age was not found in request
+13:55:46 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:47 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:48 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:48 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:48 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:48 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+13:55:49 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+13:55:57 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Miof Mela"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Miof MelaAltom31"},"email":{"location":"body","param":"email","msg":"Invalid email","value":"Miof MelaAltom31@gmail.com"}}
+13:59:17 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Maria"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-MariaJuban21"}}
+13:59:38 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:59:38 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:59:38 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:59:38 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+13:59:38 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+14:01:19 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:01:19 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:01:19 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:01:19 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:02:06 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+14:02:08 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"Anna-Diane"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"Anna-DianeHannay81"}}
+14:04:01 ControllerMethods/Register/register.js ERROR:  {"firstName":{"location":"body","param":"firstName","msg":"First name can only contain Alphabetical characters","value":"La Verne"},"userName":{"location":"body","param":"userName","msg":"Username must be alphanumeric and cannot contain spaces","value":"La VerneHilbrich41"},"email":{"location":"body","param":"email","msg":"Invalid email","value":"La VerneHilbrich41@gmail.com"}}
+14:04:09 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:04:09 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:04:09 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:04:09 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:04:15 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getUsersAge.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/updateEducation.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:43 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/getAreasOfInterest.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"undefined"}}
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request
+14:05:44 ControllerMethods/Register/updateJobHistory.js ERROR: _id was not found in request

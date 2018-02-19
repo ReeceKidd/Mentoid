@@ -5,6 +5,8 @@ module.exports = async function getUserID(userName) {
     var userID
     await axios.get(getUserIDURL + userName).then(function (response) {
       userID = response.data.userID
+    }).then(userID => {
+      userID = userID
     }).catch(error => {
       console.log('Could not get User ID: ' + error)
     })

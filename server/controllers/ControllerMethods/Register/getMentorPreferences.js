@@ -81,13 +81,16 @@ module.exports = getMentorPreferences = (req, res) => {
         }
     }).select('mentorPreferences -_id').then(user => {
         var mentoringAreaOfInterestNames = []
+        /*
+        This replaces the original areas of interest object array with just the names 
+        of the areas of interest. 
+        */
         var mentoringAreasOfInterest = user.mentorPreferences.mentoringAreasOfInterest
         for(var x = 0; x < mentoringAreasOfInterest.length; x++){
             var currentAreaOfInterest = mentoringAreasOfInterest[x]
             mentoringAreaOfInterestNames.push(currentAreaOfInterest.value)
         }
 
-        console.log(mentoringAreaOfInterestNames)
         user.mentorPreferences.mentoringAreasOfInterest = mentoringAreaOfInterestNames
         
         res.status(200).send({

@@ -285,7 +285,6 @@
       })
       const getMentorPreferences = 'http://localhost:4000/get/mentor-preferences/'
       axios.get(getMentorPreferences + userID).then(function (response) {
-        console.log(response)
         self.checkedAreasOfInterest = response.data.mentorPreferences.mentoringAreasOfInterest
         self.checkedMentoringFormats = response.data.mentorPreferences.prefferedMentoringFormats
         self.checkedLanguages = response.data.mentorPreferences.mentoringLanguages

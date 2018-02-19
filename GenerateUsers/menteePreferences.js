@@ -19,7 +19,7 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
 
     await axios.post(updateMentorPreferencesURL, {
         menteePreferences: {
-            mentoringAreasOfInterest: areasOfInterest,
+            areasOfInterest: areasOfInterest,
             prefferedMentoringFormats: prefferedMentoringFormats,
             maximumTravelDistanceKM: maximumTravelDistance,
             mentoringLanguages: mentoringLanguages,

@@ -23,7 +23,7 @@ module.exports = updateMentorPreferences = (req, res) => {
     }
 
     var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.menteePreferences, [
-    'mentoringAreasOfInterest',
+    'areasOfInterest',
     'prefferedMentoringFormats',
     'maximumTravelDistanceKM',
     'mentoringLanguages',
@@ -58,7 +58,7 @@ module.exports = updateMentorPreferences = (req, res) => {
             if (err) {
                 logger.error(err)
                 res.status(400).send({
-                    message: 'Unable to update mentor preferences. Could not find user. '
+                    message: 'Unable to update mentee preferences. Could not find user. '
                 })
             } else {
                 res.status(200).send({
