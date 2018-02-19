@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module);
+var logger = require('../../../src/logging.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')

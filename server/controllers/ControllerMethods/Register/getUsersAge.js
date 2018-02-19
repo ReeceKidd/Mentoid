@@ -1,5 +1,7 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
@@ -16,22 +18,23 @@ const sanitizeID = require('../../Sanitizers/userID')
 const userIDValidation = require('../../Validators/userID')
 
 module.exports = getUsersAge = (req, res) => {
+
     
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
+        logger.error(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
         })
     } 
 
-    
-    
     //Checks that fields only defined in the schema are passed. 
      var unwantedFields = checkForID(req)
 
      if (unwantedFields) {
+        logger.error(unwantedFields)
          res.status(700).json({
              message: unwantedFields,
              error: 'Additional fields found'
@@ -39,12 +42,11 @@ module.exports = getUsersAge = (req, res) => {
          return
      }
 
-     
- 
      //Checks that each of the fields are type string. 
      var badType = basicTypeCheck(req.params)
  
      if (badType) {
+        logger.error(badType)
          res.status(850).json({
              message: badType,
              error: 'Invalid type in request'
@@ -52,11 +54,10 @@ module.exports = getUsersAge = (req, res) => {
  
      }
 
-     
- 
      //Validation. 
      var errors = userIDValidation(req)
      if (errors) {
+        logger.error(errors)
          res.status(600).json({
              message: errors,
              error: 'Validation failure'
@@ -64,14 +65,14 @@ module.exports = getUsersAge = (req, res) => {
          return
      }
 
-     
- 
+    
      //Santize User ID
      sanitizeID(req.params)
 
     
     User.findById(req.params.userID, function (err, user) {
         if (err) {
+            logger.error(err)
             res.status(500)
             res.send({
                 message: 'Could not get users age',

@@ -7,11 +7,14 @@
 
    var User = require('../../../models/user')
 
+   var logger = require('../../../src/logging.js')(module)
+
    module.exports = uploadProfilePicture = (req, res) => {
 
        try {
            res.status(200).send('Uploaded profile picture successfully')
        } catch (exception) {
+        logger.error(exception)
            res.status(500).send(exception)
        }
 

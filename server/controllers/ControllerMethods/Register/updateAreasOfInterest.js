@@ -1,5 +1,7 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 //Checks all necessary fields are defined. 
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
@@ -27,34 +29,31 @@ const updateAreasOfInterestValidation = require('../../Validators/Registration/u
 
 module.exports = updateAreasOfInterest = (req, res) => {
 
-    
-
     var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','areasOfInterest'])
 
     if (undefinedFields) {
+        logger.error(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
         })
     }
 
-    
-
     var undefinedArrayFields = checkUndefinedFieldsArray(req.body.areasOfInterest, ['value', 'years','areaOfInterestID'])
 
     if (undefinedArrayFields) {
+        logger.error(undefinedArrayFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedArrayFields
         })
     }
 
-    
-    
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateAreasOfInterestFields(req.body)
 
     if (unwantedField) {
+        logger.error(unwantedField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedField
@@ -65,6 +64,7 @@ module.exports = updateAreasOfInterest = (req, res) => {
     var unwantedArrayField = checkUpdateAreasOfInterestArrayFields(req.body.areasOfInterest)
 
     if (unwantedArrayField) {
+        logger.error(unwantedArrayField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
@@ -75,6 +75,7 @@ module.exports = updateAreasOfInterest = (req, res) => {
     var checkRequestTypes = checkAreasOfInterestTypes(req.body)
 
     if (checkRequestTypes) {
+        logger.error(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
             message: checkRequestTypes
@@ -90,6 +91,7 @@ module.exports = updateAreasOfInterest = (req, res) => {
     var duplicatedAreaOfInterestValues = checkAreasOfInterestDuplicates(req.body.areasOfInterest)
 
     if (duplicatedAreaOfInterestValues) {
+        logger.error(duplicatedAreaOfInterestValues)
         return res.status(800).send({
             error: 'Duplicate values',
             message: duplicatedAreaOfInterestValues
@@ -100,8 +102,7 @@ module.exports = updateAreasOfInterest = (req, res) => {
     var errors = updateAreasOfInterestValidation(req)
 
     if (errors) {
-        console.log(errors);
-        
+        logger.error(errors)
         return res.status(600).send({
             error: 'Validation failure',
             message: errors[Object.keys(errors)[0]].msg
@@ -133,7 +134,8 @@ module.exports = updateAreasOfInterest = (req, res) => {
         },
         function (err, updated) {
             if (err) {
-                res.status(400).send({
+                logger.error(err)
+                res.status(500).send({
                     message: 'Unable to update areas of interest. Could not find user. '
                 })
             } else {

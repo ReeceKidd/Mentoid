@@ -1,6 +1,0 @@
-{"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"},"level":"error","message":"","label":"ControllerMethods/Register/checkEmail.js","timestamp":"07:57:16"}
-{"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"},"level":"error","message":"","timestamp":"07:57:53"}
-08:00:37 ControllerMethods/Register/checkEmail.js ERROR 
-	{"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"}}
-08:01:25 ControllerMethods/Register/checkEmail.js ERROR  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"}}
-08:02:04 ControllerMethods/Register/checkEmail.js ERROR:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"}}

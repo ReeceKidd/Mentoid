@@ -1,5 +1,7 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
@@ -62,7 +64,7 @@ module.exports = register = (req, res) => {
     ])
 
     if (undefinedFields) {
-        console.log(undefinedFields)
+        logger.error(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -73,6 +75,7 @@ module.exports = register = (req, res) => {
     var unwantedFields = checkBasicRegistrationFields(req)
 
     if (unwantedFields) {
+        logger.error(unwantedFields)
         res.status(700).json({
             message: unwantedFields,
             error: 'Additional fields found'
@@ -83,6 +86,7 @@ module.exports = register = (req, res) => {
     var nullPresent = checkForNull(req.body)
 
     if (nullPresent) {
+        logger.error(nullPresent)
         res.status(975).json({
             message: nullPresent,
             error: 'Null value present'
@@ -94,7 +98,7 @@ module.exports = register = (req, res) => {
 var badType = basicTypeCheck(req.body)
 
 if (badType) {
-    console.log(badType)
+    logger.error(badType)
     res.status(850).json({
         message: badType,
         error: 'Invalid type'
@@ -105,6 +109,7 @@ if (badType) {
 //Validation for basic registration. 
 var errors = basicRegistrationValidation(req)
 if (errors) {
+    logger.error(errors)
     res.status(600).json({
         message: errors,
         error: 'Validation failure'
@@ -136,7 +141,7 @@ try {
             })
         })
         .catch(err => {
-            console.log(err)
+            logger.error(err)
             res.status(400).send({
                 message: err.message ? err.message : 'Unable to save user to database',
                 error: 'Unable to save user.'
@@ -144,6 +149,7 @@ try {
         })
 } catch (err) {
     const message = err.message ? err.message : 'There was an error'
+    logger.error(err)
     res.status(401).send({
         message: message
     })

@@ -1,5 +1,7 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 module.exports = updateLocationInformation = (req, res) => {
 
     var query = {
@@ -14,8 +16,9 @@ module.exports = updateLocationInformation = (req, res) => {
         },
         function (err, updated) {
             if (err) {
-                res.status(400).send({
-                    message: 'Unable to update job history. Could not find user. '
+                logger.error(err)
+                res.status(500).send({
+                    message: 'Unable to update location information. Could not find user. '
                 })
             } else {
                 res.status(200).send({

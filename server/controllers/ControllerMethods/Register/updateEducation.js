@@ -1,5 +1,7 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 // Formats job title to titleCase
 const toTitleCase = require('../../Formatter/toTitleCase.js')
 
@@ -30,6 +32,7 @@ module.exports = updateEducation = (req, res) => {
     var unwantedField = checkUpdateEducationFields(req.body)
 
     if (unwantedField) {
+        logger.error(unwantedFields)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedField
@@ -41,6 +44,7 @@ module.exports = updateEducation = (req, res) => {
     var unwantedArrayField = checkUpdateEducationArrayFields(req.body.education)
 
     if (unwantedArrayField) {
+        logger.error(unwantedArrayField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
@@ -50,6 +54,7 @@ module.exports = updateEducation = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','education'])
 
     if (undefinedFields) {
+        logger.error(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -60,6 +65,7 @@ module.exports = updateEducation = (req, res) => {
     var undefinedArrayFields = checkUndefinedFieldsArray(req.body.education, ['educationID', 'school', 'degree', 'country','fieldOfStudy','startYear','endYear'])
 
     if (undefinedArrayFields) {
+        logger.error(undefinedArrayFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedArrayFields
@@ -71,6 +77,7 @@ module.exports = updateEducation = (req, res) => {
     var checkRequestTypes = checkEducationTypes(req.body)
 
     if (checkRequestTypes) {
+        logger.error(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
             message: checkRequestTypes
@@ -82,6 +89,7 @@ module.exports = updateEducation = (req, res) => {
     var validationError = updateEducationValidation(req)
 
     if (validationError) {
+        logger.error(validationError)
         return res.status(600).send({
             error: 'Validation failure',
             message: validationError
@@ -111,7 +119,8 @@ module.exports = updateEducation = (req, res) => {
         },
         function (err, updated) {
             if (err) {
-                res.status(400).send({
+                logger.error(err)
+                res.status(500).send({
                     message: 'Unable to update job history. Could not find user. '
                 })
             } else {

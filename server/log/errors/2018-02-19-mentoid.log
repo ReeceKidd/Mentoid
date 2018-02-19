@@ -1,0 +1,2 @@
+08:08:45 ControllerMethods/Register/checkEmail.js ERROR:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"}}
+08:15:05 ControllerMethods/Register/getEducationHistory.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"abc"}}

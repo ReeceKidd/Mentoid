@@ -1,5 +1,7 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
@@ -20,6 +22,7 @@ module.exports = checkUserName = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.params, ['username'])
 
     if (undefinedFields) {
+        logger.error(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -30,6 +33,7 @@ module.exports = checkUserName = (req, res) => {
     var unwantedFields = checkUserNameField(req)
 
     if (unwantedFields) {
+        logger.error(unwantedFields)
         res.status(700).send({
             message: unwantedFields,
             error: 'Additional fields found'
@@ -41,7 +45,7 @@ module.exports = checkUserName = (req, res) => {
     var badType = basicTypeCheck(req.params)
 
     if (badType) {
-        console.log(badType)
+        logger.error(badType)
         res.status(850).send({
             message: badType,
             error: 'Invalid type in request'
@@ -51,6 +55,7 @@ module.exports = checkUserName = (req, res) => {
 
     //Validation. 
     var errors = checkUserNameValidation(req)
+    logger.error(errors)
     if (errors) {
         res.send({
             message: errors
@@ -73,6 +78,7 @@ module.exports = checkUserName = (req, res) => {
             })
             return
         } if (err) {
+            logger.error(err)
             res.status(500)
             res.send({
                 message: 'Server error',

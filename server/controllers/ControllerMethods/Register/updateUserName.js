@@ -1,17 +1,18 @@
 var User = require('../../../models/user')
 
+var logger = require('../../../src/logging.js')(module)
+
 //Checks all necessary fields are defined. 
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
 module.exports = updateUserName = (req, res) => {
-
-    console.log(req.body)
 
     //Need to put the field checkers in. 
 
     var undefinedFields = checkUndefinedFields(req.body, ['userID', 'oldUserName', 'newUserName'])
 
     if (undefinedFields) {
+        logger.error(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -39,6 +40,7 @@ module.exports = updateUserName = (req, res) => {
                     error: 'Already exists in database.'
                 })
             } else if (err) {
+                logger.error(err)
                 res.status(500)
                 res.send({
                     message: 'Server error',
@@ -53,7 +55,8 @@ module.exports = updateUserName = (req, res) => {
                     },
                     function (err, updated) {
                         if (err) {
-                            res.status(400).send({
+                            logger.error(err)
+                            res.status(500).send({
                                 message: 'Unable to update users name. Could not find user. '
                             })
                         } else {
