@@ -80,7 +80,16 @@ module.exports = getMentorPreferences = (req, res) => {
             })
         }
     }).select('mentorPreferences -_id').then(user => {
-        console.log(user)
+        var mentoringAreaOfInterestNames = []
+        var mentoringAreasOfInterest = user.mentorPreferences.mentoringAreasOfInterest
+        for(var x = 0; x < mentoringAreasOfInterest.length; x++){
+            var currentAreaOfInterest = mentoringAreasOfInterest[x]
+            mentoringAreaOfInterestNames.push(currentAreaOfInterest.value)
+        }
+
+        console.log(mentoringAreaOfInterestNames)
+        user.mentorPreferences.mentoringAreasOfInterest = mentoringAreaOfInterestNames
+        
         res.status(200).send({
             mentorPreferences: user.mentorPreferences
         })

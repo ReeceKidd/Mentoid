@@ -22,6 +22,7 @@
     <div class="col-xs-8 col-xs-offset-2">
       <div v-if="wouldLikeToMentor === 'Yes'">
         <!-- User has updaed areas of interest -->
+
         <span v-if="checkedAreasOfInterest.length !== 0">
           <label> Which Areas would you like to Mentor in? </label>
           <br>
@@ -29,7 +30,7 @@
             <span class="selectAll">Select All</span>
           </el-checkbox>
           <el-checkbox-group v-model="checkedAreasOfInterest" @change="handleCheckedAreasOfInterestChange">
-            <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
+            <el-checkbox v-for="areaOfInterest in areasOfInterest" :label="areaOfInterest.value" :key="areaOfInterest.value" border size="medium">{{areaOfInterest.value}}</el-checkbox>
           </el-checkbox-group>
           <br>
           <br>
@@ -95,7 +96,7 @@
         <br>
         <label> How many people can you Mentor Simultaneously? </label>
         <br>
-        <input type="number" min="1" oninput="validity.valid||(numberOfMentees=0)" v-model="numberOfMentees" name="numberOfMentees">
+        <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentees=0)" v-model="maxNumberOfMentees" name="maxNumberOfMentees">
         <br>
         <br>
         <div class="row text-center">
@@ -164,7 +165,7 @@
         isIndeterminateEducation: true,
         minimumAge: 16,
         maximumAge: '',
-        numberOfMentees: 1,
+        maxNumberOfMentees: '',
         successMessage: null
       }
     },
@@ -292,7 +293,7 @@
         self.maximumTravelDistance = response.data.mentorPreferences.maximumTravelDistanceKM
         self.minimumAge = response.data.mentorPreferences.minimumAge
         self.maximumAge = response.data.mentorPreferences.maximumAge
-        self.numberOfMentees = response.data.mentoringPreferences.numberOfMentees
+        self.maxNumberOfMentees = response.data.mentorPreferences.maxNumberOfMentees
       })
     }
   }
