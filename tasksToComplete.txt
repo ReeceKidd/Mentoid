@@ -251,3 +251,6 @@ Plan for 19/02/2018
 3) Go through the reigstration section to figure out what is going on. 
 4) Need to add logging to the different routing methods so I can see whats causing them to crash. This will actually be useful and 
 will be good to write about as if an error appears in the log, it can help with the debugging process. 
+5) Need to add ignore for profile pictures. 
+
+Add logging (1 hour)

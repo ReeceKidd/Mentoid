@@ -7,10 +7,9 @@ var routes = require('./routes')
 var expressValidator = require('express-validator')
 var expressSession = require('express-session')
 var mongoose = require('mongoose')
-var bluebird = require('bluebird');
+var bluebird = require('bluebird')
 var morgan = require('morgan')
 var http = require('http')
-
 
 var passportStrategy = require('../lib/passport')
 passport.use(passportStrategy)
