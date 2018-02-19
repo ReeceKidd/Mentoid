@@ -41,7 +41,8 @@
     "passport-http": "*",
     "passport-jwt": "^3.0.1",
     "passport-local": "*",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "winston": "^2.4.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",

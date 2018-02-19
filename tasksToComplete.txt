@@ -243,3 +243,11 @@ Going to get the country to appear for the education section.(Complete)
 //Go through registration page and see whats wrong with the social media section. 
 //Need to make first name and last name update title case. 
 //Stop emails being title case. 
+
+Plan for 19/02/2018
+
+1) Get the mentor and mentee preferences section fully working. 
+2) Figure out how to make the matching algorithm work. 
+3) Go through the reigstration section to figure out what is going on. 
+4) Need to add logging to the different routing methods so I can see whats causing them to crash. This will actually be useful and 
+will be good to write about as if an error appears in the log, it can help with the debugging process. 

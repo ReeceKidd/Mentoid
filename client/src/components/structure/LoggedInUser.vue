@@ -99,7 +99,7 @@
                 <i class="fas fa-globe" id="globe"></i> 
                 <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu dropdown-menu-right">
+              <ul class="dropdown-menu">
                 <li>
                   <a>English</a>
                 </li>
