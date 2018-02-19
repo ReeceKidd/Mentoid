@@ -282,6 +282,18 @@
       axios.get(getAreasOfInterestUrl + userID).then(function (response) {
         self.areasOfInterest = response.data.areasOfInterest
       })
+      const getMentorPreferences = 'http://localhost:4000/get/mentor-preferences/'
+      axios.get(getMentorPreferences + userID).then(function (response) {
+        console.log(response)
+        self.checkedAreasOfInterest = response.data.mentorPreferences.mentoringAreasOfInterest
+        self.checkedMentoringFormats = response.data.mentorPreferences.prefferedMentoringFormats
+        self.checkedLanguages = response.data.mentorPreferences.mentoringLanguages
+        self.checkedEducation = response.data.mentorPreferences.prefferedEducation
+        self.maximumTravelDistance = response.data.mentorPreferences.maximumTravelDistanceKM
+        self.minimumAge = response.data.mentorPreferences.minimumAge
+        self.maximumAge = response.data.mentorPreferences.maximumAge
+        self.numberOfMentees = response.data.mentoringPreferences.numberOfMentees
+      })
     }
   }
 </script>

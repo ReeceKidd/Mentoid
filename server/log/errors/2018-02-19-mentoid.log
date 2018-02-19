@@ -1,2 +1,4 @@
 08:08:45 ControllerMethods/Register/checkEmail.js ERROR:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece&145"}}
 08:15:05 ControllerMethods/Register/getEducationHistory.js ERROR:  {"userID":{"location":"params","param":"userID","msg":"ID object should be a valid ObjectID ","value":"abc"}}
+09:31:30 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans
+09:32:15 ControllerMethods/Register/updateJobHistory.js ERROR: Experience titles can only contain letters, white space, commas, periods and ampersans

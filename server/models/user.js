@@ -70,6 +70,7 @@ const User = new Schema({
     prefferedEducation: [],
     minimumAge: Number,
     maximumAge: Number,
+    maxNumberOfMentees: Number
   },
   menteePreferences: {
     areasOfInterest: [],
@@ -78,7 +79,8 @@ const User = new Schema({
     mentoringLanguages: [],
     prefferedEducation: [],
     minimumAge: Number,
-    maximumAge: Number
+    maximumAge: Number,
+    maxNumberOfMentors: Number
   },
   mentors: [],
   mentees: [],

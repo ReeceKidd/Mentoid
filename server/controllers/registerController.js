@@ -19,6 +19,7 @@ registerController.getEducationHistory = require('./ControllerMethods/Register/g
 registerController.uploadProfilePicture = require('./ControllerMethods/Register/uploadProfilePicture')
 registerController.getProfilePicture = require('./ControllerMethods/Register/getProfilePicture')
 registerController.updateMentorPreferences = require('./ControllerMethods/Register/updateMentorPreferences')
+registerController.getMentorPreferences = require('./ControllerMethods/Register/getMentorPreferences')
 registerController.updateMenteePreferences = require('./ControllerMethods/Register/updateMenteePreferences')
 registerController.getProfileCompleteness = require('./ControllerMethods/Register/getProfileCompleteness')
 registerController.updateSocialMedia = require('./ControllerMethods/Register/updateSocialMedia')

@@ -15,6 +15,7 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
     var prefferedEducation = getPrefferedEducation()
     var minimumAge = getMinimumAge(age)
     var maximumAge = getMaximumAge(minimumAge)
+    var maxNumberOfMentors = getMaximumNumberOfMentors()
 
     await axios.post(updateMentorPreferencesURL, {
         menteePreferences: {
@@ -24,7 +25,8 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
             mentoringLanguages: mentoringLanguages,
             prefferedEducation: prefferedEducation,
             minimumAge: minimumAge,
-            maximumAge: maximumAge
+            maximumAge: maximumAge,
+            maxNumberOfMentors: maxNumberOfMentors
         },
         userID: userID
     }).catch(error => {
@@ -113,4 +115,8 @@ function getMinimumAge() {
 
 function getMaximumAge(minimumAge) {
     return Math.floor(Math.random()*(100-minimumAge+1)+minimumAge);
+}
+
+function getMaximumNumberOfMentors() {
+    return Math.floor(Math.random()*(10)+1)
 }

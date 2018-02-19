@@ -72,7 +72,7 @@ module.exports = getUsersAge = (req, res) => {
             logger.error(err)
             res.status(500)
             res.send({
-                message: 'Could not get users age',
+                message: 'Could not find user',
                 error: 'Server error'
             })
         }
