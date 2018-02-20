@@ -5,13 +5,22 @@
       <h1 class="text-center"> Potential Mentors </h1>
     </div>
 
-  <div>
-    {{ areasOfInterest }}
-    {{ users }}
-  </div>
-
     <div class="row text-center">
       <button class="btn btn-primary" @click="matchMentors()">Find Mentors</button>
+    </div>
+
+    <!-- Advanced search options -->
+    <div class="row">
+      <h3 class="text-center"> What area of interest are you searching for? </h3>
+      <!-- Mentor Preferences Component -->
+      <!-- This will have the exact same functionality as the mentor preferences component a search will be performed for 
+            each area that is ticked.  -->
+      <!-- End of mentor preferences component -->
+    </div>
+
+    <!-- This will perform a random search across all areas of interest might only return one match -->
+    <div class="row">
+      <p class="text-center"> I'm feeling lucky</p>
     </div>
 
     <br>
@@ -25,12 +34,13 @@
       return {
         users: [],
         currentUser: this.$store.state.user.authUser,
+        userID: this.$store.state.user.authUser._id,
         areasOfInterest: [],
-        matchedMentors: ''
+        matchedMentors: []
       }
     },
     created: function () {
-      this.fetchUsers()
+      // It might be a good idea to start searching immediately on page load to speed up response time.
       const userID = this.$store.state.user.authUser._id
       const apiUrl = 'http://localhost:4000/get/areas-of-interest/'
       var self = this
@@ -39,11 +49,12 @@
       })
     },
     methods: {
-      fetchUsers() {
-        let uri = 'http://localhost:4000/admin/get-users'
-        this.axios.get(uri).then(response => {
+      matchMentors() {
+        var self = this
+        var getPotentialMentorsURL = 'http://localhost:4000/get/potential-mentors/'
+        axios.get(getPotentialMentorsURL + this.userID).then(function (response) {
           console.log(response)
-          this.users = response.data
+          self.matchedMentors = response.data.matchedMentors
         })
       }
     }

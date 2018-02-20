@@ -23,13 +23,15 @@ module.exports = updateMentorPreferences = (req, res) => {
     }
 
     var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.mentorPreferences, [
-    'mentoringAreasOfInterest',
-    'prefferedMentoringFormats',
-    'maximumTravelDistanceKM',
-    'mentoringLanguages',
-    'prefferedEducation',
-    'maximumAge',
-    'minimumAge'])
+        'mentoringAreasOfInterest',
+        'prefferedMentoringFormats',
+        'maximumTravelDistanceKM',
+        'mentoringLanguages',
+        'prefferedEducation',
+        'maximumAge',
+        'minimumAge',
+        'maxNumberOfMentees'
+    ])
 
     if (undefinedFieldsMentoringPreferences) {
         logger.error(undefinedFieldsMentoringPreferences)
@@ -39,9 +41,15 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
+
+
     //Need to do validation for the mentor preferences section. 
 
     sanitizeUpdateMentorPreferences(req.body)
+
+    var mentorPreferences = req.body.mentorPreferences
+    console.log(mentorPreferences.mentoringAreasOfInterest)
+    
 
     var query = {
         '_id': req.body.userID
@@ -50,8 +58,16 @@ module.exports = updateMentorPreferences = (req, res) => {
     User.findOneAndUpdate(query, {
             $set: {
                 mentorPreferencesComplete: true,
-                mentorPreferences: req.body.mentorPreferences
+                mentoringAreasOfInterest: mentorPreferences.mentoringAreasOfInterest,
+                prefferedMentoringFormats: mentorPreferences.prefferedMentoringFormats,
+                maximumTravelDistanceKM: mentorPreferences.maximumTravelDistanceKM,
+                mentoringLanguages: mentorPreferences.mentoringLanguages,
+                prefferedEducation: mentorPreferences.prefferedEducation,
+                minimumAge: mentorPreferences.minimumAge,
+                maximumAge: mentorPreferences.maximumTravelDistanceKM,
+                maxNumberOfMentees: mentorPreferences.maxNumberOfMentees
             },
+
         },
         function (err, updated) {
             if (err) {

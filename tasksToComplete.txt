@@ -258,3 +258,14 @@ will be good to write about as if an error appears in the log, it can help with 
 9)First name can only contain Alphabetical characters","value":"Bette-Ann"
 
 Mentee preferences get (20 minutes. )
+
+Need to figure out the best way to get the areas of interest values checked off and updated. 
+
+Plan for 20/02/2018 
+
+Search bar, 
+Implement just the front end of the advertsers dashboard, paths and content section, for social just list some random profiles with some posts. 
+Don't worry about like button logic etc. The point is will be to show a whole flow throughout the website. 
+Fix areas of interest retrieval, and mov
+Should probably add a breadcrumbs navigation some how. 
+Check for broken links and 404's automaticatlly some how. 

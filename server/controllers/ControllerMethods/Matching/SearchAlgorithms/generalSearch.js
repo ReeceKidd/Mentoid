@@ -1,0 +1,4 @@
+/* 
+General search looks at all the potential mentors according to the users settings
+and available information. 
+ */
