@@ -19,6 +19,7 @@ const checkIDValidation = require('../../Validators/userID')
 
 // Search sections 
 const getMentoringFormatQuery = require('./Sections/mentoringFormats')
+const getValuesFromAreasOfInterest = require('./Sections/getValuesFromAreasOfInterest')
 
 //Distance calculator
 const getDistanceInKM = require('../../../DistanceCalculator/calculateDistanceBetweenUsers.js')
@@ -100,165 +101,214 @@ module.exports = getPotentialMentors = (req, res) => {
 
         //Initilise the variables needed to generate the queries. 
         var menteePreferences = currentUser.menteePreferences
-        console.log(menteePreferences)
         var prefferedMentoringFormats = menteePreferences.prefferedMentoringFormats
-        console.log(menteePreferences)
         var areasOfInterest = menteePreferences.areasOfInterest
 
 
 
         var mentoringFormatQuery = getMentoringFormatQuery(prefferedMentoringFormats)
+        var wantsAMentorFor = getValuesFromAreasOfInterest(areasOfInterest)
 
-        var wantsAMentorFor = []
-
-        for (var x = 0; x < areasOfInterest.length; x++) {
-            var currentAreaOfInterest = areasOfInterest[x]
-            wantsAMentorFor.push(currentAreaOfInterest.value)
-        }
-
-        console.log(wantsAMentorFor)
-
-
-        var getMatches = function () {
-
-            User.aggregate([
-                //Matches users based on their mentor preferences. 
-                {
-                    $match: {
-                        "menteePreferences.prefferedMentoringFormats": mentoringFormatQuery
-                    }
-                },
-                //Matches users with the same areas of interest values. 
-                {
-                    $match: {
-                        "menteePreferences.areasOfInterest": {
-                            $elemMatch: {
-                                value: {
-                                    $in: wantsAMentorFor
-                                }
+        User.aggregate([
+            //Matches users based on their mentor preferences. 
+            {
+                $match: {
+                    "menteePreferences.prefferedMentoringFormats": mentoringFormatQuery
+                }
+            },
+            //Matches users with the same areas of interest values. 
+            {
+                $match: {
+                    "menteePreferences.areasOfInterest": {
+                        $elemMatch: {
+                            value: {
+                                $in: wantsAMentorFor
                             }
                         }
                     }
                 }
-            ], function (err, potentialMentors) {
-                if (err) {
-                    console.log(err);
-                    return;
+            },
+            {
+                $match: {
+                    "mentorPreferences.mentoringLanguages": {
+                        $elemMatch: {
+                            $in: currentUser.menteePreferences.mentoringLanguages
+                        }
+                    }
                 }
+            }
+        ], function (err, potentialMentors) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            console.log("Current user languages: " + currentUser.menteePreferences.mentoringLanguages.toString())
 
-                let filtered = [];
-                var count = 0
 
-                potentialMentors.forEach(potentialMentor => {
+            let filteredPotentialMentors = [];
+            console.log('Potential mentors: ' + potentialMentors.length)
+            var count = 0
 
-                    currentUser.areasOfInterest.filter(function (currentAreaOfInterest) {
-                        return potentialMentor.menteePreferences.areasOfInterest.filter(function (comparisonAreaOfInterest) {
-                            if (currentAreaOfInterest.value === comparisonAreaOfInterest.value && currentAreaOfInterest.years < comparisonAreaOfInterest.years) {
-                                console.log('Current value: ' + currentAreaOfInterest.value + ', Years: ' + currentAreaOfInterest.years)
-                                console.log('Comparison value: ' + comparisonAreaOfInterest.value + ', Years: ' + comparisonAreaOfInterest.years)
-                                //Need to work out the distance between the users here. 
+            //Potential mentors can be used if nothing is found. 
+            console.log("Current user age: " + currentUser.age)
 
-                                var distance = getDistanceInKM(currentUser.location, potentialMentor.location)
-                                console.log('User latitude: ' + currentUser.location.latitude)
-                                console.log('User longitude: ' + currentUser.location.longitude)
-                                console.log('Potential mentor latitude: ' + potentialMentor.location.latitude)
-                                console.log('Potential mentor longitude: ' + potentialMentor.location.longitude)
-                                console.log('Distance between users: ' + distance)
-                                console.log('--------')
+            potentialMentors.forEach(potentialMentor => {
+
+                currentUser.areasOfInterest.filter(function (currentAreaOfInterest) {
+
+                    return potentialMentor.menteePreferences.areasOfInterest.filter(function (comparisonAreaOfInterest) {
+
+                        if (currentAreaOfInterest.value === comparisonAreaOfInterest.value && currentAreaOfInterest.years < comparisonAreaOfInterest.years) {
+
+                            var distance = getDistanceInKM(currentUser.location, potentialMentor.location)
+
+                            if ((distance - 5000) < potentialMentor.menteePreferences.maximumTravelDistanceKM) {
+
+                                var educationMatch
+
+                                var minimumAgeMatch = getMinimumAgeMatch(currentUser.menteePreferences.minimumAge, potentialMentor.age)
+                                console.log('Minimum age match: ' + minimumAgeMatch)
+                                console.log("User value: " + currentAreaOfInterest.value + " years of experience: " + currentAreaOfInterest.years)
+                                console.log("-----")
+                                console.log("Potential mentor value: " + comparisonAreaOfInterest.value + " years of experience: " + comparisonAreaOfInterest.years)
+                                var maximumAgeMatch = getMaximumAgeMatch(currentUser.menteePreferences.maximumAge, potentialMentor.age)
+                                potentialMentor.minimumAgeMatch = minimumAgeMatch
+                                potentialMentor.maximumAgeMatch = maximumAgeMatch
+                                filteredPotentialMentors.push(potentialMentor)
                             }
-                        })
-                    });
-                    
+                        }
+                    })
                 });
+
+            });
+
+            function getEducationMatches() {
+                var educationMatches = []
+                return educationMatches
+            }
+
+            function getMinimumAgeMatch(minimumAge, potentialMentorAge) {
+                if (minimumAge > potentialMentorAge) {
+                    return false
+                }
+                return true
+            }
+
+            function getMaximumAgeMatch(maximumAge, potentialMentorAge) {
+                if (potentialMentorAge > maximumAge) {
+                    return false
+                }
+                return true
+            }
+
+            console.log('Filtered potential mentors: ' + filteredPotentialMentors.length)
+            //Should probably only push the id and then get the other info using the API. 
+            // I think this handles the distinct cases as well. 
+            //These aren't matchd they will simple increase the sort order. 
+            //Match based on languages. 
+            //Match based on education level. 
+            //Match based on youngest age. 
+            //Match based on oldest age. 
+
+            //Return the users according to the ID's. 
+           
+                res.status(200).send({
+                    potentialMentors: filteredPotentialMentors
+                })
                 
 
 
-                //console.log(result)
-                //console.log(result.length)
-                //Get the ID's of users who have an area of ineterest with less values in
-                //Need to do the location check if it is in person as well. 
-                //Pass the ID's to the aggregration pipeline.
-                //After this create another aggregation that goes through the other mentor preferences options. 
-            });
-        }
-
-        getMatches()
-
-
-
-        // User.find(query, function (err, users) {
-        //     if (err) {
-        //         res.status(500)
-        //         res.send({
-        //             message: 'Could not get users age',
-        //             error: 'Server error'
-        //         })
-        //     }
-
-        //     //Need to compare each user to my current user. 
-
-        //     var potentialMentors = []
-
-        //     for (var x = 0; x < users.length; x++) {
-
-        //         var comparisonUser = users[x]
-        //         //console.log(comparisonUser.userName)
-
-        //         for (var y = 0; y < comparisonUser.areasOfInterest.length; y++) {
-
-        //             var currentAreaOfInterest = comparisonUser.areasOfInterest[y]
-        //             //console.log('matched user area of interest ' + currentAreaOfInterest)
-        //             //Loop through users areas of interests and see if values are the same,
-        //             //f they are check the years value. 
-        //             for (var w = 0; w < currentUser.areasOfInterest.length; w++) {
-
-        //                 if (currentUser.areasOfInterest[w].value === currentAreaOfInterest.value) {
-
-        //                     //console.log('Current user years: ' + currentUser.areasOfInterest[w].years)
-        //                     //console.log('Matched user years: ' + currentAreaOfInterest.years)
-
-        //                     if (currentUser.areasOfInterest[w].years < currentAreaOfInterest.years) {
-        //                         potentialMentors.push(comparisonUser)
-        //                     }
-        //                 }
-        //             }
-
-        //         }
-
-
-        //     }
-
-        //     //Do checks to calculate similarities. 
-
-        //     for (var x = 0; x < potentialMentors.length; x++) {
-
-        //         var currentAreasOfInterest = potentialMentors[x].areasOfInterest
-
-        //         var similarityScore = 0;
-
-        //         //Loop through all the areas of interest
-        //         for (var w = 0; w < currentAreaOfInterest; w++) {
-        //             var currentAreaOfInterest = currentAreaOfInterest[w]
-        //             for (var y = 0; y < currentUser.areasOfInterest.length; y++) {
-
-        //                 if (currentUser.areasOfInterest[y].value === currentAreaOfInterest.value) {
-        //                     similarityScore++
-        //                 }
-        //             }
 
 
 
 
-        //         }
-
-        //         //Add the similarity score. 
-        //         potentialMentors[x].similarityScore = 9000000
-        //         //console.log(potentialMentors[x])
 
 
-        //}
-        res.status(200).send('Success')
+            //console.log(result)
+            //console.log(result.length)
+            //Get the ID's of users who have an area of ineterest with less values in
+            //Need to do the location check if it is in person as well. 
+            //Pass the ID's to the aggregration pipeline.
+            //After this create another aggregation that goes through the other mentor preferences options. 
+        });
 
     })
+
+
+
+
+
+    // User.find(query, function (err, users) {
+    //     if (err) {
+    //         res.status(500)
+    //         res.send({
+    //             message: 'Could not get users age',
+    //             error: 'Server error'
+    //         })
+    //     }
+
+    //     //Need to compare each user to my current user. 
+
+    //     var potentialMentors = []
+
+    //     for (var x = 0; x < users.length; x++) {
+
+    //         var comparisonUser = users[x]
+    //         //console.log(comparisonUser.userName)
+
+    //         for (var y = 0; y < comparisonUser.areasOfInterest.length; y++) {
+
+    //             var currentAreaOfInterest = comparisonUser.areasOfInterest[y]
+    //             //console.log('matched user area of interest ' + currentAreaOfInterest)
+    //             //Loop through users areas of interests and see if values are the same,
+    //             //f they are check the years value. 
+    //             for (var w = 0; w < currentUser.areasOfInterest.length; w++) {
+
+    //                 if (currentUser.areasOfInterest[w].value === currentAreaOfInterest.value) {
+
+    //                     //console.log('Current user years: ' + currentUser.areasOfInterest[w].years)
+    //                     //console.log('Matched user years: ' + currentAreaOfInterest.years)
+
+    //                     if (currentUser.areasOfInterest[w].years < currentAreaOfInterest.years) {
+    //                         potentialMentors.push(comparisonUser)
+    //                     }
+    //                 }
+    //             }
+
+    //         }
+
+
+    //     }
+
+    //     //Do checks to calculate similarities. 
+
+    //     for (var x = 0; x < potentialMentors.length; x++) {
+
+    //         var currentAreasOfInterest = potentialMentors[x].areasOfInterest
+
+    //         var similarityScore = 0;
+
+    //         //Loop through all the areas of interest
+    //         for (var w = 0; w < currentAreaOfInterest; w++) {
+    //             var currentAreaOfInterest = currentAreaOfInterest[w]
+    //             for (var y = 0; y < currentUser.areasOfInterest.length; y++) {
+
+    //                 if (currentUser.areasOfInterest[y].value === currentAreaOfInterest.value) {
+    //                     similarityScore++
+    //                 }
+    //             }
+
+
+
+
+    //         }
+
+    //         //Add the similarity score. 
+    //         potentialMentors[x].similarityScore = 9000000
+    //         //console.log(potentialMentors[x])
+
+
+    //}
+    //res.status(200).send("Not quite right")
 
 }

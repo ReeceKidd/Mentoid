@@ -269,3 +269,8 @@ Don't worry about like button logic etc. The point is will be to show a whole fl
 Fix areas of interest retrieval, and mov
 Should probably add a breadcrumbs navigation some how. 
 Check for broken links and 404's automaticatlly some how. 
+
+Need to switch mentor preferences and mentee preferences to MentorPreferences, MenteePreferences to make it clearer. 
+//Generate better latituudes and longitudes to create more matches. 
+//Need to modularise the methods inside of the search so they can be tested. 
+//Need to fix the language generation as no one speaks two languages. 
