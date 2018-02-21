@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -9,7 +9,7 @@ const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 const checkUserNameField = require('../../FieldCheckers/Registration/checkUserName')
 
 //Checks that requests are the correct type
-const basicTypeCheck= require('../../TypeCheckers/Registration/basicTypeCheck')
+const basicTypeCheck = require('../../TypeCheckers/Registration/basicTypeCheck')
 
 //Sanitizes different requests
 const sanitizeUserName = require('../../Sanitizers/Registration/checkUserName')
@@ -22,7 +22,7 @@ module.exports = checkUserName = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.params, ['username'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -33,7 +33,7 @@ module.exports = checkUserName = (req, res) => {
     var unwantedFields = checkUserNameField(req)
 
     if (unwantedFields) {
-        logger.error(unwantedFields)
+        logger.warn(unwantedFields)
         res.status(700).send({
             message: unwantedFields,
             error: 'Additional fields found'
@@ -45,7 +45,7 @@ module.exports = checkUserName = (req, res) => {
     var badType = basicTypeCheck(req.params)
 
     if (badType) {
-        logger.error(badType)
+        logger.warn(badType)
         res.status(850).send({
             message: badType,
             error: 'Invalid type in request'
@@ -55,7 +55,7 @@ module.exports = checkUserName = (req, res) => {
 
     //Validation. 
     var errors = checkUserNameValidation(req)
-    logger.error(errors)
+    logger.warn(errors)
     if (errors) {
         res.send({
             message: errors
@@ -69,15 +69,8 @@ module.exports = checkUserName = (req, res) => {
     const username = req.params.username
     User.findOne({
         userName: username
-    }, function (err, existingUser) {
-        if (existingUser) {
-            res.status(900)
-            res.send({
-                message: username + ' is already registered',
-                error: 'Already exists in database.'
-            })
-            return
-        } if (err) {
+    }, function (err, user) {
+        if (err) {
             logger.error(err)
             res.status(500)
             res.send({
@@ -85,10 +78,19 @@ module.exports = checkUserName = (req, res) => {
                 error: 'Server error'
             })
             return
+        } else if (user) {
+            logger.warn(username + 'is already registered')
+            res.status(900)
+            res.send({
+                message: username + ' is already registered',
+                error: 'Already exists in database.'
+            })
+            return
         } else {
+            logger.debug(username + ' was entered into basic registration field.')
             res.status(200)
             res.send({
-                message: 'Username ' + username + ' is available' 
+                message: 'Username ' + username + ' is available'
             })
         }
     })

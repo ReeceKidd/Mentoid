@@ -7,7 +7,7 @@
 
    var User = require('../../../models/user')
 
-   var logger = require('../../../src/logging.js')(module)
+   var logger = require('../../../src/logger.js')(module)
 
    module.exports = uploadProfilePicture = (req, res) => {
 

@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -23,7 +23,7 @@ module.exports = getUsersAge = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -34,7 +34,7 @@ module.exports = getUsersAge = (req, res) => {
      var unwantedFields = checkForID(req)
 
      if (unwantedFields) {
-        logger.error(unwantedFields)
+        logger.warn(unwantedFields)
          res.status(700).json({
              message: unwantedFields,
              error: 'Additional fields found'
@@ -46,7 +46,7 @@ module.exports = getUsersAge = (req, res) => {
      var badType = basicTypeCheck(req.params)
  
      if (badType) {
-        logger.error(badType)
+        logger.warn(badType)
          res.status(850).json({
              message: badType,
              error: 'Invalid type in request'
@@ -57,7 +57,7 @@ module.exports = getUsersAge = (req, res) => {
      //Validation. 
      var errors = userIDValidation(req)
      if (errors) {
-        logger.error(errors)
+        logger.warn(errors)
          res.status(600).json({
              message: errors,
              error: 'Validation failure'
@@ -80,7 +80,7 @@ module.exports = getUsersAge = (req, res) => {
             })
         } 
     }).select('age userName -_id').then(user => {
-        logger.verbose(userName + ' successfully retrieved age: ' + age)
+        logger.debug(userName + ' successfully retrieved age: ' + user.age)
         res.status(200).send({
             age: user.age
         })

@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -22,7 +22,7 @@ module.exports = getUsersAge = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -33,7 +33,7 @@ module.exports = getUsersAge = (req, res) => {
     var unwantedFields = checkForID(req)
 
     if (unwantedFields) {
-        logger.error(unwantedFields)
+        logger.warn(unwantedFields)
         res.status(700).json({
             message: unwantedFields,
             error: 'Additional fields found'
@@ -45,7 +45,7 @@ module.exports = getUsersAge = (req, res) => {
     var badType = basicTypeCheck(req.params)
 
     if (badType) {
-        logger.error(badType)
+        logger.warn(badType)
         res.status(850).json({
             message: badType,
             error: 'Invalid type in request'
@@ -56,7 +56,7 @@ module.exports = getUsersAge = (req, res) => {
     //Validation. 
     var errors = userIDValidation(req)
     if (errors) {
-        logger.error(errors)
+        logger.warn(errors)
         res.status(600).json({
             message: errors,
             error: 'Validation failure'
@@ -77,7 +77,13 @@ module.exports = getUsersAge = (req, res) => {
             })
         }
     }).select('-_id userName socialMediaComplete areasOfInterestRegistrationComplete jobHistoryRegistrationComplete educationRegistrationComplete mentorPreferencesComplete menteePreferencesComplete').then(user => {
-        logger.verbose(user.userName + ' successfully retrieved profile completeness.')
+        logger.debug(user.userName + ' successfully retrieved profile completeness: ' +
+            'Social Media Complete' + user.socialMediaComplete +
+            'Areas of interest registration complete ' + user.areasOfInterestRegistrationComplete +
+            'Job History Registration complete ' + user.jobHistoryRegistrationComplete +
+            'Education Registration complete ' + user.educationRegistrationComplete +
+            'Mentor preferences complete ' + user.mentorPreferencesComplete +
+            'Mentee preferences complere ' + user.menteePreferencesComplete)
         res.status(200).send({
             socialMediaComplete: user.socialMediaComplete,
             areasOfInterestRegistrationComplete: user.areasOfInterestRegistrationComplete,

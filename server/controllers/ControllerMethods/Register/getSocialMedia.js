@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -22,7 +22,7 @@ module.exports = getSocialMedia = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -33,7 +33,7 @@ module.exports = getSocialMedia = (req, res) => {
      var unwantedFields = checkForID(req)
 
      if (unwantedFields) {
-        logger.error(unwantedFields)
+        logger.warn(unwantedFields)
          res.status(700).json({
              message: unwantedFields,
              error: 'Additional fields found'
@@ -45,7 +45,7 @@ module.exports = getSocialMedia = (req, res) => {
      var badType = basicTypeCheck(req.params)
  
      if (badType) {
-        logger.error(badType)
+        logger.warn(badType)
          res.status(850).json({
              message: badType,
              error: 'Invalid type in request'
@@ -56,7 +56,7 @@ module.exports = getSocialMedia = (req, res) => {
      //Validation. 
      var errors = userIDValidation(req)
      if (errors) {
-        logger.error(errors)
+        logger.warn(errors)
          res.status(600).json({
              message: errors,
              error: 'Validation failure'
@@ -77,7 +77,15 @@ module.exports = getSocialMedia = (req, res) => {
             })
         } 
     }).select('facebook twitter instagram snapchat linkedIn website youtube medium userName -_id').then(user => {
-        logger.verbose(user.userName + ' successfully retrieved social media information.')
+        logger.debug(user.userName + ' successfully retrieved social media information: ' + 
+        'facebook: ' + user.facebook +
+        'instagram: ' + user.instagram +
+        'twitter: ' + user.twitter +
+        'snapchat: ' + user.snapchat +
+        'linkedIn: ' +user.linkedIn +
+        'website: ' +user.website +
+        'medium: ' +user.medium +
+        'youtube: ' +user.youtube)
         res.status(200).send({
             facebook: user.facebook,
             instagram: user.instagram,

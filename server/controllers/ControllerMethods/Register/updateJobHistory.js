@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 // Formats job title to titleCase
 const toTitleCase = require('../../Formatter/toTitleCase.js')
@@ -32,7 +32,7 @@ module.exports = updateJobHistory = (req, res) => {
     var unwantedField = checkUpdateJobHistoryFields(req.body)
 
     if (unwantedField) {
-        logger.error(unwantedField)
+        logger.warn(unwantedField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedField
@@ -43,7 +43,7 @@ module.exports = updateJobHistory = (req, res) => {
     var unwantedArrayField = checkUpdateJobHistoryArrayFields(req.body.experiences)
 
     if (unwantedArrayField) {
-        logger.error(unwantedArrayField)
+        logger.warn(unwantedArrayField)
         return res.status(700).send({
             error: 'Additional fields found',
             message: unwantedArrayField
@@ -53,7 +53,7 @@ module.exports = updateJobHistory = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','experiences'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -63,7 +63,7 @@ module.exports = updateJobHistory = (req, res) => {
     var undefinedArrayFields = checkUndefinedFieldsArray(req.body.experiences, ['experienceID', 'title', 'company','startYear','endYear','isWorkingHere'])
 
     if (undefinedArrayFields) {
-        logger.error(undefinedArrayFields)
+        logger.warn(undefinedArrayFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedArrayFields
@@ -75,7 +75,7 @@ module.exports = updateJobHistory = (req, res) => {
     var checkRequestTypes = checkJobHistoryTypes(req.body)
 
     if (checkRequestTypes) {
-        logger.error(checkRequestTypes)
+        logger.warn(checkRequestTypes)
         return res.status(850).send({
             error: 'Invalid type',
             message: checkRequestTypes
@@ -87,7 +87,7 @@ module.exports = updateJobHistory = (req, res) => {
     var validationError = updateJobHistoryValidation(req)
 
     if (validationError) {
-        logger.error(validationError)
+        logger.warn(validationError)
         return res.status(600).send({
             error: 'Validation failure',
             message: validationError

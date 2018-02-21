@@ -1,0 +1,169 @@
+12:14:52 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:54 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:54 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:54 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:55 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:55 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:56 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:56 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:56 ControllerMethods/Register/checkUserName.js ERROR: 
+12:14:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
+12:14:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
+12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
+12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
+12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
+12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
+12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
+12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
+12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
+12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
+12:15:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
+12:15:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
+12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
+12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
+12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
+12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
+12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
+12:15:03 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
+12:15:03 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
+12:18:28 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:33 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:33 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:34 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:34 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:38 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:38 ControllerMethods/Register/checkUserName.js WARN: 
+12:18:41 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:45 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:49 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
+12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:00 ControllerMethods/Register/checkUserName.js WARN:  {"username":{"location":"params","param":"username","msg":"Username must be alphanumeric and cannot contain spaces","value":"logger.error(err)             res.status(500)             res.send({                 message: 'Server error',                 error: 'Server error'             })             return"}}
+12:23:02 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:23:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
+12:23:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
+12:23:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
+12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
+12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
+12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
+12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
+12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
+12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
+12:23:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
+12:23:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
+12:23:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
+12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
+12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
+12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
+12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
+12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
+12:23:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
+12:23:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
+12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:41 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:41 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:41 ControllerMethods/Register/checkUserName.js WARN: 
+12:24:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
+12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
+12:24:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
+12:24:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
+12:24:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
+12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
+12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
+12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
+12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
+12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
+12:24:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
+12:24:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
+12:24:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
+12:24:58 ControllerMethods/Register/register.js INFO: reecekidd successfully registered.
+12:26:25 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:25 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:25 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:26 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:29 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:29 ControllerMethods/Register/checkUserName.js WARN: 
+12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"t"}}
+12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"te"}}
+12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"tes"}}
+12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test"}}
+12:26:31 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test1"}}
+12:26:31 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test12"}}
+12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123"}}
+12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@"}}
+12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@g"}}
+12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gm"}}
+12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gma"}}
+12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmai"}}
+12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmail"}}
+12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmail."}}
+12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmail.c"}}
+12:26:45 ControllerMethods/Register/register.js INFO: test123 successfully registered: { __v: 0,
+  firstName: 'test',
+  lastName: 'test',
+  userName: 'test123',
+  email: 'test123@gmail.com',
+  age: 22,
+  language: 'English',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5a8d65850e64b412e4b40f15,
+  mentees: [],
+  mentors: [],
+  menteePreferences: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorPreferences: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }

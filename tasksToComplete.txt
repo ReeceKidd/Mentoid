@@ -283,4 +283,4 @@ Location (complete)
 
 Add success logger messages and error log messages. (45 minutes)
 
-Figure out why all webpack and vue are both calling it. 
+When I get back finish the logging for everything making sure it's properly set up to understand why user registration is failing. 

@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -22,7 +22,7 @@ module.exports = checkEmail = (req, res) =>{
     var undefinedFields = checkUndefinedFields(req.params, ['email'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -34,7 +34,7 @@ module.exports = checkEmail = (req, res) =>{
     var unwantedFields = checkEmailField(req)
 
     if (unwantedFields) {
-        logger.error(unwantedFields)
+        logger.warn(unwantedFields)
         res.status(700).send({
             message: unwantedFields,
             error: 'Additional fields found'
@@ -46,7 +46,7 @@ module.exports = checkEmail = (req, res) =>{
     var badType = basicTypeCheck(req.params)
 
     if (badType) {
-        logger.error(badType)
+        logger.warn(badType)
         res.status(850).send({
             message: badType,
             error: 'Invalid type in request'
@@ -57,7 +57,7 @@ module.exports = checkEmail = (req, res) =>{
     //Validation. Cannot send status code as that spams the client console.
     var errors = checkEmailValidation(req)
     if (errors) {
-        logger.error(errors)
+        logger.warn(errors)
         res.send({
             message: errors
         })
@@ -70,21 +70,24 @@ module.exports = checkEmail = (req, res) =>{
     const email = req.params.email
     User.findOne({
         email: email
-    }, function (err, existingEmail) {
-        if (existingEmail) {
-            res.status(900)
-            res.send({
-                message: email + ' is already registered',
-                error: 'Already exists in database.'
-            })
-        } else if (err) {
+    }, function (err, user) {
+        if (err) {
             logger.error(err)
             res.status(500)
             res.send({
                 message: 'Server error',
                 error: 'Server error'
             })
+            return
+        } else if (user) {
+            logger.warn(email + 'is already registered.')
+            res.status(900)
+            res.send({
+                message: email + 'is already registered.',
+                error: 'Server error'
+            })
         } else {
+            logger.debug(req.email + 'was entered in basic registration form.')
             res.status(200)
             res.send({
                 message: 'Email available'

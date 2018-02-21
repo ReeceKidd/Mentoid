@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -64,7 +64,7 @@ module.exports = register = (req, res) => {
     ])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -75,7 +75,7 @@ module.exports = register = (req, res) => {
     var unwantedFields = checkBasicRegistrationFields(req)
 
     if (unwantedFields) {
-        logger.error(unwantedFields)
+        logger.warn(unwantedFields)
         res.status(700).json({
             message: unwantedFields,
             error: 'Additional fields found'
@@ -86,7 +86,7 @@ module.exports = register = (req, res) => {
     var nullPresent = checkForNull(req.body)
 
     if (nullPresent) {
-        logger.error(nullPresent)
+        logger.warn(nullPresent)
         res.status(975).json({
             message: nullPresent,
             error: 'Null value present'
@@ -94,65 +94,92 @@ module.exports = register = (req, res) => {
         return
     }
 
-//Checks that each of the fields are type string. 
-var badType = basicTypeCheck(req.body)
+    //Checks that each of the fields are type string. 
+    var badType = basicTypeCheck(req.body)
 
-if (badType) {
-    logger.error(badType)
-    res.status(850).json({
-        message: badType,
-        error: 'Invalid type'
-    })
-    return
-}
+    if (badType) {
+        logger.warn(badType)
+        res.status(850).json({
+            message: badType,
+            error: 'Invalid type'
+        })
+        return
+    }
 
-//Validation for basic registration. 
-var errors = basicRegistrationValidation(req)
-if (errors) {
-    logger.error(errors)
-    res.status(600).json({
-        message: errors,
-        error: 'Validation failure'
-    })
-    return
-}
-//Santize input before being passed to database
-sanitizeBasicRegistration(req.body)
-try {
-    const newUser = req.body
-    newUser.areasOfInterest = []
-    newUser.mentors = []
-    newUser.mentees = []
-    newUser.basicRegistrationComplete = true
-    newUser.areasOfInterestRegistrationComplete = false
-    newUser.userRegistrationComplete = false
-    newUser.isUserLoggedIn = true
-    const saveUser = new User(newUser)
-    saveUser
-        .save()
-        .then(user => {
-            user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
-            const token = asyncIssue(user.toObject()).then(token => {
-                logger.info(user.userName + ' successfully registered.')
-                res.status(200).send({
-                    message: 'Success',
-                    token: token,
-                    user: user
+    //Validation for basic registration. 
+    var errors = basicRegistrationValidation(req)
+    if (errors) {
+        logger.warn(errors)
+        res.status(600).json({
+            message: errors,
+            error: 'Validation failure'
+        })
+        return
+    }
+    //Santize input before being passed to database
+    sanitizeBasicRegistration(req.body)
+    try {
+        const newUser = req.body
+        newUser.areasOfInterest = []
+        newUser.mentors = []
+        newUser.mentees = []
+        newUser.basicRegistrationComplete = true
+        newUser.areasOfInterestRegistrationComplete = false
+        newUser.userRegistrationComplete = false
+        newUser.isUserLoggedIn = true
+        const saveUser = new User(newUser)
+        saveUser
+            .save()
+            .then(user => {
+                /*
+                User information is adapted here to hide sensitive information and to aid with the 
+                matching algorithm. 
+                */
+                //Undefined for user safety. 
+                user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
+                user.mentorPreferences = {
+                    wouldLikeAMentee: true,
+                    areasOfInterest: [],
+                    prefferedMentoringFormats: ['Online', 'In person'],
+                    maximumTravelDistanceKM: '100',
+                    languages: [user.language],
+                    prefferedEducation: ['High School','Vocational','Certification','Bachelors','Masters','PHD'],
+                    minimumAge: 16,
+                    maximumAge: 120,
+                    maxNumberOfMentees: 10
+                  }
+                  user.menteePreferences = {
+                    wouldLikeAMentor: true,
+                    areasOfInterest: [],
+                    prefferedMentoringFormats: ['Online', 'In person'],
+                    maximumTravelDistanceKM: '100',
+                    languages: [user.language],
+                    prefferedEducation: ['High School','Vocational','Certification','Bachelors','Masters','PHD'],
+                    minimumAge: 16,
+                    maximumAge: 120,
+                    maxNumberOfMentees: 10
+                  }
+                const token = asyncIssue(user.toObject()).then(token => {
+                    logger.info(user.userName + ' successfully registered: ' + user)
+                    res.status(200).send({
+                        message: 'Success',
+                        token: token,
+                        user: user
+                    })
                 })
             })
-        })
-        .catch(err => {
-            logger.error(err)
-            res.status(400).send({
-                message: err.message ? err.message : 'Unable to save user to database',
-                error: 'Unable to save user.'
+            .catch(err => {
+                logger.error(err)
+                res.status(400).send({
+                    message: err.message ? err.message : 'Unable to save user to database',
+                    error: 'Unable to save user.'
+                })
             })
+    } catch (err) {
+        const message = err.message ? err.message : 'There was an error'
+        logger.error(err)
+        res.status(401).send({
+            message: message
         })
-} catch (err) {
-    const message = err.message ? err.message : 'There was an error'
-    logger.error(err)
-    res.status(401).send({
-        message: message
-    })
-}
+    }
 }

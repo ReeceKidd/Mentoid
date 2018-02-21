@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks all necessary fields are defined. 
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -10,14 +10,12 @@ const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/u
 
 module.exports = updateMentorPreferences = (req, res) => {
 
-    console.log(req.body)
-
     //Need to put the field checkers in. 
 
     var undefinedFields = checkUndefinedFields(req.body, ['userID', 'mentorPreferences'])
 
     if (undefinedFields) {
-        logger.error(undefinedFields)
+        logger.warn(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -36,7 +34,7 @@ module.exports = updateMentorPreferences = (req, res) => {
     ])
 
     if (undefinedFieldsMentoringPreferences) {
-        logger.error(undefinedFieldsMentoringPreferences)
+        logger.warn(undefinedFieldsMentoringPreferences)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields

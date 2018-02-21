@@ -1,6 +1,6 @@
 var User = require('../../../models/user')
 
-var logger = require('../../../src/logging.js')(module)
+var logger = require('../../../src/logger.js')(module)
 
 //Checks that required fields are defined.
 const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
@@ -32,7 +32,7 @@ module.exports = updateSocialMedia = (req, res) => {
     var nullPresent = checkForNull(req.body)
 
     if (nullPresent) {
-        logger.error(nullPresent)
+        logger.warn(nullPresent)
         res.status(975).json({
             message: nullPresent,
             error: 'Null value present'
@@ -44,7 +44,7 @@ module.exports = updateSocialMedia = (req, res) => {
     var badType = basicTypeCheck(req.body)
 
     if (badType) {
-        logger.error(badType)
+        logger.warn(badType)
         res.status(850).json({
             message: badType,
             error: 'Invalid type'
@@ -55,7 +55,7 @@ module.exports = updateSocialMedia = (req, res) => {
     //Validation for basic registration. 
     var errors = socialMediaValidation(req)
     if (errors) {
-        logger.error(errors)
+        logger.warn(errors)
         res.status(600).json({
             message: errors,
             error: 'Validation failure'
