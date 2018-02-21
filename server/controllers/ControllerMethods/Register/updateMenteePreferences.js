@@ -26,7 +26,7 @@ module.exports = updateMentorPreferences = (req, res) => {
     'areasOfInterest',
     'prefferedMentoringFormats',
     'maximumTravelDistanceKM',
-    'mentoringLanguages',
+    'languages',
     'prefferedEducation',
     'maximumAge',
     'minimumAge'])

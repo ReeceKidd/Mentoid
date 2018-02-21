@@ -1,6 +1,19 @@
 const axios = require('axios')
 const updateLocationURL = 'http://localhost:4000/update/location'
 
+/*
+Valid Range for latitudes are: -90, 90
+Latitudes are limited in this so users have a higher chanc of being in range of each other. 
+*/
+var maxLatitude = 80
+var minLatitude = 78
+
+/*
+Range for longitudes are: -180, 180
+*/
+var maxLongitude = 80
+var minLongitude = 78
+
 module.exports = async function generateSocialMedia(userID) {
     var latitude = getLatitude()
     var longitude = getLongitude()
@@ -16,18 +29,14 @@ module.exports = async function generateSocialMedia(userID) {
     })
 }
 
-/*
-Range for latitudes are: -90, 90
-*/
+
 function getLatitude() {
-    return Math.random() * (90.00 - (-90.00)) + (-90.00);
+    return Math.random() * (maxLatitude - minLatitude) + (minLatitude);
 }
 
-/*
-Range for longitudes are: -180, 180
-*/
+
 function getLongitude() {
-    return Math.random() * (180.00 - (-180.00)) + (-180.00);
+    return Math.random() * (maxLongitude - minLongitude) + (minLongitude);
 }
 
 

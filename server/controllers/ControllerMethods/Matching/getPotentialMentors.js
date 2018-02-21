@@ -110,10 +110,10 @@ module.exports = getPotentialMentors = (req, res) => {
         var wantsAMentorFor = getValuesFromAreasOfInterest(areasOfInterest)
 
         User.aggregate([
-            //Matches users based on their mentor preferences. 
+            //Matches with users how want a mentee. 
             {
                 $match: {
-                    "menteePreferences.prefferedMentoringFormats": mentoringFormatQuery
+                    "menteePreferences.wouldLikeAMentee": true
                 }
             },
             //Matches users with the same areas of interest values. 
@@ -127,12 +127,12 @@ module.exports = getPotentialMentors = (req, res) => {
                         }
                     }
                 }
-            },
+            }, 
             {
                 $match: {
-                    "mentorPreferences.mentoringLanguages": {
+                    "mentorPreferences.languages": {
                         $elemMatch: {
-                            $in: currentUser.menteePreferences.mentoringLanguages
+                            $in: currentUser.menteePreferences.languages
                         }
                     }
                 }
@@ -162,7 +162,7 @@ module.exports = getPotentialMentors = (req, res) => {
 
                             var distance = getDistanceInKM(currentUser.location, potentialMentor.location)
 
-                            if ((distance - 5000) < potentialMentor.menteePreferences.maximumTravelDistanceKM) {
+                            if ((distance) < potentialMentor.menteePreferences.maximumTravelDistanceKM) {
 
                                 var educationMatch
 
@@ -211,11 +211,11 @@ module.exports = getPotentialMentors = (req, res) => {
             //Match based on oldest age. 
 
             //Return the users according to the ID's. 
-           
-                res.status(200).send({
-                    potentialMentors: filteredPotentialMentors
-                })
-                
+
+            res.status(200).send({
+                potentialMentors: filteredPotentialMentors
+            })
+
 
 
 

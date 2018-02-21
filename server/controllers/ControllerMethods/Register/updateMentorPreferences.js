@@ -10,6 +10,8 @@ const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/u
 
 module.exports = updateMentorPreferences = (req, res) => {
 
+    console.log(req.body)
+
     //Need to put the field checkers in. 
 
     var undefinedFields = checkUndefinedFields(req.body, ['userID', 'mentorPreferences'])
@@ -23,10 +25,10 @@ module.exports = updateMentorPreferences = (req, res) => {
     }
 
     var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.mentorPreferences, [
-        'mentoringAreasOfInterest',
+        'areasOfInterest',
         'prefferedMentoringFormats',
         'maximumTravelDistanceKM',
-        'mentoringLanguages',
+        'languages',
         'prefferedEducation',
         'maximumAge',
         'minimumAge',
@@ -47,9 +49,8 @@ module.exports = updateMentorPreferences = (req, res) => {
 
     sanitizeUpdateMentorPreferences(req.body)
 
-    var mentorPreferences = req.body.mentorPreferences
-    console.log(mentorPreferences.mentoringAreasOfInterest)
-    
+    var mentorPreferences = req.body.mentorPreferences   
+
 
     var query = {
         '_id': req.body.userID
@@ -58,14 +59,7 @@ module.exports = updateMentorPreferences = (req, res) => {
     User.findOneAndUpdate(query, {
             $set: {
                 mentorPreferencesComplete: true,
-                mentoringAreasOfInterest: mentorPreferences.mentoringAreasOfInterest,
-                prefferedMentoringFormats: mentorPreferences.prefferedMentoringFormats,
-                maximumTravelDistanceKM: mentorPreferences.maximumTravelDistanceKM,
-                mentoringLanguages: mentorPreferences.mentoringLanguages,
-                prefferedEducation: mentorPreferences.prefferedEducation,
-                minimumAge: mentorPreferences.minimumAge,
-                maximumAge: mentorPreferences.maximumTravelDistanceKM,
-                maxNumberOfMentees: mentorPreferences.maxNumberOfMentees
+                mentorPreferences: req.body.mentorPreferences
             },
 
         },

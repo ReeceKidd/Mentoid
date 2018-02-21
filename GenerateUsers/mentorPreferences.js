@@ -1,6 +1,9 @@
 const axios = require('axios')
 const updateMentorPreferencesURL = 'http://localhost:4000/update/mentor-preferences/'
 
+/*
+Do need to modulate this code as there is duplication between Mentee preferences and mentor preferences. 
+*/
 
 module.exports = async function updateAreasOfInterest(userID, age, areasOfInterest) {
     /*
@@ -8,6 +11,7 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
     interest that they have the most experience in. Then a random number of the higher years of experience are choosen. 
     */
     sortByYearsOfExperience(areasOfInterest)
+    var wouldLikeAMentee = true
     var areasOfInterest = getAreasOfInterest(areasOfInterest)
     var prefferedMentoringFormats = getPrefferedMentoringFormats()
     var maximumTravelDistance = getMaximumTravelDistance()
@@ -19,10 +23,11 @@ module.exports = async function updateAreasOfInterest(userID, age, areasOfIntere
 
     await axios.post(updateMentorPreferencesURL, {
         mentorPreferences: {
-            mentoringAreasOfInterest: areasOfInterest,
+            wouldLikeAMentee: wouldLikeAMentee,
+            areasOfInterest: areasOfInterest,
             prefferedMentoringFormats: prefferedMentoringFormats,
             maximumTravelDistanceKM: maximumTravelDistance,
-            mentoringLanguages: mentoringLanguages,
+            languages: mentoringLanguages,
             prefferedEducation: prefferedEducation,
             minimumAge: minimumAge,
             maximumAge: maximumAge,
@@ -73,13 +78,22 @@ function getMentoringLanguages() {
     var mentoringLanguages = []
     //Pick a random percentile of the population that can speak multiple languages. 
     var percentile = Math.floor(Math.random() * 100) + 1
-    if (percentile < 80) {
+    if (percentile < 70) {
         mentoringLanguages.push('English')
-    } else if (percentile >= 80 && percentile < 90) {
-        if (percentile <= 85) {
+    } else if (percentile >= 65 && percentile < 90) {
+        if (percentile < 75) {
+            mentoringLanguages.push('English')
             mentoringLanguages.push('Spanish')
-        } else {
+        } else if(percentile >= 75 && percentile < 85) {
+            mentoringLanguages.push('English')
             mentoringLanguages.push('German')
+        } else {
+            var randomLanguageIndex = Math.random()
+            if(randomLanguageIndex < 0.5) {
+                mentoringLanguages.push('Spanish')
+            } else {
+                mentoringLanguages.push('German')
+            }
         }
     } else {
         mentoringLanguages = languageOptions

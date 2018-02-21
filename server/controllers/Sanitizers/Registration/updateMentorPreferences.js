@@ -3,8 +3,8 @@ module.exports = function updateMentorPreferencesSanitization(body){
     body.userID = escape(body.userID)
     body.userID = body.userID.trim()
 
-    body.areasOfInterestMentoring = escape(body.areasOfInterestMentoring)
-    body.areasOfInterestMentoring = body.areasOfInterestMentoring.trim()
+    body.areasOfInterest = escape(body.areasOfInterest)
+    body.areasOfInterest = body.areasOfInterest.trim()
 
     body.prefferedMentoringFormats = escape(body.prefferedMentoringFormats)
     body.prefferedMentoringFormats = body.prefferedMentoringFormats.trim()
