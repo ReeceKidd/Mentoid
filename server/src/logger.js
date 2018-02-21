@@ -23,7 +23,7 @@ const logFormatter = function (options) {
     return options.timestamp() + ` ` + options.label + ' ' + options.level.toUpperCase() +
         `: ` + (options.message ? options.message : ``) +
         (options.meta && Object.keys(options.meta).length ?
-            ` ` + JSON.stringify(options.meta) : ``);
+            ` ` + JSON.stringify(options.meta) : ``) + '\n';
 };
 
 const timestamp = function () {

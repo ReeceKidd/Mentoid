@@ -1,483 +1,21 @@
-12:14:52 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:53 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:54 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:54 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:54 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:55 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:55 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:56 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:56 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:56 ControllerMethods/Register/checkUserName.js ERROR: 
-12:14:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-12:14:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-12:14:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-12:15:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-12:15:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-12:15:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-12:15:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-12:15:03 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-12:15:03 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-12:18:28 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:31 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:33 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:33 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:34 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:34 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:38 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:38 ControllerMethods/Register/checkUserName.js WARN: 
-12:18:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:45 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:49 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:50 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
-12:19:51 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:00 ControllerMethods/Register/checkUserName.js WARN:  {"username":{"location":"params","param":"username","msg":"Username must be alphanumeric and cannot contain spaces","value":"logger.error(err)             res.status(500)             res.send({                 message: 'Server error',                 error: 'Server error'             })             return"}}
-12:23:02 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:39 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:23:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-12:23:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-12:23:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-12:23:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-12:23:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-12:23:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-12:23:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-12:23:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-12:23:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-12:23:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:24:42 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-12:24:43 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-12:24:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-12:24:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-12:24:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-12:24:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-12:24:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-12:24:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-12:24:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-12:24:58 ControllerMethods/Register/register.js INFO: reecekidd successfully registered.
-12:26:25 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:25 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:25 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:26 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:27 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:28 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:29 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:29 ControllerMethods/Register/checkUserName.js WARN: 
-12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"t"}}
-12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"te"}}
-12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"tes"}}
-12:26:30 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test"}}
-12:26:31 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test1"}}
-12:26:31 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test12"}}
-12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123"}}
-12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@"}}
-12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@g"}}
-12:26:33 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gm"}}
-12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gma"}}
-12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmai"}}
-12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmail"}}
-12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmail."}}
-12:26:34 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"test123@gmail.c"}}
-12:26:45 ControllerMethods/Register/register.js INFO: test123 successfully registered: { __v: 0,
-  firstName: 'test',
-  lastName: 'test',
-  userName: 'test123',
-  email: 'test123@gmail.com',
-  age: 22,
-  language: 'English',
-  terms: true,
-  basicRegistrationComplete: true,
-  areasOfInterestRegistrationComplete: false,
-  isUserLoggedIn: true,
-  _id: 5a8d65850e64b412e4b40f15,
-  mentees: [],
-  mentors: [],
-  menteePreferences: 
-   { prefferedEducation: [],
-     languages: [],
-     prefferedMentoringFormats: [],
-     areasOfInterest: [] },
-  mentorPreferences: 
-   { prefferedEducation: [],
-     languages: [],
-     prefferedMentoringFormats: [],
-     areasOfInterest: [] },
-  education: [],
-  jobHistory: [],
-  areasOfInterest: [] }
-12:34:40 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:41 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:42 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:42 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:42 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:42 ControllerMethods/Register/checkUserName.js WARN: 
-12:34:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-12:34:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-12:34:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-12:34:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-12:34:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-12:34:44 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-12:34:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-12:34:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-12:34:45 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-12:34:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-12:34:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-12:34:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-12:34:46 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-12:34:47 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-12:34:47 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-12:34:47 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-12:34:47 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-12:34:47 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-12:34:47 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-12:35:06 ControllerMethods/Register/register.js INFO: reecekidd successfully registered: { __v: 0,
-  firstName: 'Reece',
-  lastName: 'Kidd',
-  userName: 'reecekidd',
-  email: 'reecekidd95@gmail.com',
-  age: 22,
-  language: 'English',
-  terms: true,
-  basicRegistrationComplete: true,
-  areasOfInterestRegistrationComplete: false,
-  isUserLoggedIn: true,
-  _id: 5a8d677a55ff74383480cd1b,
-  mentees: [],
-  mentors: [],
-  menteePreferences: 
-   { wouldLikeAMentor: true,
-     areasOfInterest: [],
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: '100',
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120 },
-  mentorPreferences: 
-   { wouldLikeAMentee: true,
-     areasOfInterest: [],
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: '100',
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120,
-     maxNumberOfMentees: 10 },
-  education: [],
-  jobHistory: [],
-  areasOfInterest: [] }
-12:35:58 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-12:37:56 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-12:38:38 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-12:39:33 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-12:40:05 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-12:41:31 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-12:47:39 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [object Object]
-12:48:56 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-12:50:33 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-12:52:06 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is 22","value":[{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":22,"areaOfInterestID":1}]}}
-12:52:10 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-12:53:36 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-12:54:11 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:17:54 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:19:05 ControllerMethods/Register/updateJobHistory.js WARN: Age must be a valid number between 16 and 120
-13:23:12 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":20,"areaOfInterestID":1}]}}
-13:24:14 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":20,"areaOfInterestID":1}]}}
-13:25:13 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":20,"areaOfInterestID":1}]}}
-13:26:48 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"age":{"location":"body","param":"age","msg":"Age must be a valid number between 16 and 120","value":null},"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is null","value":[{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":20,"areaOfInterestID":1}]}}
-13:28:59 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:31:00 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:32:06 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:34:34 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":20,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:35:43 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-13:36:04 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [object Object]
-13:38:06 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [object Object],[object Object]
-13:39:15 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [object Object],[object Object]
-13:39:51 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [object Object],[object Object]
-13:40:42 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [{"endYear":"","startYear":"2014","isWorkingHere":"Yes","company":"Microsoft","title":"Software Engineer","experienceID":"0","_id":"5a8d75c435b2553cc08ee390"},{"experienceID":1,"title":"Crew Member","company":"Mcdonalds","isWorkingHere":"No","startYear":"2016","endYear":"2018"}]
-13:42:04 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [object Object]
-13:42:44 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [object Object]
-13:44:03 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [object Object]
-13:44:43 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [{"country":"United Kingdom","endYear":"2018","startYear":"2014","fieldOfStudy":"Computer Science","degree":"High School","school":"University Of Stirling","educationID":"0","_id":"5a8d7754f4f7f92a3cb712ea"}]
-13:46:00 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [{"country":"United Kingdom","endYear":"2018","startYear":"2014","fieldOfStudy":"Computer Science","degree":"High School","school":"University Of Stirling","educationID":"0","_id":"5a8d7754f4f7f92a3cb712ea"},{"educationID":1,"school":"St Patricks ","degree":"High School","fieldOfStudy":"Computer Science","startYear":"1994","endYear":"2000","country":"United Kingdom"}]
-13:55:19 ControllerMethods/Register/uploadProfilePicture.js INFO: UserID: 5a8d677a55ff74383480cd1b updated profile picture successfully.
-14:22:07 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:07 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:07 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:07 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:07 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:07 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:08 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:08 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:08 ControllerMethods/Register/checkUserName.js WARN: 
-14:22:09 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-14:22:09 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-14:22:09 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-14:22:10 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-14:22:10 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-14:22:10 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-14:22:10 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-14:22:10 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-14:22:10 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-14:22:11 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-14:22:11 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-14:22:12 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-14:22:12 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-14:22:12 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-14:22:12 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-14:22:12 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-14:22:12 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-14:22:13 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-14:22:13 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-14:22:24 ControllerMethods/Register/register.js INFO: reecekidd successfully registered: { __v: 0,
-  firstName: 'Reece',
-  lastName: 'Kidd',
-  userName: 'reecekidd',
-  email: 'reecekidd95@gmail.com',
-  age: 22,
-  language: 'English',
-  terms: true,
-  basicRegistrationComplete: true,
-  areasOfInterestRegistrationComplete: false,
-  isUserLoggedIn: true,
-  _id: 5a8d80a0e04d5b3b8888b565,
-  mentees: [],
-  mentors: [],
-  menteePreferences: 
-   { wouldLikeAMentor: true,
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: '100',
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120 },
-  mentorPreferences: 
-   { wouldLikeAMentee: true,
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: '100',
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120,
-     maxNumberOfMentees: 10 },
-  education: [],
-  jobHistory: [],
-  areasOfInterest: [] }
-14:23:12 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":10,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":2,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Cards","years":3,"areaOfInterestID":2,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-14:23:30 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [{"experienceID":0,"title":"Software Engineer","company":"Microsoft","isWorkingHere":"Yes","startYear":"2014","endYear":""}]
-14:24:11 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [{"educationID":0,"school":"University Of Stirling","degree":"High School","fieldOfStudy":"Computer Science","startYear":"2014","endYear":"2018","country":"United Kingdom"}]
-14:41:45 ControllerMethods/Register/updateMentorPreferences.js WARN: userID was not found in request
-14:42:32 ControllerMethods/Register/updateMentorPreferences.js WARN: mentorPreferences was not found in request
-14:43:40 ControllerMethods/Register/updateMentorPreferences.js WARN: mentorPreferences was not found in request
-14:45:25 ControllerMethods/Register/updateMentorPreferences.js WARN: mentorPreferences was not found in request
-14:58:54 ControllerMethods/Register/updateMentorPreferences.js WARN: userName was not found in request
-14:59:38 ControllerMethods/Register/updateMentorPreferences.js WARN: user-name was not found in request
-15:00:43 ControllerMethods/Register/updateMentorPreferences.js WARN: userName was not found in request
-15:01:30 ControllerMethods/Register/updateMentorPreferences.js WARN: userName was not found in request
-15:03:17 ControllerMethods/Register/updateMentorPreferences.js WARN: userName was not found in request
-15:06:42 ControllerMethods/Register/updateMentorPreferences.js WARN: userName was not found in request
-15:11:13 ControllerMethods/Register/updateMentorPreferences.js WARN: mentorPreferences was not found in request
-15:12:00 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-15:13:25 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-15:15:17 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-16:51:03 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-16:53:56 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:56 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:56 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:56 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:56 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:57 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:57 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:57 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:57 ControllerMethods/Register/checkUserName.js WARN: 
-16:53:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-16:53:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-16:53:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-16:53:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-16:53:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-16:53:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-16:53:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-16:53:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-16:54:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-16:54:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-16:54:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-16:54:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-16:54:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-16:54:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-16:54:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-16:54:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-16:54:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-16:54:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-16:54:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-16:54:14 ControllerMethods/Register/register.js INFO: reecekidd successfully registered: { __v: 0,
-  firstName: 'Reece',
-  lastName: 'Kidd',
-  userName: 'reecekidd',
-  email: 'reecekidd95@gmail.com',
-  age: 22,
-  language: 'English',
-  terms: true,
-  basicRegistrationComplete: true,
-  areasOfInterestRegistrationComplete: false,
-  isUserLoggedIn: true,
-  _id: 5a8da43527ece21e00da356d,
-  mentees: [],
-  mentors: [],
-  menteePreferences: 
-   { wouldLikeAMentor: true,
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: 50,
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120 },
-  mentorPreferences: 
-   { wouldLikeAMentee: true,
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: 50,
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120,
-     maxNumberOfMentees: 10 },
-  education: [],
-  jobHistory: [],
-  areasOfInterest: [] }
-16:54:34 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is 22","value":[{"value":"Yoga","years":22,"areaOfInterestID":0},{"value":"Rigby","years":10,"areaOfInterestID":1},{"value":"Handball","years":12,"areaOfInterestID":2}]}}
-16:54:37 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rigby","years":10,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Handball","years":12,"areaOfInterestID":2,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-16:54:57 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [{"experienceID":0,"title":"Software Engineer","company":"Microsoft","isWorkingHere":"Yes","startYear":"2012","endYear":""}]
-16:55:34 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [{"educationID":0,"school":"University Of Stirling","degree":"Bachelors","fieldOfStudy":"Computer Science","startYear":"2014","endYear":"2018","country":"United Kingdom"}]
-16:57:08 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-16:57:44 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-16:59:21 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-17:00:42 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-17:02:05 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-17:02:53 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-17:06:09 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{"areasOfInterest":[{"value":"Yoga","years":21,"areaOfInterestID":0}],"prefferedMentoringFormats":["Online","In person"],"mentoringLanguages":["Online"],"prefferedEducation":["No education"],"minimumAge":"16","maximumAge":"20","maxNumberOfMentees":"10"}
-17:06:09 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-17:08:10 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{"areasOfInterest":[{"value":"Yoga","years":21,"areaOfInterestID":0}],"prefferedMentoringFormats":["Online","In person"],"maximumTravelDistanceKM":20,"mentoringLanguages":["Online"],"prefferedEducation":["No education"],"minimumAge":"16","maximumAge":"20","maxNumberOfMentees":"10"}
-17:08:10 ControllerMethods/Register/updateMentorPreferences.js WARN: languages was not found in request
-17:09:32 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{"areasOfInterest":[{"value":"Yoga","years":21,"areaOfInterestID":0}],"prefferedMentoringFormats":["Online","In person"],"maximumTravelDistanceKM":20,"mentoringLanguages":["Online"],"prefferedEducation":["No education"],"minimumAge":"16","maximumAge":"20","maxNumberOfMentees":"10"}
-17:09:32 ControllerMethods/Register/updateMentorPreferences.js WARN: languages was not found in request
-17:09:55 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{"areasOfInterest":[{"value":"Yoga","years":21,"areaOfInterestID":0}],"prefferedMentoringFormats":["Online","In person"],"maximumTravelDistanceKM":20,"mentoringLanguages":["Online"],"prefferedEducation":["No education"],"minimumAge":"16","maximumAge":"20","maxNumberOfMentees":"10"}
-17:09:55 ControllerMethods/Register/updateMentorPreferences.js WARN: languages was not found in request
-17:10:30 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
+20:58:20 ControllerMethods/Register/updateMentorPreferences.js ERROR: mentorPreferences object: {
+areasOfInterest: [
+  {
+    "value": "Yoga",
+    "years": 21,
+    "areaOfInterestID": 0
+  }
+]
+prefferedMentoringFormats: Online,In person
+maximumTravelDistanceKM: 50
+languages: English,Spanish,German
+prefferedEducation: No education,High School,Certification,Vocational,Bachelors,Masters,PHD
+maximumAge: 20
+minimumAge: 16
+maxNumberOfMentees: 10
+
+20:58:20 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: {
+  "wouldLikeToMentor": "true",
   "areasOfInterest": [
     {
       "value": "Yoga",
@@ -489,621 +27,98 @@ mentorPreferences:{
     "Online",
     "In person"
   ],
-  "maximumTravelDistanceKM": 20,
-  "mentoringLanguages": [
-    "Online"
+  "maximumTravelDistanceKM": "50",
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
   ],
   "prefferedEducation": [
-    "No education"
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
   ],
-  "minimumAge": "16",
-  "maximumAge": "20",
-  "maxNumberOfMentees": "10"
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
 }
-17:10:30 ControllerMethods/Register/updateMentorPreferences.js WARN: languages was not found in request
-17:18:10 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
+
+21:01:09 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:01:09 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:01:40 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:01:40 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:02:01 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:02:01 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:02:41 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:02:41 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:02:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:02:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:01 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:01 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:09 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:09 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:14 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: {
   "wouldLikeToMentor": "true",
   "areasOfInterest": [
     {
       "value": "Yoga",
       "years": 21,
       "areaOfInterestID": 0
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": "16",
-  "maximumAge": "20",
-  "maxNumberOfMentees": "10"
-}
-17:18:10 ControllerMethods/Register/updateMentorPreferences.js WARN: maximumTravelDistanceKM was not found in request
-17:21:48 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": "16",
-  "maximumAge": "20",
-  "maxNumberOfMentees": "10"
-}
-17:21:48 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:22:27 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "areaOfInterestID": 0,
-      "years": 21,
-      "value": "Yoga"
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:22:27 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:22:53 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:22:53 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:23:39 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "areaOfInterestID": 0,
-      "years": 21,
-      "value": "Yoga"
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:23:39 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:23:42 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "areaOfInterestID": 0,
-      "years": 21,
-      "value": "Yoga"
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:23:42 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:23:53 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:23:53 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:24:30 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:24:30 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:25:21 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "areaOfInterestID": 1,
-      "years": 10,
-      "value": "Rigby"
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:25:21 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:26:13 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:26:13 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:26:28 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "areaOfInterestID": 1,
-      "years": 10,
-      "value": "Rigby"
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:26:28 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:27:06 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:27:06 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:27:12 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    },
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:27:12 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:41:14 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    },
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    },
-    {
-      "value": "Handball",
-      "years": 12,
-      "areaOfInterestID": 2
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-17:41:14 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-17:41:26 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "areaOfInterestID": 0,
-      "years": 21,
-      "value": "Yoga"
-    },
-    {
-      "areaOfInterestID": 1,
-      "years": 10,
-      "value": "Rigby"
-    },
-    {
-      "areaOfInterestID": 2,
-      "years": 12,
-      "value": "Handball"
     }
   ],
   "prefferedMentoringFormats": [
     "Online",
     "In person"
   ],
-  "maximumTravelDistanceKM": 20,
+  "maximumTravelDistanceKM": "75",
   "languages": [
-    "English"
+    "English",
+    "Spanish",
+    "German"
   ],
   "prefferedEducation": [
-    "No education"
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
   ],
   "minimumAge": 16,
   "maximumAge": 20,
   "maxNumberOfMentees": 10
 }
-17:41:26 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-18:48:27 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    },
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    },
-    {
-      "value": "Handball",
-      "years": 12,
-      "areaOfInterestID": 2
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online",
-    "In person"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-18:48:27 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-18:48:39 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [
-    {
-      "value": "Yoga",
-      "years": 21,
-      "areaOfInterestID": 0
-    },
-    {
-      "value": "Rigby",
-      "years": 10,
-      "areaOfInterestID": 1
-    },
-    {
-      "value": "Handball",
-      "years": 12,
-      "areaOfInterestID": 2
-    }
-  ],
-  "prefferedMentoringFormats": [
-    "Online",
-    "In person"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-18:48:39 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-20:16:01 ControllerMethods/Register/updateMentorPreferences.js ERROR: Entered update mentor preferences.
-userID:5a8da43527ece21e00da356d
-userName:reecekidd
-mentorPreferences:{
-  "wouldLikeToMentor": "true",
-  "areasOfInterest": [],
-  "prefferedMentoringFormats": [
-    "Online",
-    "In person"
-  ],
-  "maximumTravelDistanceKM": 20,
-  "languages": [
-    "English"
-  ],
-  "prefferedEducation": [
-    "No education"
-  ],
-  "minimumAge": 16,
-  "maximumAge": 20,
-  "maxNumberOfMentees": 10
-}
-20:16:01 ControllerMethods/Register/updateMentorPreferences.js INFO: reecekidd updated mentor preferences successfully: [object Object]
-20:20:09 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rigby","years":10,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Handball","years":12,"areaOfInterestID":2,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
-20:20:55 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:55 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:55 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:55 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:55 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:55 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:56 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:56 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:56 ControllerMethods/Register/checkUserName.js WARN: 
-20:20:57 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
-20:20:58 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
-20:20:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
-20:20:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
-20:20:59 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
-20:21:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
-20:21:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
-20:21:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-20:21:00 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmi"}}
-20:21:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
-20:21:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
-20:21:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
-20:21:01 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
-20:21:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
-20:21:02 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
-20:21:14 ControllerMethods/Register/register.js INFO: reecekidd successfully registered: { __v: 0,
-  firstName: 'Reece',
-  lastName: 'Kidd',
-  userName: 'reecekidd',
-  email: 'reecekidd95@gmail.com',
-  age: 22,
-  language: 'English',
-  terms: true,
-  basicRegistrationComplete: true,
-  areasOfInterestRegistrationComplete: false,
-  isUserLoggedIn: true,
-  _id: 5a8dd4bac1eb0f29ac6a203f,
-  mentees: [],
-  mentors: [],
-  menteePreferences: 
-   { wouldLikeAMentor: true,
-     prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: 50,
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120 },
-  mentorPreferences: 
-   { prefferedMentoringFormats: [ 'Online', 'In person' ],
-     maximumTravelDistanceKM: 50,
-     languages: [ 'English' ],
-     prefferedEducation: 
-      [ 'High School',
-        'Vocational',
-        'Certification',
-        'Bachelors',
-        'Masters',
-        'PHD' ],
-     minimumAge: 16,
-     maximumAge: 120,
-     maxNumberOfMentees: 10 },
-  education: [],
-  jobHistory: [],
-  areasOfInterest: [] }
-20:21:21 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is 22","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
-20:21:45 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [{"experienceID":0,"title":"Software Engineer","company":"Microsoft","isWorkingHere":"Yes","startYear":"2008","endYear":""}]
+

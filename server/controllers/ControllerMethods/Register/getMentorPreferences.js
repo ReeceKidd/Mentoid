@@ -19,7 +19,7 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getMentorPreferences = (req, res) => {
 
-    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get Mentor preferences with request ' + JSON.stringify(req.params))
+   
 
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
@@ -30,6 +30,9 @@ module.exports = getMentorPreferences = (req, res) => {
             message: undefinedFields
         })
     }
+
+    logger.warn(req.params.userID + ' attempting to get mentor preferences. req.params:' + '\n' +
+    'userID:' + req.body.userID)
 
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkForID(req)
@@ -84,7 +87,7 @@ module.exports = getMentorPreferences = (req, res) => {
             logger.debug('No users found with ID: ' + userID)
         }
     }).select('mentorPreferences userName -_id').then(user => {
-        logger.debug(user.userName + ' successfully retrieved mentor preferences: ' + JSON.stringify(user.mentorPreferences))
+        logger.debug(user.userName + ' successfully retrieved mentor preferences: ' + JSON.stringify(user.mentorPreferences, null, 2))
         res.status(200).send({
             mentorPreferences: user.mentorPreferences
         })

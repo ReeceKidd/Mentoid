@@ -7,8 +7,6 @@
       </div>
     </div>
 
-    <p>{{ areasOfInterest }}</p>
-    <p>{{ checkedAreasOfInterestNames }}</p>
     <div>
       <div class="col-xs-12 text-center">
         <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeToMentor">
@@ -236,7 +234,6 @@
           })
         })
         const url = 'http://localhost:4000/update/mentor-preferences/'
-        // Still need to fix the travel distance situation.
         var self = this
         axios.post(url, {
           userID: this.userID,
@@ -319,7 +316,7 @@
           self.checkedMentoringFormats = response.data.mentorPreferences.prefferedMentoringFormats
           self.checkedLanguages = response.data.mentorPreferences.languages
           self.checkedEducation = response.data.mentorPreferences.prefferedEducation
-          self.maximumTravelDistance = response.data.mentorPreferences.maximumTravelDistanceKM
+          self.maximumTravelDistanceKM = response.data.mentorPreferences.maximumTravelDistanceKM
           self.minimumAge = response.data.mentorPreferences.minimumAge
           self.maximumAge = response.data.mentorPreferences.maximumAge
           self.maxNumberOfMentees = response.data.mentorPreferences.maxNumberOfMentees

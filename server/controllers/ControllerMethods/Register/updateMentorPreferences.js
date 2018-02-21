@@ -10,12 +10,7 @@ const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/u
 
 module.exports = updateMentorPreferences = (req, res) => {
 
-    logger.error('Entered update mentor preferences.' + '\n' +
-    'userID:' + req.body.userID + '\n' +
-    'userName:' + req.body.userName + '\n' +
-    'mentorPreferences:' + JSON.stringify(req.body.mentorPreferences, null, 2))
-
-    var undefinedFields = checkUndefinedFields(req.body, ['userID','userName','mentorPreferences'])
+    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'userName', 'mentorPreferences'])
 
     if (undefinedFields) {
         logger.warn(undefinedFields)
@@ -25,7 +20,14 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
-    var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.mentorPreferences, [
+    logger.debug('Entered update mentor preferences. req.body:' + '\n' +
+        'userID:' + req.body.userID + '\n' +
+        'userName:' + req.body.userName + '\n' +
+        'mentorPreferences:' + JSON.stringify(req.body.mentorPreferences, null, 2))
+
+    let mentorPreferences = req.body.mentorPreferences
+
+    var undefinedFieldsMentoringPreferences = checkUndefinedFields(mentorPreferences, [
         'areasOfInterest',
         'prefferedMentoringFormats',
         'maximumTravelDistanceKM',
@@ -36,6 +38,16 @@ module.exports = updateMentorPreferences = (req, res) => {
         'maxNumberOfMentees'
     ])
 
+    logger.debug('mentorPreferences object: {' + '\n' +
+        'areasOfInterest: ' + JSON.stringify(mentorPreferences.areasOfInterest, null, 2) + '\n' +
+        'prefferedMentoringFormats: ' + mentorPreferences.prefferedMentoringFormats + '\n' +
+        'maximumTravelDistanceKM: ' + mentorPreferences.maximumTravelDistanceKM + '\n' +
+        'languages: ' + mentorPreferences.languages + '\n' +
+        'prefferedEducation: ' + mentorPreferences.prefferedEducation + '\n' +
+        'maximumAge: ' + mentorPreferences.maximumAge + '\n' +
+        'minimumAge: ' + mentorPreferences.minimumAge + '\n' +
+        'maxNumberOfMentees: ' + mentorPreferences.maxNumberOfMentees)
+
     if (undefinedFieldsMentoringPreferences) {
         logger.warn(undefinedFieldsMentoringPreferences)
         return res.status(950).send({
@@ -44,14 +56,13 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
-
-
     //Need to do validation for the mentor preferences section. 
 
-    sanitizeUpdateMentorPreferences(req.body)
-
-    var mentorPreferences = req.body.mentorPreferences   
-
+    try {
+        sanitizeUpdateMentorPreferences(req.body)
+    } catch (error) {
+        logger.warn('Sanitatization error')
+    }
 
     var query = {
         '_id': req.body.userID
@@ -60,18 +71,23 @@ module.exports = updateMentorPreferences = (req, res) => {
     User.findOneAndUpdate(query, {
             $set: {
                 mentorPreferencesComplete: true,
-                mentorPreferences: req.body.mentorPreferences
+                mentorPreferences: mentorPreferences
             },
 
         },
         function (err, user) {
             if (err) {
                 logger.error(err)
-                res.status(400).send({
+                res.status(500).send({
+                    message: 'Server error'
+                })
+            } else if (!user) {
+                logger.warn('No user found with _id: ' + req.body.userID)
+                res.status(600).send({
                     message: 'Unable to update mentor preferences. Could not find user. '
                 })
             } else {
-                logger.info(user.userName + ' updated mentor preferences successfully: ' + req.body.mentorPreferences)
+                logger.info(user.userName + ' updated mentor preferences successfully: ' + JSON.stringify(mentorPreferences, null, 2))
                 res.status(200).send({
                     message: 'Updated mentor preferences.'
                 })
