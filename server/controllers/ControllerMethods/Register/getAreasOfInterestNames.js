@@ -19,6 +19,8 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getAreasOfInterestNames = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get areas of interest names with request ' + JSON.stringify(req.params))
+
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -85,9 +87,9 @@ module.exports = getAreasOfInterestNames = (req, res) => {
         */
         var areasOfInterestNames = []
         for (var x = 0; x < user.areasOfInterest.length; x++) {
-            areasOfInterestNames.push({
-                value: user.areasOfInterest[x].value
-            })
+            areasOfInterestNames.push(
+                user.areasOfInterest[x].value
+            )
         }
         logger.debug(user.userName + ' successfully retreived areas of interest names: ' + areasOfInterestNames)
         res.status(200).send({

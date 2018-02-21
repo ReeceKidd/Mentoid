@@ -95,7 +95,7 @@
     <br>
 
     <div class="row text-center">
-      <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Submit </button>
+      <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Update Job History </button>
     </div>
   </div>
 

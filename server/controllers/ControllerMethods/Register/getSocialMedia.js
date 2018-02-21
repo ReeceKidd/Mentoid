@@ -19,6 +19,8 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getSocialMedia = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get social media with request ' + JSON.stringify(req.params))
+
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -27,46 +29,46 @@ module.exports = getSocialMedia = (req, res) => {
             error: 'Undefined field',
             message: undefinedFields
         })
-    } 
-    
+    }
+
     //Checks that fields only defined in the schema are passed. 
-     var unwantedFields = checkForID(req)
+    var unwantedFields = checkForID(req)
 
-     if (unwantedFields) {
+    if (unwantedFields) {
         logger.warn(unwantedFields)
-         res.status(700).json({
-             message: unwantedFields,
-             error: 'Additional fields found'
-         })
-         return
-     }
- 
-     //Checks that each of the fields are type string. 
-     var badType = basicTypeCheck(req.params)
- 
-     if (badType) {
-        logger.warn(badType)
-         res.status(850).json({
-             message: badType,
-             error: 'Invalid type in request'
-         })
- 
-     }
+        res.status(700).json({
+            message: unwantedFields,
+            error: 'Additional fields found'
+        })
+        return
+    }
 
-     //Validation. 
-     var errors = userIDValidation(req)
-     if (errors) {
+    //Checks that each of the fields are type string. 
+    var badType = basicTypeCheck(req.params)
+
+    if (badType) {
+        logger.warn(badType)
+        res.status(850).json({
+            message: badType,
+            error: 'Invalid type in request'
+        })
+
+    }
+
+    //Validation. 
+    var errors = userIDValidation(req)
+    if (errors) {
         logger.warn(errors)
-         res.status(600).json({
-             message: errors,
-             error: 'Validation failure'
-         })
-         return
-     }
- 
-     //Santize User ID
-     sanitizeID(req.params)
-    
+        res.status(600).json({
+            message: errors,
+            error: 'Validation failure'
+        })
+        return
+    }
+
+    //Santize User ID
+    sanitizeID(req.params)
+
     User.findById(req.params.userID, function (err, user) {
         if (err) {
             logger.error(err)
@@ -75,24 +77,24 @@ module.exports = getSocialMedia = (req, res) => {
                 message: 'Could not get users age',
                 error: 'Server error'
             })
-        } 
+        }
     }).select('facebook twitter instagram snapchat linkedIn website youtube medium userName -_id').then(user => {
-        logger.debug(user.userName + ' successfully retrieved social media information: ' + 
-        'facebook: ' + user.facebook +
-        'instagram: ' + user.instagram +
-        'twitter: ' + user.twitter +
-        'snapchat: ' + user.snapchat +
-        'linkedIn: ' +user.linkedIn +
-        'website: ' +user.website +
-        'medium: ' +user.medium +
-        'youtube: ' +user.youtube)
+        logger.debug(user.userName + ' successfully retrieved social media information: ' +
+            'facebook: ' + user.facebook +
+            'instagram: ' + user.instagram +
+            'twitter: ' + user.twitter +
+            'snapchat: ' + user.snapchat +
+            'linkedIn: ' + user.linkedIn +
+            'website: ' + user.website +
+            'medium: ' + user.medium +
+            'youtube: ' + user.youtube)
         res.status(200).send({
             facebook: user.facebook,
             instagram: user.instagram,
             twitter: user.twitter,
             snapchat: user.snapchat,
             linkedIn: user.linkedIn,
-            website: user.website, 
+            website: user.website,
             medium: user.medium,
             youtube: user.youtube
         })

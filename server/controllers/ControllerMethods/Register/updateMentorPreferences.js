@@ -10,9 +10,12 @@ const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/u
 
 module.exports = updateMentorPreferences = (req, res) => {
 
-    //Need to put the field checkers in. 
+    logger.error('Entered update mentor preferences.' + '\n' +
+    'userID:' + req.body.userID + '\n' +
+    'userName:' + req.body.userName + '\n' +
+    'mentorPreferences:' + JSON.stringify(req.body.mentorPreferences, null, 2))
 
-    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'mentorPreferences'])
+    var undefinedFields = checkUndefinedFields(req.body, ['userID','userName','mentorPreferences'])
 
     if (undefinedFields) {
         logger.warn(undefinedFields)

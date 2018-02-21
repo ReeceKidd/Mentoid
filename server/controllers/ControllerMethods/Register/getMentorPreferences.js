@@ -19,6 +19,8 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getMentorPreferences = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get Mentor preferences with request ' + JSON.stringify(req.params))
+
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -27,47 +29,48 @@ module.exports = getMentorPreferences = (req, res) => {
             error: 'Undefined field',
             message: undefinedFields
         })
-    } 
+    }
 
     //Checks that fields only defined in the schema are passed. 
-     var unwantedFields = checkForID(req)
+    var unwantedFields = checkForID(req)
 
-     if (unwantedFields) {
+    if (unwantedFields) {
         logger.warn(unwantedFields)
-         res.status(700).json({
-             message: unwantedFields,
-             error: 'Additional fields found'
-         })
-         return
-     }
- 
-     //Checks that each of the fields are type string. 
-     var badType = basicTypeCheck(req.params)
- 
-     if (badType) {
+        res.status(700).json({
+            message: unwantedFields,
+            error: 'Additional fields found'
+        })
+        return
+    }
+
+    //Checks that each of the fields are type string. 
+    var badType = basicTypeCheck(req.params)
+
+    if (badType) {
         logger.warn(badType)
-         res.status(850).json({
-             message: badType,
-             error: 'Invalid type in request'
-         })
- 
-     }
+        res.status(850).json({
+            message: badType,
+            error: 'Invalid type in request'
+        })
+        return
+    }
 
-     //Validation. 
-     var errors = userIDValidation(req)
-     if (errors) {
+    //Validation. 
+    var errors = userIDValidation(req)
+    if (errors) {
         logger.warn(errors)
-         res.status(600).json({
-             message: errors,
-             error: 'Validation failure'
-         })
-         return
-     }
-     //Santize User ID
-     sanitizeID(req.params)
+        res.status(600).json({
+            message: errors,
+            error: 'Validation failure'
+        })
+        return
+    }
 
-    const userID = req.params.userID 
-    
+    //Santize User ID
+    sanitizeID(req.params)
+
+    const userID = req.params.userID
+
     User.findById(userID, function (err, user) {
         if (err) {
             logger.error(err)
@@ -77,8 +80,11 @@ module.exports = getMentorPreferences = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('mentorPreferences userName -_id').then(user => { 
-        logger.debug(user.userName + ' successfully retrieved mentor preferences: ' + mentorPreferences)   
+        if (!user) {
+            logger.debug('No users found with ID: ' + userID)
+        }
+    }).select('mentorPreferences userName -_id').then(user => {
+        logger.debug(user.userName + ' successfully retrieved mentor preferences: ' + JSON.stringify(user.mentorPreferences))
         res.status(200).send({
             mentorPreferences: user.mentorPreferences
         })

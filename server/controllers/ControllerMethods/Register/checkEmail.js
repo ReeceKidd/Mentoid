@@ -80,7 +80,6 @@ module.exports = checkEmail = (req, res) =>{
             })
             return
         } else if (user) {
-            logger.warn(email + 'is already registered.')
             res.status(900)
             res.send({
                 message: email + 'is already registered.',

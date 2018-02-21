@@ -28,6 +28,8 @@ const updateEducationValidation = require('../../Validators/Registration/updateE
 
 module.exports = updateEducation = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to update education with request ' + JSON.stringify(req.body))
+
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateEducationFields(req.body)
 
@@ -124,7 +126,7 @@ module.exports = updateEducation = (req, res) => {
                     message: 'Unable to update job history. Could not find user. '
                 })
             } else {
-                logger.info(user.userName + ' updated education successfully: ' + req.body.education)
+                logger.info(user.userName + ' updated education successfully: ' + JSON.stringify(req.body.education))
                 res.status(200).send({
                     message: 'Updated education successfully.'
                 })

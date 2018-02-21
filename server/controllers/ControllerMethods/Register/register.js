@@ -50,6 +50,8 @@ const asyncVerify = token => {
 }
 
 module.exports = register = (req, res) => {
+    
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to register with request ' + JSON.stringify(req.body))
 
     var undefinedFields = checkUndefinedFields(req.body, [
         'firstName',
@@ -139,9 +141,8 @@ module.exports = register = (req, res) => {
                 user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
                 user.mentorPreferences = {
                     wouldLikeAMentee: true,
-                    areasOfInterest: [],
                     prefferedMentoringFormats: ['Online', 'In person'],
-                    maximumTravelDistanceKM: '100',
+                    maximumTravelDistanceKM: 50,
                     languages: [user.language],
                     prefferedEducation: ['High School','Vocational','Certification','Bachelors','Masters','PHD'],
                     minimumAge: 16,
@@ -150,9 +151,8 @@ module.exports = register = (req, res) => {
                   }
                   user.menteePreferences = {
                     wouldLikeAMentor: true,
-                    areasOfInterest: [],
                     prefferedMentoringFormats: ['Online', 'In person'],
-                    maximumTravelDistanceKM: '100',
+                    maximumTravelDistanceKM: 50,
                     languages: [user.language],
                     prefferedEducation: ['High School','Vocational','Certification','Bachelors','Masters','PHD'],
                     minimumAge: 16,

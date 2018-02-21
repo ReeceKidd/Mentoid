@@ -19,6 +19,8 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getBasicRegistration = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get basic user details with request ' + JSON.stringify(req.params))
+
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -77,7 +79,7 @@ module.exports = getBasicRegistration = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('firstName lastName email userName -_id').then(user => {
+    }).select('firstName lastName email userName age -_id').then(user => {
         logger.debug(user.userName + ' successfully retrieved basic registration details:' + user)
         res.status(200).send({
             userInfo: user

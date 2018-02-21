@@ -33,56 +33,61 @@ const timestamp = function () {
 };
 
 module.exports = function (callingModule) {
-        return new winston.Logger({
-            transports: [
-                new(winston.transports.Console)({
-                    timestamp: tsFormat,
-                    colorize: true
-                }),
-                new(winston.transports.DailyRotateFile)({
-                    filename: `${logDir}-mentoid.log`,
-                    name: 'mainLog',
-                    label: getLabel(callingModule.id),
-                    timestamp: tsFormat,
-                    datePattern: 'yyyy-MM-dd',
-                    prepend: true,
-                    formatter: logFormatter,
-                    json: false
-                }),
-                new(winston.transports.DailyRotateFile)({
-                    filename: `${errorDir}-mentoid-error.log`,
-                    name: 'errorLog',
-                    level: 'error',
-                    label: getLabel(callingModule.id),
-                    timestamp: tsFormat,
-                    datePattern: 'yyyy-MM-dd',
-                    prepend: true,
-                    formatter: logFormatter,
-                    json: false
-                }),
-                new(winston.transports.DailyRotateFile)({
-                    filename: `${infoDir}-mentoid-info.log`,
-                    name: 'infoLog',
-                    level: 'info',
-                    label: getLabel(callingModule.id),
-                    timestamp: tsFormat,
-                    datePattern: 'yyyy-MM-dd',
-                    prepend: true,
-                    formatter: logFormatter,
-                    json: false
-                }),
-                new(winston.transports.DailyRotateFile)({
-                    filename: `${debugDir}-mentoid-debug.log`,
-                    name: 'debugLog',
-                    level: 'debug',
-                    label: getLabel(callingModule.id),
-                    timestamp: tsFormat,
-                    datePattern: 'yyyy-MM-dd',
-                    prepend: true,
-                    formatter: logFormatter,
-                    json: false
-                })
-            ],
-            exitOnError: false
-        });
-    }
+    return new winston.Logger({
+        transports: [
+            new(winston.transports.Console)({
+                timestamp: tsFormat,
+                colorize: true,
+                prettyPrint: true,
+                json: false
+            }),
+            new(winston.transports.DailyRotateFile)({
+                filename: `${logDir}-mentoid.log`,
+                name: 'mainLog',
+                label: getLabel(callingModule.id),
+                timestamp: tsFormat,
+                prettyPrint: true,
+                datePattern: 'yyyy-MM-dd',
+                prepend: true,
+                formatter: logFormatter,
+                json: false
+            }),
+            new(winston.transports.DailyRotateFile)({
+                filename: `${errorDir}-mentoid-error.log`,
+                name: 'errorLog',
+                level: 'error',
+                prettyPrint: true,
+                label: getLabel(callingModule.id),
+                timestamp: tsFormat,
+                datePattern: 'yyyy-MM-dd',
+                prepend: true,
+                formatter: logFormatter,
+                json: false
+            }),
+            new(winston.transports.DailyRotateFile)({
+                filename: `${infoDir}-mentoid-info.log`,
+                name: 'infoLog',
+                level: 'info',
+                label: getLabel(callingModule.id),
+                timestamp: tsFormat,
+                prettyPrint: true,
+                datePattern: 'yyyy-MM-dd',
+                prepend: true,
+                formatter: logFormatter,
+                json: false
+            }),
+            new(winston.transports.DailyRotateFile)({
+                filename: `${debugDir}-mentoid-debug.log`,
+                name: 'debugLog',
+                level: 'debug',
+                label: getLabel(callingModule.id),
+                timestamp: tsFormat,
+                datePattern: 'yyyy-MM-dd',
+                prepend: true,
+                formatter: logFormatter,
+                json: false
+            })
+        ],
+        exitOnError: false
+    });
+}

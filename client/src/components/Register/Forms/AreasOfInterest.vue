@@ -206,15 +206,15 @@
     beforeMount() {
       var self = this
       var userID = this.$store.state.user.authUser._id
-      // Get the users areas of interest
-      const getAreasOfInterestUrl = 'http://localhost:4000/get/areas-of-interest/'
-      axios.get(getAreasOfInterestUrl + userID).then(function (response) {
-        self.areasOfInterest = response.data.areasOfInterest
-      })
       // Get the users age
       const getAgeUrl = 'http://localhost:4000/get/age/'
       axios.get(getAgeUrl + userID).then(function (response) {
         self.age = response.data.age
+      })
+       // Get the users areas of interest
+      const getAreasOfInterestUrl = 'http://localhost:4000/get/areas-of-interest/'
+      axios.get(getAreasOfInterestUrl + userID).then(function (response) {
+        self.areasOfInterest = response.data.areasOfInterest
       })
     },
     validations: {

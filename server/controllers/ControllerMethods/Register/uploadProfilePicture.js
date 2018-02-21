@@ -13,7 +13,7 @@
 
        try {
            res.status(200).send('Uploaded profile picture successfully')
-           logger.info('UserID: ' + req.query.userID + ' updated profile picture successfully.')
+           logger.debug('UserID: ' + req.query.userID + ' updated profile picture successfully.')
        } catch (exception) {
            logger.error(exception)
            res.status(500).send(exception)

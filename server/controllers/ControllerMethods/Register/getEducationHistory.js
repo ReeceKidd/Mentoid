@@ -19,6 +19,8 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getEducationHistory = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get education history ' + JSON.stringify(req.params))
+
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -77,7 +79,7 @@ module.exports = getEducationHistory = (req, res) => {
             })
         }
     }).select('education userName -_id').then(user => {
-        logger.debug(user.userName + ' successfully retrieved education: ' + user.education)
+        logger.debug(user.userName + ' successfully retrieved education: ' + JSON.stringify(user.education))
         res.status(200).send({
             education: user.education
         })

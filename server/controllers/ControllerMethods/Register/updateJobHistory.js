@@ -28,6 +28,8 @@ const updateJobHistoryValidation = require('../../Validators/Registration/update
 
 module.exports = updateJobHistory = (req, res) => {
 
+    logger.debug("Attempting to update job history with request " + JSON.stringify(req.body))
+
     //Checks that only _id and areas of interest are passed in request. 
     var unwantedField = checkUpdateJobHistoryFields(req.body)
 
@@ -121,7 +123,7 @@ module.exports = updateJobHistory = (req, res) => {
                     message: 'Unable to update job history. Could not find user. '
                 })
             } else {
-                logger.info(user.userName + ' updated job history successfully: ' + req.body.experiences)
+                logger.info(user.userName + ' updated job history successfully: ' + JSON.stringify(req.body.experiences))
                 res.status(200).send({
                     message: 'Updated job history successfully.'
                 })

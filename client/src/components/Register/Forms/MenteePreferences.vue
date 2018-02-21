@@ -210,9 +210,9 @@
           this.areasOfInterest[x].years = parseInt(this.areasOfInterest[x].years)
         }
         const url = 'http://localhost:4000/update/mentee-preferences/'
-        // Need a way to add a preffered distance if it's not equal to blank.
         axios.post(url, {
-          _id: this.currentUser._id,
+          userName: this.userName,
+          userID: this.currentUser._id,
           mentoringPreferences: {
             areasOfInterest: this.checkedAreasOfInterest,
             prefferedMentoringFormats: this.mentoringFormats,
@@ -273,7 +273,6 @@
       })
       const getMenteePreferences = 'http://localhost:4000/get/mentee-preferences/'
       axios.get(getMenteePreferences + userID).then(function (response) {
-        console.log(response)
         self.checkedAreasOfInterest = response.data.menteePreferences.areasOfInterest
         self.checkedMentoringFormats = response.data.menteePreferences.prefferedMentoringFormats
         self.checkedLanguages = response.data.menteePreferences.mentoringLanguages

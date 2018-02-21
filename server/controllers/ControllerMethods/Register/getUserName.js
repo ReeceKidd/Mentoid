@@ -17,7 +17,9 @@ const sanitizeID = require('../../Sanitizers/userID')
 // Validatiors
 const userIDValidation = require('../../Validators/userID')
 
-module.exports = getUsersAge = (req, res) => {
+module.exports = getAge = (req, res) => {
+
+    logger.debug(req.body.userID + ' is attempting to get their user name with ' + JSON.stringify(req.params))
 
     
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
@@ -79,10 +81,10 @@ module.exports = getUsersAge = (req, res) => {
                 error: 'Server error'
             })
         } 
-    }).select('age userName -_id').then(user => {
-        logger.debug(userName + ' successfully retrieved age: ' + user.age)
+    }).select('userName -_id').then(user => {
+        logger.debug(user.userName + ' successfully retrieved username: ' + user.userName)
         res.status(200).send({
-            age: user.age
+            userName: user.userName
         })
     })
 }

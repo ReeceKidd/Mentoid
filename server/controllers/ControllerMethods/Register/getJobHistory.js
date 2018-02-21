@@ -19,6 +19,8 @@ const userIDValidation = require('../../Validators/userID')
 
 module.exports = getJobHistory = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get job history with request ' + JSON.stringify(req.params))
+
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -77,7 +79,7 @@ module.exports = getJobHistory = (req, res) => {
             })
         }
     }).select('jobHistory userName -_id').then(user => {
-        logger.debug(user.userName + ' successfully retrieved job history: ' + user.jobHistory)
+        logger.debug(user.userName + ' successfully retrieved job history: ' + JSON.stringify(user.jobHistory))
         res.status(200).send({
             jobHistory: user.jobHistory
         })

@@ -17,10 +17,11 @@ const sanitizeID = require('../../Sanitizers/userID')
 // Validatiors
 const userIDValidation = require('../../Validators/userID')
 
-module.exports = getMenteePreferences = (req, res) => {
+module.exports = getAge = (req, res) => {
 
-    logger.debug(req.params.userID + 'is  attempting to get their Mentee preferences with request ' + JSON.stringify(req.params))
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get user age with ' + JSON.stringify(req.params))
 
+    
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
     if (undefinedFields) {
@@ -30,9 +31,6 @@ module.exports = getMenteePreferences = (req, res) => {
             message: undefinedFields
         })
     } 
-
-    logger.debug('Get mentee preferences did not contain undefined fields.')
-
 
     //Checks that fields only defined in the schema are passed. 
      var unwantedFields = checkForID(req)
@@ -45,7 +43,7 @@ module.exports = getMenteePreferences = (req, res) => {
          })
          return
      }
- 
+
      //Checks that each of the fields are type string. 
      var badType = basicTypeCheck(req.params)
  
@@ -68,12 +66,13 @@ module.exports = getMenteePreferences = (req, res) => {
          })
          return
      }
+
+    
      //Santize User ID
      sanitizeID(req.params)
 
-    const userID = req.params.userID 
     
-    User.findById(userID, function (err, user) {
+    User.findById(req.params.userID, function (err, user) {
         if (err) {
             logger.error(err)
             res.status(500)
@@ -81,26 +80,11 @@ module.exports = getMenteePreferences = (req, res) => {
                 message: 'Could not get users age',
                 error: 'Server error'
             })
-        }
-        
-    }).select('menteePreferences userName -_id').then(user => {
-        
-        var areasOfInterestNames = []
-        /*
-        This replaces the original areas of interest object array with just the names 
-        of the areas of interest. 
-        */
-        var areasOfInterest = user.menteePreferences.areasOfInterest
-        console.log(user)
-        for(var x = 0; x < areasOfInterest.length; x++){
-            var currentAreaOfInterest = areasOfInterest[x]
-            areasOfInterestNames.push(currentAreaOfInterest.value)
-        }
-
-        user.menteePreferences.areasOfInterest = areasOfInterestNames
-        logger.debug(user.userName + ' successfully retrieved mentee preferences: ' + JSON.stringify(user.menteePreferences))
+        } 
+    }).select('age userName -_id').then(user => {
+        logger.debug(user.userName + ' successfully retrieved age: ' + user.age)
         res.status(200).send({
-        menteePreferences: user.menteePreferences
+            age: user.age
         })
     })
 }

@@ -29,6 +29,8 @@ const updateAreasOfInterestValidation = require('../../Validators/Registration/u
 
 module.exports = updateAreasOfInterest = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to update areas of interest with request ' + JSON.stringify(req.body))
+
     var undefinedFields = checkUndefinedFields(req.body, ['_id', 'age','areasOfInterest'])
 
     if (undefinedFields) {
@@ -139,7 +141,7 @@ module.exports = updateAreasOfInterest = (req, res) => {
                     message: 'Unable to update areas of interest. Could not find user. '
                 })
             } else {
-                logger.info(user.userName + ' updated areasOfInterest successfully: ' + areasOfInterest)
+                logger.info(user.userName + ' updated areasOfInterest successfully: ' + JSON.stringify(updatedAreasOfInterest))
                 res.status(200).send({
                     message: 'Updated areas of interest successfully.'
                 })

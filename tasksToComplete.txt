@@ -284,3 +284,7 @@ Location (complete)
 Add success logger messages and error log messages. (45 minutes)
 
 When I get back finish the logging for everything making sure it's properly set up to understand why user registration is failing. 
+
+Continue working on the mentor preferences section get it working for both new users and fake generated users. 
+Talk about monitoring and how it would work. 
+Change it so profile picture is not got from avatar in the client but from the server. 

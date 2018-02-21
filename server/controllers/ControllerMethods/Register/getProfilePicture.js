@@ -1,26 +1,35 @@
 var fs = require('fs');
+var logger = require('../../../src/logger.js')(module)
 
 module.exports = getProfilePicture = (req, res) => {
 
+    logger.debug(req.headers['x-forwarded-for'] || req.connection.remoteAddress + ' attempting to get profile picture with request ' + JSON.stringify(req.params))
+
     const profilePictureDirectory = 'C:/Users/User/Desktop/Mentoid/server/profile-pictures/'
-    var imagePathJPG = profilePictureDirectory + req.params.userID + '.jpg'
-    var imagePathJPEG = profilePictureDirectory + req.params.userID + '.jpeg'
-    var imagePathPNG = profilePictureDirectory + req.params.userID + '.png'
+    const noProfilePictueAvatar = 'C:/Users/User/Desktop/Mentoid/server/assets/userAvatar.png'
+    var userID = req.params.userID
+    var imagePathJPG = profilePictureDirectory + userID + '.jpg'
+    var imagePathJPEG = profilePictureDirectory + userID + '.jpeg'
+    var imagePathPNG = profilePictureDirectory + userID + '.png'
 
     if(fs.existsSync(imagePathJPG)) {
-        res.sendFile(profilePictureDirectory + req.params.userID + '.jpg');
+        logger.debug('User: ' + userID + ' retreived profile picture ' + userID + '.jpg')
+        res.sendFile(profilePictureDirectory + userID + '.jpg');
         return
     }
 
     if(fs.existsSync(imagePathJPEG)) {
-        res.sendFile(profilePictureDirectory + req.params.userID + '.jpeg');
+        logger.debug('User: ' + userID + ' retreived profile picture ' + userID + '.jpeg')
+        res.sendFile(profilePictureDirectory + userID + '.jpeg');
         return
     }
 
     if (fs.existsSync(imagePathPNG)) {
-        res.sendFile(profilePictureDirectory + req.params.userID + '.png');
+        logger.debug('User: ' + userID + ' retreived profile picture ' + userID + '.png')
+        res.sendFile(profilePictureDirectory + userID + '.png');
         return
     }
 
-    res.status(500).send('Could not locate image for user: ' + req.params.userID)
+    logger.debug('User: ' + userID + ' does not have a profile picture resorting to avatar.')
+    res.sendFile(noProfilePictueAvatar)
 }

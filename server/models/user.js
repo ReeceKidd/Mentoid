@@ -63,10 +63,10 @@ const User = new Schema({
     educationID: String
   }],
   mentorPreferences: {
-    wouldLikeAMentee: Boolean,
+    wouldLikeToMentor: Boolean,
     areasOfInterest: [],
     prefferedMentoringFormats: [],
-    maximumTravelDistanceKM: String,
+    maximumTravelDistanceKM: Number,
     languages: [],
     prefferedEducation: [],
     minimumAge: Number,
@@ -77,7 +77,7 @@ const User = new Schema({
     wouldLikeAMentor: Boolean,
     areasOfInterest: [],
     prefferedMentoringFormats: [],
-    maximumTravelDistanceKM: String,
+    maximumTravelDistanceKM: Number,
     languages: [],
     prefferedEducation: [],
     minimumAge: Number,
