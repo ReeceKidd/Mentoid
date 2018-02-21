@@ -53,13 +53,14 @@ module.exports = updateUserName = (req, res) => {
                             userName: req.body.newUserName
                         },
                     },
-                    function (err, updated) {
+                    function (err, user) {
                         if (err) {
                             logger.error(err)
                             res.status(500).send({
                                 message: 'Unable to update users name. Could not find user. '
                             })
                         } else {
+                            logger.info(req.body.oldUserName + ' updated username successfully: ' + user.userName)
                             res.status(200).send({
                                 message: 'Updated user name.'
                             })

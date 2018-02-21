@@ -83,13 +83,14 @@ module.exports = updateSocialMedia = (req, res) => {
             },
 
         },
-        function (err, updated) {
+        function (err, user) {
             if (err) {
                 logger.error(err)
                 res.status(400).send({
                     message: 'Unable to update social media. Could not find user. '
                 })
             } else {
+                logger.info(user.userName + ' updated social media successfully: ' + req.body)
                 res.status(200).send({
                     message: 'Updated social media successfully.'
                 })

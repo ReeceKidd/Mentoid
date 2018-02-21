@@ -61,6 +61,7 @@ module.exports = updateMentorPreferences = (req, res) => {
                     message: 'Unable to update mentee preferences. Could not find user. '
                 })
             } else {
+                logger.info(user.userName + ' updated mentee preferences successfully: ' + req.body.menteePreferences)
                 res.status(200).send({
                     message: 'Updated mentor preferences.'
                 })

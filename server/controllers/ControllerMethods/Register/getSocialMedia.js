@@ -76,7 +76,8 @@ module.exports = getSocialMedia = (req, res) => {
                 error: 'Server error'
             })
         } 
-    }).select('facebook twitter instagram snapchat linkedIn website youtube medium -_id').then(user => {
+    }).select('facebook twitter instagram snapchat linkedIn website youtube medium userName -_id').then(user => {
+        logger.verbose(user.userName + ' successfully retrieved social media information.')
         res.status(200).send({
             facebook: user.facebook,
             instagram: user.instagram,

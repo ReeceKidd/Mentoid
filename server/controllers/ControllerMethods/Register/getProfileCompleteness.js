@@ -76,7 +76,8 @@ module.exports = getUsersAge = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('-_id').then(user => {
+    }).select('-_id userName socialMediaComplete areasOfInterestRegistrationComplete jobHistoryRegistrationComplete educationRegistrationComplete mentorPreferencesComplete menteePreferencesComplete').then(user => {
+        logger.verbose(user.userName + ' successfully retrieved profile completeness.')
         res.status(200).send({
             socialMediaComplete: user.socialMediaComplete,
             areasOfInterestRegistrationComplete: user.areasOfInterestRegistrationComplete,

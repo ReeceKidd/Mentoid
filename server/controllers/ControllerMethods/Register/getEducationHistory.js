@@ -76,7 +76,8 @@ module.exports = getEducationHistory = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('education -_id').then(user => {
+    }).select('education userName -_id').then(user => {
+        logger.verbose(user.userName + ' successfully retrieved education.')
         res.status(200).send({
             education: user.education
         })

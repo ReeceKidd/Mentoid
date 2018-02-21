@@ -132,13 +132,14 @@ module.exports = updateAreasOfInterest = (req, res) => {
             },
 
         },
-        function (err, updated) {
+        function (err, user) {
             if (err) {
                 logger.error(err)
                 res.status(500).send({
                     message: 'Unable to update areas of interest. Could not find user. '
                 })
             } else {
+                logger.info(user.userName + ' updated areasOfInterest successfully: ' + areasOfInterest)
                 res.status(200).send({
                     message: 'Updated areas of interest successfully.'
                 })

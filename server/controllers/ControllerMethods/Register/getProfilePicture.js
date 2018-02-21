@@ -1,6 +1,7 @@
 var fs = require('fs');
 
 module.exports = getProfilePicture = (req, res) => {
+
     const profilePictureDirectory = 'C:/Users/User/Desktop/Mentoid/server/profile-pictures/'
     var imagePathJPG = profilePictureDirectory + req.params.userID + '.jpg'
     var imagePathJPEG = profilePictureDirectory + req.params.userID + '.jpeg'

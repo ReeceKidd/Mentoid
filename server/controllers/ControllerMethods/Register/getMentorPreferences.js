@@ -79,7 +79,8 @@ module.exports = getMentorPreferences = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('mentorPreferences -_id').then(user => {    
+    }).select('mentorPreferences userName -_id').then(user => { 
+        logger.verbose(user.userName + ' successfully retrieved mentor preferences.')   
         res.status(200).send({
             mentorPreferences: user.mentorPreferences
         })

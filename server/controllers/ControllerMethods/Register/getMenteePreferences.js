@@ -79,7 +79,7 @@ module.exports = getMenteePreferences = (req, res) => {
             })
         }
         
-    }).select('menteePreferences -_id').then(user => {
+    }).select('menteePreferences userName -_id').then(user => {
         
         var areasOfInterestNames = []
         /*
@@ -94,7 +94,7 @@ module.exports = getMenteePreferences = (req, res) => {
         }
 
         user.menteePreferences.areasOfInterest = areasOfInterestNames
-        
+        logger.verbose(user.userName + ' successfully retrieved mentee preferences.')
         res.status(200).send({
         menteePreferences: user.menteePreferences
         })

@@ -76,7 +76,8 @@ module.exports = getJobHistory = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('jobHistory -_id').then(user => {
+    }).select('jobHistory userName -_id').then(user => {
+        logger.verbose(user.userName + ' successfully retrieved job history.')
         res.status(200).send({
             jobHistory: user.jobHistory
         })

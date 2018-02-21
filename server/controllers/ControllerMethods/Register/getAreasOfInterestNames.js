@@ -77,7 +77,7 @@ module.exports = getAreasOfInterestNames = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('areasOfInterest -_id').then(user => {
+    }).select('areasOfInterest userName -_id').then(user => {
         /*
         Once a user submits areas of interest, additional fields are added that will be used
         for matching, however a user should not be able to see or change these, the
@@ -89,6 +89,7 @@ module.exports = getAreasOfInterestNames = (req, res) => {
                 value: user.areasOfInterest[x].value
             })
         }
+        logger.verbose(user.userName + ' successfully retreived areas of interest names.')
         res.status(200).send({
             areasOfInterest: areasOfInterestNames
         })

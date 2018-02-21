@@ -57,6 +57,7 @@ Vue.use(ElementUI, { locale })
 // The Vue.config options below disable unwanted messages in the console.
 Vue.config.devtools = false
 Vue.config.productionTip = false
+Vue.config.debug = false
 
 const routes = [
   {

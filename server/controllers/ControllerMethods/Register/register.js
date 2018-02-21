@@ -133,6 +133,7 @@ try {
         .then(user => {
             user.password = user.updatedAt = user.createdAt = user.confirmPassword = undefined
             const token = asyncIssue(user.toObject()).then(token => {
+                logger.info(user.userName + ' successfully registered.')
                 res.status(200).send({
                     message: 'Success',
                     token: token,

@@ -70,14 +70,14 @@ module.exports = getAreasOfInterest = (req, res) => {
     const userID = req.params.userID
     User.findById(userID, function (err, user) {
         if (err) {
-            logger.errror(err)
+            logger.error(err)
             res.status(500)
             res.send({
                 message: 'Could not get areas of interest',
                 error: 'Server error'
             })
         }
-    }).select('areasOfInterest -_id').then(user => {
+    }).select('areasOfInterest userName -_id').then(user => {
         /*
         Once a user submits areas of interest, additional fields are added that will be used
         for matching, however a user should not be able to see or change these, the
@@ -91,6 +91,7 @@ module.exports = getAreasOfInterest = (req, res) => {
                 areaOfInterestID: user.areasOfInterest[x].areaOfInterestID
             })
         }
+        logger.verbose(user.userName + ' successfully retreived areas of interest')
         res.status(200).send({
             areasOfInterest: areasOfInterestWithFieldsUserCanUpdate
         })

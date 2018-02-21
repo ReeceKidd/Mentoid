@@ -21,8 +21,9 @@ module.exports = updateLocationInformation = (req, res) => {
                     message: 'Unable to update location information. Could not find user. '
                 })
             } else {
+                logger.info(user.userName + ' updated location information successfully: ' + req.body.location)
                 res.status(200).send({
-                    message: 'Updated job history successfully.'
+                    message: 'Updated location information successfully.'
                 })
             }
         }

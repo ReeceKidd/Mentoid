@@ -79,7 +79,8 @@ module.exports = getUsersAge = (req, res) => {
                 error: 'Server error'
             })
         } 
-    }).select('age -_id').then(user => {
+    }).select('age userName -_id').then(user => {
+        logger.verbose(userName + ' successfully retrieved age: ' + age)
         res.status(200).send({
             age: user.age
         })

@@ -274,10 +274,13 @@ Need to switch mentor preferences and mentee preferences to MentorPreferences, M
 //Generate better latituudes and longitudes to create more matches. 
 //Need to modularise the methods inside of the search so they can be tested. 
 //Need to fix the language generation as no one speaks two languages. 
+// Do need to update gitignore to ignore the profile pictures. 
 
 Fix the generator for longitude latitude, languages and add the would like to Mentor option. (30 minutes)
 Language options (complete)
 WouldLikeToMentor (complete)
 Location (complete)
 
-Add success logger messages and error log messages. 
+Add success logger messages and error log messages. (45 minutes)
+
+Figure out why all webpack and vue are both calling it. 

@@ -78,6 +78,7 @@ module.exports = getBasicRegistration = (req, res) => {
             })
         }
     }).select('firstName lastName email userName -_id').then(user => {
+        logger.verbose(user.userName + ' successfully retrieved basic registration details.')
         res.status(200).send({
             userInfo: user
         })

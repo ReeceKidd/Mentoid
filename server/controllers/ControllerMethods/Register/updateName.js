@@ -29,13 +29,14 @@ module.exports = updateName = (req, res) => {
                 lastName: req.body.lastName
             },
         },
-        function (err, updated) {
+        function (err, user) {
             if (err) {
                 logger.error(err)
                 res.status(400).send({
                     message: 'Unable to update users name. Could not find user. '
                 })
             } else {
+                logger.info(user.userName + ' updated first and last name successfully: ' + req.body.firstName + ' ' + req.body.lastName)
                 res.status(200).send({
                     message: 'Updated user name.'
                 })
