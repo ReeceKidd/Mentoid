@@ -62,7 +62,7 @@ const User = new Schema({
     endYear: String,
     educationID: String
   }],
-  mentorPreferences: {
+  mentorSettings: {
     wouldLikeToMentor: Boolean,
     areasOfInterest: [],
     prefferedMentoringFormats: [],
@@ -73,7 +73,7 @@ const User = new Schema({
     maximumAge: Number,
     maxNumberOfMentees: Number
   },
-  menteePreferences: {
+  menteeSettings: {
     wouldLikeAMentor: Boolean,
     areasOfInterest: [],
     prefferedMentoringFormats: [],
@@ -94,8 +94,8 @@ const User = new Schema({
   areasOfInterestRegistrationComplete: Boolean,
   jobHistoryRegistrationComplete: Boolean,
   educationRegistrationComplete: Boolean,
-  mentorPreferencesComplete: Boolean,
-  menteePreferencesComplete: Boolean,
+  mentorSettingsComplete: Boolean,
+  menteeSettingsComplete: Boolean,
   socialMediaComplete: Boolean,
   isUserLoggedIn: Boolean
 }, {

@@ -35,7 +35,7 @@
   </div>
 </template>
 <script>
-  import MenteePreferencesForm from './Forms/MenteePreferences.vue'
+  import MenteeSettingsForm from './Forms/MenteeSettings.vue'
 
   export default {
     methods: {
@@ -44,7 +44,7 @@
       }
     },
     components: {
-      MenteePreferencesForm
+      MenteeSettingsForm
     }
   }
 </script>

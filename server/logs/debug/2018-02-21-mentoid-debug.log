@@ -798,3 +798,2359 @@ maxNumberOfMentees: 10
   "maxNumberOfMentees": 10
 }
 
+21:03:17 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:17 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:03:17 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:17 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:17 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:17 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:17 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:17 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:18 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:18 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:18 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:18 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:18 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:18 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:31 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:31 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:31 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:31 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:31 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:31 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:31 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:31 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:45 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:45 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:45 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:45 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:45 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:45 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:47 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:47 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:03:47 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:47 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:47 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:47 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:47 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:47 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:48 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:03:48 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:03:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:03:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:03:49 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:49 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:03:49 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:49 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:05:52 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:05:52 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:05:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:05:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:05:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:05:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:05:52 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:05:52 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:05:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:05:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:05:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:05:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:05:53 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:05:53 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:05:53 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:05:53 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:06:18 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:18 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:06:18 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:18 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:06:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:06:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:06:19 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:19 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:06:19 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:19 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:06:19 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:06:19 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:06:19 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:06:19 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:06:19 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:06:19 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:07:31 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:31 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:07:31 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:31 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:07:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:07:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:07:32 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:32 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:32 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:07:32 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:07:32 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:07:32 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:07:33 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:07:33 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:07:33 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:07:33 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:08:57 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:57 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:08:57 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:57 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:57 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:57 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:08:57 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:08:57 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:08:58 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:58 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:58 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:08:58 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:08:58 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:08:58 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:08:58 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:08:58 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:08:58 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:08:58 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:09:07 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:09:07 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:09:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:09:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:09:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:09:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:09:07 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:09:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:09:07 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:09:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:09:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:09:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:09:07 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:09:07 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:09:07 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:09:07 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:12:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:12:31 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:12:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:12:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:12:31 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:12:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:12:31 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:12:31 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:13:03 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:03 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:04 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:13:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:13:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:13:04 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:04 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:13:28 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:28 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:13:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:13:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:13:28 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:28 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:13:33 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:33 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:13:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:13:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:13:33 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:33 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:13:43 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:43 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:13:43 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:13:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:13:43 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:13:43 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:43 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:14:06 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:06 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:06 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:06 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:14:06 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:14:06 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:14:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:14:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:14:24 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:24 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:14:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:14:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:14:24 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:24 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:14:24 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:14:33 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:33 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:14:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:14:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:14:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:14:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:14:57 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:57 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:57 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:57 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:14:57 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:14:57 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:14:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:14:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:14:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:15:32 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:32 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:32 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:32 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:15:32 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:15:32 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:15:32 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:15:32 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:15:41 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:41 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:15:41 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:41 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:41 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:15:41 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:41 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:15:41 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:15:42 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:42 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:42 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:15:42 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:15:42 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:15:42 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:15:42 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:15:42 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:15:42 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:15:42 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 75,
+  "minimumAge": 16,
+  "maximumAge": 20,
+  "maxNumberOfMentees": 10
+}
+
+21:16:05 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:05 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:16:05 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:05 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:16:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:05 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:16:05 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:16:06 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:06 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:06 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:06 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:16:06 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:16:06 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:16:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:16:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:16:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:16:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:16:06 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:17:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:17:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:17:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:17:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:17:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:17:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:17:21 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:17:21 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:17:21 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:17:21 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:17:21 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:12 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:12 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:12 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:12 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:12 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:12 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:12 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:12 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:21 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:21 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:18:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:22 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:22 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:22 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:22 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:22 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:22 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:33 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:33 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:57 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:57 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:57 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:57 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:57 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:18:57 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:18:57 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:18:59 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:59 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:18:59 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:59 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:59 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:18:59 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:18:59 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:18:59 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:19:00 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:00 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:19:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:19:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:19:00 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:00 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:19:00 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:19:01 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:01 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:19:01 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:19:18 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:19:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:19:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:19:18 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:19:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:19:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:19:18 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:19:18 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:19:18 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:18 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:19:18 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:19:21 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8dd4bac1eb0f29ac6a203f retreived profile picture 5a8dd4bac1eb0f29ac6a203f.jpg
+
+21:19:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:19:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:19:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:19:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:19:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0},{"value":"Rugby","years":3,"areaOfInterestID":1},{"value":"Programming","years":4,"areaOfInterestID":2}]
+
+21:19:21 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga,Rugby,Programming
+
+21:19:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:19:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:19:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8dd4bac1eb0f29ac6a203fis  attempting to get their Mentee preferences with request {"userID":"5a8dd4bac1eb0f29ac6a203f"}
+
+21:19:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:19:22 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:21:47 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:47 ControllerMethods/Register/checkUserName.js DEBUG: r was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: re was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: ree was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: reec was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: reece was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: reecek was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: reeceki was entered into basic registration field.
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js DEBUG: reecekid was entered into basic registration field.
+
+21:21:49 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:49 ControllerMethods/Register/checkUserName.js DEBUG: reecekidd was entered into basic registration field.
+
+21:21:50 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
+
+21:21:50 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
+
+21:21:50 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
+
+21:21:52 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
+
+21:21:52 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
+
+21:21:52 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js DEBUG: undefinedwas entered in basic registration form.
+
+21:21:54 ControllerMethods/Register/checkEmail.js DEBUG: undefinedwas entered in basic registration form.
+
+21:22:07 ControllerMethods/Register/register.js DEBUG: ::1 attempting to register with request {"firstName":"Reece","lastName":"Kidd","userName":"reecekidd","email":"reecekidd95@gmail.com","age":"22","password":"Milkshake1","confirmPassword":"Milkshake1","language":"English","terms":"true"}
+
+21:22:08 ControllerMethods/Register/register.js INFO: reecekidd successfully registered: { __v: 0,
+  firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22,
+  language: 'English',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5a8de2ff05e33a2720969ea3,
+  mentees: [],
+  mentors: [],
+  menteePreferences: 
+   { wouldLikeAMentor: true,
+     prefferedMentoringFormats: [ 'Online', 'In person' ],
+     maximumTravelDistanceKM: 50,
+     languages: [ 'English' ],
+     prefferedEducation: 
+      [ 'High School',
+        'Vocational',
+        'Certification',
+        'Bachelors',
+        'Masters',
+        'PHD' ],
+     minimumAge: 16,
+     maximumAge: 120 },
+  mentorPreferences: 
+   { prefferedMentoringFormats: [ 'Online', 'In person' ],
+     maximumTravelDistanceKM: 50,
+     languages: [ 'English' ],
+     prefferedEducation: 
+      [ 'High School',
+        'Vocational',
+        'Certification',
+        'Bachelors',
+        'Masters',
+        'PHD' ],
+     minimumAge: 16,
+     maximumAge: 120,
+     maxNumberOfMentees: 10 },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+21:22:08 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:08 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:22:08 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:08 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+21:22:08 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:08 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:08 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+21:22:08 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: []
+
+21:22:17 ControllerMethods/Register/updateAreasOfInterest.js DEBUG: ::1 attempting to update areas of interest with request {"areasOfInterest":[{"value":"Yoga","years":22,"areaOfInterestID":0}],"_id":"5a8de2ff05e33a2720969ea3","age":22}
+
+21:22:17 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is 22","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
+
+21:22:21 ControllerMethods/Register/updateAreasOfInterest.js DEBUG: ::1 attempting to update areas of interest with request {"areasOfInterest":[{"value":"Yoga","years":21,"areaOfInterestID":0}],"_id":"5a8de2ff05e33a2720969ea3","age":22}
+
+21:22:21 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
+
+21:22:28 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:28 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:22:28 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:28 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:22:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:22:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:22:29 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:29 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:22:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:22:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:22:29 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8de2ff05e33a2720969ea3is  attempting to get their Mentee preferences with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:29 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:22:29 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:22:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: 5a8de2ff05e33a2720969ea3is  attempting to get their Mentee preferences with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:22:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: Get mentee preferences did not contain undefined fields.
+
+21:22:33 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[],"prefferedMentoringFormats":[],"languages":[],"prefferedEducation":[]}
+
+21:26:01 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:01 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:26:01 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:01 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:26:01 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:01 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:01 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:26:01 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:26:02 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:02 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:02 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:02 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:26:02 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:26:02 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:26:02 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:02 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:26:02 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:02 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:26:48 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:48 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:26:49 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:49 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:49 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:49 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:26:49 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:26:49 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:26:49 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:49 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:49 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:26:49 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:26:49 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:26:49 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:26:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:50 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:26:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:50 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:27:04 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:27:04 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:27:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:27:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:27:04 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:27:04 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:27:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:27:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:27:05 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:27:05 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:27:05 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:27:05 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:28:07 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:07 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:28:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:28:07 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:28:07 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:28:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:07 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:28:07 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:28:07 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:07 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:28:07 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:07 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:28:43 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:43 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:28:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:43 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:43 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:28:43 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:28:43 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:28:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:28:43 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:28:43 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:28:43 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:43 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:28:43 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:43 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:29:00 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:00 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:29:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:29:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:29:00 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:00 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:29:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:29:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:29:00 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:00 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:29:00 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:00 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:29:44 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:44 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:29:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:29:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:29:44 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:29:44 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:29:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:29:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:29:44 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:44 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:29:44 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:44 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:30:51 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:51 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:30:51 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:51 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:30:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:51 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:30:51 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:30:52 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:52 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:30:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:30:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:30:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:30:52 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:30:52 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:30:52 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:30:52 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:31:50 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:31:50 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:31:50 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:31:50 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:31:50 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:31:50 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:31:50 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:31:50 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:31:50 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:31:50 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:31:50 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:31:50 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:31:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:31:50 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:31:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:31:50 ControllerMethods/Register/getMenteePreferences.js DEBUG: reecekidd successfully retrieved mentee preferences: {"areasOfInterest":[{"areaOfInterestID":0,"years":21,"value":"Yoga"}],"prefferedMentoringFormats":["Online","In person"],"languages":["English","Spanish","German"],"prefferedEducation":["No education","High School","Certification","Vocational","Bachelors","Masters","PHD"],"wouldLikeAMentor":true,"maximumTravelDistanceKM":20,"minimumAge":16,"maximumAge":120,"maxNumberOfMentors":10}
+
+21:33:45 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:33:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:33:45 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:33:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:33:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:33:45 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:33:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:33:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:33:45 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:33:45 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:33:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:33:45 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:33:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:33:45 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [],
+  "languages": [],
+  "prefferedEducation": []
+}
+
+21:33:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:33:45 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [],
+  "languages": [],
+  "prefferedEducation": []
+}
+
+21:37:35 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:35 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:37:35 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:35 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:37:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:37:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:37:36 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:37:36 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:37:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:37:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:37:36 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:37:36 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [],
+  "languages": [],
+  "prefferedEducation": []
+}
+
+21:37:36 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:37:36 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [],
+  "languages": [],
+  "prefferedEducation": []
+}
+
+21:41:04 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:04 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:41:04 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:04 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:41:09 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:09 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:41:16 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:16 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+21:41:16 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:16 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:16 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:41:16 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:16 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:41:16 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:41:17 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:17 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:17 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:41:17 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+21:41:17 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+21:41:17 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+21:41:17 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:41:17 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [],
+  "languages": [],
+  "prefferedEducation": []
+}
+
+21:41:17 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:41:17 ControllerMethods/Register/getMentorPreferences.js DEBUG: reecekidd successfully retrieved mentor preferences: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [],
+  "languages": [],
+  "prefferedEducation": []
+}
+
+21:42:40 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+21:42:40 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+

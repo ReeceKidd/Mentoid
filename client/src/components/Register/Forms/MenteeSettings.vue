@@ -1,25 +1,27 @@
 <template>
+
   <div class="container">
     <div>
       <div class="col-xs-12 text-center">
-        <h3>Would you like to be a Mentor?</h3>
+        <h3>Would you like a Mentor?</h3>
         <br>
       </div>
     </div>
 
     <div>
       <div class="col-xs-12 text-center">
-        <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeToMentor">
-          <option value="true">Yes</option>
-          <option value="false">No</option>
+        <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeAMentor">
+          <option :value="true">Yes</option>
+          <option :value="false">No</option>
         </select>
         <br>
         <br>
       </div>
     </div>
 
+    <!--  This form allows a user (mentee) to set their settings on what they are looking in a mentor.  -->
     <div class="col-xs-8 col-xs-offset-2">
-      <div v-if="wouldLikeToMentor === 'true'">
+      <div v-if="wouldLikeAMentor === 'true'">
         <!-- User has updaed areas of interest -->
 
         <span v-if="areasOfInterestNames.length !== 0">
@@ -93,9 +95,9 @@
         <input type="number" max="120" oninput="validity.valid||(maximumAge=120)" v-model="maximumAge" name="maximumAge">
         <br>
         <br>
-        <label> How many people can you Mentor Simultaneously? </label>
+        <label> What is your maximum number of Mentees? </label>
         <br>
-        <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentees=0)" v-model="maxNumberOfMentees" name="maxNumberOfMentees">
+        <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentors=0)" v-model="maxNumberOfMentors" name="maxNumberOfMentors">
         <br>
         <br>
         <div class="row text-center">
@@ -120,7 +122,7 @@
       </div>
       <!-- End of success message -->
 
-      <div v-if="wouldLikeToMentor === 'false'">
+      <div v-if="wouldLikeAMentor === 'false'">
         <p> You do not need to be an expert to Mentor. You just need more experience than your potential Mentee. Being a Mentor
           is one of the fastest ways to improve your areas of interest.
         </p>
@@ -162,7 +164,7 @@
       return {
         userID: this.$store.state.user.authUser._id,
         userName: null,
-        wouldLikeToMentor: 'true',
+        wouldLikeAMentor: 'true',
         areasOfInterest: [],
         areasOfInterestNames: [],
         checkAllAreasOfInterest: false,
@@ -180,7 +182,7 @@
         checkedEducation: [],
         minimumAge: 16,
         maximumAge: 120,
-        maxNumberOfMentees: 10,
+        maxNumberOfMentors: 10,
         successMessage: null,
         errorMessage: null
       }
@@ -238,8 +240,8 @@
         axios.post(url, {
           userID: this.userID,
           userName: this.userName,
-          mentorPreferences: {
-            wouldLikeToMentor: this.wouldLikeToMentor,
+          menteePreferences: {
+            wouldLikeAMentor: this.wouldLikeAMentor === 'true',
             areasOfInterest: interestedInMentoringAreas,
             prefferedMentoringFormats: this.checkedMentoringFormats,
             maximumTravelDistanceKM: this.maximumTravelDistanceKM,
@@ -247,7 +249,7 @@
             prefferedEducation: this.checkedEducation,
             minimumAge: this.minimumAge,
             maximumAge: this.maximumAge,
-            maxNumberOfMentees: this.maxNumberOfMentees
+            maxNumberOfMentors: this.maxNumberOfMentors
           }
         }).then(function (response) {
           self.successMessage = response.data.message
@@ -287,7 +289,7 @@
         required,
         minValue: minValue(16)
       },
-      maxNumberOfMentees: {
+      maxNumberOfMentors: {
         required,
         minValue: minValue(1)
       }
@@ -310,16 +312,18 @@
       axios.get(getAreasOfInterestNamesUrl + userID).then(function (response) {
         self.areasOfInterestNames = response.data.areasOfInterest
       }).then(value => {
-        const getMentorPreferences = 'http://localhost:4000/get/mentor-preferences/'
+        const getMentorPreferences = 'http://localhost:4000/get/mentee-preferences/'
         axios.get(getMentorPreferences + userID).then(function (response) {
-          self.checkedAreasOfInterest = response.data.mentorPreferences.areasOfInterest
-          self.checkedMentoringFormats = response.data.mentorPreferences.prefferedMentoringFormats
-          self.checkedLanguages = response.data.mentorPreferences.languages
-          self.checkedEducation = response.data.mentorPreferences.prefferedEducation
-          self.maximumTravelDistanceKM = response.data.mentorPreferences.maximumTravelDistanceKM
-          self.minimumAge = response.data.mentorPreferences.minimumAge
-          self.maximumAge = response.data.mentorPreferences.maximumAge
-          self.maxNumberOfMentees = response.data.mentorPreferences.maxNumberOfMentees
+          var menteePreferences = response.data.menteePreferences
+          self.wouldLikeAMentor = menteePreferences.wouldLikeAMentor.toString()
+          self.checkedAreasOfInterest = menteePreferences.areasOfInterest
+          self.checkedMentoringFormats = menteePreferences.prefferedMentoringFormats
+          self.checkedLanguages = menteePreferences.languages
+          self.checkedEducation = menteePreferences.prefferedEducation
+          self.maximumTravelDistanceKM = menteePreferences.maximumTravelDistanceKM
+          self.minimumAge = menteePreferences.minimumAge
+          self.maximumAge = menteePreferences.maximumAge
+          self.maxNumberOfMentors = menteePreferences.maxNumberOfMentors
         }).then(value => {
           // Gets the name values from the previous checkedAreas of interest.
           for (var x = 0; x < this.checkedAreasOfInterest.length; x++) {
@@ -343,7 +347,6 @@
     }
   }
 </script>
-
 <style scoped>
   select.wouldYouLikeToMentorSelector {
     width: 20%;

@@ -122,3 +122,259 @@ userID:undefined
   "maxNumberOfMentees": 10
 }
 
+21:03:18 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:18 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:31 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:31 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:49 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:03:49 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:05:53 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:05:53 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:06:19 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:06:19 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:07:33 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:07:33 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:08:58 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:08:58 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:09:07 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:09:07 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:12:31 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:04 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:28 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:33 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:13:43 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:15:32 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:15:42 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:15:42 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8dd4bac1eb0f29ac6a203f attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:21:47 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:48 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:49 ControllerMethods/Register/checkUserName.js WARN: 
+
+21:21:50 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"r"}}
+
+21:21:50 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"re"}}
+
+21:21:50 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"ree"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reec"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reece"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecek"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reeceki"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekid"}}
+
+21:21:51 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd"}}
+
+21:21:52 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd9"}}
+
+21:21:52 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95"}}
+
+21:21:52 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@g"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gm"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gma"}}
+
+21:21:53 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmai"}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail"}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail."}}
+
+21:21:54 ControllerMethods/Register/checkEmail.js WARN:  {"email":{"location":"params","param":"email","msg":"Invalid email","value":"reecekidd95@gmail.c"}}
+
+21:22:08 ControllerMethods/Register/register.js INFO: reecekidd successfully registered: { __v: 0,
+  firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22,
+  language: 'English',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5a8de2ff05e33a2720969ea3,
+  mentees: [],
+  mentors: [],
+  menteePreferences: 
+   { wouldLikeAMentor: true,
+     prefferedMentoringFormats: [ 'Online', 'In person' ],
+     maximumTravelDistanceKM: 50,
+     languages: [ 'English' ],
+     prefferedEducation: 
+      [ 'High School',
+        'Vocational',
+        'Certification',
+        'Bachelors',
+        'Masters',
+        'PHD' ],
+     minimumAge: 16,
+     maximumAge: 120 },
+  mentorPreferences: 
+   { prefferedMentoringFormats: [ 'Online', 'In person' ],
+     maximumTravelDistanceKM: 50,
+     languages: [ 'English' ],
+     prefferedEducation: 
+      [ 'High School',
+        'Vocational',
+        'Certification',
+        'Bachelors',
+        'Masters',
+        'PHD' ],
+     minimumAge: 16,
+     maximumAge: 120,
+     maxNumberOfMentees: 10 },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+21:22:17 ControllerMethods/Register/updateAreasOfInterest.js WARN:  {"areasOfInterest":{"location":"body","param":"areasOfInterest","msg":"Your years of experience cannot be greater than your age. Your age is 22","value":[{"value":"Yoga","years":22,"areaOfInterestID":0}]}}
+
+21:22:21 ControllerMethods/Register/updateAreasOfInterest.js INFO: reecekidd updated areasOfInterest successfully: [{"value":"Yoga","years":21,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
+
+21:26:02 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:02 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:26:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:27:05 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:27:05 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:07 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:07 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:43 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:28:43 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:00 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:00 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:44 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:29:44 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:30:52 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:30:52 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:31:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:31:50 ControllerMethods/Register/getMenteePreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+21:33:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:33:45 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:37:36 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:37:36 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:41:17 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+
+21:41:17 ControllerMethods/Register/getMentorPreferences.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor preferences. req.params:
+userID:undefined
+

@@ -1,3 +1,7 @@
+/*
+These settings are from the perspective of a mentor, looking for a mentee. 
+*/
+
 var User = require('../../../models/user')
 
 var logger = require('../../../src/logger.js')(module)
@@ -8,9 +12,9 @@ const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 //Sanitizes different requests
 const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/updateMentorPreferences')
 
-module.exports = updateMentorPreferences = (req, res) => {
+module.exports = updateMentorSettings = (req, res) => {
 
-    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'userName', 'mentorPreferences'])
+    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'userName', 'mentorSettings'])
 
     if (undefinedFields) {
         logger.warn(undefinedFields)
@@ -20,14 +24,14 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
-    logger.debug('Entered update mentor preferences. req.body:' + '\n' +
+    logger.debug('Entered update mentor settings. req.body:' + '\n' +
         'userID:' + req.body.userID + '\n' +
         'userName:' + req.body.userName + '\n' +
-        'mentorPreferences:' + JSON.stringify(req.body.mentorPreferences, null, 2))
+        'mentorSettings:' + JSON.stringify(req.body.mentorSettings, null, 2))
 
-    let mentorPreferences = req.body.mentorPreferences
+    let mentorSettings = req.body.mentorSettings
 
-    var undefinedFieldsMentoringPreferences = checkUndefinedFields(mentorPreferences, [
+    var undefinedFieldsMentoringPreferences = checkUndefinedFields(mentorSettings, [
         'areasOfInterest',
         'prefferedMentoringFormats',
         'maximumTravelDistanceKM',
@@ -38,15 +42,15 @@ module.exports = updateMentorPreferences = (req, res) => {
         'maxNumberOfMentees'
     ])
 
-    logger.debug('mentorPreferences object: {' + '\n' +
-        'areasOfInterest: ' + JSON.stringify(mentorPreferences.areasOfInterest, null, 2) + '\n' +
-        'prefferedMentoringFormats: ' + mentorPreferences.prefferedMentoringFormats + '\n' +
-        'maximumTravelDistanceKM: ' + mentorPreferences.maximumTravelDistanceKM + '\n' +
-        'languages: ' + mentorPreferences.languages + '\n' +
-        'prefferedEducation: ' + mentorPreferences.prefferedEducation + '\n' +
-        'maximumAge: ' + mentorPreferences.maximumAge + '\n' +
-        'minimumAge: ' + mentorPreferences.minimumAge + '\n' +
-        'maxNumberOfMentees: ' + mentorPreferences.maxNumberOfMentees)
+    logger.debug('mentorSettings object: {' + '\n' +
+        'areasOfInterest: ' + JSON.stringify(mentorSettings.areasOfInterest, null, 2) + '\n' +
+        'prefferedMentoringFormats: ' + mentorSettings.prefferedMentoringFormats + '\n' +
+        'maximumTravelDistanceKM: ' + mentorSettings.maximumTravelDistanceKM + '\n' +
+        'languages: ' + mentorSettings.languages + '\n' +
+        'prefferedEducation: ' + mentorSettings.prefferedEducation + '\n' +
+        'maximumAge: ' + mentorSettings.maximumAge + '\n' +
+        'minimumAge: ' + mentorSettings.minimumAge + '\n' +
+        'maxNumberOfMentees: ' + mentorSettings.maxNumberOfMentees)
 
     if (undefinedFieldsMentoringPreferences) {
         logger.warn(undefinedFieldsMentoringPreferences)
@@ -70,8 +74,8 @@ module.exports = updateMentorPreferences = (req, res) => {
 
     User.findOneAndUpdate(query, {
             $set: {
-                mentorPreferencesComplete: true,
-                mentorPreferences: mentorPreferences
+                mentorSettingsComplete: true,
+                mentorSettings: mentorSettings
             },
 
         },
@@ -84,12 +88,12 @@ module.exports = updateMentorPreferences = (req, res) => {
             } else if (!user) {
                 logger.warn('No user found with _id: ' + req.body.userID)
                 res.status(600).send({
-                    message: 'Unable to update mentor preferences. Could not find user. '
+                    message: 'Unable to update mentor settings. Could not find user. '
                 })
             } else {
-                logger.info(user.userName + ' updated mentor preferences successfully: ' + JSON.stringify(mentorPreferences, null, 2))
+                logger.info(user.userName + ' updated mentor settings successfully: ' + JSON.stringify(mentorSettings, null, 2))
                 res.status(200).send({
-                    message: 'Updated mentor preferences.'
+                    message: 'Updated mentor settings.'
                 })
             }
         }

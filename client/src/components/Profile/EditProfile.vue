@@ -82,9 +82,9 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 class="text-center">
-          MENTORING PREFERENCES
+          MENTOR SETTINGS
         </h2>
-        <edit-mentor-preferences></edit-mentor-preferences>
+        <edit-mentor-settings></edit-mentor-settings>
       </div>
       <span id="mentee-preferences"></span>
     </div>
@@ -94,9 +94,9 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 class="text-center">
-          MENTEE PREFERENCES
+          MENTEE SETTINGS
         </h2>
-        <edit-mentee-preferences></edit-mentee-preferences>
+        <edit-mentee-settings></edit-mentee-settings>
       </div>
     </div>
   </div>
@@ -112,8 +112,8 @@
   import EditAreasOfInterest from '../Register/Forms/AreasOfInterest.vue'
   import EditEducationHistory from '../Register/Forms/Education.vue'
   import EditJobHistory from '../Register/Forms/JobHistory.vue'
-  import EditMenteePreferences from '../Register/Forms/MenteePreferences.vue'
-  import EditMentorPreferences from '../Register/Forms/MentorPreferences.vue'
+  import EditMenteeSettings from '../Register/Forms/MenteeSettings.vue'
+  import EditMentorSettings from '../Register/Forms/MentorSettings.vue'
   export default {
     components: {
       UploadProfilePicture,
@@ -125,8 +125,8 @@
       EditAreasOfInterest,
       EditEducationHistory,
       EditJobHistory,
-      EditMenteePreferences,
-      EditMentorPreferences
+      EditMenteeSettings,
+      EditMentorSettings
     }
   }
 </script>

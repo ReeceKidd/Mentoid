@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <mentor-preferences-form></mentor-preferences-form>
+    <mentor-settings-form></mentor-settings-form>
 
      <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2">  
@@ -35,7 +35,7 @@
   </div>
 </template>
 <script>
-  import MentorPreferencesForm from './Forms/MentorPreferences.vue'
+  import MentorSettingsForm from './Forms/MentorSettings.vue'
 
   export default {
     methods: {
@@ -44,7 +44,7 @@
       }
     },
     components: {
-      MentorPreferencesForm
+      MentorSettingsForm
     }
   }
 </script>

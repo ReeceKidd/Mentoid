@@ -20,8 +20,8 @@ import RegisterJobHistory from './components/Register/RegisterJobHistory.vue'
 import UploadProfilePicture from './components/Register/UploadProfilePicture.vue'
 import RegisterBio from './components/Register/RegisterBio.vue'
 import RegisterEducation from './components/Register/RegisterEducation.vue'
-import MentorPreferences from './components/Register/MentorPreferences.vue'
-import MenteePreferences from './components/Register/MenteePreferences.vue'
+import MentorSettings from './components/Register/MentorSettings.vue'
+import MenteeSettings from './components/Register/MenteeSettings.vue'
 import SocialMediaDetails from './components/Register/SocialMedia.vue'
 
 import UnknownHome from './components/UnknownHome.vue'
@@ -96,14 +96,14 @@ const routes = [
     component: UploadProfilePicture
   },
   {
-    path: '/mentor-preferences',
-    name: 'mentor-preferences',
-    component: MentorPreferences
+    path: '/mentor-settings',
+    name: 'mentor-settings',
+    component: MentorSettings
   },
   {
-    path: '/mentee-preferences',
-    name: 'mentee-preferences',
-    component: MenteePreferences
+    path: '/mentee-settings',
+    name: 'mentee-settings',
+    component: MenteeSettings
   },
   {
     path: '/social-media-details',

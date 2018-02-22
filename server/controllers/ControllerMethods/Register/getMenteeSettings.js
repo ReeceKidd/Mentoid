@@ -1,3 +1,6 @@
+/*
+These settings are from the perspective of a mentee, looking for a mentor. 
+*/
 var User = require('../../../models/user')
 
 var logger = require('../../../src/logger.js')(module)
@@ -17,9 +20,9 @@ const sanitizeID = require('../../Sanitizers/userID')
 // Validatiors
 const userIDValidation = require('../../Validators/userID')
 
-module.exports = getMentorPreferences = (req, res) => {
+module.exports = getMenteePreferences = (req, res) => {
 
-   
+
 
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
@@ -31,8 +34,8 @@ module.exports = getMentorPreferences = (req, res) => {
         })
     }
 
-    logger.warn(req.params.userID + ' attempting to get mentor preferences. req.params:' + '\n' +
-    'userID:' + req.body.userID)
+    logger.warn(req.params.userID + ' attempting to get mentee preferences. req.params:' + '\n' +
+        'userID:' + req.body.userID)
 
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkForID(req)
@@ -55,7 +58,7 @@ module.exports = getMentorPreferences = (req, res) => {
             message: badType,
             error: 'Invalid type in request'
         })
-        return
+
     }
 
     //Validation. 
@@ -68,7 +71,6 @@ module.exports = getMentorPreferences = (req, res) => {
         })
         return
     }
-
     //Santize User ID
     sanitizeID(req.params)
 
@@ -83,13 +85,11 @@ module.exports = getMentorPreferences = (req, res) => {
                 error: 'Server error'
             })
         }
-        if (!user) {
-            logger.debug('No users found with ID: ' + userID)
-        }
-    }).select('mentorPreferences userName -_id').then(user => {
-        logger.debug(user.userName + ' successfully retrieved mentor preferences: ' + JSON.stringify(user.mentorPreferences, null, 2))
+
+    }).select('menteePreferences userName -_id').then(user => {
+        logger.debug(user.userName + ' successfully retrieved mentee preferences: ' + JSON.stringify(user.menteePreferences))
         res.status(200).send({
-            mentorPreferences: user.mentorPreferences
+            menteePreferences: user.menteePreferences
         })
     })
 }
