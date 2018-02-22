@@ -32,6 +32,7 @@ module.exports = updateMentorSettings = (req, res) => {
     let mentorSettings = req.body.mentorSettings
 
     var undefinedFieldsMentoringPreferences = checkUndefinedFields(mentorSettings, [
+        'wouldLikeToMentor',
         'areasOfInterest',
         'prefferedMentoringFormats',
         'maximumTravelDistanceKM',

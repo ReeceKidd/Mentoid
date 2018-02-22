@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <mentee-preferences-form></mentee-preferences-form>
+    <mentee-settings-form></mentee-settings-form>
 
      <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">  
@@ -8,7 +8,7 @@
 
         <!-- Desktop -->
         <span class="hidden-xs">
-          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentor-preferences')">
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentor-settings')">
             <i class="fas fa-arrow-left"></i> Previous: Mentor preferences</button>
         </span>
         <span class="hidden-xs">
@@ -20,7 +20,7 @@
 
         <!-- Mobile-->
         <span class="visible-xs text-center">
-          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentor-preferences')">
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentor-settings')">
             <i class="fas fa-arrow-left"></i> Previous: Mentor preferences</button>
         </span>
         <br class="visible-xs">

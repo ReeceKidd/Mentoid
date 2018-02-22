@@ -12,7 +12,7 @@
             <i class="fas fa-arrow-left"></i> Previous: Upload Profile Picture</button>
         </span>
         <span class="hidden-xs">
-          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/mentee-preferences')"> Next: Mentee Preferences
+          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/mentee-settings')"> Next: Mentee Preferences
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>
@@ -25,7 +25,7 @@
         </span>
         <br class="visible-xs">
         <span class="visible-xs text-center">
-          <button class="btn btn-md btn-primary" @click="navigateTo('/mentee-preferences')"> Next: Mentee Preferences
+          <button class="btn btn-md btn-primary" @click="navigateTo('/mentee-settings')"> Next: Mentee Preferences
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>

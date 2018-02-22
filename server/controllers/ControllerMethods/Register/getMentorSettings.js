@@ -33,8 +33,7 @@ module.exports = getMentorSettings = (req, res) => {
         })
     }
 
-    logger.warn(req.params.userID + ' attempting to get mentor settings. req.params:' + '\n' +
-     + JSON.stringify(req.params))
+    logger.warn(req.params.userID + ' attempting to get mentor settings.')
 
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkForID(req)

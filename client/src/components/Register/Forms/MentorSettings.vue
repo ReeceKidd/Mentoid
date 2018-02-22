@@ -29,12 +29,13 @@
           <el-checkbox v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">
             <span class="selectAll">Select All</span>
           </el-checkbox>
-          <el-checkbox-group v-model="checkedAreasOfInterestNames" @change="handleCheckedAreasOfInterestChange">
+          <el-checkbox-group v-model="checkedAreasOfInterestNames" @change="handleCheckedAreasOfInterestChange" @blur="$v.checkedAreasOfInterestNames.$touch">
             <el-checkbox v-for="(areaOfInterest, index) in areasOfInterestNames" :label="areaOfInterest" :key="index" border size="medium">{{areaOfInterest}}</el-checkbox>
           </el-checkbox-group>
           <br>
           <br>
         </span>
+
         <!-- End -->
         <!-- User has no areas of interest -->
         <span v-else>
@@ -100,7 +101,7 @@
         <br>
         <br>
         <div class="row text-center">
-          <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor preferences </button>
+          <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor settings </button>
         </div>
       </div>
 
@@ -392,7 +393,7 @@
             this.checkedAreasOfInterestNames.push(this.checkedAreasOfInterest[x].value)
           }
           // Initiliase the select all values based on the data received from the server.
-          if (this.checkedAreasOfInterestNames.length === this.areasOfInterestNames.length) {
+          if (this.areasOfInterestNames.length === this.checkedAreasOfInterestNames.length) {
             this.checkAllAreasOfInterest = true
           }
           if (this.mentoringFormats.length === this.checkedMentoringFormats.length) {
@@ -401,7 +402,7 @@
           if (this.educationLevel.length === this.checkedEducation.length) {
             this.checkAllEducation = true
           }
-          if (this.checkedLanguages.length === this.languages.length) {
+          if (this.languages.length === this.checkedLanguages.length) {
             this.checkAllLanguages = true
           }
         })

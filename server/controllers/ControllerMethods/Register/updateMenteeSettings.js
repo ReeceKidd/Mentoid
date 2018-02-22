@@ -1,3 +1,7 @@
+/*
+These settings are from the perspective of a mentee, looking for a mentee. 
+*/
+
 var User = require('../../../models/user')
 
 var logger = require('../../../src/logger.js')(module)
@@ -8,11 +12,9 @@ const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 //Sanitizes different requests
 const sanitizeUpdateMentorPreferences = require('../../Sanitizers/Registration/updateMentorPreferences')
 
-module.exports = updateMentorPreferences = (req, res) => {
+module.exports = updateMenteeSettings = (req, res) => {
 
-    //Need to put the field checkers in. 
-
-    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'menteePreferences'])
+    var undefinedFields = checkUndefinedFields(req.body, ['userID', 'userName', 'menteeSettings'])
 
     if (undefinedFields) {
         logger.warn(undefinedFields)
@@ -22,14 +24,35 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
-    var undefinedFieldsMentoringPreferences = checkUndefinedFields(req.body.menteePreferences, [
-    'areasOfInterest',
-    'prefferedMentoringFormats',
-    'maximumTravelDistanceKM',
-    'languages',
-    'prefferedEducation',
-    'maximumAge',
-    'minimumAge'])
+    logger.debug('Entered update mentee settings. req.body:' + '\n' +
+        'userID:' + req.body.userID + '\n' +
+        'userName:' + req.body.userName + '\n' +
+        'menteeSettings:' + JSON.stringify(req.body.menteeSettings, null, 2))
+
+    let menteeSettings = req.body.menteeSettings
+
+    var undefinedFieldsMentoringPreferences = checkUndefinedFields(menteeSettings, [
+        'wouldLikeAMentor',
+        'areasOfInterest',
+        'prefferedMentoringFormats',
+        'maximumTravelDistanceKM',
+        'languages',
+        'prefferedEducation',
+        'maximumAge',
+        'minimumAge',
+        'maxNumberOfMentors'
+    ])
+
+    logger.debug('menteeSettings object: {' + '\n' +
+        'wouldLikeAMentor: ' + menteeSettings.wouldLikeAMentor + '\n' +
+        'areasOfInterest: ' + JSON.stringify(menteeSettings.areasOfInterest, null, 2) + '\n' +
+        'prefferedMentoringFormats: ' + menteeSettings.prefferedMentoringFormats + '\n' +
+        'maximumTravelDistanceKM: ' + menteeSettings.maximumTravelDistanceKM + '\n' +
+        'languages: ' + menteeSettings.languages + '\n' +
+        'prefferedEducation: ' + menteeSettings.prefferedEducation + '\n' +
+        'maximumAge: ' + menteeSettings.maximumAge + '\n' +
+        'minimumAge: ' + menteeSettings.minimumAge + '\n' +
+        'maxNumberOfMentors: ' + menteeSettings.maxNumberOfMentors)
 
     if (undefinedFieldsMentoringPreferences) {
         logger.warn(undefinedFieldsMentoringPreferences)
@@ -39,10 +62,13 @@ module.exports = updateMentorPreferences = (req, res) => {
         })
     }
 
-    //Need to do validation for the mentor preferences section. 
-    //Also need to do the field check. 
+    //Need to do validation for the mentee preferences section. 
 
-    sanitizeUpdateMentorPreferences(req.body)
+    try {
+        sanitizeUpdateMentorPreferences(req.body)
+    } catch (error) {
+        logger.warn('Sanitatization error')
+    }
 
     var query = {
         '_id': req.body.userID
@@ -50,20 +76,26 @@ module.exports = updateMentorPreferences = (req, res) => {
 
     User.findOneAndUpdate(query, {
             $set: {
-                menteePreferencesComplete: true,
-                menteePreferences: req.body.menteePreferences
+                menteeSettingsComplete: true,
+                menteeSettings: menteeSettings
             },
+
         },
-        function (err, updated) {
+        function (err, user) {
             if (err) {
                 logger.error(err)
-                res.status(400).send({
-                    message: 'Unable to update mentee preferences. Could not find user. '
+                res.status(500).send({
+                    message: 'Server error'
+                })
+            } else if (!user) {
+                logger.warn('No user found with _id: ' + req.body.userID)
+                res.status(600).send({
+                    message: 'Unable to update mentee settings. Could not find user. '
                 })
             } else {
-                logger.info(user.userName + ' updated mentee preferences successfully: ' + req.body.menteePreferences)
+                logger.info(user.userName + ' updated mentee settings successfully: ' + JSON.stringify(menteeSettings, null, 2))
                 res.status(200).send({
-                    message: 'Updated mentor preferences.'
+                    message: 'Updated mentee settings.'
                 })
             }
         }

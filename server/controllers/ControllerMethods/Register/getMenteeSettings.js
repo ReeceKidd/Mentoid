@@ -1,6 +1,7 @@
 /*
-These settings are from the perspective of a mentee, looking for a mentor. 
+These settings are from the perspective of a mentee, looking for a mentee. 
 */
+
 var User = require('../../../models/user')
 
 var logger = require('../../../src/logger.js')(module)
@@ -20,9 +21,7 @@ const sanitizeID = require('../../Sanitizers/userID')
 // Validatiors
 const userIDValidation = require('../../Validators/userID')
 
-module.exports = getMenteePreferences = (req, res) => {
-
-
+module.exports = getMenteeSettings = (req, res) => {
 
     var undefinedFields = checkUndefinedFields(req.params, ['userID'])
 
@@ -34,8 +33,7 @@ module.exports = getMenteePreferences = (req, res) => {
         })
     }
 
-    logger.warn(req.params.userID + ' attempting to get mentee preferences. req.params:' + '\n' +
-        'userID:' + req.body.userID)
+    logger.debug(req.params.userID + ' attempting to get their mentee settings')
 
     //Checks that fields only defined in the schema are passed. 
     var unwantedFields = checkForID(req)
@@ -58,7 +56,7 @@ module.exports = getMenteePreferences = (req, res) => {
             message: badType,
             error: 'Invalid type in request'
         })
-
+        return
     }
 
     //Validation. 
@@ -71,6 +69,7 @@ module.exports = getMenteePreferences = (req, res) => {
         })
         return
     }
+
     //Santize User ID
     sanitizeID(req.params)
 
@@ -85,11 +84,13 @@ module.exports = getMenteePreferences = (req, res) => {
                 error: 'Server error'
             })
         }
-
-    }).select('menteePreferences userName -_id').then(user => {
-        logger.debug(user.userName + ' successfully retrieved mentee preferences: ' + JSON.stringify(user.menteePreferences))
+        if (!user) {
+            logger.debug('No users found with ID: ' + userID)
+        }
+    }).select('menteeSettings userName -_id').then(user => {
+        logger.debug(user.userName + ' successfully retrieved mentee settings: ' + JSON.stringify(user.menteeSettings, null, 2))
         res.status(200).send({
-            menteePreferences: user.menteePreferences
+            menteeSettings: user.menteeSettings
         })
     })
 }

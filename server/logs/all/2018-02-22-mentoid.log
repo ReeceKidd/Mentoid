@@ -350,3 +350,824 @@ NaN
 07:08:02 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
 NaN
 
+07:08:22 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:09:36 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:09:36 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:09:55 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:09:55 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:02 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:02 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:15 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:15 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:30 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:30 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:43 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:10:43 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:11:27 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:11:27 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:11:41 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:11:41 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:12:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:12:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:12:33 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:12:33 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:12:38 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:12:38 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:06 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:06 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:19 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:19 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:29 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:29 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:33 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:33 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:43 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:43 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:46 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:13:46 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:14:11 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:14:11 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:14:18 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:14:18 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:15:06 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:15:06 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:15:45 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:15:45 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:16:11 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:16:11 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:16:50 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:16:50 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:16:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:16:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:12 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:12 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:23 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:23 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:26 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:26 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:36 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:37 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:40 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:17:40 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:18:22 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:18:22 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:18:45 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:18:46 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:18:59 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:18:59 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:20:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:20:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:20:25 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:20:25 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:21:01 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:21:01 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:21:07 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:21:07 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:25:06 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:25:06 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:25:15 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:25:15 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:03 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:03 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:07 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:07 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:35 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:35 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:53 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:26:53 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:02 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:02 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:08 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:08 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:36 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:36 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:39 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:27:39 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:28:08 ControllerMethods/Register/updateMentorSettings.js WARN: areasOfInterest was not found in request
+
+07:28:46 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:28:46 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:28:51 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:28:51 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:29:07 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:29:07 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:29:11 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:29:11 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:29:16 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:29:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:29:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:30:16 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:30:16 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:30:37 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:30:37 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:31:37 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:31:38 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:32:33 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:32:53 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:33:01 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:33:01 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:33:06 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:33:10 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:33:10 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:33:16 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:33:19 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:33:19 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:33:25 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:33:37 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:36:08 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:36:08 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:36:55 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:36:55 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:37:04 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:37:04 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:37:29 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:37:29 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:38:30 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:38:30 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:39:10 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:39:10 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:39:42 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:39:42 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:40:31 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:40:31 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:40:56 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:40:56 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:41:15 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:41:15 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:41:53 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:41:53 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:42:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:42:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:43:22 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:43:22 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:45:30 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:45:34 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:45:37 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:45:37 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:50:56 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:50:58 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:51:19 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:51:19 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:51:47 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+07:52:10 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+07:52:10 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+07:52:34 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+07:52:34 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee preferences. req.params:
+userID:undefined
+
+07:53:32 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee settings. req.params:
+NaN
+
+07:53:32 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee settings. req.params:
+NaN
+
+07:56:25 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee settings. req.params:
+NaN
+
+07:56:25 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee settings. req.params:
+NaN
+
+07:57:04 ControllerMethods/Register/getMenteeSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentee settings. req.params:
+NaN
+
+07:57:05 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:57:13 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:57:13 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:57:16 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:57:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:57:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:57:25 ControllerMethods/Register/updateMentorSettings.js INFO: reecekidd updated mentor settings successfully: {
+  "wouldLikeToMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+07:58:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:58:20 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:58:43 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:58:43 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings. req.params:
+NaN
+
+07:59:05 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+07:59:05 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+07:59:49 ControllerMethods/Register/updateMenteeSettings.js WARN: maxNumberOfMentees was not found in request
+
