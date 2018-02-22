@@ -12,10 +12,10 @@
         <p v-else><a href="#education"> Update Education </a> </p>
         <p v-if="jobHistoryRegistrationComplete" class="complete"> Update Job history <i class="fas fa-check"></i>   </p>
         <p v-else><a href="#job-history"> Update Job History </a> </p>
-        <p v-if="mentorPreferencesComplete" class="complete"> Update Mentor Preferences <i class="fas fa-check"></i></p>
-        <p v-else> <a href="#mentoring-preferences"> Update your Mentor preferences </a> </p>
-        <p v-if="menteePreferencesComplete" class="complete"> Update Mentee preferences <i class="fas fa-check"></i> </p>
-        <p v-else> <a href="#mentee-preferences" > Update your Mentee preferences </a></p>
+        <p v-if="mentorSettingsComplete" class="complete"> Update Mentor Settings <i class="fas fa-check"></i></p>
+        <p v-else> <a href="#mentoring-preferences"> Update your Mentor Settings </a> </p>
+        <p v-if="menteeSettingsComplete" class="complete"> Update Mentee Settings <i class="fas fa-check"></i> </p>
+        <p v-else> <a href="#mentee-preferences" > Update your Mentee Settings </a></p>
       </div>
     </div>
   </div>
@@ -30,8 +30,8 @@
         areasOfInterestRegistrationComplete: false,
         jobHistoryRegistrationComplete: false,
         educationRegistrationComplete: false,
-        mentorPreferencesComplete: false,
-        menteePreferencesComplete: false,
+        mentorSettingsComplete: false,
+        menteeSettingsComplete: false,
         hasProfilePicture: false
       }
     },
@@ -49,8 +49,8 @@
         self.areasOfInterestRegistrationComplete = response.data.areasOfInterestRegistrationComplete
         self.jobHistoryRegistrationComplete = response.data.jobHistoryRegistrationComplete
         self.educationRegistrationComplete = response.data.educationRegistrationComplete
-        self.mentorPreferencesComplete = response.data.mentorPreferencesComplete
-        self.menteePreferencesComplete = response.data.menteePreferencesComplete
+        self.mentorSettingsComplete = response.data.mentorSettingsComplete
+        self.menteeSettingsComplete = response.data.menteeSettingsComplete
       })
       // Checks if user has a profile picture
       axios.get(getProfilePictureURL + userID).then(function (response) {

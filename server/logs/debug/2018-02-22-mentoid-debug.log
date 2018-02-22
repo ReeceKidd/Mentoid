@@ -9974,3 +9974,1758 @@ maxNumberOfMentors: 10
   "maxNumberOfMentors": 10
 }
 
+08:01:13 ControllerMethods/Register/updateMenteeSettings.js DEBUG: Entered update mentee settings. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+menteeSettings:{
+  "wouldLikeAMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+08:01:13 ControllerMethods/Register/updateMenteeSettings.js DEBUG: menteeSettings object: {
+wouldLikeAMentor: false
+areasOfInterest: [
+  {
+    "value": "Yoga",
+    "years": 21,
+    "areaOfInterestID": 0
+  }
+]
+prefferedMentoringFormats: Online
+maximumTravelDistanceKM: 20
+languages: English
+prefferedEducation: No education
+maximumAge: 120
+minimumAge: 16
+maxNumberOfMentors: 10
+
+08:01:13 ControllerMethods/Register/updateMenteeSettings.js INFO: reecekidd updated mentee settings successfully: {
+  "wouldLikeAMentor": false,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+08:02:05 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:05 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:02:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:02:05 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:05 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:02:05 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:05 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:05 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:02:05 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:02:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:02:05 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:02:05 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+08:02:05 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:02:05 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+08:02:35 ControllerMethods/Register/updateMenteeSettings.js DEBUG: Entered update mentee settings. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+menteeSettings:{
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": "140",
+  "maxNumberOfMentors": 10
+}
+
+08:02:35 ControllerMethods/Register/updateMenteeSettings.js DEBUG: menteeSettings object: {
+wouldLikeAMentor: true
+areasOfInterest: [
+  {
+    "value": "Yoga",
+    "years": 21,
+    "areaOfInterestID": 0
+  }
+]
+prefferedMentoringFormats: Online
+maximumTravelDistanceKM: 20
+languages: English
+prefferedEducation: No education
+maximumAge: 140
+minimumAge: 16
+maxNumberOfMentors: 10
+
+08:02:35 ControllerMethods/Register/updateMenteeSettings.js INFO: reecekidd updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Yoga",
+      "years": 21,
+      "areaOfInterestID": 0
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": "140",
+  "maxNumberOfMentors": 10
+}
+
+08:02:39 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:39 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:02:40 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:40 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:02:40 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:40 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:40 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:02:40 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:02:40 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:40 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:40 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:40 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:02:40 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:02:40 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:02:41 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:02:41 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:02:41 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:02:41 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:02:49 ControllerMethods/Register/updateMenteeSettings.js DEBUG: Entered update mentee settings. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+menteeSettings:{
+  "wouldLikeAMentor": false,
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:02:49 ControllerMethods/Register/updateMenteeSettings.js DEBUG: menteeSettings object: {
+wouldLikeAMentor: false
+areasOfInterest: []
+prefferedMentoringFormats: Online
+maximumTravelDistanceKM: 20
+languages: English
+prefferedEducation: No education
+maximumAge: 140
+minimumAge: 16
+maxNumberOfMentors: 10
+
+08:02:49 ControllerMethods/Register/updateMenteeSettings.js INFO: reecekidd updated mentee settings successfully: {
+  "wouldLikeAMentor": false,
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 20,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:02:52 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:52 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:02:52 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:52 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:02:52 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:02:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:52 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:02:53 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:53 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:53 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:02:53 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:02:53 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:02:53 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:02:53 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:02:53 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:02:53 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:02:53 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:03:15 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:15 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:03:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:03:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:03:15 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:15 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:03:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:03:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:03:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:03:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:03:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:03:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:03:55 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:03:55 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: undefinedinstagram: undefinedtwitter: undefinedsnapchat: undefinedlinkedIn: undefinedwebsite: undefinedmedium: undefinedyoutube: undefined
+
+08:08:00 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:00 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:08:00 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:00 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:08:00 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:00 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: undefinedinstagram: undefinedtwitter: undefinedsnapchat: undefinedlinkedIn: undefinedwebsite: undefinedmedium: undefinedyoutube: undefined
+
+08:08:01 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:01 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:01 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:08:01 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: undefinedinstagram: undefinedtwitter: undefinedsnapchat: undefinedlinkedIn: undefinedwebsite: undefinedmedium: undefinedyoutube: undefined
+
+08:08:43 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:43 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:08:43 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:43 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:43 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: undefinedinstagram: undefinedtwitter: undefinedsnapchat: undefinedlinkedIn: undefinedwebsite: undefinedmedium: undefinedyoutube: undefined
+
+08:08:43 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:08:43 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:08:43 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: undefinedinstagram: undefinedtwitter: undefinedsnapchat: undefinedlinkedIn: undefinedwebsite: undefinedmedium: undefinedyoutube: undefined
+
+08:09:09 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+body:{"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd"}
+
+08:09:09 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: [object Object]
+
+08:12:22 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: undefined
+linkedIn: undefined
+snapchat: undefined
+medium: undefined
+youtube: undefined
+website: undefined
+
+08:12:22 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: [object Object]
+
+08:14:17 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: undefined
+linkedIn: undefined
+snapchat: undefined
+medium: undefined
+youtube: undefined
+website: undefined
+
+08:14:17 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD"}
+
+08:15:14 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:14 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:15:14 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:14 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:15:14 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:15:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:14 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:15:24 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:24 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:15:24 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:24 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:15:24 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:24 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:15:24 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:24 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:15:27 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:27 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:15:27 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:27 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:15:27 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:27 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:15:27 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:27 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:15:27 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:15:27 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:15:30 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:15:30 ControllerMethods/Register/updateSocialMedia.js WARN: twitter cannot contain a null value
+
+08:16:07 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:16:27 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:17:13 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:17:13 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:17:50 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:50 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:50 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:17:50 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:50 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:17:50 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:50 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:17:50 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:17:51 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:17:51 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:17:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:17:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:56 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:17:56 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:17:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:56 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:17:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:17:56 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:17:58 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:17:58 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:18:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:18:21 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:21 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:18:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:18:21 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:21 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:18:23 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:18:23 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:18:36 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:36 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:18:36 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:36 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:18:36 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:36 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:18:36 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:18:36 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:18:37 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:18:37 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:19:22 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:22 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:19:23 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:23 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:19:23 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:23 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:19:23 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:23 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:19:26 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:26 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:19:26 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:26 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:26 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:19:26 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:19:27 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:27 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:19:27 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:27 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:19:41 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:41 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:19:41 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:41 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:19:41 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:41 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:19:41 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:19:41 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:19:57 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:19:57 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:20:09 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:09 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:09 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:20:09 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:20:09 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:09 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:09 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:20:09 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:20:14 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:14 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:20:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:14 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:20:14 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:14 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:20:14 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:20:14 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:20:14 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:20:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:20:21 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:21 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:20:21 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:21 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:20:21 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:20:21 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:20:22 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:20:22 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:21:00 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:00 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:00 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:00 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:21:00 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:00 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:00 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:00 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:21:02 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:02 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:21:02 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:02 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:02 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:02 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:21:02 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:03 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:03 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:03 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:21:05 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: null
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:21:05 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":null,"linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:21:14 ControllerMethods/Register/updateSocialMedia.js WARN: Entered update social media. req.body:
+userID:5a8de2ff05e33a2720969ea3
+userName:reecekidd
+facebook: facebook.com/reecekidd
+instagram: REECEKIDD
+twitter: reecekidd
+linkedIn: null
+snapchat: null
+medium: null
+youtube: null
+website: null
+
+08:21:14 ControllerMethods/Register/updateSocialMedia.js INFO: reecekidd updated social media successfully: {"userName":"reecekidd","userID":"5a8de2ff05e33a2720969ea3","facebook":"facebook.com/reecekidd","instagram":"REECEKIDD","twitter":"reecekidd","linkedIn":null,"snapchat":null,"medium":null,"youtube":null,"website":null}
+
+08:21:16 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:16 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:21:28 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:21:28 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: reecekiddsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:21:28 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:21:28 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedMentor preferences complete undefinedMentee preferences complere undefined
+
+08:21:28 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:28 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:21:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:21:28 ControllerMethods/Register/getEducationHistory.js DEBUG: reecekidd successfully retrieved education: []
+
+08:21:28 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:21:28 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:21:28 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getJobHistory.js DEBUG: reecekidd successfully retrieved job history: []
+
+08:21:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:21:28 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:21:28 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:21:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:21:28 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:21:28 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:21:28 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:21:28 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:21:28 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:21:28 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:21:28 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+08:21:28 ControllerMethods/Register/getMentorSettings.js DEBUG: reecekidd successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+08:21:28 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:21:28 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:22:00 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:22:00 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedMentor preferences complete undefinedMentee preferences complere undefined
+
+08:22:00 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:22:00 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:22:08 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:22:08 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedMentor preferences complete undefinedMentee preferences complere undefined
+
+08:22:08 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:22:08 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:23:55 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedMentor settings complete trueMentee settings complere true
+
+08:23:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:23:55 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: reecekiddsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:23:55 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getJobHistory.js DEBUG: reecekidd successfully retrieved job history: []
+
+08:23:55 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:23:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:23:55 ControllerMethods/Register/getEducationHistory.js DEBUG: reecekidd successfully retrieved education: []
+
+08:23:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:23:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:23:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:23:55 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:23:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:23:55 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:23:55 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:23:55 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:23:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:23:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:23:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:56 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:23:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedMentor settings complete trueMentee settings complere true
+
+08:23:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:23:56 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:56 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: reecekiddsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:23:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:23:56 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:23:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getEducationHistory.js DEBUG: reecekidd successfully retrieved education: []
+
+08:23:56 ControllerMethods/Register/getJobHistory.js DEBUG: reecekidd successfully retrieved job history: []
+
+08:23:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:23:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:23:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:23:56 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:23:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:23:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:23:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:23:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:23:56 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:23:56 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:23:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:23:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:23:56 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+08:23:56 ControllerMethods/Register/getMentorSettings.js DEBUG: reecekidd successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+08:23:56 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:23:56 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:23:57 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+08:23:57 ControllerMethods/Register/getMentorSettings.js DEBUG: reecekidd successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+08:23:57 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:23:57 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:24:51 ControllerMethods/Register/updateEducation.js DEBUG: ::1 attempting to update education with request {"education":[{"educationID":0,"school":"University of Stirling","degree":"High School","fieldOfStudy":"Computer Science","startYear":"2014","endYear":"2018","country":"United Kingdom"}],"_id":"5a8de2ff05e33a2720969ea3","age":22}
+
+08:24:51 ControllerMethods/Register/updateEducation.js INFO: reecekidd updated education successfully: [{"educationID":0,"school":"University Of Stirling","degree":"High School","fieldOfStudy":"Computer Science","startYear":"2014","endYear":"2018","country":"United Kingdom"}]
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:24:55 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete trueMentor settings complete trueMentee settings complere true
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:55 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: reecekiddsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:24:55 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:24:55 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getEducationHistory.js DEBUG: reecekidd successfully retrieved education: [{"country":"United Kingdom","endYear":"2018","startYear":"2014","fieldOfStudy":"Computer Science","degree":"High School","school":"University Of Stirling","educationID":"0","_id":"5a8e7e53e26e3d08b013697d"}]
+
+08:24:55 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getJobHistory.js DEBUG: reecekidd successfully retrieved job history: []
+
+08:24:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:24:55 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:24:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:24:55 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:24:55 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:24:55 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:24:55 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:55 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:24:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:56 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getProfileCompleteness.js DEBUG: reecekidd successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete trueMentor settings complete trueMentee settings complere true
+
+08:24:56 ControllerMethods/Register/getSocialMedia.js DEBUG: reecekidd successfully retrieved social media information: facebook: facebook.com/reecekiddinstagram: REECEKIDDtwitter: reecekiddsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+08:24:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:24:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:24:56 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:24:56 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:24:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getEducationHistory.js DEBUG: reecekidd successfully retrieved education: [{"country":"United Kingdom","endYear":"2018","startYear":"2014","fieldOfStudy":"Computer Science","degree":"High School","school":"University Of Stirling","educationID":"0","_id":"5a8e7e53e26e3d08b013697d"}]
+
+08:24:56 ControllerMethods/Register/getJobHistory.js DEBUG: reecekidd successfully retrieved job history: []
+
+08:24:56 ControllerMethods/Register/getBasicRegistration.js DEBUG: reecekidd successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'reecekidd',
+  email: 'reecekidd95@gmail.com',
+  age: 22 }
+
+08:24:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:24:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:24:56 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:24:56 ControllerMethods/Register/getUserName.js DEBUG: reecekidd successfully retrieved username: reecekidd
+
+08:24:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:24:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: reecekidd successfully retreived areas of interest names: Yoga
+
+08:24:56 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getAge.js DEBUG: reecekidd successfully retrieved age: 22
+
+08:24:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":21,"areaOfInterestID":0}]
+
+08:24:56 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+08:24:56 ControllerMethods/Register/getMentorSettings.js DEBUG: reecekidd successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+08:24:56 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:24:56 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:24:56 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8de2ff05e33a2720969ea3"}
+
+08:24:56 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8de2ff05e33a2720969ea3 does not have a profile picture resorting to avatar.
+
+08:24:56 ControllerMethods/Register/getMentorSettings.js WARN: 5a8de2ff05e33a2720969ea3 attempting to get mentor settings.
+
+08:24:56 ControllerMethods/Register/getMentorSettings.js DEBUG: reecekidd successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 21,
+      "value": "Yoga"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person",
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 15
+}
+
+08:24:56 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8de2ff05e33a2720969ea3 attempting to get their mentee settings
+
+08:24:56 ControllerMethods/Register/getMenteeSettings.js DEBUG: reecekidd successfully retrieved mentee settings: {
+  "areasOfInterest": [],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "wouldLikeAMentor": false,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 140,
+  "maxNumberOfMentors": 10
+}
+
+08:25:14 ControllerMethods/Register/updateJobHistory.js DEBUG: Attempting to update job history with request {"experiences":[{"experienceID":0,"title":"Crew Member","company":"McDonalds","isWorkingHere":"Yes","startYear":"2014","endYear":""}],"_id":"5a8de2ff05e33a2720969ea3","age":22}
+
+08:25:14 ControllerMethods/Register/updateJobHistory.js INFO: reecekidd updated job history successfully: [{"experienceID":0,"title":"Crew Member","company":"Mcdonalds","isWorkingHere":"Yes","startYear":"2014","endYear":""}]
+

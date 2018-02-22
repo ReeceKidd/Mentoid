@@ -62,12 +62,20 @@
         </div>
       </div>
     </div>
-    <div class="row visible-xs">
+    <br>
+    <div class="row">
       <div class="col-xs-10 col-xs-offset-1">
         <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
       </div>
     </div>
-  </div>
+      <!-- Update social media success Message -->
+      <div class="row">
+        <div class="text-center">
+          <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
+        </div>
+      </div>
+      <!-- End of success message -->
+    </div>
 </template>
 
 <script>
@@ -81,6 +89,7 @@
     data() {
       return {
         currentUserID: this.$store.state.user.authUser._id,
+        userName: null,
         facebook: undefined,
         instagram: undefined,
         twitter: undefined,
@@ -89,7 +98,8 @@
         snapchat: undefined,
         linkedIn: undefined,
         website: undefined,
-        errorMessage: undefined
+        errorMessage: null,
+        successMessage: null
       }
     },
     validations: {
@@ -122,7 +132,8 @@
       onSubmit() {
         const url = 'http://localhost:4000/update/social-media/'
         axios.post(url, {
-          _id: this.currentUserID,
+          userName: this.userName,
+          userID: this.currentUserID,
           facebook: this.facebook,
           instagram: this.instagram,
           twitter: this.twitter,
@@ -131,8 +142,11 @@
           medium: this.medium,
           youtube: this.youtube,
           website: this.website
-        }).then(function (response) {
-          this.successMessage = response
+        }).then(response => {
+          this.successMessage = response.data.message
+          setTimeout(() => {
+            this.successMessage = null
+          }, 3000)
         }).catch(error => {
           this.errorMessage = error.response.data.message
           setTimeout(() => {
@@ -147,6 +161,11 @@
     beforeMount() {
       var self = this
       var userID = this.currentUserID
+      // Get username.
+      const getUserNameURL = 'http://localhost:4000/get/user-name/'
+      axios.get(getUserNameURL + userID).then(function (response) {
+        self.userName = response.data.userName
+      })
       // Get users social media details
       const getSocialMedia = 'http://localhost:4000/get/social-media/'
       axios.get(getSocialMedia + userID).then(function (response) {
@@ -188,6 +207,10 @@
 
   .errorMessage {
     color: red;
+  }
+
+  .successMessage {
+    color: green;
   }
 
   .input.inline input {

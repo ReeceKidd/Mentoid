@@ -26,31 +26,20 @@ module.exports = updateSocialMedia = (req, res) => {
     /*
     Update social media does not require a check for undefined fields as all the information is optional.
     */
-    
+
+    logger.warn('Entered update social media. req.body:' + '\n' +
+        'userID:' + req.body.userID + '\n' +
+        'userName:' + req.body.userName + '\n' +
+        'facebook: ' + req.body.facebook + '\n' +
+        'instagram: ' + req.body.instagram + '\n' +
+        'twitter: ' + req.body.twitter + '\n' +
+        'linkedIn: ' + req.body.linkedIn + '\n' +
+        'snapchat: ' + req.body.snapchat + '\n' +
+        'medium: ' + req.body.medium + '\n' +
+        'youtube: ' + req.body.youtube + '\n' +
+        'website: ' + req.body.website)
+
     //Need to add a field checker for this method. 
-
-    var nullPresent = checkForNull(req.body)
-
-    if (nullPresent) {
-        logger.warn(nullPresent)
-        res.status(975).json({
-            message: nullPresent,
-            error: 'Null value present'
-        })
-        return
-    }
-
-    //Checks that each of the fields are type string. 
-    var badType = basicTypeCheck(req.body)
-
-    if (badType) {
-        logger.warn(badType)
-        res.status(850).json({
-            message: badType,
-            error: 'Invalid type'
-        })
-        return
-    }
 
     //Validation for basic registration. 
     var errors = socialMediaValidation(req)
@@ -62,8 +51,6 @@ module.exports = updateSocialMedia = (req, res) => {
         })
         return
     }
-    //Santize input before being passed to database
-    sanitizeSocialMedia(req.body)
 
     var query = {
         '_id': req.body.userID
@@ -89,8 +76,13 @@ module.exports = updateSocialMedia = (req, res) => {
                 res.status(400).send({
                     message: 'Unable to update social media. Could not find user. '
                 })
+            } else if (!user) {
+                logger.warn('No user found with _id: ' + req.body.userID)
+                res.status(600).send({
+                    message: 'Unable to update social media. Could not find user. '
+                })
             } else {
-                logger.info(user.userName + ' updated social media successfully: ' + req.body)
+                logger.info(user.userName + ' updated social media successfully: ' + JSON.stringify(req.body))
                 res.status(200).send({
                     message: 'Updated social media successfully.'
                 })
