@@ -48734,3 +48734,83 @@
 
 18:33:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: ZaraRevard91 has been added to the online list of mentors.
 
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81:  is attempting to get potential mentors with request: {"userID":"5a92784783e9713b305e10f8","userName":"UlrikeOldson81"}
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Number of potential mentors: 21
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: ArethaBloede71 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: ArethaBloede71 has been added to the online list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: BetteanneRomney81 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: BetteanneRomney81 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: CaciliaHoltrop61 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: CaciliaHoltrop61 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: CarmelleBoruff11 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: CarmelleBoruff11 has been added to the online list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: ChelseyNunan11 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: ChelseyNunan11 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: DemetriaMccluskey91 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: DemetriaMccluskey91 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: EllieJanak41 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: EllieJanak41 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: FlorriAasland81 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: FlorriAasland81 has been added to the online list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: GussieTorbush31 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: GussieTorbush31 has been added to the online list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: HyacinthKami11 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: HyacinthKami11 has been added to the online list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: JulissaInnis41 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: JulissaInnis41 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: LuiseQureshi31 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: LuiseQureshi31 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: MerylHamende61 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: MerylHamende61 has been added to the online list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: MoreenMastropasqua51 has in person as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: MoreenMastropasqua51 has been added to the in person list of mentors.
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: PatsyGlay11 has online as a preffered mentoring option
+
+18:34:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: PatsyGlay11 has been added to the online list of mentors.
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: SalaidhOlverson81 has online as a preffered mentoring option
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: SalaidhOlverson81 has been added to the online list of mentors.
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: TrixieArreguin71 has in person as a preffered mentoring option
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: TrixieArreguin71 has been added to the in person list of mentors.
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: ValeraPeinado11 has in person as a preffered mentoring option
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: ValeraPeinado11 has been added to the in person list of mentors.
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: ZaraRevard91 has online as a preffered mentoring option
+
+18:34:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--UlrikeOldson81: Potential mentor: ZaraRevard91 has been added to the online list of mentors.
+
