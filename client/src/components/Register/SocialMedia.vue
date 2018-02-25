@@ -15,11 +15,11 @@
         <hr>
     <!-- Desktop -->
         <span class="hidden-xs">
-          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentee-preferences')">
-            <i class="fas fa-arrow-left"></i> Previous: Mentee preferences</button>
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentee-settings')">
+            <i class="fas fa-arrow-left"></i> Previous: Mentee settings</button>
         </span>
         <span class="hidden-xs">
-          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/success')"> Next: Success
+          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/view-profile')"> Next: View Profile
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>
@@ -27,12 +27,12 @@
 
         <!-- Mobile-->
         <span class="visible-xs text-center">
-          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentee-preferences')">
-            <i class="fas fa-arrow-left"></i> Previous: Mentee preferences</button>
+          <button type="submit" class="btn btn-md btn-primary" @click="navigateTo('/mentee-settings')">
+            <i class="fas fa-arrow-left"></i> Previous: Mentee settings</button>
         </span>
         <br class="visible-xs">
         <span class="visible-xs text-center">
-          <button class="btn btn-md btn-primary" @click="navigateTo('/success')"> Next: Success
+          <button class="btn btn-md btn-primary" @click="navigateTo('/view-profile')"> Next: View Profile
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>

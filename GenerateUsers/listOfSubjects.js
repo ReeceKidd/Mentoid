@@ -182,3 +182,13 @@ matches.forEach(function (match) {
 
 module.exports = subjects
    
+
+/*
+This writes the data from wikipedia to a file so that it does not have to be parsed everytime the method is called. 
+*/
+var fs = require('fs');
+fs.writeFile("subjects.js", JSON.stringify(subjects, null, 2), function(err) {
+    if(err) {
+        return console.log(err);
+    }
+});

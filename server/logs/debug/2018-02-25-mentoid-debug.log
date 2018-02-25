@@ -1,0 +1,166 @@
+07:43:29 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:29 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8ecd5a6277d14e28973f7e retreived profile picture 5a8ecd5a6277d14e28973f7e.jpg
+
+07:43:51 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8ecd5a6277d14e28973f7e retreived profile picture 5a8ecd5a6277d14e28973f7e.jpg
+
+07:43:51 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getBasicRegistration.js DEBUG: LindiLockhead71 successfully retrieved basic registration details:{ firstName: 'Lindi',
+  lastName: 'Lockhead',
+  userName: 'LindiLockhead71',
+  email: 'LindiLockhead71@gmail.com',
+  age: 78 }
+
+07:43:51 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getProfileCompleteness.js DEBUG: LindiLockhead71 successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete trueEducation Registration complete truehasProfilePicture undefinedMentor settings complete trueMentee settings complere true
+
+07:43:51 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getUserName.js DEBUG: LindiLockhead71 successfully retrieved username: LindiLockhead71
+
+07:43:51 ControllerMethods/Register/getSocialMedia.js DEBUG: LindiLockhead71 successfully retrieved social media information: facebook: www.facebook.com/LindiLockhead71instagram: LindiLockhead71twitter: LindiLockhead71snapchat: LindiLockhead71linkedIn: www.linkedin.com/LindiLockhead71website: nullmedium: www.medium.com/LindiLockhead71youtube: www.youtube.com/LindiLockhead71
+
+07:43:51 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAge.js DEBUG: LindiLockhead71 successfully retrieved age: 78
+
+07:43:51 ControllerMethods/Register/getBasicRegistration.js DEBUG: LindiLockhead71 successfully retrieved basic registration details:{ firstName: 'Lindi',
+  lastName: 'Lockhead',
+  userName: 'LindiLockhead71',
+  email: 'LindiLockhead71@gmail.com',
+  age: 78 }
+
+07:43:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: LindiLockhead71 successfully retreived areas of interest: [{"value":"Seashell collecting","years":13,"areaOfInterestID":0}]
+
+07:43:51 ControllerMethods/Register/getEducationHistory.js DEBUG: LindiLockhead71 successfully retrieved education: [{"educationID":"0","endYear":"2013","startYear":"2007","fieldOfStudy":"Business And Management","country":"United States","school":"Southwestern Oregon Community College","degree":"Bachelors","_id":"5a8ecd7e6277d14e28974052"},{"educationID":"1","endYear":"2010","startYear":"2009","fieldOfStudy":"Public Health","country":"Switzerland","school":"Phlu - University Of Teacher Education Lucerne","degree":"Certification","_id":"5a8ecd7e6277d14e28974051"},{"educationID":"2","endYear":"1992","startYear":"1989","fieldOfStudy":"Liberal Arts","country":"United States","school":"Ocean County College","degree":"Bachelors","_id":"5a8ecd7e6277d14e28974050"}]
+
+07:43:51 ControllerMethods/Register/getJobHistory.js DEBUG: LindiLockhead71 successfully retrieved job history: [{"endYear":"9999","experienceID":"0","isWorkingHere":"Yes","startYear":"2004","company":"Texas Instruments Incorporated","title":"Medical Transcriptionist","_id":"5a8ecd7e6277d14e28974056"},{"experienceID":"1","isWorkingHere":"No","endYear":"1969","startYear":"1957","company":"Visa Inc.","title":"Shipping Clerk","_id":"5a8ecd7e6277d14e28974055"},{"experienceID":"1","isWorkingHere":"No","endYear":"1995","startYear":"1991","company":"Visteon Corporation","title":"Judicial Law Clerk","_id":"5a8ecd7e6277d14e28974054"},{"experienceID":"1","isWorkingHere":"No","endYear":"2017","startYear":"1969","company":"Sealed Air Corporation","title":"Nuclear Engineer","_id":"5a8ecd7e6277d14e28974053"}]
+
+07:43:51 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: LindiLockhead71 successfully retreived areas of interest names: Seashell collecting
+
+07:43:51 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getUserName.js DEBUG: LindiLockhead71 successfully retrieved username: LindiLockhead71
+
+07:43:51 ControllerMethods/Register/getAge.js DEBUG: LindiLockhead71 successfully retrieved age: 78
+
+07:43:51 ControllerMethods/Register/getBasicRegistration.js DEBUG: LindiLockhead71 successfully retrieved basic registration details:{ firstName: 'Lindi',
+  lastName: 'Lockhead',
+  userName: 'LindiLockhead71',
+  email: 'LindiLockhead71@gmail.com',
+  age: 78 }
+
+07:43:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: LindiLockhead71 successfully retreived areas of interest: [{"value":"Seashell collecting","years":13,"areaOfInterestID":0}]
+
+07:43:51 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: LindiLockhead71 successfully retreived areas of interest names: Seashell collecting
+
+07:43:51 ControllerMethods/Register/getUserName.js DEBUG: undefined is attempting to get their user name with {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getUserName.js DEBUG: LindiLockhead71 successfully retrieved username: LindiLockhead71
+
+07:43:51 ControllerMethods/Register/getAge.js DEBUG: LindiLockhead71 successfully retrieved age: 78
+
+07:43:51 ControllerMethods/Register/getAreasOfInterest.js DEBUG: LindiLockhead71 successfully retreived areas of interest: [{"value":"Seashell collecting","years":13,"areaOfInterestID":0}]
+
+07:43:51 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5a8ecd5a6277d14e28973f7e"}
+
+07:43:51 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5a8ecd5a6277d14e28973f7e retreived profile picture 5a8ecd5a6277d14e28973f7e.jpg
+
+07:43:51 ControllerMethods/Register/getMentorSettings.js WARN: 5a8ecd5a6277d14e28973f7e attempting to get mentor settings.
+
+07:43:51 ControllerMethods/Register/getMentorSettings.js DEBUG: LindiLockhead71 successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "numberOfLikes": 951,
+      "numberOfLinksClicked": 2215,
+      "articlesRead": 72,
+      "videosWatched": 175,
+      "pathsStudied": 5,
+      "areaOfInterestID": 0,
+      "years": 13,
+      "value": "Seashell collecting"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors",
+    "Vocational",
+    "PHD",
+    "No education",
+    "Masters",
+    "Certification",
+    "High School"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 6,
+  "minimumAge": 17,
+  "maximumAge": 35,
+  "maxNumberOfMentees": 2
+}
+
+07:43:51 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5a8ecd5a6277d14e28973f7e attempting to get their mentee settings
+
+07:43:51 ControllerMethods/Register/getMenteeSettings.js DEBUG: LindiLockhead71 successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "numberOfLikes": 951,
+      "numberOfLinksClicked": 2215,
+      "articlesRead": 72,
+      "videosWatched": 175,
+      "pathsStudied": 5,
+      "areaOfInterestID": 0,
+      "years": 13,
+      "value": "Seashell collecting"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 35,
+  "minimumAge": 20,
+  "maximumAge": 79,
+  "maxNumberOfMentors": 7
+}
+

@@ -27,7 +27,7 @@ module.exports = updateSocialMedia = (req, res) => {
     Update social media does not require a check for undefined fields as all the information is optional.
     */
 
-    logger.warn('Entered update social media. req.body:' + '\n' +
+    logger.debug('Entered update social media. req.body:' + '\n' +
         'userID:' + req.body.userID + '\n' +
         'userName:' + req.body.userName + '\n' +
         'facebook: ' + req.body.facebook + '\n' +

@@ -1,39 +1,57 @@
-
-
-const registerBasicUser = require('./basicRegistration.js')
-const getUserID = require('./getUserID.js')
-const getUsersAge = require('./getUsersAge.js')
-const getAreasOfInterest = require('./getAreasOfInterest.js')
-const updateAreasOfInterest = require('./areasOfInterest.js')
-const updateEducation = require('./education.js')
-const updateJobHistory = require('./jobHistory.js')
-const updateMentorPreferences = require('./mentorPreferences.js')
-const updateMenteePreferences = require('./menteePreferences')
-const updateSocialMedia = require('./socialMedia.js')
-const updateLocation = require('./location.js')
-const updateProfilePicture = require('./uploadProfilePicture')
+let registerBasicUser = require('./basicRegistration.js')
+let getUserID = require('./getUserID.js')
+let getUsersAge = require('./getUsersAge.js')
+let updateAreasOfInterest = require('./areasOfInterest.js')
+let updateEducation = require('./education.js')
+let updateJobHistory = require('./jobHistory.js')
+let updateMentorSettings = require('./mentorSettings.js')
+let updateMenteeSettings = require('./menteeSettings.js')
+let updateSocialMedia = require('./socialMedia.js')
+let updateLocation = require('./location.js')
+let updateProfilePicture = require('./uploadProfilePicture')
+let updateHasProfilePicture = require('./updateHasProfilePicture')
 
 function createUser() {
     /* Username must be returned in order to get Object ID */
-    var userName = registerBasicUser().then(function (userName) {
-        var userID = getUserID(userName).then(function(userID){
-            var age = getUsersAge(userID).then(function(age){
-                updateAreasOfInterest(userID, age)
-                updateEducation(userID, age)
-                updateJobHistory(userID, age)
-                updateSocialMedia(userID, userName)
-                updateLocation(userID)
-                updateProfilePicture(userID)
-                getAreasOfInterest(userID).then(function(areasOfInterest){
-                    updateMentorPreferences(userID, age, areasOfInterest)
-                    updateMenteePreferences(userID, age, areasOfInterest)
+    let userName = registerBasicUser().then(userName => {
+        let userID = getUserID(userName).then(userID => {
+            let age = getUsersAge(userName, userID).then(age => {
+                var areasOfInterest = updateAreasOfInterest(userName, userID, age).then(areasOfInterest => {
+                    updateMentorSettings(userName, userID, age, areasOfInterest)
+                    updateMenteeSettings(userName, userID, age, areasOfInterest)
+                }).catch(getUsersAgeError => {
+                    throw getUsersAgeError
                 })
+                updateEducation(userName, userID, age).catch(educationError => {
+                    throw educationError
+                })
+                updateJobHistory(userName, userID, age).catch(jobHistoryError => {
+                    throw jobHistoryError
+                })
+                updateSocialMedia(userName, userID).catch(socialMediaError => {
+                   throw socialMediaError
+                })
+                updateLocation(userName, userID).catch(locationError => {
+                    throw locationError
+                })
+                updateProfilePicture(userID).catch(profilePictureError => {
+                    throw profilePictureError
+                })
+                updateHasProfilePicture(userID)
             })
+        }).catch(idError => {
+            throw idError
         })
-        console.log('User created: ' + userName)
-    })  
-    
+    }).catch(error => {
+        throw userNameError
+    })
+    return userName
 }
 
-createUser()
-    
+function generateUser() {
+    var result = createUser().then(userName => {
+        console.log(userName)
+    })
+}
+
+generateUser()

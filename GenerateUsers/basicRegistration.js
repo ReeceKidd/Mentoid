@@ -4,33 +4,36 @@ const basicRegistrationURL = 'http://localhost:4000/register/'
 const firstNamesArray = require('./firstNames.js')
 const lastNamesArray = require('./lastNames.js')
 
-var firstName = getFirstName()
-var lastName = getLastName()
-var userName = getUserName()
-var email = getEmail()
-var age = getAge()
-var password = getPassword()
-var confirmPassword = password
-var language = getLanguage()
-var terms = getTerms()
+let firstName = getFirstName()
+let lastName = getLastName()
+let userName = getUserName()
+let email = getEmail()
+let age = getAge()
+let password = getPassword()
+let confirmPassword = password
+let language = getLanguage()
+let terms = getTerms()
 
 /* Register Basic User */
-module.exports = async function registerBasicUser() {
-        await axios.post(basicRegistrationURL, {
-            firstName: firstName,
-            lastName: lastName,
-            userName: userName,
-            email: email,
-            age: age,
-            password: password,
-            confirmPassword: confirmPassword,
-            language: language,
-            terms: terms
-        }).catch(error => {
-          console.log('Could not complete basic registration: ' + error)
-        })
-        return userName
+module.exports = function registerBasicUser() {
+    axios.post(basicRegistrationURL, {
+        firstName: firstName,
+        lastName: lastName,
+        userName: userName,
+        email: email,
+        age: age,
+        password: password,
+        confirmPassword: confirmPassword,
+        language: language,
+        terms: terms
+    }).then(basicRegistrationComplete => {
+        console.log(userName + ' basic registration complete. ')
+    }).catch(error => {
+      console.log('Could not complete basic registration: ' + error)
+    })
+    return userName
 }
+
 
 function getFirstName() {
     return firstNamesArray[Math.floor(Math.random() * firstNamesArray.length)]

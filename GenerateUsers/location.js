@@ -14,7 +14,7 @@ Range for longitudes are: -180, 180
 var maxLongitude = 80
 var minLongitude = 78
 
-module.exports = async function generateSocialMedia(userID) {
+module.exports = async function generateLocation(userName, userID) {
     var latitude = getLatitude()
     var longitude = getLongitude()
     var location = {
@@ -24,9 +24,11 @@ module.exports = async function generateSocialMedia(userID) {
     await axios.post(updateLocationURL, {
         userID: userID,
         location: location
-    }).catch(error => {
+    })
+    .catch(error => {
         console.log('Could not update location: ' + error.message)
     })
+    return userName
 }
 
 

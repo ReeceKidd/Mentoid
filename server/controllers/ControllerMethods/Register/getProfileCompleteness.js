@@ -78,12 +78,13 @@ module.exports = getUsersAge = (req, res) => {
                 error: 'Server error'
             })
         }
-    }).select('-_id userName socialMediaComplete areasOfInterestRegistrationComplete jobHistoryRegistrationComplete educationRegistrationComplete mentorSettingsComplete menteeSettingsComplete').then(user => {
+    }).select('-_id userName socialMediaComplete areasOfInterestRegistrationComplete jobHistoryRegistrationComplete educationRegistrationComplete hasProfilePicture mentorSettingsComplete menteeSettingsComplete').then(user => {
         logger.debug(user.userName + ' successfully retrieved profile completeness: ' +
             'Social Media Complete' + user.socialMediaComplete +
             'Areas of interest registration complete ' + user.areasOfInterestRegistrationComplete +
             'Job History Registration complete ' + user.jobHistoryRegistrationComplete +
             'Education Registration complete ' + user.educationRegistrationComplete +
+            'hasProfilePicture ' + user.hasProfilePicture +
             'Mentor settings complete ' + user.mentorSettingsComplete +
             'Mentee settings complere ' + user.menteeSettingsComplete)
         res.status(200).send({
@@ -91,6 +92,7 @@ module.exports = getUsersAge = (req, res) => {
             areasOfInterestRegistrationComplete: user.areasOfInterestRegistrationComplete,
             jobHistoryRegistrationComplete: user.jobHistoryRegistrationComplete,
             educationRegistrationComplete: user.educationRegistrationComplete,
+            hasProfilePicture: user.hasProfilePicture,
             mentorSettingsComplete: user.mentorSettingsComplete,
             menteeSettingsComplete: user.menteeSettingsComplete
         })

@@ -100,9 +100,9 @@ module.exports = getPotentialMentors = (req, res) => {
         // search, so if they don't have education pass all the education options when generating that query. 
 
         //Initilise the variables needed to generate the queries. 
-        var menteePreferences = currentUser.menteePreferences
-        var prefferedMentoringFormats = menteePreferences.prefferedMentoringFormats
-        var areasOfInterest = menteePreferences.areasOfInterest
+        var menteeSettings = currentUser.menteeSettings
+        var prefferedMentoringFormats = menteeSettings.prefferedMentoringFormats
+        var areasOfInterest = menteeSettings.areasOfInterest
 
 
 
@@ -113,13 +113,13 @@ module.exports = getPotentialMentors = (req, res) => {
             //Matches with users how want a mentee. 
             {
                 $match: {
-                    "menteePreferences.wouldLikeAMentee": true
+                    "menteeSettings.wouldLikeAMentee": true
                 }
             },
             //Matches users with the same areas of interest values. 
             {
                 $match: {
-                    "menteePreferences.areasOfInterest": {
+                    "menteeSettings.areasOfInterest": {
                         $elemMatch: {
                             value: {
                                 $in: wantsAMentorFor
@@ -130,9 +130,9 @@ module.exports = getPotentialMentors = (req, res) => {
             }, 
             {
                 $match: {
-                    "mentorPreferences.languages": {
+                    "menteeSettings.languages": {
                         $elemMatch: {
-                            $in: currentUser.menteePreferences.languages
+                            $in: currentUser.menteeSettings.languages
                         }
                     }
                 }
@@ -142,7 +142,7 @@ module.exports = getPotentialMentors = (req, res) => {
                 console.log(err);
                 return;
             }
-            console.log("Current user languages: " + currentUser.menteePreferences.mentoringLanguages.toString())
+            console.log("Current user languages: " + currentUser.menteeSettings.mentoringLanguages.toString())
 
 
             let filteredPotentialMentors = [];
@@ -156,22 +156,22 @@ module.exports = getPotentialMentors = (req, res) => {
 
                 currentUser.areasOfInterest.filter(function (currentAreaOfInterest) {
 
-                    return potentialMentor.menteePreferences.areasOfInterest.filter(function (comparisonAreaOfInterest) {
+                    return potentialMentor.menteeSettings.areasOfInterest.filter(function (comparisonAreaOfInterest) {
 
                         if (currentAreaOfInterest.value === comparisonAreaOfInterest.value && currentAreaOfInterest.years < comparisonAreaOfInterest.years) {
 
                             var distance = getDistanceInKM(currentUser.location, potentialMentor.location)
 
-                            if ((distance) < potentialMentor.menteePreferences.maximumTravelDistanceKM) {
+                            if ((distance) < potentialMentor.menteeSettings.maximumTravelDistanceKM) {
 
                                 var educationMatch
 
-                                var minimumAgeMatch = getMinimumAgeMatch(currentUser.menteePreferences.minimumAge, potentialMentor.age)
+                                var minimumAgeMatch = getMinimumAgeMatch(currentUser.menteeSettings.minimumAge, potentialMentor.age)
                                 console.log('Minimum age match: ' + minimumAgeMatch)
                                 console.log("User value: " + currentAreaOfInterest.value + " years of experience: " + currentAreaOfInterest.years)
                                 console.log("-----")
                                 console.log("Potential mentor value: " + comparisonAreaOfInterest.value + " years of experience: " + comparisonAreaOfInterest.years)
-                                var maximumAgeMatch = getMaximumAgeMatch(currentUser.menteePreferences.maximumAge, potentialMentor.age)
+                                var maximumAgeMatch = getMaximumAgeMatch(currentUser.menteeSettings.maximumAge, potentialMentor.age)
                                 potentialMentor.minimumAgeMatch = minimumAgeMatch
                                 potentialMentor.maximumAgeMatch = maximumAgeMatch
                                 filteredPotentialMentors.push(potentialMentor)

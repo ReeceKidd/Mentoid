@@ -7,7 +7,7 @@ var arrayOfJobs = require('./listOfJobs.js')
 var arrayOfCompanies = require('./listOfCompanies.js')
 var experiences = []
 
-module.exports = async function updateEducation(userID, age) {
+module.exports = function updateEducation(userName, userID, age) {
     var numberOfJobs = getNumberOfJobs(age)
     for (var index = 0; index < numberOfJobs; index++) {
         var title = getTitle()
@@ -35,16 +35,18 @@ module.exports = async function updateEducation(userID, age) {
             })
             experienceID++
         }
-
-        await axios.post(updateJobHistoryURL, {
-            _id: userID,
-            age: age,
-            experiences: experiences
-        }).catch(error => {
-            console.log('Could not update job history: ' + error.message)
-        })
-
     }
+
+    await axios.post(updateJobHistoryURL, {
+        _id: userID,
+        age: age,
+        experiences: experiences
+    }).then(jobHistory => {
+        console.log(userName + ' updated job history')
+    }).catch(error => {
+        console.log('Could not update job history: ' + error.message)
+    })
+
     return experiences
 }
 
@@ -61,7 +63,7 @@ function getNumberOfJobs(age) {
 function getTitle() {
     var job = arrayOfJobs[Math.floor(Math.random() * arrayOfJobs.length)]
     job = job.replace("\\", "")
-    return job 
+    return job
 }
 
 function getCompany() {
@@ -69,9 +71,9 @@ function getCompany() {
 }
 
 function getIsWorkingHere() {
-    
-    for(var x = 0; x < experiences.length; x++) {
-        if(experiences[x].isWorkingHere === 'Yes'){
+
+    for (var x = 0; x < experiences.length; x++) {
+        if (experiences[x].isWorkingHere === 'Yes') {
             return 'No'
         }
     }

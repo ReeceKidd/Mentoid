@@ -79,6 +79,7 @@ routes.post('/update/location', registerController.updateLocation)
 
 //Generator Routes
 routes.post('/generate/areas-of-interest', generatorController.generateAreasOfInterest)
+routes.post('/generate/update-has-profile-picture', generatorController.updateHasProfilePicture)
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)

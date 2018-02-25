@@ -16,7 +16,7 @@
             <i class="fas fa-arrow-left"></i> Previous: Education</button>
         </span>
         <span class="hidden-xs">
-          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/mentor-preferences')"> Next: Mentor Preferences
+          <button style="float: right" class="btn btn-md btn-primary" @click="navigateTo('/mentor-settings')"> Next: Mentor Preferences
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>
@@ -29,7 +29,7 @@
         </span>
         <br class="visible-xs">
         <span class="visible-xs text-center">
-          <button class="btn btn-md btn-primary" @click="navigateTo('/mentor-preferences')"> Next: Mentor Preferences
+          <button class="btn btn-md btn-primary" @click="navigateTo('/mentor-settings')"> Next: Mentor Preferences
             <i class="fas fa-arrow-right"></i>
           </button>
         </span>

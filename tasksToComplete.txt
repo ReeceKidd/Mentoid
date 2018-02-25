@@ -289,5 +289,11 @@ Continue working on the mentor preferences section get it working for both new u
 Talk about monitoring and how it would work. 
 Change it so profile picture is not got from avatar in the client but from the server. 
 
-For the love of god complete the mentor and mentee settings section tommorow and move on to the matching, logging 
-all the decisions in the algorithm and actually displaying the users. 
+1 hour (Mentor and Mentee section.
+Fix the issue with the hasProfilePicture and then go through the registration process one more time before focusing on matching. 
+
+Pna for the 25/02/2018
+
+Make the genereator synchronous 20 mins. 
+Fix the has profile picture bug. 
+Complete the matching algortthm 140 mins. 

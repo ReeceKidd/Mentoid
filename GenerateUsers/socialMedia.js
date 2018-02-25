@@ -12,7 +12,7 @@ var website = getWebsite()
 const maximumNumberOfSocialMediaAccounts = 8
 
 /* Register Basic User */
-module.exports = async function generateSocialMedia(userID, userName) {
+module.exports = async function generateSocialMedia(userName, userID) {
     var socialMediaAccounts = generateSocialMediaObject(userName)
     await axios.post(updateSocialMediaURL, {
         facebook: socialMediaAccounts.facebook,

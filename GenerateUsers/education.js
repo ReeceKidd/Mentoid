@@ -5,11 +5,11 @@ const axios = require('axios')
 const updateEducationURL = 'http://localhost:4000/update/education'
 var educationID = 0
 var arrayOfUniversities = require('./listOfUniversities.js')
-var arrayOfSubjects = require('./listOfSubjects.js')
+var arrayOfSubjects = require('./subjects.js')
 const date = new Date()
 const currentYear = date.getFullYear()
 
-module.exports = async function updateEducation(userID, age) {
+module.exports = function updateEducation(userName, userID, age) {
 
     var education = []
     var numberOfEducationExperiencesToCreate = getNumbersOfEducationExperiences()
@@ -37,8 +37,10 @@ module.exports = async function updateEducation(userID, age) {
         _id: userID,
         age: age,
         education: education
+    }).then(education => {
+        console.log(userName + ' education updated.')
     }).catch(error => {
-        console.log('Could not update education: ' + error.message)
+        console.log(userName + ' Could not update education: ' + error.message)
     })
 
     return education
