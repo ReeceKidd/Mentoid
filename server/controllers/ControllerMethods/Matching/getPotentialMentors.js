@@ -136,7 +136,7 @@ module.exports = getPotentialMentors = (req, res) => {
 
                 potentialMentors = retreivedPotentialMentors
 
-                logError("Number of potential mentors: " + potentialMentors.length)
+                logNumberOfPotentialMentors()
 
                 potentialMentors.forEach(function (currentPotentialMentor, index) {
 
@@ -151,12 +151,14 @@ module.exports = getPotentialMentors = (req, res) => {
                     currentUser.areasOfInterest.forEach(function (retrievedAreaOfInterest) {
 
                         currentAreaOfInterest = retrievedAreaOfInterest
+                        currentAreaOfInterest.totalPoints = generateTotalsForEachAreaOfInterest(currentAreaOfInterest)
 
                         logCurrentAreaOfInterestInformation()
 
                         potentialMentor.mentorSettings.areasOfInterest.forEach(function (areaOfInterestToCompare) {
 
                             comparisonAreaOfInterest = areaOfInterestToCompare
+                            comparisonAreaOfInterest.totalPoints = generateTotalsForEachAreaOfInterest(comparisonAreaOfInterest)
 
                             if (currentAreaOfInterest.value === comparisonAreaOfInterest.value) {
                                 logAppropriateSimilarInterestMessage()
@@ -164,7 +166,7 @@ module.exports = getPotentialMentors = (req, res) => {
 
                                 if (comparisonAreaOfInterest.years > currentAreaOfInterest.years) {
                                     organizeByMentoringFormat()
-                                    filteredPotentialMentors.push(currentPotentialMentor)
+                                    filteredPotentialMentors.push(potentialMentor)
 
                                 } else {
                                     logNotExperiencedEnoughToMentorAreaOfInterest()
@@ -179,10 +181,12 @@ module.exports = getPotentialMentors = (req, res) => {
                     });
 
                     generateSortingInformation()
-                    addSimilarInterestsFieldToPotentialMentor()
-                    setNumberOfSharedInterests()
-                    logDebug(JSON.stringify(potentialMentor.educationMatches))
+                    generateDistanceInformation()
                 });
+
+                
+                bestMatchedMentor()
+                sortByDistance()
 
                 logDebug('Number of matched online mentors: ' + onlineMentors.length)
                 logDebug('Number of matched in person mentors: ' + inPersonMentors.length)
@@ -196,6 +200,23 @@ module.exports = getPotentialMentors = (req, res) => {
             }
         })
     })
+}
+
+function sortByDistance() {
+
+    function sortNumber(a, b) {
+        return a.distanceKM - b.distanceKM
+    }
+
+    filteredPotentialMentors.sort(sortNumber)
+}
+
+function bestMatchedMentor() {
+
+    filteredPotentialMentors.forEach(mentor => {
+        //Sort by closest area of interest distance. 
+    })
+    
 }
 
 //This covers every possible combination of the two values in order to sort the information properly. 
@@ -248,35 +269,54 @@ function organizeByMentoringFormat() {
 
 }
 
+function generateTotalsForEachAreaOfInterest(areaOfInterest) {
+    return areaOfInterest.numberOfLikes +
+        areaOfInterest.numberOfLinksClicked +
+        areaOfInterest.articlesRead +
+        areaOfInterest.videosWatched +
+        areaOfInterest.pathsStudied
+
+}
+
 function resetSimilarInterests() {
     mentorHasMoreExperience = []
     mentorHasLessExperience = []
     mentorHasSameExperience = []
 }
 
-function distanceSorter() {
+function generateDistanceInformation() {
 
     let distance = getDistanceFromPotentialMentor()
+    potentialMentor.distanceKM = distance
     logLocationInformaion()
-    if (distance < currentUser.maximumTravelDistanceKM) {
+    if (distance <= currentUser.menteeSettings.maximumTravelDistanceKM) {
+        potentialMentor.isWithinUsersRange = true
         logWithinUsersRange()
 
-        if (distance < potentialMentor.maximumTravelDistanceKM) {
+        if (distance <= potentialMentor.mentorSettings.maximumTravelDistanceKM) {
             logWithinMentorsRange()
+            potentialMentor.userIsWithinMentorsRange = true
 
         } else {
             logOutsideOfMentorsRange()
+            potentialMentor.userIsWithinMentorsRange = false
+            potentialMentor.outsideOfMentorsRangeBy = getOutOfRangeDistance()
         }
     } else {
         logOutsideOfUsersRange()
+        potentialMentor.isWithinUsersRange = false
+        potentialMentor.outsideOfUsersRangeBy = getOutOfRangeDistance()
     }
 }
+
 
 function generateSortingInformation() {
 
     educationMatch()
     languagesMatch()
     ageMatch()
+    addSimilarInterestsFieldToPotentialMentor()
+    setNumberOfSharedInterests()
 
 }
 
@@ -422,6 +462,39 @@ function isCurrentUserTooOld() {
 
 //Handle logging for the matching section. 
 
+function logError(errorMessage) {
+    try {
+        var userNameAddon = 'User--' + currentUserName + ': '
+        logger.error(userNameAddon + errorMessage)
+        matchingLogger.error(userNameAddon + errorMessage)
+    } catch (error) {
+        logger.error(error)
+    }
+}
+
+function logDebug(debugMessage) {
+    try {
+        var userNameAddon = 'User--' + currentUserName + ': '
+        logger.error(userNameAddon + debugMessage)
+        matchingLogger.debug(userNameAddon + debugMessage)
+    } catch (error) {
+        logger.error(error)
+    }
+}
+
+//Log messages go to the bottom. 
+
+function logPotentialMentorsDistanceSort() {
+    let potentialMentorNames = []
+    filteredPotentialMentors.forEach(mentor => {
+        potentialMentorNames.push({
+            name: mentor.userName,
+            distanceKM: mentor.distanceKM
+        })
+    })
+    return potentialMentorNames
+}
+
 function logAgeInformation() {
     let potentialMentorsNameMsg = 'Potential mentor: ' + potentialMentorUserName
     logDebug('Current users age: ' + currentUser.age)
@@ -444,27 +517,9 @@ function logAgeInformation() {
     }
 }
 
-function logError(errorMessage) {
-    try {
-        var userNameAddon = 'User--' + currentUserName + ': '
-        logger.error(userNameAddon + errorMessage)
-        matchingLogger.error(userNameAddon + errorMessage)
-    } catch (error) {
-        logger.error(error)
-    }
+function logNumberOfPotentialMentors() {
+    logError("Number of potential mentors: " + potentialMentors.length)
 }
-
-function logDebug(debugMessage) {
-    try {
-        var userNameAddon = 'User--' + currentUserName + ': '
-        logger.error(userNameAddon + debugMessage)
-        matchingLogger.debug(userNameAddon + debugMessage)
-    } catch (error) {
-        logger.error(error)
-    }
-}
-
-//Log messages go to the bottom. 
 
 function logMentorPreferenceNotSuitable() {
     logDebug('Potential mentor: ' + potentialMentorUserName + 'is not suitable because of their mentor preferences: ' +

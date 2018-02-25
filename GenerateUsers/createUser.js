@@ -28,7 +28,7 @@ function createUser() {
                 updateHasProfilePicture(userID)
             })
         })
-        console.log('User created: ' + userName)
+       return userName + 'created'
     })  
     
 }
