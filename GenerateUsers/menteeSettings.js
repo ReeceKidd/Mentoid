@@ -2,7 +2,7 @@ const axios = require('axios')
 const updateMenteeSettingsURL = 'http://localhost:4000/update/mentee-settings/'
 
 
-module.exports = async function updateAreasOfInterest(userName, userID, age, areasOfInterest) {
+module.exports = function updateAreasOfInterest(userName, userID, age, areasOfInterest) {
     /*
     Array is sorted by years of experience before the random amount is selected to ensure that Mentors choose the areas of 
     interest that they have the most experience in. Then a random number of the higher years of experience are choosen. 
@@ -18,7 +18,7 @@ module.exports = async function updateAreasOfInterest(userName, userID, age, are
     var maximumAge = getMaximumAge(minimumAge)
     var maxNumberOfMentors = getMaximumNumberOfMentors()
 
-    await axios.post(updateMenteeSettingsURL, {
+    axios.post(updateMenteeSettingsURL, {
         menteeSettings: {
             wouldLikeAMentor: wouldLikeAMentor,
             areasOfInterest: areasOfInterest,
@@ -32,7 +32,7 @@ module.exports = async function updateAreasOfInterest(userName, userID, age, are
         },
         userID: userID,
         userName: userName
-    }).catch(error => {
+    }).then(userName + ' updated mentee settings').catch(error => {
         console.log(userName + ' could not update mentee settings: ' + error.message)
     })
 

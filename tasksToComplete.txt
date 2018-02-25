@@ -294,6 +294,14 @@ Fix the issue with the hasProfilePicture and then go through the registration pr
 
 Pna for the 25/02/2018
 
-Make the genereator synchronous 20 mins. 
-Fix the has profile picture bug. 
+Make the genereator synchronous 20 mins. (Not allowed to go back to this. )
+Fix the has profile picture bug. (Appears to be fixed.)
 Complete the matching algortthm 140 mins. 
+
+When I get back figure out how to ignore the current user in the aggregrtion pipeline. 
+And go through the error console logs to figure out what is going on. 
+
+Do the education matching,
+Abstract the rest of the method. 
+
+Complete the populate shared interest object. 

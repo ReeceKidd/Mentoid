@@ -15,8 +15,8 @@ let language = getLanguage()
 let terms = getTerms()
 
 /* Register Basic User */
-module.exports = function registerBasicUser() {
-    axios.post(basicRegistrationURL, {
+module.exports = async function registerBasicUser() {
+    await axios.post(basicRegistrationURL, {
         firstName: firstName,
         lastName: lastName,
         userName: userName,
@@ -26,8 +26,6 @@ module.exports = function registerBasicUser() {
         confirmPassword: confirmPassword,
         language: language,
         terms: terms
-    }).then(basicRegistrationComplete => {
-        console.log(userName + ' basic registration complete. ')
     }).catch(error => {
       console.log('Could not complete basic registration: ' + error)
     })
@@ -48,7 +46,7 @@ function getUserName() {
 }
 
 function getEmail() {
-    return userName + '@gmail.com'
+    return userName + '@gmail.com'.toLowerCase()
 }
 
 function getAge() {

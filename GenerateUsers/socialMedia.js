@@ -11,8 +11,7 @@ var youtube = getYoutube()
 var website = getWebsite()
 const maximumNumberOfSocialMediaAccounts = 8
 
-/* Register Basic User */
-module.exports = async function generateSocialMedia(userName, userID) {
+module.exports = async function generateSocialMedia(userID, userName) {
     var socialMediaAccounts = generateSocialMediaObject(userName)
     await axios.post(updateSocialMediaURL, {
         facebook: socialMediaAccounts.facebook,

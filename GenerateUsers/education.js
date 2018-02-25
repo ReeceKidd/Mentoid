@@ -9,7 +9,7 @@ var arrayOfSubjects = require('./subjects.js')
 const date = new Date()
 const currentYear = date.getFullYear()
 
-module.exports = function updateEducation(userName, userID, age) {
+module.exports = async function updateEducation(userID, age) {
 
     var education = []
     var numberOfEducationExperiencesToCreate = getNumbersOfEducationExperiences()
@@ -37,10 +37,8 @@ module.exports = function updateEducation(userName, userID, age) {
         _id: userID,
         age: age,
         education: education
-    }).then(education => {
-        console.log(userName + ' education updated.')
     }).catch(error => {
-        console.log(userName + ' Could not update education: ' + error.message)
+        console.log('Could not update education: ' + error.message)
     })
 
     return education

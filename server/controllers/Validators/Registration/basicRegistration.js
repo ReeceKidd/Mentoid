@@ -1,7 +1,5 @@
 module.exports = function basicRegistrationValidation(req) {
 
-    
-    req.check('firstName', 'First name can only contain Alphabetical characters').isAlpha()
     req.check('firstName', 'First name must be at least two characters long').isLength({
         min: 2
     })
@@ -13,7 +11,6 @@ module.exports = function basicRegistrationValidation(req) {
     })
 
     req.check('lastName', 'Last name is required for basic registration').exists()
-    req.check('lastName', 'Last name can only contain Alphabetical characters').isAlpha()
     req.check('lastName', 'Last name must be at least two characters long').isLength({
         min: 2
     })

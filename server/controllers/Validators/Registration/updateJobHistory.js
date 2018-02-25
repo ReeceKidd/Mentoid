@@ -71,21 +71,6 @@ module.exports = function updateJobHistoryValidation(req) {
         }
         return true
     })
-    req.check('experiences', 'Experience titles can only contain letters, white space, commas, periods and ampersans').custom(experiences => {
-        for (var x = 0; x < experiences.length; x++) {
-            if (typeof experiences[x].title !== 'string') {
-                return false
-            }
-            var match = experiences[x].title.match(/^[A-Za-z,-.\s]+$/)
-            if (match === undefined) {
-                return false
-            }
-            if (!match) {
-                return false
-            }
-        }
-        return true
-    })
     req.check('experiences', 'Experience titles must be at least two characters long').custom(experiences => {
 
         for (var x = 0; x < experiences.length; x++) {

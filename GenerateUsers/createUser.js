@@ -13,45 +13,24 @@ let updateHasProfilePicture = require('./updateHasProfilePicture')
 
 function createUser() {
     /* Username must be returned in order to get Object ID */
-    let userName = registerBasicUser().then(userName => {
-        let userID = getUserID(userName).then(userID => {
-            let age = getUsersAge(userName, userID).then(age => {
-                var areasOfInterest = updateAreasOfInterest(userName, userID, age).then(areasOfInterest => {
+    let userName = registerBasicUser().then(function (userName) {
+        let userID = getUserID(userName).then(function(userID){
+            let age = getUsersAge(userID).then(function(age){
+                let areasOfInterest = updateAreasOfInterest(userID, age).then(function(areasOfInterest){
                     updateMentorSettings(userName, userID, age, areasOfInterest)
                     updateMenteeSettings(userName, userID, age, areasOfInterest)
-                }).catch(getUsersAgeError => {
-                    throw getUsersAgeError
                 })
-                updateEducation(userName, userID, age).catch(educationError => {
-                    throw educationError
-                })
-                updateJobHistory(userName, userID, age).catch(jobHistoryError => {
-                    throw jobHistoryError
-                })
-                updateSocialMedia(userName, userID).catch(socialMediaError => {
-                   throw socialMediaError
-                })
-                updateLocation(userName, userID).catch(locationError => {
-                    throw locationError
-                })
-                updateProfilePicture(userID).catch(profilePictureError => {
-                    throw profilePictureError
-                })
+                updateEducation(userID, age)
+                updateJobHistory(userID, age)
+                updateSocialMedia(userID, userName)
+                updateLocation(userID)
+                updateProfilePicture(userID)
                 updateHasProfilePicture(userID)
             })
-        }).catch(idError => {
-            throw idError
         })
-    }).catch(error => {
-        throw userNameError
-    })
-    return userName
+        console.log('User created: ' + userName)
+    })  
+    
 }
 
-function generateUser() {
-    var result = createUser().then(userName => {
-        console.log(userName)
-    })
-}
-
-generateUser()
+createUser()

@@ -3,7 +3,7 @@ This file has been generated from the list of subjects which are parsed from wik
 It is needed to prevent the data having to be parsed everytime. 
 */
 
-[
+module.exports = [
   "Agriculture",
   "Architecture and design",
   "Arts",

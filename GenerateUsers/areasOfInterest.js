@@ -4,7 +4,7 @@ const getHobbiesArray = require('./getHobbiesArray.js')
 var areaOfInterestID = 0
 
 
-module.exports = function updateAreasOfInterest(userName, userID, age) {
+module.exports = async function updateAreasOfInterest(userID, age) {
 
     var areasOfInterest = []
     var numberOfInterestsToCreate = getNumbersOfInterests()
@@ -29,12 +29,10 @@ module.exports = function updateAreasOfInterest(userName, userID, age) {
         areaOfInterestID++
     }
 
-    axios.post(updateAreasOfInterestURL, {
+    await axios.post(updateAreasOfInterestURL, {
         _id: userID,
         age: age,
         areasOfInterest: areasOfInterest
-    }).then(updatedAreasOfInterest => {
-        console.log(userName + ' areas of interest updated') 
     }).catch(error => {
         console.log('Could not complete areas of interest registration: ' + error.message)
     })

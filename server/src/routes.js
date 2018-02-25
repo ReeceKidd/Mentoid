@@ -82,7 +82,7 @@ routes.post('/generate/areas-of-interest', generatorController.generateAreasOfIn
 routes.post('/generate/update-has-profile-picture', generatorController.updateHasProfilePicture)
 
 //Matching Routes
-routes.get('/get/potential-mentors/:userID', matchingController.getPotentialMentors)
+routes.get('/get/potential-mentors/:userID/:userName', matchingController.getPotentialMentors)
 
 //User Routes
 routes.post('/login', userController.login)

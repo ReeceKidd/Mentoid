@@ -180,9 +180,6 @@ matches.forEach(function (match) {
      subjects.push(match)
    })
 
-module.exports = subjects
-   
-
 /*
 This writes the data from wikipedia to a file so that it does not have to be parsed everytime the method is called. 
 */

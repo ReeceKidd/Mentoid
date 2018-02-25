@@ -7,7 +7,7 @@ var arrayOfJobs = require('./listOfJobs.js')
 var arrayOfCompanies = require('./listOfCompanies.js')
 var experiences = []
 
-module.exports = function updateEducation(userName, userID, age) {
+module.exports = async function updateEducation(userID, age) {
     var numberOfJobs = getNumberOfJobs(age)
     for (var index = 0; index < numberOfJobs; index++) {
         var title = getTitle()
@@ -35,18 +35,16 @@ module.exports = function updateEducation(userName, userID, age) {
             })
             experienceID++
         }
+
+        await axios.post(updateJobHistoryURL, {
+            _id: userID,
+            age: age,
+            experiences: experiences
+        }).catch(error => {
+            console.log('Could not update job history: ' + error.message)
+        })
+
     }
-
-    await axios.post(updateJobHistoryURL, {
-        _id: userID,
-        age: age,
-        experiences: experiences
-    }).then(jobHistory => {
-        console.log(userName + ' updated job history')
-    }).catch(error => {
-        console.log('Could not update job history: ' + error.message)
-    })
-
     return experiences
 }
 

@@ -32,18 +32,23 @@
   export default {
     data() {
       return {
+        currentUserID: this.$store.state.user.authUser._id,
+        userName: null,
         users: [],
-        currentUser: this.$store.state.user.authUser,
-        userID: this.$store.state.user.authUser._id,
         areasOfInterest: [],
         matchedMentors: []
       }
     },
-    created: function () {
-      // It might be a good idea to start searching immediately on page load to speed up response time.
-      const userID = this.$store.state.user.authUser._id
+    beforeMount() {
       const apiUrl = 'http://localhost:4000/get/areas-of-interest/'
       var self = this
+      var userID = this.currentUserID
+      // Get username.
+      const getUserNameURL = 'http://localhost:4000/get/user-name/'
+      axios.get(getUserNameURL + userID).then(function (response) {
+        self.userName = response.data.userName
+      })
+      // Get areas of interest
       axios.get(apiUrl + userID).then(function (response) {
         self.areasOfInterest = response.data.areasOfInterest
       })
@@ -52,9 +57,11 @@
       matchMentors() {
         var self = this
         var getPotentialMentorsURL = 'http://localhost:4000/get/potential-mentors/'
-        axios.get(getPotentialMentorsURL + this.userID).then(function (response) {
+        axios.get(getPotentialMentorsURL + this.currentUserID + '/' + this.userName).then(function (response) {
           console.log(response)
           self.matchedMentors = response.data.matchedMentors
+        }).catch(errors => {
+          console.log(errors)
         })
       }
     }

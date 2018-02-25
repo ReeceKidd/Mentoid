@@ -2,11 +2,7 @@
 
 
 #!/bin/bash
-for i in {1..100}; do \
-    node C:/Users/User/Desktop/Mentoid/GenerateUsers/createUser.js & 
-    node C:/Users/User/Desktop/Mentoid/GenerateUsers/createUser.js &
-    node C:/Users/User/Desktop/Mentoid/GenerateUsers/createUser.js & 
-    node C:/Users/User/Desktop/Mentoid/GenerateUsers/createUser.js & 
-    node C:/Users/User/Desktop/Mentoid/GenerateUsers/createUser.js &
+for i in {1..10000}; do \
+    node C:/Users/User/Desktop/Mentoid/GenerateUsers/createUser.js 
 done
-echo created 1000 users.
+echo created 100000 users.
