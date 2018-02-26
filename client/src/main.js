@@ -32,10 +32,13 @@ import Content from './components/Learn/Content.vue'
 import Create from './components/Learn/Create.vue'
 import PathsHome from './components/Learn/Paths/PathsHome.vue'
 import PathsSubSection from './components/Learn/Paths/PathsSubSection.vue'
+
 import ManageRelationships from './components/Mentoring/ManageRelationships.vue'
 import MatchingHome from './components/Mentoring/Matching/MatchingHome.vue'
 import MatchingMentorList from './components/Mentoring/Matching/MentorList.vue'
 import MatchingMenteeList from './components/Mentoring/Matching/MenteesList.vue'
+import MentorMatch from './components/Mentoring/Matching/MentorMatch.vue'
+
 import Reporting from './components/Mentoring/Reporting.vue'
 import Search from './components/Mentoring/Search.vue'
 import EditProfile from './components/Profile/EditProfile.vue'
@@ -158,7 +161,8 @@ const routes = [
   {
     path: '/mentor-matching',
     name: 'matching-mentor-list',
-    component: MatchingMentorList
+    component: MatchingMentorList,
+    props: true
   },
   {
     path: '/mentee-matching',
@@ -224,6 +228,12 @@ const routes = [
     path: '/404',
     name: 'not-found',
     component: NotFound
+  },
+  {
+    path: '/mentor-match',
+    name: 'mentor-match',
+    component: MentorMatch,
+    props: true
   },
   {
     path: '*',

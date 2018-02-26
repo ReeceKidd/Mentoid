@@ -194,6 +194,7 @@ module.exports = getPotentialMentors = (req, res) => {
 
                 if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
                     let onlineAndInPersonMentors = joinMentoringArrays()
+                    shuffle(onlineAndInPersonMentors)
                     res.status(200).send({
                         onlineAndInPersonMentors: onlineAndInPersonMentors
                     })
@@ -414,9 +415,6 @@ function addMentorToInPersonList() {
     logError('Potential mentor: ' + potentialMentorUserName + ' has been added to the in person list of mentors.')
 }
 
-function addMentorToOnlineAndInPersonList() {
-
-}
 
 function educationMatch() {
     let educationMatches = []

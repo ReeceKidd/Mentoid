@@ -16,120 +16,151 @@
     <!-- Advanced search options -->
     <div class="row text-right">
       <div class="col-xs-12 col-sm-12">
-        <h4>
+        <p>
           <a href='edit-profile#mentee-preferences'> Change your Mentee settings
             <i class="fas fa-cog"></i>
           </a>
-        </h4>
+        </p>
       </div>
     </div>
 
     <div v-if="potentialInPersonMentors !== null">
       <h2> In person mentors </h2>
-    <span v-for="(mentor, index) in potentialInPersonMentors" :key="index">
-      <br>
-      <div class="row mentorBox">
-        <div class="col-xs-3 col-sm-3">
-          <br>
-          <img :src='getProfilePicture(mentor._id)' class="profileImage">
-          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
-          <h5>
-            <b> @{{ mentor.userName }} </b>
-          </h5>
-          <br>
+      <span v-for="(mentor, index) in potentialInPersonMentors" :key="index">
+        <br>
+        <div class="row mentorBox">
+          <div class="col-xs-3 col-sm-3">
+            <br>
+            <img :src='getProfilePicture(mentor._id)' class="profileImage">
+            <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+            <h5>
+              <b> @{{ mentor.userName }} </b>
+            </h5>
+            <br>
+          </div>
+          <div class="col-xs-9 col-sm-9">
+            <span id="canMentorYouIn">
+              <h3>
+                <u> Can Mentor You In </u>
+              </h3>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
+                <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
+            </span>
+            <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
+              <h3>
+                <u> Same level of experience in: </u>
+              </h3>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+                <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
+            </span>
+            <span id="travelDistance">
+              <h3>
+                Distance: {{ mentor.distance }}
+              </h3>
+            </span>
+          </div>
         </div>
-        <div class="col-xs-9 col-sm-9">
-          <span id="canMentorYouIn"><h3>
-            <u> Can Mentor You In </u>
-          </h3>
-          <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
-            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
-          </span>
-          </span>
-          <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
-          <h3>
-            <u> Same level of experience in: </u>
-          </h3>
-          <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
-            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
-          </span>
-          </span>
-        </div>
-      </div>
-      <br>
-    </span>
+        <br>
+      </span>
     </div>
 
     <div v-if="potentialOnlineMentors !== null">
       <h2> Online mentors </h2>
-    <span v-for="(mentor, index) in potentialOnlineMentors" :key="index">
-      <br>
-      <div class="row mentorBox">
-        <div class="col-xs-3 col-sm-3">
-          <br>
-          <img :src='getProfilePicture(mentor._id)' class="profileImage">
-          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
-          <h5>
-            <b> @{{ mentor.userName }} </b>
-          </h5>
-          <br>
+      <span v-for="(mentor, index) in potentialOnlineMentors" :key="index">
+        <br>
+        <div class="row mentorBox">
+          <div class="col-xs-3 col-sm-3">
+            <br>
+            <img :src='getProfilePicture(mentor._id)' class="profileImage">
+            <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+            <h5>
+              <b> @{{ mentor.userName }} </b>
+            </h5>
+            <br>
+          </div>
+          <div class="col-xs-9 col-sm-9">
+            <span id="canMentorYouIn">
+              <h3>
+                <u> Can Mentor You In </u>
+              </h3>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
+                <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
+            </span>
+            <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
+              <h3>
+                <u> Same level of experience in: </u>
+              </h3>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+                <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
+            </span>
+          </div>
         </div>
-        <div class="col-xs-9 col-sm-9">
-          <span id="canMentorYouIn"><h3>
-            <u> Can Mentor You In </u>
-          </h3>
-          <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
-            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
-          </span>
-          </span>
-          <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
-          <h3>
-            <u> Same level of experience in: </u>
-          </h3>
-          <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
-            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
-          </span>
-          </span>
-        </div>
-      </div>
-      <br>
-    </span>
+        <br>
+      </span>
     </div>
 
     <div v-if="potentialOnlineAndInPersonMentors !== null">
       <h2> Potential Mentors </h2>
-    <span v-for="(mentor, index) in potentialOnlineAndInPersonMentors" :key="index">
-      <br>
-      <div class="row mentorBox">
-        <div class="col-xs-3 col-sm-3">
-          <br>
-          <img :src='getProfilePicture(mentor._id)' class="profileImage">
-          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
-          <h5>
-            <b> @{{ mentor.userName }} </b>
-          </h5>
-          <br>
+      <span v-for="(mentor, index) in potentialOnlineAndInPersonMentors" :key="index">
+        <br>
+        <div class="row displayBox">
+          <div class="col-xs-3 col-sm-3">
+            <br>
+            <img :src='getProfilePicture(mentor._id)' class="profileImage">
+            <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+            <h5>
+              <b> @{{ mentor.userName }} </b>
+            </h5>
+            <br>
+          </div>
+          <div class="col-xs-9 col-sm-9">
+            <span id="canMentorYouIn">
+              <h4>
+                <b>
+                  <u> Mentoring Areas Of Interest </u>
+                </b>
+              </h4>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
+                <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
+            </span>
+            <span id="prefferedMentoringFormat">
+              <h5>
+                <b>
+                  <u> Preffered mentoring format </u>
+                </b>
+              </h5>
+              <span v-for="(mentoringFormat, mIndex) in mentor.mentorSettings.prefferedMentoringFormats" :key="mIndex">
+                <p class="prefferedMentoringFormat"> {{ mentoringFormat }} </p>
+              </span>
+            </span>
+            <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
+              <h3>
+                <u> Similar interests: </u>
+              </h3>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+                <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
+            </span>
+            <span id="travelDistance">
+              <p class="distance">
+                <b>Distance: {{ mentor.distanceKM }}KM</b>
+              </p>
+            </span>
+            <div id="buttons" class="text-right">
+              <button class="btn btn-primary view-profile btn-sm" @click="mentorMatch(mentor)">View Profile</button>
+              <button class="btn btn-primary btn-sm">Send Message</button>
+              <button class="btn btn-success btn-sm"> Apply for Mentoring </button>
+            </div>
+            <br>
+          </div>
         </div>
-        <div class="col-xs-9 col-sm-9">
-          <span id="canMentorYouIn"><h3>
-            <u> Can Mentor You In </u>
-          </h3>
-          <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
-            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
-          </span>
-          </span>
-          <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
-          <h3>
-            <u> Same level of experience in: </u>
-          </h3>
-          <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
-            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
-          </span>
-          </span>
-        </div>
-      </div>
-      <br>
-    </span>
+        <br>
+      </span>
     </div>
 
 
@@ -166,6 +197,14 @@
       })
     },
     methods: {
+      mentorMatch(mentor) {
+        this.$router.push({
+          name: 'mentor-match',
+          params: {
+            mentor: mentor
+          }
+        })
+      },
       matchMentors() {
         var self = this
         console.log('Attempting to match mentors.')
@@ -180,10 +219,9 @@
             if (response.data.onlineMentors) {
               self.potentialOnlineMentors = response.data.onlineMentors
             }
-            if(response.data.onlineAndInPersonMentors) {
+            if (response.data.onlineAndInPersonMentors) {
               self.potentialOnlineAndInPersonMentors = response.data.onlineAndInPersonMentors
             }
-            
           })
           .catch(errors => {
             console.log(errors)
@@ -192,14 +230,44 @@
       getProfilePicture(mentorsID) {
         return getProfilePictureURL + mentorsID
       },
-      resetAdvancedSearchOptions() {},
-      navigateTo(route) {
-        this.$router.push(route)
+      getMatchedAddress(mentor) {
+        return '/view-match?userName=' + mentor.userName
+      },
+      resetAdvancedSearchOptions() {
+        return 'Hello'
       }
     }
   }
+
 </script>
 <style scoped>
+  .areaOfInterest {
+    background-color: #006400;
+    color: white;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .prefferedMentoringFormat {
+    background-color: #006400;
+    color: white;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .distance {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+  }
+
   .profileImage {
     max-width: 200px;
     max-height: 200px;
@@ -208,7 +276,12 @@
     border: 1px solid #021a40;
   }
 
-  .mentorBox {
-    outline: 1px solid #104E8B;
+  .view-profile {
+    background-color: purple;
   }
+
+  .view-profile:hover {
+    background-color: #333333;
+  }
+
 </style>

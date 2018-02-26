@@ -309,3 +309,8 @@ Complete the populate shared interest object.
 Change has same or less experience to the same array and figure out why it is responding with so many users. 
 Copy how udemy shows freelancers. 
 Figure out whats wrong with job history and education now. 
+
+Put a fixed button on the mentor match page so it is easy to message or apply at any stage. 
+Need to figure out how the education match is actually working to ensure its doing what I need it to do. It needs to match
+the mentors education to the mentees preferences, and the mentors preferences to the mentees educational level. And then see
+if their preferences match.  
