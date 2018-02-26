@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="row">
-      <h1 class="text-center"> Potential Mentors </h1>
+      <h1 class="text-center"> Find your perfect Mentor </h1>
     </div>
 
     <br>
@@ -13,58 +13,142 @@
 
     <br>
 
-
-    <div class="row text-center">
-      <div class="input" name="sortType">
-        <label for="sortType">How would you like to sort?</label>
-        <select id="typeOfSort" v-model="sortType">
-          <option value="distance">Distance</option>
-          <option value="bestMatch">Best Match</option>
-          <option value="specificInterest">Specific Interest</option>
-        </select>
-      </div>
-    </div>
-
     <!-- Advanced search options -->
-    <div class="row text-center">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+    <div class="row text-right">
+      <div class="col-xs-12 col-sm-12">
         <h4>
-          <a @click="advancedSearchOptionVisible === !advancedSearchOptionVisible, resetAdvancedSearchOptions()"> Advanced Search Options
-            <i class="fas fa-caret-down"></i>
-          </a>
-        </h4>
-        <p>
           <a href='edit-profile#mentee-preferences'> Change your Mentee settings
             <i class="fas fa-cog"></i>
           </a>
-        </p>
+        </h4>
       </div>
     </div>
 
-    <!-- This will perform a random search across all areas of interest might only return one match -->
-    <div class="row">
-      <p class="text-center"> I'm feeling lucky</p>
+    <div v-if="potentialInPersonMentors !== null">
+      <h2> In person mentors </h2>
+    <span v-for="(mentor, index) in potentialInPersonMentors" :key="index">
+      <br>
+      <div class="row mentorBox">
+        <div class="col-xs-3 col-sm-3">
+          <br>
+          <img :src='getProfilePicture(mentor._id)' class="profileImage">
+          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+          <h5>
+            <b> @{{ mentor.userName }} </b>
+          </h5>
+          <br>
+        </div>
+        <div class="col-xs-9 col-sm-9">
+          <span id="canMentorYouIn"><h3>
+            <u> Can Mentor You In </u>
+          </h3>
+          <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
+            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+          </span>
+          </span>
+          <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
+          <h3>
+            <u> Same level of experience in: </u>
+          </h3>
+          <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+          </span>
+          </span>
+        </div>
+      </div>
+      <br>
+    </span>
     </div>
 
-    <br>
+    <div v-if="potentialOnlineMentors !== null">
+      <h2> Online mentors </h2>
+    <span v-for="(mentor, index) in potentialOnlineMentors" :key="index">
+      <br>
+      <div class="row mentorBox">
+        <div class="col-xs-3 col-sm-3">
+          <br>
+          <img :src='getProfilePicture(mentor._id)' class="profileImage">
+          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+          <h5>
+            <b> @{{ mentor.userName }} </b>
+          </h5>
+          <br>
+        </div>
+        <div class="col-xs-9 col-sm-9">
+          <span id="canMentorYouIn"><h3>
+            <u> Can Mentor You In </u>
+          </h3>
+          <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
+            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+          </span>
+          </span>
+          <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
+          <h3>
+            <u> Same level of experience in: </u>
+          </h3>
+          <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+          </span>
+          </span>
+        </div>
+      </div>
+      <br>
+    </span>
+    </div>
+
+    <div v-if="potentialOnlineAndInPersonMentors !== null">
+      <h2> Potential Mentors </h2>
+    <span v-for="(mentor, index) in potentialOnlineAndInPersonMentors" :key="index">
+      <br>
+      <div class="row mentorBox">
+        <div class="col-xs-3 col-sm-3">
+          <br>
+          <img :src='getProfilePicture(mentor._id)' class="profileImage">
+          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+          <h5>
+            <b> @{{ mentor.userName }} </b>
+          </h5>
+          <br>
+        </div>
+        <div class="col-xs-9 col-sm-9">
+          <span id="canMentorYouIn"><h3>
+            <u> Can Mentor You In </u>
+          </h3>
+          <span v-for="(areaOfInterest, aIndex) in mentor.hasMoreExperienceIn" :key="aIndex">
+            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+          </span>
+          </span>
+          <span id="skillsWithSameExperience" v-if="mentor.hasSameExperienceIn.length > 0">
+          <h3>
+            <u> Same level of experience in: </u>
+          </h3>
+          <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+            <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+          </span>
+          </span>
+        </div>
+      </div>
+      <br>
+    </span>
+    </div>
+
 
   </div>
+
 </template>
 <script>
   import axios from 'axios'
+  const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
   export default {
     data() {
       return {
         currentUserID: this.$store.state.user.authUser._id,
-        advancedSearchOptionsVisible: false,
-        checkedAreasOfInterest: null,
         maximumDistance: null,
-        mentorPreferences: null,
         userName: null,
-        sortType: null,
-        users: [],
-        areasOfInterest: [],
-        matchedMentors: []
+        sortType: 'random',
+        potentialInPersonMentors: null,
+        potentialOnlineMentors: null,
+        potentialOnlineAndInPersonMentors: null
       }
     },
     beforeMount() {
@@ -80,55 +164,33 @@
       axios.get(getAreasOfInterestUrl + userID).then(function (response) {
         self.areasOfInterest = response.data.areasOfInterest
       })
-      // Get the names of the areas of interest
-      const getAreasOfInterestNamesUrl = 'http://localhost:4000/get/areas-of-interest-names/'
-      axios.get(getAreasOfInterestNamesUrl + userID).then(function (response) {
-        self.areasOfInterestNames = response.data.areasOfInterest
-      }).then(gotAreasOfInterestNames => {
-        const getMenteeSettingsURL = 'http://localhost:4000/get/mentee-settings/'
-        axios.get(getMenteeSettingsURL + userID).then(function (response) {
-          let menteeSettings = response.data.menteeSettings
-          self.wouldLikeAMentor = menteeSettings.wouldLikeAMentor.toString()
-          self.checkedAreasOfInterest = menteeSettings.areasOfInterest
-          self.checkedMentoringFormats = menteeSettings.prefferedMentoringFormats
-          self.checkedLanguages = menteeSettings.languages
-          self.checkedEducation = menteeSettings.prefferedEducation
-          self.maximumTravelDistanceKM = menteeSettings.maximumTravelDistanceKM
-          self.minimumAge = menteeSettings.minimumAge
-          self.maximumAge = menteeSettings.maximumAge
-          self.maxNumberOfMentors = menteeSettings.maxNumberOfMentors
-        }).then(value => {
-          // Gets the name values from the previous checkedAreas of interest.
-          for (var x = 0; x < this.checkedAreasOfInterest.length; x++) {
-            this.checkedAreasOfInterestNames.push(this.checkedAreasOfInterest[x].value)
-          }
-          // Initiliase the select all values based on the data received from the server.
-          if (this.areasOfInterestNames.length === this.checkedAreasOfInterestNames.length) {
-            this.checkAllAreasOfInterest = true
-          }
-          if (this.mentoringFormats.length === this.checkedMentoringFormats.length) {
-            this.checkAllFormats = true
-          }
-          if (this.educationLevel.length === this.checkedEducation.length) {
-            this.checkAllEducation = true
-          }
-          if (this.languages.length === this.checkedLanguages.length) {
-            this.checkAllLanguages = true
-          }
-        })
-      })
     },
     methods: {
       matchMentors() {
         var self = this
-        var getPotentialMentorsURL = 'http://localhost:4000/get/potential-mentors/'
-        axios.get(getPotentialMentorsURL + this.currentUserID + '/' + this.userName + '/' + this.sortType).then(
-          function (response) {
+        console.log('Attempting to match mentors.')
+        var getPotentialMentorsURL = 'http://localhost:4000/get/potential-mentors/' + this.currentUserID + '/' + this.userName +
+          '/' + this.sortType
+        axios.get(getPotentialMentorsURL)
+          .then(response => {
             console.log(response)
-            self.matchedMentors = response.data.matchedMentors
-          }).catch(errors => {
-          console.log(errors)
-        })
+            if (response.data.inPersonMentors) {
+              self.potentialInPersonMentors = response.data.inPersonMentors
+            }
+            if (response.data.onlineMentors) {
+              self.potentialOnlineMentors = response.data.onlineMentors
+            }
+            if(response.data.onlineAndInPersonMentors) {
+              self.potentialOnlineAndInPersonMentors = response.data.onlineAndInPersonMentors
+            }
+            
+          })
+          .catch(errors => {
+            console.log(errors)
+          })
+      },
+      getProfilePicture(mentorsID) {
+        return getProfilePictureURL + mentorsID
       },
       resetAdvancedSearchOptions() {},
       navigateTo(route) {
@@ -137,8 +199,16 @@
     }
   }
 </script>
+<style scoped>
+  .profileImage {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid #021a40;
+  }
 
-<style>
-
-
+  .mentorBox {
+    outline: 1px solid #104E8B;
+  }
 </style>

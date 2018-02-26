@@ -305,3 +305,7 @@ Do the education matching,
 Abstract the rest of the method. 
 
 Complete the populate shared interest object. 
+
+Change has same or less experience to the same array and figure out why it is responding with so many users. 
+Copy how udemy shows freelancers. 
+Figure out whats wrong with job history and education now. 

@@ -44,10 +44,13 @@ let potentialMentors = []
 let filteredPotentialMentors = []
 let onlineMentors = []
 let inPersonMentors = []
+let onlineAndInPersonMentors = []
 
 module.exports = getPotentialMentors = (req, res) => {
 
-    var undefinedFields = checkUndefinedFields(req.params, ['userID', 'userName'])
+    resetMethod()
+
+    var undefinedFields = checkUndefinedFields(req.params, ['userID', 'userName', 'sortType'])
 
     if (undefinedFields) {
         logError(undefinedFields)
@@ -166,7 +169,6 @@ module.exports = getPotentialMentors = (req, res) => {
 
                                 if (comparisonAreaOfInterest.years > currentAreaOfInterest.years) {
                                     organizeByMentoringFormat()
-                                    filteredPotentialMentors.push(potentialMentor)
 
                                 } else {
                                     logNotExperiencedEnoughToMentorAreaOfInterest()
@@ -182,24 +184,68 @@ module.exports = getPotentialMentors = (req, res) => {
 
                     generateSortingInformation()
                     generateDistanceInformation()
-                });
 
-                
-                bestMatchedMentor()
-                sortByDistance()
-
-                logDebug('Number of matched online mentors: ' + onlineMentors.length)
-                logDebug('Number of matched in person mentors: ' + inPersonMentors.length)
-                logDebug('Starting number of potential mentors: ' + potentialMentors.length)
-                logDebug('Number of filtered potential mentors: ' + filteredPotentialMentors.length)
-
-                res.status(200).send({
-                    potentialMentors: filteredPotentialMentors
                 })
 
+                logDebug('Starting number of potential mentors: ' + potentialMentors.length)
+                logDebug('Number of inperson and online mentors: ' + onlineAndInPersonMentors.length)
+                logDebug('Number of matched online mentors: ' + onlineMentors.length)
+                logDebug('Number of matched in person mentors: ' + inPersonMentors.length)
+
+                if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
+                    let onlineAndInPersonMentors = joinMentoringArrays()
+                    res.status(200).send({
+                        onlineAndInPersonMentors: onlineAndInPersonMentors
+                    })
+                    return
+                }
+                if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
+                    logDebug('Entered in person method. ')
+                    sortByDistance()
+                    res.status(200).send({
+                        inPersonMentors: inPersonMentors
+                    })
+                    return
+                }
+                if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
+                    logDebug('Entered online method')
+                    shuffle(onlineMentors)
+                    res.status(200).send({
+                        onlineMentors: onlineMentors
+                    })
+                    return
+                }
             }
+
+
         })
+
+
     })
+}
+
+function joinMentoringArrays() {
+    return onlineAndInPersonMentors.concat(inPersonMentors, onlineMentors)
+}
+
+function shuffle(array) {
+    var currentIndex = array.length,
+        temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
 }
 
 function sortByDistance() {
@@ -208,7 +254,7 @@ function sortByDistance() {
         return a.distanceKM - b.distanceKM
     }
 
-    filteredPotentialMentors.sort(sortNumber)
+    inPersonMentors.sort(sortNumber)
 }
 
 function bestMatchedMentor() {
@@ -216,7 +262,7 @@ function bestMatchedMentor() {
     filteredPotentialMentors.forEach(mentor => {
         //Sort by closest area of interest distance. 
     })
-    
+
 }
 
 //This covers every possible combination of the two values in order to sort the information properly. 
@@ -228,8 +274,9 @@ function organizeByMentoringFormat() {
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
             logPotentialMentorHasOnlineAndInPerson()
             logBothUsersHaveOnlineAndInPerson()
-            addMentorToOnlineList()
+            addMentorToOnlineAndInPersonList()
             addMentorToInPersonList()
+            addMentorToOnlineList()
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
             logPotentialMentorHasInPersonAsPrefferedMentoringOption()
             addMentorToInPersonList()
@@ -243,6 +290,7 @@ function organizeByMentoringFormat() {
             logPotentialMentorHasOnlineAndInPerson()
             addMentorToOnlineList()
             addMentorToInPersonList()
+            addMentorToOnlineAndInPersonList()
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
             logPotentialMentorHasInPersonAsPrefferedMentoringOption()
             logMentorPreferenceNotSuitable()
@@ -255,8 +303,9 @@ function organizeByMentoringFormat() {
     } else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
             logPotentialMentorHasOnlineAndInPerson()
-            addMentorToOnlineList()
             addMentorToInPersonList()
+            addMentorToOnlineList()
+            addMentorToOnlineAndInPersonList()
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
             logPotentialMentorHasInPersonAsPrefferedMentoringOption()
             addMentorToInPersonList()
@@ -282,6 +331,27 @@ function resetSimilarInterests() {
     mentorHasMoreExperience = []
     mentorHasLessExperience = []
     mentorHasSameExperience = []
+}
+
+function resetMethod() {
+    currentUser = null
+    currentUserName = null
+    potentialMentor = null
+    potentialMentorUserName = null
+    currentAreaOfInterest = null
+    comparisonAreaOfInterest = null
+
+    //Arrays for storing similar interests. 
+    mentorHasLessExperience = []
+    mentorHasMoreExperience = []
+    mentorHasSameExperience = []
+
+
+    potentialMentors = []
+    filteredPotentialMentors = []
+    onlineMentors = []
+    inPersonMentors = []
+    onlineAndInPersonMentors = []
 }
 
 function generateDistanceInformation() {
@@ -342,6 +412,10 @@ function addMentorToOnlineList() {
 function addMentorToInPersonList() {
     inPersonMentors.push(potentialMentor)
     logError('Potential mentor: ' + potentialMentorUserName + ' has been added to the in person list of mentors.')
+}
+
+function addMentorToOnlineAndInPersonList() {
+
 }
 
 function educationMatch() {
