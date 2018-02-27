@@ -1,13 +1,10 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="text-center">
-        <button class="btn btn-primary btn-md sticky">Message</button>
-      </div>
+    <div class="row text-center">
+      <h1 class="">Potential Mentor</h1>
       <button class="btn btn-success btn-md sticky">Apply for Mentorship</button>
+      <button class="btn btn-primary btn-md sticky">Message</button>
       <br>
-      <br>
-      <h1 class="text-center">Potential Mentor</h1>
       <br>
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
         <br>
@@ -15,6 +12,50 @@
         <img :src="imageSrc" class="img-responsive uploadImage center-block" v-else>
         <h2 class="text-center">{{ firstName + ' ' + lastName}}</h2>
         <h4 class="text-center">@{{userName}}</h4>
+        <br>
+      </div>
+    </div>
+    <br>
+    <div class="row text-center" v-if="education.length !== null">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+        <br>
+        <h2> Compatibility </h2>
+        <h4> Shared Interests: <b class="match"> {{ sharedNumberOfSharedInterests }} </b> </h4>
+        <h4 v-if="numberOfEducationMatches > 0"> Education matches:
+          <b class="match"> {{ numberOfEducationMatches }} </b>
+        </h4>
+        <h4 v-else> Education matches:
+          <b class="notAMatch"> {{ numberOfEducationMatches }} </b>
+        </h4>
+        <h4 v-if="numberOfLanguageMatches > 0"> Language matches:
+          <b class="match"> {{ numberOfLanguageMatches }} </b>
+        </h4>
+        <h4 v-else> Language matches:
+          <b class="notAMatch"> {{ numberOfEducationMatches}} </b>
+        </h4>
+        <h4>
+          <u> Age Matching information </u>
+        </h4>
+        <h5 v-if="isMentorTooOld === false && isMentorTooYoung === false" class="match"> Mentor is within your age range </h5>
+        <span v-else>
+          <h5 v-if="isMentorTooOld" class="notAMatch">
+            Mentor is older than your maximum age.
+          </h5>
+          <h5 v-if="isMentorTooYoung" class="notAMatch">
+            Mentor is younger than your minimum age.
+          </h5>
+        </span>
+        <h5 v-if="isCurrentUserTooOld === false && isCurrentUserTooYoung === false" class="match">
+          You are within the mentors age range
+        </h5>
+        <span v-else>
+          <h5 v-if="isCurrentUserTooOld" class="notAMatch">
+            You are older than the mentors maximum age.
+          </h5>
+          <h5 v-if="isCurrentUserTooYoung" class="notAMatch">
+            You are younger than the mentors minimum age.
+          </h5>
+        </span>
         <br>
       </div>
     </div>
@@ -58,19 +99,11 @@
     <div class="row text-center" v-if="education.length !== null">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
         <br>
-        <h2> Compatibility </h2>
-        <h3> Number of education matches: {{ numberOfEducationMatches }} </h3>
-        <h3> Distance compatibility </h3>
-        <h3> Language matches </h3>
-        <h3> Age match </h3>
-      </div>
-    </div>
-    <br>
-    <div class="row text-center" v-if="education.length !== null">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
-        <br>
-        <h2> Mentoring Format Information </h2>
+        <h2> Mentoring Information </h2>
         <p> Preffered format </p>
+         <h4> <u> Distance Match </u></h4>
+        <h5 v-if="userIsWithinMentorsRange"> You are within mentors travelling range </h5>
+        <h5 v-else class="notAMatch"> You are outside of the mentors maximum travel distance of {{ mentorSettings.maxiumTravelDistanceKM }}</h5>
       </div>
     </div>
     <br>
@@ -212,6 +245,7 @@
         mentorSettingsComplete: this.mentor.mentorSettingsComplete,
         mentors: this.mentor.mentors,
         numberOfEducationMatches: this.mentor.numberOfEducationMatches,
+        numberOfLanguageMatches: this.mentor.numberOfLanguageMatches,
         sharedNumberOfSharedInterests: this.mentor.sharedNumberOfSharedInterests,
         snapchat: this.mentor.snapchat,
         socialMediaComplete: this.mentor.socialMediaComplete,
@@ -257,8 +291,13 @@
     color: red;
   }
 
+  .apply {
+    margin-right: 150px;
+  }
+
+
+
   .sticky {
-    position: fixed;
     /* Fixed/sticky position */
     z-index: 99;
     /* Make sure it does not overlap */
