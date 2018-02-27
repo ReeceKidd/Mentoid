@@ -417,21 +417,29 @@ function addMentorToInPersonList() {
 
 
 function educationMatch() {
-    let educationMatches = []
+    var numberOfEducationMatches = 0
     logDebug('Attempting education match with potential mentor: ' + potentialMentorUserName)
     logDebug('Current users education preferences: ' + JSON.stringify(currentUser.menteeSettings.prefferedEducation))
-    logDebug('Potential mentor: ' + potentialMentorUserName + ' education preferences: ' + JSON.stringify(potentialMentor.mentorSettings.prefferedEducation))
-    currentUser.menteeSettings.prefferedEducation.forEach(currentUserEducation => {
-        potentialMentor.mentorSettings.prefferedEducation.forEach(mentorEducation => {
-            if (currentUserEducation === mentorEducation) {
-                educationMatches.push(currentUserEducation)
+    logDebug('Potential mentor: ' + potentialMentorUserName + ' education: ' + JSON.stringify(potentialMentor.education))
+    currentUser.menteeSettings.prefferedEducation.forEach(educationPreference => {
+        potentialMentor.education.forEach(mentorEducation => {
+            logDebug('Checking match for: ' + educationPreference + ' with ' + potentialMentorUserName + ' degree of education: ' + mentorEducation.degree )
+            if (educationPreference === mentorEducation.degree) {
+                logDebug(educationPreference + ' is a match with ' + potentialMentorUserName + ' degree: ' + 
+                mentorEducation.degree + ' info: ' + 
+                 + mentorEducation.fieldOfStudy + ' at ' + mentorEducation.school)
+                mentorEducation.isMatch = true
+                logDebug(potentialMentorUserName + ' matched object: ' + JSON.stringify(mentorEducation, null, 2))
+                numberOfEducationMatches+= 1
+                logDebug('Number of education matches: ' + numberOfEducationMatches)
+            } else {
+                logDebug(potentialMentorUserName + ' degree of education: ' + mentorEducation.degree + ' is not a match')
+                logDebug('Number of education matches ' + numberOfEducationMatches)
             }
         })
     })
-    potentialMentor.educationMatches = educationMatches
-    logDebug('Potential mentor: ' + potentialMentorUserName + ' education matches are: ' + JSON.stringify(educationMatches))
-    potentialMentor.numberOfEducationMatches = educationMatches.length
-    logDebug('Potential mentor: ' + potentialMentorUserName + 'number of education matches: ' + educationMatches.length)
+    potentialMentor.numberOfEducationMatches = numberOfEducationMatches
+    logDebug('Potential mentor: ' + potentialMentorUserName + 'number of education matches: ' + potentialMentor.numberOfEducationMatches)
 }
 
 function languagesMatch() {
@@ -448,7 +456,7 @@ function languagesMatch() {
     })
     potentialMentor.languageMatches = languageMatches
     logDebug('Potential mentor: ' + potentialMentorUserName + ' language matches are: ' + JSON.stringify(languageMatches))
-    potentialMentor.numberOfEducationMatches = languageMatches.length
+    potentialMentor.numberOfLanguageMatches = languageMatches.length
     logDebug('Potential mentor: ' + potentialMentorUserName + 'number of language matches: ' + languageMatches.length)
 }
 

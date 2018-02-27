@@ -1,16 +1,17 @@
 <template>
   <div class="container">
 
-    <div class="row">
-      <h1 class="text-center"> Find your perfect Mentor </h1>
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 displayBox">
+      <h1> Find your perfect Mentor </h1>
+      <br>
+      <button class="btn btn-primary btn-lg" @click="matchMentors()">Find Mentors</button>
+      <br>
+      <br>
+      </div>
     </div>
 
     <br>
-
-    <div class="row text-center">
-      <button class="btn btn-primary btn-lg" @click="matchMentors()">Find Mentors</button>
-    </div>
-
     <br>
 
     <!-- Advanced search options -->
@@ -238,7 +239,6 @@
       }
     }
   }
-
 </script>
 <style scoped>
   .areaOfInterest {

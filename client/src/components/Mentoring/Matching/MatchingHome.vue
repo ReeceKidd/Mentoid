@@ -1,27 +1,27 @@
 <template>
   <div class="container fullPage">
-
-    <br></br>
-    <br></br>
-    <div class="row text-center">
-      <h1> What would you like to do? </h1>
-    </div>
-
     <br>
-
-    <div class="row text-center">
+    <br>
+    <br>
+    <div class="row text-center displayBox">
+      <h1> What would you like to do? </h1>
+      <br>
       <div class="col-xs-3">
         <br>
       </div>
       <div class="col-xs-3">
         <button class="btn btn-primary btn-lg" @click="navigateTo({ name : 'matching-mentor-list'})"> Find a Mentor </button>
+        <br>
       </div>
       <div class="col-xs-3">
         <button class="btn btn-primary btn-lg" @click="navigateTo({ name : 'matching-mentee-list'})"> Find a Mentee </button>
+      <br>
       </div>
       <div class="col-xs-3">
         <br>
       </div>
+      <br>
+      <br>
     </div>
 
   </div>

@@ -3,15 +3,16 @@
     <!-- If user is logged in they should get redirected to their profile instead -->
     <span v-if="isUserLoggedIn"> {{ navigateTo('/profile/edit-profile')}} </span>
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 displayBox">
+        <br>
         <img src="..\assets\login-logo.png" class="img-responsive center-block">
         <form @submit.prevent="onSubmit">
           <div class="input">
-            <label for="email">Email</label>
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
             <input type="email" id="email" v-model="email">
           </div>
           <div class="input">
-            <label for="password">Password</label>
+            <label for="password"><i class="fas fa-lock"></i> Password</label>
             <input type="password" id="password" v-model="password">
           </div>
           <p class="error" v-if="errorMessage">{{errorMessage}}</p>
@@ -19,6 +20,7 @@
             <button class="btn btn-primary text-center">Submit</button>
           </div>
         </form>
+        <br>
       </div>
     </div>
   </div>

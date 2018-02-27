@@ -314,3 +314,14 @@ Put a fixed button on the mentor match page so it is easy to message or apply at
 Need to figure out how the education match is actually working to ensure its doing what I need it to do. It needs to match
 the mentors education to the mentees preferences, and the mentors preferences to the mentees educational level. And then see
 if their preferences match.  
+
+For the mentor listing seperate it so the buttons are in a seperate row below them and are centered this
+will reduce the ridicolous width of the buttons. 
+Need to also add the spinning Mentoid logo for when it is loading. 
+Need to get rid of the area of interest that has already appeared in other areas of interest. 
+Fix social media screen shot issue. 
+Lower case the username and email. 
+
+Plan for 27th 
+
+Complete the match profile section. 
