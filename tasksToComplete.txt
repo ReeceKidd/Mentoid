@@ -333,3 +333,9 @@ Create the script that will automatically match exisiting users.
 Complete users profiles showing exisitng mentors and mentees. 
 Allow users to accept requests from other users. 
 Add the waiting list functionality. 
+
+Plan for the 28th, complete the fun run through of the apply section. Application, waiting list and manaing relationships. 
+
+//Fix the age bug. 
+//Fix the jump to mentee settings bug. 
+//Complte the drop down menu for the manage relationship page for each section. 

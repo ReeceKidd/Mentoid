@@ -1,6 +1,6 @@
 body {
-    background-color: #e9ebee;
-    color: #1d2129;
+  background-color: #e9ebee;
+  color: #1d2129;
 }
 
 .displayBox {
@@ -9,26 +9,26 @@ body {
 }
 
 .areaOfInterest {
-    background-color: #006400;
-    color: white;
-    border-radius: 2px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+  background-color: #006400;
+  color: white;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
 .otherInterest {
-    background-color: #606060;
-    color: white;
-    border-radius: 2px;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 2px;
+  background-color: #606060;
+  color: white;
+  border-radius: 2px;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
 }
 
 .navbar-text>a {
@@ -292,6 +292,17 @@ h1,
   background-color: black;
   border-color: #333333;
 }
+
+.btn-danger {
+  color: #fff;
+  border-color: #333333;
+}
+
+.btn-danger:hover {
+    background-color: black;
+    border-color: #333333;
+  }
+
 
 .btn-primary:hover {
   color: #fff;

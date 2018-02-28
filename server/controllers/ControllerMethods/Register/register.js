@@ -127,6 +127,8 @@ module.exports = register = (req, res) => {
         newUser.mentees = []
         newUser.potentialMentors = [],
         newUser.potentialMentees = [],
+        newUser.potentialMentees = [],
+        newUser.pastMentors = [],
         newUser.basicRegistrationComplete = true
         newUser.areasOfInterestRegistrationComplete = false
         newUser.userRegistrationComplete = false

@@ -1860,3 +1860,773 @@
 
 11:18:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: WinnaVandame11 has been added to the in person list of mentors.
 
+11:30:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61:  is attempting to get potential mentors with request: {"userID":"5a93142ca4477412989dc1ed","userName":"ChristynaBarbieri61","sortType":"random"}
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Number of potential mentors: 48
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: AarenChavarri41 has online as a preffered mentoring option
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: AarenChavarri41 has been added to the online list of mentors.
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ArabelaElking71 has online as a preffered mentoring option
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ArabelaElking71 has been added to the online list of mentors.
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: AvrilJacqueline31 has online as a preffered mentoring option
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: AvrilJacqueline31 has been added to the online list of mentors.
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: BenedictaAmbos51 has in person as a preffered mentoring option
+
+11:30:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: BenedictaAmbos51 has been added to the in person list of mentors.
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: BidgetKofmehl91 has online as a preffered mentoring option
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: BidgetKofmehl91 has been added to the online list of mentors.
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristallePapale11 has online as a preffered mentoring option
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ChristallePapale11 has been added to the online list of mentors.
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ElitaStrausberg61 has online as a preffered mentoring option
+
+11:30:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ElitaStrausberg61 has been added to the online list of mentors.
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: FionaWafer51 has in person as a preffered mentoring option
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: FionaWafer51 has been added to the in person list of mentors.
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: InezTrantham21 has in person as a preffered mentoring option
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: InezTrantham21 has been added to the in person list of mentors.
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JaniceElleby31 has in person as a preffered mentoring option
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JaniceElleby31 has been added to the in person list of mentors.
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JaymeShuart81 has in person as a preffered mentoring option
+
+11:30:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JaymeShuart81 has been added to the in person list of mentors.
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JoelleOsthoff91 has online as a preffered mentoring option
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JoelleOsthoff91 has been added to the online list of mentors.
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KakalinaPlocinski31 has online as a preffered mentoring option
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KakalinaPlocinski31 has been added to the online list of mentors.
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KaraFelicio51 has in person as a preffered mentoring option
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KaraFelicio51 has been added to the in person list of mentors.
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KathrineScherwinski31 has online as a preffered mentoring option
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KathrineScherwinski31 has been added to the online list of mentors.
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: LadonnaKarnik31 has online as a preffered mentoring option
+
+11:30:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: LadonnaKarnik31 has been added to the online list of mentors.
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: LynneGouid21 has in person as a preffered mentoring option
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: LynneGouid21 has been added to the in person list of mentors.
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: MalissaPaxon61 has in person as a preffered mentoring option
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: MalissaPaxon61 has been added to the in person list of mentors.
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: MorenaMascote51 has in person as a preffered mentoring option
+
+11:30:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: MorenaMascote51 has been added to the in person list of mentors.
+
+11:30:12 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:12 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: TereseQiang41 has online as a preffered mentoring option
+
+11:30:12 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: TereseQiang41 has been added to the online list of mentors.
+
+11:30:12 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+11:30:12 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: WinnaVandame11 has in person as a preffered mentoring option
+
+11:30:12 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: WinnaVandame11 has been added to the in person list of mentors.
+
+12:34:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61:  is attempting to get potential mentors with request: {"userID":"5a93142ca4477412989dc1ed","userName":"ChristynaBarbieri61","sortType":"random"}
+
+12:34:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Number of potential mentors: 48
+
+12:34:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: AarenChavarri41 has online as a preffered mentoring option
+
+12:34:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: AarenChavarri41 has been added to the online list of mentors.
+
+12:34:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ArabelaElking71 has online as a preffered mentoring option
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ArabelaElking71 has been added to the online list of mentors.
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: AvrilJacqueline31 has online as a preffered mentoring option
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: AvrilJacqueline31 has been added to the online list of mentors.
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: BenedictaAmbos51 has in person as a preffered mentoring option
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: BenedictaAmbos51 has been added to the in person list of mentors.
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: BidgetKofmehl91 has online as a preffered mentoring option
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: BidgetKofmehl91 has been added to the online list of mentors.
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristallePapale11 has online as a preffered mentoring option
+
+12:34:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ChristallePapale11 has been added to the online list of mentors.
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ElitaStrausberg61 has online as a preffered mentoring option
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ElitaStrausberg61 has been added to the online list of mentors.
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: FionaWafer51 has in person as a preffered mentoring option
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: FionaWafer51 has been added to the in person list of mentors.
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: InezTrantham21 has in person as a preffered mentoring option
+
+12:34:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: InezTrantham21 has been added to the in person list of mentors.
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JaniceElleby31 has in person as a preffered mentoring option
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JaniceElleby31 has been added to the in person list of mentors.
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JaymeShuart81 has in person as a preffered mentoring option
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JaymeShuart81 has been added to the in person list of mentors.
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JoelleOsthoff91 has online as a preffered mentoring option
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JoelleOsthoff91 has been added to the online list of mentors.
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KakalinaPlocinski31 has online as a preffered mentoring option
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KakalinaPlocinski31 has been added to the online list of mentors.
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KaraFelicio51 has in person as a preffered mentoring option
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KaraFelicio51 has been added to the in person list of mentors.
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KathrineScherwinski31 has online as a preffered mentoring option
+
+12:34:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KathrineScherwinski31 has been added to the online list of mentors.
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: LadonnaKarnik31 has online as a preffered mentoring option
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: LadonnaKarnik31 has been added to the online list of mentors.
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: LynneGouid21 has in person as a preffered mentoring option
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: LynneGouid21 has been added to the in person list of mentors.
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: MalissaPaxon61 has in person as a preffered mentoring option
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: MalissaPaxon61 has been added to the in person list of mentors.
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: MorenaMascote51 has in person as a preffered mentoring option
+
+12:34:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: MorenaMascote51 has been added to the in person list of mentors.
+
+12:34:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: TereseQiang41 has online as a preffered mentoring option
+
+12:34:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: TereseQiang41 has been added to the online list of mentors.
+
+12:34:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:34:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: WinnaVandame11 has in person as a preffered mentoring option
+
+12:34:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: WinnaVandame11 has been added to the in person list of mentors.
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61:  is attempting to get potential mentors with request: {"userID":"5a93142ca4477412989dc1ed","userName":"ChristynaBarbieri61","sortType":"random"}
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Number of potential mentors: 48
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: AarenChavarri41 has online as a preffered mentoring option
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: AarenChavarri41 has been added to the online list of mentors.
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ArabelaElking71 has online as a preffered mentoring option
+
+12:40:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ArabelaElking71 has been added to the online list of mentors.
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: AvrilJacqueline31 has online as a preffered mentoring option
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: AvrilJacqueline31 has been added to the online list of mentors.
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: BenedictaAmbos51 has in person as a preffered mentoring option
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: BenedictaAmbos51 has been added to the in person list of mentors.
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: BidgetKofmehl91 has online as a preffered mentoring option
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: BidgetKofmehl91 has been added to the online list of mentors.
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristallePapale11 has online as a preffered mentoring option
+
+12:40:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ChristallePapale11 has been added to the online list of mentors.
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ElitaStrausberg61 has online as a preffered mentoring option
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: ElitaStrausberg61 has been added to the online list of mentors.
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: FionaWafer51 has in person as a preffered mentoring option
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: FionaWafer51 has been added to the in person list of mentors.
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: InezTrantham21 has in person as a preffered mentoring option
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: InezTrantham21 has been added to the in person list of mentors.
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JaniceElleby31 has in person as a preffered mentoring option
+
+12:40:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JaniceElleby31 has been added to the in person list of mentors.
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JaymeShuart81 has in person as a preffered mentoring option
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JaymeShuart81 has been added to the in person list of mentors.
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: JoelleOsthoff91 has online as a preffered mentoring option
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: JoelleOsthoff91 has been added to the online list of mentors.
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KakalinaPlocinski31 has online as a preffered mentoring option
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KakalinaPlocinski31 has been added to the online list of mentors.
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KaraFelicio51 has in person as a preffered mentoring option
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KaraFelicio51 has been added to the in person list of mentors.
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: KathrineScherwinski31 has online as a preffered mentoring option
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: KathrineScherwinski31 has been added to the online list of mentors.
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: LadonnaKarnik31 has online as a preffered mentoring option
+
+12:40:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: LadonnaKarnik31 has been added to the online list of mentors.
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: LynneGouid21 has in person as a preffered mentoring option
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: LynneGouid21 has been added to the in person list of mentors.
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: MalissaPaxon61 has in person as a preffered mentoring option
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: MalissaPaxon61 has been added to the in person list of mentors.
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: MorenaMascote51 has in person as a preffered mentoring option
+
+12:40:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: MorenaMascote51 has been added to the in person list of mentors.
+
+12:40:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: TereseQiang41 has online as a preffered mentoring option
+
+12:40:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: TereseQiang41 has been added to the online list of mentors.
+
+12:40:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: ChristynaBarbieri61 has both online and in person as options
+
+12:40:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: WinnaVandame11 has in person as a preffered mentoring option
+
+12:40:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristynaBarbieri61: Potential mentor: WinnaVandame11 has been added to the in person list of mentors.
+
+13:23:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11:  is attempting to get potential mentors with request: {"userID":"5a931803a4477412989ddac8","userName":"ChristallePapale11","sortType":"random"}
+
+13:23:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Number of potential mentors: 58
+
+13:23:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: AarenChavarri41 has online as a preffered mentoring option
+
+13:23:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: AarenChavarri41 has been added to the online list of mentors.
+
+13:23:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: AlfiRansby01 has in person as a preffered mentoring option
+
+13:23:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: AlfiRansby01 has been added to the in person list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarbeMarcum71 has online as a preffered mentoring option
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarbeMarcum71 has been added to the online list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarbeMarcum71 has online as a preffered mentoring option
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarbeMarcum71 has been added to the online list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarrieTurvey51 has online as a preffered mentoring option
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarrieTurvey51 has been added to the online list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BenedictaAmbos51 has in person as a preffered mentoring option
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BenedictaAmbos51 has been added to the in person list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BonnieHowell81 has in person as a preffered mentoring option
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BonnieHowell81 has been added to the in person list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: CalPhilon11 has in person as a preffered mentoring option
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: CalPhilon11 has been added to the in person list of mentors.
+
+13:23:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ClarestaErtel51 has in person as a preffered mentoring option
+
+13:23:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: ClarestaErtel51 has been added to the in person list of mentors.
+
+13:23:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: EmmyeHusch81 has in person as a preffered mentoring option
+
+13:23:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: EmmyeHusch81 has been added to the in person list of mentors.
+
+13:23:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: FionaWafer51 has in person as a preffered mentoring option
+
+13:23:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: FionaWafer51 has been added to the in person list of mentors.
+
+13:23:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: HailyVolny41 has online as a preffered mentoring option
+
+13:23:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: HailyVolny41 has been added to the online list of mentors.
+
+13:23:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: HedwigaManesis71 has in person as a preffered mentoring option
+
+13:23:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: HedwigaManesis71 has been added to the in person list of mentors.
+
+13:23:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KaronPuyleart81 has online as a preffered mentoring option
+
+13:23:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KatuschaGmyrek71 has online as a preffered mentoring option
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KatuschaGmyrek71 has been added to the online list of mentors.
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KristaTrass61 has in person as a preffered mentoring option
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KristaTrass61 has been added to the in person list of mentors.
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: LilaFruth61 has online as a preffered mentoring option
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: LilaFruth61 has been added to the online list of mentors.
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: LorianneZozzaro51 has in person as a preffered mentoring option
+
+13:23:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: LorianneZozzaro51 has been added to the in person list of mentors.
+
+13:23:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: OdeliaBusko31 has in person as a preffered mentoring option
+
+13:23:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: OdeliaBusko31 has been added to the in person list of mentors.
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: SalomaCendejas11 has online as a preffered mentoring option
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: SalomaCendejas11 has been added to the online list of mentors.
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: SydelleVickstrom11 has in person as a preffered mentoring option
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: SydelleVickstrom11 has been added to the in person list of mentors.
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: TereseQiang41 has online as a preffered mentoring option
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: TereseQiang41 has been added to the online list of mentors.
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: WhitneyGrotenhuis61 has online as a preffered mentoring option
+
+13:23:34 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: WhitneyGrotenhuis61 has been added to the online list of mentors.
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11:  is attempting to get potential mentors with request: {"userID":"5a931803a4477412989ddac8","userName":"ChristallePapale11","sortType":"random"}
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Number of potential mentors: 58
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: AarenChavarri41 has online as a preffered mentoring option
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: AarenChavarri41 has been added to the online list of mentors.
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: AlfiRansby01 has in person as a preffered mentoring option
+
+13:23:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: AlfiRansby01 has been added to the in person list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarbeMarcum71 has online as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarbeMarcum71 has been added to the online list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarbeMarcum71 has online as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarbeMarcum71 has been added to the online list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarrieTurvey51 has online as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarrieTurvey51 has been added to the online list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BenedictaAmbos51 has in person as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BenedictaAmbos51 has been added to the in person list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BonnieHowell81 has in person as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BonnieHowell81 has been added to the in person list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: CalPhilon11 has in person as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: CalPhilon11 has been added to the in person list of mentors.
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ClarestaErtel51 has in person as a preffered mentoring option
+
+13:23:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: ClarestaErtel51 has been added to the in person list of mentors.
+
+13:23:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: EmmyeHusch81 has in person as a preffered mentoring option
+
+13:23:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: EmmyeHusch81 has been added to the in person list of mentors.
+
+13:23:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: FionaWafer51 has in person as a preffered mentoring option
+
+13:23:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: FionaWafer51 has been added to the in person list of mentors.
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: HailyVolny41 has online as a preffered mentoring option
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: HailyVolny41 has been added to the online list of mentors.
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: HedwigaManesis71 has in person as a preffered mentoring option
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: HedwigaManesis71 has been added to the in person list of mentors.
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KaronPuyleart81 has online as a preffered mentoring option
+
+13:23:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KatuschaGmyrek71 has online as a preffered mentoring option
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KatuschaGmyrek71 has been added to the online list of mentors.
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KristaTrass61 has in person as a preffered mentoring option
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KristaTrass61 has been added to the in person list of mentors.
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: LilaFruth61 has online as a preffered mentoring option
+
+13:23:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: LilaFruth61 has been added to the online list of mentors.
+
+13:23:58 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:58 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: LorianneZozzaro51 has in person as a preffered mentoring option
+
+13:23:58 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: LorianneZozzaro51 has been added to the in person list of mentors.
+
+13:23:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: OdeliaBusko31 has in person as a preffered mentoring option
+
+13:23:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: OdeliaBusko31 has been added to the in person list of mentors.
+
+13:23:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:23:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: SalomaCendejas11 has online as a preffered mentoring option
+
+13:23:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: SalomaCendejas11 has been added to the online list of mentors.
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: SydelleVickstrom11 has in person as a preffered mentoring option
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: SydelleVickstrom11 has been added to the in person list of mentors.
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: TereseQiang41 has online as a preffered mentoring option
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: TereseQiang41 has been added to the online list of mentors.
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: WhitneyGrotenhuis61 has online as a preffered mentoring option
+
+13:24:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: WhitneyGrotenhuis61 has been added to the online list of mentors.
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11:  is attempting to get potential mentors with request: {"userID":"5a931803a4477412989ddac8","userName":"ChristallePapale11","sortType":"random"}
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Number of potential mentors: 58
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: AarenChavarri41 has online as a preffered mentoring option
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: AarenChavarri41 has been added to the online list of mentors.
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: AlfiRansby01 has in person as a preffered mentoring option
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: AlfiRansby01 has been added to the in person list of mentors.
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarbeMarcum71 has online as a preffered mentoring option
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarbeMarcum71 has been added to the online list of mentors.
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarbeMarcum71 has online as a preffered mentoring option
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarbeMarcum71 has been added to the online list of mentors.
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BarrieTurvey51 has online as a preffered mentoring option
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BarrieTurvey51 has been added to the online list of mentors.
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BenedictaAmbos51 has in person as a preffered mentoring option
+
+13:24:16 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BenedictaAmbos51 has been added to the in person list of mentors.
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: BonnieHowell81 has in person as a preffered mentoring option
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: BonnieHowell81 has been added to the in person list of mentors.
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: CalPhilon11 has in person as a preffered mentoring option
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: CalPhilon11 has been added to the in person list of mentors.
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ClarestaErtel51 has in person as a preffered mentoring option
+
+13:24:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: ClarestaErtel51 has been added to the in person list of mentors.
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: EmmyeHusch81 has in person as a preffered mentoring option
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: EmmyeHusch81 has been added to the in person list of mentors.
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: FionaWafer51 has in person as a preffered mentoring option
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: FionaWafer51 has been added to the in person list of mentors.
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: HailyVolny41 has online as a preffered mentoring option
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: HailyVolny41 has been added to the online list of mentors.
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: HedwigaManesis71 has in person as a preffered mentoring option
+
+13:24:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: HedwigaManesis71 has been added to the in person list of mentors.
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KaronPuyleart81 has online as a preffered mentoring option
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KatuschaGmyrek71 has online as a preffered mentoring option
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KatuschaGmyrek71 has been added to the online list of mentors.
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: KristaTrass61 has in person as a preffered mentoring option
+
+13:24:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: KristaTrass61 has been added to the in person list of mentors.
+
+13:24:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: LilaFruth61 has online as a preffered mentoring option
+
+13:24:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: LilaFruth61 has been added to the online list of mentors.
+
+13:24:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: LorianneZozzaro51 has in person as a preffered mentoring option
+
+13:24:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: LorianneZozzaro51 has been added to the in person list of mentors.
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: OdeliaBusko31 has in person as a preffered mentoring option
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: OdeliaBusko31 has been added to the in person list of mentors.
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: SalomaCendejas11 has online as a preffered mentoring option
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: SalomaCendejas11 has been added to the online list of mentors.
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: SydelleVickstrom11 has in person as a preffered mentoring option
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: SydelleVickstrom11 has been added to the in person list of mentors.
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: TereseQiang41 has online as a preffered mentoring option
+
+13:24:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: TereseQiang41 has been added to the online list of mentors.
+
+13:24:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: ChristallePapale11 has both online and in person as options
+
+13:24:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: WhitneyGrotenhuis61 has online as a preffered mentoring option
+
+13:24:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--ChristallePapale11: Potential mentor: WhitneyGrotenhuis61 has been added to the online list of mentors.
+

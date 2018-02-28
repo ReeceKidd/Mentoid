@@ -101,13 +101,38 @@ module.exports = applyForMentorship = (req, res) => {
                                 } else if (!updatedMentor) {
                                     logger.error(err)
                                     res.status(600).send({
-                                        message: 'Could not find user with ID: ' + req.body._id
+                                        message: 'Could not find user with ID: ' + req.body.userID
                                     })
                                     return
                                 } else {
                                     logger.error(user.userName + ' pushed to ' + updatedMentor.userName + ' potential mentees list.')
+
+                                    // Pushes mentor onto users potential mentors list
+                                    mentor.awaitingResponse = true
+                                    User.findByIdAndUpdate(req.body.userID, {
+                                            $push: {
+                                                potentialMentors: mentor
+                                            }
+                                        },
+                                        function (err, updatedUser) {
+                                            if (err) {
+                                                logger.error(err)
+                                                res.status(500).send({
+                                                    message: 'Unable to push ' + mentor.userName + ' onto ' + user.userName + ' potentialMentor list. Because of server error'
+                                                })
+                                                return
+                                            } else if (!updatedUser) {
+                                                logger.error(err)
+                                                res.status(600).send({
+                                                    message: 'Could not find mentor with ID: ' + req.body.mentorID
+                                                })
+                                                return
+                                            } else {
+                                                logger.error(mentor.userName + ' pushed to ' + updatedUser.userName + ' potential mentors list.')
+                                            }
+                                        })
+                                    //Success Message
                                     res.status(200).send('You where successfully added to ' + updatedMentor.userName + "'s potential mentees list.")
-                                    return
                                 }
                             })
                     }

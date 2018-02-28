@@ -84,6 +84,11 @@ routes.post('/generate/update-has-profile-picture', generatorController.updateHa
 //Matching Routes
 routes.get('/get/potential-mentors/:userID/:userName/:sortType', matchingController.getPotentialMentors)
 routes.post('/apply-for-mentorship', matchingController.applyForMentorship)
+routes.get('/get/manage-relationships/:userID', matchingController.getManageRelationships)
+routes.post('/accept/potential-mentee', matchingController.acceptPotentialMentee)
+//routes.post('/accept/potential-mentor', matchingController.acceptPotentialMentor)
+//routes.post('/delete/potential-mentee', matchingController.deletePotentialMentee)
+//routes.post('/delete/potential-mentor', matchingController.deletePotentialMentor)
 
 //User Routes
 routes.post('/login', userController.login)
