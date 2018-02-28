@@ -382,20 +382,19 @@ function generateDistanceInformation() {
 
 
 function generateSortingInformation() {
-
+    mentorEducationPreferencesMatch()
     educationMatch()
     languagesMatch()
     ageMatch()
     addSimilarInterestsFieldToPotentialMentor()
     setNumberOfSharedInterests()
-
 }
 
 function ageMatch() {
-    potentialMentor.isCurrentUserTooOld = isCurrentUserTooOld()
-    potentialMentor.isCurrentUserTooYoung = isCurrentUserTooYoung()
-    potentialMentor.isMentorTooOld = isMentorTooOld()
-    potentialMentor.isMentorTooYoung = isMentorTooYoung()
+    isCurrentUserTooOld()
+    isCurrentUserTooYoung()
+    isMentorTooOld()
+    isMentorTooYoung()
     logAgeInformation()
 }
 
@@ -415,6 +414,25 @@ function addMentorToInPersonList() {
     logError('Potential mentor: ' + potentialMentorUserName + ' has been added to the in person list of mentors.')
 }
 
+function mentorEducationPreferencesMatch() {
+    let numberOfEducationPreferencesMatches = 0
+    let educationMatches = []
+    logDebug('Checking current users education again mentors preferences')
+    logDebug('Potential mentor: ' + potentialMentorUserName + ' mentoring education are: ' + potentialMentor.mentorSettings.prefferedEducation)
+    currentUser.education.forEach(educationChoice => {
+        potentialMentor.mentorSettings.prefferedEducation.forEach(prefferedEducationChoice => {
+            if (educationChoice.degree === prefferedEducationChoice) {
+                logDebug(educationChoice.degree + ' is a match with ' + potentialMentorUserName + ' preffered education level: ' + prefferedEducationChoice)
+                educationMatches.push(prefferedEducationChoice)
+            } else {
+                logDebug(potentialMentorUserName + ' preffered education choice: ' + prefferedEducationChoice + ' was not a match with ' + educationChoice)
+            }
+        })
+    })
+    numberOfEducationPreferencesMatches = educationMatches.length
+    potentialMentor.numberOfEducationPreferencesMatches = numberOfEducationPreferencesMatches
+    logDebug('Number of preferences matches: ' + potentialMentor.numberOfEducationPreferencesMatches)
+}
 
 function educationMatch() {
     var numberOfEducationMatches = 0
@@ -423,14 +441,14 @@ function educationMatch() {
     logDebug('Potential mentor: ' + potentialMentorUserName + ' education: ' + JSON.stringify(potentialMentor.education))
     currentUser.menteeSettings.prefferedEducation.forEach(educationPreference => {
         potentialMentor.education.forEach(mentorEducation => {
-            logDebug('Checking match for: ' + educationPreference + ' with ' + potentialMentorUserName + ' degree of education: ' + mentorEducation.degree )
+            logDebug('Checking match for: ' + educationPreference + ' with ' + potentialMentorUserName + ' degree of education: ' + mentorEducation.degree)
             if (educationPreference === mentorEducation.degree) {
-                logDebug(educationPreference + ' is a match with ' + potentialMentorUserName + ' degree: ' + 
-                mentorEducation.degree + ' info: ' + 
-                 + mentorEducation.fieldOfStudy + ' at ' + mentorEducation.school)
+                logDebug(educationPreference + ' is a match with ' + potentialMentorUserName + ' degree: ' +
+                    mentorEducation.degree + ' info: ' +
+                    +mentorEducation.fieldOfStudy + ' at ' + mentorEducation.school)
                 mentorEducation.isMatch = true
                 logDebug(potentialMentorUserName + ' matched object: ' + JSON.stringify(mentorEducation, null, 2))
-                numberOfEducationMatches+= 1
+                numberOfEducationMatches += 1
                 logDebug('Number of education matches: ' + numberOfEducationMatches)
             } else {
                 logDebug(potentialMentorUserName + ' degree of education: ' + mentorEducation.degree + ' is not a match')
@@ -514,30 +532,34 @@ function getOutOfRangeDistance() {
 
 function isMentorTooYoung() {
     if (currentUser.menteeSettings.minimumAge < potentialMentor.age) {
-        return false
+         let mentorTooYoungBy = potentialMentor.age - currentUser.menteeSettings.minimumAge 
+         logDebug(potentialMentorUserName + ' is too young by: ' + mentorTooYoungBy + ' years. ')
+         potentialMentor.mentorTooYoungBy = mentorTooYoungBy
     }
-    return true
 }
 
 function isMentorTooOld() {
     if (currentUser.menteeSettings.maximumAge > potentialMentor.age) {
-        return false
+        let mentorTooOldBy = potentialMentor.age - currentUser.menteeSettings.maximumAge
+        logDebug(potentialMentorUserName + ' is too old by ' + mentorTooOldBy + 'years. ') 
+        potentialMentor.mentorTooOldBy = mentorTooOldBy
     }
-    return true
 }
 
 function isCurrentUserTooYoung() {
     if (potentialMentor.mentorSettings.minimumAge < currentUser.age) {
-        return false
+        let currentUserTooYoungBy = potentialMentor.mentorSettings.minimumAge - currentUser.age
+        logDebug('Current user is too young by: ' + currentUserTooYoungBy + ' number of years. ')
+        potentialMentor.currentUserTooYoungBy = currentUserTooYoungBy
     }
-    return true
 }
 
 function isCurrentUserTooOld() {
     if (potentialMentor.mentorSettings.maximumAge > currentUser.age) {
-        return false
+         let currentUserTooOldBy =  currentUser.age - potentialMentor.mentorSettings.maximumAge
+         logDebug('Current user is too old by: ' + currentUserTooOldBy + ' number of years. ')
+         potentialMentor.currentUserTooOldBy = currentUserTooOldBy
     }
-    return true
 }
 
 //Handle logging for the matching section. 
@@ -583,18 +605,6 @@ function logAgeInformation() {
     logDebug('Users preferred maximum age of mentor: ' + currentUser.menteeSettings.maximumAge)
     logDebug('Potential mentors preffered minimum age of mentee ' + potentialMentor.mentorSettings.minimumAge)
     logDebug('Potential mentors preffered maximum age of mentee ' + potentialMentor.mentorSettings.maximumAge)
-    if (isMentorTooYoung()) {
-        logDebug(potentialMentorsNameMsg + ' is younger than users minimum age:' + currentUser.menteeSettings.minimumAge)
-    }
-    if (isMentorTooOld()) {
-        logDebug(potentialMentorsNameMsg + ' is older than users maximum age: ' + currentUser.menteeSettings.maximumAge)
-    }
-    if (isCurrentUserTooOld()) {
-        logDebug('User is older than ' + potentialMentorsNameMsg + "'s maximum age: " + potentialMentor.mentorSettings.minimumAge)
-    }
-    if (isCurrentUserTooYoung()) {
-        logDebug('User is younger than ' + potentialMentorsNameMsg + "'s minimum age: " + potentialMentor.mentorSettings.maximumAge)
-    }
 }
 
 function logNumberOfPotentialMentors() {

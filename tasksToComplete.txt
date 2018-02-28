@@ -324,4 +324,12 @@ Lower case the username and email.
 
 Plan for 27th 
 
-Complete the match profile section. 
+Complete the match profile section. (1 hour)
+Fix the bug in the age section. 
+Eventually come up with a compatibility score. 
+Revamp the design of the other completed sections of the website to use the display box. 
+Complete the mentee matching. 
+Create the script that will automatically match exisiting users. 
+Complete users profiles showing exisitng mentors and mentees. 
+Allow users to accept requests from other users. 
+Add the waiting list functionality. 

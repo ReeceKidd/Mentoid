@@ -86,6 +86,8 @@ const User = new Schema({
   },
   mentors: [],
   mentees: [],
+  potentialMentees: [],
+  potentialMentors: [],
   location: {
     latitude: Number,
     longitude: Number
