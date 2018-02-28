@@ -339,3 +339,11 @@ Plan for the 28th, complete the fun run through of the apply section. Applicatio
 //Fix the age bug. 
 //Fix the jump to mentee settings bug. 
 //Complte the drop down menu for the manage relationship page for each section. 
+
+30 mins
+Drop down section for each, 
+Fix the column to 8
+Add the numbers beside the titles. 
+
+Fix the organization of the manage relationship routes and create getters for each and then abstract them into seperate components,
+to make it easier to organize. 

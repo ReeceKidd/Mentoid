@@ -44,6 +44,7 @@ const userController = require('../controllers/userController.js')
 const testController = require('../controllers/testController.js')
 const routingController = require('../controllers/routingController.js')
 const matchingController = require('../controllers/matchingController.js')
+const manageRelationshipController = require('../controllers/manageRelationshipsController.js')
 const generatorController = require('../controllers/generatorController.js')
 
 //Admin routes
@@ -84,8 +85,17 @@ routes.post('/generate/update-has-profile-picture', generatorController.updateHa
 //Matching Routes
 routes.get('/get/potential-mentors/:userID/:userName/:sortType', matchingController.getPotentialMentors)
 routes.post('/apply-for-mentorship', matchingController.applyForMentorship)
-routes.get('/get/manage-relationships/:userID', matchingController.getManageRelationships)
-routes.post('/accept/potential-mentee', matchingController.acceptPotentialMentee)
+
+//Manage Relationship Routes 
+routes.get('/get/manage-relationships/:userID', manageRelationshipController.getManageRelationships)
+routes.get('/get/mentees/:userID', manageRelationshipController.getMentees)
+routes.get('/get/mentors/:userID', manageRelationshipController.getMentors)
+routes.get('/get/potential-mentees/:userID', manageRelationshipController.getPotentialMentees)
+routes.get('/get/potential-mentors/:userID', manageRelationshipController.getPotentialMentors)
+routes.get('/get/past-mentees/:userID', manageRelationshipController.getPastMentees)
+routes.get('/get/past-mentors/:userID', manageRelationshipController.getPastMentors)
+
+//routes.post('/accept/potential-mentee', manageRelationshipController.acceptPotentialMentee)
 //routes.post('/accept/potential-mentor', matchingController.acceptPotentialMentor)
 //routes.post('/delete/potential-mentee', matchingController.deletePotentialMentee)
 //routes.post('/delete/potential-mentor', matchingController.deletePotentialMentor)

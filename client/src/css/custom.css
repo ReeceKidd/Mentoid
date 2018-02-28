@@ -100,12 +100,6 @@ h1,
   background-color: #C8E8FC;
 }
 
-.collapsing,
-.in {
-  width: 100%;
-  background-color: #ffffff;
-}
-
 .footer-distributed {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
