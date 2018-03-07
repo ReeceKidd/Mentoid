@@ -2,12 +2,13 @@
   <!-- Span tags on this page are placed in the element above so redirection lands in the right place -->
   <div class="container-fluid">
     <div class="row text-center">
-      <div class="col-xs-12">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <!-- Imported components -->
         <upload-profile-picture></upload-profile-picture>
         <edit-name></edit-name>
         <edit-user-name></edit-user-name>
         <edit-email></edit-email>
+        <br>
         <!-- End of imported components -->
       </div>
     </div>
@@ -15,13 +16,14 @@
     <hr>
 
     <div class="row text-center">
-      <div class="col-xs-12">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h2 class="text-center">
           PROFILE COMPLETENESS
           <br>
           <br>
           <profile-completeness></profile-completeness>
         </h2>
+        <br>
       </div>
       <span id="social-media"></span>
     </div>
@@ -29,8 +31,9 @@
     <hr>
 
     <div class="row text-center">
-      <div class="col-xs-12">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h2 id="socialMedia"> SOCIAL MEDIA </h2>
+        <br>
         <edit-social-media></edit-social-media>
         <span id="areas-of-interest"></span>
       </div>

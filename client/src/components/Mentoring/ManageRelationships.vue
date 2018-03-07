@@ -2,8 +2,7 @@
   <div class="container">
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-        <br>
-        <h1> Manage Mentoring Relationships </h1>
+        <h1> Manage Relationships </h1>
         <br>
       </div>
     </div>

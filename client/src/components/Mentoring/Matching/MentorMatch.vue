@@ -12,7 +12,7 @@
       <p v-if="successMessage !=null" class="successMessage"> {{ successMessage }} </p>
       <br>
       <br>
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <br>
         <img :src="profilePictureURL" class="img-responsive uploadImage center-block" v-if="hasProfilePicture">
         <img :src="imageSrc" class="img-responsive uploadImage center-block" v-else>
@@ -23,7 +23,7 @@
     </div>
     <br>
     <div class="row text-center" v-if="education.length !== null">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <br>
         <h2> Compatibility </h2>
         <h4> Shared Interests:
@@ -77,13 +77,13 @@
     </div>
     <br>
     <div class="row text-center">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <p class="infoMessage"> Number of shared interests: {{ sharedNumberOfSharedInterests}} </p>
         <br>
         <h2> Mentoring Areas of Interest </h2>
         <div v-if="hasMoreExperienceIn !== null">
           <span v-for="(areaOfInterest, index) in hasMoreExperienceIn" :key="index">
-            <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>
+            <span class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </span>&nbsp;
           </span>
         </div>
         <div v-if="hasLessExperienceIn.length !== 0 && hasSameExperienceIn.length !== 0">
@@ -91,10 +91,10 @@
             <u> Shared Interests </u>
           </h3>
           <span v-if="hasSameExperienceIn.length !== 0" v-for="(areaOfInterest, index) in hasSameExperienceIn" :key="index">
-            <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>
+            <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>&nbsp;
           </span>
           <span v-if="hasLessExperienceIn.length !== 0" v-for="(areaOfInterest, index) in mentor.hasLessExperienceIn" :key="index">
-            <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>
+            <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>&nbsp;
           </span>
         </div>
         <div>
@@ -103,7 +103,7 @@
           </h3>
           <br>
           <span v-if="areasOfInterest.length !== 0" v-for="(areaOfInterest, index) in areasOfInterest" :key="index">
-            <p class="otherInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.years }} </p>,
+            <p class="otherInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.years }} </p>&nbsp;
           </span>
           <br>
           <br>
@@ -113,15 +113,16 @@
     </div>
     <br>
     <div class="row text-center" v-if="education.length !== null">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <br>
         <h2> Mentoring Information </h2>
         <h4> Preffered formats: </h4>
         <span v-for="(format, index) in mentorSettings.prefferedMentoringFormats" :key="index">
-          <h5>
-            <b>{{format }} </b>
-          </h5>
+          <h3>
+            <b><i>{{format }} </i></b>
+          </h3>
         </span>
+        <br>
         <div v-if="hasInPerson()">
           <h4>
             <u> Distance Match </u>
@@ -129,21 +130,21 @@
           <h5 v-if="userIsWithinMentorsRange"> You are within mentors travelling range
             <i class="fas fa-check match"></i>
           </h5>
-          <h5 v-else class="notAMatch"> You are outside of the mentors maximum travel distance of {{ mentorSettings.maxiumTravelDistanceKM }}
-            <i class="fas fa-check notAMatch"></i>
+          <h5 v-else> You are outside of the mentors maximum travel distance of {{ mentorSettings.maxiumTravelDistanceKM }}
+            <i class="fas fa-times notAMatch"></i>
           </h5>
           <h5 v-if="isWithinUsersRange"> Mentor is withing your range
             <i class="fas fa-check match"></i>
           </h5>
           <h5 v-else> Mentor is outside of your maximum travel distance
-            <i class="fas fa-check notAMatch"></i>
+            <i class="fas fa-times notAMatch"></i>
           </h5>
         </div>
       </div>
     </div>
     <br>
     <div class="row text-center" v-if="education.length !== null">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <p class="infoMessage"> Number of education matches: {{ numberOfEducationMatches}} </p>
         <br>
         <h2> Mentors Education </h2>
@@ -168,7 +169,7 @@
     </div>
     <br>
     <div class="row text-center" v-if="education.length !== null">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <br>
         <h2> Mentors Job History </h2>
         <span v-for="(experience, index) in jobHistory" :key="index">
@@ -188,13 +189,14 @@
           <h5 v-else>
             End Year: {{ experience.endYear }}
           </h5>
-          <hr>
+          <hr v-if="index !== jobHistory.length-1">
+          <br v-if="index === jobHistory.length-1">
         </span>
       </div>
     </div>
     <br>
     <div class="row text-center">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <br>
         <h2> Social Media </h2>
         <a>
@@ -301,7 +303,7 @@
         let prefferedMentoringFormats = this.mentorSettings.prefferedMentoringFormats
         return prefferedMentoringFormats.indexOf('In person') > -1
       },
-      applyForMentorship() {
+      applyForMentorship(mentorID) {
         console.log('Attempting to apply for mentorship')
         var that = this
         const applyForMentorshipURL = 'http://localhost:4000/apply-for-mentorship/'
@@ -324,6 +326,7 @@
       }
     },
     beforeMount() {
+      console.log(this.mentor)
       this.age = this.mentor.age
       this.areasOfInterest = this.mentor.areasOfInterest
       this.areasOfInterestRegistrationComplete = this.mentor.areasOfInterestRegistrationComplete
@@ -410,6 +413,11 @@
 
   .apply {
     margin-right: 150px;
+  }
+
+   hr {
+    border: 0;
+    border-top: 1px solid black;
   }
 
 

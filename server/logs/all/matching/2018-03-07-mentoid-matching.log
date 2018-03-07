@@ -1,0 +1,4 @@
+07:25:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+07:25:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: No potential mentors where found
+

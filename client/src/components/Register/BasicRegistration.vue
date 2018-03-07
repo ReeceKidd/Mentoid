@@ -1,9 +1,11 @@
 <template>
   <div class="container-fluid">
+    <h1 class="text-center"> Register your information </h1>
+    <br>
     <!-- If user has already completed areas of interest registration they will get redirected to their profile -->
     <div class="signup-form">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 displayBox">
           <form @submit.prevent="onSubmit()">
             <p class="error" v-if="errorMessage !== ''">{{errorMessage}}</p>
             <div class="input" :class="{invalid: $v.firstName.$error}">
@@ -71,6 +73,7 @@
               <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Next</button>
             </div>
           </form>
+          <br>
         </div>
       </div>
     </div>
@@ -251,7 +254,7 @@
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
-    background-color: #eee;
+    background-color: #fff;
   }
 
   .input.invalid input {

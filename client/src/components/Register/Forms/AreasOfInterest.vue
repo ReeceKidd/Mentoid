@@ -2,15 +2,15 @@
   <!-- This component is different on XS devices -->
  
     <div class="container-fluid">
-
       <div class="row text-center">
-        <button @click="onAddAreaOfInterest" class="btn btn-success">Add Interest</button>
+        <button @click="onAddAreaOfInterest" class="btn btn-success btn-lg">Add Interest</button>
       </div>
 
       <!-- Desktop version -->
       <br class="hidden-xs">
 
       <div class="row hidden-xs" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+        <div class="col-sm-8 col-sm-offset-2 displayBox">
         <div class="col-sm-6 text-right">
             <div id="areaOfInterestDesktop" 
               :class="{invalid: $v.areasOfInterest.$each[index].value.$error}">
@@ -48,13 +48,15 @@
           <br>
           <button @click="onAddAreaOfInterest" class="btn btn-success">Add Another Interest</button>
           <br>
+          <br>
           </div>
+        </div>
       </div>
       <!-- End of desktop version -->
 
       <!-- Mobile version  -->
       <br class="visible-xs">
-      <div class="row visible-xs text-center" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
+      <div class="row visible-xs text-center displayBox" v-for="(areaOfInterest, index) in areasOfInterest" :key="areaOfInterest.areaOfInterestID">
         <div class="col-xs-12">
           <br>
             <div
@@ -90,11 +92,17 @@
         </div>
         <div class="col-xs-12 text-center">
           <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">Delete</button>
+          <br>
+          <br>
         </div>
         <div class="col-xs-12" v-if="(index + 1) === areasOfInterest.length">
           <br>
           <button @click="onAddAreaOfInterest" class="btn btn-success btn-sm">Add Another Interest</button>
+          <br>
+          <br>
           </div>
+          <br>
+          <br>
       </div>
       <!-- End of mobile section -->
       
@@ -265,7 +273,7 @@
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
-    background-color: #eee;
+    background-color: #fff;
   }
 
   .submit button[disabled],

@@ -34,17 +34,13 @@ let potentialMentorUserName = null
 let currentAreaOfInterest = null
 let comparisonAreaOfInterest = null
 
-//Arrays for storing similar interests. 
-let mentorHasLessExperience = []
-let mentorHasMoreExperience = []
-let mentorHasSameExperience = []
+
 
 
 let potentialMentors = []
 let filteredPotentialMentors = []
 let onlineMentors = []
 let inPersonMentors = []
-let onlineAndInPersonMentors = []
 
 module.exports = getPotentialMentors = (req, res) => {
 
@@ -119,11 +115,6 @@ module.exports = getPotentialMentors = (req, res) => {
                         }
                     }
                 }
-            },
-            {
-                $match: {
-                    "mentorSettings.languages": languages
-                }
             }
         ], function (err, retreivedPotentialMentors) {
             if (err) {
@@ -143,57 +134,60 @@ module.exports = getPotentialMentors = (req, res) => {
 
                 potentialMentors.forEach(function (currentPotentialMentor, index) {
 
-                    resetSimilarInterests()
+                    let matchingLanguage = currentUser.menteeSettings.languages.some(r => currentPotentialMentor.mentorSettings.languages.includes(r))
+                    if (matchingLanguage) {
 
-                    potentialMentor = currentPotentialMentor
-                    potentialMentorUserName = potentialMentor.userName
+                        //Arrays for storing similar interests. 
+                        potentialMentor = currentPotentialMentor
+                        potentialMentorUserName = potentialMentor.userName
+                        potentialMentor.mentorHasMoreExperience = []
+                        potentialMentor.similarInterests = []
+                        potentialMentor.compatibilityScore = 0
 
-                    logPotentialMentorInformation(index)
-                    deleteUnnecessaryInformation(potentialMentor)
+                        logPotentialMentorInformation(index)
+                        deleteUnnecessaryInformation(potentialMentor)
 
-                    currentUser.areasOfInterest.forEach(function (retrievedAreaOfInterest) {
+                        currentUser.areasOfInterest.forEach(function (retrievedAreaOfInterest) {
 
-                        currentAreaOfInterest = retrievedAreaOfInterest
-                        currentAreaOfInterest.totalPoints = generateTotalsForEachAreaOfInterest(currentAreaOfInterest)
+                            currentAreaOfInterest = retrievedAreaOfInterest
+                            currentAreaOfInterest.totalPoints = generateTotalsForEachAreaOfInterest(currentAreaOfInterest)
 
-                        logCurrentAreaOfInterestInformation()
+                            logCurrentAreaOfInterestInformation()
 
-                        potentialMentor.mentorSettings.areasOfInterest.forEach(function (areaOfInterestToCompare) {
+                            potentialMentor.mentorSettings.areasOfInterest.forEach(function (areaOfInterestToCompare) {
 
-                            comparisonAreaOfInterest = areaOfInterestToCompare
-                            comparisonAreaOfInterest.totalPoints = generateTotalsForEachAreaOfInterest(comparisonAreaOfInterest)
+                                comparisonAreaOfInterest = areaOfInterestToCompare
+                                comparisonAreaOfInterest.totalPoints = generateTotalsForEachAreaOfInterest(comparisonAreaOfInterest)
 
-                            if (currentAreaOfInterest.value === comparisonAreaOfInterest.value) {
-                                logAppropriateSimilarInterestMessage()
-                                populateSharedInterestObject()
+                                if (currentAreaOfInterest.value === comparisonAreaOfInterest.value) {
+                                    logAppropriateSimilarInterestMessage()
+                                    populatedPotentialMentor = populateSharedInterestObject(potentialMentor)
 
-                                if (comparisonAreaOfInterest.years > currentAreaOfInterest.years) {
-                                    organizeByMentoringFormat()
+                                    if (comparisonAreaOfInterest.years > currentAreaOfInterest.years) {
+                                        organizeByMentoringFormat(populatedPotentialMentor)
 
+                                    } else {
+                                        logNotExperiencedEnoughToMentorAreaOfInterest()
+                                    }
                                 } else {
-                                    logNotExperiencedEnoughToMentorAreaOfInterest()
+                                    logAreaOfInterestWasNotAMatch()
                                 }
-                            } else {
-                                logAreaOfInterestWasNotAMatch()
-                            }
 
-                        })
+                            })
 
 
-                    });
-
-                    generateSortingInformation()
-                    generateDistanceInformation()
-
+                        });
+                    }
                 })
 
                 logDebug('Starting number of potential mentors: ' + potentialMentors.length)
-                logDebug('Number of inperson and online mentors: ' + onlineAndInPersonMentors.length)
                 logDebug('Number of matched online mentors: ' + onlineMentors.length)
                 logDebug('Number of matched in person mentors: ' + inPersonMentors.length)
 
                 if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
                     let onlineAndInPersonMentors = joinMentoringArrays()
+                    console.log(JSON.stringify(onlineAndInPersonMentors, null, 2))
+                    onlineAndInPersonMentors = removeDuplicates(onlineAndInPersonMentors, 'userName')
                     shuffle(onlineAndInPersonMentors)
                     res.status(200).send({
                         onlineAndInPersonMentors: onlineAndInPersonMentors
@@ -202,17 +196,19 @@ module.exports = getPotentialMentors = (req, res) => {
                 }
                 if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
                     logDebug('Entered in person method. ')
-                    sortByDistance()
+                    onlineMentors = removeDuplicates(onlineMentors, 'userName')
+                    shuffle(onlineMentors)
                     res.status(200).send({
-                        inPersonMentors: inPersonMentors
+                       onlineMentors: onlineMentors
                     })
                     return
                 }
                 if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
                     logDebug('Entered online method')
-                    shuffle(onlineMentors)
+                    inPersonMentors = removeDuplicates(inPersonMentors)
+                    sortByDistance()
                     res.status(200).send({
-                        onlineMentors: onlineMentors
+                        inPersonMentors: inPersonMentors
                     })
                     return
                 }
@@ -225,8 +221,18 @@ module.exports = getPotentialMentors = (req, res) => {
     })
 }
 
+function removeDuplicates( arr, prop ) {
+    var obj = {};
+    for ( var i = 0, len = arr.length; i < len; i++ ){
+      if(!obj[arr[i][prop]]) obj[arr[i][prop]] = arr[i];
+    }
+    var newArr = [];
+    for ( var key in obj ) newArr.push(obj[key]);
+    return newArr;
+  }
+
 function joinMentoringArrays() {
-    return onlineAndInPersonMentors.concat(inPersonMentors, onlineMentors)
+    return inPersonMentors.concat(onlineMentors)
 }
 
 function shuffle(array) {
@@ -267,53 +273,44 @@ function bestMatchedMentor() {
 }
 
 //This covers every possible combination of the two values in order to sort the information properly. 
-function organizeByMentoringFormat() {
+function organizeByMentoringFormat(mentor) {
 
     if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
         logCurrentUserHasOnlineAndInPerson()
 
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
-            logPotentialMentorHasOnlineAndInPerson()
-            logBothUsersHaveOnlineAndInPerson()
-            addMentorToOnlineAndInPersonList()
-            addMentorToInPersonList()
-            addMentorToOnlineList()
+            let updatedMentor = generateDistanceInformation(mentor)
+            addMentorToInPersonList(updatedMentor)
+            addMentorToOnlineList(mentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-            logPotentialMentorHasInPersonAsPrefferedMentoringOption()
-            addMentorToInPersonList()
+            generateDistanceInformation(mentor)
+            addMentorToInPersonList(mentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
-            logPotentialMentorHasOnlineInPrefferedMentoringOption()
-            addMentorToOnlineList()
+            addMentorToOnlineList(mentor)
         }
 
     } else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
-            logPotentialMentorHasOnlineAndInPerson()
-            addMentorToOnlineList()
-            addMentorToInPersonList()
-            addMentorToOnlineAndInPersonList()
+            let updatedMentor = generateDistanceInformation(mentor)
+            addMentorToOnlineList(mentor)
+            addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-            logPotentialMentorHasInPersonAsPrefferedMentoringOption()
-            logMentorPreferenceNotSuitable()
-            addMentorToInPersonList()
+            let updatedMentor = generateDistanceInformation()
+            addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
-            logPotentialMentorHasOnlineInPrefferedMentoringOption()
-            addMentorToOnlineList()
+            addMentorToOnlineList(mentor)
         }
 
     } else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
-            logPotentialMentorHasOnlineAndInPerson()
-            addMentorToInPersonList()
-            addMentorToOnlineList()
-            addMentorToOnlineAndInPersonList()
+            let updatedMentor = generateDistanceInformation()
+            addMentorToInPersonList(updatedMentor)
+            addMentorToOnlineList(mentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-            logPotentialMentorHasInPersonAsPrefferedMentoringOption()
-            addMentorToInPersonList()
+            let updatedMentor = generateDistanceInformation()
+            addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
-            logPotentialMentorHasOnlineInPrefferedMentoringOption()
-            logMentorPreferenceNotSuitable()
-            addMentorToOnlineList()
+            addMentorToOnlineList(mentor)
         }
     }
 
@@ -343,22 +340,23 @@ function resetMethod() {
     comparisonAreaOfInterest = null
 
     //Arrays for storing similar interests. 
-    mentorHasLessExperience = []
     mentorHasMoreExperience = []
-    mentorHasSameExperience = []
+    similarInterests = []
 
 
     potentialMentors = []
     filteredPotentialMentors = []
     onlineMentors = []
     inPersonMentors = []
-    onlineAndInPersonMentors = []
 }
 
 function generateDistanceInformation() {
 
     let distance = getDistanceFromPotentialMentor()
     potentialMentor.distanceKM = distance
+    potentialMentor.isWithinUsersRange = null
+    potentialMentor.userIsWithinMentorsRange = null
+
     logLocationInformaion()
     if (distance <= currentUser.menteeSettings.maximumTravelDistanceKM) {
         potentialMentor.isWithinUsersRange = true
@@ -367,41 +365,20 @@ function generateDistanceInformation() {
         if (distance <= potentialMentor.mentorSettings.maximumTravelDistanceKM) {
             logWithinMentorsRange()
             potentialMentor.userIsWithinMentorsRange = true
+            return potentialMentor
 
         } else {
             logOutsideOfMentorsRange()
             potentialMentor.userIsWithinMentorsRange = false
             potentialMentor.outsideOfMentorsRangeBy = getOutOfRangeDistance()
+            return potentialMentor
         }
     } else {
         logOutsideOfUsersRange()
         potentialMentor.isWithinUsersRange = false
         potentialMentor.outsideOfUsersRangeBy = getOutOfRangeDistance()
+        return potentialMentor
     }
-}
-
-
-function generateSortingInformation() {
-    mentorEducationPreferencesMatch()
-    educationMatch()
-    languagesMatch()
-    ageMatch()
-    addSimilarInterestsFieldToPotentialMentor()
-    setNumberOfSharedInterests()
-}
-
-function ageMatch() {
-    isCurrentUserTooOld()
-    isCurrentUserTooYoung()
-    isMentorTooOld()
-    isMentorTooYoung()
-    logAgeInformation()
-}
-
-function addSimilarInterestsFieldToPotentialMentor() {
-    potentialMentor.hasMoreExperienceIn = mentorHasMoreExperience
-    potentialMentor.hasLessExperienceIn = mentorHasLessExperience
-    potentialMentor.hasSameExperienceIn = mentorHasSameExperience
 }
 
 function addMentorToOnlineList() {
@@ -414,95 +391,24 @@ function addMentorToInPersonList() {
     logError('Potential mentor: ' + potentialMentorUserName + ' has been added to the in person list of mentors.')
 }
 
-function mentorEducationPreferencesMatch() {
-    let numberOfEducationPreferencesMatches = 0
-    let educationMatches = []
-    logDebug('Checking current users education again mentors preferences')
-    logDebug('Potential mentor: ' + potentialMentorUserName + ' mentoring education are: ' + potentialMentor.mentorSettings.prefferedEducation)
-    currentUser.education.forEach(educationChoice => {
-        potentialMentor.mentorSettings.prefferedEducation.forEach(prefferedEducationChoice => {
-            if (educationChoice.degree === prefferedEducationChoice) {
-                logDebug(educationChoice.degree + ' is a match with ' + potentialMentorUserName + ' preffered education level: ' + prefferedEducationChoice)
-                educationMatches.push(prefferedEducationChoice)
-            } else {
-                logDebug(potentialMentorUserName + ' preffered education choice: ' + prefferedEducationChoice + ' was not a match with ' + educationChoice)
-            }
-        })
-    })
-    numberOfEducationPreferencesMatches = educationMatches.length
-    potentialMentor.numberOfEducationPreferencesMatches = numberOfEducationPreferencesMatches
-    logDebug('Number of preferences matches: ' + potentialMentor.numberOfEducationPreferencesMatches)
-}
-
-function educationMatch() {
-    var numberOfEducationMatches = 0
-    logDebug('Attempting education match with potential mentor: ' + potentialMentorUserName)
-    logDebug('Current users education preferences: ' + JSON.stringify(currentUser.menteeSettings.prefferedEducation))
-    logDebug('Potential mentor: ' + potentialMentorUserName + ' education: ' + JSON.stringify(potentialMentor.education))
-    currentUser.menteeSettings.prefferedEducation.forEach(educationPreference => {
-        potentialMentor.education.forEach(mentorEducation => {
-            logDebug('Checking match for: ' + educationPreference + ' with ' + potentialMentorUserName + ' degree of education: ' + mentorEducation.degree)
-            if (educationPreference === mentorEducation.degree) {
-                logDebug(educationPreference + ' is a match with ' + potentialMentorUserName + ' degree: ' +
-                    mentorEducation.degree + ' info: ' +
-                    +mentorEducation.fieldOfStudy + ' at ' + mentorEducation.school)
-                mentorEducation.isMatch = true
-                logDebug(potentialMentorUserName + ' matched object: ' + JSON.stringify(mentorEducation, null, 2))
-                numberOfEducationMatches += 1
-                logDebug('Number of education matches: ' + numberOfEducationMatches)
-            } else {
-                logDebug(potentialMentorUserName + ' degree of education: ' + mentorEducation.degree + ' is not a match')
-                logDebug('Number of education matches ' + numberOfEducationMatches)
-            }
-        })
-    })
-    potentialMentor.numberOfEducationMatches = numberOfEducationMatches
-    logDebug('Potential mentor: ' + potentialMentorUserName + 'number of education matches: ' + potentialMentor.numberOfEducationMatches)
-}
-
-function languagesMatch() {
-    let languageMatches = []
-    logDebug('Attempting language match with potential mentor: ' + potentialMentorUserName)
-    logDebug('Current users languages are: ' + JSON.stringify(currentUser.menteeSettings.languages))
-    logDebug('Potential mentor: ' + potentialMentorUserName + ' mentoring languages are: ' + JSON.stringify(potentialMentor.mentorSettings.languages))
-    currentUser.menteeSettings.languages.forEach(userLanguage => {
-        potentialMentor.mentorSettings.languages.forEach(mentorLanguage => {
-            if (userLanguage === mentorLanguage) {
-                languageMatches.push(userLanguage)
-            }
-        })
-    })
-    potentialMentor.languageMatches = languageMatches
-    logDebug('Potential mentor: ' + potentialMentorUserName + ' language matches are: ' + JSON.stringify(languageMatches))
-    potentialMentor.numberOfLanguageMatches = languageMatches.length
-    logDebug('Potential mentor: ' + potentialMentorUserName + 'number of language matches: ' + languageMatches.length)
-}
-
-function populateSharedInterestObject() {
+function populateSharedInterestObject(mentor) {
 
     if (comparisonAreaOfInterest.years > currentAreaOfInterest.years) {
         var differenceInExperience = comparisonAreaOfInterest.years - currentAreaOfInterest.years
-
-        mentorHasMoreExperience.push({
+        mentor.mentorHasMoreExperience.push({
             value: comparisonAreaOfInterest.value,
             yearsOfExperience: comparisonAreaOfInterest.years,
             differenceInExperience: differenceInExperience
         })
-    } else if (comparisonAreaOfInterest.years < currentAreaOfInterest.years) {
+    } else if (comparisonAreaOfInterest.years <= currentAreaOfInterest.years) {
         var differenceInExperience = currentAreaOfInterest.years - comparisonAreaOfInterest.years
-        mentorHasLessExperience.push({
+        mentor.similarInterests.push({
             value: comparisonAreaOfInterest.value,
             yearsOfExperience: comparisonAreaOfInterest.years,
             differenceInExperience: differenceInExperience
-        })
-    } else {
-        mentorHasSameExperience.push({
-            value: comparisonAreaOfInterest.value,
-            yearsOfExperience: comparisonAreaOfInterest.years,
-            differenceInExperience: 0
         })
     }
-
+    return mentor
 }
 
 function deleteUnnecessaryInformation() {
@@ -512,11 +418,6 @@ function deleteUnnecessaryInformation() {
 }
 
 //Getters. 
-
-function setNumberOfSharedInterests() {
-    potentialMentor.sharedNumberOfSharedInterests = mentorHasLessExperience.length + mentorHasMoreExperience.length + mentorHasSameExperience.length
-}
-
 function getDistanceFromPotentialMentor() {
     let distance = getDistanceInKM(currentUser.location, potentialMentor.location)
     return distance
@@ -530,37 +431,7 @@ function getOutOfRangeDistance() {
     }
 }
 
-function isMentorTooYoung() {
-    if (currentUser.menteeSettings.minimumAge < potentialMentor.age) {
-         let mentorTooYoungBy = potentialMentor.age - currentUser.menteeSettings.minimumAge 
-         logDebug(potentialMentorUserName + ' is too young by: ' + mentorTooYoungBy + ' years. ')
-         potentialMentor.mentorTooYoungBy = mentorTooYoungBy
-    }
-}
 
-function isMentorTooOld() {
-    if (currentUser.menteeSettings.maximumAge > potentialMentor.age) {
-        let mentorTooOldBy = potentialMentor.age - currentUser.menteeSettings.maximumAge
-        logDebug(potentialMentorUserName + ' is too old by ' + mentorTooOldBy + 'years. ') 
-        potentialMentor.mentorTooOldBy = mentorTooOldBy
-    }
-}
-
-function isCurrentUserTooYoung() {
-    if (potentialMentor.mentorSettings.minimumAge < currentUser.age) {
-        let currentUserTooYoungBy = potentialMentor.mentorSettings.minimumAge - currentUser.age
-        logDebug('Current user is too young by: ' + currentUserTooYoungBy + ' number of years. ')
-        potentialMentor.currentUserTooYoungBy = currentUserTooYoungBy
-    }
-}
-
-function isCurrentUserTooOld() {
-    if (potentialMentor.mentorSettings.maximumAge > currentUser.age) {
-         let currentUserTooOldBy =  currentUser.age - potentialMentor.mentorSettings.maximumAge
-         logDebug('Current user is too old by: ' + currentUserTooOldBy + ' number of years. ')
-         potentialMentor.currentUserTooOldBy = currentUserTooOldBy
-    }
-}
 
 //Handle logging for the matching section. 
 
@@ -595,16 +466,6 @@ function logPotentialMentorsDistanceSort() {
         })
     })
     return potentialMentorNames
-}
-
-function logAgeInformation() {
-    let potentialMentorsNameMsg = 'Potential mentor: ' + potentialMentorUserName
-    logDebug('Current users age: ' + currentUser.age)
-    logDebug('Potential mentor age: ' + potentialMentor.age)
-    logDebug('Users preferred minimum age of mentor: ' + currentUser.menteeSettings.minimumAge)
-    logDebug('Users preferred maximum age of mentor: ' + currentUser.menteeSettings.maximumAge)
-    logDebug('Potential mentors preffered minimum age of mentee ' + potentialMentor.mentorSettings.minimumAge)
-    logDebug('Potential mentors preffered maximum age of mentee ' + potentialMentor.mentorSettings.maximumAge)
 }
 
 function logNumberOfPotentialMentors() {

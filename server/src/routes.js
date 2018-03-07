@@ -84,9 +84,12 @@ routes.post('/generate/update-has-profile-picture', generatorController.updateHa
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID/:userName/:sortType', matchingController.getPotentialMentors)
+routes.post('/calculate/compatibility/', matchingController.calculateCompatibility)
 routes.post('/apply-for-mentorship', matchingController.applyForMentorship)
 
-//Manage Relationship Routes 
+//--Manage Relationship Routes--
+
+//Get routes
 routes.get('/get/manage-relationships/:userID', manageRelationshipController.getManageRelationships)
 routes.get('/get/mentees/:userID', manageRelationshipController.getMentees)
 routes.get('/get/mentors/:userID', manageRelationshipController.getMentors)
@@ -94,6 +97,9 @@ routes.get('/get/potential-mentees/:userID', manageRelationshipController.getPot
 routes.get('/get/potential-mentors/:userID', manageRelationshipController.getPotentialMentors)
 routes.get('/get/past-mentees/:userID', manageRelationshipController.getPastMentees)
 routes.get('/get/past-mentors/:userID', manageRelationshipController.getPastMentors)
+
+//Mentee routes
+routes.post('/end-relationship-with-mentee', manageRelationshipController.endRelationshipWithMentee)
 
 //routes.post('/accept/potential-mentee', manageRelationshipController.acceptPotentialMentee)
 //routes.post('/accept/potential-mentor', matchingController.acceptPotentialMentor)

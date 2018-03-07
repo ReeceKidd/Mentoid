@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
-      <div v-if="potentialMentees.length > 0">
+      <div v-if="potentialMentees.length > 0" class="text-center">
         <a href="#currentMentees" data-toggle="collapse">
           <h2>
             <i class="fas fa-chevron-down"></i> Potential Mentees:
@@ -28,10 +28,11 @@
           <p v-if="acceptedPotentialMenteeMessage !== null" class="successMessage"> {{ acceptedPotentialMenteeMessage }} </p>
           <br v-if="acceptedPotentialMenteeErrorMessage !== null">
           <p v-if="acceptedPotentialMenteeErrorMessage !== null" class="errorMessage"> {{ acceptedPotentialMenteeErrorMessage }} </p>
+          <br v-if="index !== potentialMentees.length-1">
+            <hr v-if="index !== potentialMentees.length-1">
+            <br v-if="index !== potentialMentees.length-1">
         </span>
-        <br>
       </div>
-
       <div v-else>
         <h2>
           Potential Mentees:

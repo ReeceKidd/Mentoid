@@ -5,9 +5,18 @@
         <h1> Please upload a profile picture </h1>
       </div>
     </div>
-    <upload-profile-picture></upload-profile-picture>
+
+    <br>
+    
     <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">  
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 text-center displayBox">  
+        <upload-profile-picture></upload-profile-picture>
+        <br>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <hr>
 
         <!-- Desktop version of registration buttons -->

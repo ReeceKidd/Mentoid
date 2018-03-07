@@ -6,9 +6,12 @@
             <h2> Where can other Members find you? </h2>
         </div>
     </div>
-    <div class="row">
+    <br>
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <!-- Imported component -->
         <social-media-form></social-media-form>
+        </div>
     </div>
      <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">  

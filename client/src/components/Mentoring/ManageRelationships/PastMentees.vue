@@ -1,33 +1,27 @@
 <template>
    <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
-        <div v-if="pastMentees.length > 0">
+        <div v-if="pastMentees.length > 0" class="text-center">
           <a href="#currentMentees" data-toggle="collapse">
             <h2>
               <i class="fas fa-chevron-down"></i> Past mentees:
               <b class="successMessage">{{pastMentees.length }}</b>
             </h2>
+            <br>
           </a>
           <span v-for="(pastMentee, index) in pastMentees" :key="index" class="text-center">
-            <br>
             <img :src='getProfilePicture(pastMentee._id)' class="profileImage">
             <h3> {{ pastMentee.firstName + ' ' + pastMentee.lastName }} </h3>
             <h4> @{{ pastMentee.userName }} </h4>
-            <button class="btn btn-primary btn-sm view-compatibility" @click="viewMenteeCompatibility()"> View Compatibility </button>
+            <button class="btn btn-primary btn-sm view-compatibility" @click="viewMenteeRelationship()"> View Relationship </button>
             <button class="btn btn-primary btn-sm" @click="message()"> Message </button>
-            <br>
-            <br>
-            <button class="btn btn-success btn-lg" @click="acceptPotentialMentee(pastMentor._id)">
-              <i class="fas fa-check"></i>
-            </button>
-            <button class="btn btn-danger btn-lg" @click="deletePotentialMentee()">
-              <i class="fas fa-times"></i>
-            </button>
-            <br>
+            <button class="btn btn-danger btn-sm" @click="deleteRelationship()"><i class="fas fa-times"></i> Delete </button>
+            <br v-if="index !== pastMentees.length-1">
+            <hr v-if="index !== pastMentees.length-1">
+            <br v-if="index !== pastMentees.length-1">
           </span>
           <br>
         </div>
-
         <div v-else>
           <h2>
             Past Mentees:
@@ -48,12 +42,31 @@
     data() {
       return {
         currentUserID: this.$store.state.user.authUser._id,
-        pastMentees: []
+        pastMentees: [],
+        deletedMenteeMessage: null,
+        deletedMenteeErrorMessage: null
       }
     },
     methods: {
-      getProfilePicture(mentorsID) {
-        return getProfilePictureURL + mentorsID
+      getProfilePicture(menteeID) {
+        return getProfilePictureURL + menteeID
+      },
+      deleteRelationship(menteeID) {
+        const deleteMenteeURL = 'http://localhost:4000/delete-mentee'
+        axios.post(deleteMenteeURL, {
+          userID: this.currentUserID,
+          menteeID: menteeID
+        }).then(response => {
+          this.deletedMenteeMessage = response.data.message
+          setTimeout(() => {
+            this.deletedMenteeMessage = null
+          }, 3000)
+        }).catch(error => {
+          this.deletedMenteeErrorMessage = error.response.data.message
+          setTimeout(() => {
+            this.deletedMenteeMessage = null
+          }, 3000)
+        })
       }
     },
     beforeMount() {

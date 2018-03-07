@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <div class="col-xs-12">
-      <div class="row text-center">
+      <div>
         <p v-if="hasProfilePicture" class="complete"> Upload Profile Picture
           <i class="fas fa-check"></i>
         </p>
@@ -45,8 +43,6 @@
           <a href="#mentee-preferences"> Update your Mentee Settings </a>
         </p>
       </div>
-    </div>
-  </div>
 </template>
 <script>
   import axios from 'axios'

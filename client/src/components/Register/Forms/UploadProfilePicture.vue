@@ -1,8 +1,6 @@
 <template>
-  <div class="container">
+  <div class="row">
     <br>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 col-sm-offset-4">
         <img :src="profilePictureURL" class="img-responsive uploadImage center-block" v-if="hasProfilePicture">
         <img :src="imageSrc" class="img-responsive uploadImage center-block" v-else>
         <br>
@@ -10,15 +8,11 @@
           Choose Profile Picture
         </label>
         <input @change="uploadImage" id="file-upload" type="file" name="image" accept="image/*">
-      </div>
-    </div>
     <!-- Success message -->
     <br v-if="successMessage">
-    <div class="row">
       <div class="text-center">
         <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
       </div>
-    </div>
   </div>
 </template>
 

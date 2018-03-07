@@ -4,8 +4,10 @@
 
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 text-center col-xs-12">
-        <button @click="onAddEducation" class="btn btn-success">Add Education</button>
+        <button @click="onAddEducation" class="btn btn-success btn-lg">Add Education</button>
         <button @click="onSubmit" class="btn btn-danger" v-if="education.length === 0"> Skip</button>
+        <br>
+        <br>
       </div>
     </div>
 
@@ -13,7 +15,7 @@
     <div class="row">
       <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
 
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 displayBox">
           <h3>
             <u>Education {{ index + 1}} </u>
           </h3>
@@ -87,6 +89,8 @@
             <div class="hidden-xs">
               <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-sm">Delete Current Education</button>
               <button @click="onAddEducation()" class="btn btn-success btn-sm">Add Education</button>
+              <br>
+              <br>
             </div>
           </div>
         </div>
@@ -317,7 +321,7 @@
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
-    background-color: #eee;
+    background-color: #fff;
   }
 
   .invalid input {

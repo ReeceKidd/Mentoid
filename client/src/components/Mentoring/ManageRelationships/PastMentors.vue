@@ -1,7 +1,7 @@
 <template>
    <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
-        <div v-if="pastMentors.length > 0">
+        <div v-if="pastMentors.length > 0" class="text-center">
           <a href="#currentMentees" data-toggle="collapse">
             <h2>
               <i class="fas fa-chevron-down"></i> Past mentors:
@@ -23,7 +23,9 @@
             <button class="btn btn-danger btn-lg" @click="deletePotentialMentee()">
               <i class="fas fa-times"></i>
             </button>
-            <br>
+            <br v-if="index !== pastMentors.length-1">
+            <hr v-if="index !== pastMentors.length-1">
+            <br v-if="index !== pastMentors.length-1">
           </span>
           <br>
         </div>

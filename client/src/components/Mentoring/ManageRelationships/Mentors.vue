@@ -2,7 +2,7 @@
    <!-- Current Mentors -->
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
-        <div v-if="mentors.length > 0">
+        <div v-if="mentors.length > 0" class="text-center">
           <a href="#currentMentors" data-toggle="collapse">
             <h2>
               <i class="fas fa-chevron-down"></i> Current Mentors:
@@ -12,20 +12,20 @@
           <div id="currentMentors" v-if="mentors.length > 0" class="text-center collapse displayBox">
             <span v-for="(mentor, index) in mentors" :key="index">
               <br v-if="index === 0">
-              <img :src='getProfilePicture(mentee._id)' class="profileImage">
-              <h3> {{ mentee.firstName + ' ' + mentee.lastName }} </h3>
-              <h4> @{{ mentee.userName }} </h4>
-              <button class="btn btn-primary btn-md view-compatibility" @click="viewMenteeRelationship()"> View Relationship </button>
-              <button class="btn btn-success btn-md" @click="viewMenteeProfile()"> View Profile </button>
+              <img :src='getProfilePicture(mentor._id)' class="profileImage">
+              <h3> {{ mentor.firstName + ' ' + mentor.lastName }} </h3>
+              <h4> @{{ mentor.userName }} </h4>
+              <button class="btn btn-primary btn-md view-compatibility" @click="viewMentorRelationship()"> View Relationship </button>
+              <button class="btn btn-success btn-md" @click="viewMentorProfile()"> View Profile </button>
               <button class="btn btn-primary btn-md" @click="message()"> Message </button>
               <br>
               <br>
-              <button class="btn btn-danger btn-sm" @click="deleteMentee()">
+              <button class="btn btn-danger btn-sm" @click="endRelationshipWithMentor(mentor._id)">
                 <i class="fas fa-times"></i> End relationship
               </button>
-              <br>
-              <hr>
-              <br>
+              <br v-if="index !== mentors.length-1">
+            <hr v-if="index !== mentors.length-1">
+            <br v-if="index !== mentors.length-1">
             </span>
           </div>
         </div>
@@ -35,7 +35,7 @@
             <b class="errorMessage">0</b>
           </h2>
           <h4>
-            <a href='edit-profile#mentee-settings'> Update your profile to increase your chances
+            <a href='edit-profile#Mentor-settings'> Update your profile to increase your chances
               <i class="fas fa-cog"></i>
             </a>
           </h4>
@@ -56,6 +56,24 @@
     methods: {
       getProfilePicture(mentorsID) {
         return getProfilePictureURL + mentorsID
+      },
+      endRelationshipWithMentor(mentorID) {
+        const endRelationshipWithMentorURL = 'http://localhost:4000/end-relationship-with-mentor'
+        axios.post(endRelationshipWithMentorURL, {
+          userID: this.currentUserID,
+          mentorID: mentorID
+        }).then(response => {
+          this.endRelationshipWithMentorMessage = response.data.message
+          setTimeout(() => {
+            this.endRelationshipWithMentorMessage = null
+          }, 3000)
+          location.reload()
+        }).catch(error => {
+          this.endRelationshipWithMentorErrorMessage = error.response.data.message
+          setTimeout(() => {
+            this.endRelationshipWithMentorErrorMessage = null
+          }, 3000)
+        })
       }
     },
     beforeMount() {

@@ -1,8 +1,7 @@
 <template>
-  <!-- Current Mentors -->
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 displayBox">
-      <div v-if="mentees.length > 0">
+      <div v-if="mentees.length > 0" class="text-center">
         <a href="#currentMentors" data-toggle="collapse">
           <h2>
             <i class="fas fa-chevron-down"></i> Current Mentees:
@@ -20,12 +19,15 @@
             <button class="btn btn-primary btn-md" @click="message()"> Message </button>
             <br>
             <br>
-            <button class="btn btn-danger btn-sm" @click="deleteMentee()">
+            <button class="btn btn-danger btn-sm" @click="endRelationshipWithMentee(mentee._id)">
               <i class="fas fa-times"></i> End relationship
             </button>
             <br>
-            <hr>
+            <p v-if="endRelationshipWithMenteeMessage != null"> {{ endRelationshipWithMenteeMessage}} </p>
+            <p v-if="endRelationshipWithMenteeErrorMessage != null"> {{ endRelationshipWithMenteeErrorMessage}} </p>
             <br>
+            <hr v-if="index !== mentees.length-1">
+            <br v-if="index !== mentees.length-1">
           </span>
         </div>
       </div>
@@ -51,12 +53,32 @@
     data() {
       return {
         currentUserID: this.$store.state.user.authUser._id,
-        mentees: []
+        mentees: [],
+        endRelationshipWithMenteeMessage: null,
+        endRelationshipWithMenteeErrorMessage: null
       }
     },
     methods: {
-      getProfilePicture(mentorsID) {
-        return getProfilePictureURL + mentorsID
+      getProfilePicture(menteeID) {
+        return getProfilePictureURL + menteeID
+      },
+      endRelationshipWithMentee(menteeID) {
+        const endRelationshipWithMenteeURL = 'http://localhost:4000/end-relationship-with-mentee'
+        axios.post(endRelationshipWithMenteeURL, {
+          userID: this.currentUserID,
+          menteeID: menteeID
+        }).then(response => {
+          this.endRelationshipWithMenteeMessage = response.data.message
+          setTimeout(() => {
+            this.endRelationshipWithMenteeMessage = null
+          }, 3000)
+          location.reload()
+        }).catch(error => {
+          this.endRelationshipWithMenteeErrorMessage = error.response.data.message
+          setTimeout(() => {
+            this.endRelationshipWithMenteeErrorMessage = null
+          }, 3000)
+        })
       }
     },
     beforeMount() {

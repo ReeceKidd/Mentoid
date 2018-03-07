@@ -19,10 +19,10 @@
     </div>
 
     <!--  This form allows a user (mentee) to set their settings on what they are looking in a mentor.  -->
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-8 col-xs-offset-2 displayBox">
       <div v-if="wouldLikeToMentor === 'true'">
         <!-- User has updaed areas of interest -->
-
+  <br>
         <span v-if="areasOfInterestNames.length !== 0">
           <label> Which Areas would you like to Mentor in? </label>
           <br>

@@ -347,3 +347,29 @@ Add the numbers beside the titles.
 
 Fix the organization of the manage relationship routes and create getters for each and then abstract them into seperate components,
 to make it easier to organize. 
+
+Use element ui collapser
+Should probably check if they are already on the waiting list before showing them in the results again. 
+Need to add indexing to MongoDB databaase as well. 
+Need to delete the social section for now. 
+The current mentors need to show what area of interest they are mentoring you in. Should be able to filter the page by that
+as well. When a mentor is pushed onto current mentors they need to have the value stored somehow. 
+Need to create a get compatibility method. 
+Need to allow mentors to have two preffered formats not just one. 
+Go through the mentor matching and get it so that view profile can go back to the results, and that they can apply without having 
+to click view profile to apply first. 
+Where hrefs are used on the managing relationships page change them to navigate to. 
+In the manage relationship section, create forms that are populated for the mentoring agreement details, create a document 
+upload field, and copy exactly what mentor city did in the easiest way possible. 
+
+Fix the online and in person matching process for both mentors and mentees and then come up with a method to work out the compatibility. 
+CHange the first form to countries instead of languages. 
+Need to remove duplicates from online and in person lists. 
+
+Continue working on the compatibility score I think it needs to be watched or computed as it changes. 
+When a user ends a relationship, give them a star rating that can be shown in the matching process. 
+Include skype, email address or mobile contact number that is only available on the relationship manager page once a relationship has been 
+established. Will need to create a settings page for this as well. 
+Create a message when no potential mentors are found. 
+Need to make the default mentor and mentee settings set, so that they are all definied to improve matching, where the user will have to edit 
+them to make it more specific to help with users who will likely ignore the form. 

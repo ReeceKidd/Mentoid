@@ -3,7 +3,7 @@
 
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center">
-        <button @click="onAddExperience" class="btn btn-success">Add Experience</button>
+        <button @click="onAddExperience" class="btn btn-success btn-lg">Add Experience</button>
         <br>
         <br>
         <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Skip</button>
@@ -16,7 +16,7 @@
 
       <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
 
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 displayBox">
           <h3>
             <u>Experience {{ index + 1}} </u>
           </h3>
@@ -65,6 +65,8 @@
           <div class="hidden-xs">
             <button @click="onDeleteExperiences(experience.experienceID)" class="btn-danger btn btn-sm">Delete experience</button>
             <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+            <br>
+            <br>
           </div>
         </div>
       </div>
@@ -278,7 +280,7 @@
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
-    background-color: #eee;
+    background-color: #fff;
   }
 
   .invalid input {

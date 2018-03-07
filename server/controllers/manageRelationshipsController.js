@@ -11,7 +11,7 @@ manageRelationshipsController.getPastMentors = require('./ControllerMethods/Mana
 
 
 //Mentee methods
-// manageRelationshipsController.endRelationshipWithMentee = require('./ControllerMethods/ManageRelationships/Mentee/endRelationshipWithMentee')
+manageRelationshipsController.endRelationshipWithMentee = require('./ControllerMethods/ManageRelationships/Mentee/endRelationshipWithMentee')
 
 // //Mentor methods
 // manageRelationshipsController.endRelationshipWithMentor = require('./ControllerMethods/ManageRelationships/Mentor/endRelationshipWithMentor')

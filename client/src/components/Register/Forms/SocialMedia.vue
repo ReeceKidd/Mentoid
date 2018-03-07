@@ -1,81 +1,71 @@
 <template>
-  <div class="container">
-      <br>
-    <div class="signup-form">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-          <form @submit.prevent="onSubmit()">
-            <p class="error" v-if="errorMessage !== ''">{{errorMessage}}</p>
-            <div class="input" :class="{invalid: $v.facebook.$error}">
-              <label for="facebook">
-                <i class="fab fa-facebook-f"></i>: Facebook</label>
-              <input id="facebook" @blur="$v.facebook.$touch()" v-model.trim="facebook" name="facebook">
-              <p class="errorMessage" v-if="!$v.facebook.minLength && $v.facebook.$dirty">Please enter a valid Facebook URL</p>
-            </div>
-            <div class="input" :class="{invalid: $v.instagram.$error}">
-              <label for="instagram">
-                <i class="fab fa-instagram"></i>: Instagram</label>
-              <input id="instagram" @blur="$v.instagram.$touch()" v-model.trim="instagram" name="instagram">
-              <p class="errorMessage" v-if="!$v.instagram.minLength && $v.instagram.$dirty">Please enter a valid Instagram handle</p>
-            </div>
-            <div class="input" :class="{invalid: $v.twitter.$error}">
-              <label for="twitter">
-                <i class="fab fa-twitter"></i>: Twitter</label>
-              <input id="twitter" @blur="$v.twitter.$touch()" v-model.trim="twitter" name="twitter">
-              <p class="errorMessage" v-if="!$v.twitter.minLength && $v.twitter.$dirty">Please enter a valid Twitter handle.</p>
-            </div>
-            <div class="input" :class="{invalid: $v.snapchat.$error}">
-              <label for="snapchat">
-                <i class="fab fa-snapchat"></i>: Snapchat</label>
-              <input id="snapchat" @focus="$v.snapchat.$reset" @blur="$v.snapchat.$touch()" v-model.trim="snapchat" name="snapchat">
-              <p class="errorMessage" v-if="!$v.snapchat.minLength && $v.snapchat.$dirty">Please enter a valid Snapchat name.</p>
-            </div>
-            <div class="input" :class="{invalid: $v.linkedIn.$error}">
-              <label for="linkedIn">
-                <i class="fab fa-linkedin-in"></i>: LinkedIn</label>
-              <input type="linkedIn" id="linkedIn" @focus="$v.linkedIn.$reset" @blur="$v.linkedIn.$touch()" v-model.trim="linkedIn" name="linkedIn">
-              <p class="errorMessage" v-if="!$v.linkedIn.minLength && $v.linkedIn.$dirty">Please enter a valid LinkedIn URL.</p>
-            </div>
-            <div class="input" :class="{invalid: $v.medium.$error}">
-              <label for="medium">
-                <i class="fab fa-medium"></i>: Medium</label>
-              <input type="medium" id="medium" @focus="$v.medium.$reset" @blur="$v.medium.$touch()" v-model.trim="medium" name="medium">
-              <p class="errorMessage" v-if="!$v.medium.minLength && $v.medium.$dirty">Please enter a valid Medium URL.</p>
-            </div>
-            <div class="input" :class="{invalid: $v.youtube.$error}">
-              <label for="youtube">
-                <i class="fab fa-youtube"></i>: Youtube</label>
-              <input type="youtube" id="youtube" @focus="$v.youtube.$reset" @blur="$v.medium.$touch()" v-model.trim="youtube" name="youtube">
-              <p class="errorMessage" v-if="!$v.youtube.minLength && $v.youtube.$dirty">Please enter a valid Youtube URL.</p>
-            </div>
-            <div class="input" :class="{invalid: $v.website.$error}">
-              <label for="website">
-                <i class="fas fa-globe"></i>: Personal Website </label>
-              <input type="website" id="website" @focus="$v.website.$reset" @blur="$v.website.$touch()" v-model.trim="website" name="website">
-              <p class="errorMessage" v-if="!$v.website.minLength && $v.website.$dirty">Please provide a valid Personal Website URL.</p>
-            </div>
-            <br>
-            <div class="submit text-center">
-              <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Update Social Details</button>
-            </div>
-          </form>
-        </div>
+  <div>
+    <form @submit.prevent="onSubmit()">
+      <p class="error" v-if="errorMessage !== ''">{{errorMessage}}</p>
+      <div class="input" :class="{invalid: $v.facebook.$error}">
+        <label for="facebook">
+          <i class="fab fa-facebook-f"></i>: Facebook</label>
+        <input id="facebook" @blur="$v.facebook.$touch()" v-model.trim="facebook" name="facebook">
+        <p class="errorMessage" v-if="!$v.facebook.minLength && $v.facebook.$dirty">Please enter a valid Facebook URL</p>
       </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
+      <div class="input" :class="{invalid: $v.instagram.$error}">
+        <label for="instagram">
+          <i class="fab fa-instagram"></i>: Instagram</label>
+        <input id="instagram" @blur="$v.instagram.$touch()" v-model.trim="instagram" name="instagram">
+        <p class="errorMessage" v-if="!$v.instagram.minLength && $v.instagram.$dirty">Please enter a valid Instagram handle</p>
+      </div>
+      <div class="input" :class="{invalid: $v.twitter.$error}">
+        <label for="twitter">
+          <i class="fab fa-twitter"></i>: Twitter</label>
+        <input id="twitter" @blur="$v.twitter.$touch()" v-model.trim="twitter" name="twitter">
+        <p class="errorMessage" v-if="!$v.twitter.minLength && $v.twitter.$dirty">Please enter a valid Twitter handle.</p>
+      </div>
+      <div class="input" :class="{invalid: $v.snapchat.$error}">
+        <label for="snapchat">
+          <i class="fab fa-snapchat"></i>: Snapchat</label>
+        <input id="snapchat" @focus="$v.snapchat.$reset" @blur="$v.snapchat.$touch()" v-model.trim="snapchat" name="snapchat">
+        <p class="errorMessage" v-if="!$v.snapchat.minLength && $v.snapchat.$dirty">Please enter a valid Snapchat name.</p>
+      </div>
+      <div class="input" :class="{invalid: $v.linkedIn.$error}">
+        <label for="linkedIn">
+          <i class="fab fa-linkedin-in"></i>: LinkedIn</label>
+        <input type="linkedIn" id="linkedIn" @focus="$v.linkedIn.$reset" @blur="$v.linkedIn.$touch()" v-model.trim="linkedIn" name="linkedIn">
+        <p class="errorMessage" v-if="!$v.linkedIn.minLength && $v.linkedIn.$dirty">Please enter a valid LinkedIn URL.</p>
+      </div>
+      <div class="input" :class="{invalid: $v.medium.$error}">
+        <label for="medium">
+          <i class="fab fa-medium"></i>: Medium</label>
+        <input type="medium" id="medium" @focus="$v.medium.$reset" @blur="$v.medium.$touch()" v-model.trim="medium" name="medium">
+        <p class="errorMessage" v-if="!$v.medium.minLength && $v.medium.$dirty">Please enter a valid Medium URL.</p>
+      </div>
+      <div class="input" :class="{invalid: $v.youtube.$error}">
+        <label for="youtube">
+          <i class="fab fa-youtube"></i>: Youtube</label>
+        <input type="youtube" id="youtube" @focus="$v.youtube.$reset" @blur="$v.medium.$touch()" v-model.trim="youtube" name="youtube">
+        <p class="errorMessage" v-if="!$v.youtube.minLength && $v.youtube.$dirty">Please enter a valid Youtube URL.</p>
+      </div>
+      <div class="input" :class="{invalid: $v.website.$error}">
+        <label for="website">
+          <i class="fas fa-globe"></i>: Personal Website </label>
+        <input type="website" id="website" @focus="$v.website.$reset" @blur="$v.website.$touch()" v-model.trim="website" name="website">
+        <p class="errorMessage" v-if="!$v.website.minLength && $v.website.$dirty">Please provide a valid Personal Website URL.</p>
+      </div>
+      <br>
+      <div class="submit text-center">
+        <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Update Social Details</button>
+      </div>
+    </form>
+      <br>
+      <div class="row">
         <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
       </div>
-    </div>
       <!-- Update social media success Message -->
-      <div class="row">
-        <div class="text-center">
-          <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
-        </div>
+      <div class="text-center">
+        <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
       </div>
+
       <!-- End of success message -->
-    </div>
+  </div>
 </template>
 
 <script>
@@ -220,7 +210,7 @@
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
-    background-color: #eee;
+    background-color: #fff;
   }
 
   .input.invalid input {
