@@ -371,5 +371,6 @@ When a user ends a relationship, give them a star rating that can be shown in th
 Include skype, email address or mobile contact number that is only available on the relationship manager page once a relationship has been 
 established. Will need to create a settings page for this as well. 
 Create a message when no potential mentors are found. 
-Need to make the default mentor and mentee settings set, so that they are all definied to improve matching, where the user will have to edit 
+Need to make the default mentor and mentee settings set, so that they are all definied to improve matching, where the user will have to edit,
+when the user completes basic registration add the normal settings. 
 them to make it more specific to help with users who will likely ignore the form. 
