@@ -5,58 +5,83 @@
       <br>
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center displayBox">
-          <br>
-          <img :src='getProfilePicture(mentor._id)' class="profileImage">
-          <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
-          <h5>
-            <b> @{{ mentor.userName }} </b>
-          </h5>
-          <span id="canMentorYouIn">
-            <h4>
-              <b>
-                <u> Mentoring Areas Of Interest </u>
-              </b>
-            </h4>
-            <span v-for="(areaOfInterest, aIndex) in mentor.mentorHasMoreExperience" :key="aIndex">
-              <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>&nbsp;
+          <p v-if="mentor.compatibilityScore === 0" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore === 10" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore === 20" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore === 30" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore >= 40" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+            <br>
+            <img :src='getProfilePicture(mentor._id)' class="profileImage">
+            <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
+            <h5>
+              <b> @{{ mentor.userName }} </b>
+            </h5>
+            <span id="canMentorYouIn">
+              <h4>
+                <b>
+                  <u> Mentoring Areas Of Interest </u>
+                </b>
+              </h4>
+              <span v-for="(areaOfInterest, aIndex) in mentor.mentorHasMoreExperience" :key="aIndex">
+                <p class="areaOfInterest"> {{ areaOfInterest.value }} | {{ areaOfInterest.yearsOfExperience }} </p>&nbsp;
+              </span>
             </span>
-          </span>
-          <span id="skillsWithSameExperience" v-if="mentor.similarInterests.length > 0">
-            <h3>
-              <u> Similar interests: </u>
-            </h3>
-            <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
-              <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+            <span id="skillsWithSameExperience" v-if="mentor.similarInterests.length > 0">
+              <h3>
+                <u> Similar interests: </u>
+              </h3>
+              <span v-for="(areaOfInterest, aIndex) in mentor.hasSameExperienceIn" :key="aIndex">
+                <p> {{ areaOfInterest.value }} : {{ areaOfInterest.yearsOfExperience }} </p>
+              </span>
             </span>
-          </span>
-          <span id="travelDistance">
-            <p class="distance">
-              <b>Distance: {{ mentor.distanceKM }}KM</b>
-            </p>
-          </span>
-          <div class="hidden-xs">
-            <button class="btn btn-primary view-profile btn-sm" @click="mentorMatch(mentor)">View Profile</button>
-            <button class="btn btn-primary btn-sm">Send Message</button>
-            <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor._id)"> Apply for Mentoring </button>
-          </div>
-          <div class="visible-xs">
-            <button class="btn btn-primary view-profile btn-lg " @click="mentorMatch(mentor)">
-              <i class="fas fa-eye"></i>
-            </button>
-            <button class="btn btn-primary btn-lg">
-              <i class="fas fa-envelope"></i>
-            </button>
+            <span id="travelDistance">
+              <p class="distance">
+                <b>Distance: {{ mentor.distanceKM }}KM</b>
+              </p>
+            </span>
+            <div class="hidden-xs">
+              <button class="btn btn-primary view-profile btn-sm" @click="mentorMatch(mentor)">View Profile</button>
+              <button class="btn btn-primary btn-sm">Send Message</button>
+              <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor._id)"> Apply for Mentoring </button>
+            </div>
+            <div class="visible-xs">
+              <button class="btn btn-primary view-profile btn-lg " @click="mentorMatch(mentor)">
+                <i class="fas fa-eye"></i>
+              </button>
+              <button class="btn btn-primary btn-lg">
+                <i class="fas fa-envelope"></i>
+              </button>
+              <br>
+              <br>
+              <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor._id)"> Apply for Mentoring </button>
+            </div>
             <br>
             <br>
-            <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor._id)"> Apply for Mentoring </button>
           </div>
-          <br>
-          <br>
         </div>
-      </div>
-      <br>
+        <br>
     </span>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -78,6 +103,19 @@
           params: {
             mentor: mentor
           }
+        })
+      },
+      getCompatibility(mentor) {
+        console.log('Entered method')
+        const getCompatibilityURL = 'http://localhost:4000/calculate/compatibility/'
+        axios.post(getCompatibilityURL, {
+          userName: this.userName,
+          mentor: mentor
+        }).then(function (response) {
+          console.log(response.data.compatibilityScore)
+          mentor.compatibilityScore = response.data.compatibilityScore
+        }).catch(error => {
+          console.log(error.response.data.message)
         })
       },
       applyForMentorship(mentorID) {
@@ -109,12 +147,26 @@
       }
     },
     beforeMount() {
-      console.log(this.mentors)
+      this.mentors.forEach(mentor => {
+        this.getCompatibility(mentor)
+      })
     }
   }
 </script>
 
 <style>
+
+  .infoMessage {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #104E8B;
+    color: white;
+    font-size: 1.5rem;
+  }
+
   .areaOfInterest {
     background-color: #006400;
     color: white;

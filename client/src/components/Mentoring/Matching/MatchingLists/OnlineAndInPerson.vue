@@ -5,7 +5,31 @@
       <br>
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center displayBox">
-          <p> Compatibility: </p>
+          <p v-if="mentor.compatibilityScore === 0" class="infoMessage"> Compatibility: 
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore === 10" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore === 20" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore === 30" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
+          <p v-if="mentor.compatibilityScore >= 40" class="infoMessage"> Compatibility:
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
           <br>
           <img :src='getProfilePicture(mentor._id)' class="profileImage">
           <h4> {{ mentor.firstName + ' ' + mentor.lastName}} </h4>
@@ -91,6 +115,19 @@
           }
         })
       },
+      getCompatibility(mentor) {
+        console.log('Entered method')
+        const getCompatibilityURL = 'http://localhost:4000/calculate/compatibility/'
+        axios.post(getCompatibilityURL, {
+          userName: this.userName,
+          mentor: mentor
+        }).then(function (response) {
+          console.log(response.data.compatibilityScore)
+          mentor.compatibilityScore = response.data.compatibilityScore
+        }).catch(error => {
+          console.log(error.response.data.message)
+        })
+      },
       applyForMentorship(mentorID) {
         console.log('Attempting to apply for mentorship')
         var that = this
@@ -120,12 +157,24 @@
       }
     },
     beforeMount() {
-      console.log(this.mentors)
+      this.mentors.forEach(mentor => {
+        this.getCompatibility(mentor)
+      })
     }
   }
 </script>
 
 <style>
+.infoMessage {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #104E8B;
+    color: white;
+    font-size: 1.5rem;
+  }
   .areaOfInterest {
     background-color: #006400;
     color: white;

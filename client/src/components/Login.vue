@@ -3,7 +3,8 @@
     <!-- If user is logged in they should get redirected to their profile instead -->
     <span v-if="isUserLoggedIn"> {{ navigateTo('/profile/edit-profile')}} </span>
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 displayBox">
+      <br>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 displayBox">
         <br>
         <img src="..\assets\login-logo.png" class="img-responsive center-block">
         <form @submit.prevent="onSubmit">
@@ -113,7 +114,7 @@
   .input input:focus {
     outline: none;
     border: 1px solid #104E8B;
-    background-color: #eee;
+    background-color: #fff;
   }
 
   .submit button[disabled],
