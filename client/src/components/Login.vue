@@ -18,7 +18,7 @@
           </div>
           <p class="error" v-if="errorMessage">{{errorMessage}}</p>
           <div class="submit text-center">
-            <button class="btn btn-primary text-center">Submit</button>
+            <button class="btn btn-primary text-center">Log In</button>
           </div>
         </form>
         <br>

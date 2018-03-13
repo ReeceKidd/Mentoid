@@ -1,21 +1,21 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <!-- This component is different depending on whether it is viewed in mobile or on desktop -->
 
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center col-xs-12">
-        <button @click="onAddEducation" class="btn btn-success btn-lg">Add Education</button>
-        <button @click="onSubmit" class="btn btn-danger" v-if="education.length === 0"> Skip</button>
+      <div class="visible-xs">
+        <button @click="onAddEducation" class="btn btn-success btn-md">Add Education</button>
+        <br> 
         <br>
-        <br>
+        <button @click="onSubmit" class="btn btn-danger btn-md" v-if="education.length === 0"> Skip</button>
       </div>
-    </div>
+      <div class="hidden-xs">
+        <button @click="onAddEducation" class="btn btn-success btn-lg">Add Education</button>
+        <button @click="onSubmit" class="btn btn-danger btn-lg" v-if="education.length === 0"> Skip</button>
+      </div>
 
-    <!-- Desktop version of form -->
-    <div class="row">
       <div class="education" v-for="(currentEducation, index) in education" :key="currentEducation.id">
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 displayBox">
+        <div>
           <h3>
             <u>Education {{ index + 1}} </u>
           </h3>
@@ -62,7 +62,7 @@
             <p v-if="!$v.education.$each[index].country.alphaAndWhitespace && $v.education.$each[index].country.$dirty" class="errorMessage">
               Country can only contain alphabetical and space characters.
             </p>
-            <div class="yearInputDesktop">
+            <div>
               <label>Start Year</label>
               <input type="text" :id="currentEducation.startYear" @blur="$v.education.$each[index].startYear.$touch()" v-model="currentEducation.startYear">
             </div>
@@ -75,7 +75,7 @@
             <p v-if="!$v.education.$each[index].startYear.greaterThanCurrentYear && $v.education.$each[index].startYear.$dirty" class="errorMessage">
               You cannot start in the future.
             </p>
-            <div class="yearInputDesktop">
+            <div>
               <label>Graduation Year</label>
               <input type="text" :id="currentEducation.endYear" @blur="$v.education.$each[index].endYear.$touch()" v-model="currentEducation.endYear">
               <p v-if="!$v.education.$each[index].endYear.required && $v.education.$each[index].endYear.$dirty" class="errorMessage">
@@ -87,16 +87,21 @@
             </div>
             <br>
             <div class="hidden-xs">
-              <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-sm">Delete Current Education</button>
-              <button @click="onAddEducation()" class="btn btn-success btn-sm">Add Education</button>
+              <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-md">Delete Current Education</button>
+              <button @click="onAddEducation()" class="btn btn-success btn-md">Add Education</button>
               <br>
+            </div>
+            <div class="visible-xs">
+              <button @click="onDeleteEducation(currentEducation.educationID)" class="btn-danger btn btn-sm">Delete Current Education</button>
+              <br>
+              <br>
+              <button @click="onAddEducation()" class="btn btn-success btn-sm">Add Education</button>
               <br>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End of desktop version of form -->
+      </div>
 
     <br>
 
@@ -124,9 +129,13 @@
 
     <br>
 
-    <div class="row text-center">
+    <div class="text-center visible-xs">
+      <button class="btn btn-sm btn-primary" :disabled="$v.education.$invalid" @click="onSubmit"> Update Education History </button>
+    </div>
+    <div class="text-center hidden-xs">
       <button class="btn btn-lg btn-primary" :disabled="$v.education.$invalid" @click="onSubmit"> Update Education History </button>
     </div>
+    <br>
   </div>
 
 </template>
@@ -272,13 +281,7 @@
 </script>
 
 <style scoped>
-  .yearInputDesktop {
-    width: 25%;
-  }
 
-  .yearInputMobile {
-    width: 50%;
-  }
 
   .input {
     margin: 10px auto;
@@ -296,7 +299,6 @@
 
   .input input {
     font: inherit;
-    width: 100%;
     padding: 6px 12px;
     box-sizing: border-box;
     border: 1px solid #ccc;

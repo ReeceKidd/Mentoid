@@ -129,6 +129,10 @@ module.exports = register = (req, res) => {
         newUser.potentialMentees = [],
         newUser.potentialMentees = [],
         newUser.pastMentors = [],
+        newUser.location = {
+            "longitude" : 79.7224003699525,
+            "latitude" : 78.1255953282639
+        }
         newUser.basicRegistrationComplete = true
         newUser.areasOfInterestRegistrationComplete = false
         newUser.userRegistrationComplete = false

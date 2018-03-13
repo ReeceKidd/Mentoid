@@ -84,7 +84,9 @@ routes.post('/generate/update-has-profile-picture', generatorController.updateHa
 
 //Matching Routes
 routes.get('/get/potential-mentors/:userID/:userName/:sortType', matchingController.getPotentialMentors)
+routes.get('/get/potential-mentees/:userID/:userName/:sortType', matchingController.getPotentialMentees)
 routes.post('/calculate/compatibility/', matchingController.calculateCompatibility)
+routes.post('/mentor-match', matchingController.mentorMatch)
 routes.post('/apply-for-mentorship', matchingController.applyForMentorship)
 
 //--Manage Relationship Routes--

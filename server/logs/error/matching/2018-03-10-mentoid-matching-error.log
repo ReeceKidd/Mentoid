@@ -1,0 +1,3252 @@
+09:21:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+09:21:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+09:21:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+09:21:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+09:21:07 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+09:21:08 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+09:21:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+09:21:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+09:21:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+09:21:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+09:21:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:22 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+09:21:23 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:23 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+09:21:23 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:23 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+09:21:23 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+09:21:23 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:38:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:38:46 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:41:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:41:28 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+14:42:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:46:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:46:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:48:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:48:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:51:03 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:51:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:53:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:53:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:55:32 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:55:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"undefined","sortType":"undefined"}
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Number of potential mentors: 23
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:56:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:56:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:57:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+14:58:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+15:01:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:01:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:01:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+15:01:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+15:02:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+15:07:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:07:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:09:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:09:02 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:10:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:10:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:12:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:12:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:13:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:13:15 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:15:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:15:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: MelisentJaymes91
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.10070599332028,
+  "latitude": 78.74672135563597
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.10070599332028,
+  "latitude": 78.74672135563597
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: MichaellaVorheis11
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.09433281444582,
+  "latitude": 78.01340555387591
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.09433281444582,
+  "latitude": 78.01340555387591
+}
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: OlympieBrockamp51
+
+15:16:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.20922189379621,
+  "latitude": 79.85628982012184
+}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.20922189379621,
+  "latitude": 79.85628982012184
+}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PerlaYanity11
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.2537362695451,
+  "latitude": 79.43175457050702
+}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.2537362695451,
+  "latitude": 79.43175457050702
+}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: ShawnViltz31
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.25190882027024,
+  "latitude": 79.58525721527876
+}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.25190882027024,
+  "latitude": 79.58525721527876
+}
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+15:16:18 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:24:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:25:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:33:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:34:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:34:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:04 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:36:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+15:36:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:12:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:13:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:13:59 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:14:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:15:24 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:18:57 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:20:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:21:25 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:21:25 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:21:25 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:25 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:21:25 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:25 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:40 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:21:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:22:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:22:50 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81:  is attempting to get potential mentors with request: {"userID":"5a931d23a4477412989e0a7c","userName":"KaronPuyleart81","sortType":"undefined"}
+
+17:22:50 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Number of potential mentors: 98
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: ArlenaHarrsch61
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.20060441280297,
+  "latitude": 79.3772941392767
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.20060441280297,
+  "latitude": 79.3772941392767
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: ArlenaHarrsch61 has been added to the in person list of mentors.
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: BerrieHenaman21 has been added to the online list of mentors.
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: BettyStipp51
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.45989652751514,
+  "latitude": 79.7138922493734
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.45989652751514,
+  "latitude": 79.7138922493734
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: BettyStipp51 has been added to the in person list of mentors.
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: BiancaGregorius41
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.84138271184035,
+  "latitude": 79.93512978040198
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.84138271184035,
+  "latitude": 79.93512978040198
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: BiancaGregorius41 has been added to the in person list of mentors.
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: CherryMihaly81 has been added to the online list of mentors.
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: ChristianeEagleston21
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.99002444293869,
+  "latitude": 79.26228376975325
+}
+
+17:22:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.99002444293869,
+  "latitude": 79.26228376975325
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: ChristianeEagleston21 has been added to the in person list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: ClarisseDrennan11 has been added to the online list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: ClarisseDrennan11 has been added to the online list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: DanellaLieng41
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.8188648642569,
+  "latitude": 78.82666000529906
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.8188648642569,
+  "latitude": 78.82666000529906
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: DanellaLieng41 has been added to the in person list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: DedieSteorts71
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: DellaSalera51
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.63184360295419,
+  "latitude": 79.60439033963392
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.63184360295419,
+  "latitude": 79.60439033963392
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: DellaSalera51 has been added to the in person list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: DelphiniaKeune41 has been added to the online list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: DeniseWiesehan91 has been added to the online list of mentors.
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: DixRawlin31
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.27362555099818,
+  "latitude": 79.63527122688664
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.27362555099818,
+  "latitude": 79.63527122688664
+}
+
+17:22:52 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: DixRawlin31 has been added to the in person list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: EstelleHlavka41 has been added to the online list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: FranceneSchukar71 has been added to the online list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: HannieEmbery01 has been added to the online list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: IvieArain51
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.52002418344662,
+  "latitude": 78.96123142899967
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.52002418344662,
+  "latitude": 78.96123142899967
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: IvieArain51 has been added to the in person list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: JaymeShuart81
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.72908904672853,
+  "latitude": 79.10113398788843
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.72908904672853,
+  "latitude": 79.10113398788843
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: JaymeShuart81 has been added to the in person list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: JoelleOsthoff91 has been added to the online list of mentors.
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: JoscelinBarickman21
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.3323740203731,
+  "latitude": 78.91505501830454
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:53 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.3323740203731,
+  "latitude": 78.91505501830454
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: JoscelinBarickman21 has been added to the in person list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: KarisaAchman11 has been added to the online list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: KiraZaug31 has been added to the online list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: LadonnaKarnik31 has been added to the online list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: LeeBovill71
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.88146392030724,
+  "latitude": 79.45705304550972
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.88146392030724,
+  "latitude": 79.45705304550972
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: LeeBovill71 has been added to the in person list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: MarnieHulbert51
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.54679646163449,
+  "latitude": 79.34764639260867
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.54679646163449,
+  "latitude": 79.34764639260867
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: MarnieHulbert51 has been added to the in person list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: MelittaStufflebean31
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.24638867268452,
+  "latitude": 79.72900887322106
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.24638867268452,
+  "latitude": 79.72900887322106
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: MelittaStufflebean31 has been added to the in person list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: MidgeKolka11
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.85901159094327,
+  "latitude": 78.61648921687923
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.85901159094327,
+  "latitude": 78.61648921687923
+}
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: MidgeKolka11 has been added to the in person list of mentors.
+
+17:22:54 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: NatalineBroshous41 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: NattyLatorre91 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: NeilaLapeyrolerie21 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: OlivieClemen01
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.41288240713601,
+  "latitude": 78.71558904049911
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.41288240713601,
+  "latitude": 78.71558904049911
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: OlivieClemen01 has been added to the in person list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: PeriaSoat61
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.55773976909818,
+  "latitude": 78.47004567273113
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.55773976909818,
+  "latitude": 78.47004567273113
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: PeriaSoat61 has been added to the in person list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: ReginaBergado11
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.51385141864569,
+  "latitude": 78.05494171430118
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.51385141864569,
+  "latitude": 78.05494171430118
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: ReginaBergado11 has been added to the in person list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: SalomaCendejas11 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: SereneMolinares61 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: SonnyRekas31 has been added to the online list of mentors.
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: VeronikeChamberland41
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.95208757827086,
+  "latitude": 78.77395210699702
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 79.95208757827086,
+  "latitude": 78.77395210699702
+}
+
+17:22:55 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: VeronikeChamberland41 has been added to the in person list of mentors.
+
+17:22:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Entering generate distance information with user: KaronPuyleart81 and potential mentor: YoshiKolder01
+
+17:22:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.66898186313355,
+  "latitude": 79.02961500134985
+}
+
+17:22:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Current users location is: {
+  "latitude": 78.79540353687715,
+  "longitude": 79.01772756399369
+}
+
+17:22:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentors distance is: {
+  "longitude": 78.66898186313355,
+  "latitude": 79.02961500134985
+}
+
+17:22:56 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--KaronPuyleart81: Potential mentor: YoshiKolder01 has been added to the in person list of mentors.
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:25:44 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:25:45 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:26:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"undefined","sortType":"undefined"}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Number of potential mentors: 11
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:35:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:35:19 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:36:13 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:37:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"undefined","sortType":"undefined"}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Number of potential mentors: 11
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: undefined has both online and in person as options
+
+17:38:42 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+17:39:47 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:40:00 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:40:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:40:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:45:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:45:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:45:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:45:26 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:47:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:47:17 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:47:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:47:31 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:48:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:48:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:48:50 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:48:50 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:49:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:49:30 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:51:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:51:33 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 10
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:52:21 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+17:57:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"undefined","sortType":"undefined"}
+
+17:57:05 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Number of potential mentors: 11
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+17:57:06 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--undefined: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+

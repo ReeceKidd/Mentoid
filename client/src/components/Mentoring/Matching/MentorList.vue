@@ -41,9 +41,9 @@
 </template>
 <script>
   import axios from 'axios'
-  import InPersonMatches from './MatchingLists/InPerson.vue'
-  import OnlineMatches from './MatchingLists/Online.vue'
-  import OnlineAndInPersonMatches from './MatchingLists/OnlineAndInPerson.vue'
+  import InPersonMatches from './GetMentorsLists/InPerson.vue'
+  import OnlineMatches from './GetMentorsLists/Online.vue'
+  import OnlineAndInPersonMatches from './GetMentorsLists/OnlineAndInPerson.vue'
   export default {
     data() {
       return {
@@ -68,14 +68,6 @@
       })
     },
     methods: {
-      mentorMatch(mentor) {
-        this.$router.push({
-          name: 'mentor-match',
-          params: {
-            mentor: mentor
-          }
-        })
-      },
       matchMentors() {
         this.potentialInPersonMentors = null
         this.potentialOnlineMentors = null

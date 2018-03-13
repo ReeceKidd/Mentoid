@@ -1,0 +1,44 @@
+19:33:50 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:33:50 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:33:50 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:33:50 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:33:50 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:33:50 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:33:50 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+19:46:31 ControllerMethods/Register/updateAreasOfInterest.js INFO: Kajukaja updated areasOfInterest successfully: [{"value":"Yoga","years":10,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":10,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Writing","years":10,"areaOfInterestID":2,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+19:52:37 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+

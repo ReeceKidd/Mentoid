@@ -7,7 +7,7 @@ const checkUndefinedFields = require('../../UndefinedCheckers/nonArray')
 
 module.exports = getCompatibility = (req, res) => {
 
-    //Need to put the field checkers in. 
+    console.log('Attempting to get compatibility for user: ' + req.body.userName)
 
     var undefinedFields = checkUndefinedFields(req.body, ['userName', 'mentor'])
 
@@ -24,12 +24,12 @@ module.exports = getCompatibility = (req, res) => {
         userName: req.body.userName
     }, function (err, user) {
         if (!user) {
-            res.status(600)
+            res.status(700)
             res.send({
                 message: 'Could not find user with username: ' + req.body.userName
             })
         } else if (err) {
-            logger.error(err)
+            logger.debug(err)
             res.status(500)
             res.send({
                 message: 'Server error',
@@ -59,41 +59,45 @@ function getCompatibilityScore(user, mentor) {
     var compatibilityScore = 0
 
     if(mentor.similarInterests.length > 0){
+        console.log(mentor.userName + ' has similar interests')
         compatibilityScore += 10
     }
 
     if (mentor.mentorTooOldBy === null) {
+        console.log(mentor.userName + ' is not too old')
         compatibilityScore += 10
     }
 
     if (mentor.mentorTooYoungBy === null) {
+        console.log(mentor.userName + ' is not too young')
         compatibilityScore += 10
     }
 
     if(mentor.mentorHasMoreExperience.length > 1){
+        console.log(mentor.userName + ' has more experience in multiple areas')
         compatibilityScore += 10
     }
 
     if (mentor.currentUserTooOldBy === null) {
+        console.log('User is not too old for ' + mentor.userName)
         compatibilityScore += 10
     }
 
     if (mentor.currentUserTooYoungBy === null) {
-        compatibilityScore += 10
-    }
-
-    if (mentor.educationMatches.length > 0) {
+        console.log('User is not too young for ' + mentor.userName)
         compatibilityScore += 10
     }
 
     if(user.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1){
 
-        if(potentialMentor.isWithinUsersRange === false){
-            compatibilityScore -= 10
+        if(mentor.isWithinUsersRange){
+            console.log(mentor.userName + ' is within users distance range')
+            compatibilityScore += 10
         }
 
-        if(potentialMentor.userIsWithinMentorsRange === false){
-            compatibilityScore -= 10
+        if(mentor.userIsWithinMentorsRange){
+            console.log('User is within mentor: ' + mentor.userName + ' range')
+            compatibilityScore += 10
         }
 
     }
@@ -127,7 +131,7 @@ function ageMatch(user, mentor) {
 function getMentorTooYoungBy(user, mentor) {
     if (user.menteeSettings.minimumAge < mentor.age) {
         let mentorTooYoungBy = mentor.age - user.menteeSettings.minimumAge
-        logger.error(mentor.userName + ' is too young by: ' + mentorTooYoungBy + ' years. ')
+        logger.debug(mentor.userName + ' is too young by: ' + mentorTooYoungBy + ' years. ')
         return mentorTooYoungBy
     } else {
         return null
@@ -137,7 +141,7 @@ function getMentorTooYoungBy(user, mentor) {
 function getMentorTooOldBy(user, mentor) {
     if (user.menteeSettings.maximumAge > mentor.age) {
         let mentorTooOldBy = mentor.age - user.menteeSettings.maximumAge
-        logger.error(mentor.userName + ' is too old by ' + mentorTooOldBy + 'years. ')
+        logger.debug(mentor.userName + ' is too old by ' + mentorTooOldBy + 'years. ')
         return mentorTooOldBy
     } else {
         return null
@@ -147,7 +151,7 @@ function getMentorTooOldBy(user, mentor) {
 function getCurrentUserTooYoungBy(user, mentor) {
     if (mentor.mentorSettings.minimumAge < user.age) {
         let currentUserTooYoungBy = mentor.mentorSettings.minimumAge - user.age
-        logger.error('Current user is too young by: ' + currentUserTooYoungBy + ' number of years. ')
+        logger.debug('Current user is too young by: ' + currentUserTooYoungBy + ' number of years. ')
         return currentUserTooYoungBy
     } else {
         return null
@@ -157,7 +161,7 @@ function getCurrentUserTooYoungBy(user, mentor) {
 function getCurrentUserTooOldBy(user, mentor) {
     if (mentor.mentorSettings.maximumAge > user.age) {
         let currentUserTooOldBy = user.age - mentor.mentorSettings.maximumAge
-        logger.error('Current user is too old by: ' + currentUserTooOldBy + ' number of years. ')
+        logger.debug('Current user is too old by: ' + currentUserTooOldBy + ' number of years. ')
         mentor.currentUserTooOldBy = currentUserTooOldBy
     } else {
         return null
@@ -166,27 +170,27 @@ function getCurrentUserTooOldBy(user, mentor) {
 
 function getEducationPreferencesMatches(user, mentor) {
     let educationMatches = []
-    logger.error('Checking current users education again mentors preferences')
-    logger.error('Potential mentor: ' + mentor.userName + ' mentoring education are: ' + mentor.mentorSettings.prefferedEducation)
+    logger.debug('Checking current users education again mentors preferences')
+    logger.debug('Potential mentor: ' + mentor.userName + ' mentoring education are: ' + mentor.mentorSettings.prefferedEducation)
     user.education.forEach(educationChoice => {
         mentor.mentorSettings.prefferedEducation.forEach(prefferedEducationChoice => {
             if (educationChoice.degree === prefferedEducationChoice) {
-                logger.error(educationChoice.degree + ' is a match with ' + mentor.userName + ' preffered education level: ' + prefferedEducationChoice)
+                logger.debug(educationChoice.degree + ' is a match with ' + mentor.userName + ' preffered education level: ' + prefferedEducationChoice)
                 educationMatches.push(prefferedEducationChoice)
             } else {
-                logger.error(mentor.userName + ' preffered education choice: ' + prefferedEducationChoice + ' was not a match with ' + educationChoice)
+                logger.debug(mentor.userName + ' preffered education choice: ' + prefferedEducationChoice + ' was not a match with ' + educationChoice)
             }
         })
     })
     return educationMatches
-    logger.error('Number of education matches: ' + educationMatches.length)
+    logger.debug('Number of education matches: ' + educationMatches.length)
 }
 
 function languagesMatch(user, mentor) {
     let languageMatches = []
-    logger.error('Attempting language match with potential mentor: ' + mentor.userName)
-    logger.error('Current users languages are: ' + JSON.stringify(user.menteeSettings.languages))
-    logger.error('Potential mentor: ' + mentor.userName + ' mentoring languages are: ' + JSON.stringify(mentor.mentorSettings.languages))
+    logger.debug('Attempting language match with potential mentor: ' + mentor.userName)
+    logger.debug('Current users languages are: ' + JSON.stringify(user.menteeSettings.languages))
+    logger.debug('Potential mentor: ' + mentor.userName + ' mentoring languages are: ' + JSON.stringify(mentor.mentorSettings.languages))
     user.menteeSettings.languages.forEach(userLanguage => {
         mentor.mentorSettings.languages.forEach(mentorLanguage => {
             if (userLanguage === mentorLanguage) {
@@ -194,18 +198,18 @@ function languagesMatch(user, mentor) {
             }
         })
     })
-    logger.error('Potential mentor: ' + mentor.userName + ' language matches are: ' + JSON.stringify(languageMatches))
+    logger.debug('Potential mentor: ' + mentor.userName + ' language matches are: ' + JSON.stringify(languageMatches))
     mentor.numberOfLanguageMatches = languageMatches.length
-    logger.error('Potential mentor: ' + mentor.userName + 'number of language matches: ' + languageMatches.length)
+    logger.debug('Potential mentor: ' + mentor.userName + 'number of language matches: ' + languageMatches.length)
     return languageMatches
 }
 
 function logAgeInformation(user, mentor) {
     let potentialMentorsNameMsg = 'Potential mentor: ' + mentor.userName
-    logger.error('Current users age: ' + user.age)
-    logger.error('Potential mentor age: ' + mentor.age)
-    logger.error('Users preferred minimum age of mentor: ' + user.menteeSettings.minimumAge)
-    logger.error('Users preferred maximum age of mentor: ' + user.menteeSettings.maximumAge)
-    logger.error('Potential mentors preffered minimum age of mentee ' + mentor.mentorSettings.minimumAge)
-    logger.error('Potential mentors preffered maximum age of mentee ' + mentor.mentorSettings.maximumAge)
+    logger.debug('Current users age: ' + user.age)
+    logger.debug('Potential mentor age: ' + mentor.age)
+    logger.debug('Users preferred minimum age of mentor: ' + user.menteeSettings.minimumAge)
+    logger.debug('Users preferred maximum age of mentor: ' + user.menteeSettings.maximumAge)
+    logger.debug('Potential mentors preffered minimum age of mentee ' + mentor.mentorSettings.minimumAge)
+    logger.debug('Potential mentors preffered maximum age of mentee ' + mentor.mentorSettings.maximumAge)
 }

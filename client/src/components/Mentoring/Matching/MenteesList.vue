@@ -1,102 +1,108 @@
 <template>
-  <div class="container">
-
-    <div class="row">
-      <h1 class="text-center"> Potential Mentees </h1>
-    </div>
-
-    <div class="row text-center">
-      <button class="btn btn-primary" @click="matchMentees()">Find Mentees</button>
-    </div>
-
-    <br>
-
-    <div class="row" v-for="user in matchedMentees" :key="user._id">
-      <div class="col-xs-6 col-xs-offset-3">
-        <div class="jumbotron">
-          <h3> {{ user.userName }}</h3>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <td>
-                  <h4>
-                    <strong>Areas of Interest</strong>
-                  </h4>
-                </td>
-                <td>
-                  <h4>
-                    <strong>Years of Experience</strong>
-                  </h4>
-                </td>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr v-for="hobby in user.hobbyInputs" :key="hobby._id">
-                <td>{{ hobby.value }}</td>
-                <td>{{ hobby.years }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <div class="container fullPage">
+    <div class="row text-right">
+      <div class="col-xs-12 col-sm-12">
+        <p>
+          <a href='edit-profile#mentor-settings'> Change your Mentor settings
+            <i class="fas fa-cog"></i>
+          </a>
+        </p>
       </div>
     </div>
 
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 displayBox">
+        <h1> Find the perfect Mentee </h1>
+        <br>
+        <button class="btn btn-primary btn-lg" @click="matchMentees()">Find Mentees</button>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <br class="hidden-xs">
+    <br class="hidden-xs">
+
+    <div v-if="potentialInPersonMentees !== null">
+      <in-person-matches :mentors=potentialInPersonMentees></in-person-matches>
+    </div>
+
+    <div v-if="potentialOnlineMentees !== null">
+      <online-matches :mentors=potentialOnlineMentees></online-matches>
+    </div>
+
+    <div v-if="potentialOnlineAndInPersonMentees !== null">
+      <online-and-in-person-matches :mentors=potentialOnlineAndInPersonMentees></online-and-in-person-matches>
+    </div>
+  
+
   </div>
+
 </template>
 <script>
+  import axios from 'axios'
+  import InPersonMatches from './GetMenteesLists/InPerson.vue'
+  import OnlineMatches from './GetMenteesLists/Online.vue'
+  import OnlineAndInPersonMatches from './GetMenteesLists/OnlineAndInPerson.vue'
   export default {
     data() {
       return {
-        users: [],
-        currentUser: this.$store.state.user.authUser,
-        currentUserHobbies: this.$store.state.user.authUser.hobbyInputs,
-        matchedMentees: ''
+        currentUserID: this.$store.state.user.authUser._id,
+        potentialInPersonMentees: null,
+        potentialOnlineMentees: null,
+        potentialOnlineAndInPersonMentees: null
       }
     },
-    created: function () {
-      this.fetchUsers()
+    beforeMount() {
+      var self = this
+      var userID = this.$store.state.user.authUser._id
+      // Get username.
+      const getUserNameURL = 'http://localhost:4000/get/user-name/'
+      axios.get(getUserNameURL + userID).then(function (response) {
+        self.userName = response.data.userName
+      })
+      // Get the users areas of interest
+      const getAreasOfInterestUrl = 'http://localhost:4000/get/areas-of-interest/'
+      axios.get(getAreasOfInterestUrl + userID).then(function (response) {
+        self.areasOfInterest = response.data.areasOfInterest
+      })
     },
     methods: {
-      fetchUsers() {
-        let uri = 'http://localhost:4000/users'
-        this.axios.get(uri).then(response => {
-          this.users = response.data
-        })
-      },
       matchMentees() {
-        console.log('Attempting to match mentees')
-        var potentialMentees = []
-        console.log('Number of potential users ' + this.users.length)
-        for (var i = 0; i < this.users.length; i++) {
-          console.log('Current User: ' + this.users[i].userName)
-          var thisUser = this.users[i]
-          if (thisUser._id === this.currentUser._id) {
-            console.log('Current user: ' + this.currentUser.userName + ' and this user ' + thisUser.userName + ' are the same --excluding')
-            continue
-          }
-          for (var j = 0; j < thisUser.hobbyInputs.length; j++) {
-            var thisUserHobby = thisUser.hobbyInputs[j]
-            for (var x = 0; x < this.currentUserHobbies.length; x++) {
-              if (this.currentUserHobbies[x].value === thisUserHobby.value) {
-                console.log('User: ' + this.currentUser.userName + ' and User: ' + thisUser.userName + ' share the same hobbies ' + this.currentUserHobbies[x].value + ' ' + thisUserHobby.value)
-                console.log('Experience: ' + this.currentUserHobbies[x].years + ' vs ' + thisUserHobby.years)
-                if (this.currentUserHobbies[x].years > thisUserHobby.years) {
-                  potentialMentees.push(thisUser)
-                } else {
-                  continue
-                }
-              }
+        this.potentialInPersonMentees = null
+        this.potentialOnlineMentees = null
+        this.potentialOnlineAndInPersonMentees = null
+        var self = this
+        console.log('Attempting to match mentees.')
+        var getPotentialMenteessURL = 'http://localhost:4000/get/potential-mentees/' + this.currentUserID + '/' + this.userName +
+          '/' + this.sortType
+        axios.get(getPotentialMenteessURL)
+          .then(response => {
+            console.log(response)
+            if (response.data.inPersonMentees) {
+              console.log('Received in person mentors')
+              self.potentialInPersonMentees = response.data.inPersonMentees
+            } else if (response.data.onlineMentees) {
+              console.log('Received online mentors')
+              self.potentialOnlineMentees = response.data.onlineMentees
+            } else if (response.data.onlineAndInPersonMentees) {
+              console.log('Received online and in person mentors')
+              self.potentialOnlineAndInPersonMentees = response.data.onlineAndInPersonMentees
             }
-          }
-        }
-        this.matchedMentees = potentialMentees
+          })
+          .catch(errors => {
+            console.log(errors)
+          })
       }
+    },
+    components: {
+      InPersonMatches,
+      OnlineMatches,
+      OnlineAndInPersonMatches
     }
   }
 </script>
-
-<style>
+<style scoped>
 
 
 </style>

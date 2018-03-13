@@ -26,3 +26,199 @@
 
 12:22:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
 
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd has both online and in person as options
+
+12:26:11 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+12:28:35 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+12:28:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+12:28:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+12:28:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+12:28:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+12:28:36 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+12:30:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+12:58:36 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd:  is attempting to get potential mentees with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+12:58:36 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Number of potential mentees: 20
+
+12:58:36 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: AngeliaBattaglini71 has been added to the online list of mentees.
+
+12:58:36 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: CourtneyPomares51 has been added to the online list of mentees.
+
+12:58:36 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: DrusiSimmon81 has been added to the online list of mentees.
+
+12:58:37 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: GabyPruden31 has been added to the online list of mentees.
+
+12:58:37 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: PetronellaBedinghaus41 has been added to the in person list of mentees.
+
+12:58:37 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: ToniBossard61 has been added to the online list of mentees.
+
+13:01:20 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd:  is attempting to get potential mentees with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+13:01:20 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Number of potential mentees: 20
+
+13:01:20 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: AngeliaBattaglini71 has been added to the online list of mentees.
+
+13:01:20 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: CourtneyPomares51 has been added to the online list of mentees.
+
+13:01:20 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: DrusiSimmon81 has been added to the online list of mentees.
+
+13:01:20 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: GabyPruden31 has been added to the online list of mentees.
+
+13:01:21 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: PetronellaBedinghaus41 has been added to the in person list of mentees.
+
+13:01:21 ControllerMethods/Matching/getPotentialMentees.js ERROR: User--reecekidd: Potential mentee: ToniBossard61 has been added to the online list of mentees.
+
+13:21:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+13:21:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+13:21:37 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+13:21:38 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+13:21:39 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+13:21:39 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+13:21:39 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5a9f914f4fc52a64e0414de5","userName":"reecekidd","sortType":"undefined"}
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 22
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: JudyDoerksen61 has been added to the online list of mentors.
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MelisentJaymes91 has been added to the in person list of mentors.
+
+13:21:48 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MichaellaVorheis11 has been added to the in person list of mentors.
+
+13:21:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: NatashaShumard91 has been added to the online list of mentors.
+
+13:21:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OlympieBrockamp51 has been added to the in person list of mentors.
+
+13:21:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+13:21:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PerlaYanity11 has been added to the in person list of mentors.
+
+13:21:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: ShawnViltz31 has been added to the in person list of mentors.
+
+13:21:49 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: VitiaDurada11 has been added to the online list of mentors.
+

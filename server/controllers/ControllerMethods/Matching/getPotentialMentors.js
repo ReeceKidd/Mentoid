@@ -34,9 +34,6 @@ let potentialMentorUserName = null
 let currentAreaOfInterest = null
 let comparisonAreaOfInterest = null
 
-
-
-
 let potentialMentors = []
 let filteredPotentialMentors = []
 let onlineMentors = []
@@ -49,7 +46,7 @@ module.exports = getPotentialMentors = (req, res) => {
     var undefinedFields = checkUndefinedFields(req.params, ['userID', 'userName', 'sortType'])
 
     if (undefinedFields) {
-        logError(undefinedFields)
+        logDebug(undefinedFields)
         return res.status(950).send({
             error: 'Undefined field',
             message: undefinedFields
@@ -57,7 +54,7 @@ module.exports = getPotentialMentors = (req, res) => {
     }
 
     currentUserName = req.params.userName
-    logError(" is attempting to get potential mentors with request: " + JSON.stringify(req.params))
+    logDebug(" is attempting to get potential mentors with request: " + JSON.stringify(req.params))
 
     userID = req.params.userID
 
@@ -123,10 +120,37 @@ module.exports = getPotentialMentors = (req, res) => {
             }
 
             if (retreivedPotentialMentors.length === 0) {
-                logError("No potential mentors where found")
-                res.status(200).send('No potential mentors where found')
-                return
-            } else {
+                if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
+                    logDebug('No potential online or in person mentors found')
+                    res.status(200).send({
+                        onlineAndInPersonMentors: onlineAndInPersonMentors
+                    })
+                    return
+                }
+                else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
+                    logDebug('No potential online mentors found. ')
+                    res.status(200).send({
+                       onlineMentors: onlineMentors
+                    })
+                    return
+                }
+                else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
+                    logDebug('No potential in person mentors found')
+                    res.status(200).send({
+                        inPersonMentors: inPersonMentors
+                    })
+                    return
+                }
+                else {
+                    logDebug('User has not set up their mentoring preferences')
+                    logDebug('No potential mentors found')
+                    res.status(200).send({
+                        onlineAndInPersonMentors: onlineAndInPersonMentors
+                    })
+                    return
+                }
+            }
+             else {
 
                 potentialMentors = retreivedPotentialMentors
 
@@ -164,7 +188,7 @@ module.exports = getPotentialMentors = (req, res) => {
                                     populatedPotentialMentor = populateSharedInterestObject(potentialMentor)
 
                                     if (comparisonAreaOfInterest.years > currentAreaOfInterest.years) {
-                                        organizeByMentoringFormat(populatedPotentialMentor)
+                                        organizeByMentoringFormat(currentUser, populatedPotentialMentor)
 
                                     } else {
                                         logNotExperiencedEnoughToMentorAreaOfInterest()
@@ -185,6 +209,7 @@ module.exports = getPotentialMentors = (req, res) => {
                 logDebug('Number of matched in person mentors: ' + inPersonMentors.length)
 
                 if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
+                    logDebug('Entered online and in person method')
                     let onlineAndInPersonMentors = joinMentoringArrays()
                     console.log(JSON.stringify(onlineAndInPersonMentors, null, 2))
                     onlineAndInPersonMentors = removeDuplicates(onlineAndInPersonMentors, 'userName')
@@ -194,8 +219,8 @@ module.exports = getPotentialMentors = (req, res) => {
                     })
                     return
                 }
-                if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
-                    logDebug('Entered in person method. ')
+                else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
+                    logDebug('Entered online method. ')
                     onlineMentors = removeDuplicates(onlineMentors, 'userName')
                     shuffle(onlineMentors)
                     res.status(200).send({
@@ -203,12 +228,29 @@ module.exports = getPotentialMentors = (req, res) => {
                     })
                     return
                 }
-                if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-                    logDebug('Entered online method')
-                    inPersonMentors = removeDuplicates(inPersonMentors)
-                    sortByDistance()
+                else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
+                    logDebug('Entered in person method')
+                    logDebug('Number of in person mentors: ' + inPersonMentors.length)
+                    logDebug('Attempting to remove duplicates')
+                    inPersonMentors = removeDuplicates(inPersonMentors, 'userName')
+                    logDebug('Number of in person mentors after duplicates are removed: ' + inPersonMentors.length)
+                    logDebug('Attempting to sort in person mentors by distance')
+                    inPersonMentors = sortByDistance(inPersonMentors)
+                    logDebug('Sorted in person mentors by distance')
                     res.status(200).send({
                         inPersonMentors: inPersonMentors
+                    })
+                    return
+                }
+                else {
+                    logDebug('User has not set up their mentoring preferences')
+                    logDebug('Entered online and in person method')
+                    let onlineAndInPersonMentors = joinMentoringArrays()
+                    console.log(JSON.stringify(onlineAndInPersonMentors, null, 2))
+                    onlineAndInPersonMentors = removeDuplicates(onlineAndInPersonMentors, 'userName')
+                    shuffle(onlineAndInPersonMentors)
+                    res.status(200).send({
+                        onlineAndInPersonMentors: onlineAndInPersonMentors
                     })
                     return
                 }
@@ -255,13 +297,14 @@ function shuffle(array) {
     return array;
 }
 
-function sortByDistance() {
+function sortByDistance(inPersonMentors) {
 
     function sortNumber(a, b) {
         return a.distanceKM - b.distanceKM
     }
 
     inPersonMentors.sort(sortNumber)
+    return inPersonMentors
 }
 
 function bestMatchedMentor() {
@@ -273,29 +316,29 @@ function bestMatchedMentor() {
 }
 
 //This covers every possible combination of the two values in order to sort the information properly. 
-function organizeByMentoringFormat(mentor) {
+function organizeByMentoringFormat(currentUser, mentor) {
 
     if (currentUser.menteeSettings.prefferedMentoringFormats.length > 1) {
         logCurrentUserHasOnlineAndInPerson()
 
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
-            let updatedMentor = generateDistanceInformation(mentor)
+            let updatedMentor = generateDistanceInformation(currentUser, mentor)
             addMentorToInPersonList(updatedMentor)
             addMentorToOnlineList(mentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-            generateDistanceInformation(mentor)
-            addMentorToInPersonList(mentor)
+            let updatedMentor = generateDistanceInformation(currentUser, mentor)
+            addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
             addMentorToOnlineList(mentor)
         }
 
     } else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
-            let updatedMentor = generateDistanceInformation(mentor)
+            let updatedMentor = generateDistanceInformation(currentUser, mentor)
             addMentorToOnlineList(mentor)
             addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-            let updatedMentor = generateDistanceInformation()
+            let updatedMentor = generateDistanceInformation(currentUser, mentor)
             addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
             addMentorToOnlineList(mentor)
@@ -303,11 +346,11 @@ function organizeByMentoringFormat(mentor) {
 
     } else if (currentUser.menteeSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
         if (potentialMentor.mentorSettings.prefferedMentoringFormats.length > 1) {
-            let updatedMentor = generateDistanceInformation()
+            let updatedMentor = generateDistanceInformation(currentUser, mentor)
             addMentorToInPersonList(updatedMentor)
             addMentorToOnlineList(mentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('In person') > -1) {
-            let updatedMentor = generateDistanceInformation()
+            let updatedMentor = generateDistanceInformation(currentUser, mentor)
             addMentorToInPersonList(updatedMentor)
         } else if (potentialMentor.mentorSettings.prefferedMentoringFormats.indexOf('Online') > -1) {
             addMentorToOnlineList(mentor)
@@ -350,45 +393,46 @@ function resetMethod() {
     inPersonMentors = []
 }
 
-function generateDistanceInformation() {
+function generateDistanceInformation(currentUser, potentialMentor) {
+    logDebug('Entering generate distance information with user: ' + currentUser.userName + ' and potential mentor: ' + potentialMentor.userName )
 
-    let distance = getDistanceFromPotentialMentor()
+    let distance = getDistanceFromPotentialMentor(currentUser, potentialMentor)
     potentialMentor.distanceKM = distance
     potentialMentor.isWithinUsersRange = null
     potentialMentor.userIsWithinMentorsRange = null
 
-    logLocationInformaion()
+    logLocationInformaion(currentUser, potentialMentor)
     if (distance <= currentUser.menteeSettings.maximumTravelDistanceKM) {
         potentialMentor.isWithinUsersRange = true
-        logWithinUsersRange()
+        logWithinUsersRange(currentUser, potentialMentor)
 
         if (distance <= potentialMentor.mentorSettings.maximumTravelDistanceKM) {
-            logWithinMentorsRange()
+            logWithinMentorsRange(currentUser, potentialMentor)
             potentialMentor.userIsWithinMentorsRange = true
             return potentialMentor
 
         } else {
-            logOutsideOfMentorsRange()
+            logOutsideOfMentorsRange(currentUser, potentialMentor)
             potentialMentor.userIsWithinMentorsRange = false
-            potentialMentor.outsideOfMentorsRangeBy = getOutOfRangeDistance()
+            potentialMentor.outsideOfMentorsRangeBy = getOutOfRangeDistance(currentUser, potentialMentor)
             return potentialMentor
         }
     } else {
-        logOutsideOfUsersRange()
+        logOutsideOfUsersRange(currentUser, potentialMentor)
         potentialMentor.isWithinUsersRange = false
-        potentialMentor.outsideOfUsersRangeBy = getOutOfRangeDistance()
+        potentialMentor.outsideOfUsersRangeBy = getOutOfRangeDistance(currentUser, potentialMentor)
         return potentialMentor
     }
 }
 
 function addMentorToOnlineList() {
     onlineMentors.push(potentialMentor)
-    logError('Potential mentor: ' + potentialMentorUserName + ' has been added to the online list of mentors.')
+    logDebug('Potential mentor: ' + potentialMentorUserName + ' has been added to the online list of mentors.')
 }
 
 function addMentorToInPersonList() {
     inPersonMentors.push(potentialMentor)
-    logError('Potential mentor: ' + potentialMentorUserName + ' has been added to the in person list of mentors.')
+    logDebug('Potential mentor: ' + potentialMentorUserName + ' has been added to the in person list of mentors.')
 }
 
 function populateSharedInterestObject(mentor) {
@@ -418,13 +462,15 @@ function deleteUnnecessaryInformation() {
 }
 
 //Getters. 
-function getDistanceFromPotentialMentor() {
+function getDistanceFromPotentialMentor(currentUser, potentialMentor) {
+    logDebug('Current users location is: ' + JSON.stringify(currentUser.location, null, 2))
+    logDebug('Potential mentors distance is: ' + JSON.stringify(potentialMentor.location, null, 2))
     let distance = getDistanceInKM(currentUser.location, potentialMentor.location)
     return distance
 }
 
-function getOutOfRangeDistance() {
-    if (currentUser.maximumTravelDistanceKM < potentialMentor.maximumTravelDistanceKM) {
+function getOutOfRangeDistance(currentUser, potentialMentor) {
+    if (currentUser.menteeSettings.maximumTravelDistanceKM < potentialMentor.mentorSettings.maximumTravelDistanceKM) {
         return potentialMentor.mentorSettings.maximumTravelDistanceKM = currentUser.menteeSettings.maximumTravelDistanceKM
     } else {
         return currentUser.menteeSettings.maximumTravelDistanceKM - potentialMentor.mentorSettings.maximumTravelDistanceKM
@@ -433,9 +479,8 @@ function getOutOfRangeDistance() {
 
 
 
-//Handle logging for the matching section. 
-
-function logError(errorMessage) {
+//Add user names to identify each request. 
+function logDebug(errorMessage) {
     try {
         var userNameAddon = 'User--' + currentUserName + ': '
         logger.error(userNameAddon + errorMessage)
@@ -469,7 +514,7 @@ function logPotentialMentorsDistanceSort() {
 }
 
 function logNumberOfPotentialMentors() {
-    logError("Number of potential mentors: " + potentialMentors.length)
+    logDebug("Number of potential mentors: " + potentialMentors.length)
 }
 
 function logMentorPreferenceNotSuitable() {
@@ -478,55 +523,55 @@ function logMentorPreferenceNotSuitable() {
         JSON.stringify(currentUser.menteeSettings.prefferedMentoringFormats))
 }
 
-function logWithinUsersRange() {
-    logDebug(getDistanceFromPotentialMentor() + 'KM is within the current users maximum distance of: ' + currentUser.menteeSettings.maximumTravelDistanceKM + 'KM')
+function logWithinUsersRange(currentUser, potentialMentor) {
+    logDebug(getDistanceFromPotentialMentor(currentUser, potentialMentor) + 'KM is within the current users maximum distance of: ' + currentUser.menteeSettings.maximumTravelDistanceKM + 'KM')
 }
 
 function logOutsideOfUsersRange() {
-    logDebug(getDistanceFromPotentialMentor() + 'KM is outside the current users maximum distance of: ' +
+    logDebug(getDistanceFromPotentialMentor(currentUser, potentialMentor) + 'KM is outside the current users maximum distance of: ' +
         currentUser.menteeSettings.maximumTravelDistanceKM +
-        'KM by ' + getOutOfRangeDistance() + 'KM.')
+        'KM by ' + getOutOfRangeDistance(currentUser, potentialMentor) + 'KM.')
 }
 
-function logWithinMentorsRange() {
-    logDebug(getDistanceFromPotentialMentor() + 'KM is within the potential mentors maximum distance of: ' + potentialMentor.mentorSettings.maximumTravelDistanceKM + 'KM')
+function logWithinMentorsRange(currentUser, potentialMentor) {
+    logDebug(getDistanceFromPotentialMentor(currentUser, potentialMentor) + 'KM is within the potential mentors maximum distance of: ' + potentialMentor.mentorSettings.maximumTravelDistanceKM + 'KM')
     logDebug(currentUserName + ' potential mentor: ' + potentialMentorUserName + ' are a distance match.')
 }
 
-function logOutsideOfMentorsRange() {
-    logDebug(getDistanceFromPotentialMentor() + 'KM is outside the mentors maximum distance of: ' + potentialMentor.mentorSettings.maximumTravelDistanceKM +
-        ' by ' + getOutOfRangeDistance() + 'KM.')
+function logOutsideOfMentorsRange(currentUser, potentialMentor) {
+    logDebug(getDistanceFromPotentialMentor(currentUser, potentialMentor) + 'KM is outside the mentors maximum distance of: ' + potentialMentor.mentorSettings.maximumTravelDistanceKM +
+        ' by ' + getOutOfRangeDistance(currentUser, potentialMentor) + 'KM.')
 }
 
-function logBothUsersHaveOnlineAndInPerson() {
+function logBothUsersHaveOnlineAndInPerson(currentUser, potentialMentor) {
     logDebug(currentUserName + ' and potential mentor ' + potentialMentorUserName + ' both have online and in person in their mentoring preferences.')
 }
 
 function logCurrentUserHasOnlineAndInPerson() {
-    logError(currentUserName + " has both online and in person as options")
+    logDebug(currentUserName + " has both online and in person as options")
 }
 
 function logCurrentUserHasOnlineInPrefferedMentoringOption() {
-    logError(currentUserName + " has online as a preffered mentoring option")
+    logDebug(currentUserName + " has online as a preffered mentoring option")
 }
 
 function logCurrentUserHasInPersonAsPrefferedMentoringOption() {
-    logError(currentUserName + " has in person as a preffered mentoring option")
+    logDebug(currentUserName + " has in person as a preffered mentoring option")
 }
 
 function logPotentialMentorHasOnlineAndInPerson() {
-    logError(potentialMentorUserName + " has both online and in person as options")
+    logDebug(potentialMentorUserName + " has both online and in person as options")
 }
 
 function logPotentialMentorHasOnlineInPrefferedMentoringOption() {
-    logError(potentialMentorUserName + " has online as a preffered mentoring option")
+    logDebug(potentialMentorUserName + " has online as a preffered mentoring option")
 }
 
 function logPotentialMentorHasInPersonAsPrefferedMentoringOption() {
-    logError(potentialMentorUserName + " has in person as a preffered mentoring option")
+    logDebug(potentialMentorUserName + " has in person as a preffered mentoring option")
 }
 
-function logLocationInformaion() {
+function logLocationInformaion(currentUser, potentialMentor) {
     logDebug("Current users location: " + currentUser.location + ' , Potential mentor: ' + potentialMentorUserName + ' location: ' + potentialMentor.location)
     logDebug("Current users maximum travel distance: " + currentUser.menteeSettings.maximumTravelDistanceKM + "KM")
     logDebug("Potential mentor: " + potentialMentorUserName + " maximum travel distance is: " + potentialMentor.mentorSettings.maximumTravelDistanceKM + "KM")

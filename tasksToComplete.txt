@@ -374,3 +374,6 @@ Create a message when no potential mentors are found.
 Need to make the default mentor and mentee settings set, so that they are all definied to improve matching, where the user will have to edit,
 when the user completes basic registration add the normal settings. 
 them to make it more specific to help with users who will likely ignore the form. 
+Need to change the unknown users homepage so that it is mobile responsive. 
+Need to do an entire mobile responsive run through. 
+Need to fix the mobile menu navigation bar. 
