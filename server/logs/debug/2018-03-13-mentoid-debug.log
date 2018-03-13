@@ -291,3 +291,1493 @@
 
 19:46:31 ControllerMethods/Register/updateAreasOfInterest.js INFO: Kajukaja updated areasOfInterest successfully: [{"value":"Yoga","years":10,"areaOfInterestID":0,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Rugby","years":10,"areaOfInterestID":1,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0},{"value":"Writing","years":10,"areaOfInterestID":2,"numberOfLikes":0,"numberOfLinksClicked":0,"articlesRead":0,"videosWatched":0,"pathsStudied":0}]
 
+19:48:24 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:48:24 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:48:24 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:48:24 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:51:34 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:51:34 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:51:34 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:51:34 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+19:52:36 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+19:52:36 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+19:52:36 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+19:52:36 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+19:52:36 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:52:36 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+19:52:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+19:52:36 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+19:52:36 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:52:36 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+19:52:36 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+19:52:36 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+19:52:36 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+19:52:36 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+19:52:37 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+19:52:37 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+19:52:37 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+19:52:37 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+19:53:16 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:16 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:53:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:53:16 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:16 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:53:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:53:31 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:31 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:53:31 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:31 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:31 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:53:31 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:53:31 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:31 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:53:51 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:51 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:53:51 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:51 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:53:51 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:51 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:53:51 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:53:51 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:54:21 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:21 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:54:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:54:21 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:21 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:54:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:54:45 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:45 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:54:45 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:45 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:54:45 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:45 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:54:45 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:46 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:54:58 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:58 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:58 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:54:58 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:54:58 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:58 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:54:58 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:54:58 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:55:11 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:11 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:55:11 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:11 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:55:11 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:11 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:55:11 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:11 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:55:16 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:16 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:55:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:16 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:55:16 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:55:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:55:54 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:54 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:54 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:55:54 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:55:54 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:54 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:55:54 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:55:54 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:57:42 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:57:42 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:57:42 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:57:42 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:57:42 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+19:57:42 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+19:57:42 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:57:42 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:59:46 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:59:46 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+19:59:46 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:59:46 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+19:59:46 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+19:59:46 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+19:59:46 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+19:59:46 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:00:09 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:00:09 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:00:09 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:00:09 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:00:09 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:00:09 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:00:09 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:00:09 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:02:10 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:10 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:10 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:02:10 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:10 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:02:10 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:02:10 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:10 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:02:54 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:54 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:02:54 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:54 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:02:54 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:54 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:02:54 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:02:54 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:03:18 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:03:18 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:03:18 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:03:18 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:03:18 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:03:18 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:03:18 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:03:18 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:04:16 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:04:16 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:04:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:04:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:04:16 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:04:16 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:04:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:04:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:09 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:09 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:05:09 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:09 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:09 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:09 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:05:09 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:09 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:14 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:05:14 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:05:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:05:14 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:05:14 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:05:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:14 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:05:14 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:05:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:05:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:05:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:05:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:05:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:05:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:05:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:05:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:05:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:05:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:05:15 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:05:15 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:05:15 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:05:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:05:15 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:05:15 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:05:15 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:05:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:05:15 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:05:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:05:15 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:05:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:05:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:15 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:05:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:05:15 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:05:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:05:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:05:15 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:05:15 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:05:15 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:05:15 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:05:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:05:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:05:15 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:05:15 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:05:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:05:15 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:07:40 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:40 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:40 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:07:40 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:07:40 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:40 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:07:40 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:40 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:07:54 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:54 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:54 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:07:54 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:07:54 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:54 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:07:54 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:07:54 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:08:16 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:08:16 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:08:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:08:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:08:16 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:08:16 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:08:16 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:08:16 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:03 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:09:03 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:09:03 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:09:03 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:09:03 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:03 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:03 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:09:03 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:03 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:09:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:09:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:14 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:09:14 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:09:14 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:14 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:14 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:09:14 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:09:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:14 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:09:14 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:09:14 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:09:14 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:10:42 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:10:42 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:10:42 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:10:42 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:10:42 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:10:42 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:10:42 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:10:42 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:12:07 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:07 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:12:07 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:07 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:12:43 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:12:43 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:12:43 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:12:43 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:12:43 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:12:43 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:12:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:12:43 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:12:43 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:12:43 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:12:43 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:12:43 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:12:43 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Kaja',
+  lastName: 'Horn',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:12:43 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:13:06 ControllerMethods/Register/updateName.js INFO: Kajukaja updated first and last name successfully: Reece Kidd
+

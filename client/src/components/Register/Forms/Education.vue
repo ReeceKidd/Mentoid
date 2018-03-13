@@ -3,13 +3,13 @@
     <!-- This component is different depending on whether it is viewed in mobile or on desktop -->
 
     <div class="row">
-      <div class="visible-xs">
+      <div class="visible-xs text-center">
         <button @click="onAddEducation" class="btn btn-success btn-md">Add Education</button>
         <br> 
         <br>
         <button @click="onSubmit" class="btn btn-danger btn-md" v-if="education.length === 0"> Skip</button>
       </div>
-      <div class="hidden-xs">
+      <div class="hidden-xs text-center">
         <button @click="onAddEducation" class="btn btn-success btn-lg">Add Education</button>
         <button @click="onSubmit" class="btn btn-danger btn-lg" v-if="education.length === 0"> Skip</button>
       </div>

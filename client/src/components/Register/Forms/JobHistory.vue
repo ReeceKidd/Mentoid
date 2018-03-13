@@ -1,22 +1,18 @@
 <template>
-  <div class="container">
+  <div>
 
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center">
+    <div>
+      <div class="text-center">
         <button @click="onAddExperience" class="btn btn-success btn-lg">Add Experience</button>
         <br>
         <br>
         <button @click="onSubmit" class="btn btn-danger" v-if="experiences.length === 0"> Skip</button>
       </div>
-    </div>
     <!-- End of Mobile Version of job history and buttons -->
 
     <!-- Form -->
-    <div class="row">
 
       <div class="experiences" v-for="(experience, index) in experiences" :key="experience.id">
-
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 displayBox">
           <h3>
             <u>Experience {{ index + 1}} </u>
           </h3>
@@ -68,9 +64,15 @@
             <br>
             <br>
           </div>
-        </div>
+          <div class="visible-xs">
+            <button @click="onDeleteExperiences(experience.experienceID)" class="btn-danger btn btn-sm">Delete experience</button>
+            <br>
+            <br>
+            <button @click="onAddExperience" class="btn btn-success btn-sm">Add Another Experience</button>
+            <br>
+            <br>
+          </div>
       </div>
-    </div>
     <!-- End of Form -->
     <br>
 
@@ -96,8 +98,13 @@
 
     <br>
 
-    <div class="row text-center">
+    <div class="text-center hidden-xs">
       <button class="btn btn-lg btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Update Job History </button>
+    </div>
+    <div class="text-center visible-xs">
+      <button class="btn btn-sm btn-primary" :disabled="$v.experiences.$invalid" @click="onSubmit"> Update Job History </button>
+    </div>
+    <br>
     </div>
   </div>
 
@@ -231,13 +238,6 @@
 </script>
 
 <style scoped>
-  .yearInputDesktop {
-    width: 25%;
-  }
-
-  .yearInputMobile {
-    width: 50%;
-  }
 
   .input {
     margin: 10px auto;
@@ -255,7 +255,6 @@
 
   .input input {
     font: inherit;
-    width: 100%;
     padding: 6px 12px;
     box-sizing: border-box;
     border: 1px solid #ccc;

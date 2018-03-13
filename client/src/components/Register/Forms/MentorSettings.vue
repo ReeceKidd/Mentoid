@@ -1,28 +1,18 @@
 <template>
-  <div class="container">
-    <div>
-      <div class="col-xs-12 text-center">
+  <div>
+      <div class="text-center">
         <h3>Would you like to be a Mentor?</h3>
-        <br>
-      </div>
-    </div>
-
-    <div>
-      <div class="col-xs-12 text-center">
         <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeToMentor">
           <option value="true">Yes</option>
           <option value="false">No</option>
         </select>
         <br>
-        <br>
       </div>
-    </div>
 
     <!--  This form allows a user (mentee) to set their settings on what they are looking in a mentor.  -->
-    <div class="col-xs-8 col-xs-offset-2 displayBox">
       <div v-if="wouldLikeToMentor === 'true'">
         <!-- User has updaed areas of interest -->
-  <br>
+        <br>
         <span v-if="areasOfInterestNames.length !== 0">
           <label> Which Areas would you like to Mentor in? </label>
           <br>
@@ -100,8 +90,11 @@
         <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentees=0)" v-model="maxNumberOfMentees" name="maxNumberOfMentees">
         <br>
         <br>
-        <div class="row text-center">
+        <div class="row text-center hidden-xs">
           <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor settings </button>
+        </div>
+        <div class="row text-center visible-xs">
+          <button class="btn btn-md btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor settings </button>
         </div>
       </div>
 
@@ -144,7 +137,7 @@
           </div>
         </div>
         <br>
-        <div class="col-xs-12 text-center">
+        <div class="text-center">
           <button class="btn btn-danger" @click="doesNotWantToMentor()"> I do not want to Mentor </button>
         </div>
 
@@ -152,24 +145,19 @@
 
         <br>
       <!-- Does not want to mentor error message -->
-      <div class="row text-center">
-        <div class="col-xs-12">
+      <div class="text-center">
           <p class="errorMessage" v-if="doesNotWantToMentorErrorMessage !== null">{{doesNotWantToMentorErrorMessage}}</p>
-        </div>
       </div>
       <!-- End of error messages -->
 
       <!-- Does not want to mentor success Message -->
-      <div class="row">
         <div class="text-center">
           <p class="successMessage" v-if="doesNotWantToMentorSuccessMessage !== null">{{doesNotWantToMentorSuccessMessage}}</p>
         </div>
-      </div>
       <!-- End of success message -->
 
       </div>
     </div>
-  </div>
 </template>
 <script>
   import axios from 'axios'
@@ -413,7 +401,6 @@
 
 <style scoped>
   select.wouldYouLikeToMentorSelector {
-    width: 20%;
     height: 50px;
     text-align: center;
     font-size: 200%;

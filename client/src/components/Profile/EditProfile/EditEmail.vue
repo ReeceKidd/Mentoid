@@ -1,9 +1,17 @@
 <template>
   <a v-if="editEmail === false">
+    <div class="visible-xs">
+    <h2 @click="editEmail = true, oldEmail = email, newEmail = email">
+      <i class="fas fa-envelope"></i>
+      <i class="far fa-edit"></i>
+    </h2>
+    </div>
+    <div class="hidden-xs">
     <h4 @click="editEmail = true, oldEmail = email, newEmail = email">
       <i class="fas fa-envelope"></i> {{ email }}
       <i class="far fa-edit smallFA"></i>
     </h4>
+    </div>
   </a>
   <span v-else>
     <br>

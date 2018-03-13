@@ -51,8 +51,11 @@
         <p class="errorMessage" v-if="!$v.website.minLength && $v.website.$dirty">Please provide a valid Personal Website URL.</p>
       </div>
       <br>
-      <div class="submit text-center">
+      <div class="submit text-center hidden-xs">
         <button type="submit" class="btn btn-lg btn-primary" :disabled="$v.$invalid">Update Social Details</button>
+      </div>
+      <div class="submit text-center visible-xs">
+        <button type="submit" class="btn btn-md btn-primary" :disabled="$v.$invalid">Update Social Details</button>
       </div>
     </form>
       <br>

@@ -17,8 +17,14 @@
 
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
-        <h2 class="text-center">
-          PROFILE COMPLETENESS
+        <h3 class="text-center visible-xs">
+          COMPLETENESS
+          <br>
+          <br>
+          <profile-completeness></profile-completeness>
+        </h3>
+        <h2 class="text-center hidden-xs">
+          COMPLETENESS
           <br>
           <br>
           <profile-completeness></profile-completeness>
@@ -70,7 +76,7 @@
     <hr>
 
     <div class="row">
-      <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h2 class="text-center">
           JOB HISTORY
         </h2>
@@ -78,30 +84,8 @@
         <edit-job-history></edit-job-history>
       </div>
       <span id="mentoring-preferences"></span>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <h2 class="text-center">
-          MENTOR SETTINGS
-        </h2>
-        <edit-mentor-settings></edit-mentor-settings>
-      </div>
-      <span id="mentee-preferences"></span>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <h2 class="text-center">
-          MENTEE SETTINGS
-        </h2>
-        <edit-mentee-settings></edit-mentee-settings>
-      </div>
-    </div>
+    </div>  
+    <br>
   </div>
 </template>
 

@@ -1,25 +1,18 @@
 <template>
-  <div class="container">
+  <div>
     <div>
-      <div class="col-xs-12 text-center">
+      <div class="text-center">
         <h3>Would you like a Mentor?</h3>
-        <br>
-      </div>
-    </div>
-
-    <div>
-      <div class="col-xs-12 text-center">
         <select class="wouldLikeAMentorSelector" v-model="wouldLikeAMentor">
           <option value="true">Yes</option>
           <option value="false">No</option>
         </select>
         <br>
-        <br>
       </div>
     </div>
 
     <!--  This form allows a user (mentee) to set their settings on what they are looking in a mentor.  -->
-    <div class="col-xs-8 col-xs-offset-2 displayBox">
+    <div>
       <div v-if="wouldLikeAMentor === 'true'">
         <!-- User has updaed areas of interest -->
         <br>
@@ -100,8 +93,11 @@
         <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentors=0)" v-model="maxNumberOfMentors" name="maxNumberOfMentors">
         <br>
         <br>
-        <div class="row text-center">
+        <div class="row text-center hidden-xs">
           <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentee settings </button>
+        </div>
+        <div class="row text-center visible-xs">
+          <button class="btn btn-md btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentee settings </button>
         </div>
       </div>
 
@@ -412,7 +408,6 @@
 
 <style scoped>
   select.wouldLikeAMentorSelector {
-    width: 20%;
     height: 50px;
     text-align: center;
     font-size: 200%;

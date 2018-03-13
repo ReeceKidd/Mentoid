@@ -377,3 +377,11 @@ them to make it more specific to help with users who will likely ignore the form
 Need to change the unknown users homepage so that it is mobile responsive. 
 Need to do an entire mobile responsive run through. 
 Need to fix the mobile menu navigation bar. 
+Create the view profile page/user home page. 
+
+The issue is to do with the mentors interest object it needs to push the individual elements not the mentors interest object. 
+Need to check if the similar interest objects is already populated if not I need to populate it in the same place the other interests are 
+populated. 
+
+Update the internationalization menu so that it includes the options in the native language. 
+Mentor and mentee settings include the do not want to mentor recommendations

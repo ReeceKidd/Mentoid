@@ -3,7 +3,9 @@
  
     <div class="container-fluid">
       <div class="row">
+        <div class="text-center">
         <button @click="onAddAreaOfInterest" class="btn btn-success btn-lg">Add Interest</button>
+        </div>
 
       <!-- Desktop version -->
       <br class="hidden-xs">
