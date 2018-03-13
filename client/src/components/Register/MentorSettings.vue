@@ -1,6 +1,11 @@
 <template>
   <div class="container">
+     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
+       <h2>
+          Please adjust your mentor settings.
+        </h2>
     <mentor-settings-form></mentor-settings-form>
+    </div>
 
      <div class="row">
       <div class="col-xs-12 col-md-8 col-md-offset-2">  

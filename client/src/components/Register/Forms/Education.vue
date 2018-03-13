@@ -10,6 +10,7 @@
         <button @click="onSubmit" class="btn btn-danger btn-md" v-if="education.length === 0"> Skip</button>
       </div>
       <div class="hidden-xs text-center">
+        <br>
         <button @click="onAddEducation" class="btn btn-success btn-lg">Add Education</button>
         <button @click="onSubmit" class="btn btn-danger btn-lg" v-if="education.length === 0"> Skip</button>
       </div>

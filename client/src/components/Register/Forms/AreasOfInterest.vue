@@ -3,6 +3,7 @@
  
     <div class="container-fluid">
       <div class="row">
+        <br>
         <div class="text-center">
         <button @click="onAddAreaOfInterest" class="btn btn-success btn-lg">Add Interest</button>
         </div>
@@ -30,7 +31,9 @@
                 :id="areaOfInterest.areaOfInterestID" v-model="areaOfInterest.years" name="yearsOfExperience">
                 <br>
                 <br>
+                <div class="text-center">
                 <button @click="onDeleteAreaOfInterest(areaOfInterest.areaOfInterestID)" class="btn-danger btn btn-sm">Delete</button>
+                </div>
               <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
                 Please enter years of experience in this area. </p>
             </div>

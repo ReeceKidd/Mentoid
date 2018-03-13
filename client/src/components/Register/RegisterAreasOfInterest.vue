@@ -1,17 +1,15 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h1 class="text-center"> Hello {{ firstName + ' ' + lastName }} </h1>
-      </div>
-      <div class="col-sm-8 col-sm-offset-2">
         <h2 class="text-center">
           Please add your hobbies, skills and areas of interest.
         </h2>
-      </div>
-    </div>
     <areas-of-interest-form></areas-of-interest-form>
     <br>
+      </div>
+    </div>
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">  
         <hr>

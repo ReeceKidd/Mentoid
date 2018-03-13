@@ -34,12 +34,6 @@
                 <li>
                   <a @click="navigateTo({ name : 'manage-relationships'})">Manage relationships</a>
                 </li>
-                <li>
-                  <a @click="navigateTo({ name : 'search'})">Search</a>
-                </li>
-                <li>
-                  <a @click="navigateTo({ name : 'reporting'})">Reporting</a>
-                </li>
               </ul>
             </li>
             <li class="dropdown">
@@ -55,19 +49,6 @@
                 </li>
                 <li>
                   <a @click="navigateTo({ name : 'create'})">Create</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a @click="navigateTo({ name : 'feed'})">Feed</a>
-                </li>
-                <li>
-                  <a @click="navigateTo({ name : 'post'})">Post</a>
                 </li>
               </ul>
             </li>

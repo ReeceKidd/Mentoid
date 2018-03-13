@@ -1781,3 +1781,4934 @@
 
 20:13:06 ControllerMethods/Register/updateName.js INFO: Kajukaja updated first and last name successfully: Reece Kidd
 
+20:14:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:14:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:14:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:14:36 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:14:53 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:14:53 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:14:53 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:14:53 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:16:21 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:16:21 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:16:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:16:21 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getSocialMedia.js DEBUG: ::1 attempting to get social media with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:16:21 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:16:21 ControllerMethods/Register/getEducationHistory.js DEBUG: ::1 attempting to get education history {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:16:21 ControllerMethods/Register/getSocialMedia.js DEBUG: Kajukaja successfully retrieved social media information: facebook: facebook.com.kajainstagram: nulltwitter: nullsnapchat: nulllinkedIn: nullwebsite: nullmedium: nullyoutube: null
+
+20:16:21 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getEducationHistory.js DEBUG: Kajukaja successfully retrieved education: []
+
+20:16:21 ControllerMethods/Register/getJobHistory.js DEBUG: ::1 attempting to get job history with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: ::1 attempting to get profile completeness with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getJobHistory.js DEBUG: Kajukaja successfully retrieved job history: []
+
+20:16:21 ControllerMethods/Register/getProfileCompleteness.js DEBUG: Kajukaja successfully retrieved profile completeness: Social Media CompletetrueAreas of interest registration complete trueJob History Registration complete undefinedEducation Registration complete undefinedhasProfilePicture trueMentor settings complete trueMentee settings complere true
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: ::1 attempting to get basic user details with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:16:21 ControllerMethods/Register/getBasicRegistration.js DEBUG: Kajukaja successfully retrieved basic registration details:{ firstName: 'Reece',
+  lastName: 'Kidd',
+  userName: 'Kajukaja',
+  email: 'kaja.hamburg@googlemail.com',
+  age: 19 }
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: ::1 attempting to get user age with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:16:21 ControllerMethods/Register/getAge.js DEBUG: Kajukaja successfully retrieved age: 19
+
+20:18:12 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:12 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:18:12 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:12 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:12 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:12 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:18:12 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:18:12 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:18:12 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:18:12 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:18:24 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:18:24 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa55e77badb71673cf79b29 retreived profile picture 5aa55e77badb71673cf79b29.jpg
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:18:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:18:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:18:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:18:24 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:18:24 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:18:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:18:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:18:25 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:18:25 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:18:25 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:18:25 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:19:31 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:19:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:19:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:19:31 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:19:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:19:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:19:31 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:19:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:19:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:19:31 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:19:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:19:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:19:31 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:19:31 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:19:31 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:19:31 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:20:42 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:42 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:42 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:42 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:20:42 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:20:42 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:20:42 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:42 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:20:42 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:42 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:20:42 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:42 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:20:42 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:20:42 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:20:43 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:20:43 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:20:56 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:56 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:20:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:20:56 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:20:56 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:20:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:56 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:20:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:20:56 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:20:56 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:20:56 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:20:56 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:20:56 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:02 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:02 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:02 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:02 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:02 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:02 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:02 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:02 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:02 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:02 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:02 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:02 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:02 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:02 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:02 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:02 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:23 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:23 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:23 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:23 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:23 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:23 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:23 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:23 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:23 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:23 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:23 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:23 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:23 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:23 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:23 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:23 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:33 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:33 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:33 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:33 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:33 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:33 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:33 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:33 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:33 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:33 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:48 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:48 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:48 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:21:48 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:21:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:21:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:21:48 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:48 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:21:48 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:21:48 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:22:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:22:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:22:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:22:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:22:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:22:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:22:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:22:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:22:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:22:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:22:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:22:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:22:15 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:22:15 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:22:15 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:22:15 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:23:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:23:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:23:14 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:23:14 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:23:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:14 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:23:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:14 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:23:14 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:23:14 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:23:14 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:23:14 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:23:29 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:29 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:23:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:23:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:23:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:29 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:23:29 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:23:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:23:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:23:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:23:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:23:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:23:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:18 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:18 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:18 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:18 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:18 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:18 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:18 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:18 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:24 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:24 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:24 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:24 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:44 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:44 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:44 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:44 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:44 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:44 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:44 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:44 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:44 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:44 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:44 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:24:55 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:24:55 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:24:55 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:24:55 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:55 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:55 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:55 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:24:55 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:24:55 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:24:55 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:24:55 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:00 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:00 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:00 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:25:00 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:25:00 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:25:00 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:25:00 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:25:00 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:25:00 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:25:00 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:29 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:29 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:29 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:29 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:25:29 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:25:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:25:29 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:25:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:25:29 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:25:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:25:29 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:25:31 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:25:31 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:25:31 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:25:31 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:25:31 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:25:31 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:25:31 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:25:31 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:25:31 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:25:31 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:04 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:04 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:04 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:04 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:26:04 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:26:04 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:26:04 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:26:04 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:26:04 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:26:04 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:26:04 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:35 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:26:35 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:35 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:35 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:26:35 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:26:35 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:26:35 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:26:35 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:26:35 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:48 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:26:48 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:26:48 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:26:48 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:26:48 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:26:48 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:26:48 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:26:48 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:26:48 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:26:48 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:27:38 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:27:38 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:27:38 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:27:38 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:27:38 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:27:38 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:27:38 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:27:38 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:27:38 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:09 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:09 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:09 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:28:09 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:28:09 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:28:09 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:28:09 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:28:09 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:28:09 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:28:09 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:28:24 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:28:24 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:28:24 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:28:24 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:28:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:28:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:28:24 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:28:24 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:28:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:28:24 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: 5aa55e77badb71673cf79b29 is attempting to get their user name with {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:31:15 ControllerMethods/Register/getUserName.js WARN: Kajukaja successfully retrieved username: Kajukaja
+
+20:31:15 ControllerMethods/Register/getAreasOfInterest.js DEBUG: Kajukaja successfully retreived areas of interest: [{"value":"Yoga","years":10,"areaOfInterestID":0},{"value":"Rugby","years":10,"areaOfInterestID":1},{"value":"Writing","years":10,"areaOfInterestID":2}]
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: ::1 attempting to get areas of interest names with request {"userID":"5aa55e77badb71673cf79b29"}
+
+20:31:15 ControllerMethods/Register/getAreasOfInterestNames.js DEBUG: Kajukaja successfully retreived areas of interest names: Yoga,Rugby,Writing
+
+20:31:16 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:31:16 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:31:16 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:31:16 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
+20:31:16 ControllerMethods/Register/getMentorSettings.js WARN: 5aa55e77badb71673cf79b29 attempting to get mentor settings.
+
+20:31:16 ControllerMethods/Register/getMentorSettings.js DEBUG: Kajukaja successfully retrieved mentor settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online",
+    "In person"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeToMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentees": 10
+}
+
+20:31:16 ControllerMethods/Register/getMenteeSettings.js DEBUG: 5aa55e77badb71673cf79b29 attempting to get their mentee settings
+
+20:31:16 ControllerMethods/Register/getMenteeSettings.js DEBUG: Kajukaja successfully retrieved mentee settings: {
+  "areasOfInterest": [
+    {
+      "areaOfInterestID": 0,
+      "years": 10,
+      "value": "Yoga"
+    },
+    {
+      "areaOfInterestID": 1,
+      "years": 10,
+      "value": "Rugby"
+    },
+    {
+      "areaOfInterestID": 2,
+      "years": 10,
+      "value": "Writing"
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "wouldLikeAMentor": true,
+  "maximumTravelDistanceKM": 20,
+  "minimumAge": 16,
+  "maximumAge": 120,
+  "maxNumberOfMentors": 10
+}
+
