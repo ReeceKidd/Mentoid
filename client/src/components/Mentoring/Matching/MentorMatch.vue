@@ -211,6 +211,7 @@
     </div> 
     <!-- End of education matches -->
     <br>
+    <!-- Job History -->
     <div class="row text-center" v-if="mentor.jobHistory.length !== null">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <br>
@@ -237,6 +238,7 @@
         </span>
       </div>
     </div> 
+    <!-- End of Job History -->
     <br>
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">

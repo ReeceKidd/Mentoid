@@ -223,7 +223,7 @@
     beforeMount() {
       var self = this
       var userID = this.$store.state.user.authUser._id
-      // Get the users experience history
+      // Get the users job history
       const getJobHistory = 'http://localhost:4000/get/job-history/'
       axios.get(getJobHistory + userID).then(function (response) {
         self.experiences = response.data.jobHistory
