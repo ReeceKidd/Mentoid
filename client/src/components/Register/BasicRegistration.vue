@@ -56,13 +56,14 @@
               <label for="confirm-password">Confirmation Password*</label>
               <input type="password" id="confirm-password" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword" name="confirmPassword">
             </div>
-            <div class="input" name="language">
-              <label for="language">Language*</label>
-              <select id="language" v-model="language">
-                <option value="English">English</option>
-                <option value="Spanish">Spanish</option>
-                <option value="French">French</option>
-                <option value="German">German</option>
+            <div class="input" name="country">
+              <label for="country">Country*</label>
+              <select id="country" v-model="country">
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United Kingdom">United States</option>
+                <option value="Spain">España</option>
+                <option value="Germany">France</option>
+                <option value="German">Deutschland</option>
               </select>
             </div>
             <div class="input inline" :class="{invalid: $v.terms.$invalid}">
@@ -110,7 +111,7 @@
         password: '',
         confirmPassword: '',
         areasOfInterest: [],
-        language: '',
+        country: '',
         terms: false,
         errorMessage: null,
         currentUser: '',
@@ -182,7 +183,7 @@
           age: this.age.toString(),
           password: this.password,
           confirmPassword: this.confirmPassword,
-          language: this.language,
+          country: this.country,
           terms: this.terms.toString()
         }
         this.$store

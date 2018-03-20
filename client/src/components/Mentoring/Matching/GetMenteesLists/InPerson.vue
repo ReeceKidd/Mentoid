@@ -32,7 +32,7 @@
             <i class="fas fa-star"></i>
           </p>
             <br>
-            <img :src='getProfilePicture(mentee._id)' class="profileImage">
+            <img :src='getProfilePicture(mentee._id)' :alt='mentee.userName + " profile picture"' class="profileImage">
             <h4> {{ mentee.firstName + ' ' + mentee.lastName}} </h4>
             <h5>
               <b> @{{ mentee.userName }} </b>

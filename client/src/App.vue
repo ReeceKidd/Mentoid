@@ -6,6 +6,7 @@
       <main class="main">
           <router-view></router-view>
       </main>
+      <br>
       <mentoid-footer></mentoid-footer>
   </div>
 </template>
@@ -36,17 +37,23 @@ export default {
 @media (max-width: 978px) {
     .main {
       padding-top: 10%;
+      padding-bottom: 10%;
     }
 }
 
 @media (max-width:767px) {
    .main {
-      padding-top: 15%
+      padding-top: 15%;
+      padding-bottom: 10%;
    }
 }
 
 
 .btn-success {
-  background-color:#228B22
+  background-color:#006400
+}
+
+.btn-danger {
+  background-color: #8B0000
 }
 </style>

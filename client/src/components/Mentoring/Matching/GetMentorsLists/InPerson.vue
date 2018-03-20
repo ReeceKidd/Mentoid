@@ -133,7 +133,6 @@
           userName: this.userName,
           mentor: mentor
         }).then(function (response) {
-          console.log(response.data.compatibilityScore)
           mentor.compatibilityScore = response.data.compatibilityScore
         }).catch(error => {
           console.log(error.response.data.message)
@@ -147,7 +146,6 @@
           userID: this.$store.state.user.authUser._id,
           mentorID: this.mentorID
         }).then(function (response) {
-          console.log(response.data)
           that.successMessage = 'Applied for mentorship successfully.'
           setTimeout(() => {
             that.successMessage = null
@@ -169,7 +167,6 @@
     },
     beforeMount() {
       this.mentors.forEach(mentor => {
-        console.log(mentor)
         this.getCompatibility(mentor)
       })
     }

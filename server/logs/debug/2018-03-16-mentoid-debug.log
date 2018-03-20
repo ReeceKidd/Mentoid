@@ -1,0 +1,24 @@
+08:41:00 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa3f842062c5d1fa03cc12b"}
+
+08:41:00 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa3f842062c5d1fa03cc12b retreived profile picture 5aa3f842062c5d1fa03cc12b.png
+
+08:41:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa3f842062c5d1fa03cc12b"}
+
+08:41:00 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":0,"areaOfInterestID":1}]
+
+08:42:50 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa3f842062c5d1fa03cc12b"}
+
+08:42:50 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa3f842062c5d1fa03cc12b retreived profile picture 5aa3f842062c5d1fa03cc12b.png
+
+08:42:50 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa3f842062c5d1fa03cc12b"}
+
+08:42:50 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":0,"areaOfInterestID":1}]
+
+08:43:05 ControllerMethods/Register/getProfilePicture.js DEBUG: ::1 attempting to get profile picture with request {"userID":"5aa3f842062c5d1fa03cc12b"}
+
+08:43:05 ControllerMethods/Register/getProfilePicture.js DEBUG: User: 5aa3f842062c5d1fa03cc12b retreived profile picture 5aa3f842062c5d1fa03cc12b.png
+
+08:43:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: ::1 attempting to get areas of interest with request {"userID":"5aa3f842062c5d1fa03cc12b"}
+
+08:43:05 ControllerMethods/Register/getAreasOfInterest.js DEBUG: reecekidd successfully retreived areas of interest: [{"value":"Yoga","years":0,"areaOfInterestID":1}]
+

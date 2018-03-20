@@ -11,25 +11,14 @@ var bluebird = require('bluebird')
 var morgan = require('morgan')
 var http = require('http')
 var logger = require('./logger');
+var helmet = require('helmet')
 
 var passportStrategy = require('../lib/passport')
 passport.use(passportStrategy)
 
-//Logging
-var uuid = require('uuid');
-var createNamespace = require('continuation-local-storage').createNamespace;
-var myRequest = createNamespace('my request');
+
 
 const app = express()
-
-// Run the context for each request. Assign a unique identifier to each request
-app.use(function(req, res, next) {
-  myRequest.run(function() {
-      myRequest.set('reqId', uuid.v1());
-      next();
-  });
-});
-
 
 // Database configuration file. 
 var config = require('./_config')
@@ -51,6 +40,21 @@ app.use(expressValidator())
 
 app.use(cors())
 app.use('/', routes)
+
+app.use(helmet())
+app.use(helmet.contentSecurityPolicy({
+  directives: {
+    defaultSrc: ["'self'"],
+    styleSrc: ["'self'"]
+  }
+}))
+
+app.use(helmet.referrerPolicy({ policy: 'same-origin' }))
+// Don't allow me to be in ANY frames:
+app.use(helmet.xssFilter())
+app.use(helmet.hidePoweredBy({setTo: 'Hidden'}))
+app.use(helmet.frameguard())
+app.disable('x-powered-by');
 
 const port = process.env.PORT || 4000
 

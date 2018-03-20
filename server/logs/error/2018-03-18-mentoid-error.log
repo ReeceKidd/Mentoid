@@ -1,0 +1,2124 @@
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to find a mentor for: "reecekidd"
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Preffered mentoring formats: [
+  "In person"
+]
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Wants a mentor for: [
+  "Yoga"
+]
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Mentee languages: English
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 11
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor AngeliaBattaglini71 number: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 area of interest: Camping was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: AngeliaBattaglini71
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor AngeliaBattaglini71 is suitable to mentor as they have 4 years experience in Yoga which is a +4 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 has been added to the online list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor DedieSteorts71 number: 1
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: DedieSteorts71
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor DedieSteorts71 is suitable to mentor as they have 82 years experience in Yoga which is a +82 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: DedieSteorts71 location: [object Object]
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 maximum travel distance is: 8KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is within the current users maximum distance of: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is outside the mentors maximum distance of: 8 by 192KM.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 area of interest: Freestyle football was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GabyPruden31 number: 2
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31 area of interest: Table tennis was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GabyPruden31
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GabyPruden31 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GriseldaHavemeier31 number: 3
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Squash was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Debate was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Learning was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Metalworking was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GriseldaHavemeier31
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GriseldaHavemeier31 is suitable to mentor as they have 22 years experience in Yoga which is a +22 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: GriseldaHavemeier31 location: [object Object]
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 maximum travel distance is: 6KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is within the current users maximum distance of: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is outside the mentors maximum distance of: 6 by 194KM.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Horseback riding was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Film memorabilia was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Pet was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor Kajukaja number: 4
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: Kajukaja
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor Kajukaja is suitable to mentor as they have 10 years experience in Yoga which is a +10 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: Kajukaja
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: Kajukaja location: [object Object]
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja maximum travel distance is: 20KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the current users maximum distance of: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the potential mentors maximum distance of: 20KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd potential mentor: Kajukaja are a distance match.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the in person list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the online list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Rugby was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Writing was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor KaronPuyleart81 number: 5
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Cheerleading was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Sketching was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: KaronPuyleart81
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor KaronPuyleart81 is suitable to mentor as they have 49 years experience in Yoga which is a +49 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Rugby league was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Herp keeping was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Fencing was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Laser tag was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Squash (sport) was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor MinetteBrogli01 number: 7
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Singing was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: MinetteBrogli01
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor MinetteBrogli01 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Golf was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor OneidaShtern61 number: 8
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Water polo was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: OneidaShtern61
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor OneidaShtern61 is suitable to mentor as they have 57 years experience in Yoga which is a +57 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Skiing was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Astrology was not a match with: Yoga
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor PetronellaBedinghaus41 number: 9
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: PetronellaBedinghaus41
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor PetronellaBedinghaus41 is suitable to mentor as they have 3 years experience in Yoga which is a +3 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PetronellaBedinghaus41
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: PetronellaBedinghaus41 location: [object Object]
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 maximum travel distance is: 10KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is within the current users maximum distance of: 200KM
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is outside the mentors maximum distance of: 10 by 190KM.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 has been added to the in person list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor UrsolaStreight51 number: 10
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: UrsolaStreight51
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor UrsolaStreight51 is suitable to mentor as they have 18 years experience in Yoga which is a +18 years difference.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: UrsolaStreight51 has been added to the online list of mentors.
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Starting number of potential mentors: 11
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched online mentors: 5
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched in person mentors: 4
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entered in person method
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors: 4
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to remove duplicates
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors after duplicates are removed: 4
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to sort in person mentors by distance
+
+09:23:14 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Sorted in person mentors by distance
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to find a mentor for: "reecekidd"
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Preffered mentoring formats: [
+  "In person"
+]
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Wants a mentor for: [
+  "Yoga"
+]
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Mentee languages: English
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 11
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor AngeliaBattaglini71 number: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 area of interest: Camping was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: AngeliaBattaglini71
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor AngeliaBattaglini71 is suitable to mentor as they have 4 years experience in Yoga which is a +4 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 has been added to the online list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor DedieSteorts71 number: 1
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: DedieSteorts71
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor DedieSteorts71 is suitable to mentor as they have 82 years experience in Yoga which is a +82 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: DedieSteorts71 location: [object Object]
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 maximum travel distance is: 8KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is within the current users maximum distance of: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is outside the mentors maximum distance of: 8 by 192KM.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 area of interest: Freestyle football was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GabyPruden31 number: 2
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31 area of interest: Table tennis was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GabyPruden31
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GabyPruden31 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GriseldaHavemeier31 number: 3
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Squash was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Debate was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Learning was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Metalworking was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GriseldaHavemeier31
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GriseldaHavemeier31 is suitable to mentor as they have 22 years experience in Yoga which is a +22 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: GriseldaHavemeier31 location: [object Object]
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 maximum travel distance is: 6KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is within the current users maximum distance of: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is outside the mentors maximum distance of: 6 by 194KM.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Horseback riding was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Film memorabilia was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Pet was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor Kajukaja number: 4
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: Kajukaja
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor Kajukaja is suitable to mentor as they have 10 years experience in Yoga which is a +10 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: Kajukaja
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: Kajukaja location: [object Object]
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja maximum travel distance is: 20KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the current users maximum distance of: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the potential mentors maximum distance of: 20KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd potential mentor: Kajukaja are a distance match.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the in person list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the online list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Rugby was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Writing was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor KaronPuyleart81 number: 5
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Cheerleading was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Sketching was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: KaronPuyleart81
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor KaronPuyleart81 is suitable to mentor as they have 49 years experience in Yoga which is a +49 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Rugby league was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Herp keeping was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Fencing was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Laser tag was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Squash (sport) was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor MinetteBrogli01 number: 7
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Singing was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: MinetteBrogli01
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor MinetteBrogli01 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Golf was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor OneidaShtern61 number: 8
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Water polo was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: OneidaShtern61
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor OneidaShtern61 is suitable to mentor as they have 57 years experience in Yoga which is a +57 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Skiing was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Astrology was not a match with: Yoga
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor PetronellaBedinghaus41 number: 9
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: PetronellaBedinghaus41
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor PetronellaBedinghaus41 is suitable to mentor as they have 3 years experience in Yoga which is a +3 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PetronellaBedinghaus41
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: PetronellaBedinghaus41 location: [object Object]
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 maximum travel distance is: 10KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is within the current users maximum distance of: 200KM
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is outside the mentors maximum distance of: 10 by 190KM.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 has been added to the in person list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor UrsolaStreight51 number: 10
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: UrsolaStreight51
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor UrsolaStreight51 is suitable to mentor as they have 18 years experience in Yoga which is a +18 years difference.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: UrsolaStreight51 has been added to the online list of mentors.
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Starting number of potential mentors: 11
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched online mentors: 5
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched in person mentors: 4
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entered in person method
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors: 4
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to remove duplicates
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors after duplicates are removed: 4
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to sort in person mentors by distance
+
+12:12:10 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Sorted in person mentors by distance
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to find a mentor for: "reecekidd"
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Preffered mentoring formats: [
+  "In person"
+]
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Wants a mentor for: [
+  "Yoga"
+]
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Mentee languages: English
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 11
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor AngeliaBattaglini71 number: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 area of interest: Camping was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: AngeliaBattaglini71
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor AngeliaBattaglini71 is suitable to mentor as they have 4 years experience in Yoga which is a +4 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 has been added to the online list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor DedieSteorts71 number: 1
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: DedieSteorts71
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor DedieSteorts71 is suitable to mentor as they have 82 years experience in Yoga which is a +82 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: DedieSteorts71 location: [object Object]
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 maximum travel distance is: 8KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is within the current users maximum distance of: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is outside the mentors maximum distance of: 8 by 192KM.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 area of interest: Freestyle football was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GabyPruden31 number: 2
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31 area of interest: Table tennis was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GabyPruden31
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GabyPruden31 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GriseldaHavemeier31 number: 3
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Squash was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Debate was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Learning was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Metalworking was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GriseldaHavemeier31
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GriseldaHavemeier31 is suitable to mentor as they have 22 years experience in Yoga which is a +22 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: GriseldaHavemeier31 location: [object Object]
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 maximum travel distance is: 6KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is within the current users maximum distance of: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is outside the mentors maximum distance of: 6 by 194KM.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Horseback riding was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Film memorabilia was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Pet was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor Kajukaja number: 4
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: Kajukaja
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor Kajukaja is suitable to mentor as they have 10 years experience in Yoga which is a +10 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: Kajukaja
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: Kajukaja location: [object Object]
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja maximum travel distance is: 20KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the current users maximum distance of: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the potential mentors maximum distance of: 20KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd potential mentor: Kajukaja are a distance match.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the in person list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the online list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Rugby was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Writing was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor KaronPuyleart81 number: 5
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Cheerleading was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Sketching was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: KaronPuyleart81
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor KaronPuyleart81 is suitable to mentor as they have 49 years experience in Yoga which is a +49 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Rugby league was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Herp keeping was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Fencing was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Laser tag was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Squash (sport) was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor MinetteBrogli01 number: 7
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Singing was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: MinetteBrogli01
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor MinetteBrogli01 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Golf was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor OneidaShtern61 number: 8
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Water polo was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: OneidaShtern61
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor OneidaShtern61 is suitable to mentor as they have 57 years experience in Yoga which is a +57 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Skiing was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Astrology was not a match with: Yoga
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor PetronellaBedinghaus41 number: 9
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: PetronellaBedinghaus41
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor PetronellaBedinghaus41 is suitable to mentor as they have 3 years experience in Yoga which is a +3 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PetronellaBedinghaus41
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: PetronellaBedinghaus41 location: [object Object]
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 maximum travel distance is: 10KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is within the current users maximum distance of: 200KM
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is outside the mentors maximum distance of: 10 by 190KM.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 has been added to the in person list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor UrsolaStreight51 number: 10
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: UrsolaStreight51
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor UrsolaStreight51 is suitable to mentor as they have 18 years experience in Yoga which is a +18 years difference.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: UrsolaStreight51 has been added to the online list of mentors.
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Starting number of potential mentors: 11
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched online mentors: 5
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched in person mentors: 4
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entered in person method
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors: 4
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to remove duplicates
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors after duplicates are removed: 4
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to sort in person mentors by distance
+
+14:32:09 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Sorted in person mentors by distance
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to find a mentor for: "reecekidd"
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Preffered mentoring formats: [
+  "In person"
+]
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Wants a mentor for: [
+  "Yoga"
+]
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Mentee languages: English
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 11
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor AngeliaBattaglini71 number: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 area of interest: Camping was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: AngeliaBattaglini71
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor AngeliaBattaglini71 is suitable to mentor as they have 4 years experience in Yoga which is a +4 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 has been added to the online list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor DedieSteorts71 number: 1
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: DedieSteorts71
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor DedieSteorts71 is suitable to mentor as they have 82 years experience in Yoga which is a +82 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: DedieSteorts71 location: [object Object]
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 maximum travel distance is: 8KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is within the current users maximum distance of: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is outside the mentors maximum distance of: 8 by 192KM.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 area of interest: Freestyle football was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GabyPruden31 number: 2
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31 area of interest: Table tennis was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GabyPruden31
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GabyPruden31 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GriseldaHavemeier31 number: 3
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Squash was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Debate was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Learning was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Metalworking was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GriseldaHavemeier31
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GriseldaHavemeier31 is suitable to mentor as they have 22 years experience in Yoga which is a +22 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: GriseldaHavemeier31 location: [object Object]
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 maximum travel distance is: 6KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is within the current users maximum distance of: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is outside the mentors maximum distance of: 6 by 194KM.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Horseback riding was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Film memorabilia was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Pet was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor Kajukaja number: 4
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: Kajukaja
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor Kajukaja is suitable to mentor as they have 10 years experience in Yoga which is a +10 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: Kajukaja
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: Kajukaja location: [object Object]
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja maximum travel distance is: 20KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the current users maximum distance of: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the potential mentors maximum distance of: 20KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd potential mentor: Kajukaja are a distance match.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the in person list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the online list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Rugby was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Writing was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor KaronPuyleart81 number: 5
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Cheerleading was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Sketching was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: KaronPuyleart81
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor KaronPuyleart81 is suitable to mentor as they have 49 years experience in Yoga which is a +49 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Rugby league was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Herp keeping was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Fencing was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Laser tag was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Squash (sport) was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor MinetteBrogli01 number: 7
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Singing was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: MinetteBrogli01
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor MinetteBrogli01 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Golf was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor OneidaShtern61 number: 8
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Water polo was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: OneidaShtern61
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor OneidaShtern61 is suitable to mentor as they have 57 years experience in Yoga which is a +57 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Skiing was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Astrology was not a match with: Yoga
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor PetronellaBedinghaus41 number: 9
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: PetronellaBedinghaus41
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor PetronellaBedinghaus41 is suitable to mentor as they have 3 years experience in Yoga which is a +3 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PetronellaBedinghaus41
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: PetronellaBedinghaus41 location: [object Object]
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 maximum travel distance is: 10KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is within the current users maximum distance of: 200KM
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is outside the mentors maximum distance of: 10 by 190KM.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 has been added to the in person list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor UrsolaStreight51 number: 10
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: UrsolaStreight51
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor UrsolaStreight51 is suitable to mentor as they have 18 years experience in Yoga which is a +18 years difference.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: UrsolaStreight51 has been added to the online list of mentors.
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Starting number of potential mentors: 11
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched online mentors: 5
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched in person mentors: 4
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entered in person method
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors: 4
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to remove duplicates
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors after duplicates are removed: 4
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to sort in person mentors by distance
+
+14:35:20 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Sorted in person mentors by distance
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to find a mentor for: "reecekidd"
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Preffered mentoring formats: [
+  "In person"
+]
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Wants a mentor for: [
+  "Yoga"
+]
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Mentee languages: English
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 11
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor AngeliaBattaglini71 number: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 area of interest: Camping was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: AngeliaBattaglini71
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor AngeliaBattaglini71 is suitable to mentor as they have 4 years experience in Yoga which is a +4 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 has been added to the online list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor DedieSteorts71 number: 1
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: DedieSteorts71
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor DedieSteorts71 is suitable to mentor as they have 82 years experience in Yoga which is a +82 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: DedieSteorts71 location: [object Object]
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 maximum travel distance is: 8KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is within the current users maximum distance of: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is outside the mentors maximum distance of: 8 by 192KM.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 area of interest: Freestyle football was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GabyPruden31 number: 2
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31 area of interest: Table tennis was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GabyPruden31
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GabyPruden31 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GriseldaHavemeier31 number: 3
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Squash was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Debate was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Learning was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Metalworking was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GriseldaHavemeier31
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GriseldaHavemeier31 is suitable to mentor as they have 22 years experience in Yoga which is a +22 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: GriseldaHavemeier31 location: [object Object]
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 maximum travel distance is: 6KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is within the current users maximum distance of: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is outside the mentors maximum distance of: 6 by 194KM.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Horseback riding was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Film memorabilia was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Pet was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor Kajukaja number: 4
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: Kajukaja
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor Kajukaja is suitable to mentor as they have 10 years experience in Yoga which is a +10 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: Kajukaja
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: Kajukaja location: [object Object]
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja maximum travel distance is: 20KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the current users maximum distance of: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the potential mentors maximum distance of: 20KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd potential mentor: Kajukaja are a distance match.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the in person list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the online list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Rugby was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Writing was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor KaronPuyleart81 number: 5
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Cheerleading was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Sketching was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: KaronPuyleart81
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor KaronPuyleart81 is suitable to mentor as they have 49 years experience in Yoga which is a +49 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Rugby league was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Herp keeping was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Fencing was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Laser tag was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Squash (sport) was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor MinetteBrogli01 number: 7
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Singing was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: MinetteBrogli01
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor MinetteBrogli01 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Golf was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor OneidaShtern61 number: 8
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Water polo was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: OneidaShtern61
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor OneidaShtern61 is suitable to mentor as they have 57 years experience in Yoga which is a +57 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Skiing was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Astrology was not a match with: Yoga
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor PetronellaBedinghaus41 number: 9
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: PetronellaBedinghaus41
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor PetronellaBedinghaus41 is suitable to mentor as they have 3 years experience in Yoga which is a +3 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PetronellaBedinghaus41
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: PetronellaBedinghaus41 location: [object Object]
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 maximum travel distance is: 10KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is within the current users maximum distance of: 200KM
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is outside the mentors maximum distance of: 10 by 190KM.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 has been added to the in person list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor UrsolaStreight51 number: 10
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: UrsolaStreight51
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor UrsolaStreight51 is suitable to mentor as they have 18 years experience in Yoga which is a +18 years difference.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: UrsolaStreight51 has been added to the online list of mentors.
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Starting number of potential mentors: 11
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched online mentors: 5
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched in person mentors: 4
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entered in person method
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors: 4
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to remove duplicates
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors after duplicates are removed: 4
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to sort in person mentors by distance
+
+18:47:29 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Sorted in person mentors by distance
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd:  is attempting to get potential mentors with request: {"userID":"5aa3f842062c5d1fa03cc12b","userName":"reecekidd","sortType":"undefined"}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to find a mentor for: "reecekidd"
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Preffered mentoring formats: [
+  "In person"
+]
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Wants a mentor for: [
+  "Yoga"
+]
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Mentee languages: English
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of potential mentors: 11
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor AngeliaBattaglini71 number: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 area of interest: Camping was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: AngeliaBattaglini71
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor AngeliaBattaglini71 is suitable to mentor as they have 4 years experience in Yoga which is a +4 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: AngeliaBattaglini71 has been added to the online list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor DedieSteorts71 number: 1
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: DedieSteorts71
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor DedieSteorts71 is suitable to mentor as they have 82 years experience in Yoga which is a +82 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: DedieSteorts71
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: DedieSteorts71 location: [object Object]
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 maximum travel distance is: 8KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is within the current users maximum distance of: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.00802566070874,
+  "latitude": 79.06718549302718
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 111KM is outside the mentors maximum distance of: 8 by 192KM.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 has been added to the in person list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: DedieSteorts71 area of interest: Freestyle football was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GabyPruden31 number: 2
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31 area of interest: Table tennis was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GabyPruden31
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GabyPruden31 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GabyPruden31is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor GriseldaHavemeier31 number: 3
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Squash was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Debate was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Learning was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Metalworking was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: GriseldaHavemeier31
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor GriseldaHavemeier31 is suitable to mentor as they have 22 years experience in Yoga which is a +22 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: GriseldaHavemeier31
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: GriseldaHavemeier31 location: [object Object]
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 maximum travel distance is: 6KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is within the current users maximum distance of: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 78.07797714445968,
+  "latitude": 79.60508397989825
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 168KM is outside the mentors maximum distance of: 6 by 194KM.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 has been added to the in person list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Horseback riding was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Film memorabilia was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: GriseldaHavemeier31 area of interest: Pet was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor Kajukaja number: 4
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: Kajukaja
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor Kajukaja is suitable to mentor as they have 10 years experience in Yoga which is a +10 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: Kajukaja
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: Kajukaja location: [object Object]
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja maximum travel distance is: 20KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the current users maximum distance of: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.7224003699525,
+  "latitude": 78.1255953282639
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 0KM is within the potential mentors maximum distance of: 20KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: reecekidd potential mentor: Kajukaja are a distance match.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the in person list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja has been added to the online list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Rugby was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: Kajukaja area of interest: Writing was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor KaronPuyleart81 number: 5
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Cheerleading was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Sketching was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: KaronPuyleart81
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor KaronPuyleart81 is suitable to mentor as they have 49 years experience in Yoga which is a +49 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 has been added to the online list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Rugby league was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Herp keeping was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Fencing was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Laser tag was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: KaronPuyleart81 area of interest: Squash (sport) was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor MinetteBrogli01 number: 7
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Singing was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: MinetteBrogli01
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor MinetteBrogli01 is not suitable to mentor Yoga as they have 0 years of experience, which is less than the 0 experience the current user has
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01is not experienced enough to mentor in: Yogaas they only have 0 experience compared to current users: reecekidd 0 years of experience.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: MinetteBrogli01 area of interest: Golf was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor OneidaShtern61 number: 8
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Water polo was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: OneidaShtern61
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor OneidaShtern61 is suitable to mentor as they have 57 years experience in Yoga which is a +57 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 has been added to the online list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Skiing was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: OneidaShtern61 area of interest: Astrology was not a match with: Yoga
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor PetronellaBedinghaus41 number: 9
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: PetronellaBedinghaus41
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor PetronellaBedinghaus41 is suitable to mentor as they have 3 years experience in Yoga which is a +3 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entering generate distance information with user: reecekidd and potential mentor: PetronellaBedinghaus41
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location: { latitude: 78.1255953282639, longitude: 79.7224003699525 } , Potential mentor: PetronellaBedinghaus41 location: [object Object]
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users maximum travel distance: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 maximum travel distance is: 10KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is within the current users maximum distance of: 200KM
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Current users location is: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentors distance is: {
+  "longitude": 79.17173141082554,
+  "latitude": 78.16315009008486
+}
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: 13KM is outside the mentors maximum distance of: 10 by 190KM.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: PetronellaBedinghaus41 has been added to the in person list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Comparing potential mentor UrsolaStreight51 number: 10
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to match area of inteterest:( Yoga ), years of experience: 0
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: SHARED INTEREST: (Yoga) with potential mentor: UrsolaStreight51
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor UrsolaStreight51 is suitable to mentor as they have 18 years experience in Yoga which is a +18 years difference.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Potential mentor: UrsolaStreight51 has been added to the online list of mentors.
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Starting number of potential mentors: 11
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched online mentors: 5
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of matched in person mentors: 4
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Entered in person method
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors: 4
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to remove duplicates
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Number of in person mentors after duplicates are removed: 4
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Attempting to sort in person mentors by distance
+
+18:49:51 ControllerMethods/Matching/getPotentialMentors.js ERROR: User--reecekidd: Sorted in person mentors by distance
+

@@ -37,24 +37,16 @@
               <label for="language">Language*</label>
               <select id="language" v-model="language">
                 <option value="English">English</option>
-                <option value="Spanish">Spanish</option>
-                <option value="French">French</option>
-                <option value="German">German</option>
+                <option value="Spanish">Español</option>
+                <option value="French">Français</option>
+                <option value="German">Deutsche</option>
               </select>
             </div>
             <br>
       </div>
     </div>
 
-    <hr>
-
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
-        <h2 class="text-center">
-          ACCESSIBILITY
-        </h2>
-      </div>
-    </div>
+    <br>
 
 </div>
 </template>

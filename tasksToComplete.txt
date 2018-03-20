@@ -385,3 +385,8 @@ populated.
 
 Update the internationalization menu so that it includes the options in the native language. 
 Mentor and mentee settings include the do not want to mentor recommendations
+Need to figure out how ngrok works in order to get the backend and front end server connected. 
+Need to fix the bad credientials error that appears on the basic registration form when a login is attempted. 
+Edit the apperance of how the skills show in the matching process to make them more distibguishable.
+If I have time add alt tags to the various images on the website.  
+Areas of interest when deleted causes an error. 

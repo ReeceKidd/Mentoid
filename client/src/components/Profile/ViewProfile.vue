@@ -1,106 +1,109 @@
 <template>
-  <div class="container">
-    <div class="col-xs-12">
-      <div class="row text-center">
-        <img :src="profilePictureURL" id="profilePictureAvatar" @error="imageLoadError">
+  <!-- Span tags on this page are placed in the element above so redirection lands in the right place -->
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
+        <!-- Imported components -->
+        Profile picture. 
+        First name + last name 
+        @username 
         <br>
-        <h3> {{currentUser.firstName }} {{ currentUser.lastName }}</h3>
-        <h4> @{{ currentUser.userName }}</h4>
+        <!-- End of imported components -->
       </div>
     </div>
 
-    <div class="col-xs-12">
-      <div class="row">
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h2 class="text-center">
-          <u> Profile Completeness </u>
+          AREAS OF INTEREST
         </h2>
-        <!--<p v-if="profileCompleteness.areasOfInterestRegistrationComplete"> Register Areas Of Interest</p>!-->
-        <p>{{ profileCompleteness }}</p>
+        <br>
       </div>
     </div>
 
-    <div class="col-xs-12">
-      <div class="row">
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h2 class="text-center">
-          <u> Areas of interest </u>
+          EDUCATION
         </h2>
-        <edit-areas-of-interest></edit-areas-of-interest>
+        <br>
       </div>
+      <span id="job-history"></span>
     </div>
 
-    <div class="col-xs-12">
-      <div class="row">
+    <hr>
+
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
         <h2 class="text-center">
-          <u> Job History </u>
+          JOB HISTORY
         </h2>
-        <edit-areas-of-interest></edit-areas-of-interest>
+        <br>
       </div>
+      <span id="mentoring-preferences"></span>
+    </div>  
 
-      <div class="col-xs-12">
-        <div class="row">
-          <h2 class="text-center">
-            <u> Mentoring preferences </u>
-          </h2>
-          <edit-areas-of-interest></edit-areas-of-interest>
-        </div>
-      </div>
+    <hr> 
 
-      <div class="col-xs-12">
-        <div class="row">
-          <h2 class="text-center">
-            <u> Mentee preferences </u>
-          </h2>
-          <edit-areas-of-interest></edit-areas-of-interest>
-        </div>
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
+        <h2 id="socialMedia"> SOCIAL MEDIA </h2>
+        <br>
       </div>
     </div>
+
+    <hr>
+
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
+        <h2 id="socialMedia"> MENTORING RELATIONSHIPS </h2>
+        <br>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row text-center">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
+        <h2 id="socialMedia"> PAST RELATIONSHIPS </h2>
+        <br>
+      </div>
+    </div>
+    <br>
   </div>
 </template>
+
 <script>
-  import axios from 'axios'
-  const getProfilePictureURL = 'http://localhost:4000/get/profile-picture/'
+  import UploadProfilePicture from '../Register/Forms/UploadProfilePicture.vue'
+  import EditName from './EditProfile/EditName.vue'
+  import EditUserName from './EditProfile/EditUserName.vue'
+  import EditEmail from './EditProfile/EditEmail.vue'
+  import ProfileCompleteness from './ProfileCompleteness.vue'
+  import EditSocialMedia from '../Register/Forms/SocialMedia.vue'
+  import EditAreasOfInterest from '../Register/Forms/AreasOfInterest.vue'
+  import EditEducationHistory from '../Register/Forms/Education.vue'
+  import EditJobHistory from '../Register/Forms/JobHistory.vue'
+  import EditMenteeSettings from '../Register/Forms/MenteeSettings.vue'
+  import EditMentorSettings from '../Register/Forms/MentorSettings.vue'
   export default {
-    data() {
-      return {
-        currentUser: this.$store.state.user.authUser,
-        profilePictureURL: getProfilePictureURL + this.$store.state.user.authUser._id,
-        profileImageLoaded: true,
-        profileCompleteness: {}
-      }
-    },
-    methods: {
-      navigateTo(route) {
-        this.$router.push(route)
-      },
-      logout() {
-        this.$store
-          .dispatch('logout', {
-            _id: this._id
-          })
-          .catch(e => {
-            this.errorMessage = e.message
-          })
-      },
-      imageLoadError() {
-        this.profileImageLoaded = false
-        console.log('User does not have a profile picture')
-      }
-    },
-    beforeMount() {
-      var self = this
-      var userID = this.$store.state.user.authUser._id
-      const getProfileCompletenessURL = 'http://localhost:4000/get/profile-completeness/'
-      axios.get(getProfileCompletenessURL + userID).then(function (response) {
-        self.profileCompleteness = response.data
-      })
+    components: {
+      UploadProfilePicture,
+      EditName,
+      EditEmail,
+      EditUserName,
+      ProfileCompleteness,
+      EditSocialMedia,
+      EditAreasOfInterest,
+      EditEducationHistory,
+      EditJobHistory,
+      EditMenteeSettings,
+      EditMentorSettings
     }
   }
 </script>
 <style scoped>
-  #profilePictureAvatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-
 </style>

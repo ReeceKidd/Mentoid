@@ -21,20 +21,29 @@
     <div class="footer-center">
 
       <div>
-        <i class="fa fa-map-marker"></i>
+        
         <p>
-          <span>University of Stirling</span> Stirling, Scotland</p>
+          <i class="fas fa-map-marker-alt"></i>
+          University of Stirling, </p>
       </div>
 
       <br>
 
       <div>
-        <i class="fa fa-envelope"></i>
+        
         <p>
+          <i class="fas fa-envelope"></i>
           <a href="mailto:support@mentoid.com">admin@mentoid.com</a>
         </p>
-      </div>
 
+      </div>
+       <br>
+      <div>
+        
+      <p>
+        <i class="fas fa-user"></i>
+        Created by Reece Kidd </p>
+      </div>
     </div>
 
     <div class="footer-right">
@@ -72,6 +81,20 @@
 </script>
 
 <style>
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    min-width: 100%;
+  bottom: 0;
+  padding: 1rem;
+}
 
+.i {
+  color: white;
+}
 
 </style>

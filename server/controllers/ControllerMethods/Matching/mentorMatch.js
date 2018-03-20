@@ -64,12 +64,14 @@ module.exports = mentorMatch = (req, res) => {
                     var mentorTooOldBy = getMentorTooOldBy(user, mentor)
                     var currentUserTooYoungBy = getCurrentUserTooYoungBy(user, mentor)
                     var currentUserTooOldBy = getCurrentUserTooOldBy(user, mentor)
-                    //Do the education matches. 
-                    //Set it up so if there is just one language match it does not show as green instead it shows it as indifferent. 
+                    var updatedMentorEducation = getEducationPreferencesMatches(user, mentor)
+                    var numberOfEducationMatches = getNumberOfEducationMatches(mentor)
 
                     res.status(200).send({
                         otherInterests: otherInterests,
                         languageMatches: languageMatches,
+                        updatedMentorEducation: updatedMentorEducation,
+                        numberOfEducationMatches: numberOfEducationMatches,
                         mentorTooYoungBy: mentorTooYoungBy,
                         mentorTooOldBy: mentorTooOldBy,
                         currentUserTooYoungBy: currentUserTooYoungBy,
@@ -179,21 +181,57 @@ function getCurrentUserTooOldBy(user, mentor) {
 }
 
 function getEducationPreferencesMatches(user, mentor) {
-    let educationMatches = []
+    updatedMentorEducation = []
     logger.debug('Checking current users education again mentors preferences')
+    console.log('Users mentor preferences: ' + JSON.stringify(user.menteeSettings.prefferedEducation, null, 2))
     logger.debug('Potential mentor: ' + mentor.userName + ' mentoring education are: ' + mentor.mentorSettings.prefferedEducation)
-    user.education.forEach(educationChoice => {
-        mentor.mentorSettings.prefferedEducation.forEach(prefferedEducationChoice => {
-            if (educationChoice.degree === prefferedEducationChoice) {
-                logger.debug(educationChoice.degree + ' is a match with ' + mentor.userName + ' preffered education level: ' + prefferedEducationChoice)
-                educationMatches.push(prefferedEducationChoice)
+    for(var x = 0; x < mentor.education.length; x++){
+
+        mentor.education[x].isMatch = null
+
+        for(var y = 0; y < user.menteeSettings.prefferedEducation.length; y++){
+
+            console.log('Mentors education degree: ' + mentor.education[x].degree)
+            console.log('Users education degree: ' + user.menteeSettings.prefferedEducation[y])
+            
+            if(mentor.education[x].degree == user.menteeSettings.prefferedEducation[y]){
+                console.log('Match')
+                console.log('Match for: ' + mentor.education[x].degree)
+                mentor.education[x] = {
+                    degree: mentor.education[x].degree,
+                    country: mentor.education[x].country,
+                    educationID: mentor.education[x].educationID,
+                    endYear: mentor.education[x].endYear,
+                    fieldOfStudy: mentor.education[x].fieldOfStudy,
+                    school: mentor.education[x].school,
+                    isMatch: true
+                }
+                console.log('Updated mentor education: ' + JSON.stringify(mentor.education[x], null, 2))
+
             } else {
-                logger.debug(mentor.userName + ' preffered education choice: ' + prefferedEducationChoice + ' was not a match with ' + educationChoice)
+                console.log('Not a match')
             }
-        })
-    })
-    return educationMatches
-    logger.debug('Number of education matches: ' + educationMatches.length)
+
+        }
+
+
+    }
+    
+    console.log('Updated mentor education: ' + JSON.stringify(mentor.education, null, 2))
+    return mentor.education
+}
+
+function getNumberOfEducationMatches(mentor) {
+    let numberOfEducationMatches = 0
+
+    for(var x = 0; x < mentor.education.length; x++){
+        if(mentor.education[x].isMatch){
+            numberOfEducationMatches++
+        }
+    }
+
+    return numberOfEducationMatches
+
 }
 
 function getLanguagesMatch(user, mentor) {

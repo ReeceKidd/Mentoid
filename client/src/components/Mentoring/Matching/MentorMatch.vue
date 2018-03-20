@@ -4,6 +4,7 @@
       <h1 class="">Potential Mentor</h1>
       <button class="btn btn-success btn-md sticky" @click="applyForMentorship()">Apply for Mentorship</button>
       <button class="btn btn-primary btn-md sticky" @click="messageMentor()">Message</button>
+      <button class="btn btn-primary view-profile btn-md" @click="mentorMatch(mentor)">View Profile</button>
       <br v-if="errorMessage !=null">
       <br v-if="errorMessage !=null">
       <p v-if="errorMessage != null" class="errorMessage"> {{ errorMessage }} </p>
@@ -50,25 +51,7 @@
               <i class="fas fa-star"></i>
             </p>
             <br>
-        <h2> Compatibility </h2>
-        <h4 v-if="(similarInterests.length + mentorHasMoreExperience.length) > 1"> Similar Interests:
-          <b class="match"> {{ similarInterests.length }} </b>
-        </h4>
-        <h4 v-else> Similar Interests: 
-          <b class="notAMatch"> {{ similarInterests.length }} </b>
-        </h4>
-        <h4 v-if="educationMatches.length > 0"> Education matches:
-          <b class="match"> {{ educationMatches.length }} </b>
-        </h4>
-        <h4 v-else> Education matches:
-          <b class="notAMatch"> {{ educationMatches.length }} </b>
-        </h4>
-        <h4 v-if="languageMatches.length > 1"> Language matches:
-          <b class="match"> {{ languageMatches.length }} </b>
-        </h4>
-        <h4 v-else> Language matches: 
-          <b class="notAMatch"> {{ languageMatches.length }} </b>
-        </h4>
+        <h2> Compatibility Overview </h2>
         <h4>
           <u> Age Matching information </u>
         </h4>
@@ -94,13 +77,31 @@
             }}
           </h5>
         </span>
+        <h4 v-if="(similarInterests.length + mentorHasMoreExperience.length) > 1"> Shared Interests:
+          <b class="match"> {{ similarInterests.length + mentorHasMoreExperience.length }} </b>
+        </h4>
+        <h4 v-else> Shared Interests: 
+          <b class="notAMatch"> {{ similarInterests.length + mentorHasMoreExperience.length }} </b>
+        </h4>
+        <h4 v-if="numberOfEducationMatches > 0"> Education matches:
+          <b class="match"> {{ numberOfEducationMatches }} </b>
+        </h4>
+        <h4 v-else> Education matches:
+          <b class="notAMatch"> {{ numberOfEducationMatches }} </b>
+        </h4>
+        <h4 v-if="languageMatches.length > 1"> Language matches:
+          <b class="match"> {{ languageMatches.length }} </b>
+        </h4>
+        <h4 v-else> Language matches: 
+          <b> {{ languageMatches.length }} </b>
+        </h4>
         <br>
       </div>
     </div>
     <br>
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
-        <p class="infoMessage"> Number of shared interests: {{ otherInterests.length + mentorHasMoreExperience.length}} </p>
+        <p class="infoMessage"> Number of shared interests: {{ similarInterests.length + mentorHasMoreExperience.length}} </p>
         <br>
         <h2> Mentoring Areas of Interest </h2>
         <div>
@@ -143,19 +144,19 @@
       <br>
     </div>
     <br>
-    <!-- <div class="row text-center" v-if="mentor.education.length !== null">
+    <!-- Distance information section -->
+    <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <br>
-        <h2> Mentoring Information </h2>
-        <h4> Preffered formats: </h4>
+        <h2> Mentoring Format </h2>
+        <h4> Preffered mentoring formats: </h4>
         <span v-for="(format, index) in mentor.mentorSettings.prefferedMentoringFormats" :key="index">
-          <h3>
+          <h4>
             <b>
               <i>{{format }} </i>
             </b>
-          </h3>
+          </h4>
         </span>
-        <br>
         <div v-if="hasInPerson()">
           <h4>
             <u> Distance Match </u>
@@ -176,12 +177,13 @@
       </div>
     </div>
     <br>
-    <div class="row text-center" v-if="mentor.education.length !== null">
+    <!-- Education matches -->
+   <div class="row text-center" v-if="updatedMentorEducation.length !== 0">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
-        <p class="infoMessage"> Number of education matches: {{ numberOfEducationMatches}} </p>
+        <p class="infoMessage"> Number of education matches: {{ numberOfEducationMatches }} </p>
         <br>
         <h2> Mentors Education </h2>
-        <span v-for="(degree, index) in mentor.education" :key="index">
+        <span v-for="(degree, index) in updatedMentorEducation" :key="index">
           <h4 v-if="degree.isMatch === true"> {{ index + 1 }}
             <i class="fas fa-check match"></i>
           </h4>
@@ -196,10 +198,18 @@
           </h4>
           <h5>Start year: {{ degree.startYear }} </h5>
           <h5>End year: {{ degree.endYear }} </h5>
-          <hr>
+          <!-- This makes sure there isn't an unnecessary hr line at the end -->
+          <hr v-if="(index + 1) !== updatedMentorEducation.length">
+          <br v-else>
         </span>
       </div>
     </div>
+    <div v-else>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
+        <h2> Mentor: {{ mentor.userName }} has no education information. </h2>
+        </div>
+    </div> 
+    <!-- End of education matches -->
     <br>
     <div class="row text-center" v-if="mentor.jobHistory.length !== null">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
@@ -226,7 +236,7 @@
           <br v-if="index === mentor.jobHistory.length-1">
         </span>
       </div>
-    </div>
+    </div> 
     <br>
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
@@ -266,8 +276,8 @@
         </a>
         <br>
       </div>
-    </div>
-    <br> -->
+    </div> 
+    <br> 
   </div>
 </template>
 
@@ -292,7 +302,8 @@
         otherInterests: [],
         areasOfInterest: [],
         languageMatches: [],
-        educationMatches: [],
+        updatedMentorEducation: [],
+        numberOfEducationMatches: 0,
         mentorSettings: [],
         currentUserTooOldBy: null,
         currentUserTooYoungBy: null,
@@ -356,6 +367,8 @@
         console.log(response)
         that.otherInterests = response.data.otherInterests
         that.languageMatches = response.data.languageMatches
+        that.updatedMentorEducation = response.data.updatedMentorEducation
+        that.numberOfEducationMatches = response.data.numberOfEducationMatches
         that.currentUserTooOldBy = response.data.currentUserTooOldBy
         that.currentUserTooYoungBy = response.data.currentUserTooYoungBy
         that.mentorTooOldBy = response.data.mentorTooOldBy

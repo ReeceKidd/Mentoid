@@ -64,13 +64,13 @@ const asyncIssue = payload => {
                       const message = error.message
                         ? error.message
                         : 'There was an error'
-                      res.status(400).send({
+                      res.status(500).send({
                         message: message
                       })
                     })
                 } else {
                   res
-                    .status(400)
+                    .status(600)
                     .send({ message: 'Invalid Username or Password' })
                 }
               }
@@ -82,12 +82,12 @@ const asyncIssue = payload => {
         })
         .catch(err => {
           res
-            .status(400)
+            .status(600)
             .send({ message: err.message ? err.message : 'There was an error' })
         })
     } catch (err) {
       const message = err.message ? err.message : 'There was an error'
-      res.status(400).send({
+      res.status(600).send({
         message: message
       })
     }

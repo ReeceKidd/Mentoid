@@ -85,10 +85,13 @@
                   <a>English</a>
                 </li>
                 <li>
-                  <a>German</a>
+                  <a>Français</a>
                 </li>
                 <li>
-                  <a>Spanish</a>
+                  <a>Español</a>
+                </li>
+                <li>
+                  <a>Deutsche</a>
                 </li>
               </ul>
             </li>
