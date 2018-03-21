@@ -11,7 +11,7 @@ let email = getEmail()
 let age = getAge()
 let password = getPassword()
 let confirmPassword = password
-let language = getLanguage()
+let country = getCountry()
 let terms = getTerms()
 
 /* Register Basic User */
@@ -24,7 +24,7 @@ module.exports = async function registerBasicUser() {
         age: age,
         password: password,
         confirmPassword: confirmPassword,
-        language: language,
+        country: country,
         terms: terms
     }).catch(error => {
       console.log('Could not complete basic registration: ' + error)
@@ -58,12 +58,11 @@ function getPassword() {
 }
 
 //This simulates that the majority of users will be English speakers. 
-function getLanguage() {
+function getCountry() {
 
-    var probability = Math.floor(Math.random() * 100) + 70
-    if (probability < 80) {
-        return 'Spanish'
-    } else return 'English'
+    let countryOptions = ['United Kingdom', 'Spain', 'France', 'Germany']
+    return countryOptions[Math.floor(Math.random()*countryOptions.length)];
+    
 
 }
 

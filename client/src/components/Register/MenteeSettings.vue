@@ -1,14 +1,15 @@
 <template>
   <div class="container">
-     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
-       <h2>
+    <h2 class="text-center">
           Please adjust your Mentee settings.
         </h2>
+        <br>
+     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 displayBox">
     <mentee-settings-form></mentee-settings-form>
     </div>
 
      <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">  
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">  
         <hr>
 
         <!-- Desktop -->

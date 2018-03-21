@@ -22,7 +22,7 @@
           <el-checkbox v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">
             <span class="selectAll">Select All</span>
           </el-checkbox>
-          <el-checkbox-group v-model="checkedAreasOfInterestNames" @change="handleCheckedAreasOfInterestChange" @blur="$v.checkedAreasOfInterestNames.$touch">
+          <el-checkbox-group v-model="checkedAreasOfInterestNames" @change="handleCheckedAreasOfInterestChange">
             <el-checkbox v-for="(areaOfInterest, index) in areasOfInterestNames" :label="areaOfInterest" :key="index" border size="medium">{{areaOfInterest}}</el-checkbox>
           </el-checkbox-group>
           <br>
@@ -64,7 +64,7 @@
           <span class="selectAll">Select All</span>
         </el-checkbox>
         <el-checkbox-group v-model="checkedLanguages" @change="handleCheckedLanguageChange">
-          <el-checkbox v-for="language in languages" :label="language" :key="language" border size="medium">{{language}}</el-checkbox>
+          <el-checkbox v-for="language in languages" :key="language" border size="medium">{{language}}</el-checkbox>
         </el-checkbox-group>
         <br>
         <br>
@@ -94,10 +94,10 @@
         <br>
         <br>
         <div class="row text-center hidden-xs">
-          <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentee settings </button>
+          <button class="btn btn-lg btn-primary" @click="onSubmit"> Update mentee settings </button>
         </div>
         <div class="row text-center visible-xs">
-          <button class="btn btn-md btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentee settings </button>
+          <button class="btn btn-md btn-primary" @click="onSubmit"> Update mentee settings </button>
         </div>
       </div>
 
@@ -119,7 +119,7 @@
       <!-- End of success message -->
 
       <div v-if="wouldLikeAMentor === 'false'">
-        <p> Everyone has room for improvement, these people can take your skills to the next level. 
+        <p> Everyone has room for improvement, these people can take your skills to the next level.
         </p>
         <h3 class="text-center">
           <u>
@@ -146,21 +146,21 @@
         <br>
 
         <br>
-      <!-- Does not want to mentor error message -->
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <p class="errorMessage" v-if="doesNotWantAMentorErrorMessage !== null">{{doesNotWantAMentorErrorMessage}}</p>
+        <!-- Does not want to mentor error message -->
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <p class="errorMessage" v-if="doesNotWantAMentorErrorMessage !== null">{{doesNotWantAMentorErrorMessage}}</p>
+          </div>
         </div>
-      </div>
-      <!-- End of error messages -->
+        <!-- End of error messages -->
 
-      <!-- Does not want to mentor success Message -->
-      <div class="row">
-        <div class="text-center">
-          <p class="successMessage" v-if="doesNotWantAMentorSuccessMessage !== null">{{doesNotWantAMentorSuccessMessage}}</p>
+        <!-- Does not want to mentor success Message -->
+        <div class="row">
+          <div class="text-center">
+            <p class="successMessage" v-if="doesNotWantAMentorSuccessMessage !== null">{{doesNotWantAMentorSuccessMessage}}</p>
+          </div>
         </div>
-      </div>
-      <!-- End of success message -->
+        <!-- End of success message -->
 
       </div>
     </div>
@@ -168,11 +168,6 @@
 </template>
 <script>
   import axios from 'axios'
-  import {
-    required,
-    minLength,
-    minValue
-  } from 'vuelidate/lib/validators'
   const updateMenteeSettingsURL = 'http://localhost:4000/update/mentee-settings/'
   export default {
     data() {
@@ -322,36 +317,6 @@
         })
       }
     },
-    validations: {
-      checkedAreasOfInterestNames: {
-        required,
-        minLength: minLength(1)
-      },
-      checkedMentoringFormats: {
-        required,
-        minLength: minLength(1)
-      },
-      checkedLanguages: {
-        required,
-        minLength: minLength(1)
-      },
-      checkedEducation: {
-        required,
-        minLength: minLength(1)
-      },
-      minimumAge: {
-        required,
-        minValue: minValue(16)
-      },
-      maximumAge: {
-        required,
-        minValue: minValue(16)
-      },
-      maxNumberOfMentors: {
-        required,
-        minValue: minValue(1)
-      }
-    },
     beforeMount() {
       var self = this
       var userID = this.$store.state.user.authUser._id
@@ -373,15 +338,27 @@
         const getMenteeSettingsURL = 'http://localhost:4000/get/mentee-settings/'
         axios.get(getMenteeSettingsURL + userID).then(function (response) {
           let menteeSettings = response.data.menteeSettings
-          self.wouldLikeAMentor = menteeSettings.wouldLikeAMentor.toString()
+          if (menteeSettings.wouldLikeAMentor !== undefined) {
+            self.wouldLikeAMentor = menteeSettings.wouldLikeAMentor.toString()
+          }
           self.checkedAreasOfInterest = menteeSettings.areasOfInterest
           self.checkedMentoringFormats = menteeSettings.prefferedMentoringFormats
-          self.checkedLanguages = menteeSettings.languages
+          if (menteeSettings.languages !== undefined) {
+            self.checkedLanguages = menteeSettings.languages
+          }
           self.checkedEducation = menteeSettings.prefferedEducation
-          self.maximumTravelDistanceKM = menteeSettings.maximumTravelDistanceKM
-          self.minimumAge = menteeSettings.minimumAge
-          self.maximumAge = menteeSettings.maximumAge
-          self.maxNumberOfMentors = menteeSettings.maxNumberOfMentors
+          if (menteeSettings.maximumTravelDistanceKM != null) {
+            self.maximumTravelDistanceKM = menteeSettings.maximumTravelDistanceKM
+          }
+          if (menteeSettings.minimumAge !== undefined) {
+            self.minimumAge = menteeSettings.minimumAge
+          }
+          if (menteeSettings.maximumAge !== undefined) {
+            self.maximumAge = menteeSettings.maximumAge
+          }
+          if (menteeSettings.maxNumberOfMentors !== undefined) {
+            self.maxNumberOfMentors = menteeSettings.maxNumberOfMentors
+          }
         }).then(value => {
           // Gets the name values from the previous checkedAreas of interest.
           for (var x = 0; x < this.checkedAreasOfInterest.length; x++) {

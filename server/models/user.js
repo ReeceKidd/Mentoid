@@ -23,6 +23,7 @@ const User = new Schema({
     unique: true
   },
   age: Number,
+  country: String,
   password: String,
   confirmPassword: String,
   language: String,

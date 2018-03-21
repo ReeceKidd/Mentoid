@@ -62,6 +62,7 @@
         setTimeout(() => {
           this.successMessage = null
         }, 3000)
+        location.reload()
       },
       imageLoadError() {
         this.profileImageLoaded = false

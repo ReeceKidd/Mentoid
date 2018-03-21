@@ -21,23 +21,27 @@ module.exports = async function updateAreasOfInterest(userName, userID, age, are
     var maximumAge = getMaximumAge(minimumAge)
     var maxNumberOfMentees = getMaxNumberOfMentees()
 
+    var mentorSettings= {
+        wouldLikeToMentor: wouldLikeToMentor,
+        areasOfInterest: areasOfInterest,
+        prefferedMentoringFormats: prefferedMentoringFormats,
+        maximumTravelDistanceKM: maximumTravelDistance,
+        languages: mentoringLanguages,
+        prefferedEducation: prefferedEducation,
+        minimumAge: minimumAge,
+        maximumAge: maximumAge,
+        maxNumberOfMentees: maxNumberOfMentees
+    }
+
     await axios.post(updateMentorSettingsURL, {
-        mentorSettings: {
-            wouldLikeToMentor: wouldLikeToMentor,
-            areasOfInterest: areasOfInterest,
-            prefferedMentoringFormats: prefferedMentoringFormats,
-            maximumTravelDistanceKM: maximumTravelDistance,
-            languages: mentoringLanguages,
-            prefferedEducation: prefferedEducation,
-            minimumAge: minimumAge,
-            maximumAge: maximumAge,
-            maxNumberOfMentees: maxNumberOfMentees
-        },
+        mentorSettings: mentorSettings,
         userID: userID,
         userName: userName
     }).catch(error => {
         console.log(userName + ' could not update mentor settings: ' + error.message)
     })
+
+    return mentorSettings
 
 }
 

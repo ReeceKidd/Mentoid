@@ -33,6 +33,7 @@
               <p class="errorMessage" v-if="!$v.userName.required && $v.userName.$dirty">Username is required.</p>
               <p class="errorMessage" v-if="!$v.userName.unique && $v.userName.$dirty">Username already exists in database</p>
               <p class="errorMessage" v-if="!$v.userName.alphaNum && $v.userName.$dirty">Username must only contain alphabetical characters and numbers</p>
+              <p class="errorMessage" v-if="!$v.userName.minLength && $v.userName.$dirty">Username must be at least two characters long.</p>
             </div>
             <div class="input" :class="{invalid: $v.email.$error}">
               <label for="email">Email*</label>
@@ -51,18 +52,20 @@
             <div class="input" :class="{invalid: $v.password.$error}">
               <label for="password">Password*</label>
               <input type="password" id="password" @blur="$v.password.$touch()" v-model="password" name="password">
+              <p class="errorMessage" v-if="!$v.password.minLength && $v.password.$dirty">Password must be at least 6 characters long.</p>
             </div>
             <div class="input" :class="{invalid: $v.confirmPassword.$error}">
               <label for="confirm-password">Confirmation Password*</label>
               <input type="password" id="confirm-password" @blur="$v.confirmPassword.$touch()" v-model="confirmPassword" name="confirmPassword">
+              <p class="errorMessage" v-if="!$v.confirmPassword.sameAs && $v.confirmPassword.$dirty">Confirm password must be the same as password.</p>
             </div>
             <div class="input" name="country">
               <label for="country">Country*</label>
               <select id="country" v-model="country">
                 <option value="United Kingdom">United Kingdom</option>
-                <option value="United Kingdom">United States</option>
+                <option value="United States">United States</option>
                 <option value="Spain">España</option>
-                <option value="Germany">France</option>
+                <option value="France">France</option>
                 <option value="German">Deutschland</option>
               </select>
             </div>
@@ -153,6 +156,7 @@
       },
       userName: {
         required,
+        minLength: minLength(2),
         alphaNum,
         unique: val => {
           if (val === '') return true
@@ -166,7 +170,7 @@
       },
       password: {
         required,
-        minLen: minLength(8)
+        minLength: minLength(6)
       },
       confirmPassword: {
         sameAs: sameAs('password')

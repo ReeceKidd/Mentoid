@@ -392,3 +392,17 @@ If I have time add alt tags to the various images on the website.
 Areas of interest when deleted causes an error.
 Maybe include current mentors and past mentors pictures in the view profile section of potential mentors
 or mentees.  
+In the matching section need to include if the mentor has reached their maximum number of people 
+basically the waitlist functionality. 
+Go through the various pages and make sure the links are all correct. 
+Create a new home page as well.
+
+
+//Tasks for tommorow: 
+
+Get one user created without errors ensuring each of the registration methods are working correctly.  
+Need to complete the matching script for mentors and mentees to get the rest of the site running. 
+Then the homepage. 
+Then the rest of the mentee side. 
+Fix it so if you have sent the request in the potential mentors and mentees section it just shows the X. And the 
+date when it was sent. 

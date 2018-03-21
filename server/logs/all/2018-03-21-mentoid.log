@@ -1,0 +1,3008 @@
+10:08:18 ControllerMethods/Register/register.js INFO: JoaneWurtele41 successfully registered: { __v: 0,
+  firstName: 'Joane',
+  lastName: 'Wurtele',
+  userName: 'JoaneWurtele41',
+  email: 'JoaneWurtele41@gmail.com',
+  age: 84,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab22f122ea9335254b3d697,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:13:07 ControllerMethods/Register/register.js INFO: VirgieGeuss21 successfully registered: { __v: 0,
+  firstName: 'Virgie',
+  lastName: 'Geuss',
+  userName: 'VirgieGeuss21',
+  email: 'VirgieGeuss21@gmail.com',
+  age: 70,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab230332ea9335254b3d698,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:13:41 ControllerMethods/Register/register.js INFO: AmieReals21 successfully registered: { __v: 0,
+  firstName: 'Amie',
+  lastName: 'Reals',
+  userName: 'AmieReals21',
+  email: 'AmieReals21@gmail.com',
+  age: 100,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab230552ea9335254b3d699,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:14:21 ControllerMethods/Register/register.js INFO: AllisOzdemir71 successfully registered: { __v: 0,
+  firstName: 'Allis',
+  lastName: 'Ozdemir',
+  userName: 'AllisOzdemir71',
+  email: 'AllisOzdemir71@gmail.com',
+  age: 84,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2307c2ea9335254b3d69a,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:16:09 ControllerMethods/Register/register.js INFO: RaineRamont21 successfully registered: { __v: 0,
+  firstName: 'Raine',
+  lastName: 'Ramont',
+  userName: 'RaineRamont21',
+  email: 'RaineRamont21@gmail.com',
+  age: 37,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab230e92ea9335254b3d69b,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:16:09 ControllerMethods/Register/updateMentorSettings.js INFO: RaineRamont21 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Slot car racing",
+      "years": 18,
+      "areaOfInterestID": 0,
+      "pathsStudied": 40,
+      "videosWatched": 192,
+      "articlesRead": 203,
+      "numberOfLinksClicked": 6525,
+      "numberOfLikes": 767
+    },
+    {
+      "value": "Kombucha brewing",
+      "years": 13,
+      "areaOfInterestID": 2,
+      "pathsStudied": 32,
+      "videosWatched": 88,
+      "articlesRead": 184,
+      "numberOfLinksClicked": 6072,
+      "numberOfLikes": 375
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 21,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors",
+    "Masters"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 78,
+  "maxNumberOfMentees": 2
+}
+
+10:16:09 ControllerMethods/Register/updateMenteeSettings.js INFO: RaineRamont21 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Ghost hunting",
+      "years": 7,
+      "areaOfInterestID": 3,
+      "pathsStudied": 9,
+      "videosWatched": 220,
+      "articlesRead": 53,
+      "numberOfLinksClicked": 4759,
+      "numberOfLikes": 900
+    },
+    {
+      "value": "Foraging",
+      "years": 9,
+      "areaOfInterestID": 1,
+      "pathsStudied": 1,
+      "videosWatched": 49,
+      "articlesRead": 133,
+      "numberOfLinksClicked": 6289,
+      "numberOfLikes": 235
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 51,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "Masters",
+    "No education",
+    "High School",
+    "Vocational",
+    "Certification",
+    "Bachelors"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 45,
+  "maxNumberOfMentors": 5
+}
+
+10:16:45 ControllerMethods/Register/register.js INFO: BeliaSauer31 successfully registered: { __v: 0,
+  firstName: 'Belia',
+  lastName: 'Sauer',
+  userName: 'BeliaSauer31',
+  email: 'BeliaSauer31@gmail.com',
+  age: 94,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2310d2ea9335254b3d6a0,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:16:45 ControllerMethods/Register/updateMentorSettings.js INFO: BeliaSauer31 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Philately",
+      "years": 70,
+      "areaOfInterestID": 4,
+      "pathsStudied": 27,
+      "videosWatched": 234,
+      "articlesRead": 209,
+      "numberOfLinksClicked": 3233,
+      "numberOfLikes": 575
+    },
+    {
+      "value": "Cross-stitch",
+      "years": 67,
+      "areaOfInterestID": 0,
+      "pathsStudied": 17,
+      "videosWatched": 105,
+      "articlesRead": 20,
+      "numberOfLinksClicked": 8390,
+      "numberOfLikes": 88
+    },
+    {
+      "value": "Tennis polo",
+      "years": 65,
+      "areaOfInterestID": 2,
+      "pathsStudied": 45,
+      "videosWatched": 120,
+      "articlesRead": 225,
+      "numberOfLinksClicked": 4855,
+      "numberOfLikes": 634
+    },
+    {
+      "value": "Pottery",
+      "years": 57,
+      "areaOfInterestID": 8,
+      "pathsStudied": 36,
+      "videosWatched": 60,
+      "articlesRead": 235,
+      "numberOfLinksClicked": 5997,
+      "numberOfLikes": 346
+    },
+    {
+      "value": "Parkour",
+      "years": 51,
+      "areaOfInterestID": 6,
+      "pathsStudied": 18,
+      "videosWatched": 189,
+      "articlesRead": 226,
+      "numberOfLinksClicked": 4089,
+      "numberOfLikes": 88
+    },
+    {
+      "value": "Fishkeeping",
+      "years": 44,
+      "areaOfInterestID": 3,
+      "pathsStudied": 30,
+      "videosWatched": 92,
+      "articlesRead": 12,
+      "numberOfLinksClicked": 5267,
+      "numberOfLikes": 988
+    },
+    {
+      "value": "Pet",
+      "years": 43,
+      "areaOfInterestID": 5,
+      "pathsStudied": 38,
+      "videosWatched": 30,
+      "articlesRead": 199,
+      "numberOfLinksClicked": 5159,
+      "numberOfLikes": 481
+    },
+    {
+      "value": "Shopping",
+      "years": 25,
+      "areaOfInterestID": 7,
+      "pathsStudied": 37,
+      "videosWatched": 91,
+      "articlesRead": 136,
+      "numberOfLinksClicked": 701,
+      "numberOfLikes": 6
+    },
+    {
+      "value": "Shortwave listening",
+      "years": 22,
+      "areaOfInterestID": 1,
+      "pathsStudied": 49,
+      "videosWatched": 166,
+      "articlesRead": 242,
+      "numberOfLinksClicked": 3984,
+      "numberOfLikes": 283
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 65,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 25,
+  "maxNumberOfMentees": 2
+}
+
+10:16:45 ControllerMethods/Register/updateMenteeSettings.js INFO: BeliaSauer31 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Shortwave listening",
+      "years": 22,
+      "areaOfInterestID": 1,
+      "pathsStudied": 49,
+      "videosWatched": 166,
+      "articlesRead": 242,
+      "numberOfLinksClicked": 3984,
+      "numberOfLikes": 283
+    },
+    {
+      "value": "Shopping",
+      "years": 25,
+      "areaOfInterestID": 7,
+      "pathsStudied": 37,
+      "videosWatched": 91,
+      "articlesRead": 136,
+      "numberOfLinksClicked": 701,
+      "numberOfLikes": 6
+    },
+    {
+      "value": "Pet",
+      "years": 43,
+      "areaOfInterestID": 5,
+      "pathsStudied": 38,
+      "videosWatched": 30,
+      "articlesRead": 199,
+      "numberOfLinksClicked": 5159,
+      "numberOfLikes": 481
+    },
+    {
+      "value": "Fishkeeping",
+      "years": 44,
+      "areaOfInterestID": 3,
+      "pathsStudied": 30,
+      "videosWatched": 92,
+      "articlesRead": 12,
+      "numberOfLinksClicked": 5267,
+      "numberOfLikes": 988
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 23,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "No education",
+    "Bachelors",
+    "PHD"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 87,
+  "maxNumberOfMentors": 5
+}
+
+10:17:26 ControllerMethods/Register/register.js INFO: EuniceBarreras51 successfully registered: { __v: 0,
+  firstName: 'Eunice',
+  lastName: 'Barreras',
+  userName: 'EuniceBarreras51',
+  email: 'EuniceBarreras51@gmail.com',
+  age: 78,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab231362ea9335254b3d6aa,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:17:26 ControllerMethods/Register/updateMenteeSettings.js INFO: EuniceBarreras51 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Board/tabletop games",
+      "years": 2,
+      "areaOfInterestID": 3,
+      "pathsStudied": 49,
+      "videosWatched": 5,
+      "articlesRead": 190,
+      "numberOfLinksClicked": 4447,
+      "numberOfLikes": 359
+    },
+    {
+      "value": "Curling",
+      "years": 21,
+      "areaOfInterestID": 1,
+      "pathsStudied": 5,
+      "videosWatched": 88,
+      "articlesRead": 235,
+      "numberOfLinksClicked": 1886,
+      "numberOfLikes": 184
+    },
+    {
+      "value": "Woodworking",
+      "years": 29,
+      "areaOfInterestID": 0,
+      "pathsStudied": 40,
+      "videosWatched": 58,
+      "articlesRead": 160,
+      "numberOfLinksClicked": 7520,
+      "numberOfLikes": 494
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 30,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 30,
+  "maxNumberOfMentors": 9
+}
+
+10:17:26 ControllerMethods/Register/updateMentorSettings.js INFO: EuniceBarreras51 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Judo",
+      "years": 35,
+      "areaOfInterestID": 2,
+      "pathsStudied": 48,
+      "videosWatched": 27,
+      "articlesRead": 124,
+      "numberOfLinksClicked": 282,
+      "numberOfLikes": 887
+    },
+    {
+      "value": "Woodworking",
+      "years": 29,
+      "areaOfInterestID": 0,
+      "pathsStudied": 40,
+      "videosWatched": 58,
+      "articlesRead": 160,
+      "numberOfLinksClicked": 7520,
+      "numberOfLikes": 494
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 47,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "Certification",
+    "Masters",
+    "PHD",
+    "Bachelors",
+    "No education"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 98,
+  "maxNumberOfMentees": 1
+}
+
+10:18:42 ControllerMethods/Register/register.js INFO: DaisiePozniak51 successfully registered: { __v: 0,
+  firstName: 'Daisie',
+  lastName: 'Pozniak',
+  userName: 'DaisiePozniak51',
+  email: 'DaisiePozniak51@gmail.com',
+  age: 104,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab231812ea9335254b3d6af,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:18:42 ControllerMethods/Register/updateMentorSettings.js INFO: DaisiePozniak51 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Hydroponics",
+      "years": 44,
+      "areaOfInterestID": 0,
+      "pathsStudied": 39,
+      "videosWatched": 158,
+      "articlesRead": 211,
+      "numberOfLinksClicked": 7739,
+      "numberOfLikes": 652
+    },
+    {
+      "value": "Table football",
+      "years": 39,
+      "areaOfInterestID": 1,
+      "pathsStudied": 35,
+      "videosWatched": 239,
+      "articlesRead": 97,
+      "numberOfLinksClicked": 3938,
+      "numberOfLikes": 631
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 100,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification"
+  ],
+  "minimumAge": 21,
+  "maximumAge": 85,
+  "maxNumberOfMentees": 4
+}
+
+10:18:42 ControllerMethods/Register/updateMenteeSettings.js INFO: DaisiePozniak51 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Table football",
+      "years": 39,
+      "areaOfInterestID": 1,
+      "pathsStudied": 35,
+      "videosWatched": 239,
+      "articlesRead": 97,
+      "numberOfLinksClicked": 3938,
+      "numberOfLikes": 631
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 84,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "High School",
+    "No education",
+    "Bachelors",
+    "Masters",
+    "PHD"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 38,
+  "maxNumberOfMentors": 2
+}
+
+10:19:49 ControllerMethods/Register/register.js INFO: JorryColahan91 successfully registered: { __v: 0,
+  firstName: 'Jorry',
+  lastName: 'Colahan',
+  userName: 'JorryColahan91',
+  email: 'JorryColahan91@gmail.com',
+  age: 61,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab231c52ea9335254b3d6b2,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:19:49 ControllerMethods/Register/updateMentorSettings.js INFO: JorryColahan91 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Astrology",
+      "years": 41,
+      "areaOfInterestID": 0,
+      "pathsStudied": 13,
+      "videosWatched": 167,
+      "articlesRead": 118,
+      "numberOfLinksClicked": 1941,
+      "numberOfLikes": 530
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 38,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Masters",
+    "No education",
+    "Certification",
+    "Bachelors"
+  ],
+  "minimumAge": 21,
+  "maximumAge": 48,
+  "maxNumberOfMentees": 6
+}
+
+10:19:49 ControllerMethods/Register/updateMenteeSettings.js INFO: JorryColahan91 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Handball",
+      "years": 0,
+      "areaOfInterestID": 2,
+      "pathsStudied": 9,
+      "videosWatched": 105,
+      "articlesRead": 113,
+      "numberOfLinksClicked": 8281,
+      "numberOfLikes": 449
+    },
+    {
+      "value": "Cryptography",
+      "years": 3,
+      "areaOfInterestID": 5,
+      "pathsStudied": 39,
+      "videosWatched": 58,
+      "articlesRead": 238,
+      "numberOfLinksClicked": 6086,
+      "numberOfLikes": 615
+    },
+    {
+      "value": "Rock balancing",
+      "years": 4,
+      "areaOfInterestID": 4,
+      "pathsStudied": 42,
+      "videosWatched": 212,
+      "articlesRead": 105,
+      "numberOfLinksClicked": 8055,
+      "numberOfLikes": 349
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 26,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "Masters"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 36,
+  "maxNumberOfMentors": 4
+}
+
+10:20:22 ControllerMethods/Register/register.js INFO: AndiStepanoff31 successfully registered: { __v: 0,
+  firstName: 'Andi',
+  lastName: 'Stepanoff',
+  userName: 'AndiStepanoff31',
+  email: 'AndiStepanoff31@gmail.com',
+  age: 107,
+  country: 'France',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab231e52ea9335254b3d6b9,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:20:22 ControllerMethods/Register/updateMentorSettings.js INFO: AndiStepanoff31 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Aircraft spotting",
+      "years": 9,
+      "areaOfInterestID": 0,
+      "pathsStudied": 22,
+      "videosWatched": 96,
+      "articlesRead": 35,
+      "numberOfLinksClicked": 3763,
+      "numberOfLikes": 69
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 85,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors",
+    "Certification",
+    "Vocational",
+    "High School"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 34,
+  "maxNumberOfMentees": 1
+}
+
+10:20:22 ControllerMethods/Register/updateMenteeSettings.js INFO: AndiStepanoff31 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Aircraft spotting",
+      "years": 9,
+      "areaOfInterestID": 0,
+      "pathsStudied": 22,
+      "videosWatched": 96,
+      "articlesRead": 35,
+      "numberOfLinksClicked": 3763,
+      "numberOfLikes": 69
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 90,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "PHD"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 82,
+  "maxNumberOfMentors": 5
+}
+
+10:21:36 ControllerMethods/Register/register.js INFO: AlysiaShotzberger41 successfully registered: { __v: 0,
+  firstName: 'Alysia',
+  lastName: 'Shotzberger',
+  userName: 'AlysiaShotzberger41',
+  email: 'AlysiaShotzberger41@gmail.com',
+  age: 59,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab232302ea9335254b3d6bb,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:21:36 ControllerMethods/Register/updateMentorSettings.js INFO: AlysiaShotzberger41 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Ice skating",
+      "years": 39,
+      "areaOfInterestID": 1,
+      "pathsStudied": 44,
+      "videosWatched": 171,
+      "articlesRead": 4,
+      "numberOfLinksClicked": 3011,
+      "numberOfLikes": 364
+    },
+    {
+      "value": "Web surfing",
+      "years": 39,
+      "areaOfInterestID": 2,
+      "pathsStudied": 11,
+      "videosWatched": 94,
+      "articlesRead": 66,
+      "numberOfLinksClicked": 6189,
+      "numberOfLikes": 989
+    },
+    {
+      "value": "Swimming",
+      "years": 19,
+      "areaOfInterestID": 0,
+      "pathsStudied": 14,
+      "videosWatched": 193,
+      "articlesRead": 249,
+      "numberOfLinksClicked": 2792,
+      "numberOfLikes": 832
+    },
+    {
+      "value": "Music",
+      "years": 16,
+      "areaOfInterestID": 4,
+      "pathsStudied": 50,
+      "videosWatched": 62,
+      "articlesRead": 78,
+      "numberOfLinksClicked": 5915,
+      "numberOfLikes": 201
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 99,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors",
+    "Masters",
+    "High School",
+    "No education"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 61,
+  "maxNumberOfMentees": 7
+}
+
+10:21:36 ControllerMethods/Register/updateMenteeSettings.js INFO: AlysiaShotzberger41 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Fossil hunting",
+      "years": 13,
+      "areaOfInterestID": 3,
+      "pathsStudied": 17,
+      "videosWatched": 29,
+      "articlesRead": 53,
+      "numberOfLinksClicked": 5023,
+      "numberOfLikes": 614
+    },
+    {
+      "value": "Music",
+      "years": 16,
+      "areaOfInterestID": 4,
+      "pathsStudied": 50,
+      "videosWatched": 62,
+      "articlesRead": 78,
+      "numberOfLinksClicked": 5915,
+      "numberOfLikes": 201
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 27,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "No education"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 36,
+  "maxNumberOfMentors": 6
+}
+
+10:22:27 ControllerMethods/Register/register.js INFO: SukeyTucholski71 successfully registered: { __v: 0,
+  firstName: 'Sukey',
+  lastName: 'Tucholski',
+  userName: 'SukeyTucholski71',
+  email: 'SukeyTucholski71@gmail.com',
+  age: 86,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab232632ea9335254b3d6c1,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:22:27 ControllerMethods/Register/updateMentorSettings.js INFO: SukeyTucholski71 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Playing musical instruments",
+      "years": 57,
+      "areaOfInterestID": 1,
+      "pathsStudied": 3,
+      "videosWatched": 23,
+      "articlesRead": 235,
+      "numberOfLinksClicked": 5305,
+      "numberOfLikes": 652
+    },
+    {
+      "value": "Contract Bridge",
+      "years": 38,
+      "areaOfInterestID": 3,
+      "pathsStudied": 10,
+      "videosWatched": 169,
+      "articlesRead": 68,
+      "numberOfLinksClicked": 3437,
+      "numberOfLikes": 175
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 46,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "Certification",
+    "Masters",
+    "Vocational",
+    "Bachelors",
+    "High School"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 59,
+  "maxNumberOfMentees": 6
+}
+
+10:22:27 ControllerMethods/Register/updateMenteeSettings.js INFO: SukeyTucholski71 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Vacation",
+      "years": 9,
+      "areaOfInterestID": 2,
+      "pathsStudied": 26,
+      "videosWatched": 245,
+      "articlesRead": 231,
+      "numberOfLinksClicked": 9933,
+      "numberOfLikes": 132
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 24,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "Vocational",
+    "PHD"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 37,
+  "maxNumberOfMentors": 10
+}
+
+10:22:45 ControllerMethods/Register/register.js INFO: SimoneSmelley91 successfully registered: { __v: 0,
+  firstName: 'Simone',
+  lastName: 'Smelley',
+  userName: 'SimoneSmelley91',
+  email: 'SimoneSmelley91@gmail.com',
+  age: 36,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab232742ea9335254b3d6c8,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:22:45 ControllerMethods/Register/updateMentorSettings.js INFO: SimoneSmelley91 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Vehicle restoration",
+      "years": 16,
+      "areaOfInterestID": 1,
+      "pathsStudied": 44,
+      "videosWatched": 249,
+      "articlesRead": 71,
+      "numberOfLinksClicked": 5347,
+      "numberOfLikes": 870
+    },
+    {
+      "value": "Leather crafting",
+      "years": 14,
+      "areaOfInterestID": 5,
+      "pathsStudied": 24,
+      "videosWatched": 65,
+      "articlesRead": 175,
+      "numberOfLinksClicked": 2109,
+      "numberOfLikes": 836
+    },
+    {
+      "value": "Card collecting",
+      "years": 6,
+      "areaOfInterestID": 4,
+      "pathsStudied": 25,
+      "videosWatched": 220,
+      "articlesRead": 226,
+      "numberOfLinksClicked": 4573,
+      "numberOfLikes": 416
+    },
+    {
+      "value": "Deltiology",
+      "years": 5,
+      "areaOfInterestID": 6,
+      "pathsStudied": 41,
+      "videosWatched": 233,
+      "articlesRead": 108,
+      "numberOfLinksClicked": 4517,
+      "numberOfLikes": 734
+    },
+    {
+      "value": "Drawing",
+      "years": 3,
+      "areaOfInterestID": 2,
+      "pathsStudied": 16,
+      "videosWatched": 176,
+      "articlesRead": 192,
+      "numberOfLinksClicked": 7064,
+      "numberOfLikes": 941
+    },
+    {
+      "value": "Flag football",
+      "years": 2,
+      "areaOfInterestID": 0,
+      "pathsStudied": 7,
+      "videosWatched": 151,
+      "articlesRead": 245,
+      "numberOfLinksClicked": 2014,
+      "numberOfLikes": 842
+    },
+    {
+      "value": "Gardening",
+      "years": 1,
+      "areaOfInterestID": 3,
+      "pathsStudied": 4,
+      "videosWatched": 40,
+      "articlesRead": 30,
+      "numberOfLinksClicked": 2143,
+      "numberOfLikes": 706
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 77,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 16,
+  "maxNumberOfMentees": 8
+}
+
+10:22:45 ControllerMethods/Register/updateMenteeSettings.js INFO: SimoneSmelley91 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Gardening",
+      "years": 1,
+      "areaOfInterestID": 3,
+      "pathsStudied": 4,
+      "videosWatched": 40,
+      "articlesRead": 30,
+      "numberOfLinksClicked": 2143,
+      "numberOfLikes": 706
+    },
+    {
+      "value": "Flag football",
+      "years": 2,
+      "areaOfInterestID": 0,
+      "pathsStudied": 7,
+      "videosWatched": 151,
+      "articlesRead": 245,
+      "numberOfLinksClicked": 2014,
+      "numberOfLikes": 842
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 22,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "Masters",
+    "Bachelors"
+  ],
+  "minimumAge": 21,
+  "maximumAge": 63,
+  "maxNumberOfMentors": 10
+}
+
+10:24:07 ControllerMethods/Register/register.js INFO: LoutitiaMettlach61 successfully registered: { __v: 0,
+  firstName: 'Loutitia',
+  lastName: 'Mettlach',
+  userName: 'LoutitiaMettlach61',
+  email: 'LoutitiaMettlach61@gmail.com',
+  age: 27,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab232c72ea9335254b3d6d0,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:24:07 ControllerMethods/Register/updateEducation.js INFO: LoutitiaMettlach61 updated education successfully: [{"degree":"Certification","school":"Polytechnic University Of Puerto Rico","country":"United States","fieldOfStudy":"Aviation","startYear":2010,"endYear":2011,"educationID":0}]
+
+10:24:07 ControllerMethods/Register/updateMentorSettings.js INFO: LoutitiaMettlach61 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Aircraft spotting",
+      "years": 10,
+      "areaOfInterestID": 2,
+      "pathsStudied": 9,
+      "videosWatched": 178,
+      "articlesRead": 185,
+      "numberOfLinksClicked": 6631,
+      "numberOfLikes": 475
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 53,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Certification"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 74,
+  "maxNumberOfMentees": 2
+}
+
+10:24:07 ControllerMethods/Register/updateMenteeSettings.js INFO: LoutitiaMettlach61 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Letterboxing (hobby)",
+      "years": 2,
+      "areaOfInterestID": 3,
+      "pathsStudied": 42,
+      "videosWatched": 78,
+      "articlesRead": 199,
+      "numberOfLinksClicked": 1676,
+      "numberOfLikes": 943
+    },
+    {
+      "value": "Homebrewing",
+      "years": 5,
+      "areaOfInterestID": 0,
+      "pathsStudied": 24,
+      "videosWatched": 185,
+      "articlesRead": 250,
+      "numberOfLinksClicked": 7459,
+      "numberOfLikes": 692
+    },
+    {
+      "value": "Board game",
+      "years": 5,
+      "areaOfInterestID": 6,
+      "pathsStudied": 48,
+      "videosWatched": 198,
+      "articlesRead": 16,
+      "numberOfLinksClicked": 2661,
+      "numberOfLikes": 449
+    },
+    {
+      "value": "Woodworking",
+      "years": 6,
+      "areaOfInterestID": 1,
+      "pathsStudied": 11,
+      "videosWatched": 65,
+      "articlesRead": 179,
+      "numberOfLinksClicked": 7800,
+      "numberOfLikes": 592
+    },
+    {
+      "value": "Film memorabilia",
+      "years": 6,
+      "areaOfInterestID": 5,
+      "pathsStudied": 41,
+      "videosWatched": 22,
+      "articlesRead": 22,
+      "numberOfLinksClicked": 345,
+      "numberOfLikes": 588
+    },
+    {
+      "value": "Stone collecting",
+      "years": 8,
+      "areaOfInterestID": 4,
+      "pathsStudied": 25,
+      "videosWatched": 188,
+      "articlesRead": 170,
+      "numberOfLinksClicked": 54,
+      "numberOfLikes": 863
+    },
+    {
+      "value": "Aircraft spotting",
+      "years": 10,
+      "areaOfInterestID": 2,
+      "pathsStudied": 9,
+      "videosWatched": 178,
+      "articlesRead": 185,
+      "numberOfLinksClicked": 6631,
+      "numberOfLikes": 475
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 96,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "High School",
+    "Masters",
+    "Bachelors",
+    "Vocational"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 26,
+  "maxNumberOfMentors": 7
+}
+
+10:24:10 ControllerMethods/Register/register.js INFO: CherishWhipkey81 successfully registered: { __v: 0,
+  firstName: 'Cherish',
+  lastName: 'Whipkey',
+  userName: 'CherishWhipkey81',
+  email: 'CherishWhipkey81@gmail.com',
+  age: 70,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab232ca2ea9335254b3d6d9,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:24:10 ControllerMethods/Register/updateEducation.js INFO: CherishWhipkey81 updated education successfully: [{"degree":"Bachelors","school":"St. Bonaventure University","country":"United States","fieldOfStudy":"Aviation","startYear":2012,"endYear":2016,"educationID":0}]
+
+10:24:10 ControllerMethods/Register/updateMentorSettings.js INFO: CherishWhipkey81 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Herping",
+      "years": 51,
+      "areaOfInterestID": 3,
+      "pathsStudied": 35,
+      "videosWatched": 166,
+      "articlesRead": 27,
+      "numberOfLinksClicked": 923,
+      "numberOfLikes": 176
+    },
+    {
+      "value": "Comic book collecting",
+      "years": 48,
+      "areaOfInterestID": 1,
+      "pathsStudied": 38,
+      "videosWatched": 191,
+      "articlesRead": 145,
+      "numberOfLinksClicked": 2216,
+      "numberOfLikes": 584
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 88,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "PHD",
+    "Vocational",
+    "Masters"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 70,
+  "maxNumberOfMentees": 8
+}
+
+10:24:10 ControllerMethods/Register/updateMenteeSettings.js INFO: CherishWhipkey81 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Handball",
+      "years": 30,
+      "areaOfInterestID": 0,
+      "pathsStudied": 33,
+      "videosWatched": 170,
+      "articlesRead": 154,
+      "numberOfLinksClicked": 1384,
+      "numberOfLikes": 924
+    },
+    {
+      "value": "Scouting",
+      "years": 39,
+      "areaOfInterestID": 2,
+      "pathsStudied": 47,
+      "videosWatched": 16,
+      "articlesRead": 245,
+      "numberOfLinksClicked": 960,
+      "numberOfLikes": 748
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 23,
+  "languages": [
+    "Spanish"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Masters",
+    "No education",
+    "Certification",
+    "PHD",
+    "Vocational"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 61,
+  "maxNumberOfMentors": 4
+}
+
+10:24:13 ControllerMethods/Register/register.js INFO: MirabellaDegraffenreidt01 successfully registered: { __v: 0,
+  firstName: 'Mirabella',
+  lastName: 'Degraffenreidt',
+  userName: 'MirabellaDegraffenreidt01',
+  email: 'MirabellaDegraffenreidt01@gmail.com',
+  age: 26,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab232cd2ea9335254b3d6e0,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:24:13 ControllerMethods/Register/updateEducation.js INFO: MirabellaDegraffenreidt01 updated education successfully: [{"degree":"Vocational","school":"National Institute Of Technology Hamirpur","country":"India","fieldOfStudy":"Agriculture","startYear":2013,"endYear":2014,"educationID":0},{"degree":"Bachelors","school":"Averett College","country":"United States","fieldOfStudy":"Philosophy","startYear":2013,"endYear":2016,"educationID":1},{"degree":"Certification","school":"Illinois Eastern Community Colleges","country":"United States","fieldOfStudy":"Library Science","startYear":2010,"endYear":2010,"educationID":2}]
+
+10:24:13 ControllerMethods/Register/updateMentorSettings.js INFO: MirabellaDegraffenreidt01 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Model aircraft",
+      "years": 8,
+      "areaOfInterestID": 0,
+      "pathsStudied": 7,
+      "videosWatched": 5,
+      "articlesRead": 244,
+      "numberOfLinksClicked": 4835,
+      "numberOfLikes": 127
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 99,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "High School"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 83,
+  "maxNumberOfMentees": 3
+}
+
+10:24:13 ControllerMethods/Register/updateMenteeSettings.js INFO: MirabellaDegraffenreidt01 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Weightlifting",
+      "years": 4,
+      "areaOfInterestID": 1,
+      "pathsStudied": 33,
+      "videosWatched": 226,
+      "articlesRead": 104,
+      "numberOfLinksClicked": 8315,
+      "numberOfLikes": 586
+    },
+    {
+      "value": "Model aircraft",
+      "years": 8,
+      "areaOfInterestID": 0,
+      "pathsStudied": 7,
+      "videosWatched": 5,
+      "articlesRead": 244,
+      "numberOfLinksClicked": 4835,
+      "numberOfLikes": 127
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 21,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "High School",
+    "No education",
+    "Bachelors",
+    "Vocational"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 28,
+  "maxNumberOfMentors": 2
+}
+
+10:25:34 ControllerMethods/Register/register.js INFO: AbbiPeets81 successfully registered: { __v: 0,
+  firstName: 'Abbi',
+  lastName: 'Peets',
+  userName: 'AbbiPeets81',
+  email: 'AbbiPeets81@gmail.com',
+  age: 37,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2331e2ea9335254b3d6e6,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:25:34 ControllerMethods/Register/updateEducation.js INFO: AbbiPeets81 updated education successfully: [{"degree":"Bachelors","school":"Columbia College (Sc)","country":"United States","fieldOfStudy":"Philosophy","startYear":2010,"endYear":2014,"educationID":0},{"degree":"Certification","school":"Ecole Supérieure Internationale D'administration Des Entreprises","country":"France","fieldOfStudy":"Engineering","startYear":2008,"endYear":2009,"educationID":1}]
+
+10:25:34 ControllerMethods/Register/updateMentorSettings.js INFO: AbbiPeets81 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Blacksmithing",
+      "years": 20,
+      "areaOfInterestID": 0,
+      "pathsStudied": 22,
+      "videosWatched": 20,
+      "articlesRead": 60,
+      "numberOfLinksClicked": 3236,
+      "numberOfLikes": 477
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 83,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "High School",
+    "Certification",
+    "No education",
+    "Masters",
+    "Vocational"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 82,
+  "maxNumberOfMentees": 1
+}
+
+10:25:34 ControllerMethods/Register/updateMenteeSettings.js INFO: AbbiPeets81 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Magic",
+      "years": 1,
+      "areaOfInterestID": 1,
+      "pathsStudied": 40,
+      "videosWatched": 102,
+      "articlesRead": 230,
+      "numberOfLinksClicked": 8850,
+      "numberOfLikes": 127
+    },
+    {
+      "value": "Amateur astronomy",
+      "years": 6,
+      "areaOfInterestID": 2,
+      "pathsStudied": 2,
+      "videosWatched": 186,
+      "articlesRead": 174,
+      "numberOfLinksClicked": 1642,
+      "numberOfLikes": 991
+    },
+    {
+      "value": "Aircraft spotting",
+      "years": 10,
+      "areaOfInterestID": 5,
+      "pathsStudied": 37,
+      "videosWatched": 22,
+      "articlesRead": 93,
+      "numberOfLinksClicked": 4014,
+      "numberOfLikes": 84
+    },
+    {
+      "value": "Roller skating",
+      "years": 18,
+      "areaOfInterestID": 3,
+      "pathsStudied": 14,
+      "videosWatched": 184,
+      "articlesRead": 13,
+      "numberOfLinksClicked": 5050,
+      "numberOfLikes": 303
+    },
+    {
+      "value": "Blacksmithing",
+      "years": 20,
+      "areaOfInterestID": 0,
+      "pathsStudied": 22,
+      "videosWatched": 20,
+      "articlesRead": 60,
+      "numberOfLinksClicked": 3236,
+      "numberOfLikes": 477
+    },
+    {
+      "value": "Mahjong",
+      "years": 20,
+      "areaOfInterestID": 4,
+      "pathsStudied": 24,
+      "videosWatched": 164,
+      "articlesRead": 192,
+      "numberOfLinksClicked": 5127,
+      "numberOfLikes": 806
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 6,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Certification",
+    "Bachelors",
+    "Vocational",
+    "PHD",
+    "No education",
+    "High School",
+    "Masters"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 28,
+  "maxNumberOfMentors": 8
+}
+
+10:25:34 ControllerMethods/Register/updateJobHistory.js INFO: AbbiPeets81 updated job history successfully: [{"title":"Architectural Manager","company":"Petsmart, Inc.","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:25:34 ControllerMethods/Register/updateJobHistory.js INFO: AbbiPeets81 updated job history successfully: [{"title":"Architectural Manager","company":"Petsmart, Inc.","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Fish Cutter","company":"Nisource Inc.","startYear":"2001","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:25:34 ControllerMethods/Register/updateJobHistory.js INFO: AbbiPeets81 updated job history successfully: [{"title":"Architectural Manager","company":"Petsmart, Inc.","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Fish Cutter","company":"Nisource Inc.","startYear":"2001","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Social Service Manager","company":"Cigna Corporation","startYear":"2004","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:26:33 ControllerMethods/Register/register.js INFO: DeonneMarselle41 successfully registered: { __v: 0,
+  firstName: 'Deonne',
+  lastName: 'Marselle',
+  userName: 'DeonneMarselle41',
+  email: 'DeonneMarselle41@gmail.com',
+  age: 115,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab233592ea9335254b3d6f5,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:26:33 ControllerMethods/Register/updateEducation.js INFO: DeonneMarselle41 updated education successfully: [{"degree":"Certification","school":"Volunteer State Community College","country":"United States","fieldOfStudy":"Physiotherapy","startYear":2003,"endYear":2003,"educationID":0}]
+
+10:26:33 ControllerMethods/Register/updateJobHistory.js INFO: DeonneMarselle41 updated job history successfully: [{"title":"Telephone Operator","company":"Western Digital Corporation","startYear":"2009","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:26:33 ControllerMethods/Register/updateMentorSettings.js INFO: DeonneMarselle41 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Powerlifting",
+      "years": 97,
+      "areaOfInterestID": 4,
+      "pathsStudied": 27,
+      "videosWatched": 58,
+      "articlesRead": 240,
+      "numberOfLinksClicked": 6043,
+      "numberOfLikes": 548
+    },
+    {
+      "value": "Radio-controlled car racing",
+      "years": 80,
+      "areaOfInterestID": 0,
+      "pathsStudied": 39,
+      "videosWatched": 217,
+      "articlesRead": 34,
+      "numberOfLinksClicked": 6298,
+      "numberOfLikes": 20
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 53,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 19,
+  "maxNumberOfMentees": 6
+}
+
+10:26:33 ControllerMethods/Register/updateMenteeSettings.js INFO: DeonneMarselle41 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Stand-up comedy",
+      "years": 18,
+      "areaOfInterestID": 2,
+      "pathsStudied": 37,
+      "videosWatched": 123,
+      "articlesRead": 70,
+      "numberOfLinksClicked": 2754,
+      "numberOfLikes": 895
+    },
+    {
+      "value": "Board/tabletop games",
+      "years": 73,
+      "areaOfInterestID": 1,
+      "pathsStudied": 45,
+      "videosWatched": 146,
+      "articlesRead": 182,
+      "numberOfLinksClicked": 8630,
+      "numberOfLikes": 312
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 44,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "Bachelors"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 67,
+  "maxNumberOfMentors": 5
+}
+
+10:26:33 ControllerMethods/Register/updateJobHistory.js INFO: DeonneMarselle41 updated job history successfully: [{"title":"Telephone Operator","company":"Western Digital Corporation","startYear":"2009","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Stucco Mason","company":"Hess Corporation","startYear":"2002","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:26:33 ControllerMethods/Register/updateSocialMedia.js INFO: DeonneMarselle41 updated social media successfully: {"facebook":"www.facebook.com/DeonneMarselle41","instagram":"DeonneMarselle41","twitter":"DeonneMarselle41","snapchat":"DeonneMarselle41","linkedIn":"www.linkedin.com/DeonneMarselle41","userID":"5ab233592ea9335254b3d6f5"}
+
+10:27:40 ControllerMethods/Register/register.js INFO: EmaMelbert51 successfully registered: { __v: 0,
+  firstName: 'Ema',
+  lastName: 'Melbert',
+  userName: 'EmaMelbert51',
+  email: 'EmaMelbert51@gmail.com',
+  age: 108,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2339c2ea9335254b3d6ff,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:27:40 ControllerMethods/Register/updateEducation.js INFO: EmaMelbert51 updated education successfully: [{"degree":"Bachelors","school":"Schiller International University, Paris","country":"France","fieldOfStudy":"Optometry","startYear":1964,"endYear":1968,"educationID":0},{"degree":"Certification","school":"Kangnung National University","country":"Korea, Republic of","fieldOfStudy":"Science In Law","startYear":1978,"endYear":1979,"educationID":1}]
+
+10:27:40 ControllerMethods/Register/updateJobHistory.js INFO: EmaMelbert51 updated job history successfully: [{"title":"Sewer Pipe Cleaner","company":"Liberty Mutual Holding Company Inc.","startYear":"1958","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:27:40 ControllerMethods/Register/updateSocialMedia.js INFO: EmaMelbert51 updated social media successfully: {"facebook":"www.facebook.com/EmaMelbert51","instagram":"EmaMelbert51","twitter":"EmaMelbert51","snapchat":"EmaMelbert51","linkedIn":"www.linkedin.com/EmaMelbert51","medium":"www.medium.com/EmaMelbert51","userID":"5ab2339c2ea9335254b3d6ff"}
+
+10:27:40 ControllerMethods/Register/updateMentorSettings.js INFO: EmaMelbert51 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Lacrosse",
+      "years": 62,
+      "areaOfInterestID": 1,
+      "pathsStudied": 8,
+      "videosWatched": 27,
+      "articlesRead": 77,
+      "numberOfLinksClicked": 6196,
+      "numberOfLikes": 273
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 34,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "Vocational",
+    "No education",
+    "Bachelors"
+  ],
+  "minimumAge": 21,
+  "maximumAge": 46,
+  "maxNumberOfMentees": 10
+}
+
+10:27:40 ControllerMethods/Register/updateMenteeSettings.js INFO: EmaMelbert51 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Web surfing",
+      "years": 21,
+      "areaOfInterestID": 0,
+      "pathsStudied": 9,
+      "videosWatched": 123,
+      "articlesRead": 187,
+      "numberOfLinksClicked": 4393,
+      "numberOfLikes": 684
+    },
+    {
+      "value": "Lacrosse",
+      "years": 62,
+      "areaOfInterestID": 1,
+      "pathsStudied": 8,
+      "videosWatched": 27,
+      "articlesRead": 77,
+      "numberOfLinksClicked": 6196,
+      "numberOfLikes": 273
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 68,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "High School",
+    "Masters",
+    "PHD",
+    "Bachelors",
+    "Certification",
+    "No education"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 29,
+  "maxNumberOfMentors": 6
+}
+
+10:27:40 ControllerMethods/Register/updateJobHistory.js INFO: EmaMelbert51 updated job history successfully: [{"title":"Sewer Pipe Cleaner","company":"Liberty Mutual Holding Company Inc.","startYear":"1958","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Ceiling Tile Installer","company":"Terex Corporation","startYear":"1997","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:27:40 ControllerMethods/Register/updateJobHistory.js INFO: EmaMelbert51 updated job history successfully: [{"title":"Sewer Pipe Cleaner","company":"Liberty Mutual Holding Company Inc.","startYear":"1958","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Ceiling Tile Installer","company":"Terex Corporation","startYear":"1997","endYear":"2018","isWorkingHere":"No","experienceID":1},{"title":"Machine Feeder","company":"Quanta Services, Inc.","startYear":"1972","endYear":"2010","isWorkingHere":"No","experienceID":1}]
+
+10:27:40 ControllerMethods/Register/updateJobHistory.js INFO: EmaMelbert51 updated job history successfully: [{"title":"Sewer Pipe Cleaner","company":"Liberty Mutual Holding Company Inc.","startYear":"1958","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Ceiling Tile Installer","company":"Terex Corporation","startYear":"1997","endYear":"2018","isWorkingHere":"No","experienceID":1},{"title":"Machine Feeder","company":"Quanta Services, Inc.","startYear":"1972","endYear":"2010","isWorkingHere":"No","experienceID":1},{"title":"Switchboard Operator","company":"Weyerhaeuser Company","startYear":"2008","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:27:40 ControllerMethods/Register/updateJobHistory.js INFO: EmaMelbert51 updated job history successfully: [{"title":"Sewer Pipe Cleaner","company":"Liberty Mutual Holding Company Inc.","startYear":"1958","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Ceiling Tile Installer","company":"Terex Corporation","startYear":"1997","endYear":"2018","isWorkingHere":"No","experienceID":1},{"title":"Machine Feeder","company":"Quanta Services, Inc.","startYear":"1972","endYear":"2010","isWorkingHere":"No","experienceID":1},{"title":"Switchboard Operator","company":"Weyerhaeuser Company","startYear":"2008","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Forensic Science Technician","company":"V.f. Corporation","startYear":"2010","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:27:40 ControllerMethods/Register/updateJobHistory.js INFO: EmaMelbert51 updated job history successfully: [{"title":"Sewer Pipe Cleaner","company":"Liberty Mutual Holding Company Inc.","startYear":"1958","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Ceiling Tile Installer","company":"Terex Corporation","startYear":"1997","endYear":"2018","isWorkingHere":"No","experienceID":1},{"title":"Machine Feeder","company":"Quanta Services, Inc.","startYear":"1972","endYear":"2010","isWorkingHere":"No","experienceID":1},{"title":"Switchboard Operator","company":"Weyerhaeuser Company","startYear":"2008","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Forensic Science Technician","company":"V.f. Corporation","startYear":"2010","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Family Therapist","company":"J.b. Hunt Transport Services, Inc.","startYear":"2016","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:27:51 ControllerMethods/Register/register.js INFO: JosefaKizy31 successfully registered: { __v: 0,
+  firstName: 'Josefa',
+  lastName: 'Kizy',
+  userName: 'JosefaKizy31',
+  email: 'JosefaKizy31@gmail.com',
+  age: 26,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab233a62ea9335254b3d719,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:27:51 ControllerMethods/Register/updateEducation.js INFO: JosefaKizy31 updated education successfully: [{"degree":"Certification","school":"Northwest Mississippi Community College","country":"United States","fieldOfStudy":"Mortuary Science","startYear":2014,"endYear":2014,"educationID":0},{"degree":"Bachelors","school":"American University In Kosovo","country":"Kosovo","fieldOfStudy":"Psychology","startYear":2014,"endYear":2019,"educationID":1}]
+
+10:27:51 ControllerMethods/Register/updateJobHistory.js INFO: JosefaKizy31 updated job history successfully: [{"title":"Camera Repairer","company":"Murphy Usa Inc.","startYear":"2012","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:27:51 ControllerMethods/Register/updateSocialMedia.js INFO: JosefaKizy31 updated social media successfully: {"facebook":"www.facebook.com/JosefaKizy31","instagram":"JosefaKizy31","twitter":"JosefaKizy31","snapchat":"JosefaKizy31","linkedIn":"www.linkedin.com/JosefaKizy31","medium":"www.medium.com/JosefaKizy31","userID":"5ab233a62ea9335254b3d719"}
+
+10:27:51 ControllerMethods/Register/updateMentorSettings.js INFO: JosefaKizy31 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Mushroom hunting",
+      "years": 9,
+      "areaOfInterestID": 0,
+      "pathsStudied": 48,
+      "videosWatched": 154,
+      "articlesRead": 104,
+      "numberOfLinksClicked": 3379,
+      "numberOfLikes": 34
+    },
+    {
+      "value": "Shortwave listening",
+      "years": 7,
+      "areaOfInterestID": 2,
+      "pathsStudied": 5,
+      "videosWatched": 147,
+      "articlesRead": 50,
+      "numberOfLinksClicked": 4168,
+      "numberOfLikes": 876
+    },
+    {
+      "value": "Magic (illusion)",
+      "years": 7,
+      "areaOfInterestID": 3,
+      "pathsStudied": 27,
+      "videosWatched": 198,
+      "articlesRead": 67,
+      "numberOfLinksClicked": 1274,
+      "numberOfLikes": 732
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 48,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "Vocational",
+    "Certification",
+    "High School",
+    "PHD",
+    "No education"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 52,
+  "maxNumberOfMentees": 10
+}
+
+10:27:51 ControllerMethods/Register/updateMenteeSettings.js INFO: JosefaKizy31 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Walking",
+      "years": 0,
+      "areaOfInterestID": 4,
+      "pathsStudied": 22,
+      "videosWatched": 17,
+      "articlesRead": 150,
+      "numberOfLinksClicked": 4819,
+      "numberOfLikes": 212
+    },
+    {
+      "value": "Crossword puzzles",
+      "years": 4,
+      "areaOfInterestID": 5,
+      "pathsStudied": 38,
+      "videosWatched": 202,
+      "articlesRead": 171,
+      "numberOfLinksClicked": 204,
+      "numberOfLikes": 664
+    },
+    {
+      "value": "Bodybuilding",
+      "years": 5,
+      "areaOfInterestID": 6,
+      "pathsStudied": 10,
+      "videosWatched": 170,
+      "articlesRead": 50,
+      "numberOfLinksClicked": 7252,
+      "numberOfLikes": 450
+    },
+    {
+      "value": "Board sports",
+      "years": 6,
+      "areaOfInterestID": 1,
+      "pathsStudied": 9,
+      "videosWatched": 218,
+      "articlesRead": 95,
+      "numberOfLinksClicked": 7970,
+      "numberOfLikes": 530
+    },
+    {
+      "value": "Shortwave listening",
+      "years": 7,
+      "areaOfInterestID": 2,
+      "pathsStudied": 5,
+      "videosWatched": 147,
+      "articlesRead": 50,
+      "numberOfLinksClicked": 4168,
+      "numberOfLikes": 876
+    },
+    {
+      "value": "Magic (illusion)",
+      "years": 7,
+      "areaOfInterestID": 3,
+      "pathsStudied": 27,
+      "videosWatched": 198,
+      "articlesRead": 67,
+      "numberOfLinksClicked": 1274,
+      "numberOfLikes": 732
+    },
+    {
+      "value": "Mushroom hunting",
+      "years": 9,
+      "areaOfInterestID": 0,
+      "pathsStudied": 48,
+      "videosWatched": 154,
+      "articlesRead": 104,
+      "numberOfLinksClicked": 3379,
+      "numberOfLikes": 34
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 16,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "PHD",
+    "No education",
+    "Bachelors",
+    "Masters",
+    "Certification",
+    "Vocational"
+  ],
+  "minimumAge": 21,
+  "maximumAge": 74,
+  "maxNumberOfMentors": 1
+}
+
+10:27:51 ControllerMethods/Register/updateJobHistory.js INFO: JosefaKizy31 updated job history successfully: [{"title":"Camera Repairer","company":"Murphy Usa Inc.","startYear":"2012","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Writer","company":"Air Products & Chemicals, Inc.","startYear":"2013","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:27:51 ControllerMethods/Register/updateJobHistory.js INFO: JosefaKizy31 updated job history successfully: [{"title":"Camera Repairer","company":"Murphy Usa Inc.","startYear":"2012","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Writer","company":"Air Products & Chemicals, Inc.","startYear":"2013","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Financial Manager","company":"Boeing","startYear":"2012","endYear":"2013","isWorkingHere":"No","experienceID":1}]
+
+10:27:54 ControllerMethods/Register/register.js INFO: PegeenBajet51 successfully registered: { __v: 0,
+  firstName: 'Pegeen',
+  lastName: 'Bajet',
+  userName: 'PegeenBajet51',
+  email: 'PegeenBajet51@gmail.com',
+  age: 93,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab233aa2ea9335254b3d729,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:27:54 ControllerMethods/Register/updateEducation.js INFO: PegeenBajet51 updated education successfully: [{"degree":"Bachelors","school":"Darul Huda Islamic University","country":"India","fieldOfStudy":"Urban And Regional Planning","startYear":1973,"endYear":1979,"educationID":0}]
+
+10:27:54 ControllerMethods/Register/updateJobHistory.js INFO: PegeenBajet51 updated job history successfully: [{"title":"Cutter","company":"Avon Products, Inc.","startYear":"1966","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:27:54 ControllerMethods/Register/updateSocialMedia.js INFO: PegeenBajet51 updated social media successfully: {"facebook":"www.facebook.com/PegeenBajet51","instagram":"PegeenBajet51","twitter":"PegeenBajet51","snapchat":"PegeenBajet51","linkedIn":"www.linkedin.com/PegeenBajet51","medium":"www.medium.com/PegeenBajet51","youtube":"www.youtube.com/PegeenBajet51","website":"www.PegeenBajet51.com","userID":"5ab233aa2ea9335254b3d729"}
+
+10:27:54 ControllerMethods/Register/updateMentorSettings.js INFO: PegeenBajet51 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Baton twirling",
+      "years": 75,
+      "areaOfInterestID": 2,
+      "pathsStudied": 9,
+      "videosWatched": 52,
+      "articlesRead": 167,
+      "numberOfLinksClicked": 2444,
+      "numberOfLikes": 315
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 39,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "Masters",
+    "No education",
+    "High School",
+    "Certification",
+    "Bachelors"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 80,
+  "maxNumberOfMentees": 3
+}
+
+10:27:54 ControllerMethods/Register/updateMenteeSettings.js INFO: PegeenBajet51 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Motor sports",
+      "years": 20,
+      "areaOfInterestID": 6,
+      "pathsStudied": 36,
+      "videosWatched": 145,
+      "articlesRead": 2,
+      "numberOfLinksClicked": 350,
+      "numberOfLikes": 320
+    },
+    {
+      "value": "Mineral collecting",
+      "years": 27,
+      "areaOfInterestID": 4,
+      "pathsStudied": 7,
+      "videosWatched": 187,
+      "articlesRead": 211,
+      "numberOfLinksClicked": 6609,
+      "numberOfLikes": 130
+    },
+    {
+      "value": "Quilting",
+      "years": 32,
+      "areaOfInterestID": 1,
+      "pathsStudied": 45,
+      "videosWatched": 173,
+      "articlesRead": 117,
+      "numberOfLinksClicked": 6117,
+      "numberOfLikes": 459
+    },
+    {
+      "value": "Aviation",
+      "years": 41,
+      "areaOfInterestID": 5,
+      "pathsStudied": 18,
+      "videosWatched": 17,
+      "articlesRead": 49,
+      "numberOfLinksClicked": 3385,
+      "numberOfLikes": 930
+    },
+    {
+      "value": "Music",
+      "years": 47,
+      "areaOfInterestID": 7,
+      "pathsStudied": 43,
+      "videosWatched": 20,
+      "articlesRead": 77,
+      "numberOfLinksClicked": 3366,
+      "numberOfLikes": 952
+    },
+    {
+      "value": "Table tennis",
+      "years": 53,
+      "areaOfInterestID": 0,
+      "pathsStudied": 28,
+      "videosWatched": 227,
+      "articlesRead": 104,
+      "numberOfLinksClicked": 1741,
+      "numberOfLikes": 709
+    },
+    {
+      "value": "Horseback riding",
+      "years": 53,
+      "areaOfInterestID": 3,
+      "pathsStudied": 39,
+      "videosWatched": 89,
+      "articlesRead": 141,
+      "numberOfLinksClicked": 8757,
+      "numberOfLikes": 919
+    },
+    {
+      "value": "Lacrosse",
+      "years": 62,
+      "areaOfInterestID": 8,
+      "pathsStudied": 6,
+      "videosWatched": 148,
+      "articlesRead": 119,
+      "numberOfLinksClicked": 7586,
+      "numberOfLikes": 123
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 15,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "Certification"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 67,
+  "maxNumberOfMentors": 9
+}
+
+10:27:54 ControllerMethods/Register/updateJobHistory.js INFO: PegeenBajet51 updated job history successfully: [{"title":"Cutter","company":"Avon Products, Inc.","startYear":"1966","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Animal Breeder","company":"Lorillard, Inc.","startYear":"1998","endYear":"2003","isWorkingHere":"No","experienceID":1}]
+
+10:27:54 ControllerMethods/Register/updateJobHistory.js INFO: PegeenBajet51 updated job history successfully: [{"title":"Cutter","company":"Avon Products, Inc.","startYear":"1966","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Animal Breeder","company":"Lorillard, Inc.","startYear":"1998","endYear":"2003","isWorkingHere":"No","experienceID":1},{"title":"Mechanical Engineering Technician","company":"Applied Materials, Inc.","startYear":"1977","endYear":"1980","isWorkingHere":"No","experienceID":1}]
+
+10:27:54 ControllerMethods/Register/updateJobHistory.js INFO: PegeenBajet51 updated job history successfully: [{"title":"Cutter","company":"Avon Products, Inc.","startYear":"1966","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Animal Breeder","company":"Lorillard, Inc.","startYear":"1998","endYear":"2003","isWorkingHere":"No","experienceID":1},{"title":"Mechanical Engineering Technician","company":"Applied Materials, Inc.","startYear":"1977","endYear":"1980","isWorkingHere":"No","experienceID":1},{"title":"Writer","company":"Supervalu Inc.","startYear":"1962","endYear":"2001","isWorkingHere":"No","experienceID":1}]
+
+10:27:54 ControllerMethods/Register/updateJobHistory.js INFO: PegeenBajet51 updated job history successfully: [{"title":"Cutter","company":"Avon Products, Inc.","startYear":"1966","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Animal Breeder","company":"Lorillard, Inc.","startYear":"1998","endYear":"2003","isWorkingHere":"No","experienceID":1},{"title":"Mechanical Engineering Technician","company":"Applied Materials, Inc.","startYear":"1977","endYear":"1980","isWorkingHere":"No","experienceID":1},{"title":"Writer","company":"Supervalu Inc.","startYear":"1962","endYear":"2001","isWorkingHere":"No","experienceID":1},{"title":"Mechanical Door Repairer","company":"Mcgraw Hill Financial, Inc.","startYear":"1976","endYear":"1988","isWorkingHere":"No","experienceID":1}]
+
+10:27:54 ControllerMethods/Register/updateJobHistory.js INFO: PegeenBajet51 updated job history successfully: [{"title":"Cutter","company":"Avon Products, Inc.","startYear":"1966","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Animal Breeder","company":"Lorillard, Inc.","startYear":"1998","endYear":"2003","isWorkingHere":"No","experienceID":1},{"title":"Mechanical Engineering Technician","company":"Applied Materials, Inc.","startYear":"1977","endYear":"1980","isWorkingHere":"No","experienceID":1},{"title":"Writer","company":"Supervalu Inc.","startYear":"1962","endYear":"2001","isWorkingHere":"No","experienceID":1},{"title":"Mechanical Door Repairer","company":"Mcgraw Hill Financial, Inc.","startYear":"1976","endYear":"1988","isWorkingHere":"No","experienceID":1},{"title":"Hairstylist","company":"Parker-hannifin Corporation","startYear":"2002","endYear":"2016","isWorkingHere":"No","experienceID":1}]
+
+10:28:13 ControllerMethods/Register/register.js INFO: RuthiPintarelli51 successfully registered: { __v: 0,
+  firstName: 'Ruthi',
+  lastName: 'Pintarelli',
+  userName: 'RuthiPintarelli51',
+  email: 'RuthiPintarelli51@gmail.com',
+  age: 54,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab233bd2ea9335254b3d749,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:28:13 ControllerMethods/Register/updateEducation.js INFO: RuthiPintarelli51 updated education successfully: [{"degree":"Bachelors","school":"Holmes Community College","country":"United States","fieldOfStudy":"Medical And Health Sciences","startYear":1999,"endYear":2003,"educationID":0},{"degree":"Bachelors","school":"Universidad Autónoma Latinoamericana","country":"Colombia","fieldOfStudy":"Urban And Regional Planning","startYear":1994,"endYear":2000,"educationID":1}]
+
+10:28:13 ControllerMethods/Register/updateJobHistory.js INFO: RuthiPintarelli51 updated job history successfully: [{"title":"Carpet Installer","company":"Integrys Energy Group, Inc.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:28:13 ControllerMethods/Register/updateSocialMedia.js INFO: RuthiPintarelli51 updated social media successfully: {"facebook":"www.facebook.com/RuthiPintarelli51","instagram":"RuthiPintarelli51","twitter":"RuthiPintarelli51","userID":"5ab233bd2ea9335254b3d749"}
+
+10:28:13 ControllerMethods/Register/updateMentorSettings.js INFO: RuthiPintarelli51 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Canyoning",
+      "years": 35,
+      "areaOfInterestID": 1,
+      "pathsStudied": 11,
+      "videosWatched": 95,
+      "articlesRead": 187,
+      "numberOfLinksClicked": 137,
+      "numberOfLikes": 831
+    },
+    {
+      "value": "Magnet fishing",
+      "years": 29,
+      "areaOfInterestID": 4,
+      "pathsStudied": 35,
+      "videosWatched": 96,
+      "articlesRead": 93,
+      "numberOfLinksClicked": 193,
+      "numberOfLikes": 510
+    },
+    {
+      "value": "Tennis",
+      "years": 15,
+      "areaOfInterestID": 0,
+      "pathsStudied": 25,
+      "videosWatched": 104,
+      "articlesRead": 21,
+      "numberOfLinksClicked": 7444,
+      "numberOfLikes": 637
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 6,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors",
+    "PHD",
+    "High School",
+    "Certification",
+    "Masters"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 29,
+  "maxNumberOfMentees": 8
+}
+
+10:28:13 ControllerMethods/Register/updateMenteeSettings.js INFO: RuthiPintarelli51 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Comic book collecting",
+      "years": 12,
+      "areaOfInterestID": 2,
+      "pathsStudied": 17,
+      "videosWatched": 241,
+      "articlesRead": 8,
+      "numberOfLinksClicked": 9201,
+      "numberOfLikes": 477
+    },
+    {
+      "value": "Kayaking",
+      "years": 13,
+      "areaOfInterestID": 3,
+      "pathsStudied": 9,
+      "videosWatched": 62,
+      "articlesRead": 137,
+      "numberOfLinksClicked": 4615,
+      "numberOfLikes": 312
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 15,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 31,
+  "maxNumberOfMentors": 5
+}
+
+10:28:13 ControllerMethods/Register/updateJobHistory.js INFO: RuthiPintarelli51 updated job history successfully: [{"title":"Carpet Installer","company":"Integrys Energy Group, Inc.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Electrician","company":"Manpowergroup Inc.","startYear":"2005","endYear":"2012","isWorkingHere":"No","experienceID":1}]
+
+10:28:13 ControllerMethods/Register/updateJobHistory.js INFO: RuthiPintarelli51 updated job history successfully: [{"title":"Carpet Installer","company":"Integrys Energy Group, Inc.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Electrician","company":"Manpowergroup Inc.","startYear":"2005","endYear":"2012","isWorkingHere":"No","experienceID":1},{"title":"Health Information Technician","company":"Cbs Corporation","startYear":"1986","endYear":"2017","isWorkingHere":"No","experienceID":1}]
+
+10:28:13 ControllerMethods/Register/updateJobHistory.js INFO: RuthiPintarelli51 updated job history successfully: [{"title":"Carpet Installer","company":"Integrys Energy Group, Inc.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Electrician","company":"Manpowergroup Inc.","startYear":"2005","endYear":"2012","isWorkingHere":"No","experienceID":1},{"title":"Health Information Technician","company":"Cbs Corporation","startYear":"1986","endYear":"2017","isWorkingHere":"No","experienceID":1},{"title":"Power Distributor","company":"Spectrum Group International, Inc.","startYear":"2013","endYear":"2016","isWorkingHere":"No","experienceID":1}]
+
+10:28:15 ControllerMethods/Register/register.js INFO: JanelMcmeel71 successfully registered: { __v: 0,
+  firstName: 'Janel',
+  lastName: 'Mcmeel',
+  userName: 'JanelMcmeel71',
+  email: 'JanelMcmeel71@gmail.com',
+  age: 72,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab233bf2ea9335254b3d75b,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:28:15 ControllerMethods/Register/updateEducation.js INFO: JanelMcmeel71 updated education successfully: [{"degree":"Certification","school":"University Of Economics Varna","country":"Bulgaria","fieldOfStudy":"Engineering","startYear":2013,"endYear":2014,"educationID":0},{"degree":"Bachelors","school":"Hampshire College","country":"United States","fieldOfStudy":"Law","startYear":2010,"endYear":2016,"educationID":1},{"degree":"Masters","school":"Northwest University Xi'an","country":"China","fieldOfStudy":"Physiotherapy","startYear":2011,"endYear":2012,"educationID":2},{"degree":"Bachelors","school":"Hanoi University Of Civil Engineering","country":"Viet Nam","fieldOfStudy":"Music","startYear":2008,"endYear":2012,"educationID":3},{"degree":"Phd","school":"Kwame Nkrumah University Of Science And Technology","country":"Ghana","fieldOfStudy":"Science In Law","startYear":2013,"endYear":2021,"educationID":4}]
+
+10:28:15 ControllerMethods/Register/updateJobHistory.js INFO: JanelMcmeel71 updated job history successfully: [{"title":"Life Scientist","company":"Nationwide Mutual Insurance Co.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:28:15 ControllerMethods/Register/updateSocialMedia.js INFO: JanelMcmeel71 updated social media successfully: {"facebook":"www.facebook.com/JanelMcmeel71","userID":"5ab233bf2ea9335254b3d75b"}
+
+10:28:15 ControllerMethods/Register/updateMentorSettings.js INFO: JanelMcmeel71 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Mahjong",
+      "years": 21,
+      "areaOfInterestID": 0,
+      "pathsStudied": 8,
+      "videosWatched": 52,
+      "articlesRead": 219,
+      "numberOfLinksClicked": 3257,
+      "numberOfLikes": 196
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 78,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "Masters",
+    "Certification",
+    "Bachelors",
+    "Vocational",
+    "High School"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 92,
+  "maxNumberOfMentees": 4
+}
+
+10:28:15 ControllerMethods/Register/updateMenteeSettings.js INFO: JanelMcmeel71 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Martial arts",
+      "years": 1,
+      "areaOfInterestID": 1,
+      "pathsStudied": 3,
+      "videosWatched": 49,
+      "articlesRead": 1,
+      "numberOfLinksClicked": 2106,
+      "numberOfLikes": 512
+    },
+    {
+      "value": "Mahjong",
+      "years": 21,
+      "areaOfInterestID": 0,
+      "pathsStudied": 8,
+      "videosWatched": 52,
+      "articlesRead": 219,
+      "numberOfLinksClicked": 3257,
+      "numberOfLikes": 196
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 53,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "Vocational",
+    "Masters",
+    "Bachelors",
+    "High School"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 36,
+  "maxNumberOfMentors": 8
+}
+
+10:28:15 ControllerMethods/Register/updateJobHistory.js INFO: JanelMcmeel71 updated job history successfully: [{"title":"Life Scientist","company":"Nationwide Mutual Insurance Co.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Physical Therapist Assistant","company":"Starwood Hotels & Resorts Worldwide, Inc.","startYear":"2011","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:28:15 ControllerMethods/Register/updateJobHistory.js INFO: JanelMcmeel71 updated job history successfully: [{"title":"Life Scientist","company":"Nationwide Mutual Insurance Co.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Physical Therapist Assistant","company":"Starwood Hotels & Resorts Worldwide, Inc.","startYear":"2011","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Tractor-trailer Truck Driver","company":"Liberty Mutual Holding Company Inc.","startYear":"1966","endYear":"2014","isWorkingHere":"No","experienceID":1}]
+
+10:28:15 ControllerMethods/Register/updateJobHistory.js INFO: JanelMcmeel71 updated job history successfully: [{"title":"Life Scientist","company":"Nationwide Mutual Insurance Co.","startYear":"1989","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Physical Therapist Assistant","company":"Starwood Hotels & Resorts Worldwide, Inc.","startYear":"2011","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Tractor-trailer Truck Driver","company":"Liberty Mutual Holding Company Inc.","startYear":"1966","endYear":"2014","isWorkingHere":"No","experienceID":1},{"title":"Judicial Law Clerk","company":"Spectrum Group International, Inc.","startYear":"1975","endYear":"1981","isWorkingHere":"No","experienceID":1}]
+
+10:29:23 ControllerMethods/Register/register.js INFO: AriadneMarseglia11 successfully registered: { __v: 0,
+  firstName: 'Ariadne',
+  lastName: 'Marseglia',
+  userName: 'AriadneMarseglia11',
+  email: 'AriadneMarseglia11@gmail.com',
+  age: 29,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab234022ea9335254b3d76d,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:29:23 ControllerMethods/Register/updateEducation.js INFO: AriadneMarseglia11 updated education successfully: [{"degree":"Vocational","school":"Pes University","country":"India","fieldOfStudy":"Public Health","startYear":2008,"endYear":2008,"educationID":0}]
+
+10:29:23 ControllerMethods/Register/updateJobHistory.js INFO: AriadneMarseglia11 updated job history successfully: [{"title":"Maxillofacial Surgeon","company":"Aflac Incorporated","startYear":"2018","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:29:23 ControllerMethods/Register/updateSocialMedia.js INFO: AriadneMarseglia11 updated social media successfully: {"facebook":"www.facebook.com/AriadneMarseglia11","instagram":"AriadneMarseglia11","twitter":"AriadneMarseglia11","snapchat":"AriadneMarseglia11","linkedIn":"www.linkedin.com/AriadneMarseglia11","medium":"www.medium.com/AriadneMarseglia11","youtube":"www.youtube.com/AriadneMarseglia11","website":"www.AriadneMarseglia11.com","userID":"5ab234022ea9335254b3d76d"}
+
+10:29:23 ControllerMethods/Register/updateMentorSettings.js INFO: AriadneMarseglia11 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Painting",
+      "years": 11,
+      "areaOfInterestID": 7,
+      "pathsStudied": 44,
+      "videosWatched": 202,
+      "articlesRead": 88,
+      "numberOfLinksClicked": 4233,
+      "numberOfLikes": 38
+    },
+    {
+      "value": "Rugby league",
+      "years": 9,
+      "areaOfInterestID": 4,
+      "pathsStudied": 23,
+      "videosWatched": 182,
+      "articlesRead": 41,
+      "numberOfLinksClicked": 1474,
+      "numberOfLikes": 448
+    },
+    {
+      "value": "Shopping",
+      "years": 7,
+      "areaOfInterestID": 3,
+      "pathsStudied": 4,
+      "videosWatched": 161,
+      "articlesRead": 191,
+      "numberOfLinksClicked": 4164,
+      "numberOfLikes": 111
+    },
+    {
+      "value": "Book restoration",
+      "years": 6,
+      "areaOfInterestID": 0,
+      "pathsStudied": 12,
+      "videosWatched": 3,
+      "articlesRead": 152,
+      "numberOfLinksClicked": 5076,
+      "numberOfLikes": 740
+    },
+    {
+      "value": "Magic (illusion)",
+      "years": 6,
+      "areaOfInterestID": 6,
+      "pathsStudied": 47,
+      "videosWatched": 90,
+      "articlesRead": 190,
+      "numberOfLinksClicked": 575,
+      "numberOfLikes": 860
+    },
+    {
+      "value": "Polo",
+      "years": 5,
+      "areaOfInterestID": 8,
+      "pathsStudied": 44,
+      "videosWatched": 52,
+      "articlesRead": 193,
+      "numberOfLinksClicked": 2236,
+      "numberOfLikes": 136
+    },
+    {
+      "value": "Color guard (flag spinning)",
+      "years": 2,
+      "areaOfInterestID": 1,
+      "pathsStudied": 23,
+      "videosWatched": 250,
+      "articlesRead": 109,
+      "numberOfLinksClicked": 4911,
+      "numberOfLikes": 333
+    },
+    {
+      "value": "Water polo",
+      "years": 1,
+      "areaOfInterestID": 2,
+      "pathsStudied": 41,
+      "videosWatched": 120,
+      "articlesRead": 165,
+      "numberOfLinksClicked": 2797,
+      "numberOfLikes": 674
+    },
+    {
+      "value": "Do it yourself",
+      "years": 0,
+      "areaOfInterestID": 5,
+      "pathsStudied": 18,
+      "videosWatched": 247,
+      "articlesRead": 217,
+      "numberOfLinksClicked": 7649,
+      "numberOfLikes": 588
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 100,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "PHD",
+    "Bachelors",
+    "Certification",
+    "Vocational",
+    "No education",
+    "Masters"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 84,
+  "maxNumberOfMentees": 1
+}
+
+10:29:23 ControllerMethods/Register/updateMenteeSettings.js INFO: AriadneMarseglia11 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Do it yourself",
+      "years": 0,
+      "areaOfInterestID": 5,
+      "pathsStudied": 18,
+      "videosWatched": 247,
+      "articlesRead": 217,
+      "numberOfLinksClicked": 7649,
+      "numberOfLikes": 588
+    },
+    {
+      "value": "Water polo",
+      "years": 1,
+      "areaOfInterestID": 2,
+      "pathsStudied": 41,
+      "videosWatched": 120,
+      "articlesRead": 165,
+      "numberOfLinksClicked": 2797,
+      "numberOfLikes": 674
+    },
+    {
+      "value": "Color guard (flag spinning)",
+      "years": 2,
+      "areaOfInterestID": 1,
+      "pathsStudied": 23,
+      "videosWatched": 250,
+      "articlesRead": 109,
+      "numberOfLinksClicked": 4911,
+      "numberOfLikes": 333
+    },
+    {
+      "value": "Polo",
+      "years": 5,
+      "areaOfInterestID": 8,
+      "pathsStudied": 44,
+      "videosWatched": 52,
+      "articlesRead": 193,
+      "numberOfLinksClicked": 2236,
+      "numberOfLikes": 136
+    },
+    {
+      "value": "Book restoration",
+      "years": 6,
+      "areaOfInterestID": 0,
+      "pathsStudied": 12,
+      "videosWatched": 3,
+      "articlesRead": 152,
+      "numberOfLinksClicked": 5076,
+      "numberOfLikes": 740
+    },
+    {
+      "value": "Magic (illusion)",
+      "years": 6,
+      "areaOfInterestID": 6,
+      "pathsStudied": 47,
+      "videosWatched": 90,
+      "articlesRead": 190,
+      "numberOfLinksClicked": 575,
+      "numberOfLikes": 860
+    },
+    {
+      "value": "Shopping",
+      "years": 7,
+      "areaOfInterestID": 3,
+      "pathsStudied": 4,
+      "videosWatched": 161,
+      "articlesRead": 191,
+      "numberOfLinksClicked": 4164,
+      "numberOfLikes": 111
+    },
+    {
+      "value": "Rugby league",
+      "years": 9,
+      "areaOfInterestID": 4,
+      "pathsStudied": 23,
+      "videosWatched": 182,
+      "articlesRead": 41,
+      "numberOfLinksClicked": 1474,
+      "numberOfLikes": 448
+    },
+    {
+      "value": "Painting",
+      "years": 11,
+      "areaOfInterestID": 7,
+      "pathsStudied": 44,
+      "videosWatched": 202,
+      "articlesRead": 88,
+      "numberOfLinksClicked": 4233,
+      "numberOfLikes": 38
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 17,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "Vocational"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 36,
+  "maxNumberOfMentors": 10
+}
+
+10:29:23 ControllerMethods/Register/updateLocation.js INFO: AriadneMarseglia11 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+

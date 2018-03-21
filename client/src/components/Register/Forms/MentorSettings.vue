@@ -1,171 +1,165 @@
 <template>
   <div>
-      <div class="text-center">
-        <h3>Would you like to be a Mentor?</h3>
-        <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeToMentor">
-          <option value="true">Yes</option>
-          <option value="false">No</option>
-        </select>
-        <br>
-      </div>
-
+    <div class="text-center">
+      <h3>Would you like to be a Mentor?</h3>
+      <select class="wouldYouLikeToMentorSelector" v-model="wouldLikeToMentor">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <br>
+    </div>
     <!--  This form allows a user (mentee) to set their settings on what they are looking in a mentor.  -->
-      <div v-if="wouldLikeToMentor === 'true'">
-        <!-- User has updaed areas of interest -->
+    <div v-if="wouldLikeToMentor == 'true'">
+      <!-- User has updaed areas of interest -->
+      <br>
+      <span v-if="areasOfInterestNames.length !== 0">
+        <label> Which Areas would you like to Mentor in? </label>
         <br>
-        <span v-if="areasOfInterestNames.length !== 0">
-          <label> Which Areas would you like to Mentor in? </label>
-          <br>
-          <el-checkbox v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">
-            <span class="selectAll">Select All</span>
-          </el-checkbox>
-          <el-checkbox-group v-model="checkedAreasOfInterestNames" @change="handleCheckedAreasOfInterestChange" @blur="$v.checkedAreasOfInterestNames.$touch">
-            <el-checkbox v-for="(areaOfInterest, index) in areasOfInterestNames" :label="areaOfInterest" :key="index" border size="medium">{{areaOfInterest}}</el-checkbox>
-          </el-checkbox-group>
-          <br>
-          <br>
-        </span>
+        <el-checkbox v-model="checkAllAreasOfInterest" @change="handleCheckAllAreasOfInterestChange">
+          <span class="selectAll">Select All</span>
+        </el-checkbox>
+        <el-checkbox-group v-model="checkedAreasOfInterestNames" @change="handleCheckedAreasOfInterestChange">
+          <el-checkbox v-for="(areaOfInterest, index) in areasOfInterestNames" :label="areaOfInterest" :key="index" border size="medium">{{areaOfInterest}}</el-checkbox>
+        </el-checkbox-group>
+        <br>
+        <br>
+      </span>
 
-        <!-- End -->
-        <!-- User has no areas of interest -->
-        <span v-else>
-          <p class="errorMessage"> You must update your
-            <a @click="navigateTo('/edit-profile')">Areas Of Interest </a>
-          </p>
-          <br>
-        </span>
-        <!-- End -->
-        <label> What formats of mentoring are you interested in?</label>
+      <!-- End -->
+      <!-- User has no areas of interest -->
+      <span v-else>
+        <p class="errorMessage"> You must update your
+          <a @click="navigateTo('/edit-profile')">Areas Of Interest </a>
+        </p>
         <br>
-        <el-checkbox v-model="checkAllFormats" @change="handleCheckAllMentorFormats">
-          <span class="selectAll">Select All</span>
-        </el-checkbox>
-        <el-checkbox-group v-model="checkedMentoringFormats" @change="handleCheckedMentorFormatsChange">
-          <el-checkbox v-for="format in mentoringFormats" :label="format" :key="format" border size="medium">{{format}}</el-checkbox>
-        </el-checkbox-group>
-        <span v-if="wantsToMentorInPerson()">
-          <br>
-          <br>
-          <label> What is your maximum travel distance for in person meetings?</label>
-          <br>
-          <input type="number" min="0" oninput="validity.valid||(years=0)" v-model="maximumTravelDistanceKM" name="maximumTravelDistanceKM">
-          <b> KM</b>
-          <br>
-          <br>
-        </span>
+      </span>
+      <!-- End -->
+      <label> What formats of mentoring are you interested in?</label>
+      <br>
+      <el-checkbox v-model="checkAllFormats" @change="handleCheckAllMentorFormats">
+        <span class="selectAll">Select All</span>
+      </el-checkbox>
+      <el-checkbox-group v-model="checkedMentoringFormats" @change="handleCheckedMentorFormatsChange">
+        <el-checkbox v-for="format in mentoringFormats" :label="format" :key="format" border size="medium">{{format}}</el-checkbox>
+      </el-checkbox-group>
+      <span v-if="wantsToMentorInPerson()">
         <br>
         <br>
-        <label> What languages can you mentor in? </label>
+        <label> What is your maximum travel distance for in person meetings?</label>
         <br>
-        <el-checkbox v-model="checkAllLanguages" @change="handleCheckAllLanguages">
-          <span class="selectAll">Select All</span>
-        </el-checkbox>
-        <el-checkbox-group v-model="checkedLanguages" @change="handleCheckedLanguageChange">
-          <el-checkbox v-for="language in languages" :label="language" :key="language" border size="medium">{{language}}</el-checkbox>
-        </el-checkbox-group>
+        <input type="number" min="0" oninput="validity.valid||(years=0)" v-model="maximumTravelDistanceKM" name="maximumTravelDistanceKM">
+        <b> KM</b>
         <br>
         <br>
-        <label> What levels of education would you like your Mentees to have? </label>
-        <br>
-        <el-checkbox v-model="checkAllEducation" @change="handleCheckAllEducation">
-          <span class="selectAll">Select All</span>
-        </el-checkbox>
-        <el-checkbox-group v-model="checkedEducation" @change="handleCheckedEducationChange">
-          <el-checkbox v-for="education in educationLevel" :label="education" :key="education" border size="medium">{{education}}</el-checkbox>
-        </el-checkbox-group>
-        <br>
-        <br>
-        <label>What is the youngest age you'll accept as a mentee?</label>
-        <br>
-        <input type="number" min="16" oninput="validity.valid||(minimumAge=16)" v-model="minimumAge" name="minimumAge">
-        <br>
-        <br>
-        <label>What is the oldest age you'll accept for a mentee?</label>
-        <br>
-        <input type="number" max="120" oninput="validity.valid||(maximumAge=120)" v-model="maximumAge" name="maximumAge">
-        <br>
-        <br>
-        <label> What is your maximum number of Mentees? </label>
-        <br>
-        <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentees=0)" v-model="maxNumberOfMentees" name="maxNumberOfMentees">
-        <br>
-        <br>
-        <div class="row text-center hidden-xs">
-          <button class="btn btn-lg btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor settings </button>
+      </span>
+      <br>
+      <br>
+      <label> What languages can you mentor in? </label>
+      <br>
+      <el-checkbox v-model="checkAllLanguages" @change="handleCheckAllLanguages">
+        <span class="selectAll">Select All</span>
+      </el-checkbox>
+      <el-checkbox-group v-model="checkedLanguages" @change="handleCheckedLanguageChange">
+        <el-checkbox v-for="language in languages" :key="language" border size="medium">{{ language }}</el-checkbox>
+      </el-checkbox-group>
+      <br>
+      <br>
+      <label> What levels of education would you like your Mentees to have? </label>
+      <br>
+      <el-checkbox v-model="checkAllEducation" @change="handleCheckAllEducation">
+        <span class="selectAll">Select All</span>
+      </el-checkbox>
+      <el-checkbox-group v-model="checkedEducation" @change="handleCheckedEducationChange">
+        <el-checkbox v-for="education in educationLevel" :label="education" :key="education" border size="medium">{{education}}</el-checkbox>
+      </el-checkbox-group>
+      <br>
+      <br>
+      <label>What is the youngest age you'll accept as a mentee?</label>
+      <br>
+      <input type="number" min="16" max="120" oninput="validity.valid||(minimumAge=16)" v-model="minimumAge" name="minimumAge">
+      <br>
+      <br>
+      <label>What is the oldest age you'll accept for a mentee?</label>
+      <br>
+      <input type="number" min="16" max="120" oninput="validity.valid||(maximumAge=120)" v-model="maximumAge" name="maximumAge">
+      <br>
+      <br>
+      <label> What is your maximum number of Mentees? </label>
+      <br>
+      <input type="number" min="1" oninput="validity.valid||(maxNumberOfMentees=0)" v-model="maxNumberOfMentees" name="maxNumberOfMentees">
+      <br>
+      <br>
+      <div class="row text-center hidden-xs">
+        <button class="btn btn-lg btn-primary" @click="onSubmit"> Update mentor settings </button>
+      </div>
+      <div class="row text-center visible-xs">
+        <button class="btn btn-md btn-primary" @click="onSubmit"> Update mentor settings </button>
+      </div>
+    </div>
+
+    <br>
+    <!-- Update mentor settings error message -->
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
+      </div>
+    </div>
+    <!-- End of error messages -->
+
+    <!-- Update mentor settings success Message -->
+    <div class="row">
+      <div class="text-center">
+        <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
+      </div>
+    </div>
+    <!-- End of success message -->
+
+    <div v-if="wouldLikeToMentor === 'false'">
+      <p> You do not need to be an expert to Mentor. You just need more experience than your potential Mentee. Being a Mentor
+        is one of the fastest ways to improve your areas of interest.
+      </p>
+      <h3 class="text-center">
+        <u>
+          These people want a Mentor just like you.
+        </u>
+      </h3>
+      <br>
+      <div class="row text-center">
+        <div class="col-xs-4">
+          Person 1.
         </div>
-        <div class="row text-center visible-xs">
-          <button class="btn btn-md btn-primary" :disabled="$v.$invalid" @click="onSubmit"> Update mentor settings </button>
+        <div class="col-xs-4">
+          Person 2.
         </div>
+        <div class="col-xs-4">
+          Person 3.
+        </div>
+      </div>
+      <br>
+      <div class="text-center">
+        <button class="btn btn-danger" @click="doesNotWantToMentor()"> I do not want to Mentor </button>
       </div>
 
       <br>
-      <!-- Update mentor settings error message -->
-      <div class="row text-center">
-        <div class="col-xs-12">
-          <p class="errorMessage" v-if="errorMessage !== null">{{errorMessage}}</p>
-        </div>
-      </div>
-      <!-- End of error messages -->
 
-      <!-- Update mentor settings success Message -->
-      <div class="row">
-        <div class="text-center">
-          <p class="successMessage" v-if="successMessage !== null">{{successMessage}}</p>
-        </div>
-      </div>
-      <!-- End of success message -->
-
-      <div v-if="wouldLikeToMentor === 'false'">
-        <p> You do not need to be an expert to Mentor. You just need more experience than your potential Mentee. Being a Mentor
-          is one of the fastest ways to improve your areas of interest.
-        </p>
-        <h3 class="text-center">
-          <u>
-            These people want a Mentor just like you.
-          </u>
-        </h3>
-        <br>
-        <div class="row text-center">
-          <div class="col-xs-4">
-            Person 1.
-          </div>
-          <div class="col-xs-4">
-            Person 2.
-          </div>
-          <div class="col-xs-4">
-            Person 3.
-          </div>
-        </div>
-        <br>
-        <div class="text-center">
-          <button class="btn btn-danger" @click="doesNotWantToMentor()"> I do not want to Mentor </button>
-        </div>
-
-        <br>
-
-        <br>
+      <br>
       <!-- Does not want to mentor error message -->
       <div class="text-center">
-          <p class="errorMessage" v-if="doesNotWantToMentorErrorMessage !== null">{{doesNotWantToMentorErrorMessage}}</p>
+        <p class="errorMessage" v-if="doesNotWantToMentorErrorMessage !== null">{{doesNotWantToMentorErrorMessage}}</p>
       </div>
       <!-- End of error messages -->
 
       <!-- Does not want to mentor success Message -->
-        <div class="text-center">
-          <p class="successMessage" v-if="doesNotWantToMentorSuccessMessage !== null">{{doesNotWantToMentorSuccessMessage}}</p>
-        </div>
+      <div class="text-center">
+        <p class="successMessage" v-if="doesNotWantToMentorSuccessMessage !== null">{{doesNotWantToMentorSuccessMessage}}</p>
+      </div>
       <!-- End of success message -->
 
-      </div>
     </div>
+  </div>
 </template>
 <script>
   import axios from 'axios'
-  import {
-    required,
-    minLength,
-    minValue
-  } from 'vuelidate/lib/validators'
   const updateMentorSettingsURL = 'http://localhost:4000/update/mentor-settings/'
   export default {
     data() {
@@ -315,36 +309,6 @@
         })
       }
     },
-    validations: {
-      checkedAreasOfInterestNames: {
-        required,
-        minLength: minLength(1)
-      },
-      checkedMentoringFormats: {
-        required,
-        minLength: minLength(1)
-      },
-      checkedLanguages: {
-        required,
-        minLength: minLength(1)
-      },
-      checkedEducation: {
-        required,
-        minLength: minLength(1)
-      },
-      minimumAge: {
-        required,
-        minValue: minValue(16)
-      },
-      maximumAge: {
-        required,
-        minValue: minValue(16)
-      },
-      maxNumberOfMentees: {
-        required,
-        minValue: minValue(1)
-      }
-    },
     beforeMount() {
       var self = this
       var userID = this.$store.state.user.authUser._id
@@ -365,16 +329,26 @@
       }).then(gotAreasOfInterestNames => {
         const getMentorSettingsURL = 'http://localhost:4000/get/mentor-settings/'
         axios.get(getMentorSettingsURL + userID).then(function (response) {
-          let mentorSettings = response.data.mentorSettings
-          self.wouldLikeToMentor = mentorSettings.wouldLikeToMentor.toString()
+          var mentorSettings = response.data.mentorSettings
+          if (mentorSettings.wouldLikeToMentor !== undefined) {
+            self.wouldLikeToMentor = mentorSettings.wouldLikeToMentor.toString()
+          }
           self.checkedAreasOfInterest = mentorSettings.areasOfInterest
           self.checkedMentoringFormats = mentorSettings.prefferedMentoringFormats
           self.checkedLanguages = mentorSettings.languages
           self.checkedEducation = mentorSettings.prefferedEducation
-          self.maximumTravelDistanceKM = mentorSettings.maximumTravelDistanceKM
-          self.minimumAge = mentorSettings.minimumAge
-          self.maximumAge = mentorSettings.maximumAge
-          self.maxNumberOfMentees = mentorSettings.maxNumberOfMentees
+          if (mentorSettings.maximumTravelDistanceKM !== undefined) {
+            self.maximumTravelDistanceKM = mentorSettings.maximumTravelDistanceKM
+          }
+          if (mentorSettings.minimumAge !== undefined) {
+            self.minimumAge = mentorSettings.minimumAge
+          }
+          if (mentorSettings.maximumAge !== undefined) {
+            self.maximumAge = mentorSettings.maximumAge
+          }
+          if (mentorSettings.maxNumberOfMentees !== undefined) {
+            self.maxNumberOfMentees = mentorSettings.maxNumberOfMentees
+          }
         }).then(value => {
           // Gets the name values from the previous checkedAreas of interest.
           for (var x = 0; x < this.checkedAreasOfInterest.length; x++) {

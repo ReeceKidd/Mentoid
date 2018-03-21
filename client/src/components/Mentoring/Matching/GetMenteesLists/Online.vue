@@ -1,7 +1,7 @@
 <template>
 <div>
   <div v-if="potentialOnlineMentees.length !== 0">
-    <h2 class="text-center"> {{ potentialOnlineMentees.length }} Potential Online Mentors </h2>
+    <h2 class="text-center"> {{ potentialOnlineMentees.length }} Potential Online Mentees </h2>
     <span v-for="(mentee, index) in potentialOnlineMentees" :key="index">
       <br>
       <div class="row">

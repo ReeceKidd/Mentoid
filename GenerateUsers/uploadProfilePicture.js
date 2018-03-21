@@ -8,10 +8,10 @@ via making a copy of it, renaming it with the user ID and moving it to the profi
 directory. 
 */
 
-module.exports = function assignPictureToUser(userID, userName) {
+module.exports = async function assignPictureToUser(userID, userName) {
     var files = fs.readdirSync(generatedPicturesDirectory)
     var randomIndex = Math.floor(Math.random() * files.length) + 1
     var randomFile = generatedPicturesDirectory + files[randomIndex]
     fs.writeFileSync(profilePicturesDirectory + userID + '.jpg', fs.readFileSync(randomFile));
-    
+    return randomFile
 }

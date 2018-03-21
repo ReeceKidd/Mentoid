@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row text-center">
       <h1 class="">Potential Mentor</h1>
-      <button class="btn btn-success btn-md sticky" @click="applyForMentorship()">Apply for Mentorship</button>
+      <button class="btn btn-success btn-md sticky" @click="applyForMentorship(mentor._id)">Apply for Mentorship</button>
       <button class="btn btn-primary btn-md sticky" @click="messageMentor()">Message</button>
-      <button class="btn btn-primary view-profile btn-md" @click="mentorMatch(mentor)">View Profile</button>
+      <button class="btn btn-primary view-profile btn-md" @click="viewProfile(mentor._id)">View Profile</button>
       <br v-if="errorMessage !=null">
       <br v-if="errorMessage !=null">
       <p v-if="errorMessage != null" class="errorMessage"> {{ errorMessage }} </p>
@@ -26,31 +26,31 @@
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <p v-if="mentor.compatibilityScore <= 0" class="infoMessage"> Compatibility:
-              <i class="fas fa-star"></i>
-            </p>
-            <p v-if="mentor.compatibilityScore === 10" class="infoMessage"> Compatibility:
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-            <p v-if="mentor.compatibilityScore === 20" class="infoMessage"> Compatibility:
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-            <p v-if="mentor.compatibilityScore === 30" class="infoMessage"> Compatibility:
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-            <p v-if="mentor.compatibilityScore >= 40" class="infoMessage"> Compatibility:
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </p>
-            <br>
+          <i class="fas fa-star"></i>
+        </p>
+        <p v-if="mentor.compatibilityScore === 10" class="infoMessage"> Compatibility:
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p v-if="mentor.compatibilityScore === 20" class="infoMessage"> Compatibility:
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p v-if="mentor.compatibilityScore === 30" class="infoMessage"> Compatibility:
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p v-if="mentor.compatibilityScore >= 40" class="infoMessage"> Compatibility:
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <br>
         <h2> Compatibility Overview </h2>
         <h4>
           <u> Age Matching information </u>
@@ -80,7 +80,7 @@
         <h4 v-if="(similarInterests.length + mentorHasMoreExperience.length) > 1"> Shared Interests:
           <b class="match"> {{ similarInterests.length + mentorHasMoreExperience.length }} </b>
         </h4>
-        <h4 v-else> Shared Interests: 
+        <h4 v-else> Shared Interests:
           <b class="notAMatch"> {{ similarInterests.length + mentorHasMoreExperience.length }} </b>
         </h4>
         <h4 v-if="numberOfEducationMatches > 0"> Education matches:
@@ -92,7 +92,7 @@
         <h4 v-if="languageMatches.length > 1"> Language matches:
           <b class="match"> {{ languageMatches.length }} </b>
         </h4>
-        <h4 v-else> Language matches: 
+        <h4 v-else> Language matches:
           <b> {{ languageMatches.length }} </b>
         </h4>
         <br>
@@ -139,7 +139,7 @@
           <p class="notAMatch"> No additional areas of interest </p>
         </div>
         <br>
-          <br>
+        <br>
       </div>
       <br>
     </div>
@@ -164,7 +164,7 @@
           <h5 v-if="mentor.userIsWithinMentorsRange"> You are within mentors travelling range
             <i class="fas fa-check match"></i>
           </h5>
-          <h5 v-else> You are outside of the mentors maximum travel distance of {{ mentorSettings.maxiumTravelDistanceKM }}
+          <h5 v-else> You are outside of the mentors maximum travel range.
             <i class="fas fa-times notAMatch"></i>
           </h5>
           <h5 v-if="mentor.isWithinUsersRange"> Mentor is withing your range
@@ -178,7 +178,7 @@
     </div>
     <br>
     <!-- Education matches -->
-   <div class="row text-center" v-if="updatedMentorEducation.length !== 0">
+    <div class="row text-center" v-if="updatedMentorEducation.length !== 0">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <p class="infoMessage"> Number of education matches: {{ numberOfEducationMatches }} </p>
         <br>
@@ -207,8 +207,8 @@
     <div v-else>
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-6 col-md-offset-3 displayBox">
         <h2> Mentor: {{ mentor.userName }} has no education information. </h2>
-        </div>
-    </div> 
+      </div>
+    </div>
     <!-- End of education matches -->
     <br>
     <!-- Job History -->
@@ -237,7 +237,7 @@
           <br v-if="index === mentor.jobHistory.length-1">
         </span>
       </div>
-    </div> 
+    </div>
     <!-- End of Job History -->
     <br>
     <div class="row text-center">
@@ -278,8 +278,8 @@
         </a>
         <br>
       </div>
-    </div> 
-    <br> 
+    </div>
+    <br>
   </div>
 </template>
 
@@ -318,13 +318,24 @@
         let prefferedMentoringFormats = this.mentorSettings.prefferedMentoringFormats
         return prefferedMentoringFormats.indexOf('In person') > -1
       },
+      viewProfile(matchID) {
+        this.$router.push({
+          name: 'view-match-profile',
+          params: {
+            matchID: matchID
+          }
+        })
+      },
+      messageMentor() {
+        alert('Message functionality has not been implemented as it is outside of the scope of this project. This would launch a seperate messaging component.')
+      },
       applyForMentorship(mentorID) {
         console.log('Attempting to apply for mentorship')
         var that = this
         const applyForMentorshipURL = 'http://localhost:4000/apply-for-mentorship/'
         axios.post(applyForMentorshipURL, {
           userID: this.$store.state.user.authUser._id,
-          mentorID: this.mentorID
+          mentorID: mentorID
         }).then(function (response) {
           console.log(response.data)
           that.successMessage = 'Applied for mentorship successfully.'

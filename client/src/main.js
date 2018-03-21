@@ -34,7 +34,6 @@ import PathsHome from './components/Learn/Paths/PathsHome.vue'
 import PathsSubSection from './components/Learn/Paths/PathsSubSection.vue'
 
 import ManageRelationships from './components/Mentoring/ManageRelationships.vue'
-import MatchingHome from './components/Mentoring/Matching/MatchingHome.vue'
 import MatchingMentorList from './components/Mentoring/Matching/MentorList.vue'
 import MatchingMenteeList from './components/Mentoring/Matching/MenteesList.vue'
 import MentorMatch from './components/Mentoring/Matching/MentorMatch.vue'
@@ -45,6 +44,7 @@ import EditProfile from './components/Profile/EditProfile.vue'
 import Leaderboards from './components/Profile/Leaderboards.vue'
 import Settings from './components/Profile/Settings.vue'
 import ViewProfile from './components/Profile/ViewProfile.vue'
+import ViewMatchProfile from './components/Profile/ViewMatchProfile.vue'
 import SocialHome from './components/Social/SocialHome.vue'
 import Feed from './components/Social/Feed.vue'
 import Post from './components/Social/Post.vue'
@@ -154,19 +154,14 @@ const routes = [
     component: ManageRelationships
   },
   {
-    path: '/matching',
-    name: 'matching',
-    component: MatchingHome
-  },
-  {
     path: '/mentor-matching',
-    name: 'matching-mentor-list',
+    name: 'mentor-matching',
     component: MatchingMentorList,
     props: true
   },
   {
     path: '/mentee-matching',
-    name: 'matching-mentee-list',
+    name: 'mentee-matching',
     component: MatchingMenteeList
   },
   {
@@ -198,6 +193,12 @@ const routes = [
     path: '/view-profile',
     name: 'view-profile',
     component: ViewProfile
+  },
+  {
+    path: '/view-match-profile',
+    name: 'view-match-profile',
+    component: ViewMatchProfile,
+    props: true
   },
   {
     path: '/social-home',

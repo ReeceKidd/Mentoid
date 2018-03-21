@@ -26,7 +26,7 @@ module.exports = async function generateSocialMedia(userID, userName) {
     }).catch(error => {
         console.log('Could not update Social media account: ' + error.message)
     })
-    return userName
+    return socialMediaAccounts
 }
 
 //I will generate values for each shuffle the array and return a random number of result 

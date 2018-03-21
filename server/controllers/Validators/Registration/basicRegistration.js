@@ -49,10 +49,10 @@ module.exports = function basicRegistrationValidation(req) {
     })
 
     // Accepted countries must be updated if the list of accepted countries is updated. 
-    var acceptedLanguages = ['English', 'French', 'German', 'Spanish']
+    var acceptedCountries = ['United Kingdom','United States', 'Spain', 'France', 'Germany']
 
-    req.check('language', 'Language is required for basic registration').exists()
-    req.check('language', 'Language must be equal to one of the allowed values').isIn(acceptedLanguages)
+    req.check('country', 'Country is required for basic registration').exists()
+    req.check('country', 'Country must be equal to one of the allowed values').isIn(acceptedCountries)
 
     req.check('terms', 'The terms must be accepted to register').equals('true').isBoolean()
 

@@ -83,9 +83,10 @@ routes.post('/generate/areas-of-interest', generatorController.generateAreasOfIn
 routes.post('/generate/update-has-profile-picture', generatorController.updateHasProfilePicture)
 
 //Matching Routes
-routes.get('/get/potential-mentors/:userID/:userName/:sortType', matchingController.getPotentialMentors)
-routes.get('/get/potential-mentees/:userID/:userName/:sortType', matchingController.getPotentialMentees)
-routes.post('/calculate/compatibility/', matchingController.calculateCompatibility)
+routes.get('/get/potential-mentors-list/:userID/:userName/:sortType', matchingController.getPotentialMentors)
+routes.get('/get/potential-mentees-list/:userID/:userName/:sortType', matchingController.getPotentialMentees)
+routes.post('/calculate/mentor-compatibility/', matchingController.calculateMentorCompatibility)
+routes.post('/calculate/mentee-compatibility/', matchingController.calculateMenteeCompatibility)
 routes.post('/mentor-match', matchingController.mentorMatch)
 routes.post('/apply-for-mentorship', matchingController.applyForMentorship)
 

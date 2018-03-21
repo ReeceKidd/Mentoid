@@ -1,7 +1,7 @@
 <template>
 <div>
   <div v-if="potentialOnlineAndInPersonMentees.length !== 0">
-    <h2 class="text-center"> {{ potentialOnlineAndInPersonMentees.length }} Potential Mentors </h2>
+    <h2 class="text-center"> {{ potentialOnlineAndInPersonMentees.length }} Potential Mentees </h2>
     <span v-for="(mentee, index) in potentialOnlineAndInPersonMentees" :key="index">
       <br>
       <div class="row">
@@ -127,10 +127,10 @@
         })
       },
       getCompatibility(mentee) {
-        const getCompatibilityURL = 'http://localhost:4000/calculate/compatibility/'
+        const getCompatibilityURL = 'http://localhost:4000/calculate/mentee-compatibility/'
         axios.post(getCompatibilityURL, {
           userName: this.userName,
-          mentee: mentee
+          match: mentee
         }).then(function (response) {
           console.log(response.data.compatibilityScore)
           mentee.compatibilityScore = response.data.compatibilityScore

@@ -2,7 +2,7 @@ const axios = require('axios')
 const updateMenteeSettingsURL = 'http://localhost:4000/update/mentee-settings/'
 
 
-module.exports = function updateAreasOfInterest(userName, userID, age, areasOfInterest) {
+module.exports = async function updateAreasOfInterest(userName, userID, age, areasOfInterest) {
     /*
     Array is sorted by years of experience before the random amount is selected to ensure that Mentors choose the areas of 
     interest that they have the most experience in. Then a random number of the higher years of experience are choosen. 
@@ -18,23 +18,27 @@ module.exports = function updateAreasOfInterest(userName, userID, age, areasOfIn
     var maximumAge = getMaximumAge(minimumAge)
     var maxNumberOfMentors = getMaximumNumberOfMentors()
 
+    var menteeSettings = {
+        wouldLikeAMentor: wouldLikeAMentor,
+        areasOfInterest: areasOfInterest,
+        prefferedMentoringFormats: prefferedMentoringFormats,
+        maximumTravelDistanceKM: maximumTravelDistance,
+        languages: mentoringLanguages,
+        prefferedEducation: prefferedEducation,
+        minimumAge: minimumAge,
+        maximumAge: maximumAge,
+        maxNumberOfMentors: maxNumberOfMentors
+    }
+
     axios.post(updateMenteeSettingsURL, {
-        menteeSettings: {
-            wouldLikeAMentor: wouldLikeAMentor,
-            areasOfInterest: areasOfInterest,
-            prefferedMentoringFormats: prefferedMentoringFormats,
-            maximumTravelDistanceKM: maximumTravelDistance,
-            languages: mentoringLanguages,
-            prefferedEducation: prefferedEducation,
-            minimumAge: minimumAge,
-            maximumAge: maximumAge,
-            maxNumberOfMentors: maxNumberOfMentors
-        },
+        menteeSettings: menteeSettings,
         userID: userID,
         userName: userName
     }).then(userName + ' updated mentee settings').catch(error => {
         console.log(userName + ' could not update mentee settings: ' + error.message)
     })
+
+    return menteeSettings
 
 }
 

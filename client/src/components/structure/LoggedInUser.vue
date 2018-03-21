@@ -29,7 +29,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a @click="navigateTo({ name : 'matching'})">Matching</a>
+                  <a @click="navigateTo({ name : 'mentor-matching'})">Find a Mentor</a>
+                </li>
+                <li>
+                  <a @click="navigateTo({ name : 'mentee-matching'})">Find a Mentee</a>
                 </li>
                 <li>
                   <a @click="navigateTo({ name : 'manage-relationships'})">Manage relationships</a>

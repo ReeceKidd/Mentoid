@@ -10,19 +10,6 @@
       </div>
     </div>
 
-    <div class="row text-center">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 displayBox">
-        <h1> Find your perfect Mentor </h1>
-        <br>
-        <button class="btn btn-primary btn-lg" @click="matchMentors()">Find Mentors</button>
-        <br>
-        <br>
-      </div>
-    </div>
-
-    <br class="hidden-xs">
-    <br class="hidden-xs">
-
     <div v-if="potentialInPersonMentors !== null">
       <in-person-matches :mentors=potentialInPersonMentors></in-person-matches>
     </div>
@@ -53,20 +40,6 @@
         potentialOnlineAndInPersonMentors: null
       }
     },
-    beforeMount() {
-      var self = this
-      var userID = this.$store.state.user.authUser._id
-      // Get username.
-      const getUserNameURL = 'http://localhost:4000/get/user-name/'
-      axios.get(getUserNameURL + userID).then(function (response) {
-        self.userName = response.data.userName
-      })
-      // Get the users areas of interest
-      const getAreasOfInterestUrl = 'http://localhost:4000/get/areas-of-interest/'
-      axios.get(getAreasOfInterestUrl + userID).then(function (response) {
-        self.areasOfInterest = response.data.areasOfInterest
-      })
-    },
     methods: {
       matchMentors() {
         this.potentialInPersonMentors = null
@@ -74,7 +47,7 @@
         this.potentialOnlineAndInPersonMentors = null
         var self = this
         console.log('Attempting to match mentors.')
-        var getPotentialMentorsURL = 'http://localhost:4000/get/potential-mentors/' + this.currentUserID + '/' + this.userName +
+        var getPotentialMentorsURL = 'http://localhost:4000/get/potential-mentors-list/' + this.currentUserID + '/' + this.userName +
           '/' + this.sortType
         axios.get(getPotentialMentorsURL)
           .then(response => {
@@ -94,6 +67,9 @@
             console.log(errors)
           })
       }
+    },
+    beforeMount() {
+      this.matchMentors()
     },
     components: {
       InPersonMatches,

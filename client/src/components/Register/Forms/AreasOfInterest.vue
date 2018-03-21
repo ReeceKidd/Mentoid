@@ -37,10 +37,13 @@
               <p v-if="!$v.areasOfInterest.$each[index].years.required && $v.areasOfInterest.$each[index].years.$dirty" class="errorMessage">
                 Please enter years of experience in this area. </p>
             </div>
+            <br>
+            <div class="text-center">
               <p v-if="!$v.areasOfInterest.$each[index].value.required && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
                 You must enter an area of interest. </p>
               <p v-if="!$v.areasOfInterest.$each[index].value.alphaAndWhitespace && $v.areasOfInterest.$each[index].value.$dirty" class="errorMessage">
                 Areas of interest can only alphabet characters. </p>
+                </div>
             </div>
         
         <div class="text-center" v-if="(index + 1) === areasOfInterest.length">

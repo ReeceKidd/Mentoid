@@ -20,6 +20,8 @@ module.exports = applyForMentorship = (req, res) => {
         })
     }
 
+    console.log('Got here')
+
     //Get the current users information 
     logger.error('Attempting to find user with ID: ' + JSON.stringify(req.body.userID, null, 2))
     User.findById(req.body.userID, function (err, user) {

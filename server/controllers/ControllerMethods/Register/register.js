@@ -61,7 +61,7 @@ module.exports = register = (req, res) => {
         'password',
         'confirmPassword',
         'age',
-        'language',
+        'country',
         'terms'
     ])
 

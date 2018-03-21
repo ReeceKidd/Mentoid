@@ -74,7 +74,7 @@
             <div class="hidden-xs">
               <button class="btn btn-primary view-profile btn-sm" @click="mentorMatch(mentor)">View Match</button>
               <button class="btn btn-primary btn-sm">Send Message</button>
-              <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor._id)"> Apply for Mentoring </button>
+              <button class="btn btn-success btn-sm" @click="viewProfile(mentor._id)"> View Profile </button>
             </div>
             <div class="visible-xs">
               <button class="btn btn-primary view-profile btn-lg " @click="mentorMatch(mentor)">
@@ -85,7 +85,7 @@
               </button>
               <br>
               <br>
-              <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor._id)"> Apply for Mentoring </button>
+              <button class="btn btn-success btn-sm" @click="applyForMentorship(mentor.userID)"> Apply for Mentoring </button>
             </div>
             <br>
             <br>
@@ -124,6 +124,15 @@
           name: 'mentor-match',
           params: {
             mentor: mentor
+          }
+        })
+      },
+      viewProfile(matchID) {
+        console.log('Mentor id: ' + matchID)
+        this.$router.push({
+          name: 'view-match-profile',
+          params: {
+            matchID: matchID
           }
         })
       },

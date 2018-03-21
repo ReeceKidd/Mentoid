@@ -7,7 +7,7 @@ module.exports = function checkBasicRegistrationFields(req) {
             property !== 'password' &&
             property !== 'age' && 
             property !== 'confirmPassword' && 
-            property !== 'language' &&
+            property !== 'country' &&
             property !== 'terms') {
             return 'Request contained unsupported field: ' + property
         }
