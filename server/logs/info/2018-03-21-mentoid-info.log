@@ -3006,3 +3006,2042 @@
   "longitude": 79.7224003699525
 }
 
+10:29:25 ControllerMethods/Register/register.js INFO: JocelineSoare21 successfully registered: { __v: 0,
+  firstName: 'Joceline',
+  lastName: 'Soare',
+  userName: 'JocelineSoare21',
+  email: 'JocelineSoare21@gmail.com',
+  age: 82,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab234052ea9335254b3d779,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:29:25 ControllerMethods/Register/updateEducation.js INFO: JocelineSoare21 updated education successfully: [{"degree":"Certification","school":"Fukushima University","country":"Japan","fieldOfStudy":"Social Work","startYear":2014,"endYear":2015,"educationID":0}]
+
+10:29:25 ControllerMethods/Register/updateJobHistory.js INFO: JocelineSoare21 updated job history successfully: [{"title":"Transportation Equipment Painter","company":"Target","startYear":"1995","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:29:25 ControllerMethods/Register/updateSocialMedia.js INFO: JocelineSoare21 updated social media successfully: {"facebook":"www.facebook.com/JocelineSoare21","instagram":"JocelineSoare21","twitter":"JocelineSoare21","snapchat":"JocelineSoare21","linkedIn":"www.linkedin.com/JocelineSoare21","medium":"www.medium.com/JocelineSoare21","youtube":"www.youtube.com/JocelineSoare21","website":"www.JocelineSoare21.com","userID":"5ab234052ea9335254b3d779"}
+
+10:29:25 ControllerMethods/Register/updateLocation.js INFO: JocelineSoare21 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:29:25 ControllerMethods/Register/updateMentorSettings.js INFO: JocelineSoare21 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Wood carving",
+      "years": 62,
+      "areaOfInterestID": 6,
+      "pathsStudied": 47,
+      "videosWatched": 200,
+      "articlesRead": 62,
+      "numberOfLinksClicked": 6391,
+      "numberOfLikes": 485
+    },
+    {
+      "value": "Rugby league football",
+      "years": 53,
+      "areaOfInterestID": 3,
+      "pathsStudied": 20,
+      "videosWatched": 168,
+      "articlesRead": 88,
+      "numberOfLinksClicked": 5943,
+      "numberOfLikes": 669
+    },
+    {
+      "value": "Kite",
+      "years": 44,
+      "areaOfInterestID": 5,
+      "pathsStudied": 17,
+      "videosWatched": 112,
+      "articlesRead": 160,
+      "numberOfLinksClicked": 4586,
+      "numberOfLikes": 723
+    },
+    {
+      "value": "Driving",
+      "years": 41,
+      "areaOfInterestID": 2,
+      "pathsStudied": 14,
+      "videosWatched": 88,
+      "articlesRead": 7,
+      "numberOfLinksClicked": 7119,
+      "numberOfLikes": 946
+    },
+    {
+      "value": "Squash",
+      "years": 21,
+      "areaOfInterestID": 4,
+      "pathsStudied": 42,
+      "videosWatched": 228,
+      "articlesRead": 203,
+      "numberOfLinksClicked": 8416,
+      "numberOfLikes": 509
+    },
+    {
+      "value": "Sand art and play",
+      "years": 13,
+      "areaOfInterestID": 0,
+      "pathsStudied": 50,
+      "videosWatched": 151,
+      "articlesRead": 129,
+      "numberOfLinksClicked": 5532,
+      "numberOfLikes": 528
+    },
+    {
+      "value": "Cheerleading",
+      "years": 10,
+      "areaOfInterestID": 7,
+      "pathsStudied": 22,
+      "videosWatched": 129,
+      "articlesRead": 46,
+      "numberOfLinksClicked": 7479,
+      "numberOfLikes": 368
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 16,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "Bachelors",
+    "Certification",
+    "Vocational",
+    "High School",
+    "No education"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 36,
+  "maxNumberOfMentees": 7
+}
+
+10:29:25 ControllerMethods/Register/updateMenteeSettings.js INFO: JocelineSoare21 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Leather crafting",
+      "years": 7,
+      "areaOfInterestID": 1,
+      "pathsStudied": 22,
+      "videosWatched": 162,
+      "articlesRead": 153,
+      "numberOfLinksClicked": 6744,
+      "numberOfLikes": 625
+    },
+    {
+      "value": "Cheerleading",
+      "years": 10,
+      "areaOfInterestID": 7,
+      "pathsStudied": 22,
+      "videosWatched": 129,
+      "articlesRead": 46,
+      "numberOfLinksClicked": 7479,
+      "numberOfLikes": 368
+    },
+    {
+      "value": "Sand art and play",
+      "years": 13,
+      "areaOfInterestID": 0,
+      "pathsStudied": 50,
+      "videosWatched": 151,
+      "articlesRead": 129,
+      "numberOfLinksClicked": 5532,
+      "numberOfLikes": 528
+    },
+    {
+      "value": "Squash",
+      "years": 21,
+      "areaOfInterestID": 4,
+      "pathsStudied": 42,
+      "videosWatched": 228,
+      "articlesRead": 203,
+      "numberOfLinksClicked": 8416,
+      "numberOfLikes": 509
+    },
+    {
+      "value": "Driving",
+      "years": 41,
+      "areaOfInterestID": 2,
+      "pathsStudied": 14,
+      "videosWatched": 88,
+      "articlesRead": 7,
+      "numberOfLinksClicked": 7119,
+      "numberOfLikes": 946
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 95,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "Bachelors",
+    "Vocational",
+    "Masters",
+    "No education",
+    "High School",
+    "Certification"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 41,
+  "maxNumberOfMentors": 6
+}
+
+10:29:25 ControllerMethods/Register/updateJobHistory.js INFO: JocelineSoare21 updated job history successfully: [{"title":"Transportation Equipment Painter","company":"Target","startYear":"1995","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Attendant","company":"Calpine Corporation","startYear":"1953","endYear":"2013","isWorkingHere":"No","experienceID":1}]
+
+10:29:25 ControllerMethods/Register/updateJobHistory.js INFO: JocelineSoare21 updated job history successfully: [{"title":"Transportation Equipment Painter","company":"Target","startYear":"1995","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Attendant","company":"Calpine Corporation","startYear":"1953","endYear":"2013","isWorkingHere":"No","experienceID":1},{"title":"Commercial Pilot","company":"Foot Locker, Inc.","startYear":"1953","endYear":"1997","isWorkingHere":"No","experienceID":1}]
+
+10:29:25 ControllerMethods/Register/updateJobHistory.js INFO: JocelineSoare21 updated job history successfully: [{"title":"Transportation Equipment Painter","company":"Target","startYear":"1995","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Attendant","company":"Calpine Corporation","startYear":"1953","endYear":"2013","isWorkingHere":"No","experienceID":1},{"title":"Commercial Pilot","company":"Foot Locker, Inc.","startYear":"1953","endYear":"1997","isWorkingHere":"No","experienceID":1},{"title":"Travel Clerk","company":"V.f. Corporation","startYear":"2006","endYear":"2008","isWorkingHere":"No","experienceID":1}]
+
+10:29:25 ControllerMethods/Register/updateJobHistory.js INFO: JocelineSoare21 updated job history successfully: [{"title":"Transportation Equipment Painter","company":"Target","startYear":"1995","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Attendant","company":"Calpine Corporation","startYear":"1953","endYear":"2013","isWorkingHere":"No","experienceID":1},{"title":"Commercial Pilot","company":"Foot Locker, Inc.","startYear":"1953","endYear":"1997","isWorkingHere":"No","experienceID":1},{"title":"Travel Clerk","company":"V.f. Corporation","startYear":"2006","endYear":"2008","isWorkingHere":"No","experienceID":1},{"title":"Maintenance Worker","company":"Sonic Automotive, Inc.","startYear":"1954","endYear":"1996","isWorkingHere":"No","experienceID":1}]
+
+10:29:25 ControllerMethods/Register/updateJobHistory.js INFO: JocelineSoare21 updated job history successfully: [{"title":"Transportation Equipment Painter","company":"Target","startYear":"1995","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Attendant","company":"Calpine Corporation","startYear":"1953","endYear":"2013","isWorkingHere":"No","experienceID":1},{"title":"Commercial Pilot","company":"Foot Locker, Inc.","startYear":"1953","endYear":"1997","isWorkingHere":"No","experienceID":1},{"title":"Travel Clerk","company":"V.f. Corporation","startYear":"2006","endYear":"2008","isWorkingHere":"No","experienceID":1},{"title":"Maintenance Worker","company":"Sonic Automotive, Inc.","startYear":"1954","endYear":"1996","isWorkingHere":"No","experienceID":1},{"title":"Agricultural Grader","company":"Hormel Foods Corporation","startYear":"2012","endYear":"2013","isWorkingHere":"No","experienceID":1}]
+
+10:30:11 ControllerMethods/Register/register.js INFO: JosephinaNorrgard21 successfully registered: { __v: 0,
+  firstName: 'Josephina',
+  lastName: 'Norrgard',
+  userName: 'JosephinaNorrgard21',
+  email: 'JosephinaNorrgard21@gmail.com',
+  age: 24,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab234332ea9335254b3d798,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:30:11 ControllerMethods/Register/updateEducation.js INFO: JosephinaNorrgard21 updated education successfully: [{"degree":"Certification","school":"Université Des Antilles Et De La Guyane","country":"Martinique","fieldOfStudy":"Pharmacy","startYear":2013,"endYear":2014,"educationID":0}]
+
+10:30:11 ControllerMethods/Register/updateJobHistory.js INFO: JosephinaNorrgard21 updated job history successfully: [{"title":"Animal Control Worker","company":"Sandisk Corporation","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:30:11 ControllerMethods/Register/updateSocialMedia.js INFO: JosephinaNorrgard21 updated social media successfully: {"facebook":"www.facebook.com/JosephinaNorrgard21","instagram":"JosephinaNorrgard21","twitter":"JosephinaNorrgard21","snapchat":"JosephinaNorrgard21","linkedIn":"www.linkedin.com/JosephinaNorrgard21","medium":"www.medium.com/JosephinaNorrgard21","youtube":"www.youtube.com/JosephinaNorrgard21","website":"www.JosephinaNorrgard21.com","userID":"5ab234332ea9335254b3d798"}
+
+10:30:11 ControllerMethods/Register/updateLocation.js INFO: JosephinaNorrgard21 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:30:11 ControllerMethods/Register/updateMentorSettings.js INFO: JosephinaNorrgard21 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "3D printing",
+      "years": 3,
+      "areaOfInterestID": 0,
+      "pathsStudied": 43,
+      "videosWatched": 169,
+      "articlesRead": 46,
+      "numberOfLinksClicked": 4482,
+      "numberOfLikes": 65
+    },
+    {
+      "value": "Photography",
+      "years": 0,
+      "areaOfInterestID": 1,
+      "pathsStudied": 45,
+      "videosWatched": 2,
+      "articlesRead": 9,
+      "numberOfLinksClicked": 479,
+      "numberOfLikes": 503
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 79,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Bachelors"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 33,
+  "maxNumberOfMentees": 9
+}
+
+10:30:11 ControllerMethods/Register/updateMenteeSettings.js INFO: JosephinaNorrgard21 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Photography",
+      "years": 0,
+      "areaOfInterestID": 1,
+      "pathsStudied": 45,
+      "videosWatched": 2,
+      "articlesRead": 9,
+      "numberOfLinksClicked": 479,
+      "numberOfLikes": 503
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 98,
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "High School",
+    "Certification",
+    "PHD"
+  ],
+  "minimumAge": 21,
+  "maximumAge": 78,
+  "maxNumberOfMentors": 6
+}
+
+10:30:40 ControllerMethods/Register/register.js INFO: BonneeCurren71 successfully registered: { __v: 0,
+  firstName: 'Bonnee',
+  lastName: 'Curren',
+  userName: 'BonneeCurren71',
+  email: 'BonneeCurren71@gmail.com',
+  age: 42,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab234502ea9335254b3d79d,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:30:40 ControllerMethods/Register/updateEducation.js INFO: BonneeCurren71 updated education successfully: [{"degree":"Vocational","school":"Universidad De Ciencias Y Humanidades","country":"Peru","fieldOfStudy":"Agriculture","startYear":2008,"endYear":2009,"educationID":0},{"degree":"Certification","school":"Université Rennes I","country":"France","fieldOfStudy":"Public Health","startYear":2017,"endYear":2017,"educationID":1},{"degree":"Certification","school":"Uinversity Of Babylon","country":"Iraq","fieldOfStudy":"Science With Education","startYear":2004,"endYear":2005,"educationID":2}]
+
+10:30:40 ControllerMethods/Register/updateJobHistory.js INFO: BonneeCurren71 updated job history successfully: [{"title":"Rolling Machine Tender","company":"Centene Corporation","startYear":"2007","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:30:40 ControllerMethods/Register/updateSocialMedia.js INFO: BonneeCurren71 updated social media successfully: {"facebook":"www.facebook.com/BonneeCurren71","instagram":"BonneeCurren71","twitter":"BonneeCurren71","snapchat":"BonneeCurren71","linkedIn":"www.linkedin.com/BonneeCurren71","medium":"www.medium.com/BonneeCurren71","youtube":"www.youtube.com/BonneeCurren71","website":"www.BonneeCurren71.com","userID":"5ab234502ea9335254b3d79d"}
+
+10:30:40 ControllerMethods/Register/updateLocation.js INFO: BonneeCurren71 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:30:40 ControllerMethods/Register/updateMentorSettings.js INFO: BonneeCurren71 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Videophile",
+      "years": 23,
+      "areaOfInterestID": 4,
+      "pathsStudied": 10,
+      "videosWatched": 187,
+      "articlesRead": 24,
+      "numberOfLinksClicked": 520,
+      "numberOfLikes": 990
+    },
+    {
+      "value": "Color guard (flag spinning)",
+      "years": 19,
+      "areaOfInterestID": 2,
+      "pathsStudied": 7,
+      "videosWatched": 175,
+      "articlesRead": 70,
+      "numberOfLinksClicked": 9528,
+      "numberOfLikes": 230
+    },
+    {
+      "value": "Kitesurfing",
+      "years": 16,
+      "areaOfInterestID": 1,
+      "pathsStudied": 47,
+      "videosWatched": 198,
+      "articlesRead": 69,
+      "numberOfLinksClicked": 8490,
+      "numberOfLikes": 353
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 94,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "No education",
+    "High School",
+    "Certification"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 62,
+  "maxNumberOfMentees": 3
+}
+
+10:30:40 ControllerMethods/Register/updateMenteeSettings.js INFO: BonneeCurren71 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Air sports",
+      "years": 0,
+      "areaOfInterestID": 0,
+      "pathsStudied": 9,
+      "videosWatched": 146,
+      "articlesRead": 167,
+      "numberOfLinksClicked": 7146,
+      "numberOfLikes": 646
+    },
+    {
+      "value": "Rugby league football",
+      "years": 14,
+      "areaOfInterestID": 3,
+      "pathsStudied": 45,
+      "videosWatched": 35,
+      "articlesRead": 163,
+      "numberOfLinksClicked": 5528,
+      "numberOfLikes": 700
+    },
+    {
+      "value": "Kitesurfing",
+      "years": 16,
+      "areaOfInterestID": 1,
+      "pathsStudied": 47,
+      "videosWatched": 198,
+      "articlesRead": 69,
+      "numberOfLinksClicked": 8490,
+      "numberOfLikes": 353
+    },
+    {
+      "value": "Movies",
+      "years": 16,
+      "areaOfInterestID": 5,
+      "pathsStudied": 19,
+      "videosWatched": 223,
+      "articlesRead": 164,
+      "numberOfLinksClicked": 2242,
+      "numberOfLikes": 935
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 5,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "No education",
+    "Certification"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 42,
+  "maxNumberOfMentors": 3
+}
+
+10:30:41 ControllerMethods/Register/updateJobHistory.js INFO: BonneeCurren71 updated job history successfully: [{"title":"Rolling Machine Tender","company":"Centene Corporation","startYear":"2007","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Power Tool Repairer","company":"Harbinger Group Inc.","startYear":"2016","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:30:50 ControllerMethods/Register/register.js INFO: CallidaAbhyankar81 successfully registered: { __v: 0,
+  firstName: 'Callida',
+  lastName: 'Abhyankar',
+  userName: 'CallidaAbhyankar81',
+  email: 'CallidaAbhyankar81@gmail.com',
+  age: 88,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2345a2ea9335254b3d7aa,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:30:50 ControllerMethods/Register/updateEducation.js INFO: CallidaAbhyankar81 updated education successfully: [{"degree":"Certification","school":"Concordia College - Seward","country":"United States","fieldOfStudy":"Medicine","startYear":1998,"endYear":1998,"educationID":0},{"degree":"Vocational","school":"University Of North Carolina At Wilmington","country":"United States","fieldOfStudy":"Fine Arts","startYear":2008,"endYear":2010,"educationID":1},{"degree":"Certification","school":"Cuesta College","country":"United States","fieldOfStudy":"Social Work","startYear":1983,"endYear":1983,"educationID":2},{"degree":"Certification","school":"University Canada West","country":"Canada","fieldOfStudy":"Integrated Studies","startYear":1996,"endYear":1996,"educationID":3},{"degree":"Phd","school":"George Washington University","country":"United States","fieldOfStudy":"Social Sciences","startYear":1989,"endYear":1998,"educationID":4}]
+
+10:30:50 ControllerMethods/Register/updateJobHistory.js INFO: CallidaAbhyankar81 updated job history successfully: [{"title":"Faller","company":"Pacific Life","startYear":"2010","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:30:50 ControllerMethods/Register/updateSocialMedia.js INFO: CallidaAbhyankar81 updated social media successfully: {"facebook":"www.facebook.com/CallidaAbhyankar81","instagram":"CallidaAbhyankar81","twitter":"CallidaAbhyankar81","snapchat":"CallidaAbhyankar81","linkedIn":"www.linkedin.com/CallidaAbhyankar81","userID":"5ab2345a2ea9335254b3d7aa"}
+
+10:30:50 ControllerMethods/Register/updateLocation.js INFO: CallidaAbhyankar81 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:30:50 ControllerMethods/Register/updateMentorSettings.js INFO: CallidaAbhyankar81 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Surfing",
+      "years": 60,
+      "areaOfInterestID": 4,
+      "pathsStudied": 36,
+      "videosWatched": 92,
+      "articlesRead": 220,
+      "numberOfLinksClicked": 2638,
+      "numberOfLikes": 6
+    },
+    {
+      "value": "Jigsaw puzzles",
+      "years": 53,
+      "areaOfInterestID": 2,
+      "pathsStudied": 8,
+      "videosWatched": 228,
+      "articlesRead": 18,
+      "numberOfLinksClicked": 6388,
+      "numberOfLikes": 322
+    },
+    {
+      "value": "Sand art and play",
+      "years": 48,
+      "areaOfInterestID": 1,
+      "pathsStudied": 42,
+      "videosWatched": 175,
+      "articlesRead": 180,
+      "numberOfLinksClicked": 2059,
+      "numberOfLikes": 627
+    },
+    {
+      "value": "Sewing",
+      "years": 36,
+      "areaOfInterestID": 3,
+      "pathsStudied": 4,
+      "videosWatched": 201,
+      "articlesRead": 232,
+      "numberOfLinksClicked": 9407,
+      "numberOfLikes": 825
+    },
+    {
+      "value": "Fencing",
+      "years": 4,
+      "areaOfInterestID": 0,
+      "pathsStudied": 28,
+      "videosWatched": 14,
+      "articlesRead": 114,
+      "numberOfLinksClicked": 2657,
+      "numberOfLikes": 637
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 55,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 48,
+  "maxNumberOfMentees": 1
+}
+
+10:30:50 ControllerMethods/Register/updateMenteeSettings.js INFO: CallidaAbhyankar81 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Fencing",
+      "years": 4,
+      "areaOfInterestID": 0,
+      "pathsStudied": 28,
+      "videosWatched": 14,
+      "articlesRead": 114,
+      "numberOfLinksClicked": 2657,
+      "numberOfLikes": 637
+    },
+    {
+      "value": "Sewing",
+      "years": 36,
+      "areaOfInterestID": 3,
+      "pathsStudied": 4,
+      "videosWatched": 201,
+      "articlesRead": 232,
+      "numberOfLinksClicked": 9407,
+      "numberOfLikes": 825
+    },
+    {
+      "value": "Sand art and play",
+      "years": 48,
+      "areaOfInterestID": 1,
+      "pathsStudied": 42,
+      "videosWatched": 175,
+      "articlesRead": 180,
+      "numberOfLinksClicked": 2059,
+      "numberOfLikes": 627
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 15,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "No education",
+    "Masters",
+    "High School"
+  ],
+  "minimumAge": 20,
+  "maximumAge": 25,
+  "maxNumberOfMentors": 6
+}
+
+10:30:50 ControllerMethods/Register/updateJobHistory.js INFO: CallidaAbhyankar81 updated job history successfully: [{"title":"Faller","company":"Pacific Life","startYear":"2010","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Wildlife Biologist","company":"Berkshire Hathaway","startYear":"1979","endYear":"2004","isWorkingHere":"No","experienceID":1}]
+
+10:31:54 ControllerMethods/Register/register.js INFO: MearaMacentee91 successfully registered: { __v: 0,
+  firstName: 'Meara',
+  lastName: 'Macentee',
+  userName: 'MearaMacentee91',
+  email: 'MearaMacentee91@gmail.com',
+  age: 28,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2349a2ea9335254b3d7b8,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:31:54 ControllerMethods/Register/updateEducation.js INFO: MearaMacentee91 updated education successfully: [{"degree":"Bachelors","school":"Akanu Ibiam Federal Polytechnic, Unwana","country":"Nigeria","fieldOfStudy":"Midwifery","startYear":2017,"endYear":2021,"educationID":0},{"degree":"Bachelors","school":"Ecole Nationale Supérieure D'electrochimie Et D'electrométallurgie De Gernoble","country":"France","fieldOfStudy":"Dentistry","startYear":2011,"endYear":2016,"educationID":1},{"degree":"Masters","school":"Hanoi National Economics University","country":"Viet Nam","fieldOfStudy":"Nutrition And Dietetics","startYear":2010,"endYear":2013,"educationID":2}]
+
+10:31:54 ControllerMethods/Register/updateJobHistory.js INFO: MearaMacentee91 updated job history successfully: [{"title":"Rancher","company":"Time Warner Inc.","startYear":"2013","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:31:54 ControllerMethods/Register/updateSocialMedia.js INFO: MearaMacentee91 updated social media successfully: {"facebook":"www.facebook.com/MearaMacentee91","instagram":"MearaMacentee91","twitter":"MearaMacentee91","snapchat":"MearaMacentee91","linkedIn":"www.linkedin.com/MearaMacentee91","medium":"www.medium.com/MearaMacentee91","youtube":"www.youtube.com/MearaMacentee91","userID":"5ab2349a2ea9335254b3d7b8"}
+
+10:31:54 ControllerMethods/Register/updateLocation.js INFO: MearaMacentee91 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:31:54 ControllerMethods/Register/updateMentorSettings.js INFO: MearaMacentee91 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Contract Bridge",
+      "years": 10,
+      "areaOfInterestID": 2,
+      "pathsStudied": 21,
+      "videosWatched": 95,
+      "articlesRead": 134,
+      "numberOfLinksClicked": 9559,
+      "numberOfLikes": 947
+    },
+    {
+      "value": "Sea glass",
+      "years": 8,
+      "areaOfInterestID": 1,
+      "pathsStudied": 50,
+      "videosWatched": 86,
+      "articlesRead": 198,
+      "numberOfLinksClicked": 6037,
+      "numberOfLikes": 430
+    },
+    {
+      "value": "Macrame",
+      "years": 7,
+      "areaOfInterestID": 0,
+      "pathsStudied": 37,
+      "videosWatched": 192,
+      "articlesRead": 167,
+      "numberOfLinksClicked": 567,
+      "numberOfLikes": 626
+    },
+    {
+      "value": "Second-language acquisition",
+      "years": 7,
+      "areaOfInterestID": 5,
+      "pathsStudied": 23,
+      "videosWatched": 232,
+      "articlesRead": 45,
+      "numberOfLinksClicked": 1264,
+      "numberOfLikes": 736
+    },
+    {
+      "value": "Videophile",
+      "years": 7,
+      "areaOfInterestID": 7,
+      "pathsStudied": 39,
+      "videosWatched": 65,
+      "articlesRead": 78,
+      "numberOfLinksClicked": 2969,
+      "numberOfLikes": 9
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 51,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Bachelors"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 82,
+  "maxNumberOfMentees": 10
+}
+
+10:31:54 ControllerMethods/Register/updateMenteeSettings.js INFO: MearaMacentee91 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Sand art",
+      "years": 1,
+      "areaOfInterestID": 3,
+      "pathsStudied": 15,
+      "videosWatched": 121,
+      "articlesRead": 200,
+      "numberOfLinksClicked": 4922,
+      "numberOfLikes": 888
+    },
+    {
+      "value": "Baseball",
+      "years": 1,
+      "areaOfInterestID": 6,
+      "pathsStudied": 38,
+      "videosWatched": 11,
+      "articlesRead": 136,
+      "numberOfLinksClicked": 1683,
+      "numberOfLikes": 275
+    },
+    {
+      "value": "Swimming",
+      "years": 5,
+      "areaOfInterestID": 8,
+      "pathsStudied": 13,
+      "videosWatched": 151,
+      "articlesRead": 200,
+      "numberOfLinksClicked": 3387,
+      "numberOfLikes": 744
+    },
+    {
+      "value": "Sport stacking",
+      "years": 6,
+      "areaOfInterestID": 4,
+      "pathsStudied": 4,
+      "videosWatched": 68,
+      "articlesRead": 10,
+      "numberOfLinksClicked": 8308,
+      "numberOfLikes": 475
+    },
+    {
+      "value": "Macrame",
+      "years": 7,
+      "areaOfInterestID": 0,
+      "pathsStudied": 37,
+      "videosWatched": 192,
+      "articlesRead": 167,
+      "numberOfLinksClicked": 567,
+      "numberOfLikes": 626
+    },
+    {
+      "value": "Second-language acquisition",
+      "years": 7,
+      "areaOfInterestID": 5,
+      "pathsStudied": 23,
+      "videosWatched": 232,
+      "articlesRead": 45,
+      "numberOfLinksClicked": 1264,
+      "numberOfLikes": 736
+    },
+    {
+      "value": "Videophile",
+      "years": 7,
+      "areaOfInterestID": 7,
+      "pathsStudied": 39,
+      "videosWatched": 65,
+      "articlesRead": 78,
+      "numberOfLinksClicked": 2969,
+      "numberOfLikes": 9
+    },
+    {
+      "value": "Sea glass",
+      "years": 8,
+      "areaOfInterestID": 1,
+      "pathsStudied": 50,
+      "videosWatched": 86,
+      "articlesRead": 198,
+      "numberOfLinksClicked": 6037,
+      "numberOfLikes": 430
+    },
+    {
+      "value": "Contract Bridge",
+      "years": 10,
+      "areaOfInterestID": 2,
+      "pathsStudied": 21,
+      "videosWatched": 95,
+      "articlesRead": 134,
+      "numberOfLinksClicked": 9559,
+      "numberOfLikes": 947
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 17,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "PHD",
+    "Vocational"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 42,
+  "maxNumberOfMentors": 2
+}
+
+10:31:54 ControllerMethods/Register/updateJobHistory.js INFO: MearaMacentee91 updated job history successfully: [{"title":"Rancher","company":"Time Warner Inc.","startYear":"2013","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Paralegal","company":"The J.m. Smucker Company","startYear":"2017","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:31:54 ControllerMethods/Register/updateJobHistory.js INFO: MearaMacentee91 updated job history successfully: [{"title":"Rancher","company":"Time Warner Inc.","startYear":"2013","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Paralegal","company":"The J.m. Smucker Company","startYear":"2017","endYear":"2018","isWorkingHere":"No","experienceID":1},{"title":"Gas Pumping Station Operator","company":"Family Dollar Stores, Inc.","startYear":"2009","endYear":"2017","isWorkingHere":"No","experienceID":1}]
+
+10:32:26 ControllerMethods/Register/register.js INFO: AynFerrian71 successfully registered: { __v: 0,
+  firstName: 'Ayn',
+  lastName: 'Ferrian',
+  userName: 'AynFerrian71',
+  email: 'AynFerrian71@gmail.com',
+  age: 87,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab234ba2ea9335254b3d7cb,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:32:26 ControllerMethods/Register/updateEducation.js INFO: AynFerrian71 updated education successfully: [{"degree":"Vocational","school":"Bogor Agricultural University","country":"Indonesia","fieldOfStudy":"Psychology","startYear":2006,"endYear":2008,"educationID":0},{"degree":"Vocational","school":"Southeast Arkansas College","country":"United States","fieldOfStudy":"Music","startYear":1984,"endYear":1985,"educationID":1},{"degree":"Certification","school":"Capella University","country":"United States","fieldOfStudy":"Medicine","startYear":2002,"endYear":2003,"educationID":2}]
+
+10:32:26 ControllerMethods/Register/updateJobHistory.js INFO: AynFerrian71 updated job history successfully: [{"title":"Radio Announcer","company":"Avis Budget Group, Inc.","startYear":"1988","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:32:26 ControllerMethods/Register/updateLocation.js INFO: AynFerrian71 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:32:26 ControllerMethods/Register/updateSocialMedia.js INFO: AynFerrian71 updated social media successfully: {"facebook":"www.facebook.com/AynFerrian71","instagram":"AynFerrian71","twitter":"AynFerrian71","snapchat":"AynFerrian71","linkedIn":"www.linkedin.com/AynFerrian71","medium":"www.medium.com/AynFerrian71","youtube":"www.youtube.com/AynFerrian71","website":"www.AynFerrian71.com","userID":"5ab234ba2ea9335254b3d7cb"}
+
+10:32:26 ControllerMethods/Register/updateMentorSettings.js INFO: AynFerrian71 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Cricket",
+      "years": 55,
+      "areaOfInterestID": 0,
+      "pathsStudied": 25,
+      "videosWatched": 108,
+      "articlesRead": 181,
+      "numberOfLinksClicked": 5431,
+      "numberOfLikes": 124
+    },
+    {
+      "value": "Listening to music",
+      "years": 3,
+      "areaOfInterestID": 1,
+      "pathsStudied": 20,
+      "videosWatched": 114,
+      "articlesRead": 44,
+      "numberOfLinksClicked": 5584,
+      "numberOfLikes": 880
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 15,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "PHD",
+    "High School"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 86,
+  "maxNumberOfMentees": 7
+}
+
+10:32:26 ControllerMethods/Register/updateMenteeSettings.js INFO: AynFerrian71 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Listening to music",
+      "years": 3,
+      "areaOfInterestID": 1,
+      "pathsStudied": 20,
+      "videosWatched": 114,
+      "articlesRead": 44,
+      "numberOfLinksClicked": 5584,
+      "numberOfLikes": 880
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 37,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "Vocational",
+    "No education",
+    "Certification",
+    "Bachelors"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 26,
+  "maxNumberOfMentors": 4
+}
+
+10:32:26 ControllerMethods/Register/updateJobHistory.js INFO: AynFerrian71 updated job history successfully: [{"title":"Radio Announcer","company":"Avis Budget Group, Inc.","startYear":"1988","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Faller","company":"Commercial Metals Company","startYear":"1983","endYear":"1989","isWorkingHere":"No","experienceID":1}]
+
+10:32:26 ControllerMethods/Register/updateJobHistory.js INFO: AynFerrian71 updated job history successfully: [{"title":"Radio Announcer","company":"Avis Budget Group, Inc.","startYear":"1988","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Faller","company":"Commercial Metals Company","startYear":"1983","endYear":"1989","isWorkingHere":"No","experienceID":1},{"title":"Heavy Truck Driver","company":"Noble Energy, Inc.","startYear":"1972","endYear":"1975","isWorkingHere":"No","experienceID":1}]
+
+10:32:26 ControllerMethods/Register/updateJobHistory.js INFO: AynFerrian71 updated job history successfully: [{"title":"Radio Announcer","company":"Avis Budget Group, Inc.","startYear":"1988","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Faller","company":"Commercial Metals Company","startYear":"1983","endYear":"1989","isWorkingHere":"No","experienceID":1},{"title":"Heavy Truck Driver","company":"Noble Energy, Inc.","startYear":"1972","endYear":"1975","isWorkingHere":"No","experienceID":1},{"title":"Credit Counselor","company":"Slm Corporation","startYear":"2012","endYear":"2013","isWorkingHere":"No","experienceID":1}]
+
+10:32:26 ControllerMethods/Register/updateJobHistory.js INFO: AynFerrian71 updated job history successfully: [{"title":"Radio Announcer","company":"Avis Budget Group, Inc.","startYear":"1988","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Faller","company":"Commercial Metals Company","startYear":"1983","endYear":"1989","isWorkingHere":"No","experienceID":1},{"title":"Heavy Truck Driver","company":"Noble Energy, Inc.","startYear":"1972","endYear":"1975","isWorkingHere":"No","experienceID":1},{"title":"Credit Counselor","company":"Slm Corporation","startYear":"2012","endYear":"2013","isWorkingHere":"No","experienceID":1},{"title":"Interviewer","company":"Pultegroup, Inc.","startYear":"1968","endYear":"1997","isWorkingHere":"No","experienceID":1}]
+
+10:32:29 ControllerMethods/Register/register.js INFO: DanettePickman31 successfully registered: { __v: 0,
+  firstName: 'Danette',
+  lastName: 'Pickman',
+  userName: 'DanettePickman31',
+  email: 'DanettePickman31@gmail.com',
+  age: 19,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab234bd2ea9335254b3d7e0,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:32:30 ControllerMethods/Register/updateEducation.js INFO: DanettePickman31 updated education successfully: [{"degree":"Bachelors","school":"Liccsal Business College","country":"Sierra Leone","fieldOfStudy":"Aviation","startYear":2012,"endYear":2016,"educationID":0}]
+
+10:32:30 ControllerMethods/Register/updateJobHistory.js INFO: DanettePickman31 updated job history successfully: [{"title":"Rehabilitation Counselor","company":"The Andersons, Inc.","startYear":"2017","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:32:30 ControllerMethods/Register/updateSocialMedia.js INFO: DanettePickman31 updated social media successfully: {"facebook":"www.facebook.com/DanettePickman31","instagram":"DanettePickman31","twitter":"DanettePickman31","snapchat":"DanettePickman31","linkedIn":"www.linkedin.com/DanettePickman31","userID":"5ab234bd2ea9335254b3d7e0"}
+
+10:32:30 ControllerMethods/Register/updateLocation.js INFO: DanettePickman31 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:32:30 ControllerMethods/Register/updateMentorSettings.js INFO: DanettePickman31 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Cheerleading",
+      "years": 2,
+      "areaOfInterestID": 1,
+      "pathsStudied": 29,
+      "videosWatched": 18,
+      "articlesRead": 10,
+      "numberOfLinksClicked": 8416,
+      "numberOfLikes": 799
+    },
+    {
+      "value": "Shortwave listening",
+      "years": 1,
+      "areaOfInterestID": 0,
+      "pathsStudied": 41,
+      "videosWatched": 124,
+      "articlesRead": 230,
+      "numberOfLinksClicked": 3434,
+      "numberOfLikes": 335
+    },
+    {
+      "value": "Model building",
+      "years": 0,
+      "areaOfInterestID": 2,
+      "pathsStudied": 39,
+      "videosWatched": 102,
+      "articlesRead": 20,
+      "numberOfLinksClicked": 7790,
+      "numberOfLikes": 136
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 71,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Bachelors",
+    "PHD",
+    "No education",
+    "Certification",
+    "Vocational"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 77,
+  "maxNumberOfMentees": 4
+}
+
+10:32:30 ControllerMethods/Register/updateMenteeSettings.js INFO: DanettePickman31 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Model building",
+      "years": 0,
+      "areaOfInterestID": 2,
+      "pathsStudied": 39,
+      "videosWatched": 102,
+      "articlesRead": 20,
+      "numberOfLinksClicked": 7790,
+      "numberOfLikes": 136
+    },
+    {
+      "value": "Shortwave listening",
+      "years": 1,
+      "areaOfInterestID": 0,
+      "pathsStudied": 41,
+      "videosWatched": 124,
+      "articlesRead": 230,
+      "numberOfLinksClicked": 3434,
+      "numberOfLikes": 335
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 58,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Vocational",
+    "Certification",
+    "Masters",
+    "Bachelors",
+    "PHD"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 25,
+  "maxNumberOfMentors": 6
+}
+
+10:33:50 ControllerMethods/Register/register.js INFO: ChandalBryne81 successfully registered: { __v: 0,
+  firstName: 'Chandal',
+  lastName: 'Bryne',
+  userName: 'ChandalBryne81',
+  email: 'ChandalBryne81@gmail.com',
+  age: 24,
+  country: 'Germany',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2350e2ea9335254b3d7e6,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:33:50 ControllerMethods/Register/updateEducation.js INFO: ChandalBryne81 updated education successfully: [{"degree":"Certification","school":"University Of The South Pacific","country":"Fiji","fieldOfStudy":"Nursing","startYear":2010,"endYear":2011,"educationID":0},{"degree":"Certification","school":"Kumaraguru College Of Technology","country":"India","fieldOfStudy":"Computer Science And Information Systems","startYear":2017,"endYear":2017,"educationID":1}]
+
+10:33:50 ControllerMethods/Register/updateJobHistory.js INFO: ChandalBryne81 updated job history successfully: [{"title":"Customer Service Representative","company":"Nationwide Mutual Insurance Co.","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:33:50 ControllerMethods/Register/updateSocialMedia.js INFO: ChandalBryne81 updated social media successfully: {"facebook":"www.facebook.com/ChandalBryne81","instagram":"ChandalBryne81","twitter":"ChandalBryne81","userID":"5ab2350e2ea9335254b3d7e6"}
+
+10:33:50 ControllerMethods/Register/updateLocation.js INFO: ChandalBryne81 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:33:50 ControllerMethods/Register/updateMentorSettings.js INFO: ChandalBryne81 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Cooking",
+      "years": 5,
+      "areaOfInterestID": 0,
+      "pathsStudied": 21,
+      "videosWatched": 64,
+      "articlesRead": 188,
+      "numberOfLinksClicked": 2665,
+      "numberOfLikes": 739
+    },
+    {
+      "value": "Shooting sport",
+      "years": 5,
+      "areaOfInterestID": 1,
+      "pathsStudied": 17,
+      "videosWatched": 171,
+      "articlesRead": 234,
+      "numberOfLinksClicked": 7702,
+      "numberOfLikes": 939
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 66,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "High School"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 88,
+  "maxNumberOfMentees": 2
+}
+
+10:33:50 ControllerMethods/Register/updateMenteeSettings.js INFO: ChandalBryne81 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Cooking",
+      "years": 5,
+      "areaOfInterestID": 0,
+      "pathsStudied": 21,
+      "videosWatched": 64,
+      "articlesRead": 188,
+      "numberOfLinksClicked": 2665,
+      "numberOfLikes": 739
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 3,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "No education",
+    "Bachelors",
+    "Certification",
+    "PHD",
+    "High School",
+    "Masters"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 18,
+  "maxNumberOfMentors": 8
+}
+
+10:33:50 ControllerMethods/Register/updateJobHistory.js INFO: ChandalBryne81 updated job history successfully: [{"title":"Customer Service Representative","company":"Nationwide Mutual Insurance Co.","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Transportation Equipment Painter","company":"Cf Industries Holdings, Inc.","startYear":"2017","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:34:16 ControllerMethods/Register/register.js INFO: MalloryKrumroy11 successfully registered: { __v: 0,
+  firstName: 'Mallory',
+  lastName: 'Krumroy',
+  userName: 'MalloryKrumroy11',
+  email: 'MalloryKrumroy11@gmail.com',
+  age: 49,
+  country: 'France',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab235282ea9335254b3d7ee,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:34:16 ControllerMethods/Register/updateEducation.js INFO: MalloryKrumroy11 updated education successfully: [{"degree":"Vocational","school":"Universiti Sultan Zainal Abidin","country":"Malaysia","fieldOfStudy":"Veterinary Science","startYear":2012,"endYear":2014,"educationID":0}]
+
+10:34:16 ControllerMethods/Register/updateJobHistory.js INFO: MalloryKrumroy11 updated job history successfully: [{"title":"Telemarketer","company":"Texas Instruments Incorporated","startYear":"1994","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:34:16 ControllerMethods/Register/updateSocialMedia.js INFO: MalloryKrumroy11 updated social media successfully: {"facebook":"www.facebook.com/MalloryKrumroy11","instagram":"MalloryKrumroy11","userID":"5ab235282ea9335254b3d7ee"}
+
+10:34:16 ControllerMethods/Register/updateLocation.js INFO: MalloryKrumroy11 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:34:16 ControllerMethods/Register/updateMentorSettings.js INFO: MalloryKrumroy11 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Volleyball",
+      "years": 31,
+      "areaOfInterestID": 2,
+      "pathsStudied": 32,
+      "videosWatched": 63,
+      "articlesRead": 84,
+      "numberOfLinksClicked": 1437,
+      "numberOfLikes": 47
+    },
+    {
+      "value": "Dancing",
+      "years": 16,
+      "areaOfInterestID": 0,
+      "pathsStudied": 33,
+      "videosWatched": 75,
+      "articlesRead": 30,
+      "numberOfLinksClicked": 5589,
+      "numberOfLikes": 791
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 9,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education",
+    "High School",
+    "Certification"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 75,
+  "maxNumberOfMentees": 6
+}
+
+10:34:16 ControllerMethods/Register/updateMenteeSettings.js INFO: MalloryKrumroy11 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Animal fancy",
+      "years": 1,
+      "areaOfInterestID": 3,
+      "pathsStudied": 23,
+      "videosWatched": 76,
+      "articlesRead": 122,
+      "numberOfLinksClicked": 1997,
+      "numberOfLikes": 902
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 11,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "PHD"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 25,
+  "maxNumberOfMentors": 8
+}
+
+10:34:51 ControllerMethods/Register/register.js INFO: EtheldaHouseholder81 successfully registered: { __v: 0,
+  firstName: 'Ethelda',
+  lastName: 'Householder',
+  userName: 'EtheldaHouseholder81',
+  email: 'EtheldaHouseholder81@gmail.com',
+  age: 110,
+  country: 'United Kingdom',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab2354b2ea9335254b3d7f5,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:34:51 ControllerMethods/Register/updateEducation.js INFO: EtheldaHouseholder81 updated education successfully: [{"degree":"Vocational","school":"African Virtual University","country":"Tanzania, United Republic of","fieldOfStudy":"Tourism Studies","startYear":1985,"endYear":1985,"educationID":0},{"degree":"Vocational","school":"Linguistic University Of Nizhny Novgorod","country":"Russian Federation","fieldOfStudy":"Computer Science And Information Systems","startYear":1997,"endYear":1997,"educationID":1},{"degree":"Certification","school":"St. Petersburg State Institute Of Technology (Technological University)","country":"Russian Federation","fieldOfStudy":"Dentistry","startYear":2002,"endYear":2003,"educationID":2}]
+
+10:34:51 ControllerMethods/Register/updateJobHistory.js INFO: EtheldaHouseholder81 updated job history successfully: [{"title":"Order Filler","company":"Unitedhealth Group","startYear":"1971","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:34:51 ControllerMethods/Register/updateSocialMedia.js INFO: EtheldaHouseholder81 updated social media successfully: {"facebook":"www.facebook.com/EtheldaHouseholder81","instagram":"EtheldaHouseholder81","twitter":"EtheldaHouseholder81","snapchat":"EtheldaHouseholder81","linkedIn":"www.linkedin.com/EtheldaHouseholder81","medium":"www.medium.com/EtheldaHouseholder81","youtube":"www.youtube.com/EtheldaHouseholder81","userID":"5ab2354b2ea9335254b3d7f5"}
+
+10:34:52 ControllerMethods/Register/updateLocation.js INFO: EtheldaHouseholder81 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:34:52 ControllerMethods/Register/updateMentorSettings.js INFO: EtheldaHouseholder81 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Fishing",
+      "years": 73,
+      "areaOfInterestID": 2,
+      "pathsStudied": 22,
+      "videosWatched": 146,
+      "articlesRead": 188,
+      "numberOfLinksClicked": 6564,
+      "numberOfLikes": 244
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 63,
+  "languages": [
+    "German"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "Certification",
+    "Vocational",
+    "No education"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 23,
+  "maxNumberOfMentees": 1
+}
+
+10:34:52 ControllerMethods/Register/updateMenteeSettings.js INFO: EtheldaHouseholder81 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Machining",
+      "years": 38,
+      "areaOfInterestID": 0,
+      "pathsStudied": 3,
+      "videosWatched": 3,
+      "articlesRead": 38,
+      "numberOfLinksClicked": 5643,
+      "numberOfLikes": 801
+    },
+    {
+      "value": "Web surfing",
+      "years": 67,
+      "areaOfInterestID": 1,
+      "pathsStudied": 48,
+      "videosWatched": 19,
+      "articlesRead": 95,
+      "numberOfLinksClicked": 4294,
+      "numberOfLikes": 795
+    },
+    {
+      "value": "Fishing",
+      "years": 73,
+      "areaOfInterestID": 2,
+      "pathsStudied": 22,
+      "videosWatched": 146,
+      "articlesRead": 188,
+      "numberOfLinksClicked": 6564,
+      "numberOfLikes": 244
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 32,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Certification",
+    "Masters",
+    "PHD",
+    "High School"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 64,
+  "maxNumberOfMentors": 5
+}
+
+10:34:52 ControllerMethods/Register/updateJobHistory.js INFO: EtheldaHouseholder81 updated job history successfully: [{"title":"Order Filler","company":"Unitedhealth Group","startYear":"1971","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Maid","company":"Intl Fcstone Inc.","startYear":"1977","endYear":"1994","isWorkingHere":"No","experienceID":1}]
+
+10:34:52 ControllerMethods/Register/updateJobHistory.js INFO: EtheldaHouseholder81 updated job history successfully: [{"title":"Order Filler","company":"Unitedhealth Group","startYear":"1971","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Maid","company":"Intl Fcstone Inc.","startYear":"1977","endYear":"1994","isWorkingHere":"No","experienceID":1},{"title":"Music Teacher","company":"General Dynamics Corporation","startYear":"1959","endYear":"1969","isWorkingHere":"No","experienceID":1}]
+
+10:35:14 ControllerMethods/Register/register.js INFO: KarolinaMaffucci41 successfully registered: { __v: 0,
+  firstName: 'Karolina',
+  lastName: 'Maffucci',
+  userName: 'KarolinaMaffucci41',
+  email: 'KarolinaMaffucci41@gmail.com',
+  age: 91,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab235622ea9335254b3d802,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:35:14 ControllerMethods/Register/updateEducation.js INFO: KarolinaMaffucci41 updated education successfully: [{"degree":"Bachelors","school":"College Of The Albemarle","country":"United States","fieldOfStudy":"Social Sciences","startYear":2011,"endYear":2016,"educationID":0}]
+
+10:35:14 ControllerMethods/Register/updateJobHistory.js INFO: KarolinaMaffucci41 updated job history successfully: [{"title":"Prepress Technician","company":"Tractor Supply Company","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:35:14 ControllerMethods/Register/updateSocialMedia.js INFO: KarolinaMaffucci41 updated social media successfully: {"facebook":"www.facebook.com/KarolinaMaffucci41","instagram":"KarolinaMaffucci41","twitter":"KarolinaMaffucci41","snapchat":"KarolinaMaffucci41","userID":"5ab235622ea9335254b3d802"}
+
+10:35:14 ControllerMethods/Register/updateLocation.js INFO: KarolinaMaffucci41 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:35:15 ControllerMethods/Register/updateMentorSettings.js INFO: KarolinaMaffucci41 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Sea glass collecting",
+      "years": 33,
+      "areaOfInterestID": 0,
+      "pathsStudied": 49,
+      "videosWatched": 150,
+      "articlesRead": 227,
+      "numberOfLinksClicked": 9949,
+      "numberOfLikes": 688
+    },
+    {
+      "value": "Figure skating",
+      "years": 33,
+      "areaOfInterestID": 3,
+      "pathsStudied": 8,
+      "videosWatched": 166,
+      "articlesRead": 5,
+      "numberOfLinksClicked": 8693,
+      "numberOfLikes": 814
+    },
+    {
+      "value": "Sailing",
+      "years": 17,
+      "areaOfInterestID": 1,
+      "pathsStudied": 12,
+      "videosWatched": 103,
+      "articlesRead": 110,
+      "numberOfLinksClicked": 5055,
+      "numberOfLikes": 603
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 89,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Vocational",
+    "High School",
+    "PHD",
+    "Bachelors",
+    "Certification",
+    "Masters"
+  ],
+  "minimumAge": 19,
+  "maximumAge": 100,
+  "maxNumberOfMentees": 7
+}
+
+10:35:15 ControllerMethods/Register/updateMenteeSettings.js INFO: KarolinaMaffucci41 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Lacrosse",
+      "years": 15,
+      "areaOfInterestID": 2,
+      "pathsStudied": 3,
+      "videosWatched": 197,
+      "articlesRead": 9,
+      "numberOfLinksClicked": 6461,
+      "numberOfLikes": 43
+    },
+    {
+      "value": "Sailing",
+      "years": 17,
+      "areaOfInterestID": 1,
+      "pathsStudied": 12,
+      "videosWatched": 103,
+      "articlesRead": 110,
+      "numberOfLinksClicked": 5055,
+      "numberOfLikes": 603
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 34,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "Masters",
+    "Certification",
+    "Vocational",
+    "Bachelors",
+    "No education",
+    "High School",
+    "PHD"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 49,
+  "maxNumberOfMentors": 1
+}
+
+10:35:15 ControllerMethods/Register/updateJobHistory.js INFO: KarolinaMaffucci41 updated job history successfully: [{"title":"Prepress Technician","company":"Tractor Supply Company","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Hotel Desk Clerk","company":"State Farm Insurance Cos.","startYear":"2002","endYear":"2007","isWorkingHere":"No","experienceID":1}]
+
+10:35:15 ControllerMethods/Register/updateJobHistory.js INFO: KarolinaMaffucci41 updated job history successfully: [{"title":"Prepress Technician","company":"Tractor Supply Company","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Hotel Desk Clerk","company":"State Farm Insurance Cos.","startYear":"2002","endYear":"2007","isWorkingHere":"No","experienceID":1},{"title":"Space Scientist","company":"Conocophillips","startYear":"2014","endYear":"2017","isWorkingHere":"No","experienceID":1}]
+
+10:35:15 ControllerMethods/Register/updateJobHistory.js INFO: KarolinaMaffucci41 updated job history successfully: [{"title":"Prepress Technician","company":"Tractor Supply Company","startYear":"2011","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Hotel Desk Clerk","company":"State Farm Insurance Cos.","startYear":"2002","endYear":"2007","isWorkingHere":"No","experienceID":1},{"title":"Space Scientist","company":"Conocophillips","startYear":"2014","endYear":"2017","isWorkingHere":"No","experienceID":1},{"title":"Mapping Technician","company":"Monsanto Company","startYear":"1976","endYear":"2005","isWorkingHere":"No","experienceID":1}]
+
+10:35:37 ControllerMethods/Register/register.js INFO: GerhardineKlank81 successfully registered: { __v: 0,
+  firstName: 'Gerhardine',
+  lastName: 'Klank',
+  userName: 'GerhardineKlank81',
+  email: 'GerhardineKlank81@gmail.com',
+  age: 16,
+  country: 'Spain',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab235792ea9335254b3d812,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:35:38 ControllerMethods/Register/updateEducation.js INFO: GerhardineKlank81 updated education successfully: [{"degree":"Certification","school":"Inner Mongolia Polytechnic University","country":"China","fieldOfStudy":"Film And Television","startYear":2016,"endYear":2016,"educationID":0},{"degree":"Certification","school":"Otto-friedrich Universität Bamberg","country":"Germany","fieldOfStudy":"Social Work","startYear":2017,"endYear":2018,"educationID":1}]
+
+10:35:38 ControllerMethods/Register/updateJobHistory.js INFO: GerhardineKlank81 updated job history successfully: [{"title":"Hunter","company":"Amgen Inc.","startYear":"2018","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:35:38 ControllerMethods/Register/updateSocialMedia.js INFO: GerhardineKlank81 updated social media successfully: {"facebook":"www.facebook.com/GerhardineKlank81","userID":"5ab235792ea9335254b3d812"}
+
+10:35:38 ControllerMethods/Register/updateLocation.js INFO: GerhardineKlank81 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:35:38 ControllerMethods/Register/updateMentorSettings.js INFO: GerhardineKlank81 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Human swimming",
+      "years": 0,
+      "areaOfInterestID": 0,
+      "pathsStudied": 20,
+      "videosWatched": 50,
+      "articlesRead": 206,
+      "numberOfLinksClicked": 852,
+      "numberOfLikes": 669
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 4,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "Certification",
+    "Bachelors",
+    "No education",
+    "PHD",
+    "Masters",
+    "High School"
+  ],
+  "minimumAge": 16,
+  "maximumAge": 99,
+  "maxNumberOfMentees": 6
+}
+
+10:35:38 ControllerMethods/Register/updateMenteeSettings.js INFO: GerhardineKlank81 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Human swimming",
+      "years": 0,
+      "areaOfInterestID": 0,
+      "pathsStudied": 20,
+      "videosWatched": 50,
+      "articlesRead": 206,
+      "numberOfLinksClicked": 852,
+      "numberOfLikes": 669
+    },
+    {
+      "value": "Card collecting",
+      "years": 0,
+      "areaOfInterestID": 1,
+      "pathsStudied": 7,
+      "videosWatched": 122,
+      "articlesRead": 152,
+      "numberOfLinksClicked": 5789,
+      "numberOfLikes": 384
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 15,
+  "languages": [
+    "English",
+    "Spanish",
+    "German"
+  ],
+  "prefferedEducation": [
+    "PHD"
+  ],
+  "minimumAge": 18,
+  "maximumAge": 23,
+  "maxNumberOfMentors": 8
+}
+
+10:35:38 ControllerMethods/Register/updateJobHistory.js INFO: GerhardineKlank81 updated job history successfully: [{"title":"Hunter","company":"Amgen Inc.","startYear":"2018","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Operations Manager","company":"Facebook, Inc.","startYear":"2018","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:35:38 ControllerMethods/Register/updateJobHistory.js INFO: GerhardineKlank81 updated job history successfully: [{"title":"Hunter","company":"Amgen Inc.","startYear":"2018","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Operations Manager","company":"Facebook, Inc.","startYear":"2018","endYear":"2018","isWorkingHere":"No","experienceID":1},{"title":"Geological Technician","company":"Becton, Dickinson And Company","startYear":"2018","endYear":"2018","isWorkingHere":"No","experienceID":1}]
+
+10:37:39 ControllerMethods/Register/register.js INFO: QuentinJerkovich61 successfully registered: { __v: 0,
+  firstName: 'Quentin',
+  lastName: 'Jerkovich',
+  userName: 'QuentinJerkovich61',
+  email: 'QuentinJerkovich61@gmail.com',
+  age: 74,
+  country: 'France',
+  terms: true,
+  basicRegistrationComplete: true,
+  areasOfInterestRegistrationComplete: false,
+  isUserLoggedIn: true,
+  _id: 5ab235f3fffe289050e61f65,
+  location: { longitude: 79.7224003699525, latitude: 78.1255953282639 },
+  pastMentors: [],
+  pastMentees: [],
+  potentialMentors: [],
+  potentialMentees: [],
+  mentees: [],
+  mentors: [],
+  menteeSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  mentorSettings: 
+   { prefferedEducation: [],
+     languages: [],
+     prefferedMentoringFormats: [],
+     areasOfInterest: [] },
+  education: [],
+  jobHistory: [],
+  areasOfInterest: [] }
+
+10:37:39 ControllerMethods/Register/updateJobHistory.js INFO: QuentinJerkovich61 updated job history successfully: [{"title":"Structural Metal Fabricator","company":"Pfizer","startYear":"2002","isWorkingHere":"Yes","experienceID":0,"endYear":9999}]
+
+10:37:39 ControllerMethods/Register/updateEducation.js INFO: QuentinJerkovich61 updated education successfully: [{"degree":"Bachelors","school":"St. Andrew Georgian University","country":"Georgia","fieldOfStudy":"Aviation","startYear":1997,"endYear":2003,"educationID":0},{"degree":"Vocational","school":"Universidad Nacional Jorge Basadre Grohmann","country":"Peru","fieldOfStudy":"Innovation","startYear":1991,"endYear":1991,"educationID":1}]
+
+10:37:39 ControllerMethods/Register/updateLocation.js INFO: QuentinJerkovich61 updated location informtion successfully: {
+  "latitude": 78.1255953282639,
+  "longitude": 79.7224003699525
+}
+
+10:37:39 ControllerMethods/Register/updateSocialMedia.js INFO: QuentinJerkovich61 updated social media successfully: {"facebook":"www.facebook.com/QuentinJerkovich61","instagram":"QuentinJerkovich61","twitter":"QuentinJerkovich61","snapchat":"QuentinJerkovich61","linkedIn":"www.linkedin.com/QuentinJerkovich61","userID":"5ab235f3fffe289050e61f65"}
+
+10:37:39 ControllerMethods/Register/updateJobHistory.js INFO: QuentinJerkovich61 updated job history successfully: [{"title":"Structural Metal Fabricator","company":"Pfizer","startYear":"2002","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Administrative Services Manager","company":"Health Net, Inc.","startYear":"1999","endYear":"2008","isWorkingHere":"No","experienceID":1}]
+
+10:37:39 ControllerMethods/Register/updateMenteeSettings.js INFO: QuentinJerkovich61 updated mentee settings successfully: {
+  "wouldLikeAMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Ultimate (sport)",
+      "years": 1,
+      "areaOfInterestID": 4,
+      "pathsStudied": 39,
+      "videosWatched": 12,
+      "articlesRead": 142,
+      "numberOfLinksClicked": 2195,
+      "numberOfLikes": 744
+    },
+    {
+      "value": "Slacklining",
+      "years": 10,
+      "areaOfInterestID": 0,
+      "pathsStudied": 40,
+      "videosWatched": 74,
+      "articlesRead": 54,
+      "numberOfLinksClicked": 4154,
+      "numberOfLikes": 463
+    },
+    {
+      "value": "Speed skating",
+      "years": 28,
+      "areaOfInterestID": 7,
+      "pathsStudied": 46,
+      "videosWatched": 202,
+      "articlesRead": 203,
+      "numberOfLinksClicked": 1792,
+      "numberOfLikes": 181
+    },
+    {
+      "value": "Skateboarding",
+      "years": 29,
+      "areaOfInterestID": 1,
+      "pathsStudied": 34,
+      "videosWatched": 105,
+      "articlesRead": 23,
+      "numberOfLinksClicked": 1047,
+      "numberOfLikes": 742
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "Online"
+  ],
+  "maximumTravelDistanceKM": 99,
+  "languages": [
+    "English"
+  ],
+  "prefferedEducation": [
+    "No education"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 73,
+  "maxNumberOfMentors": 8
+}
+
+10:37:39 ControllerMethods/Register/updateMentorSettings.js INFO: QuentinJerkovich61 updated mentor settings successfully: {
+  "wouldLikeToMentor": true,
+  "areasOfInterest": [
+    {
+      "value": "Hunting",
+      "years": 57,
+      "areaOfInterestID": 3,
+      "pathsStudied": 41,
+      "videosWatched": 124,
+      "articlesRead": 24,
+      "numberOfLinksClicked": 6628,
+      "numberOfLikes": 418
+    },
+    {
+      "value": "Jogging",
+      "years": 53,
+      "areaOfInterestID": 5,
+      "pathsStudied": 43,
+      "videosWatched": 234,
+      "articlesRead": 82,
+      "numberOfLinksClicked": 864,
+      "numberOfLikes": 281
+    },
+    {
+      "value": "Jogging",
+      "years": 51,
+      "areaOfInterestID": 8,
+      "pathsStudied": 39,
+      "videosWatched": 77,
+      "articlesRead": 162,
+      "numberOfLinksClicked": 9406,
+      "numberOfLikes": 522
+    },
+    {
+      "value": "Writing",
+      "years": 41,
+      "areaOfInterestID": 9,
+      "pathsStudied": 47,
+      "videosWatched": 35,
+      "articlesRead": 106,
+      "numberOfLinksClicked": 5988,
+      "numberOfLikes": 665
+    },
+    {
+      "value": "Stand-up comedy",
+      "years": 39,
+      "areaOfInterestID": 6,
+      "pathsStudied": 21,
+      "videosWatched": 108,
+      "articlesRead": 82,
+      "numberOfLinksClicked": 8549,
+      "numberOfLikes": 417
+    },
+    {
+      "value": "Kombucha",
+      "years": 36,
+      "areaOfInterestID": 2,
+      "pathsStudied": 41,
+      "videosWatched": 46,
+      "articlesRead": 149,
+      "numberOfLinksClicked": 9173,
+      "numberOfLikes": 282
+    },
+    {
+      "value": "Skateboarding",
+      "years": 29,
+      "areaOfInterestID": 1,
+      "pathsStudied": 34,
+      "videosWatched": 105,
+      "articlesRead": 23,
+      "numberOfLinksClicked": 1047,
+      "numberOfLikes": 742
+    },
+    {
+      "value": "Speed skating",
+      "years": 28,
+      "areaOfInterestID": 7,
+      "pathsStudied": 46,
+      "videosWatched": 202,
+      "articlesRead": 203,
+      "numberOfLinksClicked": 1792,
+      "numberOfLikes": 181
+    },
+    {
+      "value": "Slacklining",
+      "years": 10,
+      "areaOfInterestID": 0,
+      "pathsStudied": 40,
+      "videosWatched": 74,
+      "articlesRead": 54,
+      "numberOfLinksClicked": 4154,
+      "numberOfLikes": 463
+    }
+  ],
+  "prefferedMentoringFormats": [
+    "In person"
+  ],
+  "maximumTravelDistanceKM": 87,
+  "languages": [
+    "English",
+    "German"
+  ],
+  "prefferedEducation": [
+    "High School",
+    "No education"
+  ],
+  "minimumAge": 17,
+  "maximumAge": 76,
+  "maxNumberOfMentees": 3
+}
+
+10:37:39 ControllerMethods/Register/updateJobHistory.js INFO: QuentinJerkovich61 updated job history successfully: [{"title":"Structural Metal Fabricator","company":"Pfizer","startYear":"2002","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Administrative Services Manager","company":"Health Net, Inc.","startYear":"1999","endYear":"2008","isWorkingHere":"No","experienceID":1},{"title":"Obstetrician","company":"Leidos Holdings Inc.","startYear":"1969","endYear":"1995","isWorkingHere":"No","experienceID":1}]
+
+10:37:39 ControllerMethods/Register/updateJobHistory.js INFO: QuentinJerkovich61 updated job history successfully: [{"title":"Structural Metal Fabricator","company":"Pfizer","startYear":"2002","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Administrative Services Manager","company":"Health Net, Inc.","startYear":"1999","endYear":"2008","isWorkingHere":"No","experienceID":1},{"title":"Obstetrician","company":"Leidos Holdings Inc.","startYear":"1969","endYear":"1995","isWorkingHere":"No","experienceID":1},{"title":"Structural Steel Worker","company":"Fidelity National Information Services, Inc.","startYear":"1996","endYear":"2008","isWorkingHere":"No","experienceID":1}]
+
+10:37:39 ControllerMethods/Register/updateJobHistory.js INFO: QuentinJerkovich61 updated job history successfully: [{"title":"Structural Metal Fabricator","company":"Pfizer","startYear":"2002","isWorkingHere":"Yes","experienceID":0,"endYear":9999},{"title":"Administrative Services Manager","company":"Health Net, Inc.","startYear":"1999","endYear":"2008","isWorkingHere":"No","experienceID":1},{"title":"Obstetrician","company":"Leidos Holdings Inc.","startYear":"1969","endYear":"1995","isWorkingHere":"No","experienceID":1},{"title":"Structural Steel Worker","company":"Fidelity National Information Services, Inc.","startYear":"1996","endYear":"2008","isWorkingHere":"No","experienceID":1},{"title":"Order Clerk","company":"Ally Financial Inc.","startYear":"1963","endYear":"1979","isWorkingHere":"No","experienceID":1}]
+

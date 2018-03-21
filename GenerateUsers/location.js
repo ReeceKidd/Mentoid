@@ -24,6 +24,8 @@ module.exports = async function generateSocialMedia(userID) {
     await axios.post(updateLocationURL, {
         userID: userID,
         location: location
+    }).then(response => {
+        console.log('Location status: ' + response.status)
     }).catch(error => {
         console.log('Could not update location: ' + error.message)
     })

@@ -34,7 +34,9 @@ module.exports = async function updateAreasOfInterest(userName, userID, age, are
         menteeSettings: menteeSettings,
         userID: userID,
         userName: userName
-    }).then(userName + ' updated mentee settings').catch(error => {
+    }).then(response => {
+        console.log(response.data.message)
+    }).catch(error => {
         console.log(userName + ' could not update mentee settings: ' + error.message)
     })
 

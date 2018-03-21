@@ -33,6 +33,8 @@ module.exports = async function updateAreasOfInterest(userID, age) {
         _id: userID,
         age: age,
         areasOfInterest: areasOfInterest
+    }).then(response => {
+        console.log(response.data.message)
     }).catch(error => {
         console.log('Could not complete areas of interest registration: ' + error.message)
     })
@@ -54,6 +56,7 @@ function getValue() {
 function getYears(age) {
     return Math.floor(Math.random() * (age - 16)) + 0
 }
+
 function getNumberOfLikes() {
     return Math.floor(Math.random() * 1000) + 1
 }

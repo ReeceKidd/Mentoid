@@ -37,6 +37,8 @@ module.exports = async function updateEducation(userID, age) {
         _id: userID,
         age: age,
         education: education
+    }).then(response => {
+        console.log(response.data.message)
     }).catch(error => {
         console.log('Could not update education: ' + error.message)
     })

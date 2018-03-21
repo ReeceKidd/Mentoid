@@ -23,6 +23,8 @@ module.exports = async function generateSocialMedia(userID, userName) {
         youtube: socialMediaAccounts.youtube,
         website: socialMediaAccounts.website,
         userID: userID
+    }).then(response => {
+        console.log(response.data.message)
     }).catch(error => {
         console.log('Could not update Social media account: ' + error.message)
     })

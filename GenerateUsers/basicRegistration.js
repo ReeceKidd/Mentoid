@@ -26,8 +26,10 @@ module.exports = async function registerBasicUser() {
         confirmPassword: confirmPassword,
         country: country,
         terms: terms
+    }).then(response => {
+        console.log(userName + 'basic registration successful.')
     }).catch(error => {
-      console.log('Could not complete basic registration: ' + error)
+        console.log('Could not complete basic registration: ' + error)
     })
     return userName
 }
@@ -61,8 +63,8 @@ function getPassword() {
 function getCountry() {
 
     let countryOptions = ['United Kingdom', 'Spain', 'France', 'Germany']
-    return countryOptions[Math.floor(Math.random()*countryOptions.length)];
-    
+    return countryOptions[Math.floor(Math.random() * countryOptions.length)];
+
 
 }
 

@@ -35,16 +35,17 @@ module.exports = async function updateEducation(userID, age) {
             })
             experienceID++
         }
-
-        await axios.post(updateJobHistoryURL, {
-            _id: userID,
-            age: age,
-            experiences: experiences
-        }).catch(error => {
-            console.log('Could not update job history: ' + error.message)
-        })
-
     }
+
+    await axios.post(updateJobHistoryURL, {
+        _id: userID,
+        age: age,
+        experiences: experiences
+    }).then(response => {
+        console.log(response.data.message)
+    }).catch(error => {
+        console.log('Could not update job history: ' + error.message)
+    })
     return experiences
 }
 
